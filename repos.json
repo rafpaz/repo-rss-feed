@@ -2,6 +2,11 @@
   "repositories": [
     { "slug": "vercel/next.js", "maxReleases": 5 },
     { "slug": "facebook/react", "maxReleases": 5 },
-    "nodejs/node"
+    "nodejs/node",
+    "yuliskov/SmartTube",
+    "jellyfin/jellyfin",
+    "LegendApp/legend-state",
+    "payloadcms/payload",
+    "novuhq/novu"
   ]
 }
