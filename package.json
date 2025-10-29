@@ -12,6 +12,9 @@
   "author": "",
   "license": "MIT",
   "type": "commonjs",
+  "dependencies": {
+    "marked": "^15.0.11"
+  },
   "devDependencies": {
     "@types/node": "^24.9.2",
     "typescript": "^5.9.3"

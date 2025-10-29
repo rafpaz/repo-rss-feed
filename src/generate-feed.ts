@@ -15,6 +15,7 @@
 
 import { promises as fs } from 'fs';
 import * as path from 'path';
+import { marked } from 'marked';
 
 interface RepoConfig {
   slug: string;
@@ -43,7 +44,7 @@ interface FeedItem {
   htmlUrl: string;
   tagName: string;
   publishedAt: string | undefined;
-  description: string;
+  descriptionHtml: string;
   id: string;
   name: string;
 }
@@ -136,7 +137,7 @@ async function fetchReleasesForRepo({
       htmlUrl: release.html_url,
       tagName: release.tag_name ?? 'unknown',
       publishedAt: release.published_at ?? release.created_at,
-      description: release.body ?? '',
+      descriptionHtml: renderMarkdownToHtml(release.body ?? ''),
       id: release.html_url ?? `${slug}@${release.tag_name}`,
       name: release.name ?? `${slug} ${release.tag_name}`,
     }));
@@ -185,6 +186,21 @@ function formatRssDate(isoDate?: string): string {
   return date.toUTCString();
 }
 
+function renderMarkdownToHtml(markdown: string): string {
+  const trimmed = markdown.trim();
+  if (!trimmed) {
+    return '';
+  }
+
+  const html = marked.parse(trimmed) as string;
+  return html.trim();
+}
+
+function wrapInCdata(html: string): string {
+  const safeHtml = html.replace(/\]\]>/g, ']]]]><![CDATA[>');
+  return `<description><![CDATA[${safeHtml}]]></description>`;
+}
+
 function buildRssFeed(items: FeedItem[]): string {
   const feedItems = items
     .sort(
@@ -192,9 +208,9 @@ function buildRssFeed(items: FeedItem[]): string {
     )
     .map((item) => {
       const title = `${item.repoSlug} ${item.tagName}`;
-      const description = item.description
-        ? `<description><![CDATA[${item.description}]]></description>`
-        : '<description>No release notes provided.</description>';
+      const description = item.descriptionHtml
+        ? wrapInCdata(item.descriptionHtml)
+        : '<description><p>No release notes provided.</p></description>';
 
       return `
     <item>
