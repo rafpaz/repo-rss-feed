@@ -1,0 +1,7 @@
+{
+  "repositories": [
+    { "slug": "vercel/next.js", "maxReleases": 5 },
+    { "slug": "facebook/react", "maxReleases": 5 },
+    "nodejs/node"
+  ]
+}

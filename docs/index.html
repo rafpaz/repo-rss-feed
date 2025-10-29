@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Major &amp; Minor Releases Feed</title>
+    <meta
+      name="description"
+      content="Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories."
+    />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        max-width: 720px;
+        margin: 3rem auto;
+        line-height: 1.6;
+        padding: 0 1.5rem;
+        color: #1f2933;
+        background: #f9fafb;
+      }
+      h1 {
+        font-weight: 600;
+      }
+      code {
+        background: rgba(15, 23, 42, 0.08);
+        padding: 0.15rem 0.25rem;
+        border-radius: 0.25rem;
+      }
+      a {
+        color: #2563eb;
+      }
+      footer {
+        margin-top: 3rem;
+        font-size: 0.875rem;
+        color: #52616b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Major &amp; Minor Releases Feed</h1>
+    <p>
+      This project generates an RSS feed that aggregates major and minor releases from a curated
+      list of GitHub repositories. Only release tags following semantic versioning and published
+      with a <code>.0</code> patch component appear in the feed.
+    </p>
+    <p>
+      Subscribe to the feed:
+      <a href="./feed.xml" rel="alternate" type="application/rss+xml">RSS feed</a>
+    </p>
+    <p>
+      Regenerate the feed locally with:
+      <code>npm run generate</code>
+    </p>
+    <footer>
+      <p>Update <code>repos.json</code> to customize the repository list.</p>
+    </footer>
+  </body>
+</html>

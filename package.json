@@ -1,0 +1,19 @@
+{
+  "name": "repo-rss",
+  "version": "1.0.0",
+  "description": "Generate an RSS feed for major and minor updates across selected GitHub repositories.",
+  "main": "dist/generate-feed.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "generate": "npm run build && node dist/generate-feed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3"
+  }
+}
