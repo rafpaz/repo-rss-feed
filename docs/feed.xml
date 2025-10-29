@@ -4,6 +4,7 @@
     <title>Major &amp; Minor Releases Feed</title>
     <link>https://example.com/rss</link>
     <description>Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.</description>
+<<<<<<< Updated upstream
     <lastBuildDate>Wed, 29 Oct 2025 11:15:48 GMT</lastBuildDate>
     
     <item>
@@ -4109,5 +4110,9 @@ Read the [React 19 Upgrade Guide](https://react.dev/blog/2024/04/25/react-19-upg
 
 * Add support for `useId()` inside Server Components. ([@gnoff](https://github.com/gnoff)) in [#24172](https://github.com/facebook/react/pull/24172)]]></description>
     </item>
+=======
+    <lastBuildDate>Wed, 29 Oct 2025 11:19:27 GMT</lastBuildDate>
+    
+>>>>>>> Stashed changes
   </channel>
 </rss>

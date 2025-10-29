@@ -137,7 +137,7 @@ async function fetchReleasesForRepo({
       tagName: release.tag_name ?? 'unknown',
       publishedAt: release.published_at ?? release.created_at,
       description: release.body ?? '',
-      id: String(release.id ?? `${slug}@${release.tag_name}`),
+      id: release.html_url ?? `${slug}@${release.tag_name}`,
       name: release.name ?? `${slug} ${release.tag_name}`,
     }));
 }
@@ -200,7 +200,7 @@ function buildRssFeed(items: FeedItem[]): string {
     <item>
       <title>${escapeXml(title)}</title>
       <link>${escapeXml(item.htmlUrl)}</link>
-      <guid isPermaLink="false">${escapeXml(item.id)}</guid>
+      <guid${item.id === item.htmlUrl ? ' isPermaLink="true"' : ' isPermaLink="false"'}>${escapeXml(item.id)}</guid>
       <pubDate>${escapeXml(formatRssDate(item.publishedAt))}</pubDate>
       ${description}
     </item>`;
