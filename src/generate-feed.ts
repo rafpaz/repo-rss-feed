@@ -62,6 +62,9 @@ const SITE_DESCRIPTION =
   'Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.';
 // Replace once published with the GitHub Pages URL.
 const SITE_LINK = 'https://example.com/rss';
+const SITE_LANGUAGE = 'en';
+const SITE_TTL = 180;
+const SITE_GENERATOR = 'repo-rss generator';
 
 const DEFAULT_MAX_RELEASES_PER_REPO = 10;
 
@@ -196,44 +199,98 @@ function renderMarkdownToHtml(markdown: string): string {
   return html.trim();
 }
 
-function wrapInCdata(html: string): string {
-  const safeHtml = html.replace(/\]\]>/g, ']]]]><![CDATA[>');
-  return `<description><![CDATA[${safeHtml}]]></description>`;
+function wrapInCdata(tagName: string, value: string): string {
+  const safeValue = value.replace(/\]\]>/g, ']]]]><![CDATA[>');
+  return `<${tagName}><![CDATA[${safeValue}]]></${tagName}>`;
+}
+
+function stripHtmlTags(value: string): string {
+  return value
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function buildSummary(html: string): string {
+  const fallback = 'No release notes provided.';
+  if (!html) {
+    return fallback;
+  }
+
+  const text = stripHtmlTags(html);
+  if (!text) {
+    return fallback;
+  }
+
+  const MAX_LENGTH = 300;
+  if (text.length <= MAX_LENGTH) {
+    return text;
+  }
+
+  return `${text.slice(0, MAX_LENGTH - 3).trim()}...`;
+}
+
+function buildFeedUrl(siteLink: string): string {
+  const normalized = siteLink.endsWith('/') ? siteLink : `${siteLink}/`;
+  return `${normalized}feed.xml`;
 }
 
 function buildRssFeed(items: FeedItem[]): string {
+  const feedUrl = buildFeedUrl(SITE_LINK);
   const feedItems = items
     .sort(
       (a, b) => new Date(b.publishedAt ?? 0).getTime() - new Date(a.publishedAt ?? 0).getTime(),
     )
     .map((item) => {
       const title = `${item.repoSlug} ${item.tagName}`;
-      const description = item.descriptionHtml
-        ? wrapInCdata(item.descriptionHtml)
-        : '<description><p>No release notes provided.</p></description>';
+      const summary = buildSummary(item.descriptionHtml);
+      const descriptionElement = `<description>${escapeXml(summary)}</description>`;
+      const contentHtml = item.descriptionHtml || '<p>No release notes provided.</p>';
+      const contentElement = wrapInCdata('content:encoded', contentHtml);
+      const [owner, repo] = item.repoSlug.split('/');
+      const repoUrl = `https://github.com/${item.repoSlug}`;
 
-      return `
-    <item>
-      <title>${escapeXml(title)}</title>
-      <link>${escapeXml(item.htmlUrl)}</link>
-      <guid${item.id === item.htmlUrl ? ' isPermaLink="true"' : ' isPermaLink="false"'}>${escapeXml(item.id)}</guid>
-      <pubDate>${escapeXml(formatRssDate(item.publishedAt))}</pubDate>
-      ${description}
-    </item>`;
+      return [
+        '    <item>',
+        `      <title>${escapeXml(title)}</title>`,
+        `      <link>${escapeXml(item.htmlUrl)}</link>`,
+        `      <guid${item.id === item.htmlUrl ? ' isPermaLink="true"' : ' isPermaLink="false"'}>${escapeXml(item.id)}</guid>`,
+        `      <pubDate>${escapeXml(formatRssDate(item.publishedAt))}</pubDate>`,
+        `      ${descriptionElement}`,
+        `      ${contentElement}`,
+        owner ? `      <category>${escapeXml(owner)}</category>` : undefined,
+        repo ? `      <category>${escapeXml(repo)}</category>` : undefined,
+        `      <source url="${escapeXml(repoUrl)}">${escapeXml(item.repoSlug)}</source>`,
+        '    </item>',
+      ]
+        .filter(Boolean)
+        .join('\n');
     })
     .join('');
 
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>${escapeXml(SITE_TITLE)}</title>
-    <link>${escapeXml(SITE_LINK)}</link>
-    <description>${escapeXml(SITE_DESCRIPTION)}</description>
-    <lastBuildDate>${escapeXml(formatRssDate(new Date().toISOString()))}</lastBuildDate>
-    ${feedItems}
-  </channel>
-</rss>
-`;
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<rss version="2.0"',
+    '  xmlns:atom="http://www.w3.org/2005/Atom"',
+    '  xmlns:content="http://purl.org/rss/1.0/modules/content/">',
+    '  <channel>',
+    `    <title>${escapeXml(SITE_TITLE)}</title>`,
+    `    <link>${escapeXml(SITE_LINK)}</link>`,
+    `    <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />`,
+    `    <description>${escapeXml(SITE_DESCRIPTION)}</description>`,
+    `    <language>${escapeXml(SITE_LANGUAGE)}</language>`,
+    '    <docs>https://www.rssboard.org/rss-specification</docs>',
+    `    <generator>${escapeXml(SITE_GENERATOR)}</generator>`,
+    `    <lastBuildDate>${escapeXml(formatRssDate(new Date().toISOString()))}</lastBuildDate>`,
+    `    <ttl>${SITE_TTL}</ttl>`,
+    feedItems,
+    '  </channel>',
+    '</rss>',
+    '',
+  ].join('\n');
 }
 
 async function ensureOutputDir(): Promise<void> {

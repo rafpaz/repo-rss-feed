@@ -7,6 +7,7 @@
     "jellyfin/jellyfin",
     "LegendApp/legend-state",
     "payloadcms/payload",
-    "novuhq/novunovuhq/novu"
+    "novuhq/novunovuhq/novu",
+    "Kong/insomnia"
   ]
 }

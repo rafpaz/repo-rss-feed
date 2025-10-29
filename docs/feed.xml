@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Major &amp; Minor Releases Feed</title>
     <link>https://example.com/rss</link>
+    <atom:link href="https://example.com/rss/feed.xml" rel="self" type="application/rss+xml" />
     <description>Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.</description>
+<<<<<<< Updated upstream
     <lastBuildDate>Wed, 29 Oct 2025 15:07:32 GMT</lastBuildDate>
     
+=======
+    <language>en</language>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <generator>repo-rss generator</generator>
+    <lastBuildDate>Wed, 29 Oct 2025 15:24:43 GMT</lastBuildDate>
+    <ttl>180</ttl>
+>>>>>>> Stashed changes
     <item>
       <title>nodejs/node v25.1.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.1.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.1.0</guid>
       <pubDate>Tue, 28 Oct 2025 19:20:08 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes [ 4395fe14b9 ] - (SEMVER-MINOR) http : add optimizeEmptyRequests server option (Rafael Gonzaga) #59778 [ 2e55c6ad04 ] - (SEMVER-MINOR) sqlite : allow setting defensive flag (Bart Louwers) #60217 [ f437204491 ] - (SEMVER-MINOR) src : add watch config namespace (Marco Ippolito) #601...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>[<a href="https://github.com/nodejs/node/commit/4395fe14b9"><code>4395fe14b9</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>http</strong>: add optimizeEmptyRequests server option (Rafael Gonzaga) <a href="https://github.com/nodejs/node/pull/59778">#59778</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/2e55c6ad04"><code>2e55c6ad04</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>sqlite</strong>: allow setting defensive flag (Bart Louwers) <a href="https://github.com/nodejs/node/pull/60217">#60217</a></li>
@@ -101,26 +117,52 @@
 <li>[<a href="https://github.com/nodejs/node/commit/9e6d6cec59"><code>9e6d6cec59</code></a>] - <strong>util</strong>: mark special properties when inspecting them (Ruben Bridgewater) <a href="https://github.com/nodejs/node/pull/60131">#60131</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/79b2387fd9"><code>79b2387fd9</code></a>] - <strong>vm</strong>: make vm.Module.evaluate() conditionally synchronous (Joyee Cheung) <a href="https://github.com/nodejs/node/pull/60205">#60205</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/e5559f3be3"><code>e5559f3be3</code></a>] - <strong>win</strong>: upgrade Visual Studio workload from 2019 to 2022 (Jiawen Geng) <a href="https://github.com/nodejs/node/pull/60318">#60318</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v24.11.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.11.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.11.0</guid>
       <pubDate>Tue, 28 Oct 2025 17:45:20 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes This release marks the transition of Node.js 24.x into Long Term Support (LTS) with the codename &amp;#39;Krypton&amp;#39;. It will continue to receive updates through to the end of April 2028. Other than updating metadata, such as the process.release object, to reflect that the release i...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <p>This release marks the transition of Node.js 24.x into Long Term Support (LTS)
 with the codename &#39;Krypton&#39;. It will continue to receive updates through to
 the end of April 2028.</p>
 <p>Other than updating metadata, such as the <code>process.release</code> object, to reflect
+<<<<<<< Updated upstream
 that the release is LTS, no further changes from Node.js 24.10.0 are included.</p>]]></description>
     </item>
     <item>
+=======
+that the release is LTS, no further changes from Node.js 24.10.0 are included.</p>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.61.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.61.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.61.0</guid>
       <pubDate>Thu, 23 Oct 2025 15:46:00 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.60.0...v3.61.0">v3.61.0</a> (2025-10-23)</h2>
+=======
+      <description>v3.61.0 (2025-10-23) 🚀 Features @payloadcms/plugin-mcp Released (BETA) - New plugin that enables Payload to function as an MCP server, allowing AI models to interact with your collections through a standardized protocol. The plugin provides built-in tools for CRUD operations on collections and s...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.60.0...v3.61.0">v3.61.0</a> (2025-10-23)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li><strong>@payloadcms/plugin-mcp Released (BETA)</strong> - New plugin that enables Payload to function as an MCP server, allowing AI models to interact with your collections through a standardized protocol. The plugin provides built-in tools for CRUD operations on collections and supports custom tools. <a href="https://github.com/payloadcms/payload/pull/13674">#13674</a><ul>
@@ -193,14 +235,27 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
 <li>Sasha (@r1tsuu)</li>
 <li>Ahmed Abdellahi Abdat (@ahmed-abdat)</li>
 <li>Said Akhrarov (@akhrarovsaid)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>vercel/next.js v16.0.0</title>
       <link>https://github.com/vercel/next.js/releases/tag/v16.0.0</link>
       <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.0.0</guid>
       <pubDate>Wed, 22 Oct 2025 00:35:18 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<blockquote>
+=======
+      <description>[!TIP] Check out our Next v16 Blog Post to learn more about this release. Core Changes Development: Don&amp;#39;t import app-router / hot-reloader through next/link in application code: #83656 Remove clientParamParsing requirement from RDC for Navigations: #83661 Upgrade React from 6b70072c-20250909...</description>
+      <content:encoded><![CDATA[<blockquote>
+>>>>>>> Stashed changes
 <p>[!TIP]<br><strong>Check out our Next v16 <a href="https://nextjs.org/blog/next-16">Blog Post</a> to learn more about this release.</strong></p>
 </blockquote>
 <h3>Core Changes</h3>
@@ -937,14 +992,27 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
 <li>docs: upgrade from 15 to 16: #85176</li>
 </ul>
 <h3>Credits</h3>
+<<<<<<< Updated upstream
 <p>Huge thanks to @mischnic, @timneutkens, @unstubbable, @wyattjoh, @Cy-Tek, @lukesandberg, @OoMNoO, @ztanner, @icyJoseph, @huozhi, @gnoff, @ijjk, @povilasv, @dwrth, @obendev, @aymericzip, @devjiwonchoi, @SyMind, @vercel-release-bot, @Shireee, @eps1lon, @dharun36, @kachkaev, @bgw, @yousefdawood7, @TheAlexLichter, @sokra, @ericx0099, @leerob, @Copilot, @fireairforce, @fufuShih, @anvibanga, @hayes, @Milancen123, @martinfrancois, @lubieowoce, @gaojude, @lachlanjc, @liketiger, @styfle, @aaronbrown-vercel, @Samii2383, @FelipeChicaiza, @kevva, @m1abdullahh, @F7b5, @Anshuman71, @RobertFent, @poteto, @chloe-yan, @sireesha-siri, @brian-lou, @joao4xz, @stefanprobst, @samselikoff, @acdlite, @gwkline, @bgub, @brock-statsig, @karlhorky, @feedthejim, @CarloQuick, @greguintow, @hallucinogenizer, @sebmarkbage, @delbaoliveira, @makandrr, @seeplusplus, and @serhalp for helping!</p>]]></description>
     </item>
     <item>
+=======
+<p>Huge thanks to @mischnic, @timneutkens, @unstubbable, @wyattjoh, @Cy-Tek, @lukesandberg, @OoMNoO, @ztanner, @icyJoseph, @huozhi, @gnoff, @ijjk, @povilasv, @dwrth, @obendev, @aymericzip, @devjiwonchoi, @SyMind, @vercel-release-bot, @Shireee, @eps1lon, @dharun36, @kachkaev, @bgw, @yousefdawood7, @TheAlexLichter, @sokra, @ericx0099, @leerob, @Copilot, @fireairforce, @fufuShih, @anvibanga, @hayes, @Milancen123, @martinfrancois, @lubieowoce, @gaojude, @lachlanjc, @liketiger, @styfle, @aaronbrown-vercel, @Samii2383, @FelipeChicaiza, @kevva, @m1abdullahh, @F7b5, @Anshuman71, @RobertFent, @poteto, @chloe-yan, @sireesha-siri, @brian-lou, @joao4xz, @stefanprobst, @samselikoff, @acdlite, @gwkline, @bgub, @brock-statsig, @karlhorky, @feedthejim, @CarloQuick, @greguintow, @hallucinogenizer, @sebmarkbage, @delbaoliveira, @makandrr, @seeplusplus, and @serhalp for helping!</p>]]></content:encoded>
+      <category>vercel</category>
+      <category>next.js</category>
+      <source url="https://github.com/vercel/next.js">vercel/next.js</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v22.21.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.21.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.21.0</guid>
       <pubDate>Mon, 20 Oct 2025 23:56:15 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes [ 1486fedea1 ] - (SEMVER-MINOR) cli : add --use-env-proxy (Joyee Cheung) #59151 [ bedaaa11fc ] - (SEMVER-MINOR) http : support http proxy for fetch under NODE_USE_ENV_PROXY (Joyee Cheung) #57165 [ af8b5fa29d ] - (SEMVER-MINOR) http : add shouldUpgradeCallback to let servers contro...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>[<a href="https://github.com/nodejs/node/commit/1486fedea1"><code>1486fedea1</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>cli</strong>: add <code>--use-env-proxy</code> (Joyee Cheung) <a href="https://github.com/nodejs/node/pull/59151">#59151</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/bedaaa11fc"><code>bedaaa11fc</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>http</strong>: support http proxy for fetch under <code>NODE_USE_ENV_PROXY</code> (Joyee Cheung) <a href="https://github.com/nodejs/node/pull/57165">#57165</a></li>
@@ -1043,14 +1111,27 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
 <li>[<a href="https://github.com/nodejs/node/commit/312b33a083"><code>312b33a083</code></a>] - <strong>vm</strong>: &quot;afterEvaluate&quot;, evaluate() return a promise from the outer context (Eric Rannaud) <a href="https://github.com/nodejs/node/pull/59801">#59801</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/1eadab863c"><code>1eadab863c</code></a>] - <strong>win,tools</strong>: add description to signature (Martin Costello) <a href="https://github.com/nodejs/node/pull/59877">#59877</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/816e1befb1"><code>816e1befb1</code></a>] - <strong>zlib</strong>: reduce code duplication (jhofstee) <a href="https://github.com/nodejs/node/pull/57810">#57810</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
       <guid isPermaLink="true">https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</guid>
       <pubDate>Mon, 20 Oct 2025 00:45:19 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h1>:rocket: Jellyfin Server 10.11.0</h1>
+=======
+      <description>:rocket: Jellyfin Server 10.11.0 We are pleased to announce the latest stable release of Jellyfin, version 10.11.0! This major release brings many new features, improvements, and bugfixes to improve your Jellyfin experience. As always, please ensure you stop your Jellyfin server and take a full b...</description>
+      <content:encoded><![CDATA[<h1>:rocket: Jellyfin Server 10.11.0</h1>
+>>>>>>> Stashed changes
 <p>We are pleased to announce the latest stable release of Jellyfin, version 10.11.0!</p>
 <p>This major release brings many new features, improvements, and bugfixes to improve your Jellyfin experience.</p>
 <p>As always, please ensure you stop your Jellyfin server and take a full backup before upgrading!</p>
@@ -1461,14 +1542,27 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
 <li>Added + in username regex validator, Test + in username, issue #10414 [PR #12819], by @SethPattee</li>
 <li>Auto update issue template version on new release [PR #12893], by @HadrienPatte</li>
 <li>Update issue template version from 10.9.11 to 10.10.0 [PR #12882], by @HadrienPatte</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>jellyfin</category>
+      <category>jellyfin</category>
+      <source url="https://github.com/jellyfin/jellyfin">jellyfin/jellyfin</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.60.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.60.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.60.0</guid>
       <pubDate>Thu, 16 Oct 2025 16:48:15 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.59.1...v3.60.0">v3.60.0</a> (2025-10-16)</h2>
+=======
+      <description>v3.60.0 (2025-10-16) 🚀 Features accept multiple locales in fallbackLocale ( #13822 ) ( 623a1b8 ) adds settingsMenu to admin navigation sidebar ( #14139 ) ( ee8b3cf ) plugin-multi-tenant: allow collection access to be overridden via callback ( #14127 ) ( c40eec2 ) plugin-multi-tenant: allow hasMa...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.59.1...v3.60.0">v3.60.0</a> (2025-10-16)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>accept multiple locales in fallbackLocale (<a href="https://github.com/payloadcms/payload/issues/13822">#13822</a>) (<a href="https://github.com/payloadcms/payload/commit/623a1b8">623a1b8</a>)</li>
@@ -1634,14 +1728,27 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
 <li>Jarrod Flesch (@JarrodMFlesch)</li>
 <li>Alessio Gravili (@AlessioGr)</li>
 <li>Diogo Gaspar (@shadowoff09)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v25.0.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.0.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.0.0</guid>
       <pubDate>Wed, 15 Oct 2025 17:20:43 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<p>Node.js 25 is here! We have upgraded V8 to <strong>14.1</strong>, bringing major <code>JSON.stringify</code>
+=======
+      <description>Node.js 25 is here! We have upgraded V8 to 14.1 , bringing major JSON.stringify performance improvements, built-in Uint8Array base64/hex conversion, and ongoing WebAssembly and JIT pipeline optimizations. This release doubles down on secure-by-default apps and web-standard APIs: the permission mo...</description>
+      <content:encoded><![CDATA[<p>Node.js 25 is here! We have upgraded V8 to <strong>14.1</strong>, bringing major <code>JSON.stringify</code>
+>>>>>>> Stashed changes
 performance improvements, built-in <code>Uint8Array</code> base64/hex conversion, and ongoing
 WebAssembly and JIT pipeline optimizations.</p>
 <p>This release doubles down on secure-by-default apps and web-standard APIs: the permission
@@ -1827,14 +1934,27 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
 <li>[<a href="https://github.com/nodejs/node/commit/23b834058c"><code>23b834058c</code></a>] - <strong>wasm</strong>: revert enable JSPI as already enabled (Guy Bedford) <a href="https://github.com/nodejs/node/pull/60014">#60014</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/4bfcad1ac5"><code>4bfcad1ac5</code></a>] - <em><strong>Revert</strong></em> &quot;<strong>watch</strong>: fix watch args not being properly filtered&quot; (Joyee Cheung) <a href="https://github.com/nodejs/node/pull/58190">#58190</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/4acb854039"><code>4acb854039</code></a>] - <strong>watch</strong>: fix watch args not being properly filtered (Dario Piotrowicz) <a href="https://github.com/nodejs/node/pull/57936">#57936</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v24.10.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.10.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.10.0</guid>
       <pubDate>Sat, 11 Oct 2025 16:18:16 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes [ 31bb476895 ] - (SEMVER-MINOR) console : allow per-stream inspectOptions option (Anna Henningsen) #60082 [ 3b92be2fb8 ] - (SEMVER-MINOR) lib : remove util.getCallSite (Rafael Gonzaga) #59980 [ 18c79d9e1c ] - (SEMVER-MINOR) sqlite : create authorization api (Guilherme Araújo) #599...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>[<a href="https://github.com/nodejs/node/commit/31bb476895"><code>31bb476895</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>console</strong>: allow per-stream <code>inspectOptions</code> option (Anna Henningsen) <a href="https://github.com/nodejs/node/pull/60082">#60082</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/3b92be2fb8"><code>3b92be2fb8</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>lib</strong>: remove util.getCallSite (Rafael Gonzaga) <a href="https://github.com/nodejs/node/pull/59980">#59980</a></li>
@@ -1917,14 +2037,27 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
 <li>[<a href="https://github.com/nodejs/node/commit/275c07064c"><code>275c07064c</code></a>] - <strong>typings</strong>: update &#39;types&#39; binding (René) <a href="https://github.com/nodejs/node/pull/59692">#59692</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/8c21c4b286"><code>8c21c4b286</code></a>] - <strong>wasi</strong>: fix WasiFunction fast call signature (Renegade334) <a href="https://github.com/nodejs/node/pull/59600">#59600</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/b865074641"><code>b865074641</code></a>] - <strong>win,tools</strong>: add description to signature (Martin Costello) <a href="https://github.com/nodejs/node/pull/59877">#59877</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.59.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.59.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.59.0</guid>
       <pubDate>Tue, 07 Oct 2025 14:23:55 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.58.0...v3.59.0">v3.59.0</a> (2025-10-07)</h2>
+=======
+      <description>v3.59.0 (2025-10-07) 🚀 Features slug field ( #14007 ) ( b09ae67 ) support any depth for relationships in findDistinct ( #14090 ) ( e4f8478 ) adds disableGroupBy to fields admin props ( #14017 ) ( 537f58b ) allow findDistinct on fields nested to relationships and on virtual fields ( #14026 ) ( 9d...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.58.0...v3.59.0">v3.59.0</a> (2025-10-07)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>slug field (<a href="https://github.com/payloadcms/payload/issues/14007">#14007</a>) (<a href="https://github.com/payloadcms/payload/commit/b09ae67">b09ae67</a>)</li>
@@ -2033,14 +2166,27 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
 <li>Aurimar Lopes (@AurimarL)</li>
 <li>Jan Beck (@jancbeck)</li>
 <li>Tobias Odendahl (@tak-amboss)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>facebook/react v19.2.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.2.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.2.0</guid>
       <pubDate>Wed, 01 Oct 2025 21:50:48 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<p>Below is a list of all new features, APIs, and bug fixes.</p>
+=======
+      <description>Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features &amp;lt;Activity&amp;gt; : A new API to hide and restore the UI and internal state of its children. useEffectEvent is a React Hook that lets you extract non-reactive logic i...</description>
+      <content:encoded><![CDATA[<p>Below is a list of all new features, APIs, and bug fixes.</p>
+>>>>>>> Stashed changes
 <p>Read the <a href="https://react.dev/blog/2025/10/01/react-19-2">React 19.2 release post</a> for more information.</p>
 <h2>New React Features</h2>
 <ul>
@@ -2121,14 +2267,27 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
 <li><strong>New Violations:</strong> Disallow calling <code>useEffectEvent</code> functions in arbitrary closures. (<a href="https://github.com/jbrown215">@jbrown215</a> in <a href="https://github.com/facebook/react/pull/33544">#33544</a>)</li>
 <li>Handle <code>React.useEffect</code> in addition to <code>useEffect</code> in rules-of-hooks. (<a href="https://github.com/Ayc0">@Ayc0</a> in <a href="https://github.com/facebook/react/pull/34076">#34076</a>)</li>
 <li>Added <code>react-hooks</code> settings config option that to accept <code>additionalEffectHooks</code> that are used across exhaustive-deps and rules-of-hooks rules. (<a href="https://github.com/jbrown215">@jbrown215</a>) in <a href="https://github.com/facebook/react/pull/34497">#34497</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.58.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.58.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.58.0</guid>
       <pubDate>Tue, 30 Sep 2025 13:30:57 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.57.0...v3.58.0">v3.58.0</a> (2025-09-30)</h2>
+=======
+      <description>v3.58.0 (2025-09-30) 🚀 Features Ecommerce plugin and template ( #8297 ) ( ef4874b ) The Ecommerce Template and Plugin is now ready in beta, you can get started by running the Payload CPA command below pnpx create-payload-app my-project -t ecommerce Full docs are available on our website Payload...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.57.0...v3.58.0">v3.58.0</a> (2025-09-30)</h2>
+>>>>>>> Stashed changes
 <h2>🚀 Features</h2>
 <h3>Ecommerce plugin and template (<a href="https://github.com/payloadcms/payload/issues/8297">#8297</a>) (<a href="https://github.com/payloadcms/payload/commit/ef4874b">ef4874b</a>)</h3>
 <p>The <a href="https://github.com/payloadcms/payload/tree/main/templates/ecommerce">Ecommerce Template</a> and Plugin is now ready in beta, you can get started by running the Payload CPA command below</p>
@@ -2193,14 +2352,27 @@ const posts = await sdk.find({
 <li>Jacob Fletcher (@jacobsfletch)</li>
 <li>Jarrod Flesch (@JarrodMFlesch)</li>
 <li>Luke Sandberg (@lukesandberg)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v24.9.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.9.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.9.0</guid>
       <pubDate>Thu, 25 Sep 2025 19:52:13 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes [ 9b043a9096 ] - (SEMVER-MINOR) http : add shouldUpgradeCallback to let servers control HTTP upgrades (Tim Perry) #59824 [ a6456ab90a ] - (SEMVER-MINOR) sqlite : cleanup ERM support and export Session class (James M Snell) #58378 [ 5563361d22 ] - (SEMVER-MINOR) sqlite : add tagged...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>[<a href="https://github.com/nodejs/node/commit/9b043a9096"><code>9b043a9096</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>http</strong>: add shouldUpgradeCallback to let servers control HTTP upgrades (Tim Perry) <a href="https://github.com/nodejs/node/pull/59824">#59824</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/a6456ab90a"><code>a6456ab90a</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>sqlite</strong>: cleanup ERM support and export Session class (James M Snell) <a href="https://github.com/nodejs/node/pull/58378">#58378</a></li>
@@ -2281,14 +2453,27 @@ const posts = await sdk.find({
 <li>[<a href="https://github.com/nodejs/node/commit/49747a58a3"><code>49747a58a3</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>worker</strong>: add heap profile API (theanarkh) <a href="https://github.com/nodejs/node/pull/59846">#59846</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/b970c0bbc2"><code>b970c0bbc2</code></a>] - <strong>zlib</strong>: reduce code duplication (jhofstee) <a href="https://github.com/nodejs/node/pull/57810">#57810</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/9782ca2b1b"><code>9782ca2b1b</code></a>] - <strong>zlib</strong>: implement fast path for crc32 (Gürgün Dayıoğlu) <a href="https://github.com/nodejs/node/pull/59813">#59813</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.57.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.57.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.57.0</guid>
       <pubDate>Thu, 25 Sep 2025 16:55:50 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.56.0...v3.57.0">v3.57.0</a> (2025-09-25)</h2>
+=======
+      <description>v3.57.0 (2025-09-25) 🚀 Features adds admin.formatDocURL function to control list view linking ( #13773 ) ( 1d1240f ) conditional blocks ( #13801 ) ( d8dace6 ) support hasMany virtual relationship fields ( #13879 ) ( 1072171 ) next: regenerate live preview url on save ( #13631 ) ( 00a673e ) plugi...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.56.0...v3.57.0">v3.57.0</a> (2025-09-25)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>adds admin.formatDocURL function to control list view linking (<a href="https://github.com/payloadcms/payload/issues/13773">#13773</a>) (<a href="https://github.com/payloadcms/payload/commit/1d1240f">1d1240f</a>)</li>
@@ -2388,14 +2573,27 @@ const posts = await sdk.find({
 <li>Jens Becker (@jhb-dev)</li>
 <li>Sean Zubrickas (@zubricks)</li>
 <li>Kwan Jun Wen (@junwen-k)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v22.20.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.20.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.20.0</guid>
       <pubDate>Wed, 24 Sep 2025 14:04:23 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes OpenSSL updated to 3.5.2 For official Node.js builds, or builds using the default build configuration, Node.js now bundles OpenSSL 3.5.2. This update allows Node.js 22.x to be supported through to the planned End-of-Life date of 2027-04-30 as the previously bundled OpenSSL 3.0.x g...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <h4>OpenSSL updated to 3.5.2</h4>
 <p>For official Node.js builds, or builds using the default build configuration, Node.js now bundles OpenSSL 3.5.2. This update allows Node.js 22.x to be supported through to the planned End-of-Life date of 2027-04-30 as the previously bundled OpenSSL 3.0.x goes out of support in September 2026.</p>
 <p>This change does not affect third-party builds of Node.js that link to an external OpenSSL (or OpenSSL-compatible) library.</p>
@@ -2586,14 +2784,27 @@ const posts = await sdk.find({
 <li>[<a href="https://github.com/nodejs/node/commit/c5a93a3355"><code>c5a93a3355</code></a>] - <strong>worker</strong>: fix worker name with \0 (theanarkh) <a href="https://github.com/nodejs/node/pull/59214">#59214</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/a5ed96bb97"><code>a5ed96bb97</code></a>] - <strong>worker</strong>: add worker name to report (theanarkh) <a href="https://github.com/nodejs/node/pull/58935">#58935</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/98cd7e27d4"><code>98cd7e27d4</code></a>] - <strong>worker</strong>: add name for worker (theanarkh) <a href="https://github.com/nodejs/node/pull/59213">#59213</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.56.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.56.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.56.0</guid>
       <pubDate>Wed, 17 Sep 2025 13:35:59 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.55.1...v3.56.0">v3.56.0</a> (2025-09-17)</h2>
+=======
+      <description>v3.56.0 (2025-09-17) 🚀 Features pass args to task onSuccess and onFail callbacks ( #13269 ) ( 3acdbf6 ) crons for all bin scripts, new jobs:handle-schedules script, more reliable job system crons ( #13564 ) ( cdeb828 ) expose multipart/form-data parsing options ( #13766 ) ( 8282031 ) global befo...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.55.1...v3.56.0">v3.56.0</a> (2025-09-17)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>pass args to task <code>onSuccess</code> and <code>onFail</code> callbacks (<a href="https://github.com/payloadcms/payload/issues/13269">#13269</a>) (<a href="https://github.com/payloadcms/payload/commit/3acdbf6">3acdbf6</a>)</li>
@@ -2661,14 +2872,27 @@ const posts = await sdk.find({
 <li>Robbert Stevens (@robbertstevens)</li>
 <li>Anders Semb Hermansen (@andershermansen)</li>
 <li>German Jablonski (@GermanJablo)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v24.8.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.8.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.8.0</guid>
       <pubDate>Wed, 10 Sep 2025 19:46:04 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes HTTP/2 Network Inspection Support in Node.js Node.js now supports inspection of HTTP/2 network calls in Chrome DevTools for Node.js. Usage Write a test.js script that makes HTTP/2 requests. const http2 = require(&amp;#39;node:http2&amp;#39;); const client = http2.connect(&amp;#39;https://nght...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <h4>HTTP/2 Network Inspection Support in Node.js</h4>
 <p>Node.js now supports inspection of HTTP/2 network calls in Chrome DevTools for Node.js.</p>
 <h5>Usage</h5>
@@ -2801,14 +3025,27 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
 <li>[<a href="https://github.com/nodejs/node/commit/c16163511d"><code>c16163511d</code></a>] - <strong>wasi</strong>: fix <code>clean</code> target in <code>test/wasi/Makefile</code> (Antoine du Hamel) <a href="https://github.com/nodejs/node/pull/59576">#59576</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/2e54411cb6"><code>2e54411cb6</code></a>] - <strong>worker</strong>: optimize cpu profile implement (theanarkh) <a href="https://github.com/nodejs/node/pull/59683">#59683</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/d6d05ba397"><code>d6d05ba397</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>worker</strong>: add cpu profile APIs for worker (theanarkh) <a href="https://github.com/nodejs/node/pull/59428">#59428</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.55.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.55.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.55.0</guid>
       <pubDate>Tue, 09 Sep 2025 16:04:11 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.54.0...v3.55.0">v3.55.0</a> (2025-09-09)</h2>
+=======
+      <description>v3.55.0 (2025-09-09) 🚀 Features adds disableListColumn and disableListFilter to imageSize admin props ( #13699 ) ( e1ea074 ) unauthenticated client config ( #13714 ) ( e49005f ) adds new experimental.localizeStatus option ( #13207 ) ( 0f6d748 ) live-preview: client-side live preview: simplify po...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.54.0...v3.55.0">v3.55.0</a> (2025-09-09)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>adds disableListColumn and disableListFilter to imageSize admin props (<a href="https://github.com/payloadcms/payload/issues/13699">#13699</a>) (<a href="https://github.com/payloadcms/payload/commit/e1ea074">e1ea074</a>)</li>
@@ -2891,14 +3128,27 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
 <li>Jessica Rynkar (@jessrynkar)</li>
 <li>reiv (@reiv)</li>
 <li>Riley Langbein (@rilrom)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v22.19.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.19.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.19.0</guid>
       <pubDate>Thu, 28 Aug 2025 21:21:17 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes [ 8e2076a24f ] - (SEMVER-MINOR) cli : add NODE_USE_SYSTEM_CA=1 (Joyee Cheung) #59276 [ e592d739c2 ] - (SEMVER-MINOR) cli : support ${pid} placeholder in --cpu-prof-name (Haram Jeong) #59072 [ cda1dab6e2 ] - (SEMVER-MINOR) crypto : add tls.setDefaultCACertificates() (Joyee Cheung)...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>[<a href="https://github.com/nodejs/node/commit/8e2076a24f"><code>8e2076a24f</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>cli</strong>: add <code>NODE_USE_SYSTEM_CA=1</code> (Joyee Cheung) <a href="https://github.com/nodejs/node/pull/59276">#59276</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/e592d739c2"><code>e592d739c2</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>cli</strong>: support <code>${pid}</code> placeholder in <code>--cpu-prof-name</code> (Haram Jeong) <a href="https://github.com/nodejs/node/pull/59072">#59072</a></li>
@@ -3047,14 +3297,27 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
 <li>[<a href="https://github.com/nodejs/node/commit/e22dddf859"><code>e22dddf859</code></a>] - <strong>util</strong>: respect nested formats in styleText (Alex Yang) <a href="https://github.com/nodejs/node/pull/59098">#59098</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/491f390515"><code>491f390515</code></a>] - <strong>worker</strong>: add cpuUsage for worker (theanarkh) <a href="https://github.com/nodejs/node/pull/59177">#59177</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/8e697d1884"><code>8e697d1884</code></a>] - <strong>(SEMVER-MINOR)</strong> <strong>zlib</strong>: add dictionary support to zstdCompress and zstdDecompress (lluisemper) <a href="https://github.com/nodejs/node/pull/59240">#59240</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.54.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.54.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.54.0</guid>
       <pubDate>Thu, 28 Aug 2025 13:53:25 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.53.0...v3.54.0">v3.54.0</a> (2025-08-28)</h2>
+=======
+      <description>v3.54.0 (2025-08-28) 🚀 Features support parallel job queue tasks, speed up task running ( #13614 ) ( e0ffada ) configurable toast notifications ( #13609 ) ( 0a18306 ) allow multiple, different payload instances using getPayload in same process ( #13603 ) ( 13c24af ) db-*: support atomic array $p...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.53.0...v3.54.0">v3.54.0</a> (2025-08-28)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>support parallel job queue tasks, speed up task running (<a href="https://github.com/payloadcms/payload/issues/13614">#13614</a>) (<a href="https://github.com/payloadcms/payload/commit/e0ffada">e0ffada</a>)</li>
@@ -3112,14 +3375,27 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
 <li>Logan Stellway (@lstellway)</li>
 <li>Yunsup Sim (@SimYunSup)</li>
 <li>Vincent Vu (@rubixvi)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>nodejs/node v24.7.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.7.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.7.0</guid>
       <pubDate>Wed, 27 Aug 2025 21:32:42 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Notable Changes</h3>
+=======
+      <description>Notable Changes Post-Quantum Cryptography in node:crypto OpenSSL 3.5 on 24.x kicked off post-quantum cryptography efforts in Node.js by allowing use of NIST&amp;#39;s post-quantum cryptography standards for future-proofing applications against quantum computing threats. The following post-quantum alg...</description>
+      <content:encoded><![CDATA[<h3>Notable Changes</h3>
+>>>>>>> Stashed changes
 <h4>Post-Quantum Cryptography in <code>node:crypto</code></h4>
 <p>OpenSSL 3.5 on 24.x kicked off post-quantum cryptography efforts in Node.js by
 allowing use of NIST&#39;s post-quantum cryptography standards for future-proofing
@@ -3311,14 +3587,27 @@ the application is run.</p>
 <li>[<a href="https://github.com/nodejs/node/commit/15ae21b88a"><code>15ae21b88a</code></a>] - <strong>util</strong>: add some additional error classes to <code>wellKnownPrototypes</code> (Mark S. Miller) <a href="https://github.com/nodejs/node/pull/59456">#59456</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/c38b7cfa35"><code>c38b7cfa35</code></a>] - <strong>worker</strong>: fix worker name with \0 (theanarkh) <a href="https://github.com/nodejs/node/pull/59214">#59214</a></li>
 <li>[<a href="https://github.com/nodejs/node/commit/f54ace694a"><code>f54ace694a</code></a>] - <strong>worker</strong>: add worker name to report (theanarkh) <a href="https://github.com/nodejs/node/pull/58935">#58935</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>nodejs</category>
+      <category>node</category>
+      <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.53.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.53.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.53.0</guid>
       <pubDate>Thu, 21 Aug 2025 18:33:37 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.52.0...v3.53.0">v3.53.0</a> (2025-08-21)</h2>
+=======
+      <description>v3.53.0 (2025-08-21) 🚀 Features add icelandic translations ( #13423 ) ( 2bdd669 ) plugin-import-export: use groupBy as SortBy when present and sort is unset ( #13491 ) ( a7ed88b ) plugin-import-export: adds sort order control and sync with sort-by field ( #13478 ) ( efdf002 ) plugin-multi-tenant...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.52.0...v3.53.0">v3.53.0</a> (2025-08-21)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li>add icelandic translations (<a href="https://github.com/payloadcms/payload/issues/13423">#13423</a>) (<a href="https://github.com/payloadcms/payload/commit/2bdd669">2bdd669</a>)</li>
@@ -3400,14 +3689,27 @@ the application is run.</p>
 <li>id3er0 (@id3er0)</li>
 <li>Anatoly Kopyl (@anatolykopyl)</li>
 <li>Elliot DeNolf (@denolfe)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>payloadcms/payload v3.52.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.52.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.52.0</guid>
       <pubDate>Fri, 15 Aug 2025 14:48:06 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.51.0...v3.52.0">v3.52.0</a> (2025-08-15)</h2>
+=======
+      <description>v3.52.0 (2025-08-15) 🚀 Features plugin-import-export: adds limit and page fields to export options ( #13380 ) ( c1c68fb ) 🐛 Bug Fixes filter payload- cookies in getExternalFile only if the URL is external ( #13475 ) ( 8d4e7f5 ) db-postgres: ensure index names are not too long ( #13428 ) ( 04751...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.51.0...v3.52.0">v3.52.0</a> (2025-08-15)</h2>
+>>>>>>> Stashed changes
 <h3>🚀 Features</h3>
 <ul>
 <li><strong>plugin-import-export:</strong> adds limit and page fields to export options (<a href="https://github.com/payloadcms/payload/issues/13380">#13380</a>) (<a href="https://github.com/payloadcms/payload/commit/c1c68fb">c1c68fb</a>)</li>
@@ -3440,14 +3742,27 @@ the application is run.</p>
 <li>Dan Ribbens (@DanRibbens)</li>
 <li>Patrik (@PatrikKozak)</li>
 <li>Elliot DeNolf (@denolfe)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>facebook/react v19.1.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.1.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.1.0</guid>
       <pubDate>Fri, 28 Mar 2025 21:02:48 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>Owner Stack</h3>
+=======
+      <description>Owner Stack An Owner Stack is a string representing the components that are directly responsible for rendering a particular component. You can log Owner Stacks when debugging or use Owner Stacks to enhance error overlays or other development tools. Owner Stacks are only available in development b...</description>
+      <content:encoded><![CDATA[<h3>Owner Stack</h3>
+>>>>>>> Stashed changes
 <p>An Owner Stack is a string representing the components that are directly responsible for rendering a particular component. You can log Owner Stacks when debugging or use Owner Stacks to enhance error overlays or other development tools. Owner Stacks are only available in development builds. Component Stacks in production are unchanged.</p>
 <ul>
 <li>An Owner Stack is a development-only stack trace that helps identify which components are responsible for rendering a particular component. An Owner Stack is distinct from a Component Stacks, which shows the hierarchy of components leading to an error.</li>
@@ -3494,14 +3809,27 @@ the application is run.</p>
 <li>Updated the server component wire format to remove IDs for hints and console.log because they have no return value <a href="https://github.com/facebook/react/pull/31671">#31671</a></li>
 <li>Exposed <code>registerServerReference</code> in client builds to handle server references in different environments. <a href="https://github.com/facebook/react/pull/32534">#32534</a></li>
 <li>Added react-server-dom-parcel package which integrates Server Components with the <a href="https://parceljs.org/">Parcel bundler</a> <a href="https://github.com/facebook/react/pull/31725">#31725</a>, <a href="https://github.com/facebook/react/pull/32132">#32132</a>, <a href="https://github.com/facebook/react/pull/31799">#31799</a>, <a href="https://github.com/facebook/react/pull/32294">#32294</a>, <a href="https://github.com/facebook/react/pull/31741">#31741</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>facebook/react v19.0.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.0.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.0.0</guid>
       <pubDate>Thu, 05 Dec 2024 21:05:14 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<p>Below is a list of all new features, APIs, deprecations, and breaking changes. Read <a href="https://react.dev/blog/2024/04/25/react-19">React 19 release post</a> and <a href="https://react.dev/blog/2024/04/25/react-19-upgrade-guide">React 19 upgrade guide</a> for more information.</p>
+=======
+      <description>Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note: To help make the upgrade to React 19 easier, we’ve published a react@18.3 release that is identical to 18.2 but adds warnings for deprec...</description>
+      <content:encoded><![CDATA[<p>Below is a list of all new features, APIs, deprecations, and breaking changes. Read <a href="https://react.dev/blog/2024/04/25/react-19">React 19 release post</a> and <a href="https://react.dev/blog/2024/04/25/react-19-upgrade-guide">React 19 upgrade guide</a> for more information.</p>
+>>>>>>> Stashed changes
 <blockquote>
 <p>Note: To help make the upgrade to React 19 easier, we’ve published a <a href="mailto:react@18.3">react@18.3</a> release that is identical to 18.2 but adds warnings for deprecated APIs and other changes that are needed for React 19. We recommend upgrading to React 18.3.1 first to help identify any issues before upgrading to React 19.</p>
 </blockquote>
@@ -3770,14 +4098,27 @@ or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Acti
 <ul>
 <li>Remove React internals access (<a href="https://github.com/facebook/react/pull/29868">#29868</a> by @phryneas)  </li>
 <li>Fix stale selectors keeping previous store references (<a href="https://github.com/facebook/react/pull/25968">#25969</a> by @jellevoost)</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>jellyfin/jellyfin v10.10.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.10.0</link>
       <guid isPermaLink="true">https://github.com/jellyfin/jellyfin/releases/tag/v10.10.0</guid>
       <pubDate>Sat, 26 Oct 2024 17:33:00 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h1>:rocket: Jellyfin Server 10.10.0</h1>
+=======
+      <description>:rocket: Jellyfin Server 10.10.0 We are pleased to announce the latest stable release of Jellyfin, version 10.10.0! This major release brings many new features, improvements, and bugfixes to improve your Jellyfin experience. As always, please ensure you stop your Jellyfin server and take a full b...</description>
+      <content:encoded><![CDATA[<h1>:rocket: Jellyfin Server 10.10.0</h1>
+>>>>>>> Stashed changes
 <p>We are pleased to announce the latest stable release of Jellyfin, version 10.10.0!</p>
 <p>This major release brings many new features, improvements, and bugfixes to improve your Jellyfin experience.</p>
 <p>As always, please ensure you stop your Jellyfin server and take a full backup before upgrading!</p>
@@ -3983,14 +4324,27 @@ or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Acti
 <li>Add OpenAPI spec generator for stable releases [PR #11603], by @joshuaboniface</li>
 <li>Disable nuget warning in Jellyfin.Extensions [PR #11536], by @crobibero</li>
 <li>Update version in issue template [PR #11400], by @felix920506</li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>jellyfin</category>
+      <category>jellyfin</category>
+      <source url="https://github.com/jellyfin/jellyfin">jellyfin/jellyfin</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>facebook/react v18.3.0</title>
       <link>https://github.com/facebook/react/releases/tag/v18.3.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v18.3.0</guid>
       <pubDate>Fri, 26 Apr 2024 19:48:51 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<p>This release is identical to 18.2 but adds warnings for deprecated APIs and other changes that are needed for React 19.</p>
+=======
+      <description>This release is identical to 18.2 but adds warnings for deprecated APIs and other changes that are needed for React 19. Read the React 19 Upgrade Guide for more info. React Allow writing to this.refs to support string ref codemod 909071 Warn for deprecated findDOMNode outside StrictMode c3b283 Wa...</description>
+      <content:encoded><![CDATA[<p>This release is identical to 18.2 but adds warnings for deprecated APIs and other changes that are needed for React 19.</p>
+>>>>>>> Stashed changes
 <p>Read the <a href="https://react.dev/blog/2024/04/25/react-19-upgrade-guide">React 19 Upgrade Guide</a> for more info.</p>
 <h3>React</h3>
 <ul>
@@ -4007,14 +4361,27 @@ or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Acti
 <ul>
 <li>Warn for deprecated <code>unmountComponentAtNode</code> <a href="https://github.com/facebook/react/commit/8a015b68cc060079878e426610e64e86fb328f8d">8a015b</a></li>
 <li>Warn for deprecated <code>renderToStaticNodeStream</code> <a href="https://github.com/facebook/react/pull/28874">#28874</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
     </item>
     <item>
+=======
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
+>>>>>>> Stashed changes
       <title>facebook/react v18.2.0</title>
       <link>https://github.com/facebook/react/releases/tag/v18.2.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v18.2.0</guid>
       <pubDate>Tue, 14 Jun 2022 19:54:21 GMT</pubDate>
+<<<<<<< Updated upstream
       <description><![CDATA[<h3>React DOM</h3>
+=======
+      <description>React DOM Provide a component stack as a second argument to onRecoverableError . ( @gnoff in #24591 ) Fix hydrating into document causing a blank page on mismatch. ( @gnoff in #24523 ) Fix false positive hydration errors with Suspense. ( @gnoff in #24480 and @acdlite in #24532 ) Fix ignored setSt...</description>
+      <content:encoded><![CDATA[<h3>React DOM</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>Provide a component stack as a second argument to <code>onRecoverableError</code>. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24591">#24591</a>)</li>
 <li>Fix hydrating into <code>document</code> causing a blank page on mismatch. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24523">#24523</a>)</li>
@@ -4032,7 +4399,14 @@ or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Acti
 <h3>Server Components (Experimental)</h3>
 <ul>
 <li>Add support for <code>useId()</code> inside Server Components. (<a href="https://github.com/gnoff">@gnoff</a>) in <a href="https://github.com/facebook/react/pull/24172">#24172</a></li>
+<<<<<<< Updated upstream
 </ul>]]></description>
+=======
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+>>>>>>> Stashed changes
     </item>
   </channel>
 </rss>
