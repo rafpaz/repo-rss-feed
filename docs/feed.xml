@@ -4,7 +4,7 @@
     <title>Major &amp; Minor Releases Feed</title>
     <link>https://example.com/rss</link>
     <description>Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.</description>
-    <lastBuildDate>Wed, 29 Oct 2025 15:04:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 15:07:32 GMT</lastBuildDate>
     
     <item>
       <title>nodejs/node v25.1.0</title>
