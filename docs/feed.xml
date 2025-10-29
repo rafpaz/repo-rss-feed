@@ -4,13 +4,12 @@
     <title>Major &amp; Minor Releases Feed</title>
     <link>https://example.com/rss</link>
     <description>Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.</description>
-<<<<<<< Updated upstream
-    <lastBuildDate>Wed, 29 Oct 2025 11:15:48 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 11:21:06 GMT</lastBuildDate>
     
     <item>
       <title>nodejs/node v25.1.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.1.0</link>
-      <guid isPermaLink="false">257943424</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.1.0</guid>
       <pubDate>Tue, 28 Oct 2025 19:20:08 GMT</pubDate>
       <description><![CDATA[
 
@@ -111,7 +110,7 @@
     <item>
       <title>nodejs/node v24.11.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.11.0</link>
-      <guid isPermaLink="false">257914143</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.11.0</guid>
       <pubDate>Tue, 28 Oct 2025 17:45:20 GMT</pubDate>
       <description><![CDATA[### Notable Changes
 
@@ -125,7 +124,7 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.]]
     <item>
       <title>payloadcms/payload v3.61.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.61.0</link>
-      <guid isPermaLink="false">256745645</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.61.0</guid>
       <pubDate>Thu, 23 Oct 2025 15:46:00 GMT</pubDate>
       <description><![CDATA[## [v3.61.0](https://github.com/payloadcms/payload/compare/v3.60.0...v3.61.0) (2025-10-23)
 
@@ -204,7 +203,7 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.]]
     <item>
       <title>vercel/next.js v16.0.0</title>
       <link>https://github.com/vercel/next.js/releases/tag/v16.0.0</link>
-      <guid isPermaLink="false">256194878</guid>
+      <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.0.0</guid>
       <pubDate>Wed, 22 Oct 2025 00:35:18 GMT</pubDate>
       <description><![CDATA[> [!TIP]  
 > **Check out our Next v16 [Blog Post](https://nextjs.org/blog/next-16) to learn more about this release.**
@@ -949,7 +948,7 @@ Huge thanks to @mischnic, @timneutkens, @unstubbable, @wyattjoh, @Cy-Tek, @lukes
     <item>
       <title>nodejs/node v22.21.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.21.0</link>
-      <guid isPermaLink="false">255866921</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.21.0</guid>
       <pubDate>Mon, 20 Oct 2025 23:56:15 GMT</pubDate>
       <description><![CDATA[
 
@@ -1059,7 +1058,7 @@ Huge thanks to @mischnic, @timneutkens, @unstubbable, @wyattjoh, @Cy-Tek, @lukes
     <item>
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
-      <guid isPermaLink="false">255639806</guid>
+      <guid isPermaLink="true">https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</guid>
       <pubDate>Mon, 20 Oct 2025 00:45:19 GMT</pubDate>
       <description><![CDATA[# :rocket: Jellyfin Server 10.11.0
 
@@ -1478,7 +1477,7 @@ You can find more details about and discuss this release [on our forums](https:/
     <item>
       <title>payloadcms/payload v3.60.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.60.0</link>
-      <guid isPermaLink="false">255077141</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.60.0</guid>
       <pubDate>Thu, 16 Oct 2025 16:48:15 GMT</pubDate>
       <description><![CDATA[## [v3.60.0](https://github.com/payloadcms/payload/compare/v3.59.1...v3.60.0) (2025-10-16)
 
@@ -1656,7 +1655,7 @@ You can find more details about and discuss this release [on our forums](https:/
     <item>
       <title>nodejs/node v25.0.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.0.0</link>
-      <guid isPermaLink="false">254773105</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.0.0</guid>
       <pubDate>Wed, 15 Oct 2025 17:20:43 GMT</pubDate>
       <description><![CDATA[Node.js 25 is here! We have upgraded V8 to **14.1**, bringing major `JSON.stringify`
 performance improvements, built-in `Uint8Array` base64/hex conversion, and ongoing
@@ -1852,7 +1851,7 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
     <item>
       <title>nodejs/node v24.10.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.10.0</link>
-      <guid isPermaLink="false">253836594</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.10.0</guid>
       <pubDate>Sat, 11 Oct 2025 16:18:16 GMT</pubDate>
       <description><![CDATA[### Notable Changes
 
@@ -1942,7 +1941,7 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
     <item>
       <title>payloadcms/payload v3.59.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.59.0</link>
-      <guid isPermaLink="false">252737889</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.59.0</guid>
       <pubDate>Tue, 07 Oct 2025 14:23:55 GMT</pubDate>
       <description><![CDATA[## [v3.59.0](https://github.com/payloadcms/payload/compare/v3.58.0...v3.59.0) (2025-10-07)
 
@@ -2060,7 +2059,7 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
     <item>
       <title>facebook/react v19.2.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.2.0</link>
-      <guid isPermaLink="false">251522936</guid>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.2.0</guid>
       <pubDate>Wed, 01 Oct 2025 21:50:48 GMT</pubDate>
       <description><![CDATA[Below is a list of all new features, APIs, and bug fixes.
 
@@ -2147,7 +2146,7 @@ Read the [React 19.2 release post](https://react.dev/blog/2025/10/01/react-19-2)
     <item>
       <title>payloadcms/payload v3.58.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.58.0</link>
-      <guid isPermaLink="false">251120020</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.58.0</guid>
       <pubDate>Tue, 30 Sep 2025 13:30:57 GMT</pubDate>
       <description><![CDATA[## [v3.58.0](https://github.com/payloadcms/payload/compare/v3.57.0...v3.58.0) (2025-09-30)
 
@@ -2234,7 +2233,7 @@ You can now deploy directly to Cloudflare using our [1-click template](https://g
     <item>
       <title>nodejs/node v24.9.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.9.0</link>
-      <guid isPermaLink="false">250119318</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.9.0</guid>
       <pubDate>Thu, 25 Sep 2025 19:52:13 GMT</pubDate>
       <description><![CDATA[### Notable Changes
 
@@ -2322,7 +2321,7 @@ You can now deploy directly to Cloudflare using our [1-click template](https://g
     <item>
       <title>payloadcms/payload v3.57.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.57.0</link>
-      <guid isPermaLink="false">250077233</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.57.0</guid>
       <pubDate>Thu, 25 Sep 2025 16:55:50 GMT</pubDate>
       <description><![CDATA[## [v3.57.0](https://github.com/payloadcms/payload/compare/v3.56.0...v3.57.0) (2025-09-25)
 
@@ -2431,7 +2430,7 @@ You can now deploy directly to Cloudflare using our [1-click template](https://g
     <item>
       <title>nodejs/node v22.20.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.20.0</link>
-      <guid isPermaLink="false">249686807</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.20.0</guid>
       <pubDate>Wed, 24 Sep 2025 14:04:23 GMT</pubDate>
       <description><![CDATA[### Notable Changes
 
@@ -2633,7 +2632,7 @@ This change does not affect third-party builds of Node.js that link to an extern
     <item>
       <title>payloadcms/payload v3.56.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.56.0</link>
-      <guid isPermaLink="false">247980037</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.56.0</guid>
       <pubDate>Wed, 17 Sep 2025 13:35:59 GMT</pubDate>
       <description><![CDATA[## [v3.56.0](https://github.com/payloadcms/payload/compare/v3.55.1...v3.56.0) (2025-09-17)
 
@@ -2710,7 +2709,7 @@ This change does not affect third-party builds of Node.js that link to an extern
     <item>
       <title>nodejs/node v24.8.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.8.0</link>
-      <guid isPermaLink="false">246286434</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.8.0</guid>
       <pubDate>Wed, 10 Sep 2025 19:46:04 GMT</pubDate>
       <description><![CDATA[### Notable Changes
 
@@ -2862,7 +2861,7 @@ Contributed by Darshan Sen in [#59611](https://github.com/nodejs/node/pull/59611
     <item>
       <title>payloadcms/payload v3.55.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.55.0</link>
-      <guid isPermaLink="false">245901352</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.55.0</guid>
       <pubDate>Tue, 09 Sep 2025 16:04:11 GMT</pubDate>
       <description><![CDATA[## [v3.55.0](https://github.com/payloadcms/payload/compare/v3.54.0...v3.55.0) (2025-09-09)
 
@@ -2954,7 +2953,7 @@ Contributed by Darshan Sen in [#59611](https://github.com/nodejs/node/pull/59611
     <item>
       <title>nodejs/node v22.19.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.19.0</link>
-      <guid isPermaLink="false">243316387</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v22.19.0</guid>
       <pubDate>Thu, 28 Aug 2025 21:21:17 GMT</pubDate>
       <description><![CDATA[
 
@@ -3113,7 +3112,7 @@ Contributed by Darshan Sen in [#59611](https://github.com/nodejs/node/pull/59611
     <item>
       <title>payloadcms/payload v3.54.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.54.0</link>
-      <guid isPermaLink="false">243190246</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.54.0</guid>
       <pubDate>Thu, 28 Aug 2025 13:53:25 GMT</pubDate>
       <description><![CDATA[## [v3.54.0](https://github.com/payloadcms/payload/compare/v3.53.0...v3.54.0) (2025-08-28)
 
@@ -3180,7 +3179,7 @@ Contributed by Darshan Sen in [#59611](https://github.com/nodejs/node/pull/59611
     <item>
       <title>nodejs/node v24.7.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.7.0</link>
-      <guid isPermaLink="false">242999745</guid>
+      <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.7.0</guid>
       <pubDate>Wed, 27 Aug 2025 21:32:42 GMT</pubDate>
       <description><![CDATA[### Notable Changes
 
@@ -3393,7 +3392,7 @@ Certificates removed:
     <item>
       <title>payloadcms/payload v3.53.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.53.0</link>
-      <guid isPermaLink="false">241608511</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.53.0</guid>
       <pubDate>Thu, 21 Aug 2025 18:33:37 GMT</pubDate>
       <description><![CDATA[## [v3.53.0](https://github.com/payloadcms/payload/compare/v3.52.0...v3.53.0) (2025-08-21)
 
@@ -3484,7 +3483,7 @@ Certificates removed:
     <item>
       <title>payloadcms/payload v3.52.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.52.0</link>
-      <guid isPermaLink="false">240236254</guid>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.52.0</guid>
       <pubDate>Fri, 15 Aug 2025 14:48:06 GMT</pubDate>
       <description><![CDATA[## [v3.52.0](https://github.com/payloadcms/payload/compare/v3.51.0...v3.52.0) (2025-08-15)
 
@@ -3526,7 +3525,7 @@ Certificates removed:
     <item>
       <title>facebook/react v19.1.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.1.0</link>
-      <guid isPermaLink="false">209064653</guid>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.1.0</guid>
       <pubDate>Fri, 28 Mar 2025 21:02:48 GMT</pubDate>
       <description><![CDATA[### Owner Stack
 
@@ -3576,7 +3575,7 @@ An Owner Stack is a string representing the components that are directly respons
     <item>
       <title>facebook/react v19.0.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.0.0</link>
-      <guid isPermaLink="false">189276068</guid>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.0.0</guid>
       <pubDate>Thu, 05 Dec 2024 21:05:14 GMT</pubDate>
       <description><![CDATA[Below is a list of all new features, APIs, deprecations, and breaking changes. Read [React 19 release post](https://react.dev/blog/2024/04/25/react-19) and [React 19 upgrade guide](https://react.dev/blog/2024/04/25/react-19-upgrade-guide) for more information.
 
@@ -3853,7 +3852,7 @@ The most common changes can be codemodded with `npx types-react-codemod@latest p
     <item>
       <title>jellyfin/jellyfin v10.10.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.10.0</link>
-      <guid isPermaLink="false">182089633</guid>
+      <guid isPermaLink="true">https://github.com/jellyfin/jellyfin/releases/tag/v10.10.0</guid>
       <pubDate>Sat, 26 Oct 2024 17:33:00 GMT</pubDate>
       <description><![CDATA[# :rocket: Jellyfin Server 10.10.0
 
@@ -4064,7 +4063,7 @@ You can find more details about and discuss this release [on our forums](https:/
     <item>
       <title>facebook/react v18.3.0</title>
       <link>https://github.com/facebook/react/releases/tag/v18.3.0</link>
-      <guid isPermaLink="false">153048806</guid>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v18.3.0</guid>
       <pubDate>Fri, 26 Apr 2024 19:48:51 GMT</pubDate>
       <description><![CDATA[This release is identical to 18.2 but adds warnings for deprecated APIs and other changes that are needed for React 19.
 
@@ -4089,7 +4088,7 @@ Read the [React 19 Upgrade Guide](https://react.dev/blog/2024/04/25/react-19-upg
     <item>
       <title>facebook/react v18.2.0</title>
       <link>https://github.com/facebook/react/releases/tag/v18.2.0</link>
-      <guid isPermaLink="false">69439453</guid>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v18.2.0</guid>
       <pubDate>Tue, 14 Jun 2022 19:54:21 GMT</pubDate>
       <description><![CDATA[### React DOM
 
@@ -4110,9 +4109,5 @@ Read the [React 19 Upgrade Guide](https://react.dev/blog/2024/04/25/react-19-upg
 
 * Add support for `useId()` inside Server Components. ([@gnoff](https://github.com/gnoff)) in [#24172](https://github.com/facebook/react/pull/24172)]]></description>
     </item>
-=======
-    <lastBuildDate>Wed, 29 Oct 2025 11:19:27 GMT</lastBuildDate>
-    
->>>>>>> Stashed changes
   </channel>
 </rss>
