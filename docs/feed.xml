@@ -3,14 +3,14 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Major &amp; Minor Releases Feed</title>
+    <title>Repository Releases Feed</title>
     <link>https://example.com/rss</link>
     <atom:link href="https://example.com/rss/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.</description>
+    <description>Aggregated RSS feed with the latest releases from selected GitHub repositories.</description>
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 30 Oct 2025 12:10:33 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 15:06:55 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>nodejs/node v25.1.0</title>
@@ -128,6 +128,32 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>atuinsh/desktop v0.1.10</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.10</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.10</guid>
+      <pubDate>Thu, 23 Oct 2025 21:17:27 GMT</pubDate>
+      <description>Atuin Desktop v0.1.10 - 2025-10-23 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Import runbooks from Atuin Hub when using Open in Desktop ( #175 ) 🐛 Bug Fixes Use more robust method for creating the Welcome workspace ( #176 )</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.10 - 2025-10-23</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.10/Atuin_0.1.10_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.10/Atuin_0.1.10_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.10/Atuin_Desktop_0.1.10_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.10/Atuin_Desktop-0.1.10-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Import runbooks from Atuin Hub when using Open in Desktop (<a href="https://github.com/atuinsh/desktop/issues/175">#175</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Use more robust method for creating the Welcome workspace (<a href="https://github.com/atuinsh/desktop/issues/176">#176</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>payloadcms/payload v3.61.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.61.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.61.0</guid>
@@ -210,6 +236,34 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+      <title>atuinsh/desktop v0.1.9</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.9</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.9</guid>
+      <pubDate>Wed, 22 Oct 2025 00:33:04 GMT</pubDate>
+      <description>Atuin Desktop v0.1.9 - 2025-10-21 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Separate out backend block execution ( #135 ) Make terminal links clickable ( #170 ) 🐛 Bug Fixes Test assertions incorrect ( #158 ) Ssh keepalive checks ( #161 )</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.9 - 2025-10-21</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.9/Atuin_0.1.9_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.9/Atuin_0.1.9_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.9/Atuin_Desktop_0.1.9_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.9/Atuin_Desktop-0.1.9-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Separate out backend block execution (<a href="https://github.com/atuinsh/desktop/issues/135">#135</a>)</li>
+<li>Make terminal links clickable (<a href="https://github.com/atuinsh/desktop/issues/170">#170</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Test assertions incorrect (<a href="https://github.com/atuinsh/desktop/issues/158">#158</a>)</li>
+<li>Ssh keepalive checks (<a href="https://github.com/atuinsh/desktop/issues/161">#161</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>nodejs/node v22.21.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.21.0</link>
@@ -917,6 +971,35 @@ that the release is LTS, no further changes from Node.js 24.10.0 are included.</
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>atuinsh/desktop v0.1.8</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.8</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.8</guid>
+      <pubDate>Wed, 15 Oct 2025 22:17:01 GMT</pubDate>
+      <description>Atuin Desktop v0.1.8 - 2025-10-15 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Add horizontal rule block ( #152 ) Add workspace.root template variable ( #153 ) Setup logfiles and log rotation ( #154 ) ⚙️ Miscellaneous Tasks Switch to native-tls ( #151 ) Add macos...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.8 - 2025-10-15</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_0.1.8_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_0.1.8_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_Desktop_0.1.8_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_Desktop-0.1.8-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Add horizontal rule block (<a href="https://github.com/atuinsh/desktop/issues/152">#152</a>)</li>
+<li>Add workspace.root template variable (<a href="https://github.com/atuinsh/desktop/issues/153">#153</a>)</li>
+<li>Setup logfiles and log rotation (<a href="https://github.com/atuinsh/desktop/issues/154">#154</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Switch to native-tls (<a href="https://github.com/atuinsh/desktop/issues/151">#151</a>)</li>
+<li>Add macos arm to ci tests (<a href="https://github.com/atuinsh/desktop/issues/155">#155</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>nodejs/node v25.0.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.0.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.0.0</guid>
@@ -1113,6 +1196,40 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>atuinsh/desktop v0.1.7</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.7</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.7</guid>
+      <pubDate>Tue, 14 Oct 2025 21:12:55 GMT</pubDate>
+      <description>Atuin Desktop v0.1.7 - 2025-10-14 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Allow saving blocks to insert easily later ( #136 ) Show active terminal count on tab ( #149 ) Add local state persistence with useBlockLocalState hook ( #141 ) by @bahdotsh 🐛 Bug Fix...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.7 - 2025-10-14</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.7/Atuin_0.1.7_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.7/Atuin_0.1.7_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.7/Atuin_Desktop_0.1.7_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.7/Atuin_Desktop-0.1.7-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Allow saving blocks to insert easily later (<a href="https://github.com/atuinsh/desktop/issues/136">#136</a>)</li>
+<li>Show active terminal count on tab (<a href="https://github.com/atuinsh/desktop/issues/149">#149</a>)</li>
+<li>Add local state persistence with useBlockLocalState hook (<a href="https://github.com/atuinsh/desktop/issues/141">#141</a>) by @bahdotsh</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Duplicating a block sometimes doesn&#39;t duplicate the code in the block (<a href="https://github.com/atuinsh/desktop/issues/137">#137</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Setup sccache</li>
+<li>Remove old rust cache, add apt cache</li>
+<li>Use larger depot runners</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>nodejs/node v24.10.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.10.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.10.0</guid>
@@ -1205,6 +1322,118 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+      <title>atuinsh/desktop v0.1.6</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.6</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.6</guid>
+      <pubDate>Thu, 09 Oct 2025 23:56:21 GMT</pubDate>
+      <description>Atuin Desktop v0.1.6 - 2025-10-09 Special thanks to our contributors who made their first contribution this release: @hezhizhen 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🐛 Bug Fixes Allow deleting offline workspaces in error states ( #124 ) Allow deleting orphaned runboo...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.6 - 2025-10-09</h2>
+<p>Special thanks to our contributors who made their first contribution this release:</p>
+<ul>
+<li>@hezhizhen</li>
+</ul>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.6/Atuin_0.1.6_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.6/Atuin_0.1.6_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.6/Atuin_Desktop_0.1.6_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.6/Atuin_Desktop-0.1.6-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Allow deleting offline workspaces in error states (<a href="https://github.com/atuinsh/desktop/issues/124">#124</a>)</li>
+<li>Allow deleting orphaned runbooks (<a href="https://github.com/atuinsh/desktop/issues/131">#131</a>) by @hezhizhen</li>
+<li>Allow setting interpreter for Kubernetes block (<a href="https://github.com/atuinsh/desktop/pull/133">#133</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Don&#39;t create manual links for GH usernames in release notes (<a href="https://github.com/atuinsh/desktop/issues/125">#125</a>)</li>
+<li>Fix typos (<a href="https://github.com/atuinsh/desktop/issues/130">#130</a>) by @hezhizhen</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
+      <title>atuinsh/desktop v0.1.5</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.5</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.5</guid>
+      <pubDate>Wed, 08 Oct 2025 19:48:54 GMT</pubDate>
+      <description>Atuin Desktop v0.1.5 - 2025-10-08 Special thanks to our contributors who made their first contribution this release: @kiendang @korkmazatakan 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features (editor) Add copy to clipboard button ( #110 ) by @korkmazatakan Add support...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.5 - 2025-10-08</h2>
+<p>Special thanks to our contributors who made their first contribution this release:</p>
+<ul>
+<li>@kiendang</li>
+<li>@korkmazatakan</li>
+</ul>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.5/Atuin_0.1.5_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.5/Atuin_0.1.5_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.5/Atuin_Desktop_0.1.5_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.5/Atuin_Desktop-0.1.5-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><em>(editor)</em> Add copy to clipboard button (<a href="https://github.com/atuinsh/desktop/issues/110">#110</a>) by <a href="https://github.com/korkmazatakan">@korkmazatakan</a></li>
+<li>Add support for shellcheck (<a href="https://github.com/atuinsh/desktop/issues/115">#115</a>) by <a href="https://github.com/kiendang">@kiendang</a></li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Pressing escape inside a code editor collapses the entire block to an unprintable character (<a href="https://github.com/atuinsh/desktop/issues/118">#118</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Ignore edge builds when building release notes (<a href="https://github.com/atuinsh/desktop/issues/116">#116</a>)</li>
+<li>Use special updater endpoint for edge builds (<a href="https://github.com/atuinsh/desktop/issues/114">#114</a>)</li>
+<li>Add contributors to release notes (<a href="https://github.com/atuinsh/desktop/issues/120">#120</a>)</li>
+<li>Delete old edge assets when updating release (<a href="https://github.com/atuinsh/desktop/issues/121">#121</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
+      <title>atuinsh/desktop v0.1.4</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.4</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.4</guid>
+      <pubDate>Tue, 07 Oct 2025 18:27:13 GMT</pubDate>
+      <description>Atuin Desktop v0.1.4 - 2025-10-07 Special thank you to @bahdotsh for contributing to this release! 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features (runbooks) Add collapsible code blocks with smooth animations ( #85 ) 🐛 Bug Fixes Make vim mode toggle affect existing...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.4 - 2025-10-07</h2>
+<p>Special thank you to @bahdotsh for contributing to this release!</p>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.4/Atuin_0.1.4_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.4/Atuin_0.1.4_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.4/Atuin_Desktop_0.1.4_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.4/Atuin_Desktop-0.1.4-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><em>(runbooks)</em> Add collapsible code blocks with smooth animations (<a href="https://github.com/atuinsh/desktop/issues/85">#85</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Make vim mode toggle affect existing code editors (<a href="https://github.com/atuinsh/desktop/issues/101">#101</a>)</li>
+<li>Show info about offline workspaces and sharing in offline runbook settings (<a href="https://github.com/atuinsh/desktop/issues/111">#111</a>)</li>
+</ul>
+<h3>💼 Other</h3>
+<ul>
+<li>Enable release build time optimizations (<a href="https://github.com/atuinsh/desktop/issues/100">#100</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Use rustls native tls roots (<a href="https://github.com/atuinsh/desktop/issues/104">#104</a>)</li>
+<li>Add prerelease builds for every commit (<a href="https://github.com/atuinsh/desktop/issues/106">#106</a>)</li>
+<li>Use a single rolling edge release (<a href="https://github.com/atuinsh/desktop/issues/107">#107</a>)</li>
+<li>Adjust tauri action args (<a href="https://github.com/atuinsh/desktop/issues/112">#112</a>)</li>
+<li>Remove --no-sync option from script/dev (<a href="https://github.com/atuinsh/desktop/issues/113">#113</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.59.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.59.0</link>
@@ -1325,6 +1554,41 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>atuinsh/desktop v0.1.3</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.3</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.3</guid>
+      <pubDate>Fri, 03 Oct 2025 20:57:33 GMT</pubDate>
+      <description>Atuin Desktop v0.1.3 - 2025-10-03 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features (templates) Add shellquote filter for safe shell escaping. ( #65 ) 🐛 Bug Fixes Panic on max count expect ( #55 ) ⚙️ Miscellaneous Tasks Announce releases on Discord ( #56 ) Remove ssh...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.3 - 2025-10-03</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.3/Atuin_0.1.3_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.3/Atuin_0.1.3_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.3/Atuin_Desktop_0.1.3_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.3/Atuin_Desktop-0.1.3-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><em>(templates)</em> Add shellquote filter for safe shell escaping. (<a href="https://github.com/atuinsh/desktop/issues/65">#65</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Panic on max count expect (<a href="https://github.com/atuinsh/desktop/issues/55">#55</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Announce releases on Discord (<a href="https://github.com/atuinsh/desktop/issues/56">#56</a>)</li>
+<li>Remove ssh agent from CI (<a href="https://github.com/atuinsh/desktop/issues/57">#57</a>)</li>
+<li>Use https for ts-tiny-activerecord (<a href="https://github.com/atuinsh/desktop/issues/58">#58</a>)</li>
+<li>Adjust wording on dropdown for clarity (<a href="https://github.com/atuinsh/desktop/issues/68">#68</a>)</li>
+<li>Add intel macos build (<a href="https://github.com/atuinsh/desktop/issues/77">#77</a>)</li>
+<li>Update release workflow to use release branches (<a href="https://github.com/atuinsh/desktop/issues/78">#78</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>facebook/react v19.2.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.2.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.2.0</guid>
@@ -1416,6 +1680,38 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
       <category>react</category>
       <source url="https://github.com/facebook/react">facebook/react</source>
     </item>    <item>
+      <title>atuinsh/desktop v0.1.0</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.0</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.0</guid>
+      <pubDate>Wed, 01 Oct 2025 17:38:07 GMT</pubDate>
+      <description>Atuin Desktop v0.1.0 - 2025-10-01 🔗 Downloads macOS Linux .deb Linux .rpm Changelog 🚀 Features Add release notes section to update modal 🐛 Bug Fixes Add fallback logic for finding appropriate welcome workspace directory if no documents directory is set ( #42 ) Persist app version over multiple...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.0 - 2025-10-01</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.0/Atuin_0.1.0_aarch64.dmg">macOS</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.0/Atuin_Desktop_0.1.0_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.0/Atuin_Desktop-0.1.0-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Add release notes section to update modal</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Add fallback logic for finding appropriate welcome workspace directory if no documents directory is set (<a href="https://github.com/atuinsh/desktop/issues/42">#42</a>)</li>
+<li>Persist app version over multiple &#39;track&#39; calls (<a href="https://github.com/atuinsh/desktop/issues/44">#44</a>)</li>
+<li>Prevent re-running terminal on visibility change (<a href="https://github.com/atuinsh/desktop/issues/53">#53</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Update logged out avatar (<a href="https://github.com/atuinsh/desktop/issues/39">#39</a>)</li>
+<li>Split Rust tests into separate jobs (<a href="https://github.com/atuinsh/desktop/issues/43">#43</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>payloadcms/payload v3.58.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.58.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.58.0</guid>
@@ -1490,6 +1786,38 @@ const posts = await sdk.find({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+      <title>atuinsh/desktop v0.0.107</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.0.107</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.0.107</guid>
+      <pubDate>Mon, 29 Sep 2025 19:41:13 GMT</pubDate>
+      <description>Atuin Desktop v0.0.107 - 2025-09-29 🔗 Downloads macOS Linux .deb Linux .rpm Changelog 🚀 Features Copy welcome workspace with examples during workspace setup Add &amp;quot;Open in Finder/Explorer&amp;quot; for offline workspaces 🐛 Bug Fixes Default to background sync being on Crash when first block req...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.0.107 - 2025-09-29</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.0.107/Atuin_0.0.107_aarch64.dmg">macOS</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.0.107/Atuin_Desktop_0.0.107_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.0.107/Atuin_Desktop-0.0.107-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Copy welcome workspace with examples during workspace setup</li>
+<li>Add &quot;Open in Finder/Explorer&quot; for offline workspaces</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Default to background sync being on</li>
+<li>Crash when first block requires templating</li>
+<li>Re-enable formatting toolbar</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>Update docs based on new UI and add dark mode images</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>nodejs/node v24.9.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.9.0</link>
@@ -2771,6 +3099,65 @@ the application is run.</p>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>spotDL/spotify-downloader v4.4.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.0</guid>
+      <pubDate>Wed, 13 Aug 2025 03:20:39 GMT</pubDate>
+      <description>Breaking Change Dropped support for Python 3.9 due to upstream dependency requirements. Please update Python to v3.10-v3.13 ytmusicapi requires Python 3.10 and yt-dlp will soon Noting further that Python 3.9 reaches end-of-life in October 2025. What&amp;#39;s Changed Fix azlyrics logic, and disable i...</description>
+      <content:encoded><![CDATA[<h2>Breaking Change</h2>
+<ul>
+<li><strong>Dropped support for Python 3.9</strong> due to upstream dependency requirements. Please update Python to v3.10-v3.13<ul>
+<li><a href="https://github.com/sigma67/ytmusicapi/?tab=readme-ov-file#requirements"><code>ytmusicapi</code> requires Python 3.10</a> and <a href="https://github.com/yt-dlp/yt-dlp/issues/13858"><code>yt-dlp</code> will soon</a></li>
+<li>Noting further that Python 3.9 reaches end-of-life in October 2025.</li>
+</ul>
+</li>
+</ul>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>Fix azlyrics logic, and disable it temporarily by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2442">https://github.com/spotDL/spotify-downloader/pull/2442</a></li>
+<li>Publish v4.4.0 by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2443">https://github.com/spotDL/spotify-downloader/pull/2443</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.3.1...v4.4.0">https://github.com/spotDL/spotify-downloader/compare/v4.3.1...v4.4.0</a></p>
+<h2>Support the project</h2>
+<p><a href="https://github.com/sponsors/Silverarmor"><img src="https://img.shields.io/github/sponsors/Silverarmor" alt="GitHub Sponsors">
+</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
+    </item>    <item>
+      <title>spotDL/spotify-downloader v4.3.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.3.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.3.0</guid>
+      <pubDate>Sat, 02 Aug 2025 04:18:37 GMT</pubDate>
+      <description>What&amp;#39;s Changed Set default bitrate to 128k Fix passing arguments to yt-dlp. by @jessicah in https://github.com/spotDL/spotify-downloader/pull/2250 Bump setuptools from 75.8.0 to 78.1.1 by @dependabot[bot] in https://github.com/spotDL/spotify-downloader/pull/2379 switch from poetry to uv by @p...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li><em><strong>Set default bitrate to 128k</strong></em></li>
+<li>Fix passing arguments to yt-dlp. by @jessicah in <a href="https://github.com/spotDL/spotify-downloader/pull/2250">https://github.com/spotDL/spotify-downloader/pull/2250</a></li>
+<li>Bump setuptools from 75.8.0 to 78.1.1 by @dependabot[bot] in <a href="https://github.com/spotDL/spotify-downloader/pull/2379">https://github.com/spotDL/spotify-downloader/pull/2379</a></li>
+<li>switch from poetry to uv by @phcreery in <a href="https://github.com/spotDL/spotify-downloader/pull/2305">https://github.com/spotDL/spotify-downloader/pull/2305</a></li>
+<li>Add yt-dlp Extractor Argument Support by @Kyrluckechuck in <a href="https://github.com/spotDL/spotify-downloader/pull/2285">https://github.com/spotDL/spotify-downloader/pull/2285</a></li>
+<li>docs: add info about --sync-without-deleting by @BOTKooper in <a href="https://github.com/spotDL/spotify-downloader/pull/2359">https://github.com/spotDL/spotify-downloader/pull/2359</a></li>
+<li>v4.3.0 by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2418">https://github.com/spotDL/spotify-downloader/pull/2418</a><ul>
+<li>Changed tests to run on only py3.11</li>
+<li>Apply pytube innertube version patch. Credit @epignatelli. Note YT audio provider is not fully supported at the moment, needs to be rewritten due to pytube&#39;s loss of support.</li>
+<li>Updated PR description</li>
+<li>Remove max parallel limit on GH action runners</li>
+<li>Update documentation and readme</li>
+<li>Update development instructions in CONTRIBUTING.md</li>
+</ul>
+</li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@jessicah made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2250">https://github.com/spotDL/spotify-downloader/pull/2250</a></li>
+<li>@Kyrluckechuck made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2285">https://github.com/spotDL/spotify-downloader/pull/2285</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.2.11...v4.3.0">https://github.com/spotDL/spotify-downloader/compare/v4.2.11...v4.3.0</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
+    </item>    <item>
       <title>facebook/react v19.1.0</title>
       <link>https://github.com/facebook/react/releases/tag/v19.1.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.1.0</guid>
@@ -3349,6 +3736,64 @@ or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Acti
       <category>facebook</category>
       <category>react</category>
       <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
+      <title>spotDL/spotify-downloader v4.2.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.0</guid>
+      <pubDate>Tue, 11 Jul 2023 12:44:50 GMT</pubDate>
+      <description>Docs: added more info about cookies by @xnetcat in fc817ad9bc6d45ed30ff11b04d17487c64acfde1 updated the build command by @xnetcat in aac20f56a138dc2a53d985173c96ab3dde580da7 fix broken link in docs by @laurens94 in 2baad4a4914ea20e8e4b501ebb9eebaf710351f0 Bug fixes: even more improvements to file...</description>
+      <content:encoded><![CDATA[<p>Docs:</p>
+<ul>
+<li>added more info about cookies by @xnetcat in fc817ad9bc6d45ed30ff11b04d17487c64acfde1</li>
+<li>updated the build command by @xnetcat in aac20f56a138dc2a53d985173c96ab3dde580da7</li>
+<li>fix broken link in docs by @laurens94 in 2baad4a4914ea20e8e4b501ebb9eebaf710351f0</li>
+</ul>
+<p>Bug fixes:</p>
+<ul>
+<li>even more improvements to file name creation function by @xnetcat in e9dee4f55d00ef9f5dd7a393efc5978c3f04619c</li>
+<li>update client&#39;s downloader settings by @xnetcat in 4fd1be7713089641d1b73c48acf0849949c81491</li>
+<li>check if result has views before calculating the match score by @xnetcat in 3f0565c88ae1a0a753347d15a1b484ae2c514d25</li>
+</ul>
+<p>Matching:</p>
+<ul>
+<li>simplified artist match fixup for verified results by @xnetcat in 7568dd9b3323828614a2b226c5e9be1913d4782a</li>
+<li>improved link matching by changing how the views are included in the overall score by @xnetcat in f0ece432375fb6d7a7573f35ed13c6bb7df86f25</li>
+</ul>
+<p>New features:</p>
+<ul>
+<li>added support for wav files by @xnetcat in e7fa8fc57556332cec7a91d0fca010820f5fabb9 c1fb5089bc0b91250d38f705acc655908a6277f6</li>
+<li>added <code>--yt-dlp-args</code> flag by @xnetcat in d789a5cb1abf23e7a28660ba79b3febcee45bfdc</li>
+<li>added soundcloud audio provider by @xnetcat in e6f03396bdfefb3e0eb76c769c816f665ab031eb</li>
+<li>added bandcamp audio provider by @xnetcat in cc399a8942187f5a72e4a0cc8e3bc399d7a50293</li>
+<li>added piped audio provider by @xnetcat in ecba7d611bae329e407f61da03df66645b879163 (use piped to bypass country restrictions)</li>
+<li>added detect formats option by @xnetcat in d9aac5710e4f10f6b5c16ca10f8f105c34a512d8</li>
+<li>added ability to download all user playlists by @xnetcat in b915dc3a32366830627b77fc3eeb34789ad1fa5e</li>
+</ul>
+<p>Improvements:</p>
+<ul>
+<li>remove unwanted directories in container image by @Biswa96 in #1856 </li>
+<li>improved sync file detection by @xnetcat in 039801f107c701af666331b3ed4a2c147a31fb28</li>
+<li>added more words to forbidden words list by @xnetcat in f4835a426111cc1258899ff4fda5205db6508d24 06cac0fc82c7700f7df8d3a9ddfb6336368ef052</li>
+<li>add ISRC in file tags by @Maxmystere in #1859</li>
+<li>updated packages by @xnetcat in 27a62f06b633ada469f6b01a258d2fd5dedd2065</li>
+<li>added support for piped links by @xnetcat in d29385535508a000e322c843943b38ea6a8a13c2</li>
+<li>Give an ascii mode to --restrict flag by @OmeGak in #1858</li>
+<li>use POPM id3 tag for popularity by @xnetcat in 2384f0b1990b1a7b3f7d5beb664a24081f376dca</li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@Biswa96 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/1856">https://github.com/spotDL/spotify-downloader/pull/1856</a></li>
+<li>@laurens94 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/1862">https://github.com/spotDL/spotify-downloader/pull/1862</a></li>
+<li>@OmeGak made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/1858">https://github.com/spotDL/spotify-downloader/pull/1858</a></li>
+</ul>
+<h2>Donate</h2>
+<p>help support the development and maintenance of spotDL ❤️ </p>
+<p><a href="https://paypal.me/kko7"><img src="https://img.shields.io/badge/paypal-%2300457C.svg?&style=for-the-badge&logo=paypal&logoColor=white" alt="paypal"></a>
+<a href="https://ko-fi.com/xnetcat"><img src="https://img.shields.io/badge/kofi-%23F16061.svg?&style=for-the-badge&logo=ko-fi&logoColor=white" alt="kofi"></a></p>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.1.11...v4.2.0">https://github.com/spotDL/spotify-downloader/compare/v4.1.11...v4.2.0</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
     </item>    <item>
       <title>facebook/react v18.2.0</title>
       <link>https://github.com/facebook/react/releases/tag/v18.2.0</link>
