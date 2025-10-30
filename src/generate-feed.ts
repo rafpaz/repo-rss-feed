@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 /**
- * Generate an RSS feed containing major/minor release updates for configured repositories.
+ * Generate an RSS feed containing release updates for configured repositories.
+ * By default only major/minor releases are tracked; per-repo overrides can include patch
+ * (fix) releases when needed.
  *
  * Usage:
  *    npm run generate
@@ -20,11 +22,13 @@ import { marked } from 'marked';
 interface RepoConfig {
   slug: string;
   maxReleases?: number;
+  includePatchReleases?: boolean;
 }
 
 interface NormalizedRepoConfig {
   slug: string;
   maxReleases: number;
+  includePatchReleases: boolean;
 }
 
 interface GitHubRelease {
@@ -57,9 +61,9 @@ const CONFIG_FILE = path.resolve(__dirname, '..', 'repos.json');
 const OUTPUT_DIR = path.resolve(__dirname, '..', 'docs');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'feed.xml');
 
-const SITE_TITLE = 'Major & Minor Releases Feed';
+const SITE_TITLE = 'Repository Releases Feed';
 const SITE_DESCRIPTION =
-  'Aggregated RSS feed with the latest major/minor releases from selected GitHub repositories.';
+  'Aggregated RSS feed with the latest releases from selected GitHub repositories.';
 // Replace once published with the GitHub Pages URL.
 const SITE_LINK = 'https://example.com/rss';
 const SITE_LANGUAGE = 'en';
@@ -86,13 +90,18 @@ async function loadRepoList(): Promise<Array<string | RepoConfig>> {
 
 function parseConfigEntry(entry: string | RepoConfig): NormalizedRepoConfig {
   if (typeof entry === 'string') {
-    return { slug: entry, maxReleases: DEFAULT_MAX_RELEASES_PER_REPO };
+    return {
+      slug: entry,
+      maxReleases: DEFAULT_MAX_RELEASES_PER_REPO,
+      includePatchReleases: false,
+    };
   }
 
   if (entry && typeof entry.slug === 'string') {
     return {
       slug: entry.slug,
       maxReleases: entry.maxReleases ?? DEFAULT_MAX_RELEASES_PER_REPO,
+      includePatchReleases: entry.includePatchReleases ?? false,
     };
   }
 
@@ -102,6 +111,7 @@ function parseConfigEntry(entry: string | RepoConfig): NormalizedRepoConfig {
 async function fetchReleasesForRepo({
   slug,
   maxReleases,
+  includePatchReleases,
 }: NormalizedRepoConfig): Promise<FeedItem[]> {
   const [owner, repo] = slug.split('/');
   if (!owner || !repo) {
@@ -133,7 +143,7 @@ async function fetchReleasesForRepo({
 
   return releases
     .filter((release) => !release.draft && !release.prerelease)
-    .filter((release) => isMajorOrMinorRelease(release.tag_name))
+    .filter((release) => shouldIncludeRelease(release.tag_name, includePatchReleases))
     .slice(0, maxReleases)
     .map((release) => ({
       repoSlug: slug,
@@ -146,7 +156,10 @@ async function fetchReleasesForRepo({
     }));
 }
 
-function isMajorOrMinorRelease(tag: string | undefined): boolean {
+function shouldIncludeRelease(
+  tag: string | undefined,
+  includePatchReleases: boolean,
+): boolean {
   if (!tag) {
     return false;
   }
@@ -172,7 +185,11 @@ function isMajorOrMinorRelease(tag: string | undefined): boolean {
     return false;
   }
 
-  return patchNumber === 0;
+  if (!includePatchReleases && patchNumber !== 0) {
+    return false;
+  }
+
+  return true;
 }
 
 function escapeXml(value: string): string {
@@ -320,7 +337,7 @@ async function main(): Promise<void> {
   }
 
   if (results.length === 0) {
-    console.warn('No major/minor releases found with current configuration.');
+    console.warn('No releases found with current configuration.');
   }
 
   const feed = buildRssFeed(results);

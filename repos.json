@@ -1,13 +1,27 @@
 {
   "repositories": [
-    { "slug": "vercel/next.js", "maxReleases": 5 },
-    { "slug": "facebook/react", "maxReleases": 5 },
+    {
+      "slug": "vercel/next.js",
+      "maxReleases": 5
+    },
+    {
+      "slug": "facebook/react",
+      "maxReleases": 5
+    },
+    {
+      "slug": "atuinsh/desktop",
+      "includePatchReleases": true
+    },
     "nodejs/node",
     "yuliskov/SmartTube",
     "jellyfin/jellyfin",
     "LegendApp/legend-state",
     "payloadcms/payload",
     "novuhq/novu",
-    "Kong/insomnia"
+    "Kong/insomnia",
+    "openai/codex",
+    "yt-dlp/yt-dlp",
+    "spotDL/spotify-downloader",
+    "yuliskov/SmartTube"
   ]
 }
