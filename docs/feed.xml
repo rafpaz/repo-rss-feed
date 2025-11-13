@@ -10,9 +10,165 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 13 Nov 2025 18:07:58 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 21:06:21 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>payloadcms/payload v3.64.0</title>
+      <link>https://github.com/payloadcms/payload/releases/tag/v3.64.0</link>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.64.0</guid>
+      <pubDate>Thu, 13 Nov 2025 19:35:17 GMT</pubDate>
+      <description>v3.64.0 (2025-11-13) 🚀 Features add support for UTC timezone in date fields ( #14586 ) ( 8b34e40 ) next: turbopack build support, fix incorrect handling of external packages ( #14475 ) ( 3a975d7 ) plugin-mcp: adds MCP context to req.payloadAPI ( #14595 ) ( 860bdf2 ) plugin-mcp: adds custom auth...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.63.0...v3.64.0">v3.64.0</a> (2025-11-13)</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>add support for UTC timezone in date fields (<a href="https://github.com/payloadcms/payload/issues/14586">#14586</a>) (<a href="https://github.com/payloadcms/payload/commit/8b34e40">8b34e40</a>)</li>
+<li><strong>next:</strong> turbopack build support, fix incorrect handling of external packages (<a href="https://github.com/payloadcms/payload/issues/14475">#14475</a>) (<a href="https://github.com/payloadcms/payload/commit/3a975d7">3a975d7</a>)</li>
+<li><strong>plugin-mcp:</strong> adds MCP context to req.payloadAPI (<a href="https://github.com/payloadcms/payload/issues/14595">#14595</a>) (<a href="https://github.com/payloadcms/payload/commit/860bdf2">860bdf2</a>)</li>
+<li><strong>plugin-mcp:</strong> adds custom auth config (<a href="https://github.com/payloadcms/payload/issues/14538">#14538</a>) (<a href="https://github.com/payloadcms/payload/commit/73a18dc">73a18dc</a>)</li>
+<li><strong>plugin-redirects:</strong> support translations (<a href="https://github.com/payloadcms/payload/issues/14548">#14548</a>) (<a href="https://github.com/payloadcms/payload/commit/ad8f0b2">ad8f0b2</a>)</li>
+</ul>
+<p><strong>UTC Timezone Support</strong> - Add support for &#39;UTC&#39; as a timezone value in date fields. Previously unsupported due to validation against Intl API runtime values. Also fixes issue where having only one timezone would make it selected by default. <a href="https://github.com/payloadcms/payload/pull/14586">#14586</a></p>
+<pre><code class="language-ts">import { buildConfig } from &#39;payload&#39;
+
+const config = buildConfig({
+  admin: {
+    timezones: {
+      supportedTimezones: [
+        {
+          label: &#39;UTC&#39;,
+          value: &#39;UTC&#39;,
+        },
+      ],
+      defaultTimezone: &#39;UTC&#39;,
+    },
+  },
+})
+</code></pre>
+<p><strong>Turbopack Build Support</strong> - Full support for Turbopack builds (now default in Next.js 16). Properly externalizes database adapter entry points to prevent production failures. Resolves issues with direct dependency externalization causing runtime errors. <a href="https://github.com/payloadcms/payload/pull/14475">#14475</a></p>
+<p><strong>MCP Context Detection</strong> - Detect when Payload API calls originate from MCP context using <code>req.payloadAPI === &#39;MCP&#39;</code>. Enables conditional logic in hooks based on MCP usage. <a href="https://github.com/payloadcms/payload/pull/14595">#14595</a></p>
+<pre><code class="language-ts">export const Posts: CollectionConfig = {
+  slug: &#39;posts&#39;,
+  hooks: {
+    beforeRead: [
+      ({ doc, req }) =&gt; {
+        if (req.payloadAPI === &#39;MCP&#39;) {
+          doc.title = `${doc.title} (MCP Hook Override)`
+        }
+        return doc
+      },
+    ],
+  },
+}
+</code></pre>
+<p><strong>Custom Auth Configuration</strong> - Override default API key authentication with custom authorization logic using <code>overrideAuth</code>. Provides granular control over MCP access permissions. <a href="https://github.com/payloadcms/payload/pull/14538">#14538</a></p>
+<pre><code class="language-ts">import { type MCPAccessSettings, mcpPlugin } from &#39;@payloadcms/plugin-mcp&#39;
+
+plugins: [
+  mcpPlugin({
+    overrideAuth: (req) =&gt; {
+      return {
+        posts: { find: true },
+        products: { find: true, update: true },
+      } as MCPAccessSettings
+    },
+  })
+]
+</code></pre>
+<p><strong>Redirect Plugin Translation Support</strong> - Enable translations for plugin fields, eliminating need for verbose field <code>overrides</code> configuration. Configure field labels in multiple languages directly through i18n config. <a href="https://github.com/payloadcms/payload/pull/14548">#14548</a></p>
+<pre><code class="language-ts">export default buildConfig({
+  i18n: {
+    translations: {
+      en: {
+        &#39;plugin-redirects&#39;: {
+          fromUrl: &#39;Source URL (Custom)&#39;,
+        },
+      },
+      de: {
+        &#39;plugin-redirects&#39;: {
+          fromUrl: &#39;Quell-URL&#39;,
+          internalLink: &#39;Interner Link&#39;,
+        },
+      },
+    },
+  },
+  plugins: [redirectsPlugin({ collections: [&#39;pages&#39;] })],
+})
+</code></pre>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>previous value undefined for nested fields in afterChange (<a href="https://github.com/payloadcms/payload/issues/14582">#14582</a>) (<a href="https://github.com/payloadcms/payload/commit/d60ea6e">d60ea6e</a>)</li>
+<li>default values inconsistent between Local and REST APIs (<a href="https://github.com/payloadcms/payload/issues/14556">#14556</a>) (<a href="https://github.com/payloadcms/payload/commit/8f7ef35">8f7ef35</a>)</li>
+<li>findGlobalVersionByID id type (<a href="https://github.com/payloadcms/payload/issues/14534">#14534</a>) (<a href="https://github.com/payloadcms/payload/commit/99ed0e5">99ed0e5</a>)</li>
+<li>localized block fields (<a href="https://github.com/payloadcms/payload/issues/14587">#14587</a>) (<a href="https://github.com/payloadcms/payload/commit/2295c89">2295c89</a>)</li>
+<li>add secondary PDF mimeType validation and tests (<a href="https://github.com/payloadcms/payload/issues/14529">#14529</a>) (<a href="https://github.com/payloadcms/payload/commit/ce479ab">ce479ab</a>)</li>
+<li>unlock access not being correctly denied when using a where query (<a href="https://github.com/payloadcms/payload/issues/14585">#14585</a>) (<a href="https://github.com/payloadcms/payload/commit/f63e34e">f63e34e</a>)</li>
+<li>error when calling jobs.handleSchedules when there are no schedules defined (<a href="https://github.com/payloadcms/payload/issues/14519">#14519</a>) (<a href="https://github.com/payloadcms/payload/commit/072cb97">072cb97</a>)</li>
+<li>changing the language of the admin panel does not work for &quot;radio&quot; and &quot;select&quot; fields. (<a href="https://github.com/payloadcms/payload/issues/14569">#14569</a>) (<a href="https://github.com/payloadcms/payload/commit/bb520d6">bb520d6</a>)</li>
+<li>inject custom translations into supportedLanguages in sanitization (<a href="https://github.com/payloadcms/payload/issues/14549">#14549</a>) (<a href="https://github.com/payloadcms/payload/commit/d7f1ea2">d7f1ea2</a>)</li>
+<li><strong>db-mongodb:</strong> localization transforms on nested localized fields (<a href="https://github.com/payloadcms/payload/issues/14600">#14600</a>) (<a href="https://github.com/payloadcms/payload/commit/6070d8d">6070d8d</a>)</li>
+<li><strong>db-mongodb:</strong> findVersions/findGlobalVersions not respecting limit of 0 (<a href="https://github.com/payloadcms/payload/issues/14573">#14573</a>) (<a href="https://github.com/payloadcms/payload/commit/43dcf84">43dcf84</a>)</li>
+<li><strong>graphql:</strong> avoid errors with sort as empty string (<a href="https://github.com/payloadcms/payload/issues/14594">#14594</a>) (<a href="https://github.com/payloadcms/payload/commit/fad476d">fad476d</a>)</li>
+<li><strong>next:</strong> turbopack error when using db-d1-sqlite package (<a href="https://github.com/payloadcms/payload/issues/14558">#14558</a>) (<a href="https://github.com/payloadcms/payload/commit/bd6decf">bd6decf</a>)</li>
+<li><strong>next, ui:</strong> show status &quot;changed&quot; in List View (<a href="https://github.com/payloadcms/payload/issues/14555">#14555</a>) (<a href="https://github.com/payloadcms/payload/commit/565680d">565680d</a>)</li>
+<li><strong>plugin-form-builder:</strong> expose formSubmissionID as a variable to be used in emails (<a href="https://github.com/payloadcms/payload/issues/14429">#14429</a>) (<a href="https://github.com/payloadcms/payload/commit/ad74386">ad74386</a>)</li>
+<li><strong>plugin-mcp:</strong> correctly uses local access controls (<a href="https://github.com/payloadcms/payload/issues/14457">#14457</a>) (<a href="https://github.com/payloadcms/payload/commit/fc2becf">fc2becf</a>)</li>
+<li><strong>richtext-lexical:</strong> urls being wrongly encoded by incomplete URL validation (<a href="https://github.com/payloadcms/payload/issues/14557">#14557</a>) (<a href="https://github.com/payloadcms/payload/commit/2cb0c59">2cb0c59</a>)</li>
+<li><strong>storage-r2:</strong> respect data.prefix in handleUpload path construction (<a href="https://github.com/payloadcms/payload/issues/14485">#14485</a>) (<a href="https://github.com/payloadcms/payload/commit/454d0d3">454d0d3</a>)</li>
+<li><strong>ui:</strong> error on inserting new documents on uploads with hasMany (<a href="https://github.com/payloadcms/payload/issues/14567">#14567</a>) (<a href="https://github.com/payloadcms/payload/commit/fd44d2b">fd44d2b</a>)</li>
+<li><strong>ui:</strong> save button becomes disabled after failed save with draft validation (<a href="https://github.com/payloadcms/payload/issues/14584">#14584</a>) (<a href="https://github.com/payloadcms/payload/commit/6fda71a">6fda71a</a>)</li>
+<li><strong>ui:</strong> invalid req.locale shows incorrect data (<a href="https://github.com/payloadcms/payload/issues/14537">#14537</a>) (<a href="https://github.com/payloadcms/payload/commit/f29a07f">f29a07f</a>)</li>
+</ul>
+<h3>⚡ Performance</h3>
+<ul>
+<li><strong>ui:</strong> don&#39;t return full documents on bulk UI operations (<a href="https://github.com/payloadcms/payload/issues/14145">#14145</a>) (<a href="https://github.com/payloadcms/payload/commit/4430739">4430739</a>)</li>
+</ul>
+<h3>🛠 Refactors</h3>
+<ul>
+<li><strong>richtext-slate:</strong> deprecate slate editor (<a href="https://github.com/payloadcms/payload/issues/14536">#14536</a>) (<a href="https://github.com/payloadcms/payload/commit/1a4ce44">1a4ce44</a>)</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>updates Jobs queue docs (<a href="https://github.com/payloadcms/payload/issues/14552">#14552</a>) (<a href="https://github.com/payloadcms/payload/commit/dff3d1b">dff3d1b</a>)</li>
+</ul>
+<h3>🧪 Tests</h3>
+<ul>
+<li>move draft validation tests from form-state to field error states test suite (<a href="https://github.com/payloadcms/payload/issues/14599">#14599</a>) (<a href="https://github.com/payloadcms/payload/commit/e1f07ff">e1f07ff</a>)</li>
+<li>run cpa against create-next-app latest and canary (<a href="https://github.com/payloadcms/payload/issues/14583">#14583</a>) (<a href="https://github.com/payloadcms/payload/commit/cca97c6">cca97c6</a>)</li>
+<li>21x faster versions int suite (<a href="https://github.com/payloadcms/payload/issues/14510">#14510</a>) (<a href="https://github.com/payloadcms/payload/commit/844f99f">844f99f</a>)</li>
+</ul>
+<h3>📝 Templates</h3>
+<ul>
+<li>update next.js 15.4.4 to 15.4.7 (<a href="https://github.com/payloadcms/payload/issues/14533">#14533</a>) (<a href="https://github.com/payloadcms/payload/commit/d3b934c">d3b934c</a>)</li>
+</ul>
+<h3>⚙️ CI</h3>
+<ul>
+<li>fix ERR_PNPM_ADDING_TO_ROOT in create-payload-app int (<a href="https://github.com/payloadcms/payload/issues/14581">#14581</a>) (<a href="https://github.com/payloadcms/payload/commit/6789939">6789939</a>)</li>
+</ul>
+<h3>🏡 Chores</h3>
+<ul>
+<li>add .worktrees to .gitignore (<a href="https://github.com/payloadcms/payload/commit/87f2bd9">87f2bd9</a>)</li>
+<li>fix serverExternalPackages errors in monorepo (<a href="https://github.com/payloadcms/payload/issues/14535">#14535</a>) (<a href="https://github.com/payloadcms/payload/commit/e76da3f">e76da3f</a>)</li>
+</ul>
+<h3>🤝 Contributors</h3>
+<ul>
+<li>Kendell (@kendelljoseph)</li>
+<li>Jarrod Flesch (@JarrodMFlesch)</li>
+<li>Patrik (@PatrikKozak)</li>
+<li>Paul (@paulpopus)</li>
+<li>German Jablonski (@GermanJablo)</li>
+<li>Jessica Rynkar (@jessrynkar)</li>
+<li>Sasha (@r1tsuu)</li>
+<li>Sam (@damnsamn)</li>
+<li>Alessio Gravili (@AlessioGr)</li>
+<li>Tobias Odendahl (@tak-amboss)</li>
+<li>Elliot DeNolf (@denolfe)</li>
+<li>Jens Becker (@jhb-dev)</li>
+<li>Sean Zubrickas (@zubricks)</li>
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
       <title>nodejs/node v25.2.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.2.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.2.0</guid>
@@ -3154,74 +3310,6 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>payloadcms/payload v3.54.0</title>
-      <link>https://github.com/payloadcms/payload/releases/tag/v3.54.0</link>
-      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.54.0</guid>
-      <pubDate>Thu, 28 Aug 2025 13:53:25 GMT</pubDate>
-      <description>v3.54.0 (2025-08-28) 🚀 Features support parallel job queue tasks, speed up task running ( #13614 ) ( e0ffada ) configurable toast notifications ( #13609 ) ( 0a18306 ) allow multiple, different payload instances using getPayload in same process ( #13603 ) ( 13c24af ) db-*: support atomic array $p...</description>
-      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.53.0...v3.54.0">v3.54.0</a> (2025-08-28)</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>support parallel job queue tasks, speed up task running (<a href="https://github.com/payloadcms/payload/issues/13614">#13614</a>) (<a href="https://github.com/payloadcms/payload/commit/e0ffada">e0ffada</a>)</li>
-<li>configurable toast notifications (<a href="https://github.com/payloadcms/payload/issues/13609">#13609</a>) (<a href="https://github.com/payloadcms/payload/commit/0a18306">0a18306</a>)</li>
-<li>allow multiple, different payload instances using getPayload in same process (<a href="https://github.com/payloadcms/payload/issues/13603">#13603</a>) (<a href="https://github.com/payloadcms/payload/commit/13c24af">13c24af</a>)</li>
-<li><strong>db-*:</strong> support atomic array $push db updates (<a href="https://github.com/payloadcms/payload/issues/13453">#13453</a>) (<a href="https://github.com/payloadcms/payload/commit/5ded64e">5ded64e</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> allow custom tenant field per collection (<a href="https://github.com/payloadcms/payload/issues/13553">#13553</a>) (<a href="https://github.com/payloadcms/payload/commit/6db07f0">6db07f0</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> re-enable global selector on all views (<a href="https://github.com/payloadcms/payload/issues/13575">#13575</a>) (<a href="https://github.com/payloadcms/payload/commit/f260d0a">f260d0a</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>restore as draft function was passing a published status (<a href="https://github.com/payloadcms/payload/issues/13599">#13599</a>) (<a href="https://github.com/payloadcms/payload/commit/a670438">a670438</a>)</li>
-<li>hide jobs stats global by default (<a href="https://github.com/payloadcms/payload/issues/13566">#13566</a>) (<a href="https://github.com/payloadcms/payload/commit/a92c251">a92c251</a>)</li>
-<li>deeply merge array and block rows from server form state (<a href="https://github.com/payloadcms/payload/issues/13551">#13551</a>) (<a href="https://github.com/payloadcms/payload/commit/1e13474">1e13474</a>)</li>
-<li>ensure updates to createdAt and updatedAt are respected (<a href="https://github.com/payloadcms/payload/issues/13335">#13335</a>) (<a href="https://github.com/payloadcms/payload/commit/5c16443">5c16443</a>)</li>
-<li><strong>db-*:</strong> add delete version id for non-mongodb (<a href="https://github.com/payloadcms/payload/issues/10613">#10613</a>) (<a href="https://github.com/payloadcms/payload/commit/ddb8ca4">ddb8ca4</a>)</li>
-<li><strong>graphql:</strong> invalid enum names when values include brackets (<a href="https://github.com/payloadcms/payload/issues/13597">#13597</a>) (<a href="https://github.com/payloadcms/payload/commit/1dc346a">1dc346a</a>)</li>
-<li><strong>next:</strong> richtext fields not read-only for locked documents (<a href="https://github.com/payloadcms/payload/issues/13579">#13579</a>) (<a href="https://github.com/payloadcms/payload/commit/344ad69">344ad69</a>)</li>
-<li><strong>next:</strong> update rest route handler types for Next.js 15.5 compatibility (<a href="https://github.com/payloadcms/payload/issues/13521">#13521</a>) (<a href="https://github.com/payloadcms/payload/commit/763cb61">763cb61</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> prevent duplicate filters on referenced blocks (<a href="https://github.com/payloadcms/payload/issues/13607">#13607</a>) (<a href="https://github.com/payloadcms/payload/commit/03a00ca">03a00ca</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> autosave global documents not rendering (<a href="https://github.com/payloadcms/payload/issues/13552">#13552</a>) (<a href="https://github.com/payloadcms/payload/commit/409dd56">409dd56</a>)</li>
-<li><strong>richtext-lexical:</strong> toolbar dropdown items are disabled when selecting via double-click (<a href="https://github.com/payloadcms/payload/issues/13544">#13544</a>) (<a href="https://github.com/payloadcms/payload/commit/3bc1d08">3bc1d08</a>)</li>
-<li><strong>ui:</strong> prevent infinite redirect if no user (<a href="https://github.com/payloadcms/payload/issues/13615">#13615</a>) (<a href="https://github.com/payloadcms/payload/commit/303381e">303381e</a>)</li>
-<li><strong>ui:</strong> bulk edit overwriting fields within named tabs (<a href="https://github.com/payloadcms/payload/issues/13600">#13600</a>) (<a href="https://github.com/payloadcms/payload/commit/138938e">138938e</a>)</li>
-<li><strong>ui:</strong> autosave in document drawer overwrites local changes (<a href="https://github.com/payloadcms/payload/issues/13587">#13587</a>) (<a href="https://github.com/payloadcms/payload/commit/bd81936">bd81936</a>)</li>
-<li><strong>ui:</strong> multiple logout requests being made in parallel (<a href="https://github.com/payloadcms/payload/issues/13595">#13595</a>) (<a href="https://github.com/payloadcms/payload/commit/cf37433">cf37433</a>)</li>
-<li><strong>ui:</strong> auth-fields container renders despite no visible auth/API key/verify content (<a href="https://github.com/payloadcms/payload/issues/13554">#13554</a>) (<a href="https://github.com/payloadcms/payload/commit/8101842">8101842</a>)</li>
-<li><strong>ui:</strong> correctly pass query params to locked document requests (<a href="https://github.com/payloadcms/payload/issues/10802">#10802</a>) (<a href="https://github.com/payloadcms/payload/commit/598ff4c">598ff4c</a>)</li>
-</ul>
-<h3>🛠 Refactors</h3>
-<ul>
-<li>deprecate job queue runHooks property (<a href="https://github.com/payloadcms/payload/issues/13617">#13617</a>) (<a href="https://github.com/payloadcms/payload/commit/97c41ce">97c41ce</a>)</li>
-</ul>
-<h3>📚 Documentation</h3>
-<ul>
-<li>adds default populate video (<a href="https://github.com/payloadcms/payload/issues/13586">#13586</a>) (<a href="https://github.com/payloadcms/payload/commit/ded8ec4">ded8ec4</a>)</li>
-<li>blank-template-url-fix (<a href="https://github.com/payloadcms/payload/issues/13580">#13580</a>) (<a href="https://github.com/payloadcms/payload/commit/45c3be2">45c3be2</a>)</li>
-<li>fix small typo in documentation (<a href="https://github.com/payloadcms/payload/issues/13545">#13545</a>) (<a href="https://github.com/payloadcms/payload/commit/3408d7b">3408d7b</a>)</li>
-</ul>
-<h3>⚙️ CI</h3>
-<ul>
-<li>remove run-e2e-turbo flow (<a href="https://github.com/payloadcms/payload/issues/13611">#13611</a>) (<a href="https://github.com/payloadcms/payload/commit/5c41966">5c41966</a>)</li>
-<li>ignore template bump commits in release notes [skip ci] (<a href="https://github.com/payloadcms/payload/commit/60cfc31">60cfc31</a>)</li>
-</ul>
-<h3>🤝 Contributors</h3>
-<ul>
-<li>Alessio Gravili (@AlessioGr)</li>
-<li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>Jacob Fletcher (@jacobsfletch)</li>
-<li>Jessica Rynkar (@jessrynkar)</li>
-<li>Sean Zubrickas (@zubricks)</li>
-<li>Elliot DeNolf (@denolfe)</li>
-<li>Patrik (@PatrikKozak)</li>
-<li>Rodrigo Solís (@sorodrigo)</li>
-<li>Logan Stellway (@lstellway)</li>
-<li>Yunsup Sim (@SimYunSup)</li>
-<li>Vincent Vu (@rubixvi)</li>
-</ul>]]></content:encoded>
-      <category>payloadcms</category>
-      <category>payload</category>
-      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
       <title>spotDL/spotify-downloader v4.4.0</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.0</link>
