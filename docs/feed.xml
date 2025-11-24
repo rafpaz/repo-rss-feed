@@ -10,9 +10,63 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 24 Nov 2025 18:09:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 21:05:56 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.0</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.0</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.0</guid>
+      <pubDate>Mon, 24 Nov 2025 19:44:13 GMT</pubDate>
+      <description>Atuin Desktop v0.2.0 - 2025-11-24 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Introduce new Runbook execution engine ( #142 ) Add template variable autocompletion to code editors ( #142 ) Add block copy/paste ( #202 ) Copy env from login shell at startup ( #207...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.0 - 2025-11-24</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_0.2.0_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_0.2.0_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_Desktop_0.2.0_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_Desktop-0.2.0-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>Introduce new Runbook execution engine</strong> (<a href="https://github.com/atuinsh/desktop/issues/142">#142</a>)</li>
+<li>Add template variable autocompletion to code editors (<a href="https://github.com/atuinsh/desktop/issues/142">#142</a>)</li>
+<li>Add block copy/paste (<a href="https://github.com/atuinsh/desktop/issues/202">#202</a>)</li>
+<li>Copy env from login shell at startup (<a href="https://github.com/atuinsh/desktop/issues/207">#207</a>)</li>
+<li>Allow resizing embedded terminals (<a href="https://github.com/atuinsh/desktop/issues/225">#225</a>)</li>
+<li>Show open tabs in the Window menu (<a href="https://github.com/atuinsh/desktop/issues/230">#230</a>)</li>
+<li>Check for existing runbooks forked from source before importing new (<a href="https://github.com/atuinsh/desktop/issues/231">#231</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Ensure Dropdown executes regardless of option type (<a href="https://github.com/atuinsh/desktop/issues/206">#206</a>)</li>
+<li>A bunch of script flag things (<a href="https://github.com/atuinsh/desktop/issues/208">#208</a>)</li>
+<li>Run local scripts on a login shell (<a href="https://github.com/atuinsh/desktop/issues/212">#212</a>)</li>
+<li>Race condition when opening runbook tabs (<a href="https://github.com/atuinsh/desktop/issues/209">#209</a>)</li>
+<li>SSH-related issues in Script and Terminal blocks (<a href="https://github.com/atuinsh/desktop/issues/214">#214</a>)</li>
+<li>Some blocks setting empty variables when  or  is blank (<a href="https://github.com/atuinsh/desktop/issues/210">#210</a>)</li>
+<li>Fix incorrect xterm.js terminal sizing (<a href="https://github.com/atuinsh/desktop/issues/221">#221</a>)</li>
+<li><em>(runtime)</em> Only emit context change events if the context has actually changed (<a href="https://github.com/atuinsh/desktop/issues/222">#222</a>)</li>
+<li>Clean up stored context when deleting a runbook (<a href="https://github.com/atuinsh/desktop/issues/223">#223</a>)</li>
+</ul>
+<h3>🎨 Styling</h3>
+<ul>
+<li>Adjust BlockNote editor style to be slightly less compact (<a href="https://github.com/atuinsh/desktop/issues/229">#229</a>)</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li><em>(ci)</em> Switch to depot macos for edge builds (<a href="https://github.com/atuinsh/desktop/issues/218">#218</a>)</li>
+<li><em>(ci)</em> Use sccache for edge builds (<a href="https://github.com/atuinsh/desktop/issues/219">#219</a>)</li>
+<li><em>(ci)</em> Set ci true for depot (<a href="https://github.com/atuinsh/desktop/issues/220">#220</a>)</li>
+<li><em>(ci)</em> Adjust ci config</li>
+<li>Update BlockNote to 0.42.3 (<a href="https://github.com/atuinsh/desktop/issues/224">#224</a>)</li>
+<li>Remove client-side workflow events (<a href="https://github.com/atuinsh/desktop/issues/227">#227</a>)</li>
+<li>Make implementing BlockState and BlockContextItem simpler (<a href="https://github.com/atuinsh/desktop/issues/234">#234</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>novuhq/novu v3.11.0</title>
       <link>https://github.com/novuhq/novu/releases/tag/v3.11.0</link>
       <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.11.0</guid>
@@ -3032,38 +3086,6 @@ and added quality-of-life improvements like a portable compile cache and JSPI fo
       <category>facebook</category>
       <category>react</category>
       <source url="https://github.com/facebook/react">facebook/react</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.1.0</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.0</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.0</guid>
-      <pubDate>Wed, 01 Oct 2025 17:38:07 GMT</pubDate>
-      <description>Atuin Desktop v0.1.0 - 2025-10-01 🔗 Downloads macOS Linux .deb Linux .rpm Changelog 🚀 Features Add release notes section to update modal 🐛 Bug Fixes Add fallback logic for finding appropriate welcome workspace directory if no documents directory is set ( #42 ) Persist app version over multiple...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.0 - 2025-10-01</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.0/Atuin_0.1.0_aarch64.dmg">macOS</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.0/Atuin_Desktop_0.1.0_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.0/Atuin_Desktop-0.1.0-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>Add release notes section to update modal</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>Add fallback logic for finding appropriate welcome workspace directory if no documents directory is set (<a href="https://github.com/atuinsh/desktop/issues/42">#42</a>)</li>
-<li>Persist app version over multiple &#39;track&#39; calls (<a href="https://github.com/atuinsh/desktop/issues/44">#44</a>)</li>
-<li>Prevent re-running terminal on visibility change (<a href="https://github.com/atuinsh/desktop/issues/53">#53</a>)</li>
-</ul>
-<h3>⚙️ Miscellaneous Tasks</h3>
-<ul>
-<li>Update logged out avatar (<a href="https://github.com/atuinsh/desktop/issues/39">#39</a>)</li>
-<li>Split Rust tests into separate jobs (<a href="https://github.com/atuinsh/desktop/issues/43">#43</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.58.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.58.0</link>
