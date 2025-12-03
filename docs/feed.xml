@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 03 Dec 2025 15:07:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 18:09:04 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>atuinsh/desktop v0.2.4</title>
@@ -4565,34 +4565,6 @@ or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Acti
       <category>spotDL</category>
       <category>spotify-downloader</category>
       <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
-    </item>    <item>
-      <title>facebook/react v18.2.0</title>
-      <link>https://github.com/facebook/react/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v18.2.0</guid>
-      <pubDate>Tue, 14 Jun 2022 19:54:21 GMT</pubDate>
-      <description>React DOM Provide a component stack as a second argument to onRecoverableError . ( @gnoff in #24591 ) Fix hydrating into document causing a blank page on mismatch. ( @gnoff in #24523 ) Fix false positive hydration errors with Suspense. ( @gnoff in #24480 and @acdlite in #24532 ) Fix ignored setSt...</description>
-      <content:encoded><![CDATA[<h3>React DOM</h3>
-<ul>
-<li>Provide a component stack as a second argument to <code>onRecoverableError</code>. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24591">#24591</a>)</li>
-<li>Fix hydrating into <code>document</code> causing a blank page on mismatch. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24523">#24523</a>)</li>
-<li>Fix false positive hydration errors with Suspense. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24480">#24480</a> and  <a href="https://github.com/acdlite">@acdlite</a> in <a href="https://github.com/facebook/react/pull/24532">#24532</a>)</li>
-<li>Fix ignored <code>setState</code> in Safari when adding an iframe. (<a href="https://github.com/gaearon">@gaearon</a> in <a href="https://github.com/facebook/react/pull/24459">#24459</a>)</li>
-</ul>
-<h3>React DOM Server</h3>
-<ul>
-<li>Pass information about server errors to the client. (<a href="https://github.com/salazarm">@salazarm</a> and <a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24551">#24551</a> and <a href="https://github.com/facebook/react/pull/24591">#24591</a>)</li>
-<li>Allow to provide a reason when aborting the HTML stream. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24680">#24680</a>)</li>
-<li>Eliminate extraneous text separators in the HTML where possible. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24630">#24630</a>)</li>
-<li>Disallow complex children inside <code>&lt;title&gt;</code> elements to match the browser constraints. (<a href="https://github.com/gnoff">@gnoff</a> in <a href="https://github.com/facebook/react/pull/24679">#24679</a>)</li>
-<li>Fix buffering in some worker environments by explicitly setting <code>highWaterMark</code> to <code>0</code>. (<a href="https://github.com/jplhomer">@jplhomer</a> in <a href="https://github.com/facebook/react/pull/24641">#24641</a>)</li>
-</ul>
-<h3>Server Components (Experimental)</h3>
-<ul>
-<li>Add support for <code>useId()</code> inside Server Components. (<a href="https://github.com/gnoff">@gnoff</a>) in <a href="https://github.com/facebook/react/pull/24172">#24172</a></li>
-</ul>]]></content:encoded>
-      <category>facebook</category>
-      <category>react</category>
-      <source url="https://github.com/facebook/react">facebook/react</source>
     </item>
   </channel>
 </rss>
