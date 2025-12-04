@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 04 Dec 2025 15:08:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 18:09:35 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>payloadcms/payload v3.66.0</title>
@@ -144,7 +144,7 @@ export const MyCollection: CollectionConfig = {
 <h3>🤝 Contributors</h3>
 <ul>
 <li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>Jake Fletcher (@jacobsfletch)</li>
+<li>Jake (@jacobsfletch)</li>
 <li>German Jablonski (@GermanJablo)</li>
 <li>Elliot DeNolf (@denolfe)</li>
 <li>Sean Zubrickas (@zubricks)</li>
