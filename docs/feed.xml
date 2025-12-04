@@ -10,9 +10,41 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 04 Dec 2025 18:09:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 21:06:34 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.6</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.6</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.6</guid>
+      <pubDate>Thu, 04 Dec 2025 19:31:13 GMT</pubDate>
+      <description>Atuin Desktop v0.2.6 - 2025-12-04 Special thanks to our contributors who made their first contribution this release: @sam-phinizy 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Add advanced settings, specified by file only ( #278 ) Support heredoc syntax in $ATUIN_...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.6 - 2025-12-04</h2>
+<p>Special thanks to our contributors who made their first contribution this release:</p>
+<ul>
+<li>@sam-phinizy</li>
+</ul>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_0.2.6_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_0.2.6_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_Desktop_0.2.6_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_Desktop-0.2.6-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Add advanced settings, specified by file only (<a href="https://github.com/atuinsh/desktop/issues/278">#278</a>)</li>
+<li>Support heredoc syntax in <code>$ATUIN_OUTPUT_VARS</code> (<a href="https://github.com/atuinsh/desktop/issues/279">#279</a>)</li>
+<li>Markdown Render block to render markdown from a variable (<a href="https://github.com/atuinsh/desktop/issues/277">#277</a>) by @sam-phinizy</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Host block not removing SSH settings for subsequent blocks (<a href="https://github.com/atuinsh/desktop/issues/280">#280</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>payloadcms/payload v3.66.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.66.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.66.0</guid>
@@ -2841,35 +2873,6 @@ it back in line with previous releases. For more information, see
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.1.8</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.1.8</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.1.8</guid>
-      <pubDate>Wed, 15 Oct 2025 22:17:01 GMT</pubDate>
-      <description>Atuin Desktop v0.1.8 - 2025-10-15 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Add horizontal rule block ( #152 ) Add workspace.root template variable ( #153 ) Setup logfiles and log rotation ( #154 ) ⚙️ Miscellaneous Tasks Switch to native-tls ( #151 ) Add macos...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.1.8 - 2025-10-15</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_0.1.8_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_0.1.8_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_Desktop_0.1.8_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.1.8/Atuin_Desktop-0.1.8-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>Add horizontal rule block (<a href="https://github.com/atuinsh/desktop/issues/152">#152</a>)</li>
-<li>Add workspace.root template variable (<a href="https://github.com/atuinsh/desktop/issues/153">#153</a>)</li>
-<li>Setup logfiles and log rotation (<a href="https://github.com/atuinsh/desktop/issues/154">#154</a>)</li>
-</ul>
-<h3>⚙️ Miscellaneous Tasks</h3>
-<ul>
-<li>Switch to native-tls (<a href="https://github.com/atuinsh/desktop/issues/151">#151</a>)</li>
-<li>Add macos arm to ci tests (<a href="https://github.com/atuinsh/desktop/issues/155">#155</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>nodejs/node v25.0.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.0.0</link>
