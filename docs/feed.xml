@@ -10,9 +10,154 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 03 Dec 2025 21:06:04 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 04 Dec 2025 00:26:10 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>payloadcms/payload v3.66.0</title>
+      <link>https://github.com/payloadcms/payload/releases/tag/v3.66.0</link>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.66.0</guid>
+      <pubDate>Wed, 03 Dec 2025 21:20:01 GMT</pubDate>
+      <description>v3.66.0 (2025-12-03) ⚠️ Security Issue A critical-severity vulnerability in React Server Components ( CVE-2025-55182 ) affects React 19 and frameworks that use it, including Next.js ( CVE-2025-66478 ). You are strongly encouraged to immediately upgrade your own apps to the nearest patched version...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.65.0...v3.66.0">v3.66.0</a> (2025-12-03)</h2>
+<h3>⚠️ Security Issue</h3>
+<p>A critical-severity vulnerability in React Server Components (<a href="https://www.cve.org/CVERecord?id=CVE-2025-55182">CVE-2025-55182</a>) affects React 19 and frameworks that use it, including Next.js (<a href="https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp">CVE-2025-66478</a>).</p>
+<p><strong>You are strongly encouraged to immediately upgrade your own apps to the nearest patched versions of React and Next.js.</strong></p>
+<p>While this is <strong>not a Payload vulnerability</strong>, it may affect any Payload project running on the affected versions of React or Next.js. Payload does not install any of these dependencies directly, it simply enforces their versions through its peer dependencies, which will only <em>warn</em> of the version incompatibilities.</p>
+<p>You will need to upgrade React and Next.js yourself in your own apps to the patched versions listed below in order to receive these updates.</p>
+<p>Quick steps:</p>
+<p>If using <code>pnpm</code> as your package manager, here&#39;s a one-liner:</p>
+<pre><code>pnpm add react@19.2.1 next@15.4.8
+</code></pre>
+<p>To do this manually:</p>
+<ol>
+<li>In your <code>package.json</code>:<ul>
+<li>Bump <code>react</code> to <code>19.2.1</code></li>
+<li>Bump <code>next</code> to <code>15.4.8</code></li>
+</ul>
+</li>
+<li>Reinstall node modules, e.g. <code>pnpm i</code></li>
+<li>Redeploy your app</li>
+</ol>
+<p>Here&#39;s a full breakdown of the vulnerable packages and their patched releases:</p>
+<table>
+<thead>
+<tr>
+<th>Vulnerable package</th>
+<th>Patched release</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>React</td>
+<td>19.0, 19.1, 19.2	19.0.1, 19.1.2, and 19.2.1</td>
+</tr>
+<tr>
+<td>Next.js</td>
+<td>14.3.0-canary, 15.x, and 16.x (App Router)	14.3.0-canary.88, 15.0.5, 15.1.9, 15.2.6, 15.3.6, 15.4.8, 15.5.7, 16.0.7</td>
+</tr>
+</tbody></table>
+<p>See <a href="https://github.com/payloadcms/payload/issues/14807">https://github.com/payloadcms/payload/issues/14807</a> for more details.</p>
+<h3>🚀 Features</h3>
+<ul>
+<li>support custom slugify functions (<a href="https://github.com/payloadcms/payload/issues/14117">#14117</a>) (<a href="https://github.com/payloadcms/payload/commit/59a1607">59a1607</a>)</li>
+<li>accessibility testing and improvements (<a href="https://github.com/payloadcms/payload/issues/14454">#14454</a>) (<a href="https://github.com/payloadcms/payload/commit/42cbd70">42cbd70</a>)</li>
+<li>support external JSON schema file references in type generation (<a href="https://github.com/payloadcms/payload/issues/14749">#14749</a>) (<a href="https://github.com/payloadcms/payload/commit/cb3a078">cb3a078</a>)</li>
+<li><strong>cpa:</strong> assume adapter for with-cloudflare-d1 template (<a href="https://github.com/payloadcms/payload/issues/14799">#14799</a>) (<a href="https://github.com/payloadcms/payload/commit/4f03016">4f03016</a>)</li>
+<li><strong>richtext-lexical:</strong> add align support to upload nodes (<a href="https://github.com/payloadcms/payload/issues/14720">#14720</a>) (<a href="https://github.com/payloadcms/payload/commit/a21c47b">a21c47b</a>)</li>
+</ul>
+<h4>Feature Details</h4>
+<p><strong>Custom Slugify Functions</strong> - Override the default slug field behavior with your own slugify function. Useful for special character encoding, additional language support, or custom slug formatting. Also deprecates <code>fieldToUse</code> in favor of <code>useAsSlug</code> for consistency with <code>useAsTitle</code>. <a href="https://github.com/payloadcms/payload/pull/14117">#14117</a></p>
+<pre><code class="language-ts">import type { CollectionConfig } from &#39;payload&#39;
+import { slugField } from &#39;payload&#39;
+import slugify from &#39;slugify&#39;;
+
+export const MyCollection: CollectionConfig = {
+  // ...
+  fields: [
+    // ...
+    slugField({
+      slugify: ({ valueToSlugify }) =&gt; slugify(valueToSlugify, {
+        // ...additional `slugify` options here
+      })
+    })
+  ]
+}
+</code></pre>
+<p><strong>Accessibility Testing and Improvements</strong> - Adds automated accessibility testing infrastructure including axe a11y scans, focus indicator checks, and horizontal scroll overflow detection. Covers all fields, major views, components, plugins, and Lexical editor. See the <a href="https://github.com/payloadcms/payload/discussions/14489">a11y report discussion</a> for tracked issues. <a href="https://github.com/payloadcms/payload/pull/14454">#14454</a></p>
+<p><strong>External JSON Schema References in Type Generation</strong> - Enables <code>$ref</code> pointers to external <code>.json</code> schema files in <code>typescriptSchema</code> field config. External references are resolved relative to <code>process.cwd()</code>. <a href="https://github.com/payloadcms/payload/pull/14749">#14749</a></p>
+<pre><code class="language-typescript">// payload.config.ts
+{
+  typescript: {
+    schema: [
+      ({ jsonSchema }) =&gt; {
+        jsonSchema.definitions.MyType = {
+          $ref: &#39;./schemas/my-type.json&#39;
+        }
+        return jsonSchema
+      },
+    ]
+  }
+}
+</code></pre>
+<p><strong>Auto-detect D1 Adapter (cpa)</strong> - The <code>with-cloudflare-d1</code> template now automatically assumes the D1 database adapter, eliminating the database selection prompt during project creation. <a href="https://github.com/payloadcms/payload/pull/14799">#14799</a></p>
+<p><strong>Upload Node Alignment (richtext-lexical)</strong> - Adds alignment support to upload nodes in the Lexical editor. Upload/media blocks can now be aligned left, center, or right using the <code>FORMAT_ELEMENT_COMMAND</code>. <a href="https://github.com/payloadcms/payload/pull/14720">#14720</a></p>
+<p><img src="https://github.com/user-attachments/assets/65d255ee-e973-44bc-bb57-f9888090f2c7" alt="Upload alignment support"></p>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>remove &quot;all&quot; from JSDoc comment on supported http methods in endpoints (<a href="https://github.com/payloadcms/payload/issues/14777">#14777</a>) (<a href="https://github.com/payloadcms/payload/commit/8c8def9">8c8def9</a>)</li>
+<li>should exclude svg files from file buffer mime validation (<a href="https://github.com/payloadcms/payload/issues/14751">#14751</a>) (<a href="https://github.com/payloadcms/payload/commit/015b363">015b363</a>)</li>
+<li><strong>deps:</strong> bump minimum react and next versions (<a href="https://github.com/payloadcms/payload/issues/14807">#14807</a>) (<a href="https://github.com/payloadcms/payload/commit/2dfe464">2dfe464</a>)</li>
+<li><strong>plugin-import-export:</strong> incorrect user type in Export causing runtime type mismatch (<a href="https://github.com/payloadcms/payload/issues/14790">#14790</a>) (<a href="https://github.com/payloadcms/payload/commit/61f5aee">61f5aee</a>)</li>
+<li><strong>plugin-multi-tenant:</strong> tenant modal not appearing when autosave is off (<a href="https://github.com/payloadcms/payload/issues/14806">#14806</a>) (<a href="https://github.com/payloadcms/payload/commit/b96e928">b96e928</a>)</li>
+<li><strong>plugin-multi-tenant:</strong> auto assign tenant when autosave is enabled (<a href="https://github.com/payloadcms/payload/issues/14745">#14745</a>) (<a href="https://github.com/payloadcms/payload/commit/b0674fa">b0674fa</a>)</li>
+<li><strong>richtext-lexical:</strong> copying and pasting a single block in Lexical results in an error due to duplicate ID (<a href="https://github.com/payloadcms/payload/issues/14738">#14738</a>) (<a href="https://github.com/payloadcms/payload/commit/cd9addf">cd9addf</a>)</li>
+<li><strong>richtext-lexical:</strong> export serverInlineBlock modules (<a href="https://github.com/payloadcms/payload/issues/14739">#14739</a>) (<a href="https://github.com/payloadcms/payload/commit/becceb7">becceb7</a>)</li>
+<li><strong>translations:</strong> translate slug field actions (<a href="https://github.com/payloadcms/payload/issues/14784">#14784</a>) (<a href="https://github.com/payloadcms/payload/commit/5542e56">5542e56</a>)</li>
+<li><strong>ui:</strong> prevent NaN page parameter in polymorphic relationship pagination (<a href="https://github.com/payloadcms/payload/issues/14795">#14795</a>) (<a href="https://github.com/payloadcms/payload/commit/bbdfdb8">bbdfdb8</a>)</li>
+<li><strong>ui:</strong> reduce spacing between checkbox and first column when few columns shown (<a href="https://github.com/payloadcms/payload/issues/14776">#14776</a>) (<a href="https://github.com/payloadcms/payload/commit/6ae1bc8">6ae1bc8</a>)</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>documents block field image aspect ratio (<a href="https://github.com/payloadcms/payload/issues/14679">#14679</a>) (<a href="https://github.com/payloadcms/payload/commit/b6a336e">b6a336e</a>)</li>
+<li>document default password reset URL (<a href="https://github.com/payloadcms/payload/issues/14688">#14688</a>) (<a href="https://github.com/payloadcms/payload/commit/a68423b">a68423b</a>)</li>
+<li>adds strongly typed examples (<a href="https://github.com/payloadcms/payload/issues/14513">#14513</a>) (<a href="https://github.com/payloadcms/payload/commit/abe8563">abe8563</a>)</li>
+</ul>
+<h3>🧪 Tests</h3>
+<ul>
+<li>deflake sort e2e (<a href="https://github.com/payloadcms/payload/issues/14746">#14746</a>) (<a href="https://github.com/payloadcms/payload/commit/a07cf47">a07cf47</a>)</li>
+</ul>
+<h3>📝 Templates</h3>
+<ul>
+<li>update with-cloudflare-d1 to the latest OpenNext and wrangler (<a href="https://github.com/payloadcms/payload/issues/14509">#14509</a>) (<a href="https://github.com/payloadcms/payload/commit/5150388">5150388</a>)</li>
+</ul>
+<h3>⚙️ CI</h3>
+<ul>
+<li>auto-label issues (<a href="https://github.com/payloadcms/payload/issues/14792">#14792</a>) (<a href="https://github.com/payloadcms/payload/commit/ee632d4">ee632d4</a>)</li>
+</ul>
+<h3>🏡 Chores</h3>
+<ul>
+<li><strong>claude:</strong> enable obra/superpowers plugin (<a href="https://github.com/payloadcms/payload/issues/14789">#14789</a>) (<a href="https://github.com/payloadcms/payload/commit/32df641">32df641</a>)</li>
+</ul>
+<h3>⚠️ BREAKING CHANGES</h3>
+<ul>
+<li><strong>deps:</strong> bump minimum react and next versions (<a href="https://github.com/payloadcms/payload/issues/14807">#14807</a>) (<a href="https://github.com/payloadcms/payload/commit/2dfe464">2dfe464</a>)e</li>
+</ul>
+<h3>🤝 Contributors</h3>
+<ul>
+<li>Jarrod Flesch (@JarrodMFlesch)</li>
+<li>Jake Fletcher (@jacobsfletch)</li>
+<li>German Jablonski (@GermanJablo)</li>
+<li>Elliot DeNolf (@denolfe)</li>
+<li>Sean Zubrickas (@zubricks)</li>
+<li>Patrik (@PatrikKozak)</li>
+<li>Paul (@paulpopus)</li>
+<li>Jessica Rynkar (@jessrynkar)</li>
+<li>Tobias Odendahl (@tak-amboss)</li>
+<li>Ricardo Tavares (@rjgtav)</li>
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.5</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.5</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.5</guid>
@@ -3701,84 +3846,6 @@ const posts = await sdk.find({
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>payloadcms/payload v3.56.0</title>
-      <link>https://github.com/payloadcms/payload/releases/tag/v3.56.0</link>
-      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.56.0</guid>
-      <pubDate>Wed, 17 Sep 2025 13:35:59 GMT</pubDate>
-      <description>v3.56.0 (2025-09-17) 🚀 Features pass args to task onSuccess and onFail callbacks ( #13269 ) ( 3acdbf6 ) crons for all bin scripts, new jobs:handle-schedules script, more reliable job system crons ( #13564 ) ( cdeb828 ) expose multipart/form-data parsing options ( #13766 ) ( 8282031 ) global befo...</description>
-      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.55.1...v3.56.0">v3.56.0</a> (2025-09-17)</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>pass args to task <code>onSuccess</code> and <code>onFail</code> callbacks (<a href="https://github.com/payloadcms/payload/issues/13269">#13269</a>) (<a href="https://github.com/payloadcms/payload/commit/3acdbf6">3acdbf6</a>)</li>
-<li>crons for all bin scripts, new jobs:handle-schedules script, more reliable job system crons (<a href="https://github.com/payloadcms/payload/issues/13564">#13564</a>) (<a href="https://github.com/payloadcms/payload/commit/cdeb828">cdeb828</a>)</li>
-<li>expose multipart/form-data parsing options (<a href="https://github.com/payloadcms/payload/issues/13766">#13766</a>) (<a href="https://github.com/payloadcms/payload/commit/8282031">8282031</a>)</li>
-<li>global beforeOperation hook (<a href="https://github.com/payloadcms/payload/issues/13768">#13768</a>) (<a href="https://github.com/payloadcms/payload/commit/3af546e">3af546e</a>)</li>
-<li><strong>ui:</strong> export FieldPathContext (<a href="https://github.com/payloadcms/payload/issues/13806">#13806</a>) (<a href="https://github.com/payloadcms/payload/commit/a3acfeb">a3acfeb</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>add missed <code>pagination</code> property to <code>findVersions</code> and <code>findGlobalVersions</code> and handle it properly (<a href="https://github.com/payloadcms/payload/issues/13763">#13763</a>) (<a href="https://github.com/payloadcms/payload/commit/a955392">a955392</a>)</li>
-<li>skip validation when trashing documents with empty required fields (<a href="https://github.com/payloadcms/payload/issues/13807">#13807</a>) (<a href="https://github.com/payloadcms/payload/commit/3b13867">3b13867</a>)</li>
-<li>versions created with incomplete data when using   <code>select</code> parameter (<a href="https://github.com/payloadcms/payload/issues/13809">#13809</a>) (<a href="https://github.com/payloadcms/payload/commit/faed3aa">faed3aa</a>)</li>
-<li>error accessing sanitizedPermissions during docAccess operation: &quot;Cannot read properties of undefined&quot; (<a href="https://github.com/payloadcms/payload/issues/13800">#13800</a>) (<a href="https://github.com/payloadcms/payload/commit/c7795fa">c7795fa</a>)</li>
-<li>typo in the description of the isTemp field of query presets (<a href="https://github.com/payloadcms/payload/issues/13728">#13728</a>) (<a href="https://github.com/payloadcms/payload/commit/e75bfb0">e75bfb0</a>)</li>
-<li>fully sanitize unauthenticated client config (<a href="https://github.com/payloadcms/payload/issues/13785">#13785</a>) (<a href="https://github.com/payloadcms/payload/commit/e2632c8">e2632c8</a>)</li>
-<li>client config context inheritance (<a href="https://github.com/payloadcms/payload/issues/13790">#13790</a>) (<a href="https://github.com/payloadcms/payload/commit/dfb0021">dfb0021</a>)</li>
-<li><strong>db-mongodb:</strong> support 2x and more relationship sorting (<a href="https://github.com/payloadcms/payload/issues/13819">#13819</a>) (<a href="https://github.com/payloadcms/payload/commit/24ace70">24ace70</a>)</li>
-<li><strong>db-mongodb:</strong> localized arrays inside blocks with versions (<a href="https://github.com/payloadcms/payload/issues/13804">#13804</a>) (<a href="https://github.com/payloadcms/payload/commit/09dec43">09dec43</a>)</li>
-<li><strong>examples:</strong> secure mt example users collection (<a href="https://github.com/payloadcms/payload/issues/13810">#13810</a>) (<a href="https://github.com/payloadcms/payload/commit/9a841df">9a841df</a>)</li>
-<li><strong>live-preview:</strong> client-side live preview failed to populate localized fields (<a href="https://github.com/payloadcms/payload/issues/13794">#13794</a>) (<a href="https://github.com/payloadcms/payload/commit/b34e5ea">b34e5ea</a>)</li>
-<li><strong>live-preview:</strong> reset cache per subscription and ignore invalid preview messages (<a href="https://github.com/payloadcms/payload/issues/13793">#13793</a>) (<a href="https://github.com/payloadcms/payload/commit/b62a30a">b62a30a</a>)</li>
-<li><strong>next:</strong> unnamed, unlabeled groups displayed without label in version view (<a href="https://github.com/payloadcms/payload/issues/13831">#13831</a>) (<a href="https://github.com/payloadcms/payload/commit/8d3b146">8d3b146</a>)</li>
-<li><strong>next:</strong> sparse block and arrays diffs were not rendered correctly (<a href="https://github.com/payloadcms/payload/issues/13829">#13829</a>) (<a href="https://github.com/payloadcms/payload/commit/433c513">433c513</a>)</li>
-<li><strong>next:</strong> exclude permissions from page response when unauthenticated (<a href="https://github.com/payloadcms/payload/issues/13796">#13796</a>) (<a href="https://github.com/payloadcms/payload/commit/8113d3b">8113d3b</a>)</li>
-<li><strong>next:</strong> richtext field is read-only for expired lock (<a href="https://github.com/payloadcms/payload/issues/13789">#13789</a>) (<a href="https://github.com/payloadcms/payload/commit/4278e72">4278e72</a>)</li>
-<li><strong>next:</strong> login redirect crashes page (<a href="https://github.com/payloadcms/payload/issues/13786">#13786</a>) (<a href="https://github.com/payloadcms/payload/commit/13af91f">13af91f</a>)</li>
-<li><strong>next:</strong> resolve filterOptions by path (<a href="https://github.com/payloadcms/payload/issues/13779">#13779</a>) (<a href="https://github.com/payloadcms/payload/commit/8a7124a">8a7124a</a>)</li>
-<li><strong>translations:</strong> use correct Dutch terms for &quot;clear&quot; and &quot;close&quot; (<a href="https://github.com/payloadcms/payload/issues/13748">#13748</a>) (<a href="https://github.com/payloadcms/payload/commit/fce94d6">fce94d6</a>)</li>
-<li><strong>ui:</strong> pass locale arg in query params for folder operations (<a href="https://github.com/payloadcms/payload/issues/13837">#13837</a>) (<a href="https://github.com/payloadcms/payload/commit/c0684e3">c0684e3</a>)</li>
-<li><strong>ui:</strong> correct field path in inline create drawer for auth fields (<a href="https://github.com/payloadcms/payload/issues/13815">#13815</a>) (<a href="https://github.com/payloadcms/payload/commit/91e7f0c">91e7f0c</a>)</li>
-<li><strong>ui:</strong> populate nested fields for enableListViewSelectAPI (<a href="https://github.com/payloadcms/payload/issues/13827">#13827</a>) (<a href="https://github.com/payloadcms/payload/commit/dc732b8">dc732b8</a>)</li>
-<li><strong>ui:</strong> cross-domain server-side live preview throws postMessage error (<a href="https://github.com/payloadcms/payload/issues/13825">#13825</a>) (<a href="https://github.com/payloadcms/payload/commit/731c4fb">731c4fb</a>)</li>
-<li><strong>ui:</strong> undefined operators for virtual field with unsupported field types (<a href="https://github.com/payloadcms/payload/issues/13820">#13820</a>) (<a href="https://github.com/payloadcms/payload/commit/5c02d17">5c02d17</a>)</li>
-<li><strong>ui:</strong> prevent form validation after draft submit error (<a href="https://github.com/payloadcms/payload/issues/12918">#12918</a>) (<a href="https://github.com/payloadcms/payload/commit/a2c31fa">a2c31fa</a>)</li>
-<li><strong>ui:</strong> show loading state in relationship field during search and pagination (<a href="https://github.com/payloadcms/payload/issues/13805">#13805</a>) (<a href="https://github.com/payloadcms/payload/commit/555228b">555228b</a>)</li>
-<li><strong>ui:</strong> safely access preferences when loading list view (<a href="https://github.com/payloadcms/payload/issues/13771">#13771</a>) (<a href="https://github.com/payloadcms/payload/commit/4482eaf">4482eaf</a>)</li>
-</ul>
-<h3>📚 Documentation</h3>
-<ul>
-<li>improvements and fixes to blocks documentation (<a href="https://github.com/payloadcms/payload/issues/13782">#13782</a>) (<a href="https://github.com/payloadcms/payload/commit/3c5aa1b">3c5aa1b</a>)</li>
-</ul>
-<h3>📝 Templates</h3>
-<ul>
-<li>fix experimental-build-mode compile generating invalid code (<a href="https://github.com/payloadcms/payload/issues/13828">#13828</a>) (<a href="https://github.com/payloadcms/payload/commit/ba2ab2f">ba2ab2f</a>)</li>
-</ul>
-<h3>⚙️ CI</h3>
-<ul>
-<li>adjust audit-dependencies cron time (<a href="https://github.com/payloadcms/payload/commit/898e937">898e937</a>)</li>
-</ul>
-<h3>🤝 Contributors</h3>
-<ul>
-<li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>Alessio Gravili (@AlessioGr)</li>
-<li>Jonathan Elmgren (@jonathanelmgren)</li>
-<li>Sasha (@r1tsuu)</li>
-<li>Jacob Fletcher (@jacobsfletch)</li>
-<li>Patrik (@PatrikKozak)</li>
-<li>Slava Nossar (@slavanossar)</li>
-<li>Philipp Schneider (@philipp-tailor)</li>
-<li>Elliot DeNolf (@denolfe)</li>
-<li>Amelia (@LimChorngUan)</li>
-<li>BrannanKovachev (@BrannanKovachev)</li>
-<li>Robbe Vaes (@Robbe95)</li>
-<li>Robbert Stevens (@robbertstevens)</li>
-<li>Anders Semb Hermansen (@andershermansen)</li>
-<li>German Jablonski (@GermanJablo)</li>
-</ul>]]></content:encoded>
-      <category>payloadcms</category>
-      <category>payload</category>
-      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
       <title>nodejs/node v24.8.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.8.0</link>
