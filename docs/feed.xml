@@ -10,9 +10,93 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 05 Dec 2025 18:07:57 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 21:05:43 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>payloadcms/payload v3.67.0</title>
+      <link>https://github.com/payloadcms/payload/releases/tag/v3.67.0</link>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.67.0</guid>
+      <pubDate>Fri, 05 Dec 2025 20:34:05 GMT</pubDate>
+      <description>v3.67.0 (2025-12-05) 🚀 Features add groupBy support to query presets ( #14808 ) ( 2b7aa7a ) plugin-ecommerce: add ability to enable guest carts with reworked access config ( #14565 ) ( 90c92f4 ) GroupBy Support for Query Presets - Query presets now save and restore groupBy state when switching b...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.66.0...v3.67.0">v3.67.0</a> (2025-12-05)</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>add groupBy support to query presets (<a href="https://github.com/payloadcms/payload/issues/14808">#14808</a>) (<a href="https://github.com/payloadcms/payload/commit/2b7aa7a">2b7aa7a</a>)</li>
+<li><strong>plugin-ecommerce:</strong> add ability to enable guest carts with reworked access config (<a href="https://github.com/payloadcms/payload/issues/14565">#14565</a>) (<a href="https://github.com/payloadcms/payload/commit/90c92f4">90c92f4</a>)</li>
+</ul>
+<hr>
+<p>  <strong>GroupBy Support for Query Presets</strong> - Query presets now save and restore <code>groupBy</code> state when switching between presets. Previously, groupBy settings would persist across preset switches and weren&#39;t saved as part of the preset configuration. <a href="https://github.com/payloadcms/payload/pull/14808">#14808</a></p>
+  <img width="711" height="684" alt="Preset creation with group-by added" src="https://github.com/user-attachments/assets/5fe6ee88-6ed7-40f6-b190-df6b2e89460c" />
+
+<hr>
+<p>  <strong>Guest Carts (plugin-ecommerce)</strong> - Enable guest users to create and manage carts without authentication. Carts created by guests are secured with a generated secret stored in local storage. Configure with <code>allowGuestCarts</code> (enabled by default). Also adds <code>isLoading</code> status to all hooks for conditional UI state.
+  <a href="https://github.com/payloadcms/payload/pull/14565">#14565</a></p>
+<pre><code class="language-ts">// Before
+ecommercePlugin({
+  access: {
+    adminOnly,
+    adminOnlyFieldAccess,
+    adminOrCustomerOwner,
+    adminOrPublishedStatus,
+    customerOnlyFieldAccess,
+  }
+})
+
+// After
+ecommercePlugin({
+  access: {
+    adminOnlyFieldAccess,
+    adminOrPublishedStatus,
+    customerOnlyFieldAccess,
+    isAdmin,
+    isDocumentOwner,
+  }
+})
+</code></pre>
+<p>  🐛 Bug Fixes</p>
+<ul>
+<li>add missing beforeInput and afterInput properties to UploadAdmin type (<a href="https://github.com/payloadcms/payload/issues/14775">https://github.com/payloadcms/payload/issues/14775</a>) (<a href="https://github.com/payloadcms/payload/commit/22a0255">https://github.com/payloadcms/payload/commit/22a0255</a>)</li>
+<li>add missing afterOperation and beforeOperation hook calls (<a href="https://github.com/payloadcms/payload/issues/14778">https://github.com/payloadcms/payload/issues/14778</a>) (<a href="https://github.com/payloadcms/payload/commit/e9cd2a5">https://github.com/payloadcms/payload/commit/e9cd2a5</a>)</li>
+<li>sanitized versions type was incorrect (<a href="https://github.com/payloadcms/payload/issues/14810">https://github.com/payloadcms/payload/issues/14810</a>) (<a href="https://github.com/payloadcms/payload/commit/51c951f">https://github.com/payloadcms/payload/commit/51c951f</a>)</li>
+<li>plugin-multi-tenant: moves getGlobalViewRedirect from utilities to rsc exports (<a href="https://github.com/payloadcms/payload/issues/14817">https://github.com/payloadcms/payload/issues/14817</a>) (<a href="https://github.com/payloadcms/payload/commit/1340818">https://github.com/payloadcms/payload/commit/1340818</a>)</li>
+<li>ui: autosave not queued while background process is in flight (<a href="https://github.com/payloadcms/payload/issues/14805">https://github.com/payloadcms/payload/issues/14805</a>) (<a href="https://github.com/payloadcms/payload/commit/14f042f">https://github.com/payloadcms/payload/commit/14f042f</a>)</li>
+<li>ui: ensure block error css only gets applied to the affected block (<a href="https://github.com/payloadcms/payload/issues/14826">https://github.com/payloadcms/payload/issues/14826</a>) (<a href="https://github.com/payloadcms/payload/commit/7520140">https://github.com/payloadcms/payload/commit/7520140</a>)</li>
+<li>ui: missing translation support in SelectMany component (<a href="https://github.com/payloadcms/payload/issues/14819">https://github.com/payloadcms/payload/issues/14819</a>) (<a href="https://github.com/payloadcms/payload/commit/8fa91a5">https://github.com/payloadcms/payload/commit/8fa91a5</a>)</li>
+</ul>
+<p>  ⚡ Performance</p>
+<ul>
+<li>cpa: use AST for templates (<a href="https://github.com/payloadcms/payload/issues/14648">https://github.com/payloadcms/payload/issues/14648</a>) (<a href="https://github.com/payloadcms/payload/commit/bad6680">https://github.com/payloadcms/payload/commit/bad6680</a>)</li>
+</ul>
+<p>  ⚙️ CI</p>
+<ul>
+<li>clean up bug report template for auto-labeling (<a href="https://github.com/payloadcms/payload/commit/ebee8e1">https://github.com/payloadcms/payload/commit/ebee8e1</a>)</li>
+</ul>
+<p>  🏡 Chores</p>
+<ul>
+<li>claude: add coding patterns and best practices section (<a href="https://github.com/payloadcms/payload/issues/14829">https://github.com/payloadcms/payload/issues/14829</a>) (<a href="https://github.com/payloadcms/payload/commit/c5d8e68">https://github.com/payloadcms/payload/commit/c5d8e68</a>)</li>
+<li>deps: bump @types/react and @types/react-dom to 19.2.1 (<a href="https://github.com/payloadcms/payload/issues/14815">https://github.com/payloadcms/payload/issues/14815</a>) (<a href="https://github.com/payloadcms/payload/commit/d56796b">https://github.com/payloadcms/payload/commit/d56796b</a>)</li>
+<li>deps: bump next to 15.4.8 in root and test dirs (<a href="https://github.com/payloadcms/payload/issues/14811">https://github.com/payloadcms/payload/issues/14811</a>) (<a href="https://github.com/payloadcms/payload/commit/1c3417d">https://github.com/payloadcms/payload/commit/1c3417d</a>)</li>
+</ul>
+<p>  ⚠️ BREAKING CHANGES</p>
+<ul>
+<li>plugin-ecommerce: add ability to enable guest carts with reworked access config (<a href="https://github.com/payloadcms/payload/issues/14565">https://github.com/payloadcms/payload/issues/14565</a>) (<a href="https://github.com/payloadcms/payload/commit/90c92f4">https://github.com/payloadcms/payload/commit/90c92f4</a>)</li>
+</ul>
+<p>  This PR introduce a breaking change into the plugin as it was necessary
+  in order to provide more secure guest carts.</p>
+<p>  🤝 Contributors</p>
+<ul>
+<li>Paul (@paulpopus)</li>
+<li>Jake (@jacobsfletch)</li>
+<li>Jessica Rynkar (@jessrynkar)</li>
+<li>Elliot DeNolf (@denolfe)</li>
+<li>Patrik (@PatrikKozak)</li>
+<li>Jarrod Flesch (@JarrodMFlesch)</li>
+<li>Jens Becker (@jhb-dev)</li>
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.6</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.6</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.6</guid>
@@ -3538,116 +3622,6 @@ const posts = await sdk.find({
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>payloadcms/payload v3.57.0</title>
-      <link>https://github.com/payloadcms/payload/releases/tag/v3.57.0</link>
-      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.57.0</guid>
-      <pubDate>Thu, 25 Sep 2025 16:55:50 GMT</pubDate>
-      <description>v3.57.0 (2025-09-25) 🚀 Features adds admin.formatDocURL function to control list view linking ( #13773 ) ( 1d1240f ) conditional blocks ( #13801 ) ( d8dace6 ) support hasMany virtual relationship fields ( #13879 ) ( 1072171 ) next: regenerate live preview url on save ( #13631 ) ( 00a673e ) plugi...</description>
-      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.56.0...v3.57.0">v3.57.0</a> (2025-09-25)</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>adds admin.formatDocURL function to control list view linking (<a href="https://github.com/payloadcms/payload/issues/13773">#13773</a>) (<a href="https://github.com/payloadcms/payload/commit/1d1240f">1d1240f</a>)</li>
-<li>conditional blocks (<a href="https://github.com/payloadcms/payload/issues/13801">#13801</a>) (<a href="https://github.com/payloadcms/payload/commit/d8dace6">d8dace6</a>)</li>
-<li>support <code>hasMany</code> virtual relationship fields (<a href="https://github.com/payloadcms/payload/issues/13879">#13879</a>) (<a href="https://github.com/payloadcms/payload/commit/1072171">1072171</a>)</li>
-<li><strong>next:</strong> regenerate live preview url on save (<a href="https://github.com/payloadcms/payload/issues/13631">#13631</a>) (<a href="https://github.com/payloadcms/payload/commit/00a673e">00a673e</a>)</li>
-<li><strong>plugin-form-builder:</strong> allow creating form submissions from the admin panel (<a href="https://github.com/payloadcms/payload/issues/11222">#11222</a>) (<a href="https://github.com/payloadcms/payload/commit/104a5fc">104a5fc</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> improves tenant assignment flow (<a href="https://github.com/payloadcms/payload/issues/13881">#13881</a>) (<a href="https://github.com/payloadcms/payload/commit/fcb8b5a">fcb8b5a</a>)</li>
-<li><strong>richtext-lexical:</strong> support copy &amp; pasting and drag &amp; dopping files/images into the editor (<a href="https://github.com/payloadcms/payload/issues/13868">#13868</a>) (<a href="https://github.com/payloadcms/payload/commit/59414bd">59414bd</a>)</li>
-<li><strong>richtext-lexical:</strong> utility render lexical field on-demand (<a href="https://github.com/payloadcms/payload/issues/13657">#13657</a>) (<a href="https://github.com/payloadcms/payload/commit/1c89291">1c89291</a>)</li>
-<li><strong>translations:</strong> add Tamil translations (<a href="https://github.com/payloadcms/payload/issues/13788">#13788</a>) (<a href="https://github.com/payloadcms/payload/commit/7975fe3">7975fe3</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>server component readonly state issues with document locking (<a href="https://github.com/payloadcms/payload/issues/13878">#13878</a>) (<a href="https://github.com/payloadcms/payload/commit/512a8fa">512a8fa</a>)</li>
-<li>make input/output encoding explicit in auth/crypto&#39;s encrypt/decrypt (<a href="https://github.com/payloadcms/payload/issues/13710">#13710</a>) (<a href="https://github.com/payloadcms/payload/commit/7f35213">7f35213</a>)</li>
-<li>pagination returning duplicate results when timestamps: false (<a href="https://github.com/payloadcms/payload/issues/13920">#13920</a>) (<a href="https://github.com/payloadcms/payload/commit/062c1d7">062c1d7</a>)</li>
-<li>add missing translation key (<a href="https://github.com/payloadcms/payload/issues/13902">#13902</a>) (<a href="https://github.com/payloadcms/payload/commit/39143c9">39143c9</a>)</li>
-<li><code>findDistinct</code> with polymorphic relationships (<a href="https://github.com/payloadcms/payload/issues/13875">#13875</a>) (<a href="https://github.com/payloadcms/payload/commit/e99e054">e99e054</a>)</li>
-<li>admin.hidden not respected for RSCs, render-field server function not respecting field-overrides client-side (<a href="https://github.com/payloadcms/payload/issues/13869">#13869</a>) (<a href="https://github.com/payloadcms/payload/commit/228e8f2">228e8f2</a>)</li>
-<li>exits handlers loop if response is returned (<a href="https://github.com/payloadcms/payload/issues/13866">#13866</a>) (<a href="https://github.com/payloadcms/payload/commit/425172c">425172c</a>)</li>
-<li>support <code>hasMany: true</code> relationships in <code>findDistinct</code> (<a href="https://github.com/payloadcms/payload/issues/13840">#13840</a>) (<a href="https://github.com/payloadcms/payload/commit/d0543a4">d0543a4</a>)</li>
-<li>removes select argument from create operation db calls (<a href="https://github.com/payloadcms/payload/issues/13841">#13841</a>) (<a href="https://github.com/payloadcms/payload/commit/a26d8d9">a26d8d9</a>)</li>
-<li><strong>db-postgres:</strong> localized relationships inside blocks (<a href="https://github.com/payloadcms/payload/issues/13760">#13760</a>) (<a href="https://github.com/payloadcms/payload/commit/22ae9fa">22ae9fa</a>)</li>
-<li><strong>db-sqlite:</strong> <code>exists</code> operator in <code>createJSONQuery</code> (<a href="https://github.com/payloadcms/payload/issues/13907">#13907</a>) (<a href="https://github.com/payloadcms/payload/commit/f980a86">f980a86</a>)</li>
-<li><strong>graphql:</strong> graphql tab schema not handling tabs correctly (<a href="https://github.com/payloadcms/payload/issues/13850">#13850</a>) (<a href="https://github.com/payloadcms/payload/commit/83b6e37">83b6e37</a>)</li>
-<li><strong>next:</strong> clear bfcache on forward/back (<a href="https://github.com/payloadcms/payload/issues/13913">#13913</a>) (<a href="https://github.com/payloadcms/payload/commit/f868ed9">f868ed9</a>)</li>
-<li><strong>next:</strong> groupBy for polymorphic relationships (<a href="https://github.com/payloadcms/payload/issues/13781">#13781</a>) (<a href="https://github.com/payloadcms/payload/commit/9c20eb3">9c20eb3</a>)</li>
-<li><strong>plugin-import-export:</strong> collectionSlug field regression from hidden field changes (<a href="https://github.com/payloadcms/payload/issues/13917">#13917</a>) (<a href="https://github.com/payloadcms/payload/commit/96c6612">96c6612</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> ensure relationship filter filters based on doc.tenant (<a href="https://github.com/payloadcms/payload/issues/13925">#13925</a>) (<a href="https://github.com/payloadcms/payload/commit/cbbf98e">cbbf98e</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> improve Norwegian translation for &quot;tenant&quot; (<a href="https://github.com/payloadcms/payload/issues/13923">#13923</a>) (<a href="https://github.com/payloadcms/payload/commit/dea91f3">dea91f3</a>)</li>
-<li><strong>plugin-search:</strong> transaction state errors in parallel reindex operations (<a href="https://github.com/payloadcms/payload/issues/13915">#13915</a>) (<a href="https://github.com/payloadcms/payload/commit/79b2557">79b2557</a>)</li>
-<li><strong>plugin-search:</strong> returns doc instead of empty return (<a href="https://github.com/payloadcms/payload/issues/13916">#13916</a>) (<a href="https://github.com/payloadcms/payload/commit/68882aa">68882aa</a>)</li>
-<li><strong>plugin-seo:</strong> allow number ids &amp; resolved relations for image auto-generation (<a href="https://github.com/payloadcms/payload/issues/13906">#13906</a>) (<a href="https://github.com/payloadcms/payload/commit/abbe38f">abbe38f</a>)</li>
-<li><strong>richtext-lexical:</strong> remove unexpected spaces in link html converter (<a href="https://github.com/payloadcms/payload/issues/13924">#13924</a>) (<a href="https://github.com/payloadcms/payload/commit/c230005">c230005</a>)</li>
-<li><strong>richtext-lexical:</strong> richtext field duplicates description custom component (<a href="https://github.com/payloadcms/payload/issues/13880">#13880</a>) (<a href="https://github.com/payloadcms/payload/commit/66f5d14">66f5d14</a>)</li>
-<li><strong>richtext-lexical:</strong> prevent disallowed headings to be pasted (<a href="https://github.com/payloadcms/payload/issues/13765">#13765</a>) (<a href="https://github.com/payloadcms/payload/commit/207caa5">207caa5</a>)</li>
-<li><strong>translations:</strong> adjust some zh translations (<a href="https://github.com/payloadcms/payload/issues/13867">#13867</a>) (<a href="https://github.com/payloadcms/payload/commit/ae7b75a">ae7b75a</a>)</li>
-<li><strong>translations:</strong> correct Ukrainian language translations (<a href="https://github.com/payloadcms/payload/issues/13639">#13639</a>) (<a href="https://github.com/payloadcms/payload/commit/5b5eaeb">5b5eaeb</a>)</li>
-<li><strong>translations:</strong> missing noLabelGroup translation key for Tamil translations (<a href="https://github.com/payloadcms/payload/issues/13896">#13896</a>) (<a href="https://github.com/payloadcms/payload/commit/cb23aaf">cb23aaf</a>)</li>
-<li><strong>ui:</strong> opening relationship field with appearance: &quot;drawer&quot; inside rich text inline block closes drawer (<a href="https://github.com/payloadcms/payload/issues/13830">#13830</a>) (<a href="https://github.com/payloadcms/payload/commit/7bbd07c">7bbd07c</a>)</li>
-<li><strong>ui:</strong> corrects url for publish specific url (<a href="https://github.com/payloadcms/payload/issues/13922">#13922</a>) (<a href="https://github.com/payloadcms/payload/commit/662bab2">662bab2</a>)</li>
-<li><strong>ui:</strong> array field state to return empty array instead of 0 (<a href="https://github.com/payloadcms/payload/issues/11283">#11283</a>) (<a href="https://github.com/payloadcms/payload/commit/3f5c989">3f5c989</a>)</li>
-<li><strong>ui:</strong> folder filters hidden behind results (<a href="https://github.com/payloadcms/payload/issues/13908">#13908</a>) (<a href="https://github.com/payloadcms/payload/commit/5c81342">5c81342</a>)</li>
-<li><strong>ui:</strong> custom folder slug in browse-by (<a href="https://github.com/payloadcms/payload/issues/13909">#13909</a>) (<a href="https://github.com/payloadcms/payload/commit/4975b8d">4975b8d</a>)</li>
-<li><strong>ui:</strong> query folder children with depth and select (<a href="https://github.com/payloadcms/payload/issues/13910">#13910</a>) (<a href="https://github.com/payloadcms/payload/commit/984f1b3">984f1b3</a>)</li>
-<li><strong>ui:</strong> revert-to-published button showing on new drafts (<a href="https://github.com/payloadcms/payload/issues/13897">#13897</a>) (<a href="https://github.com/payloadcms/payload/commit/82d98ab">82d98ab</a>)</li>
-<li><strong>ui:</strong> bulk upload with locale param (<a href="https://github.com/payloadcms/payload/issues/13865">#13865</a>) (<a href="https://github.com/payloadcms/payload/commit/667c4f1">667c4f1</a>)</li>
-<li><strong>ui:</strong> ensures visible list view thumbnails with enableListViewSelectAPI (<a href="https://github.com/payloadcms/payload/issues/13864">#13864</a>) (<a href="https://github.com/payloadcms/payload/commit/82aade2">82aade2</a>)</li>
-<li><strong>ui:</strong> respect editorOptions, prevent field from flashing on save (<a href="https://github.com/payloadcms/payload/issues/13848">#13848</a>) (<a href="https://github.com/payloadcms/payload/commit/5241113">5241113</a>)</li>
-<li><strong>ui:</strong> set prefetch false on Link buttons (<a href="https://github.com/payloadcms/payload/issues/13846">#13846</a>) (<a href="https://github.com/payloadcms/payload/commit/33228d9">33228d9</a>)</li>
-</ul>
-<h3>⚡ Performance</h3>
-<ul>
-<li><strong>graphql:</strong> use depth 0 in auth/apiKey for graphQL requests (<a href="https://github.com/payloadcms/payload/issues/13895">#13895</a>) (<a href="https://github.com/payloadcms/payload/commit/9a59562">9a59562</a>)</li>
-<li><strong>ui:</strong> use select API in RelationshipProvider to speed up load times in RelationshipCell (<a href="https://github.com/payloadcms/payload/issues/13832">#13832</a>) (<a href="https://github.com/payloadcms/payload/commit/77cac30">77cac30</a>)</li>
-</ul>
-<h3>🛠 Refactors</h3>
-<ul>
-<li><strong>richtext-lexical:</strong> new upload node design (<a href="https://github.com/payloadcms/payload/issues/13901">#13901</a>) (<a href="https://github.com/payloadcms/payload/commit/bea77f2">bea77f2</a>)</li>
-<li><strong>translations:</strong> correct i18n translation for Norwegian (<a href="https://github.com/payloadcms/payload/issues/13854">#13854</a>) (<a href="https://github.com/payloadcms/payload/commit/b7f6e3c">b7f6e3c</a>)</li>
-</ul>
-<h3>📚 Documentation</h3>
-<ul>
-<li>corrects link for experimental features topic (<a href="https://github.com/payloadcms/payload/issues/13862">#13862</a>) (<a href="https://github.com/payloadcms/payload/commit/b1e5bd9">b1e5bd9</a>)</li>
-<li>clarify JWT token encryption / decryption in configuration docs (<a href="https://github.com/payloadcms/payload/issues/13816">#13816</a>) (<a href="https://github.com/payloadcms/payload/commit/0a5b7b0">0a5b7b0</a>)</li>
-</ul>
-<h3>⚙️ CI</h3>
-<ul>
-<li>remove v2 issue template (<a href="https://github.com/payloadcms/payload/commit/f39c7bf">f39c7bf</a>)</li>
-</ul>
-<h3>🏡 Chores</h3>
-<ul>
-<li>revert docs label change (<a href="https://github.com/payloadcms/payload/commit/c33c037">c33c037</a>)</li>
-<li>update documentation issue template (<a href="https://github.com/payloadcms/payload/commit/ae95d58">ae95d58</a>)</li>
-<li>consolidate canAccessAdmin logic (<a href="https://github.com/payloadcms/payload/issues/13849">#13849</a>) (<a href="https://github.com/payloadcms/payload/commit/42b5935">42b5935</a>)</li>
-<li><strong>deps:</strong> bump @faceless-ui/modal to v3.0.0 (<a href="https://github.com/payloadcms/payload/issues/13842">#13842</a>) (<a href="https://github.com/payloadcms/payload/commit/9a8e3f8">9a8e3f8</a>)</li>
-</ul>
-<h3>🤝 Contributors</h3>
-<ul>
-<li>Alessio Gravili (@AlessioGr)</li>
-<li>Elliot DeNolf (@denolfe)</li>
-<li>Dan Ribbens (@DanRibbens)</li>
-<li>roboin (@Robot-Inventor)</li>
-<li>Jacob Fletcher (@jacobsfletch)</li>
-<li>Anders Semb Hermansen (@andershermansen)</li>
-<li>Jie Wang (@escwxyz)</li>
-<li>aptt (@apttx)</li>
-<li>Ricardo Tavares (@rjgtav)</li>
-<li>Patrik (@PatrikKozak)</li>
-<li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>Sasha (@r1tsuu)</li>
-<li>Jessica Rynkar (@jessrynkar)</li>
-<li>Паламар Роман (@VeiaG)</li>
-<li>Anil Shebin S J (@AnilShebin)</li>
-<li>German Jablonski (@GermanJablo)</li>
-<li>Jens Becker (@jhb-dev)</li>
-<li>Sean Zubrickas (@zubricks)</li>
-<li>Kwan Jun Wen (@junwen-k)</li>
-</ul>]]></content:encoded>
-      <category>payloadcms</category>
-      <category>payload</category>
-      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
       <title>nodejs/node v22.20.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v22.20.0</link>
