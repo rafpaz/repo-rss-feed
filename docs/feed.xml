@@ -10,9 +10,35 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 11 Dec 2025 21:07:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 00:26:39 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.11</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.11</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.11</guid>
+      <pubDate>Thu, 11 Dec 2025 23:05:37 GMT</pubDate>
+      <description>Atuin Desktop v0.2.11 - 2025-12-11 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🐛 Bug Fixes Ssh username resolution (#298) Show error message when a document has unsupported blocks (#299) Remaining ssh username reading (#300) Parse HTTP headers from JSON string format (#297...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.11 - 2025-12-11</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.11/Atuin_0.2.11_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.11/Atuin_0.2.11_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.11/Atuin_Desktop_0.2.11_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.11/Atuin_Desktop-0.2.11-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<p>🐛 Bug Fixes</p>
+<ul>
+<li>Ssh username resolution (#298)</li>
+<li>Show error message when a document has unsupported blocks (#299)</li>
+<li>Remaining ssh username reading (#300)</li>
+<li>Parse HTTP headers from JSON string format (#297) by @hezhizhen</li>
+<li>Ssh port parsing (<a href="https://github.com/atuinsh/desktop/issues/306">#306</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>nodejs/node v24.12.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.12.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.12.0</guid>
@@ -718,60 +744,6 @@ export const MyCollection: CollectionConfig = {
 <li>Runbooks with content sometimes open as blank runbooks (<a href="https://github.com/atuinsh/desktop/issues/246">#246</a>)</li>
 <li>Hovering over runtime alert shows [object object] (<a href="https://github.com/atuinsh/desktop/issues/245">#245</a>)</li>
 <li>Populate missing fixedOptions in Dropdown blocks (<a href="https://github.com/atuinsh/desktop/issues/247">#247</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.2.0</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.0</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.0</guid>
-      <pubDate>Tue, 25 Nov 2025 19:33:09 GMT</pubDate>
-      <description>Atuin Desktop v0.2.0 - 2025-11-24 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Introduce new Runbook execution engine ( #142 ) Add template variable autocompletion to code editors ( #142 ) Add block copy/paste ( #202 ) Copy env from login shell at startup ( #207...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.0 - 2025-11-24</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_0.2.0_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_0.2.0_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_Desktop_0.2.0_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.0/Atuin_Desktop-0.2.0-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>Introduce new Runbook execution engine</strong> (<a href="https://github.com/atuinsh/desktop/issues/142">#142</a>)</li>
-<li>Add template variable autocompletion to code editors (<a href="https://github.com/atuinsh/desktop/issues/142">#142</a>)</li>
-<li>Add block copy/paste (<a href="https://github.com/atuinsh/desktop/issues/202">#202</a>)</li>
-<li>Copy env from login shell at startup (<a href="https://github.com/atuinsh/desktop/issues/207">#207</a>)</li>
-<li>Allow resizing embedded terminals (<a href="https://github.com/atuinsh/desktop/issues/225">#225</a>)</li>
-<li>Show open tabs in the Window menu (<a href="https://github.com/atuinsh/desktop/issues/230">#230</a>)</li>
-<li>Check for existing runbooks forked from source before importing new (<a href="https://github.com/atuinsh/desktop/issues/231">#231</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>Ensure Dropdown executes regardless of option type (<a href="https://github.com/atuinsh/desktop/issues/206">#206</a>)</li>
-<li>A bunch of script flag things (<a href="https://github.com/atuinsh/desktop/issues/208">#208</a>)</li>
-<li>Run local scripts on a login shell (<a href="https://github.com/atuinsh/desktop/issues/212">#212</a>)</li>
-<li>Race condition when opening runbook tabs (<a href="https://github.com/atuinsh/desktop/issues/209">#209</a>)</li>
-<li>SSH-related issues in Script and Terminal blocks (<a href="https://github.com/atuinsh/desktop/issues/214">#214</a>)</li>
-<li>Some blocks setting empty variables when  or  is blank (<a href="https://github.com/atuinsh/desktop/issues/210">#210</a>)</li>
-<li>Fix incorrect xterm.js terminal sizing (<a href="https://github.com/atuinsh/desktop/issues/221">#221</a>)</li>
-<li><em>(runtime)</em> Only emit context change events if the context has actually changed (<a href="https://github.com/atuinsh/desktop/issues/222">#222</a>)</li>
-<li>Clean up stored context when deleting a runbook (<a href="https://github.com/atuinsh/desktop/issues/223">#223</a>)</li>
-</ul>
-<h3>🎨 Styling</h3>
-<ul>
-<li>Adjust BlockNote editor style to be slightly less compact (<a href="https://github.com/atuinsh/desktop/issues/229">#229</a>)</li>
-</ul>
-<h3>⚙️ Miscellaneous Tasks</h3>
-<ul>
-<li><em>(ci)</em> Switch to depot macos for edge builds (<a href="https://github.com/atuinsh/desktop/issues/218">#218</a>)</li>
-<li><em>(ci)</em> Use sccache for edge builds (<a href="https://github.com/atuinsh/desktop/issues/219">#219</a>)</li>
-<li><em>(ci)</em> Set ci true for depot (<a href="https://github.com/atuinsh/desktop/issues/220">#220</a>)</li>
-<li><em>(ci)</em> Adjust ci config</li>
-<li>Update BlockNote to 0.42.3 (<a href="https://github.com/atuinsh/desktop/issues/224">#224</a>)</li>
-<li>Remove client-side workflow events (<a href="https://github.com/atuinsh/desktop/issues/227">#227</a>)</li>
-<li>Make implementing BlockState and BlockContextItem simpler (<a href="https://github.com/atuinsh/desktop/issues/234">#234</a>)</li>
 </ul>]]></content:encoded>
       <category>atuinsh</category>
       <category>desktop</category>
@@ -4166,342 +4138,6 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
       <category>spotDL</category>
       <category>spotify-downloader</category>
       <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
-    </item>    <item>
-      <title>facebook/react v19.1.0</title>
-      <link>https://github.com/facebook/react/releases/tag/v19.1.0</link>
-      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.1.0</guid>
-      <pubDate>Fri, 28 Mar 2025 21:02:48 GMT</pubDate>
-      <description>Owner Stack An Owner Stack is a string representing the components that are directly responsible for rendering a particular component. You can log Owner Stacks when debugging or use Owner Stacks to enhance error overlays or other development tools. Owner Stacks are only available in development b...</description>
-      <content:encoded><![CDATA[<h3>Owner Stack</h3>
-<p>An Owner Stack is a string representing the components that are directly responsible for rendering a particular component. You can log Owner Stacks when debugging or use Owner Stacks to enhance error overlays or other development tools. Owner Stacks are only available in development builds. Component Stacks in production are unchanged.</p>
-<ul>
-<li>An Owner Stack is a development-only stack trace that helps identify which components are responsible for rendering a particular component. An Owner Stack is distinct from a Component Stacks, which shows the hierarchy of components leading to an error.</li>
-<li>The <a href="https://react.dev/reference/react/captureOwnerStack">captureOwnerStack API</a> is only available in development mode and returns a Owner Stack, if available. The API can be used to enhance error overlays or log component relationships when debugging. <a href="https://github.com/facebook/react/pull/29923">#29923</a>, <a href="https://github.com/facebook/react/pull/32353">#32353</a>, <a href="https://github.com/facebook/react/pull/30306">#30306</a>,
-<a href="https://github.com/facebook/react/pull/32538">#32538</a>, <a href="https://github.com/facebook/react/pull/32529">#32529</a>, <a href="https://github.com/facebook/react/pull/32538">#32538</a></li>
-</ul>
-<h3>React</h3>
-<ul>
-<li>Enhanced support for Suspense boundaries to be used anywhere, including the client, server, and during hydration. <a href="https://github.com/facebook/react/pull/32069">#32069</a>, <a href="https://github.com/facebook/react/pull/32163">#32163</a>, <a href="https://github.com/facebook/react/pull/32224">#32224</a>, <a href="https://github.com/facebook/react/pull/32252">#32252</a></li>
-<li>Reduced unnecessary client rendering through improved hydration scheduling <a href="https://github.com/facebook/react/pull/31751">#31751</a></li>
-<li>Increased priority of client rendered Suspense boundaries <a href="https://github.com/facebook/react/pull/31776">#31776</a></li>
-<li>Fixed frozen fallback states by rendering unfinished Suspense boundaries on the client. <a href="https://github.com/facebook/react/pull/31620">#31620</a></li>
-<li>Reduced garbage collection pressure by improving Suspense boundary retries. <a href="https://github.com/facebook/react/pull/31667">#31667</a></li>
-<li>Fixed erroneous “Waiting for Paint” log when the passive effect phase was not delayed <a href="https://github.com/facebook/react/pull/31526">#31526</a></li>
-<li>Fixed a regression causing key warnings for flattened positional children in development mode. <a href="https://github.com/facebook/react/pull/32117">#32117</a></li>
-<li>Updated <code>useId</code> to use valid CSS selectors, changing format from <code>:r123:</code> to <code>«r123»</code>. <a href="https://github.com/facebook/react/pull/32001">#32001</a></li>
-<li>Added a dev-only warning for null/undefined created in useEffect, useInsertionEffect, and useLayoutEffect. <a href="https://github.com/facebook/react/pull/32355">#32355</a></li>
-<li>Fixed a bug where dev-only methods were exported in production builds. React.act is no longer available in production builds. <a href="https://github.com/facebook/react/pull/32200">#32200</a></li>
-<li>Improved consistency across prod and dev to improve compatibility with Google Closure Complier and bindings <a href="https://github.com/facebook/react/pull/31808">#31808</a></li>
-<li>Improve passive effect scheduling for consistent task yielding. <a href="https://github.com/facebook/react/pull/31785">#31785</a></li>
-<li>Fixed asserts in React Native when passChildrenWhenCloningPersistedNodes is enabled for OffscreenComponent rendering. <a href="https://github.com/facebook/react/pull/32528">#32528</a></li>
-<li>Fixed component name resolution for Portal <a href="https://github.com/facebook/react/pull/32640">#32640</a></li>
-<li>Added support for beforetoggle and toggle events on the dialog element. #32479 <a href="https://github.com/facebook/react/pull/32479">#32479</a></li>
-</ul>
-<h3>React DOM</h3>
-<ul>
-<li>Fixed double warning when the <code>href</code> attribute is an empty string <a href="https://github.com/facebook/react/pull/31783">#31783</a></li>
-<li>Fixed an edge case where <code>getHoistableRoot()</code> didn’t work properly when the container was a Document <a href="https://github.com/facebook/react/pull/32321">#32321</a></li>
-<li>Removed support for using HTML comments (e.g. <code>&lt;!-- --&gt;</code>) as a DOM container. <a href="https://github.com/facebook/react/pull/32250">#32250</a></li>
-<li>Added support for <code>&lt;script&gt;</code> and <code>&lt;template&gt;</code> tags to be nested within <code>&lt;select&gt;</code> tags. <a href="https://github.com/facebook/react/pull/31837">#31837</a></li>
-<li>Fixed responsive images to be preloaded as HTML instead of headers <a href="https://github.com/facebook/react/pull/32445">#32445</a></li>
-</ul>
-<h3>use-sync-external-store</h3>
-<ul>
-<li>Added <code>exports</code> field to <code>package.json</code> for <code>use-sync-external-store</code> to support various entrypoints. <a href="https://github.com/facebook/react/pull/25231">#25231</a></li>
-</ul>
-<h3>React Server Components</h3>
-<ul>
-<li>Added <code>unstable_prerender</code>, a new experimental API for prerendering React Server Components on the server <a href="https://github.com/facebook/react/pull/31724">#31724</a></li>
-<li>Fixed an issue where streams would hang when receiving new chunks after a global error <a href="https://github.com/facebook/react/pull/31840">#31840</a>, <a href="https://github.com/facebook/react/pull/31851">#31851</a></li>
-<li>Fixed an issue where pending chunks were counted twice. <a href="https://github.com/facebook/react/pull/31833">#31833</a></li>
-<li>Added support for streaming in edge environments <a href="https://github.com/facebook/react/pull/31852">#31852</a></li>
-<li>Added support for sending custom error names from a server so that they are available in the client for console replaying. <a href="https://github.com/facebook/react/pull/32116">#32116</a></li>
-<li>Updated the server component wire format to remove IDs for hints and console.log because they have no return value <a href="https://github.com/facebook/react/pull/31671">#31671</a></li>
-<li>Exposed <code>registerServerReference</code> in client builds to handle server references in different environments. <a href="https://github.com/facebook/react/pull/32534">#32534</a></li>
-<li>Added react-server-dom-parcel package which integrates Server Components with the <a href="https://parceljs.org/">Parcel bundler</a> <a href="https://github.com/facebook/react/pull/31725">#31725</a>, <a href="https://github.com/facebook/react/pull/32132">#32132</a>, <a href="https://github.com/facebook/react/pull/31799">#31799</a>, <a href="https://github.com/facebook/react/pull/32294">#32294</a>, <a href="https://github.com/facebook/react/pull/31741">#31741</a></li>
-</ul>]]></content:encoded>
-      <category>facebook</category>
-      <category>react</category>
-      <source url="https://github.com/facebook/react">facebook/react</source>
-    </item>    <item>
-      <title>facebook/react v19.0.0</title>
-      <link>https://github.com/facebook/react/releases/tag/v19.0.0</link>
-      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/v19.0.0</guid>
-      <pubDate>Thu, 05 Dec 2024 21:05:14 GMT</pubDate>
-      <description>Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note: To help make the upgrade to React 19 easier, we’ve published a react@18.3 release that is identical to 18.2 but adds warnings for deprec...</description>
-      <content:encoded><![CDATA[<p>Below is a list of all new features, APIs, deprecations, and breaking changes. Read <a href="https://react.dev/blog/2024/04/25/react-19">React 19 release post</a> and <a href="https://react.dev/blog/2024/04/25/react-19-upgrade-guide">React 19 upgrade guide</a> for more information.</p>
-<blockquote>
-<p>Note: To help make the upgrade to React 19 easier, we’ve published a <a href="mailto:react@18.3">react@18.3</a> release that is identical to 18.2 but adds warnings for deprecated APIs and other changes that are needed for React 19. We recommend upgrading to React 18.3.1 first to help identify any issues before upgrading to React 19.</p>
-</blockquote>
-<h2>New Features</h2>
-<h3>React</h3>
-<ul>
-<li>Actions: <code>startTransition</code> can now accept async functions. Functions passed to <code>startTransition</code> are called “Actions”. A given Transition can include one or more Actions which update state in the background and update the UI with one commit. In addition to updating state, Actions can now perform side effects including async requests, and the Action will wait for the work to finish before finishing the Transition. This feature allows Transitions to include side effects like <code>fetch()</code> in the pending state, and provides support for error handling, and optimistic updates.  </li>
-<li><code>useActionState</code>: is a new hook to order Actions inside of a Transition with access to the state of the action, and the pending state. It accepts a reducer that can call Actions, and the initial state used for first render. It also accepts an optional string that is used if the action is passed to a form <code>action</code> prop to support progressive enhancement in forms.  </li>
-<li><code>useOptimistic</code>: is a new hook to update state while a Transition is in progress. It returns the state, and a set function that can be called inside a transition to “optimistically” update the state to expected final value immediately while the Transition completes in the background. When the transition finishes, the state is updated to the new value.  </li>
-<li><code>use</code>: is a new API that allows reading resources in render. In React 19, <code>use</code> accepts a promise or Context. If provided a promise, <code>use</code> will suspend until a value is resolved. <code>use</code> can only be used in render but can be called conditionally.  </li>
-<li><code>ref</code> as a prop: Refs can now be used as props, removing the need for <code>forwardRef</code>.  </li>
-<li><strong>Suspense sibling pre-warming</strong>: When a component suspends, React will immediately commit the fallback of the nearest Suspense boundary, without waiting for the entire sibling tree to render. After the fallback commits, React will schedule another render for the suspended siblings to “pre-warm” lazy requests.</li>
-</ul>
-<h3>React DOM Client</h3>
-<ul>
-<li><code>&lt;form&gt; action</code> prop: Form Actions allow you to manage forms automatically and integrate with <code>useFormStatus</code>. When a <code>&lt;form&gt; action</code> succeeds, React will automatically reset the form for uncontrolled components. The form can be reset manually with the new <code>requestFormReset</code> API.  </li>
-<li><code>&lt;button&gt; and &lt;input&gt; formAction</code> prop: Actions can be passed to the <code>formAction</code> prop to configure form submission behavior. This allows using different Actions depending on the input.  </li>
-<li><code>useFormStatus</code>: is a new hook that provides the status of the parent <code>&lt;form&gt; action</code>, as if the form was a Context provider. The hook returns the values: <code>pending</code>, <code>data</code>, <code>method</code>, and <code>action</code>.  </li>
-<li>Support for Document Metadata: We’ve added support for rendering document metadata tags in components natively. React will automatically hoist them into the <code>&lt;head&gt;</code> section of the document.  </li>
-<li>Support for Stylesheets: React 19 will ensure stylesheets are inserted into the <code>&lt;head&gt;</code> on the client before revealing the content of a Suspense boundary that depends on that stylesheet.  </li>
-<li>Support for async scripts: Async scripts can be rendered anywhere in the component tree and React will handle ordering and deduplication.  </li>
-<li>Support for preloading resources: React 19 ships with <code>preinit</code>, <code>preload</code>, <code>prefetchDNS</code>, and <code>preconnect</code> APIs to optimize initial page loads by moving discovery of additional resources like fonts out of stylesheet loading. They can also be used to prefetch resources used by an anticipated navigation.</li>
-</ul>
-<h3>React DOM Server</h3>
-<ul>
-<li>Added <code>prerender</code> and <code>prerenderToNodeStream</code> APIs for static site generation. They are designed to work with streaming environments like Node.js Streams and Web Streams. Unlike <code>renderToString</code>, they wait for data to load for HTML generation.</li>
-</ul>
-<h3>React Server Components</h3>
-<ul>
-<li>RSC features such as directives, server components, and server functions are now stable. This means libraries that ship with Server Components can now target React 19 as a peer dependency with a react-server export condition for use in frameworks that support the Full-stack React Architecture. The underlying APIs used to implement a React Server Components bundler or framework do not follow semver and may break between minors in React 19.x. See <a href="https://19.react.dev/reference/rsc/server-components">docs</a> for how to support React Server Components.</li>
-</ul>
-<h2>Deprecations</h2>
-<ul>
-<li>Deprecated: <code>element.ref</code> access: React 19 supports ref as a prop, so we’re deprecating <code>element.ref</code> in favor of <code>element.props.ref</code>. Accessing will result in a warning.  </li>
-<li><code>react-test-renderer</code>: In React 19, react-test-renderer logs a deprecation warning and has switched to concurrent rendering for web usage. We recommend migrating your tests to  @testinglibrary.com/docs/react-testing-library/intro/) or @testingesting-library.com/docs/react-native-testing-library/intro)</li>
-</ul>
-<h2>Breaking Changes</h2>
-<p>React 19 brings in a number of breaking changes, including the removals of long-deprecated APIs. We recommend first upgrading to <code>18.3.1</code>, where we&#39;ve added additional deprecation warnings. Check out the <a href="https://19.react.dev/blog/2024/04/25/react-19-upgrade-guide">upgrade guide</a> for more details and guidance on codemodding.</p>
-<h3>React</h3>
-<ul>
-<li>New JSX Transform is now required: We introduced <a href="https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html">a new JSX transform</a> in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.  </li>
-<li>Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are reported to console.error. We’ve introduced <code>onUncaughtError</code> and <code>onCaughtError</code> methods to <code>createRoot</code> and <code>hydrateRoot</code> to customize this error handling.  </li>
-<li>Removed: <code>propTypes</code>: Using <code>propTypes</code> will now be silently ignored. If required, we recommend migrating to TypeScript or another type-checking solution.  </li>
-<li>Removed: <code>defaultProps</code> for functions: ES6 default parameters can be used in place. Class components continue to support <code>defaultProps</code> since there is no ES6 alternative.  </li>
-<li>Removed: <code>contextTypes</code> and <code>getChildContext</code>: Legacy Context for class components has been removed in favor of the <code>contextType</code> API.  </li>
-<li>Removed: string refs: Any usage of string refs need to be migrated to ref callbacks.   </li>
-<li>Removed: Module pattern factories: A rarely used pattern that can be migrated to regular functions.  </li>
-<li>Removed: <code>React.createFactory</code>: Now that JSX is broadly supported, all <code>createFactory</code> usage can be migrated to JSX components.  </li>
-<li>Removed: <code>react-test-renderer/shallow</code>: This has been a re-export of <a href="https://github.com/enzymejs/react-shallow-renderer">react-shallow-renderer</a> since React 18. If needed, you can continue to use the third-party package directly. We recommend using @testinglibrary.com/docs/react-testing-library/intro/) or @testingesting-library.com/docs/react-native-testing-library/intro) instead.</li>
-</ul>
-<h3>React DOM</h3>
-<ul>
-<li>Removed: <code>react-dom/test-utils</code>: We’ve moved <code>act</code> from <code>react-dom/test-utils</code> to react. All other utilities have been removed.   </li>
-<li>Removed: <code>ReactDOM</code>.<code>render</code>, <code>ReactDOM</code>.<code>hydrate</code>: These have been removed in favor of the concurrent equivalents: <code>ReactDOM</code>.<code>createRoot</code> and <code>ReactDOM.hydrateRoot</code>.  </li>
-<li>Removed: <code>unmountComponentAtNode</code>: Removed in favor of <code>root.unmount()</code>.  </li>
-<li>Removed: <code>ReactDOM</code>.<code>findDOMNode</code>: You can replace <code>ReactDOM</code>.<code>findDOMNode</code> with DOM Refs.</li>
-</ul>
-<h2>Notable Changes</h2>
-<h3>React</h3>
-<ul>
-<li><code>&lt;Context&gt;</code> as a provider: You can now render <code>&lt;Context&gt;</code> as a provider instead of <code>&lt;Context.Provider&gt;</code>.  </li>
-<li>Cleanup functions for refs: When the component unmounts, React will call the cleanup function returned from the ref callback.  </li>
-<li><code>useDeferredValue</code> initial value argument: When provided, <code>useDeferredValue</code> will return the initial value for the initial render of a component, then schedule a re-render in the background with the <code>deferredValue</code> returned.  </li>
-<li>Support for Custom Elements: React 19 now passes all tests on <a href="https://custom-elements-everywhere.com/">Custom Elements Everywhere</a>.  </li>
-<li>StrictMode changes: <code>useMemo</code> and <code>useCallback</code> will now reuse the memoized results from the first render, during the second render. Additionally, StrictMode will now double-invoke ref callback functions on initial mount.  </li>
-<li>UMD builds removed: To load React 19 with a script tag, we recommend using an ESM-based CDN such as <a href="http://esm.sh">esm.sh</a>.</li>
-</ul>
-<h3>React DOM</h3>
-<ul>
-<li>Diffs for hydration errors: In the case of a mismatch, React 19 logs a single error with a diff of the mismatched content.  </li>
-<li>Compatibility with third-party scripts and extensions: React will now force a client re-render to fix up any mismatched content caused by elements inserted by third-party JS.</li>
-</ul>
-<h2>TypeScript Changes</h2>
-<p>The most common changes can be codemodded with <code>npx types-react-codemod@latest preset-19 ./path-to-your-react-ts-files</code>.</p>
-<ul>
-<li>Removed deprecated TypeScript types:   <ul>
-<li><code>ReactChild</code> (replacement: <code>React.ReactElement | number | string)</code>  </li>
-<li><code>ReactFragment</code> (replacement: <code>Iterable&lt;React.ReactNode&gt;</code>)  </li>
-<li><code>ReactNodeArray</code> (replacement: <code>ReadonlyArray&lt;React.ReactNode&gt;</code>)  </li>
-<li><code>ReactText</code> (replacement: <code>number | string</code>)  </li>
-<li><code>VoidFunctionComponent</code> (replacement: <code>FunctionComponent</code>)  </li>
-<li><code>VFC</code> (replacement: <code>FC</code>)  </li>
-<li>Moved to <code>prop-types</code>: <code>Requireable</code>, <code>ValidationMap</code>, <code>Validator</code>, <code>WeakValidationMap</code>  </li>
-<li>Moved to <code>create-react-class</code>: <code>ClassicComponentClass</code>, <code>ClassicComponent</code>, <code>ClassicElement</code>, <code>ComponentSpec</code>, <code>Mixin</code>, <code>ReactChildren</code>, <code>ReactHTML</code>, <code>ReactSVG</code>, <code>SFCFactory</code></li>
-</ul>
-</li>
-<li>Disallow implicit return in refs: refs can now accept cleanup functions. When you return something else, we can’t tell if you intentionally returned something not meant to clean up or returned the wrong value. Implicit returns of anything but functions will now error.   </li>
-<li>Require initial argument to <code>useRef</code>: The initial argument is now required to match <code>useState</code>, <code>createContext</code> etc  </li>
-<li>Refs are mutable by default: Ref objects returned from <code>useRef()</code> are now always mutable instead of sometimes being immutable. This feature was too confusing for users and conflicted with legit cases where refs were managed by React and manually written to.  </li>
-<li>Strict <code>ReactElement</code> typing: The props of React elements now default to <code>unknown</code> instead of <code>any</code> if the element is typed as <code>ReactElement</code>  </li>
-<li>JSX namespace in TypeScript: The global <code>JSX</code> namespace is removed to improve interoperability with other libraries using JSX. Instead, the JSX namespace is available from the React package: <code>import { JSX } from &#39;react&#39;</code>  </li>
-<li>Better <code>useReducer</code> typings: Most <code>useReducer</code> usage should not require explicit type arguments.<br>For example,<pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Action&gt;&gt;(reducer)  
-+useReducer(reducer)  
-</code></pre>
-or  <pre><code class="language-diff">-useReducer&lt;React.Reducer&lt;State, Action&gt;&gt;(reducer)  
-+useReducer&lt;State, [Action]&gt;(reducer)
-</code></pre>
-</li>
-</ul>
-<h2>All Changes</h2>
-<h3>React</h3>
-<ul>
-<li>Add support for async Actions (<a href="https://github.com/facebook/react/pull/26621">#26621</a>, <a href="https://github.com/facebook/react/pull/26726">#26726</a>, <a href="https://github.com/facebook/react/pull/28078">#28078</a>, <a href="https://github.com/facebook/react/pull/28097">#28097</a>, <a href="https://github.com/facebook/react/pull/29226">#29226</a>, <a href="https://github.com/facebook/react/pull/29618">#29618</a>, <a href="https://github.com/facebook/react/pull/29670">#29670</a>, <a href="https://github.com/facebook/react/pull/26716">#26716</a> by @acdlite and @sebmarkbage)  </li>
-<li>Add <code>useActionState()</code> hook to update state based on the result of a Form Action (<a href="https://github.com/facebook/react/pull/27270">#27270</a>, <a href="https://github.com/facebook/react/pull/27278">#27278</a>, <a href="https://github.com/facebook/react/pull/27309">#27309</a>, <a href="https://github.com/facebook/react/pull/27302">#27302</a>, <a href="https://github.com/facebook/react/pull/27307">#27307</a>, <a href="https://github.com/facebook/react/pull/27366">#27366</a>, <a href="https://github.com/facebook/react/pull/27370">#27370</a>, <a href="https://github.com/facebook/react/pull/27321">#27321</a>, <a href="https://github.com/facebook/react/pull/27374">#27374</a>, <a href="https://github.com/facebook/react/pull/27372">#27372</a>, <a href="https://github.com/facebook/react/pull/27397">#27397</a>, <a href="https://github.com/facebook/react/pull/27399">#27399</a>, <a href="https://github.com/facebook/react/pull/27460">#27460</a>, <a href="https://github.com/facebook/react/pull/28557">#28557</a>, <a href="https://github.com/facebook/react/pull/27570">#27570</a>, <a href="https://github.com/facebook/react/pull/27571">#27571</a>, <a href="https://github.com/facebook/react/pull/28631">#28631</a>, <a href="https://github.com/facebook/react/pull/28788">#28788</a>, <a href="https://github.com/facebook/react/pull/29694">#29694</a>, <a href="https://github.com/facebook/react/pull/29695">#29695</a>, <a href="https://github.com/facebook/react/pull/29694">#29694</a>, <a href="https://github.com/facebook/react/pull/29665">#29665</a>, <a href="https://github.com/facebook/react/pull/28232">#28232</a>, <a href="https://github.com/facebook/react/pull/28319">#28319</a> by @acdlite, @eps1lon, and @rickhanlonii)  </li>
-<li>Add <code>use()</code> API to read resources in render (<a href="https://github.com/facebook/react/pull/25084">#25084</a>, <a href="https://github.com/facebook/react/pull/25202">#25202</a>, <a href="https://github.com/facebook/react/pull/25207">#25207</a>, <a href="https://github.com/facebook/react/pull/25214">#25214</a>, <a href="https://github.com/facebook/react/pull/25226">#25226</a>, <a href="https://github.com/facebook/react/pull/25247">#25247</a>, <a href="https://github.com/facebook/react/pull/25539">#25539</a>, <a href="https://github.com/facebook/react/pull/25538">#25538</a>, <a href="https://github.com/facebook/react/pull/25537">#25537</a>, <a href="https://github.com/facebook/react/pull/25543">#25543</a>, <a href="https://github.com/facebook/react/pull/25561">#25561</a>, <a href="https://github.com/facebook/react/pull/25620">#25620</a>, <a href="https://github.com/facebook/react/pull/25615">#25615</a>, <a href="https://github.com/facebook/react/pull/25922">#25922</a>, <a href="https://github.com/facebook/react/pull/25641">#25641</a>, <a href="https://github.com/facebook/react/pull/25634">#25634</a>, <a href="https://github.com/facebook/react/pull/26232">#26232</a>, <a href="https://github.com/facebook/react/pull/26535">#26536</a>, <a href="https://github.com/facebook/react/pull/26739">#26739</a>, <a href="https://github.com/facebook/react/pull/28233">#28233</a> by @acdlite, @MofeiZ, @sebmarkbage, @sophiebits, @eps1lon, and @hansottowirtz)  </li>
-<li>Add <code>useOptimistic()</code> hook to display mutated state optimistically during an async mutation (<a href="https://github.com/facebook/react/pull/26740">#26740</a>, <a href="https://github.com/facebook/react/pull/26772">#26772</a>, <a href="https://github.com/facebook/react/pull/27277">#27277</a>, <a href="https://github.com/facebook/react/pull/27453">#27453</a>, <a href="https://github.com/facebook/react/pull/27454">#27454</a>, <a href="https://github.com/facebook/react/pull/27936">#27936</a> by @acdlite)  </li>
-<li>Added an <code>initialValue</code> argument to <code>useDeferredValue()</code> hook (<a href="https://github.com/facebook/react/pull/27500">#27500</a>, <a href="https://github.com/facebook/react/pull/27509">#27509</a>, <a href="https://github.com/facebook/react/pull/27512">#27512</a>, <a href="https://github.com/facebook/react/pull/27888">#27888</a>, <a href="https://github.com/facebook/react/pull/27550">#27550</a> by @acdlite)  </li>
-<li>Support refs as props, warn on <code>element.ref</code> access (<a href="https://github.com/facebook/react/pull/28348">#28348</a>, <a href="https://github.com/facebook/react/pull/28464">#28464</a>, <a href="https://github.com/facebook/react/pull/28731">#28731</a> by @acdlite)  </li>
-<li>Support Custom Elements (<a href="https://github.com/facebook/react/pull/22184">#22184</a>, <a href="https://github.com/facebook/react/pull/26524">#26524</a>, <a href="https://github.com/facebook/react/pull/26523">#26523</a>, <a href="https://github.com/facebook/react/pull/27511">#27511</a>, <a href="https://github.com/facebook/react/pull/24541">#24541</a> by @josepharhar, @sebmarkbage, @gnoff and @eps1lon)  </li>
-<li>Add ref cleanup function (<a href="https://github.com/facebook/react/pull/25686">#25686</a>, <a href="https://github.com/facebook/react/pull/28883">#28883</a>, <a href="https://github.com/facebook/react/pull/28910">#28910</a>  by @sammy-SC), @jackpope, and @kassens)  </li>
-<li>Sibling pre-rendering replaced by sibling pre-warming (<a href="https://github.com/facebook/react/pull/26380">#26380</a>, <a href="https://github.com/facebook/react/pull/26549">#26549</a>, <a href="https://github.com/facebook/react/pull/30761">#30761</a>, <a href="https://github.com/facebook/react/pull/30800">#30800</a>, <a href="https://github.com/facebook/react/pull/30762">#30762</a>, <a href="https://github.com/facebook/react/pull/30879">#30879</a>, <a href="https://github.com/facebook/react/pull/30934">#30934</a>, <a href="https://github.com/facebook/react/pull/30952">#30952</a>, <a href="https://github.com/facebook/react/pull/31056">#31056</a>, <a href="https://github.com/facebook/react/pull/31452">#31452</a> by @sammy-SC), @acdlite, @gnoff, @jackpope, @rickhanlonii)  </li>
-<li>Don’t rethrow errors at the root (<a href="https://github.com/facebook/react/pull/28627">#28627</a>, <a href="https://github.com/facebook/react/pull/28641">#28641</a> by @sebmarkbage)  </li>
-<li>Batch sync discrete, continuous, and default lanes (<a href="https://github.com/facebook/react/pull/25700">#25700</a> by @tyao1)  </li>
-<li>Switch <code>&lt;Context&gt;</code> to mean <code>&lt;Context.Provider&gt;</code> (<a href="https://github.com/facebook/react/pull/28226">#28226</a> by @gaearon)  </li>
-<li>Changes to <em>StrictMode</em>  <ul>
-<li>Handle <code>info</code>, <code>group</code>, and <code>groupCollapsed</code> in <em>StrictMode</em> logging (<a href="https://github.com/facebook/react/pull/25172">#25172</a> by @timneutkens)  </li>
-<li>Refs are now attached/detached/attached in <em>StrictMode</em> (<a href="https://github.com/facebook/react/pull/25049">#25049</a> by @sammy-SC)</li>
-<li>Fix <code>useSyncExternalStore()</code> hydration in <em>StrictMode</em> (<a href="https://github.com/facebook/react/pull/26791">#26791</a> by @sophiebits)  </li>
-<li>Always trigger <code>componentWillUnmount()</code> in <em>StrictMode</em> (<a href="https://github.com/facebook/react/pull/26842">#26842</a> by @tyao1)  </li>
-<li>Restore double invoking <code>useState()</code> and <code>useReducer()</code> initializer functions in <em>StrictMode</em> (<a href="https://github.com/facebook/react/pull/28248">#28248</a> by @eps1lon)  </li>
-<li>Reuse memoized result from first pass (<a href="https://github.com/facebook/react/pull/25583">#25583</a> by @acdlite)  </li>
-<li>Fix <code>useId()</code> in <em>StrictMode</em> (<a href="https://github.com/facebook/react/pull/25713">#25713</a> by @gnoff)  </li>
-<li>Add component name to <em>StrictMode</em> error messages (<a href="https://github.com/facebook/react/pull/25718">#25718</a> by @sammy-SC)</li>
-</ul>
-</li>
-<li>Add support for rendering BigInt (<a href="https://github.com/facebook/react/pull/24580">#24580</a> by @eps1lon)  </li>
-<li><code>act()</code> no longer checks <code>shouldYield</code> which can be inaccurate in test environments (<a href="https://github.com/facebook/react/pull/26317">#26317</a> by @acdlite)  </li>
-<li>Warn when keys are spread with props (<a href="https://github.com/facebook/react/pull/25697">#25697</a>, <a href="https://github.com/facebook/react/pull/26080">#26080</a> by @sebmarkbage and @kassens)  </li>
-<li>Generate sourcemaps for production build artifacts (<a href="https://github.com/facebook/react/pull/26446">#26446</a> by @markerikson)  </li>
-<li>Improve stack diffing algorithm (<a href="https://github.com/facebook/react/pull/27132">#27132</a> by @KarimP)  </li>
-<li>Suspense throttling lowered from 500ms to 300ms (<a href="https://github.com/facebook/react/pull/26803">#26803</a> by @acdlite)  </li>
-<li>Lazily propagate context changes (<a href="https://github.com/facebook/react/pull/20890">#20890</a> by @acdlite and @gnoff)  </li>
-<li>Immediately rerender pinged fiber (<a href="https://github.com/facebook/react/pull/25074">#25074</a> by @acdlite)  </li>
-<li>Move update scheduling to microtask (<a href="https://github.com/facebook/react/pull/26512">#26512</a> by @acdlite)  </li>
-<li>Consistently apply throttled retries (<a href="https://github.com/facebook/react/pull/26611">#26611</a>, <a href="https://github.com/facebook/react/pull/26802">#26802</a> by @acdlite)  </li>
-<li>Suspend Thenable/Lazy if it&#39;s used in React.Children (<a href="https://github.com/facebook/react/pull/28284">#28284</a> by @sebmarkbage)  </li>
-<li>Detect infinite update loops caused by render phase updates (<a href="https://github.com/facebook/react/pull/26625">#26625</a> by @acdlite)  </li>
-<li>Update conditional hooks warning (<a href="https://github.com/facebook/react/pull/29626">#29626</a> by @sophiebits)  </li>
-<li>Update error URLs to go to new docs (<a href="https://github.com/facebook/react/pull/27240">#27240</a> by @rickhanlonii)  </li>
-<li>Rename the <code>react.element</code> symbol to <code>react.transitional.element</code> (<a href="https://github.com/facebook/react/pull/28813">#28813</a> by @sebmarkbage)  </li>
-<li>Fix crash when suspending in shell during <code>useSyncExternalStore()</code> re-render (<a href="https://github.com/facebook/react/pull/27199">#27199</a> by @acdlite)  </li>
-<li>Fix incorrect “detected multiple renderers&quot; error in tests (<a href="https://github.com/facebook/react/pull/22797">#22797</a> by @eps1lon)  </li>
-<li>Fix bug where effect cleanup may be called twice after bailout (<a href="https://github.com/facebook/react/pull/26561">#26561</a> by @acdlite)  </li>
-<li>Fix suspending in shell during discrete update (<a href="https://github.com/facebook/react/pull/25495">#25495</a> by @acdlite)  </li>
-<li>Fix memory leak after repeated setState bailouts (<a href="https://github.com/facebook/react/pull/25309">#25309</a> by @acdlite)  </li>
-<li>Fix <code>useSyncExternalStore()</code> dropped update when state is dispatched in render phase (<a href="https://github.com/facebook/react/pull/25578">#25578</a> by @pandaiolo)  </li>
-<li>Fix logging when rendering a lazy fragment (<a href="https://github.com/facebook/react/pull/30372">#30372</a> by @tomtom-sherman))  </li>
-<li>Remove string refs (<a href="https://github.com/facebook/react/pull/25383">#25383</a>, <a href="https://github.com/facebook/react/pull/28322">#28322</a> by @eps1lon and @acdlite)  </li>
-<li>Remove Legacy Context (#30319 by @kassens)  </li>
-<li>Remove <code>RefreshRuntime.findAffectedHostInstances</code> (<a href="https://github.com/facebook/react/pull/30538">#30538</a> by @gaearon)  </li>
-<li>Remove client caching from <code>cache()</code> API (<a href="https://github.com/facebook/react/pull/27977">#27977</a>, <a href="https://github.com/facebook/react/pull/28250">#28250</a> by @acdlite and @gnoff)  </li>
-<li>Remove <code>propTypes</code> (<a href="https://github.com/facebook/react/pull/28324">#28324</a>, <a href="https://github.com/facebook/react/pull/28326">#28326</a> by @gaearon)  </li>
-<li>Remove <code>defaultProps</code> support, except for classes (<a href="https://github.com/facebook/react/pull/28733">#28733</a> by @acdlite)  </li>
-<li>Remove UMD builds (<a href="https://github.com/facebook/react/pull/28735">#28735</a> by @gnoff)  </li>
-<li>Remove delay for non-transition updates (<a href="https://github.com/facebook/react/pull/26597">#26597</a> by @acdlite)  </li>
-<li>Remove <code>createFactory</code> (<a href="https://github.com/facebook/react/pull/27798">#27798</a> by @kassens)</li>
-</ul>
-<h3>React DOM</h3>
-<ul>
-<li>Adds Form Actions to handle form submission (<a href="https://github.com/facebook/react/pull/26379">#26379</a>, <a href="https://github.com/facebook/react/pull/26674">#26674</a>, <a href="https://github.com/facebook/react/pull/26689">#26689</a>, <a href="https://github.com/facebook/react/pull/26708">#26708</a>, <a href="https://github.com/facebook/react/pull/26714">#26714</a>,  <a href="https://github.com/facebook/react/pull/26735">#26735</a>, <a href="https://github.com/facebook/react/pull/26846">#26846</a>, <a href="https://github.com/facebook/react/pull/27358">#27358</a>,  <a href="https://github.com/facebook/react/pull/28056">#28056</a> by @sebmarkbage, @acdlite, and @jupapios)  </li>
-<li>Add <code>useFormStatus()</code> hook to provide status information of the last form submission (<a href="https://github.com/facebook/react/pull/26719">#26719</a>, <a href="https://github.com/facebook/react/pull/26722">#26722</a>, <a href="https://github.com/facebook/react/pull/26788">#26788</a>,  <a href="https://github.com/facebook/react/pull/29019">#29019</a>, <a href="https://github.com/facebook/react/pull/28728">#28728</a>, <a href="https://github.com/facebook/react/pull/28413">#28413</a> by @acdlite and @eps1lon)  </li>
-<li>Support for Document Metadata. Adds <code>preinit</code>, <code>preinitModule</code>, <code>preconnect</code>, <code>prefetchDNS</code>, <code>preload</code>, and <code>preloadModule</code> APIs.  <ul>
-<li><a href="https://github.com/facebook/react/pull/25060">#25060</a>, <a href="https://github.com/facebook/react/pull/25243">#25243</a>, <a href="https://github.com/facebook/react/pull/25388">#25388</a>, <a href="https://github.com/facebook/react/pull/25432">#25432</a>, <a href="https://github.com/facebook/react/pull/25436">#25436</a>, <a href="https://github.com/facebook/react/pull/25426">#25426</a>, <a href="https://github.com/facebook/react/pull/25500">#25500</a>, <a href="https://github.com/facebook/react/pull/25480">#25480</a>, <a href="https://github.com/facebook/react/pull/25508">#25508</a>, <a href="https://github.com/facebook/react/pull/25515">#25515</a>, <a href="https://github.com/facebook/react/pull/25514">#25514</a>, <a href="https://github.com/facebook/react/pull/25532">#25532</a>, <a href="https://github.com/facebook/react/pull/25536">#25536</a>, <a href="https://github.com/facebook/react/pull/25534">#25534</a>, <a href="https://github.com/facebook/react/pull/25546">#25546</a>, <a href="https://github.com/facebook/react/pull/25559">#25559</a>, <a href="https://github.com/facebook/react/pull/25569">#25569</a>, <a href="https://github.com/facebook/react/pull/25599">#25599</a>, <a href="https://github.com/facebook/react/pull/25689">#25689</a>, <a href="https://github.com/facebook/react/pull/26106">#26106</a>, <a href="https://github.com/facebook/react/pull/26152">#26152</a>, <a href="https://github.com/facebook/react/pull/26239">#26239</a>, <a href="https://github.com/facebook/react/pull/26237">#26237</a>, <a href="https://github.com/facebook/react/pull/26280">#26280</a>, <a href="https://github.com/facebook/react/pull/26154">#26154</a>, <a href="https://github.com/facebook/react/pull/26256">#26256</a>, <a href="https://github.com/facebook/react/pull/26353">#26353</a>, <a href="https://github.com/facebook/react/pull/26427">#26427</a>, <a href="https://github.com/facebook/react/pull/26450">#26450</a>, <a href="https://github.com/facebook/react/pull/26502">#26502</a>,  <a href="https://github.com/facebook/react/pull/26514">#26514</a>, <a href="https://github.com/facebook/react/pull/26531">#26531</a>, <a href="https://github.com/facebook/react/pull/26532">#26532</a>, <a href="https://github.com/facebook/react/pull/26557">#26557</a>, <a href="https://github.com/facebook/react/pull/26871">#26871</a>, <a href="https://github.com/facebook/react/pull/26881">#26881</a>, <a href="https://github.com/facebook/react/pull/26877">#26877</a>, <a href="https://github.com/facebook/react/pull/26873">#26873</a>, <a href="https://github.com/facebook/react/pull/26880">#26880</a>, <a href="https://github.com/facebook/react/pull/26942">#26942</a>, <a href="https://github.com/facebook/react/pull/26938">#26938</a>, <a href="https://github.com/facebook/react/pull/26940">#26940</a>, <a href="https://github.com/facebook/react/pull/26939">#26939</a>, <a href="https://github.com/facebook/react/pull/27030">#27030</a>, <a href="https://github.com/facebook/react/pull/27201">#27201</a>, <a href="https://github.com/facebook/react/pull/27212">#27212</a>, <a href="https://github.com/facebook/react/pull/27217">#27217</a>, <a href="https://github.com/facebook/react/pull/27218">#27218</a>, <a href="https://github.com/facebook/react/pull/27220">#27220</a>, <a href="https://github.com/facebook/react/pull/27224">#27224</a>, <a href="https://github.com/facebook/react/pull/27223">#27223</a>, <a href="https://github.com/facebook/react/pull/27269">#27269</a>, <a href="https://github.com/facebook/react/pull/27260">#27260</a>, <a href="https://github.com/facebook/react/pull/27347">#27347</a>, <a href="https://github.com/facebook/react/pull/27346">#27346</a>, <a href="https://github.com/facebook/react/pull/27361">#27361</a>, <a href="https://github.com/facebook/react/pull/27400">#27400</a>, <a href="https://github.com/facebook/react/pull/27541">#27541</a>, <a href="https://github.com/facebook/react/pull/27610">#27610</a>, <a href="https://github.com/facebook/react/pull/28110">#28110</a>, <a href="https://github.com/facebook/react/pull/29693">#29693</a>, <a href="https://github.com/facebook/react/pull/29732">#29732</a>, <a href="https://github.com/facebook/react/pull/29811">#29811</a>, <a href="https://github.com/facebook/react/pull/27586">#27586</a>, <a href="https://github.com/facebook/react/pull/28069">#28069</a> by @gnoff, @sebmarkbage, @acdlite, @kassens, @sokra, @sweetliquid</li>
-</ul>
-</li>
-<li>Add <code>fetchPriority</code> to <code>&lt;img&gt;</code> and <code>&lt;link&gt;</code> (<a href="https://github.com/facebook/react/pull/25927">#25927</a> by @styfle)  </li>
-<li>Add support for SVG <code>transformOrigin</code> prop (<a href="https://github.com/facebook/react/pull/26130">#26130</a> by @aravarav-ind))  </li>
-<li>Add support for <code>onScrollEnd</code> event (<a href="https://github.com/facebook/react/pull/26789">#26789</a> by @devongovett)  </li>
-<li>Allow <code>&lt;hr&gt;</code> as child of <code>&lt;select&gt;</code> (<a href="https://github.com/facebook/react/pull/27632">#27632</a> by @SouSingh)  </li>
-<li>Add support for Popover API (<a href="https://github.com/facebook/react/pull/27981">#27981</a> by @eps1lon)  </li>
-<li>Add support for <code>inert</code> (<a href="https://github.com/facebook/react/pull/24730">#24730</a> by @eps1lon)  </li>
-<li>Add support for <code>imageSizes</code> and <code>imageSrcSet</code> (<a href="https://github.com/facebook/react/pull/22550">#22550</a> by @eps1lon)  </li>
-<li>Synchronously flush transitions in popstate events (<a href="https://github.com/facebook/react/pull/26025">#26025</a>, <a href="https://github.com/facebook/react/pull/27559">#27559</a>, <a href="https://github.com/facebook/react/pull/27505">#27505</a>, <a href="https://github.com/facebook/react/pull/30759">#30759</a> by @tyao1 and @acdlite)  </li>
-<li><code>flushSync</code> exhausts queue even if something throws (<a href="https://github.com/facebook/react/pull/26366">#26366</a> by @acdlite)  </li>
-<li>Throw error if <code>react</code> and <code>react-dom</code> versions don’t match (<a href="https://github.com/facebook/react/pull/29236">#29236</a> by @acdlite)  </li>
-<li>Ensure <code>srcset</code> and <code>src</code> are assigned last on <code>&lt;img&gt;</code> instances (<a href="https://github.com/facebook/react/pull/30340">#30340</a> by @gnoff)  </li>
-<li>Javascript URLs are replaced with functions that throw errors (<a href="https://github.com/facebook/react/pull/26507">#26507</a>, <a href="https://github.com/facebook/react/pull/29808">#29808</a> by @sebmarkbage and @kassens)  </li>
-<li>Treat toggle and beforetoggle as discrete events (<a href="https://github.com/facebook/react/pull/29176">#29176</a> by @eps1lon)  </li>
-<li>Filter out empty <code>src</code> and <code>href</code> attributes (unless for <code>&lt;a href=”” /&gt;</code>) (<a href="https://github.com/facebook/react/pull/18513">#18513</a>, <a href="https://github.com/facebook/react/pull/28124">#28124</a> by @bvaughn and @eps1lon)  </li>
-<li>Fix unitless <code>scale</code> style property (<a href="https://github.com/facebook/react/pull/25601">#25601</a> by @JonnyBurger)  </li>
-<li>Fix <code>onChange</code> error message for controlled <code>&lt;select&gt;</code> (<a href="https://github.com/facebook/react/pull/27740">#27740</a> by @BikiBiki-das))  </li>
-<li>Fix focus restore in child windows after element reorder (<a href="https://github.com/facebook/react/pull/30951">#30951</a> by @ling1726)  </li>
-<li>Remove <code>render</code>, <code>hydrate</code>, <code>findDOMNode</code>, <code>unmountComponentAtNode</code>, <code>unstable_createEventHandle</code>, <code>unstable_renderSubtreeIntoContainer</code>, and <code>unstable_runWithPriority</code>. Move <code>createRoot</code> and <code>hydrateRoot</code> to <code>react-dom/client</code>. (<a href="https://github.com/facebook/react/pull/28271">#28271</a> by @gnoff)  </li>
-<li>Remove <code>test-utils</code> (<a href="https://github.com/facebook/react/pull/28541">#28541</a> by @eps1lon)  </li>
-<li>Remove <code>unstable_flushControlled</code> (<a href="https://github.com/facebook/react/pull/26397">#26397</a> by @kassens)  </li>
-<li>Remove legacy mode (<a href="https://github.com/facebook/react/pull/28468">#28468</a> by @gnoff)  </li>
-<li>Remove <code>renderToStaticNodeStream()</code> (<a href="https://github.com/facebook/react/pull/28873">#28873</a> by @gnoff)  </li>
-<li>Remove <code>unstable_renderSubtreeIntoContainer</code> (<a href="https://github.com/facebook/react/pull/29771">#29771</a> by @kassens)</li>
-</ul>
-<h3>React DOM Server</h3>
-<ul>
-<li>Stable release of React Server Components (<a href="https://github.com/facebook/react/pulls?q=is%3Apr+is%3Aclosed+%5BFlight%5D+in%3Atitle+created%3A%3C2024-12-01+">Many, many PRs</a> by @sebmarkbage, @acdlite, @gnoff, @sammy-SC, @gaearon, @sophiebits, @unstubbable, @lubieowoce)</li>
-<li>Support Server Actions (<a href="https://github.com/facebook/react/pull/26124">#26124</a>, <a href="https://github.com/facebook/react/pull/26632">#26632</a>, <a href="https://github.com/facebook/react/pull/27459">#27459</a> by @sebmarkbage and @acdlite)  </li>
-<li>Changes to SSR  <ul>
-<li>Add external runtime which bootstraps hydration on the client for binary transparency (<a href="https://github.com/facebook/react/pull/25437">#25437</a>, <a href="https://github.com/facebook/react/pull/26169">#26169</a>, <a href="https://github.com/facebook/react/pull/25499">#25499</a> by @MofeiZ and @acdlite)  </li>
-<li>Support subresource integrity for <code>bootstrapScripts</code> and <code>bootstrapModules</code> (<a href="https://github.com/facebook/react/pull/25104">#25104</a> by @gnoff)  </li>
-<li>Fix null bytes written at text chunk boundaries (<a href="https://github.com/facebook/react/pull/26228">#26228</a> by @sophiebits)  </li>
-<li>Fix logic around attribute serialization (<a href="https://github.com/facebook/react/pull/26526">#26526</a> by @gnoff)  </li>
-<li>Fix precomputed chunk cleared on Node 18 (<a href="https://github.com/facebook/react/pull/25645">#25645</a> by @feedthejim)  </li>
-<li>Optimize end tag chunks (<a href="https://github.com/facebook/react/pull/27522">#27522</a> by @yujunjung)  </li>
-<li>Gracefully handle suspending in DOM configs (<a href="https://github.com/facebook/react/pull/26768">#26768</a> by @sebmarkbage)  </li>
-<li>Check for nullish values on ReactCustomFormAction (<a href="https://github.com/facebook/react/pull/26770">#26770</a> by @sebmarkbage)  </li>
-<li>Preload <code>bootstrapModules</code>, <code>bootstrapScripts</code>, and update priority queue (<a href="https://github.com/facebook/react/pull/26754">#26754</a>, <a href="https://github.com/facebook/react/pull/26753">#26753</a>, <a href="https://github.com/facebook/react/pull/27190">#27190</a>, <a href="https://github.com/facebook/react/pull/27189">#27189</a> by @gnoff)  </li>
-<li>Client render the nearest child or parent suspense boundary if replay errors or is aborted (<a href="https://github.com/facebook/react/pull/27386">#27386</a> by @sebmarkbage)  </li>
-<li>Don&#39;t bail out of flushing if we still have pending root tasks (<a href="https://github.com/facebook/react/pull/27385">#27385</a> by @sebmarkbage)  </li>
-<li>Ensure Resumable State is Serializable (<a href="https://github.com/facebook/react/pull/27388">#27388</a> by @sebmarkbage)  </li>
-<li>Remove extra render pass when reverting to client render (<a href="https://github.com/facebook/react/pull/26445">#26445</a> by @acdlite)  </li>
-<li>Fix unwinding context during selective hydration (<a href="https://github.com/facebook/react/pull/25876">#25876</a> by @tyao1)  </li>
-<li>Stop flowing and then abort if a stream is cancelled (<a href="https://github.com/facebook/react/pull/27405">#27405</a> by @sebmarkbage)  </li>
-<li>Pass cancellation reason to abort (<a href="https://github.com/facebook/react/pull/27536">#27536</a> by @sebmarkbage)  </li>
-<li>Add <code>onHeaders</code> entrypoint option (<a href="https://github.com/facebook/react/pull/27641">#27641</a>, <a href="https://github.com/facebook/react/pull/27712">#27712</a> by @gnoff)  </li>
-<li>Escape <code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> textContent to enable rendering inner content without dangerouslySetInnerHTML (<a href="https://github.com/facebook/react/pull/28870">#28870</a>, <a href="https://github.com/facebook/react/pull/28871">#28871</a> by @gnoff)  </li>
-<li>Fallback to client replaying actions for Blob serialization (<a href="https://github.com/facebook/react/pull/28987">#28987</a> by @sebmarkbage)  </li>
-<li>Render Suspense fallback if boundary contains new stylesheet during sync update (<a href="https://github.com/facebook/react/pull/28965">#28965</a> by @gnoff)  </li>
-<li>Fix header length tracking (#30327 by @gnoff)  </li>
-<li>Use <code>srcset</code> to trigger load event on mount (#30351 by @gnoff)  </li>
-<li>Don&#39;t perform work when closing stream (#30497 by @gnoff)  </li>
-<li>Allow aborting during render (#30488, <a href="https://github.com/facebook/react/pull/30730">#30730</a> by @gnoff)  </li>
-<li>Start initial work immediately (#31079 by @gnoff)  </li>
-<li>A transition flowing into a dehydrated boundary no longer suspends when showing fallback (<a href="https://github.com/facebook/react/pull/27230">#27230</a> by @acdlite)  </li>
-<li>Fix selective hydration triggers false update loop error (<a href="https://github.com/facebook/react/pull/27439">#27439</a> by @acdlite)  </li>
-<li>Warn for Child Iterator of all types but allow Generator Components (<a href="https://github.com/facebook/react/pull/28853">#28853</a> by @sebmarkbage)  </li>
-<li>Include regular stack trace in serialized errors (<a href="https://github.com/facebook/react/pull/28684">#28684</a>, <a href="https://github.com/facebook/react/pull/28738">#28738</a> by @sebmarkbage)  </li>
-<li>Aborting early no longer infinitely suspends (<a href="https://github.com/facebook/react/pull/24751">#24751</a> by @sebmarkbage)  </li>
-<li>Fix hydration warning suppression in text comparisons (<a href="https://github.com/facebook/react/pull/24784">#24784</a> by @gnoff)  </li>
-<li>Changes to error handling in SSR<ul>
-<li>Add diffs to hydration warnings (<a href="https://github.com/facebook/react/pull/28502">#28502</a>, <a href="https://github.com/facebook/react/pull/28512">#28512</a> by @sebmarkbage)  </li>
-<li>Make Error creation lazy (<a href="https://github.com/facebook/react/pull/24728">#24728</a> by @sebmarkbage)  </li>
-<li>Remove recoverable error when a sync update flows into a dehydrated boundary (<a href="https://github.com/facebook/react/pull/25692">#25692</a> by @sebmarkbage)  </li>
-<li>Don&#39;t &quot;fix up&quot; mismatched text content with suppressedHydrationWarning (<a href="https://github.com/facebook/react/pull/26391">#26391</a> by @sebmarkbage)  </li>
-<li>Fix component stacks in errors (<a href="https://github.com/facebook/react/pull/27456">#27456</a> by @sebmarkbage)  </li>
-<li>Add component stacks to <code>onError</code> (<a href="https://github.com/facebook/react/pull/27761">#27761</a>, <a href="https://github.com/facebook/react/pull/27850">#27850</a> by @gnoff and @sebmarkbage)  </li>
-<li>Throw hydration mismatch errors once (<a href="https://github.com/facebook/react/pull/28502">#28502</a> by @sebmarkbage)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Add Bun streaming server renderer (<a href="https://github.com/facebook/react/pull/25597">#25597</a> by @colinhacks)  </li>
-<li>Add nonce support to bootstrap scripts (<a href="https://github.com/facebook/react/pull/26738">#26738</a> by @danieltott)  </li>
-<li>Add <code>crossorigin</code> support to bootstrap scripts (<a href="https://github.com/facebook/react/pull/26844">#26844</a> by @HenriqueLimas)  </li>
-<li>Support <code>nonce</code> and <code>fetchpriority</code> in preload links (<a href="https://github.com/facebook/react/pull/26826">#26826</a> by @liuyenwei)  </li>
-<li>Add <code>referrerPolicy</code> to <code>ReactDOM.preload()</code> (<a href="https://github.com/facebook/react/pull/27096">#27096</a> by @styfle)  </li>
-<li>Add server condition for <code>react/jsx-dev-runtime</code> (<a href="https://github.com/facebook/react/pull/28921">#28921</a> by @himself65)   </li>
-<li>Export version (<a href="https://github.com/facebook/react/pull/29596">#29596</a> by @unstubbable)  </li>
-<li>Rename the secret export of Client and Server internals (<a href="https://github.com/facebook/react/pull/28786">#28786</a>, <a href="https://github.com/facebook/react/pull/28789">#28789</a> by @sebmarkbage)  </li>
-<li>Remove layout effect warning on server (<a href="https://github.com/facebook/react/pull/26395">#26395</a> by @rickhanlonii)  </li>
-<li>Remove <code>errorInfo.digest</code> from <code>onRecoverableError</code> (<a href="https://github.com/facebook/react/pull/28222">#28222</a> by @gnoff)</li>
-</ul>
-<h3>ReactTestRenderer</h3>
-<ul>
-<li>Add deprecation error to <code>react-test-renderer</code> on web (<a href="https://github.com/facebook/react/pull/27903">#27903</a>, <a href="https://github.com/facebook/react/pull/28904">#28904</a> by @jackpope and @acdlite)  </li>
-<li>Render with ConcurrentRoot on web (<a href="https://github.com/facebook/react/pull/28498">#28498</a> by @jackpope)  </li>
-<li>Remove <code>react-test-renderer/shallow</code> export (<a href="https://github.com/facebook/react/pull/25475">#25475</a>, <a href="https://github.com/facebook/react/pull/28497">#28497</a> by @sebmarkbage and @jackpope)</li>
-</ul>
-<h3>React Reconciler</h3>
-<ul>
-<li>Enable suspending commits without blocking render (<a href="https://github.com/facebook/react/pull/26398">#26398</a>, <a href="https://github.com/facebook/react/pull/26427">#26427</a> by @acdlite)  </li>
-<li>Remove <code>prepareUpdate</code> (<a href="https://github.com/facebook/react/pull/26583">#26583</a>, <a href="http://github.com/facebook/react/pull/27409">#27409</a> by @sebmarkbage and @sophiebits)</li>
-</ul>
-<h3>React-Is</h3>
-<ul>
-<li>Enable tree shaking (<a href="https://github.com/facebook/react/pull/27701">#27701</a> by @markerikson)  </li>
-<li>Remove <code>isConcurrentMode</code> and <code>isAsyncMode</code> methods (<a href="https://github.com/facebook/react/pull/28224">#28224</a> by @gaearon)</li>
-</ul>
-<h3>useSyncExternalStore</h3>
-<ul>
-<li>Remove React internals access (<a href="https://github.com/facebook/react/pull/29868">#29868</a> by @phryneas)  </li>
-<li>Fix stale selectors keeping previous store references (<a href="https://github.com/facebook/react/pull/25968">#25969</a> by @jellevoost)</li>
-</ul>]]></content:encoded>
-      <category>facebook</category>
-      <category>react</category>
-      <source url="https://github.com/facebook/react">facebook/react</source>
     </item>    <item>
       <title>spotDL/spotify-downloader v4.2.0</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.0</link>
