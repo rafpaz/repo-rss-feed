@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 22 Dec 2025 03:35:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 06:10:17 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>payloadcms/payload v3.69.0</title>
@@ -4554,6 +4554,123 @@ The <code>Network</code> tab will let you track your HTTP/2 calls.</p>
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+      <title>spotDL/spotify-downloader v4.4.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.0</guid>
+      <pubDate>Wed, 13 Aug 2025 03:20:39 GMT</pubDate>
+      <description>Breaking Change Dropped support for Python 3.9 due to upstream dependency requirements. Please update Python to v3.10-v3.13 ytmusicapi requires Python 3.10 and yt-dlp will soon Noting further that Python 3.9 reaches end-of-life in October 2025. What&amp;#39;s Changed Fix azlyrics logic, and disable i...</description>
+      <content:encoded><![CDATA[<h2>Breaking Change</h2>
+<ul>
+<li><strong>Dropped support for Python 3.9</strong> due to upstream dependency requirements. Please update Python to v3.10-v3.13<ul>
+<li><a href="https://github.com/sigma67/ytmusicapi/?tab=readme-ov-file#requirements"><code>ytmusicapi</code> requires Python 3.10</a> and <a href="https://github.com/yt-dlp/yt-dlp/issues/13858"><code>yt-dlp</code> will soon</a></li>
+<li>Noting further that Python 3.9 reaches end-of-life in October 2025.</li>
+</ul>
+</li>
+</ul>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>Fix azlyrics logic, and disable it temporarily by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2442">https://github.com/spotDL/spotify-downloader/pull/2442</a></li>
+<li>Publish v4.4.0 by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2443">https://github.com/spotDL/spotify-downloader/pull/2443</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.3.1...v4.4.0">https://github.com/spotDL/spotify-downloader/compare/v4.3.1...v4.4.0</a></p>
+<h2>Support the project</h2>
+<p><a href="https://github.com/sponsors/Silverarmor"><img src="https://img.shields.io/github/sponsors/Silverarmor" alt="GitHub Sponsors">
+</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
+    </item>    <item>
+      <title>spotDL/spotify-downloader v4.3.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.3.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.3.0</guid>
+      <pubDate>Sat, 02 Aug 2025 04:18:37 GMT</pubDate>
+      <description>What&amp;#39;s Changed Set default bitrate to 128k Fix passing arguments to yt-dlp. by @jessicah in https://github.com/spotDL/spotify-downloader/pull/2250 Bump setuptools from 75.8.0 to 78.1.1 by @dependabot[bot] in https://github.com/spotDL/spotify-downloader/pull/2379 switch from poetry to uv by @p...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li><em><strong>Set default bitrate to 128k</strong></em></li>
+<li>Fix passing arguments to yt-dlp. by @jessicah in <a href="https://github.com/spotDL/spotify-downloader/pull/2250">https://github.com/spotDL/spotify-downloader/pull/2250</a></li>
+<li>Bump setuptools from 75.8.0 to 78.1.1 by @dependabot[bot] in <a href="https://github.com/spotDL/spotify-downloader/pull/2379">https://github.com/spotDL/spotify-downloader/pull/2379</a></li>
+<li>switch from poetry to uv by @phcreery in <a href="https://github.com/spotDL/spotify-downloader/pull/2305">https://github.com/spotDL/spotify-downloader/pull/2305</a></li>
+<li>Add yt-dlp Extractor Argument Support by @Kyrluckechuck in <a href="https://github.com/spotDL/spotify-downloader/pull/2285">https://github.com/spotDL/spotify-downloader/pull/2285</a></li>
+<li>docs: add info about --sync-without-deleting by @BOTKooper in <a href="https://github.com/spotDL/spotify-downloader/pull/2359">https://github.com/spotDL/spotify-downloader/pull/2359</a></li>
+<li>v4.3.0 by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2418">https://github.com/spotDL/spotify-downloader/pull/2418</a><ul>
+<li>Changed tests to run on only py3.11</li>
+<li>Apply pytube innertube version patch. Credit @epignatelli. Note YT audio provider is not fully supported at the moment, needs to be rewritten due to pytube&#39;s loss of support.</li>
+<li>Updated PR description</li>
+<li>Remove max parallel limit on GH action runners</li>
+<li>Update documentation and readme</li>
+<li>Update development instructions in CONTRIBUTING.md</li>
+</ul>
+</li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@jessicah made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2250">https://github.com/spotDL/spotify-downloader/pull/2250</a></li>
+<li>@Kyrluckechuck made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2285">https://github.com/spotDL/spotify-downloader/pull/2285</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.2.11...v4.3.0">https://github.com/spotDL/spotify-downloader/compare/v4.2.11...v4.3.0</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
+    </item>    <item>
+      <title>spotDL/spotify-downloader v4.2.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.0</guid>
+      <pubDate>Tue, 11 Jul 2023 12:44:50 GMT</pubDate>
+      <description>Docs: added more info about cookies by @xnetcat in fc817ad9bc6d45ed30ff11b04d17487c64acfde1 updated the build command by @xnetcat in aac20f56a138dc2a53d985173c96ab3dde580da7 fix broken link in docs by @laurens94 in 2baad4a4914ea20e8e4b501ebb9eebaf710351f0 Bug fixes: even more improvements to file...</description>
+      <content:encoded><![CDATA[<p>Docs:</p>
+<ul>
+<li>added more info about cookies by @xnetcat in fc817ad9bc6d45ed30ff11b04d17487c64acfde1</li>
+<li>updated the build command by @xnetcat in aac20f56a138dc2a53d985173c96ab3dde580da7</li>
+<li>fix broken link in docs by @laurens94 in 2baad4a4914ea20e8e4b501ebb9eebaf710351f0</li>
+</ul>
+<p>Bug fixes:</p>
+<ul>
+<li>even more improvements to file name creation function by @xnetcat in e9dee4f55d00ef9f5dd7a393efc5978c3f04619c</li>
+<li>update client&#39;s downloader settings by @xnetcat in 4fd1be7713089641d1b73c48acf0849949c81491</li>
+<li>check if result has views before calculating the match score by @xnetcat in 3f0565c88ae1a0a753347d15a1b484ae2c514d25</li>
+</ul>
+<p>Matching:</p>
+<ul>
+<li>simplified artist match fixup for verified results by @xnetcat in 7568dd9b3323828614a2b226c5e9be1913d4782a</li>
+<li>improved link matching by changing how the views are included in the overall score by @xnetcat in f0ece432375fb6d7a7573f35ed13c6bb7df86f25</li>
+</ul>
+<p>New features:</p>
+<ul>
+<li>added support for wav files by @xnetcat in e7fa8fc57556332cec7a91d0fca010820f5fabb9 c1fb5089bc0b91250d38f705acc655908a6277f6</li>
+<li>added <code>--yt-dlp-args</code> flag by @xnetcat in d789a5cb1abf23e7a28660ba79b3febcee45bfdc</li>
+<li>added soundcloud audio provider by @xnetcat in e6f03396bdfefb3e0eb76c769c816f665ab031eb</li>
+<li>added bandcamp audio provider by @xnetcat in cc399a8942187f5a72e4a0cc8e3bc399d7a50293</li>
+<li>added piped audio provider by @xnetcat in ecba7d611bae329e407f61da03df66645b879163 (use piped to bypass country restrictions)</li>
+<li>added detect formats option by @xnetcat in d9aac5710e4f10f6b5c16ca10f8f105c34a512d8</li>
+<li>added ability to download all user playlists by @xnetcat in b915dc3a32366830627b77fc3eeb34789ad1fa5e</li>
+</ul>
+<p>Improvements:</p>
+<ul>
+<li>remove unwanted directories in container image by @Biswa96 in #1856 </li>
+<li>improved sync file detection by @xnetcat in 039801f107c701af666331b3ed4a2c147a31fb28</li>
+<li>added more words to forbidden words list by @xnetcat in f4835a426111cc1258899ff4fda5205db6508d24 06cac0fc82c7700f7df8d3a9ddfb6336368ef052</li>
+<li>add ISRC in file tags by @Maxmystere in #1859</li>
+<li>updated packages by @xnetcat in 27a62f06b633ada469f6b01a258d2fd5dedd2065</li>
+<li>added support for piped links by @xnetcat in d29385535508a000e322c843943b38ea6a8a13c2</li>
+<li>Give an ascii mode to --restrict flag by @OmeGak in #1858</li>
+<li>use POPM id3 tag for popularity by @xnetcat in 2384f0b1990b1a7b3f7d5beb664a24081f376dca</li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@Biswa96 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/1856">https://github.com/spotDL/spotify-downloader/pull/1856</a></li>
+<li>@laurens94 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/1862">https://github.com/spotDL/spotify-downloader/pull/1862</a></li>
+<li>@OmeGak made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/1858">https://github.com/spotDL/spotify-downloader/pull/1858</a></li>
+</ul>
+<h2>Donate</h2>
+<p>help support the development and maintenance of spotDL ❤️ </p>
+<p><a href="https://paypal.me/kko7"><img src="https://img.shields.io/badge/paypal-%2300457C.svg?&style=for-the-badge&logo=paypal&logoColor=white" alt="paypal"></a>
+<a href="https://ko-fi.com/xnetcat"><img src="https://img.shields.io/badge/kofi-%23F16061.svg?&style=for-the-badge&logo=ko-fi&logoColor=white" alt="kofi"></a></p>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.1.11...v4.2.0">https://github.com/spotDL/spotify-downloader/compare/v4.1.11...v4.2.0</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
     </item>
   </channel>
 </rss>
