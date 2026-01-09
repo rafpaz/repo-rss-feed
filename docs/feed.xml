@@ -10,9 +10,184 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 08 Jan 2026 21:06:47 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 00:27:37 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>novuhq/novu v3.12.0</title>
+      <link>https://github.com/novuhq/novu/releases/tag/v3.12.0</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.12.0</guid>
+      <pubDate>Thu, 08 Jan 2026 21:25:40 GMT</pubDate>
+      <description>API 🚀 Features api-service: Inbox subscriber field update for locale fixes NV-7021 ( #9791 ) api-service: Api cache tokens for strategy ( #9785 ) dashboard, api-service: Identifier character set extension for workflow ids ( #9780 ) api-service: Workflow id casing update ( #9751 ) api: add missin...</description>
+      <content:encoded><![CDATA[<h2>API</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>api-service:</strong> Inbox subscriber field update for locale fixes NV-7021 (<a href="https://github.com/novuhq/novu/pull/9791">#9791</a>)</li>
+<li><strong>api-service:</strong> Api cache tokens for strategy (<a href="https://github.com/novuhq/novu/pull/9785">#9785</a>)</li>
+<li><strong>dashboard, api-service:</strong> Identifier character set extension for workflow ids (<a href="https://github.com/novuhq/novu/pull/9780">#9780</a>)</li>
+<li><strong>api-service:</strong> Workflow id casing update (<a href="https://github.com/novuhq/novu/pull/9751">#9751</a>)</li>
+<li><strong>api:</strong> add missing archived property in feed for SDK (<a href="https://github.com/novuhq/novu/pull/9714">#9714</a>)</li>
+<li><strong>api-service:</strong> enhance subscription preference updates to include channel-specific settings fixes NV-6998 (<a href="https://github.com/novuhq/novu/pull/9706">#9706</a>)</li>
+<li><strong>api, worker, root, application-generic:</strong> add new scheduling mechanism using cf worker fixes NV-6939 (<a href="https://github.com/novuhq/novu/pull/9578">#9578</a>)</li>
+<li><strong>api-service:</strong> ensure newly added preference workflows appear in subscription component fixes NV-6955 (<a href="https://github.com/novuhq/novu/pull/9669">#9669</a>)</li>
+<li><strong>dashboard:</strong> see subscription and details in activity feed fixes NV-6972 (<a href="https://github.com/novuhq/novu/pull/9686">#9686</a>)</li>
+<li><strong>dashboard,api-service:</strong> view subscription details on the subscriber drawer fixes NV-6971 (<a href="https://github.com/novuhq/novu/pull/9679">#9679</a>)</li>
+<li><strong>api:</strong> enable channel endpoints &amp; connections controllers + oauth (<a href="https://github.com/novuhq/novu/pull/9650">#9650</a>)</li>
+<li><strong>api-service:</strong> subscription polish (<a href="https://github.com/novuhq/novu/pull/9554">#9554</a>)</li>
+<li><strong>api:</strong> add permission requirements to workflow and notification group endpoints (<a href="https://github.com/novuhq/novu/pull/9607">#9607</a>)</li>
+<li><strong>api:</strong> autogen Postman collection fixes NV-6938 (<a href="https://github.com/novuhq/novu/pull/9595">#9595</a>)</li>
+<li><strong>api,framework:</strong> translations - support liquid filters &amp; nesting fixes NV-6870 (<a href="https://github.com/novuhq/novu/pull/9575">#9575</a>)</li>
+<li><strong>api,worker:</strong> enable default dev Novu Slack integration fixes NV-6575 (<a href="https://github.com/novuhq/novu/pull/9551">#9551</a>)</li>
+<li><strong>api-service:</strong> add multi subscription per topic and trigger condition parsing fixes NV-6810 (<a href="https://github.com/novuhq/novu/pull/9472">#9472</a>)</li>
+<li><strong>api,worker:</strong> MS Teams bot delivery flow fixes NV-6573 (<a href="https://github.com/novuhq/novu/pull/9540">#9540</a>)</li>
+<li><strong>api,dashboard:</strong> add MS Teams integration credentials config fixes NV-6910 (<a href="https://github.com/novuhq/novu/pull/9532">#9532</a>)</li>
+<li><strong>api:</strong> add context to bulk and broadcast trigger endpoints fixes NV-6902 (<a href="https://github.com/novuhq/novu/pull/9509">#9509</a>)</li>
+<li><strong>dashboard:</strong> analytics add workflow id filter (<a href="https://github.com/novuhq/novu/pull/9431">#9431</a>)</li>
+<li><strong>api:</strong> temp. disable Novu Slack dev test integration (<a href="https://github.com/novuhq/novu/pull/9499">#9499</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>api-service:</strong> Adjust include channels on legacy preferences api fixes NV-7006 (<a href="https://github.com/novuhq/novu/pull/9788">#9788</a>)</li>
+<li><strong>api-service:</strong> ff lru cache (<a href="https://github.com/novuhq/novu/pull/9783">#9783</a>)</li>
+<li><strong>api-service:</strong> Add LRU caching for workflow and organization fetch (<a href="https://github.com/novuhq/novu/pull/9778">#9778</a>)</li>
+<li><strong>api-service:</strong> preview email flow (<a href="https://github.com/novuhq/novu/pull/9769">#9769</a>)</li>
+<li><strong>worker:</strong> Ensure worker readiness after resume and improve logging (<a href="https://github.com/novuhq/novu/pull/9756">#9756</a>)</li>
+<li><strong>api-service, worker:</strong> Jsonwebtoken package update (<a href="https://github.com/novuhq/novu/pull/9744">#9744</a>)</li>
+<li><strong>worker:</strong> optimizations for bridge handler usecase (<a href="https://github.com/novuhq/novu/pull/9735">#9735</a>)</li>
+<li><strong>api-service:</strong> add skipOutputEscape option to createLiquidEngine (<a href="https://github.com/novuhq/novu/pull/9736">#9736</a>)</li>
+<li><strong>worker, api-service:</strong> locale pointer alignment (<a href="https://github.com/novuhq/novu/pull/9734">#9734</a>)</li>
+<li><strong>dashboard:</strong> re-rendering inbox session requests (<a href="https://github.com/novuhq/novu/pull/9728">#9728</a>)</li>
+<li><strong>framework:</strong> Liquid output escaping for special JSON characters including &quot; (<a href="https://github.com/novuhq/novu/pull/9730">#9730</a>)</li>
+<li><strong>api-service:</strong> update api description (<a href="https://github.com/novuhq/novu/pull/9634">#9634</a>)</li>
+<li><strong>api:</strong> fix &#39;subscriptionOrIdentifier&#39; in e2e tests (<a href="https://github.com/novuhq/novu/pull/9677">#9677</a>)</li>
+<li><strong>api:</strong> URL validation error handling for redirect fields fixes NV-6984 (<a href="https://github.com/novuhq/novu/pull/9674">#9674</a>)</li>
+<li><strong>api-service:</strong> preference workflow as a string api return 422 fixes NV-6963 (<a href="https://github.com/novuhq/novu/pull/9651">#9651</a>)</li>
+<li><strong>maily-core,maily-render:</strong> improve email editor defaults and drag and drop behaviour fixes NV-6925 (<a href="https://github.com/novuhq/novu/pull/9617">#9617</a>)</li>
+<li><strong>api-service:</strong> dashboard workflow status when disabled fixes NV-6947 (<a href="https://github.com/novuhq/novu/pull/9624">#9624</a>)</li>
+<li><strong>api-service:</strong> workflowId duplication bug fixes NV-6946 (<a href="https://github.com/novuhq/novu/pull/9622">#9622</a>)</li>
+<li><strong>api:</strong> remove unused debug operations in OpenAPI sorting (<a href="https://github.com/novuhq/novu/pull/9616">#9616</a>)</li>
+<li><strong>api-service:</strong> Add @ExternalApiAccessible to organization endpoints (<a href="https://github.com/novuhq/novu/pull/9605">#9605</a>)</li>
+<li><strong>api:</strong> remove duplicate widgets module entry (<a href="https://github.com/novuhq/novu/pull/9585">#9585</a>)</li>
+<li><strong>api-service:</strong> add e2e cases for triggered preferences (<a href="https://github.com/novuhq/novu/pull/9576">#9576</a>)</li>
+<li><strong>api:</strong> context DTO data attribute in SDK (<a href="https://github.com/novuhq/novu/pull/9563">#9563</a>)</li>
+<li><strong>worker:</strong> fallback all flag override for preferences (<a href="https://github.com/novuhq/novu/pull/9556">#9556</a>)</li>
+<li><strong>api-service:</strong> sync (<a href="https://github.com/novuhq/novu/pull/9546">#9546</a>)</li>
+<li><strong>worker:</strong> skip updated by fetch (<a href="https://github.com/novuhq/novu/pull/9536">#9536</a>)</li>
+<li><strong>api-service:</strong> bulk perf workflow return (<a href="https://github.com/novuhq/novu/pull/9523">#9523</a>)</li>
+<li><strong>api-service:</strong> Add bulk workflow queueing for event triggers fixes NV-6908 (<a href="https://github.com/novuhq/novu/pull/9520">#9520</a>)</li>
+<li><strong>api-service:</strong> Optimize subscriber search endpoint fixes NV-6899 (<a href="https://github.com/novuhq/novu/pull/9504">#9504</a>)</li>
+<li><strong>api:</strong> translation DTOs/OAS for SDK auto-gen; idempotency fixes NV-6903 (<a href="https://github.com/novuhq/novu/pull/9515">#9515</a>)</li>
+<li><strong>api-service:</strong> status and active mismatch (<a href="https://github.com/novuhq/novu/pull/9475">#9475</a>)</li>
+<li><strong>api:</strong> oauth url response DTO (<a href="https://github.com/novuhq/novu/pull/9503">#9503</a>)</li>
+</ul>
+<h3>🔥 Performance</h3>
+<ul>
+<li><strong>api-service:</strong> bridge skip updated by join (<a href="https://github.com/novuhq/novu/pull/9771">#9771</a>)</li>
+<li><strong>worker:</strong> improve fetching perf of handler (<a href="https://github.com/novuhq/novu/pull/9775">#9775</a>)</li>
+<li><strong>api-service:</strong> user fetch value selects (<a href="https://github.com/novuhq/novu/pull/9659">#9659</a>)</li>
+<li><strong>api-service:</strong> cache compile ajv schemas (<a href="https://github.com/novuhq/novu/pull/9656">#9656</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Adam Chmara @ChmaraX</li>
+<li>Dima Grossman @scopsy</li>
+<li>George Djabarov @djabarovgeorge</li>
+<li>Himanshu Garg @merrcury</li>
+<li>Pawan Jain</li>
+<li>Paweł Tymczuk @LetItRock</li>
+<li>Rinak-dev</li>
+</ul>
+<h2>Worker</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>api, worker, root, application-generic:</strong> add new scheduling mechanism using cf worker fixes NV-6939 (<a href="https://github.com/novuhq/novu/pull/9578">#9578</a>)</li>
+<li><strong>dashboard:</strong> see subscription and details in activity feed fixes NV-6972 (<a href="https://github.com/novuhq/novu/pull/9686">#9686</a>)</li>
+<li><strong>api,worker:</strong> enable default dev Novu Slack integration fixes NV-6575 (<a href="https://github.com/novuhq/novu/pull/9551">#9551</a>)</li>
+<li><strong>api-service:</strong> add multi subscription per topic and trigger condition parsing fixes NV-6810 (<a href="https://github.com/novuhq/novu/pull/9472">#9472</a>)</li>
+<li><strong>api,worker:</strong> MS Teams bot delivery flow fixes NV-6573 (<a href="https://github.com/novuhq/novu/pull/9540">#9540</a>)</li>
+<li><strong>dashboard:</strong> analytics add workflow id filter (<a href="https://github.com/novuhq/novu/pull/9431">#9431</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>worker:</strong> Ensure worker readiness after resume and improve logging (<a href="https://github.com/novuhq/novu/pull/9756">#9756</a>)</li>
+<li><strong>worker:</strong> refactor template fetch to reduce db calls (<a href="https://github.com/novuhq/novu/pull/9609">#9609</a>)</li>
+<li><strong>worker:</strong> unify api calls for integrations call (<a href="https://github.com/novuhq/novu/pull/9602">#9602</a>)</li>
+<li>add missing log for preferences (<a href="https://github.com/novuhq/novu/commit/c7be7dc86c">c7be7dc86c</a>)</li>
+</ul>
+<h3>🔥 Performance</h3>
+<ul>
+<li><strong>api-service:</strong> user fetch value selects (<a href="https://github.com/novuhq/novu/pull/9659">#9659</a>)</li>
+<li><strong>worker:</strong> remove redundant queries (<a href="https://github.com/novuhq/novu/pull/9531">#9531</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Adam Chmara @ChmaraX</li>
+<li>Dima Grossman @scopsy</li>
+<li>George Djabarov @djabarovgeorge</li>
+<li>Himanshu Garg @merrcury</li>
+</ul>
+<h2>Dashboard</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>js,react:</strong> Italics formatting support in content fixes NV-7025 (<a href="https://github.com/novuhq/novu/pull/9789">#9789</a>)</li>
+<li><strong>dashboard, api-service:</strong> Identifier character set extension for workflow ids (<a href="https://github.com/novuhq/novu/pull/9780">#9780</a>)</li>
+<li><strong>api-service:</strong> Workflow id casing update (<a href="https://github.com/novuhq/novu/pull/9751">#9751</a>)</li>
+<li><strong>dashboard:</strong> see subscription and details in activity feed fixes NV-6972 (<a href="https://github.com/novuhq/novu/pull/9686">#9686</a>)</li>
+<li><strong>dashboard,api-service:</strong> view subscription details on the subscriber drawer fixes NV-6971 (<a href="https://github.com/novuhq/novu/pull/9679">#9679</a>)</li>
+<li><strong>dashboard:</strong> refactor environment forms (<a href="https://github.com/novuhq/novu/pull/9661">#9661</a>)</li>
+<li><strong>dashboard:</strong> contextual help drawer - docs, support, quick links fixes NV-6927 (<a href="https://github.com/novuhq/novu/pull/9604">#9604</a>)</li>
+<li><strong>dashboard:</strong> rename analytics to usage (<a href="https://github.com/novuhq/novu/pull/9587">#9587</a>)</li>
+<li><strong>dashboard:</strong> Add feature flag for legacy dashboard button visibility (<a href="https://github.com/novuhq/novu/pull/9579">#9579</a>)</li>
+<li><strong>dashboard:</strong> custom organization switcher (<a href="https://github.com/novuhq/novu/pull/9545">#9545</a>)</li>
+<li><strong>api,dashboard:</strong> add MS Teams integration credentials config fixes NV-6910 (<a href="https://github.com/novuhq/novu/pull/9532">#9532</a>)</li>
+<li><strong>dashboard:</strong> add cimode warning fixes NV-6914 (<a href="https://github.com/novuhq/novu/pull/9538">#9538</a>)</li>
+<li><strong>dashboard:</strong> analytics add workflow id filter (<a href="https://github.com/novuhq/novu/pull/9431">#9431</a>)</li>
+<li><strong>dashboard:</strong> enhance self-hosted support for region-context imports and add useClerk hook (<a href="https://github.com/novuhq/novu/pull/9502">#9502</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>js:</strong> inbox doubled notifications issue fixes NV-7014 (<a href="https://github.com/novuhq/novu/pull/9773">#9773</a>)</li>
+<li><strong>dashboard:</strong> Dashboard build failing for EE Images (<a href="https://github.com/novuhq/novu/pull/9763">#9763</a>)</li>
+<li><strong>dashboard:</strong> re-rendering inbox session requests (<a href="https://github.com/novuhq/novu/pull/9728">#9728</a>)</li>
+<li><strong>api-service:</strong> update api description (<a href="https://github.com/novuhq/novu/pull/9634">#9634</a>)</li>
+<li><strong>dashboard:</strong> Dashboard EU inbox URLs fixes NV-6985 (<a href="https://github.com/novuhq/novu/pull/9673">#9673</a>)</li>
+<li><strong>maily-core,maily-render:</strong> improve email editor defaults and drag and drop behaviour fixes NV-6925 (<a href="https://github.com/novuhq/novu/pull/9617">#9617</a>)</li>
+<li><strong>api-service:</strong> dashboard workflow status when disabled fixes NV-6947 (<a href="https://github.com/novuhq/novu/pull/9624">#9624</a>)</li>
+<li><strong>api-service:</strong> workflowId duplication bug fixes NV-6946 (<a href="https://github.com/novuhq/novu/pull/9622">#9622</a>)</li>
+<li><strong>dashboard:</strong> validate namespace-only variables &amp; centralize error msgs fixes NV-6932 (<a href="https://github.com/novuhq/novu/pull/9615">#9615</a>)</li>
+<li><strong>dashboard:</strong> cursor after variable on insert fixes NV-6724 (<a href="https://github.com/novuhq/novu/pull/9613">#9613</a>)</li>
+<li><strong>dashboard:</strong> add tooltip to truncated variable names in dropdown fixes NV-6728 (<a href="https://github.com/novuhq/novu/pull/9606">#9606</a>)</li>
+<li><strong>dashboard:</strong> UserButton re-rendering for legacy dashboard option (<a href="https://github.com/novuhq/novu/pull/9597">#9597</a>)</li>
+<li><strong>dashboard:</strong> Organisation Selector Pagination and name changes (<a href="https://github.com/novuhq/novu/pull/9565">#9565</a>)</li>
+<li><strong>dashboard:</strong> context dropdown page refresh (<a href="https://github.com/novuhq/novu/pull/9511">#9511</a>)</li>
+<li><strong>dashboard:</strong> Encode subscriberId in API and navigation routes fixes NV-6881 (<a href="https://github.com/novuhq/novu/pull/9488">#9488</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Adam Chmara @ChmaraX</li>
+<li>Dima Grossman @scopsy</li>
+<li>George Djabarov @djabarovgeorge</li>
+<li>Himanshu Garg @merrcury</li>
+<li>Pawan Jain</li>
+<li>Paweł Tymczuk @LetItRock</li>
+</ul>
+<h2>WS</h2>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>api-service, worker:</strong> Jsonwebtoken package update (<a href="https://github.com/novuhq/novu/pull/9744">#9744</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Dima Grossman @scopsy</li>
+</ul>
+<h2>🐳 Community Docker Images</h2>
+<p>Community Docker images are available for v3.12.0, making it easy to run this release in containerized environments. These images are suitable for local development, testing, and self-hosting scenarios.</p>
+<h2>📦 SDKs</h2>
+<p>SDKs(Typescript, Golang, Python, PHP and C-Sharp) for v3.12.0 are available to help you integrate with the platform using your preferred programming language. These SDKs are maintained alongside the core release and community images to ensure compatibility and a smooth upgrade experience. </p>
+<p><strong>We’re excited to see what you build with this release.</strong></p>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
       <title>payloadcms/payload v3.70.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.70.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.70.0</guid>
