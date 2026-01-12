@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 12 Jan 2026 12:11:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 15:08:58 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>novuhq/novu v3.12.0</title>
@@ -237,6 +237,13 @@ const posts = await payload.find({
 <li><strong>claude:</strong> fix typo in claude skills access control advanced file (<a href="https://github.com/payloadcms/payload/issues/15060">#15060</a>) (<a href="https://github.com/payloadcms/payload/commit/5cbdca1">5cbdca1</a>)</li>
 <li><strong>deps:</strong> bump dnd-kit (<a href="https://github.com/payloadcms/payload/issues/15083">#15083</a>) (<a href="https://github.com/payloadcms/payload/commit/07c36a3">07c36a3</a>)</li>
 </ul>
+<h3>⚠️ BREAKING CHANGES</h3>
+<p><code>@payloadcms/storage-s3</code></p>
+<p><strong>Only users with custom hooks on S3 upload fields are affected — standard plugin usage is unchanged.</strong></p>
+<ul>
+<li>External upload process for the S3 plugin has moved from <code>beforeChange</code> to <code>afterChange</code> as a result of <em>fix: s3 plugin uploads files before validation (<a href="https://github.com/payloadcms/payload/issues/14988">#14988</a>)</em></li>
+</ul>
+<p>This change was necessary to ensure that files uploaded to S3 have passed all validations and been saved to the document, preventing orphaned external files. </p>
 <h3>🤝 Contributors</h3>
 <ul>
 <li>Alessio Gravili (@AlessioGr)</li>
