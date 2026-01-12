@@ -10,9 +10,77 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 12 Jan 2026 18:09:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 21:06:57 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.12</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.12</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.12</guid>
+      <pubDate>Mon, 12 Jan 2026 20:04:31 GMT</pubDate>
+      <description>Atuin Desktop v0.2.12 - 2026-01-12 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Blocks can store output, accessible via the template system ( #304 ) Pass runbook_id to AI block operations ( #310 ) Split SSH output between stderr and stdout ( #311 ) Add sub runboo...</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.12 - 2026-01-12</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.12/Atuin_0.2.12_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.12/Atuin_0.2.12_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.12/Atuin_Desktop_0.2.12_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.12/Atuin_Desktop-0.2.12-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Blocks can store output, accessible via the template system (<a href="https://github.com/atuinsh/desktop/issues/304">#304</a>)</li>
+<li>Pass runbook_id to AI block operations (<a href="https://github.com/atuinsh/desktop/issues/310">#310</a>)</li>
+<li>Split SSH output between stderr and stdout (<a href="https://github.com/atuinsh/desktop/issues/311">#311</a>)</li>
+<li>Add sub runbook block + executor (<a href="https://github.com/atuinsh/desktop/issues/259">#259</a>)</li>
+<li>Add context export options to sub-runbook block (<a href="https://github.com/atuinsh/desktop/issues/314">#314</a>)</li>
+<li>Only set ATUIN_OUTPUT_VARS over ssh if used</li>
+<li>Add spinner while ssh operations are happening</li>
+<li>Add SSH connection settings modal with identity key configuration</li>
+<li>Remove non-functional SSH host export option from sub-runbooks</li>
+<li>Allow toggling local var visibility</li>
+<li>Add copy deep link command to command menu</li>
+<li>SSH certificate authentication support (<a href="https://github.com/atuinsh/desktop/issues/327">#327</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Incorrect terminal size over ssh (<a href="https://github.com/atuinsh/desktop/issues/318">#318</a>)</li>
+<li>Allow escape key to propagate to CodeMirror editors for vim mode</li>
+<li>SSH authenticate() method wasnt returning Ok on explicit key/password auth</li>
+<li>Format + docker-compose -&gt; docker compose</li>
+<li>Deserialize KV values as JSON objects then serialize to string</li>
+<li>Remove useless .into() conversion</li>
+<li>ExportPropMatter should check !== undefined for boolean false</li>
+<li>Support workspace.root inside of directory blocks (<a href="https://github.com/atuinsh/desktop/issues/338">#338</a>)</li>
+<li>Workspace.root in exec blocks (<a href="https://github.com/atuinsh/desktop/issues/340">#340</a>)</li>
+<li>Kv storage double encoding (<a href="https://github.com/atuinsh/desktop/issues/342">#342</a>)</li>
+</ul>
+<h3>💼 Other</h3>
+<ul>
+<li>Consolidate block local state to use KVStore</li>
+</ul>
+<h3>🚜 Refactor</h3>
+<ul>
+<li>Simplify KV value retrieval</li>
+<li>Use TabUri helper for runbook URL parsing</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>Restructure docs folder to work with unified docs (<a href="https://github.com/atuinsh/desktop/issues/308">#308</a>)</li>
+</ul>
+<h3>🧪 Testing</h3>
+<ul>
+<li>Add SSH integration test suite with Docker infrastructure</li>
+</ul>
+<h3>⚙️ Miscellaneous Tasks</h3>
+<ul>
+<li>Add more sub-runbook tests (<a href="https://github.com/atuinsh/desktop/issues/315">#315</a>)</li>
+<li>Give the claude action a bit more power</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>novuhq/novu v3.12.0</title>
       <link>https://github.com/novuhq/novu/releases/tag/v3.12.0</link>
       <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.12.0</guid>
@@ -1035,33 +1103,6 @@ export const MyCollection: CollectionConfig = {
 <ul>
 <li>Ensure OnlineRunbook.moveTo is awaited (<a href="https://github.com/atuinsh/desktop/issues/248">#248</a>)</li>
 <li><em>(runtime)</em> Variety of directory expansion scenarios (<a href="https://github.com/atuinsh/desktop/issues/249">#249</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.2.1</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.1</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.1</guid>
-      <pubDate>Tue, 25 Nov 2025 20:21:26 GMT</pubDate>
-      <description>Atuin Desktop v0.2.1 - 2025-11-25 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🐛 Bug Fixes Insert block menu floating off screen ( #243 ) Dropdown bugs ( #242 ) Correctly handle opening atuin:// URLs on Linux ( #244 ) Runbooks with content sometimes open as blank runbooks (...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.1 - 2025-11-25</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.1/Atuin_0.2.1_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.1/Atuin_0.2.1_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.1/Atuin_Desktop_0.2.1_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.1/Atuin_Desktop-0.2.1-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>Insert block menu floating off screen (<a href="https://github.com/atuinsh/desktop/issues/243">#243</a>)</li>
-<li>Dropdown bugs (<a href="https://github.com/atuinsh/desktop/issues/242">#242</a>)</li>
-<li>Correctly handle opening atuin:// URLs on Linux (<a href="https://github.com/atuinsh/desktop/issues/244">#244</a>)</li>
-<li>Runbooks with content sometimes open as blank runbooks (<a href="https://github.com/atuinsh/desktop/issues/246">#246</a>)</li>
-<li>Hovering over runtime alert shows [object object] (<a href="https://github.com/atuinsh/desktop/issues/245">#245</a>)</li>
-<li>Populate missing fixedOptions in Dropdown blocks (<a href="https://github.com/atuinsh/desktop/issues/247">#247</a>)</li>
 </ul>]]></content:encoded>
       <category>atuinsh</category>
       <category>desktop</category>
