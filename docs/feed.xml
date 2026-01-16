@@ -10,9 +10,104 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 16 Jan 2026 18:09:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jan 2026 21:06:49 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>payloadcms/payload v3.72.0</title>
+      <link>https://github.com/payloadcms/payload/releases/tag/v3.72.0</link>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.72.0</guid>
+      <pubDate>Fri, 16 Jan 2026 20:48:38 GMT</pubDate>
+      <description>v3.72.0 (2026-01-16) 🚀 Features adds experimental option localizeStatus and allows unpublish per-locale functionality ( #14667 ) ( d77af00 ) plugin-mcp: add depth parameter support to all MCP find resource tools ( #14931 ) ( c979fb3 ) Localized Status (Experimental) - Each locale can now track a...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.71.1...v3.72.0">v3.72.0</a> (2026-01-16)</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>adds experimental option localizeStatus and allows unpublish per-locale functionality (<a href="https://github.com/payloadcms/payload/issues/14667">#14667</a>) (<a href="https://github.com/payloadcms/payload/commit/d77af00">d77af00</a>)</li>
+<li><strong>plugin-mcp:</strong> add depth parameter support to all MCP find resource tools (<a href="https://github.com/payloadcms/payload/issues/14931">#14931</a>) (<a href="https://github.com/payloadcms/payload/commit/c979fb3">c979fb3</a>)</li>
+</ul>
+<hr>
+<p><strong>Localized Status (Experimental)</strong> - Each locale can now track and manage its own publication status independently. Publish or unpublish individual locales without affecting others, with locale-aware UI and version history. Requires enabling at both config and collection level. <a href="https://github.com/payloadcms/payload/pull/14667">#14667</a></p>
+<pre><code class="language-ts">// payload.config.ts
+export default buildConfig({
+  experimental: {
+    localizeStatus: true,
+  },
+  // ...
+})
+
+// collections/Posts.ts
+export const Posts: CollectionConfig = {
+  slug: &#39;posts&#39;,
+  versions: {
+    drafts: {
+      localizeStatus: true,
+    },
+  },
+}
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>Migration Required</strong>: If you have existing version data, run the provided migration helper to convert <code>_status</code> fields from strings to locale objects. See <a href="https://github.com/payloadcms/payload/pull/14667">PR #14667</a> for full migration guide.</p>
+</blockquote>
+<hr>
+<p><strong>Depth Parameter Support (plugin-mcp)</strong> - MCP resource tools now support a <code>depth</code> parameter (0-10) to control relationship population depth. Use <code>depth: 0</code> for lightweight ID-only responses or higher values for fully populated relationship data. Significantly reduces token count when reading documents. <a href="https://github.com/payloadcms/payload/pull/14931">#14931</a></p>
+<hr>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>thumbnailURL hook, virtually populate from thumbnail size (<a href="https://github.com/payloadcms/payload/issues/15232">#15232</a>) (<a href="https://github.com/payloadcms/payload/commit/beeb269">beeb269</a>)</li>
+<li>isValidID validation (<a href="https://github.com/payloadcms/payload/issues/15217">#15217</a>) (<a href="https://github.com/payloadcms/payload/commit/4f452ac">4f452ac</a>)</li>
+<li><code>select</code> in <code>findByID</code> with <code>draft: true</code> may return a wrong version (<a href="https://github.com/payloadcms/payload/issues/14742">#14742</a>) (<a href="https://github.com/payloadcms/payload/commit/49c9fa9">49c9fa9</a>)</li>
+<li>use window.location.origin as fallback for API URL copy (<a href="https://github.com/payloadcms/payload/issues/15220">#15220</a>) (<a href="https://github.com/payloadcms/payload/commit/a46e3a2">a46e3a2</a>)</li>
+<li>folder creation errors when collection uses translation function labels (<a href="https://github.com/payloadcms/payload/issues/15216">#15216</a>) (<a href="https://github.com/payloadcms/payload/commit/1a3aeb8">1a3aeb8</a>)</li>
+<li>correct image size URLs in beforeChange (<a href="https://github.com/payloadcms/payload/issues/15214">#15214</a>) (<a href="https://github.com/payloadcms/payload/commit/da12eed">da12eed</a>)</li>
+<li><strong>db-mongodb:</strong> hasMany relationship filtering with equals operator returns no results (<a href="https://github.com/payloadcms/payload/issues/15204">#15204</a>) (<a href="https://github.com/payloadcms/payload/commit/1756c0d">1756c0d</a>)</li>
+<li><strong>deps:</strong> bump undici to 7.18.2 to mitigate chained decompression (<a href="https://github.com/payloadcms/payload/issues/15221">#15221</a>) (<a href="https://github.com/payloadcms/payload/commit/591f9d2">591f9d2</a>)</li>
+<li><strong>plugin-ecommerce:</strong> issue with slug map ignoring variants and threading through cart data (<a href="https://github.com/payloadcms/payload/issues/15234">#15234</a>) (<a href="https://github.com/payloadcms/payload/commit/4b6529f">4b6529f</a>)</li>
+<li><strong>plugin-ecommerce:</strong> translations not being mapped correctly (<a href="https://github.com/payloadcms/payload/issues/15205">#15205</a>) (<a href="https://github.com/payloadcms/payload/commit/3337403">3337403</a>)</li>
+<li><strong>templates:</strong> prevent jobs run if secret unset (<a href="https://github.com/payloadcms/payload/issues/15207">#15207</a>) (<a href="https://github.com/payloadcms/payload/commit/8f50f83">8f50f83</a>)</li>
+<li><strong>translations:</strong> correct Russian translations for UI states in general section (<a href="https://github.com/payloadcms/payload/issues/14953">#14953</a>) (<a href="https://github.com/payloadcms/payload/commit/454042e">454042e</a>)</li>
+<li><strong>ui:</strong> truncates long JSON cells in list view (<a href="https://github.com/payloadcms/payload/issues/9214">#9214</a>) (<a href="https://github.com/payloadcms/payload/commit/6827978">6827978</a>)</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>fix beforeChange field hook documentation to reflect actual behaviour (<a href="https://github.com/payloadcms/payload/issues/14798">#14798</a>) (<a href="https://github.com/payloadcms/payload/commit/533ae92">533ae92</a>)</li>
+</ul>
+<h3>🧪 Tests</h3>
+<ul>
+<li>fix race condition in language switcher helper (<a href="https://github.com/payloadcms/payload/issues/15206">#15206</a>) (<a href="https://github.com/payloadcms/payload/commit/f98d915">f98d915</a>)</li>
+<li>add <code>@payloadcms/storage-s3 clientUploads</code> integration test suite (<a href="https://github.com/payloadcms/payload/issues/15194">#15194</a>) (<a href="https://github.com/payloadcms/payload/commit/4dce061">4dce061</a>)</li>
+<li>fields with defaultValue ​​should not be overwritten in upsert (<a href="https://github.com/payloadcms/payload/issues/15197">#15197</a>) (<a href="https://github.com/payloadcms/payload/commit/c684c6b">c684c6b</a>)</li>
+</ul>
+<h3>⚙️ CI</h3>
+<ul>
+<li>announce releases in discord general channel (<a href="https://github.com/payloadcms/payload/issues/15201">#15201</a>) (<a href="https://github.com/payloadcms/payload/commit/734453d">734453d</a>)</li>
+</ul>
+<h3>🏡 Chores</h3>
+<ul>
+<li>adds generate-translations claude skill (<a href="https://github.com/payloadcms/payload/issues/15215">#15215</a>) (<a href="https://github.com/payloadcms/payload/commit/f1f2be6">f1f2be6</a>)</li>
+<li>enforce no-console rule for <code>@payloadcms/ui</code> (<a href="https://github.com/payloadcms/payload/issues/15195">#15195</a>) (<a href="https://github.com/payloadcms/payload/commit/54db43d">54db43d</a>)</li>
+<li><strong>plugin-redirects:</strong> add Swedish translation (<a href="https://github.com/payloadcms/payload/issues/15213">#15213</a>) (<a href="https://github.com/payloadcms/payload/commit/e19f432">e19f432</a>)</li>
+<li><strong>translations:</strong> fixes to Swedish translation (<a href="https://github.com/payloadcms/payload/issues/15212">#15212</a>) (<a href="https://github.com/payloadcms/payload/commit/d3b12a1">d3b12a1</a>)</li>
+</ul>
+<h3>🤝 Contributors</h3>
+<ul>
+<li>Jarrod Flesch (@JarrodMFlesch)</li>
+<li>German Jablonski (@GermanJablo)</li>
+<li>Vincent Vu (@rubixvi)</li>
+<li>Sasha (@r1tsuu)</li>
+<li>Paul (@paulpopus)</li>
+<li>Kendell (@kendelljoseph)</li>
+<li>Elliot DeNolf (@denolfe)</li>
+<li>Jens Becker (@jhb-dev)</li>
+<li>Patrik (@PatrikKozak)</li>
+<li>spiner2000 (@spiner2000)</li>
+<li>Marcus Forsberg (@marcusforsberg)</li>
+<li>Jessica Rynkar (@jessrynkar)</li>
+<li>Said Akhrarov (@akhrarovsaid)</li>
+<li>Jeffery To (@jefferyto)</li>
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.14</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.14</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.14</guid>
@@ -2859,199 +2954,6 @@ export const ExampleCollection: CollectionConfig = {
 <li>German Jablonski (@GermanJablo)</li>
 <li>Sean Zubrickas (@zubricks)</li>
 <li>Violet Rosenzweig (@6TELOIV)</li>
-</ul>]]></content:encoded>
-      <category>payloadcms</category>
-      <category>payload</category>
-      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>payloadcms/payload v3.62.0</title>
-      <link>https://github.com/payloadcms/payload/releases/tag/v3.62.0</link>
-      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.62.0</guid>
-      <pubDate>Thu, 30 Oct 2025 18:09:20 GMT</pubDate>
-      <description>v3.62.0 (2025-10-30) 🚀 Features Jobs Access Control Adds role-based access control for job queue and cancel operations, allowing you to restrict who can manage background jobs in your application. Both operations now support overrideAccess parameter and respect custom access control functions de...</description>
-      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.61.1...v3.62.0">v3.62.0</a> (2025-10-30)</h2>
-<h3>🚀 Features</h3>
-<h3><strong>Jobs Access Control</strong></h3>
-<p>Adds role-based access control for job queue and cancel operations, allowing you to restrict who can manage background jobs in your application. Both operations now support <code>overrideAccess</code> parameter and respect custom access control functions defined in your jobs configuration. <a href="https://github.com/payloadcms/payload/pull/14404">#14404</a></p>
-<pre><code class="language-ts">// Configure access control
-jobs: {
-  access: {
-    queue: ({ req }) =&gt; req.user?.roles?.includes(&#39;admin&#39;),
-    cancel: ({ req }) =&gt; req.user?.roles?.includes(&#39;admin&#39;),
-  }
-}
-
-// Use in Local API
-await payload.jobs.cancel({
-  where: { workflowSlug: { equals: &#39;sync&#39; } },
-  overrideAccess: false,
-  req,
-})
-</code></pre>
-<h3><strong>Per-Field Timezone Configuration</strong></h3>
-<p>Date fields can now have individual timezone settings, allowing different date fields to support their own list of supported timezones with custom default values. This enables more flexible date handling across your application. <a href="https://github.com/payloadcms/payload/pull/14410">#14410</a></p>
-<pre><code class="language-ts">{
-  name: &#39;date&#39;,
-  type: &#39;date&#39;,
-  timezone: {
-    defaultTimezone: &#39;America/New_York&#39;,
-    supportedTimezones: [
-      { label: &#39;New York&#39;, value: &#39;America/New_York&#39; },
-      { label: &#39;Los Angeles&#39;, value: &#39;America/Los_Angeles&#39; },
-      { label: &#39;London&#39;, value: &#39;Europe/London&#39; },
-    ],
-  },
-}
-</code></pre>
-<p>You can also enforce a specific timezone by specifying just one with a default value:</p>
-<pre><code class="language-ts">{
-  name: &#39;date&#39;,
-  type: &#39;date&#39;,
-  timezone: {
-    defaultTimezone: &#39;Europe/London&#39;,
-    supportedTimezones: [
-      { label: &#39;London&#39;, value: &#39;Europe/London&#39; },
-    ],
-  },
-}
-</code></pre>
-<h3><strong>KV Storage Adapters</strong></h3>
-<p>Introduces a new key-value storage system with multiple adapter options (Database, In-Memory, Redis) for enhanced data persistence and performance. This provides the foundation for the upcoming Realtime API and other features requiring fast key-value access. <a href="https://github.com/payloadcms/payload/pull/9913">#9913</a></p>
-<p>Access the KV store via <code>payload.kv</code> with the following interface:</p>
-<pre><code class="language-ts">interface KVAdapter {
-  /**
-   * Clears all entries in the store.
-   * @returns A promise that resolves once the store is cleared.
-   */
-  clear(): Promise&lt;void&gt;
-
-  /**
-   * Deletes a value from the store by its key.
-   * @param key - The key to delete.
-   * @returns A promise that resolves once the key is deleted.
-   */
-  delete(key: string): Promise&lt;void&gt;
-
-  /**
-   * Retrieves a value from the store by its key.
-   * @param key - The key to look up.
-   * @returns A promise that resolves to the value, or `null` if not found.
-   */
-  get(key: string): Promise&lt;KVStoreValue | null&gt;
-
-  /**
-   * Checks if a key exists in the store.
-   * @param key - The key to check.
-   * @returns A promise that resolves to `true` if the key exists, otherwise `false`.
-   */
-  has(key: string): Promise&lt;boolean&gt;
-
-  /**
-   * Retrieves all the keys in the store.
-   * @returns A promise that resolves to an array of keys.
-   */
-  keys(): Promise&lt;string[]&gt;
-
-  /**
-   * Sets a value in the store with the given key.
-   * @param key - The key to associate with the value.
-   * @param value - The value to store.
-   * @returns A promise that resolves once the value is stored.
-   */
-  set(key: string, value: KVStoreValue): Promise&lt;void&gt;
-}
-</code></pre>
-<p>Configure the adapter using the <code>kv</code> property:</p>
-<pre><code class="language-ts">buildConfig({
-  kv: adapter()
-})
-</code></pre>
-<p><strong>Database KV adapter (default)</strong> - Uses your existing database with a hidden <code>payload-kv</code> collection:</p>
-<pre><code class="language-ts">import { databaseKVAdapter } from &#39;payload&#39;
-
-buildConfig({
-  kv: databaseKVAdapter({
-    kvCollectionOverrides: {
-      slug: &#39;custom-kv&#39;,
-      ...(process.env.DEBUG === &#39;true&#39; &amp;&amp; {
-        admin: { hidden: false },
-        access: {},
-      }),
-    },
-  }),
-})
-</code></pre>
-<p><strong>In Memory KV adapter</strong> - Fast memory-based storage for development:</p>
-<pre><code class="language-ts">import { inMemoryKVAdapter } from &#39;payload&#39;
-
-buildConfig({
-  kv: inMemoryKVAdapter(),
-})
-</code></pre>
-<p><strong>Redis KV Adapter</strong> - Production-ready Redis integration:</p>
-<pre><code class="language-sh">pnpm add @payloadcms/kv-redis
-</code></pre>
-<pre><code class="language-ts">import { redisKVAdapter } from &#39;@payloadcms/kv-redis&#39;
-
-buildConfig({
-  kv: redisKVAdapter({
-    keyPrefix: &quot;custom-prefix:&quot;, // defaults to &#39;payload-kv:&#39;
-    redisURL: &quot;redis://127.0.0.1:6379&quot; // defaults to process.env.REDIS_URL
-  }),
-})
-</code></pre>
-<h3><strong>Configurable Toast Position</strong></h3>
-<p>Toast notifications can now be positioned anywhere on the screen (top-left, top-center, top-right, bottom-left, bottom-center, bottom-right), giving you control over where important messages appear to your users. This is particularly useful for applications with large screens or specific UI layouts. <a href="https://github.com/payloadcms/payload/pull/14405">#14405</a></p>
-<p>The <code>position</code> configuration is a direct pass-through of the Sonner library&#39;s position options, with <code>&#39;bottom-right&#39;</code> remaining the default.</p>
-<h4>Feature PRs</h4>
-<ul>
-<li>add access control for jobs queue and cancel operations (<a href="https://github.com/payloadcms/payload/issues/14404">#14404</a>) (<a href="https://github.com/payloadcms/payload/commit/0a37edb">0a37edb</a>)</li>
-<li>timezone config can now be added on a per field basis (<a href="https://github.com/payloadcms/payload/issues/14410">#14410</a>) (<a href="https://github.com/payloadcms/payload/commit/a3df837">a3df837</a>)</li>
-<li>add KV storage adapters (<a href="https://github.com/payloadcms/payload/issues/9913">#9913</a>) (<a href="https://github.com/payloadcms/payload/commit/ffb9a2e">ffb9a2e</a>)</li>
-<li>make toast position configurable (<a href="https://github.com/payloadcms/payload/issues/14405">#14405</a>) (<a href="https://github.com/payloadcms/payload/commit/d5fab43">d5fab43</a>)</li>
-<li><strong>ui:</strong> export useQueue React hook (<a href="https://github.com/payloadcms/payload/issues/14396">#14396</a>) (<a href="https://github.com/payloadcms/payload/commit/612880d">612880d</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>globals with versions return _status field when access denied (<a href="https://github.com/payloadcms/payload/issues/14406">#14406</a>) (<a href="https://github.com/payloadcms/payload/commit/b766ae6">b766ae6</a>)</li>
-<li>custom dashboard component causes runtime error on create-first-user and account views (<a href="https://github.com/payloadcms/payload/issues/14393">#14393</a>) (<a href="https://github.com/payloadcms/payload/commit/d5f4e72">d5f4e72</a>)</li>
-<li><strong>claude:</strong> remove invalid frontmatter fields (<a href="https://github.com/payloadcms/payload/issues/14411">#14411</a>) (<a href="https://github.com/payloadcms/payload/commit/118d005">118d005</a>)</li>
-<li><strong>db-*:</strong> <code>findMigrationDir</code> in projects without <code>src</code> folder (<a href="https://github.com/payloadcms/payload/issues/14381">#14381</a>) (<a href="https://github.com/payloadcms/payload/commit/059185f">059185f</a>)</li>
-<li><strong>db-mongodb:</strong> migration fails for cosmosDB (<a href="https://github.com/payloadcms/payload/issues/14401">#14401</a>) (<a href="https://github.com/payloadcms/payload/commit/10a640c">10a640c</a>)</li>
-<li><strong>db-mongodb:</strong> type error with <code>prodMigrations</code> (<a href="https://github.com/payloadcms/payload/issues/14394">#14394</a>) (<a href="https://github.com/payloadcms/payload/commit/8e5e23a">8e5e23a</a>)</li>
-<li><strong>db-mongodb:</strong> duplicate ids in sanitizeQueryValue (<a href="https://github.com/payloadcms/payload/issues/11905">#11905</a>) (<a href="https://github.com/payloadcms/payload/commit/36bb188">36bb188</a>)</li>
-<li><strong>db-postgres:</strong> hasMany relationship/number/text fields inside blocks are incorrectly returned when using <code>select</code> (<a href="https://github.com/payloadcms/payload/issues/14399">#14399</a>) (<a href="https://github.com/payloadcms/payload/commit/850cc38">850cc38</a>)</li>
-<li><strong>drizzle:</strong> number fields in generated schema with <code>defaultValue</code> (<a href="https://github.com/payloadcms/payload/issues/14365">#14365</a>) (<a href="https://github.com/payloadcms/payload/commit/8996b35">8996b35</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> remove unused syncTenants from useEffect deps (<a href="https://github.com/payloadcms/payload/issues/14362">#14362</a>) (<a href="https://github.com/payloadcms/payload/commit/906a3dc">906a3dc</a>)</li>
-<li><strong>richtext-lexical:</strong> do not run json.parse if value is undefined or null (<a href="https://github.com/payloadcms/payload/issues/14385">#14385</a>) (<a href="https://github.com/payloadcms/payload/commit/09a6140">09a6140</a>)</li>
-<li><strong>richtext-lexical:</strong> prevent TS CodeBlocks from sharing Monaco model (useId) (<a href="https://github.com/payloadcms/payload/issues/14351">#14351</a>) (<a href="https://github.com/payloadcms/payload/commit/5caebd1">5caebd1</a>)</li>
-<li><strong>storage-*:</strong> update the client cache to use a map instead with cache keys per bucket config (<a href="https://github.com/payloadcms/payload/issues/14267">#14267</a>) (<a href="https://github.com/payloadcms/payload/commit/38f2e1f">38f2e1f</a>)</li>
-<li><strong>ui:</strong> where builder crashing with invalid queries (<a href="https://github.com/payloadcms/payload/issues/14342">#14342</a>) (<a href="https://github.com/payloadcms/payload/commit/6c83046">6c83046</a>)</li>
-</ul>
-<h3>🛠 Refactors</h3>
-<ul>
-<li>deprecate job queue depth property (<a href="https://github.com/payloadcms/payload/issues/14402">#14402</a>) (<a href="https://github.com/payloadcms/payload/commit/1341f69">1341f69</a>)</li>
-<li><strong>ui:</strong> simplify ConfigProvider, improve useControllableState types and defaultValue fallback (<a href="https://github.com/payloadcms/payload/issues/14409">#14409</a>) (<a href="https://github.com/payloadcms/payload/commit/255320e">255320e</a>)</li>
-</ul>
-<h3>⚙️ CI</h3>
-<ul>
-<li>add claude as valid scope (<a href="https://github.com/payloadcms/payload/commit/560f2f3">560f2f3</a>)</li>
-</ul>
-<h3>🤝 Contributors</h3>
-<ul>
-<li>Dan Ribbens (@DanRibbens)</li>
-<li>Alessio Gravili (@AlessioGr)</li>
-<li>Paul (@paulpopus)</li>
-<li>Elliot DeNolf (@denolfe)</li>
-<li>Sasha (@r1tsuu)</li>
-<li>Patrik (@PatrikKozak)</li>
-<li>Ossaid Qadri (@imossaidqadri)</li>
-<li>Philipp Schneider (@philipp-tailor)</li>
-<li>Kholiavko Roman (@kholiavko-roman)</li>
-<li>Jacob Fletcher (@jacobsfletch)</li>
-<li>Séalan Cronin (@sealan)</li>
-<li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>Justus Blönnigen (@technicaldirector)</li>
 </ul>]]></content:encoded>
       <category>payloadcms</category>
       <category>payload</category>
