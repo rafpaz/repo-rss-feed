@@ -10,9 +10,36 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 15 Jan 2026 21:06:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jan 2026 00:28:00 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.14</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.14</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.14</guid>
+      <pubDate>Fri, 16 Jan 2026 00:23:15 GMT</pubDate>
+      <description>Atuin Desktop v0.2.14 - 2026-01-15 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Sidebar redesign + restyle ( #343 ) Add configurable delimiter for dropdown block options ( #348 ) 🐛 Bug Fixes Websocket tries to connect with no API token ( #347 )</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.14 - 2026-01-15</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.14/Atuin_0.2.14_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.14/Atuin_0.2.14_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.14/Atuin_Desktop_0.2.14_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.14/Atuin_Desktop-0.2.14-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Sidebar redesign + restyle (<a href="https://github.com/atuinsh/desktop/issues/343">#343</a>)</li>
+<li>Add configurable delimiter for dropdown block options (<a href="https://github.com/atuinsh/desktop/issues/348">#348</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Websocket tries to connect with no API token (<a href="https://github.com/atuinsh/desktop/issues/347">#347</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.13</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.13</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.13</guid>
@@ -1539,35 +1566,6 @@ export const MyCollection: CollectionConfig = {
 <h3>⚙️ Miscellaneous Tasks</h3>
 <ul>
 <li>Add claude to cla allowlist</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.2.3</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.3</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.3</guid>
-      <pubDate>Wed, 26 Nov 2025 21:53:42 GMT</pubDate>
-      <description>Atuin Desktop v0.2.3 - 2025-11-26 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🐛 Bug Fixes Inherit CWD as default cwd ( #254 ) Set script output context before signalling block completion ( #250 ) Incorrect behavior with Dropdowns created before options migration ( #258 ) S...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.3 - 2025-11-26</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.3/Atuin_0.2.3_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.3/Atuin_0.2.3_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.3/Atuin_Desktop_0.2.3_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.3/Atuin_Desktop-0.2.3-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>Inherit CWD as default cwd (<a href="https://github.com/atuinsh/desktop/issues/254">#254</a>)</li>
-<li>Set script output context before signalling block completion (<a href="https://github.com/atuinsh/desktop/issues/250">#250</a>)</li>
-<li>Incorrect behavior with Dropdowns created before options migration (<a href="https://github.com/atuinsh/desktop/issues/258">#258</a>)</li>
-<li>Subdirectories not generating FS events (<a href="https://github.com/atuinsh/desktop/issues/256">#256</a>)</li>
-</ul>
-<h3>⚙️ Miscellaneous Tasks</h3>
-<ul>
-<li>Use runbooks for ci tests (<a href="https://github.com/atuinsh/desktop/issues/253">#253</a>)</li>
 </ul>]]></content:encoded>
       <category>atuinsh</category>
       <category>desktop</category>
