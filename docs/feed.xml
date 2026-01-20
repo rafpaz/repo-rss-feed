@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 20 Jan 2026 18:11:01 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 21:07:11 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>nodejs/node v25.4.0</title>
@@ -396,8 +396,8 @@ export const Posts: CollectionConfig = {
 <hr>
 <h3>🐛 Bug Fixes</h3>
 <ul>
-<li>thumbnailURL hook, virtually populate from thumbnail size (<a href="https://github.com/payloadcms/payload/issues/15232">#15232</a>) (<a href="https://github.com/payloadcms/payload/commit/beeb269">beeb269</a>)</li>
-<li>isValidID validation (<a href="https://github.com/payloadcms/payload/issues/15217">#15217</a>) (<a href="https://github.com/payloadcms/payload/commit/4f452ac">4f452ac</a>)</li>
+<li>thumbnailURL hook, virtually populate from thumbnail size (<a href="https://github.com/payloadcms/payload/issues/15232">#15232</a>) (<a href="https://github.com/payloadcms/payload/commit/beeb269">beeb269</a>)
+(<a href="https://github.com/payloadcms/payload/commit/4f452ac">https://github.com/payloadcms/payload/commit/4f452ac</a>))</li>
 <li><code>select</code> in <code>findByID</code> with <code>draft: true</code> may return a wrong version (<a href="https://github.com/payloadcms/payload/issues/14742">#14742</a>) (<a href="https://github.com/payloadcms/payload/commit/49c9fa9">49c9fa9</a>)</li>
 <li>use window.location.origin as fallback for API URL copy (<a href="https://github.com/payloadcms/payload/issues/15220">#15220</a>) (<a href="https://github.com/payloadcms/payload/commit/a46e3a2">a46e3a2</a>)</li>
 <li>folder creation errors when collection uses translation function labels (<a href="https://github.com/payloadcms/payload/issues/15216">#15216</a>) (<a href="https://github.com/payloadcms/payload/commit/1a3aeb8">1a3aeb8</a>)</li>
