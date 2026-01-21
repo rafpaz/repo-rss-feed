@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 20 Jan 2026 21:07:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Jan 2026 00:28:33 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>nodejs/node v25.4.0</title>
