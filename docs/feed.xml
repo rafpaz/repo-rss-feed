@@ -10,9 +10,36 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 23 Jan 2026 00:28:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 03:35:45 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.17</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.17</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.17</guid>
+      <pubDate>Fri, 23 Jan 2026 01:24:31 GMT</pubDate>
+      <description>Atuin Desktop v0.2.17 - 2026-01-23 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Allow using local Ollama models for AI assistant ( #360 ) 🐛 Bug Fixes Use webview scaling instead of css ( #362 ) Blue focus inner border on some input fields ( #363 )</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.17 - 2026-01-23</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.17/Atuin_0.2.17_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.17/Atuin_0.2.17_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.17/Atuin_Desktop_0.2.17_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.17/Atuin_Desktop-0.2.17-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Allow using local Ollama models for AI assistant (<a href="https://github.com/atuinsh/desktop/issues/360">#360</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Use webview scaling instead of css (<a href="https://github.com/atuinsh/desktop/issues/362">#362</a>)</li>
+<li>Blue focus inner border on some input fields (<a href="https://github.com/atuinsh/desktop/issues/363">#363</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.16</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.16</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.16</guid>
@@ -1796,38 +1823,6 @@ ecommercePlugin({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.2.6</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.6</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.6</guid>
-      <pubDate>Thu, 04 Dec 2025 19:31:13 GMT</pubDate>
-      <description>Atuin Desktop v0.2.6 - 2025-12-04 Special thanks to our contributors who made their first contribution this release: @sam-phinizy 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Add advanced settings, specified by file only ( #278 ) Support heredoc syntax in $ATUIN_...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.6 - 2025-12-04</h2>
-<p>Special thanks to our contributors who made their first contribution this release:</p>
-<ul>
-<li>@sam-phinizy</li>
-</ul>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_0.2.6_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_0.2.6_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_Desktop_0.2.6_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.6/Atuin_Desktop-0.2.6-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>Add advanced settings, specified by file only (<a href="https://github.com/atuinsh/desktop/issues/278">#278</a>)</li>
-<li>Support heredoc syntax in <code>$ATUIN_OUTPUT_VARS</code> (<a href="https://github.com/atuinsh/desktop/issues/279">#279</a>)</li>
-<li>Markdown Render block to render markdown from a variable (<a href="https://github.com/atuinsh/desktop/issues/277">#277</a>) by @sam-phinizy</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>Host block not removing SSH settings for subsequent blocks (<a href="https://github.com/atuinsh/desktop/issues/280">#280</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.66.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.66.0</link>
