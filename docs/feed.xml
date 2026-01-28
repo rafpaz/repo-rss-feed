@@ -10,9 +10,36 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 28 Jan 2026 18:11:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 21:10:30 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.19</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.19</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.19</guid>
+      <pubDate>Wed, 28 Jan 2026 20:50:20 GMT</pubDate>
+      <description>Atuin Desktop v0.2.19 - 2026-01-28 🔗 Downloads macOS ARM Linux .deb Linux .rpm Changelog 🚀 Features Switch to uplot for prom charts ( #371 ) Build for aarch64 linux ( #372 ) 🐛 Bug Fixes Broken inline block generation ( #367 ) Duplicate tool calls showing in assistant UI ( #374 )</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.19 - 2026-01-28</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.19/Atuin_0.2.19_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.19/Atuin_Desktop_0.2.19_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.19/Atuin_Desktop-0.2.19-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>Switch to uplot for prom charts (<a href="https://github.com/atuinsh/desktop/issues/371">#371</a>)</li>
+<li>Build for aarch64 linux (<a href="https://github.com/atuinsh/desktop/issues/372">#372</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>Broken inline block generation (<a href="https://github.com/atuinsh/desktop/issues/367">#367</a>)</li>
+<li>Duplicate tool calls showing in assistant UI (<a href="https://github.com/atuinsh/desktop/issues/374">#374</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>nodejs/node v25.5.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.5.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.5.0</guid>
@@ -1932,38 +1959,6 @@ const posts = await payload.find({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.2.8</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.8</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.8</guid>
-      <pubDate>Tue, 09 Dec 2025 02:17:47 GMT</pubDate>
-      <description>Atuin Desktop v0.2.8 - 2025-12-09 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Support ghostty web ( #284 ) 🐛 Bug Fixes Fix release notes rendering ( #292 ) Improve app performance, especially during sync ( #293 ) Tab details not updating ( #295 ) ⚙️ Miscellaneo...</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.8 - 2025-12-09</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.8/Atuin_0.2.8_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.8/Atuin_0.2.8_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.8/Atuin_Desktop_0.2.8_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.8/Atuin_Desktop-0.2.8-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>Support ghostty web (<a href="https://github.com/atuinsh/desktop/issues/284">#284</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>Fix release notes rendering (<a href="https://github.com/atuinsh/desktop/issues/292">#292</a>)</li>
-<li>Improve app performance, especially during sync (<a href="https://github.com/atuinsh/desktop/issues/293">#293</a>)</li>
-<li>Tab details not updating (<a href="https://github.com/atuinsh/desktop/issues/295">#295</a>)</li>
-</ul>
-<h3>⚙️ Miscellaneous Tasks</h3>
-<ul>
-<li>Adjust Vite/Sentry config to handle releases better (<a href="https://github.com/atuinsh/desktop/issues/291">#291</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.67.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.67.0</link>
