@@ -10,9 +10,138 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 05 Feb 2026 09:19:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 12:16:27 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>novuhq/novu v3.13.0</title>
+      <link>https://github.com/novuhq/novu/releases/tag/v3.13.0</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.13.0</guid>
+      <pubDate>Thu, 05 Feb 2026 10:20:44 GMT</pubDate>
+      <description>API 🚀 Features api-service, worker, dashboard: custom sender name in email step on new dashboard fixes NV-6950 ( #9962 ) js, react, api-service: In-app notifications timeframe filter fixes NV-7045 ( #9873 ) api-service, dashboard: Better auth integration DRAFT ( #9711 ) api-service,js: ensure ba...</description>
+      <content:encoded><![CDATA[<h2>API</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>api-service, worker, dashboard:</strong> custom sender name in email step on new dashboard fixes NV-6950 (<a href="https://github.com/novuhq/novu/pull/9962">#9962</a>)</li>
+<li><strong>js, react, api-service:</strong> In-app notifications timeframe filter fixes NV-7045 (<a href="https://github.com/novuhq/novu/pull/9873">#9873</a>)</li>
+<li><strong>api-service, dashboard:</strong> Better auth integration DRAFT (<a href="https://github.com/novuhq/novu/pull/9711">#9711</a>)</li>
+<li><strong>api-service,js:</strong> ensure backwards compatibility for context prefs fixes NV-7072 (<a href="https://github.com/novuhq/novu/pull/9890">#9890</a>)</li>
+<li><strong>dashboard:</strong> add context filter to relevant screens fixes NV-7067 (<a href="https://github.com/novuhq/novu/pull/9886">#9886</a>)</li>
+<li><strong>api-service:</strong> enhance platform notification usage with caching and detailed diagnostics (<a href="https://github.com/novuhq/novu/pull/9859">#9859</a>)</li>
+<li><strong>api-service,worker:</strong> context aware schedule fixes NV-7064 (<a href="https://github.com/novuhq/novu/pull/9865">#9865</a>)</li>
+<li><strong>api-service:</strong> context bound global preferences fixes NV-6981 (<a href="https://github.com/novuhq/novu/pull/9856">#9856</a>)</li>
+<li><strong>api-service:</strong> context aware subscription preferences admin API fixes NV-7059 (<a href="https://github.com/novuhq/novu/pull/9855">#9855</a>)</li>
+<li><strong>api-service:</strong> enhance platform notification usage with clickhouse support (<a href="https://github.com/novuhq/novu/pull/9849">#9849</a>)</li>
+<li><strong>api-service,js:</strong> context bound topic subscriptions fixes NV-6980 (<a href="https://github.com/novuhq/novu/pull/9840">#9840</a>)</li>
+<li><strong>api-service:</strong> refactor usage queries to use materialized views (<a href="https://github.com/novuhq/novu/pull/9824">#9824</a>)</li>
+<li><strong>api-service:</strong> context bound preferences (admin facing API) fixes NV-6974 (<a href="https://github.com/novuhq/novu/pull/9821">#9821</a>)</li>
+<li><strong>api-service,worker:</strong> context bound preferences (inbox facing flow) fixes NV-6974 (<a href="https://github.com/novuhq/novu/pull/9816">#9816</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>api-service:</strong> update traces schema to adjust date filter for created at condition (<a href="https://github.com/novuhq/novu/pull/9952">#9952</a>)</li>
+<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
+<li><strong>api-service:</strong> add compatibility interceptor to inbox controller (<a href="https://github.com/novuhq/novu/pull/9922">#9922</a>)</li>
+<li><strong>api-service:</strong> Message response payload types (<a href="https://github.com/novuhq/novu/pull/9913">#9913</a>)</li>
+<li><strong>api-service:</strong> Update includeInactiveChannels defaults in subscribers v1 controllers (<a href="https://github.com/novuhq/novu/pull/9889">#9889</a>)</li>
+<li><strong>api-service:</strong> Make billing address required fixes NV-7065 (<a href="https://github.com/novuhq/novu/pull/9872">#9872</a>)</li>
+<li><strong>api-service:</strong> Subscriber inactive channels default (<a href="https://github.com/novuhq/novu/pull/9875">#9875</a>)</li>
+<li><strong>api-service:</strong> decode html entities in subject and maily html fixes NV-7039 (<a href="https://github.com/novuhq/novu/pull/9842">#9842</a>)</li>
+<li><strong>api-service:</strong> Intercom hash null data error fixes NV-7061 (<a href="https://github.com/novuhq/novu/pull/9847">#9847</a>)</li>
+<li><strong>api-service:</strong> Idempotency cache key user API fixes NV-7060 (<a href="https://github.com/novuhq/novu/pull/9845">#9845</a>)</li>
+<li><strong>test:</strong> ensure indexes created before e2e tests (<a href="https://github.com/novuhq/novu/pull/9839">#9839</a>)</li>
+<li><strong>api-service:</strong> Workflow schema duplication fixes NV-7040 (<a href="https://github.com/novuhq/novu/pull/9830">#9830</a>)</li>
+<li><strong>api-service, dashboard:</strong> show preference updatedAt instead of workflow updatedAt (<a href="https://github.com/novuhq/novu/pull/9798">#9798</a>)</li>
+<li><strong>api-service,dal:</strong> inbox mark as and actions return workflow, subscriber information fixes NV-7024 (<a href="https://github.com/novuhq/novu/pull/9799">#9799</a>)</li>
+</ul>
+<h3>🔥 Performance</h3>
+<ul>
+<li><strong>api:</strong> parallelize workflow step processing and optimize DB queries fixes NV-7016 (<a href="https://github.com/novuhq/novu/pull/9750">#9750</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Adam Chmara @ChmaraX</li>
+<li>Dima Grossman @scopsy</li>
+<li>George Djabarov @djabarovgeorge</li>
+<li>Himanshu Garg @merrcury</li>
+<li>Paweł Tymczuk @LetItRock</li>
+</ul>
+<h2>Dashboard</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>api-service, worker, dashboard:</strong> custom sender name in email step on new dashboard fixes NV-6950 (<a href="https://github.com/novuhq/novu/pull/9962">#9962</a>)</li>
+<li><strong>api-service, dashboard:</strong> Better auth integration DRAFT (<a href="https://github.com/novuhq/novu/pull/9711">#9711</a>)</li>
+<li><strong>dashboard:</strong> add context filter to relevant screens fixes NV-7067 (<a href="https://github.com/novuhq/novu/pull/9886">#9886</a>)</li>
+<li><strong>api-service:</strong> context aware subscription preferences admin API fixes NV-7059 (<a href="https://github.com/novuhq/novu/pull/9855">#9855</a>)</li>
+<li><strong>dashboard:</strong> Add lookback window option to digest delay tabs fixes NV-7002 (<a href="https://github.com/novuhq/novu/pull/9832">#9832</a>)</li>
+<li><strong>dashboard:</strong> Persist pagination in list pages fixes NV-6997 (<a href="https://github.com/novuhq/novu/pull/9702">#9702</a>)</li>
+<li><strong>dashboard:</strong> enhance organization dropdown and loading states for self-hosted users (<a href="https://github.com/novuhq/novu/pull/9808">#9808</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>dashboard:</strong> context binding when adding subscribers to topics (<a href="https://github.com/novuhq/novu/pull/9959">#9959</a>)</li>
+<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
+<li><strong>dashboard:</strong> Last subscriber removal issue fixes NV-7079 (<a href="https://github.com/novuhq/novu/pull/9909">#9909</a>)</li>
+<li><strong>dashboard:</strong> activity filters overflow (<a href="https://github.com/novuhq/novu/pull/9887">#9887</a>)</li>
+<li><strong>dashboard:</strong> Billing page view role for billing tab fixes NV-7046 (<a href="https://github.com/novuhq/novu/pull/9871">#9871</a>)</li>
+<li><strong>dashboard:</strong> Workflow runs loading state usage page (<a href="https://github.com/novuhq/novu/pull/9868">#9868</a>)</li>
+<li><strong>dashboard:</strong> DialogTitle requirement error dashboard fixes NV-7062 (<a href="https://github.com/novuhq/novu/pull/9846">#9846</a>)</li>
+<li><strong>dashboard:</strong> create workflow from the template (<a href="https://github.com/novuhq/novu/pull/9837">#9837</a>)</li>
+<li><strong>api-service, dashboard:</strong> show preference updatedAt instead of workflow updatedAt (<a href="https://github.com/novuhq/novu/pull/9798">#9798</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Adam Chmara @ChmaraX</li>
+<li>Dima Grossman @scopsy</li>
+<li>Himanshu Garg @merrcury</li>
+<li>Paweł Tymczuk @LetItRock</li>
+</ul>
+<h2>Worker</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>api-service, worker, dashboard:</strong> custom sender name in email step on new dashboard fixes NV-6950 (<a href="https://github.com/novuhq/novu/pull/9962">#9962</a>)</li>
+<li><strong>api-service,worker:</strong> context aware schedule fixes NV-7064 (<a href="https://github.com/novuhq/novu/pull/9865">#9865</a>)</li>
+<li><strong>api-service:</strong> refactor usage queries to use materialized views (<a href="https://github.com/novuhq/novu/pull/9824">#9824</a>)</li>
+<li><strong>api-service:</strong> Inbound webhook message fields add stepId fixes NV-6996 (<a href="https://github.com/novuhq/novu/pull/9827">#9827</a>)</li>
+<li><strong>worker:</strong> Job queue environment cache (<a href="https://github.com/novuhq/novu/pull/9817">#9817</a>)</li>
+<li><strong>api-service,worker:</strong> context bound preferences (inbox facing flow) fixes NV-6974 (<a href="https://github.com/novuhq/novu/pull/9816">#9816</a>)</li>
+<li><strong>worker:</strong> Subscriber job bound lru cache (<a href="https://github.com/novuhq/novu/pull/9814">#9814</a>)</li>
+<li><strong>worker:</strong> Add LRU cache for workflow template fetching (<a href="https://github.com/novuhq/novu/pull/9786">#9786</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>worker:</strong> error message formatting in standard worker (<a href="https://github.com/novuhq/novu/pull/9958">#9958</a>)</li>
+<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
+<li><strong>worker:</strong> remove subscriber-cache header (<a href="https://github.com/novuhq/novu/pull/9880">#9880</a>)</li>
+<li><strong>worker:</strong> disable resolving external css from the link tags (<a href="https://github.com/novuhq/novu/pull/9878">#9878</a>)</li>
+<li><strong>worker:</strong> fix worker build (<a href="https://github.com/novuhq/novu/commit/2286677047">2286677047</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Adam Chmara @ChmaraX</li>
+<li>Dima Grossman @scopsy</li>
+<li>George Djabarov @djabarovgeorge</li>
+<li>Himanshu Garg @merrcury</li>
+<li>Paweł Tymczuk @LetItRock</li>
+</ul>
+<h2>WS</h2>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
+<li><strong>ws:</strong> Sentry fetchsockets timeout filter (<a href="https://github.com/novuhq/novu/pull/9884">#9884</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Dima Grossman @scopsy</li>
+<li>Himanshu Garg @merrcury</li>
+</ul>
+<h2>🐳 Community Docker Images</h2>
+<p>Community Docker images are now available for v3.13.0, making it easy to deploy in containerized environments. This release features 25% smaller compressed image sizes, improving download times and storage efficiency.</p>
+<h2>📦 SDKs</h2>
+<p>SDKs(Typescript, Golang, Python, PHP and C-Sharp) for v3.13.0 are available to help you integrate with the platform using your preferred programming language. These SDKs are maintained alongside the core release and community images to ensure compatibility and a smooth upgrade experience.</p>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
       <title>nodejs/node v25.6.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.6.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.6.0</guid>
