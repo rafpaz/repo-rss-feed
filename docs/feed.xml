@@ -10,13 +10,36 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 09 Feb 2026 21:16:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 00:39:53 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>atuinsh/desktop v0.2.20</title>
+      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.20</link>
+      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.20</guid>
+      <pubDate>Mon, 09 Feb 2026 22:56:16 GMT</pubDate>
+      <description>Atuin Desktop v0.2.20 - 2026-02-09 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🐛 Bug Fixes SSH connection sometimes doesn&amp;#39;t read until EOF ( #375 ) Env blocks not setting variable for SSH script and terminal blocks ( #377 )</description>
+      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.20 - 2026-02-09</h2>
+<h3>🔗 Downloads</h3>
+<ul>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.20/Atuin_0.2.20_aarch64.dmg">macOS ARM</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.20/Atuin_0.2.20_x64.dmg">macOS Intel</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.20/Atuin_Desktop_0.2.20_amd64.deb">Linux .deb</a></li>
+<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.20/Atuin_Desktop-0.2.20-1.x86_64.rpm">Linux .rpm</a></li>
+</ul>
+<h2>Changelog</h2>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>SSH connection sometimes doesn&#39;t read until EOF (<a href="https://github.com/atuinsh/desktop/issues/375">#375</a>)</li>
+<li>Env blocks not setting variable for SSH script and terminal blocks (<a href="https://github.com/atuinsh/desktop/issues/377">#377</a>)</li>
+</ul>]]></content:encoded>
+      <category>atuinsh</category>
+      <category>desktop</category>
+      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
       <title>payloadcms/payload v3.76.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.76.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.76.0</guid>
-      <pubDate>Mon, 09 Feb 2026 21:09:08 GMT</pubDate>
+      <pubDate>Mon, 09 Feb 2026 21:30:11 GMT</pubDate>
       <description>v3.76.0 (2026-02-09) 🚀 Features plugin-import-export: adds new exportLimit, importLimit and per collection limit control ( #15405 ) ( a7beeca ) 🐛 Bug Fixes drizzle: use dynamic import for typescript to avoid dependency in production ( #15545 ) ( 98a756c ) live-preview-vue: update build config t...</description>
       <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.75.0...v3.76.0">v3.76.0</a> (2026-02-09)</h2>
 <h3>🚀 Features</h3>
@@ -2363,28 +2386,6 @@ const posts = await payload.find({
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>atuinsh/desktop v0.2.9</title>
-      <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.9</link>
-      <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.9</guid>
-      <pubDate>Wed, 10 Dec 2025 00:22:41 GMT</pubDate>
-      <description>Atuin Desktop v0.2.9 - 2025-12-09 🔗 Downloads macOS ARM macOS Intel Linux .deb Linux .rpm Changelog 🚀 Features Add Pause block with optional conditional logic ( #296 )</description>
-      <content:encoded><![CDATA[<h2>Atuin Desktop v0.2.9 - 2025-12-09</h2>
-<h3>🔗 Downloads</h3>
-<ul>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.9/Atuin_0.2.9_aarch64.dmg">macOS ARM</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.9/Atuin_0.2.9_x64.dmg">macOS Intel</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.9/Atuin_Desktop_0.2.9_amd64.deb">Linux .deb</a></li>
-<li><a href="https://github.com/atuinsh/desktop/releases/download/v0.2.9/Atuin_Desktop-0.2.9-1.x86_64.rpm">Linux .rpm</a></li>
-</ul>
-<h2>Changelog</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>Add Pause block with optional conditional logic (<a href="https://github.com/atuinsh/desktop/issues/296">#296</a>)</li>
-</ul>]]></content:encoded>
-      <category>atuinsh</category>
-      <category>desktop</category>
-      <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.68.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.68.0</link>
