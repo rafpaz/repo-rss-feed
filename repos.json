@@ -22,6 +22,7 @@
     "openai/codex",
     "yt-dlp/yt-dlp",
     "spotDL/spotify-downloader",
-    "yuliskov/SmartTube"
+    "yuliskov/SmartTube",
+    "doublecmd/doublecmd"
   ]
 }
