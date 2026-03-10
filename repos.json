@@ -23,6 +23,7 @@
     "yt-dlp/yt-dlp",
     "spotDL/spotify-downloader",
     "yuliskov/SmartTube",
-    "doublecmd/doublecmd"
+    "doublecmd/doublecmd",
+    "zen-browser/desktop"
   ]
 }
