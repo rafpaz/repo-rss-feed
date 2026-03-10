@@ -25,6 +25,7 @@
     "yuliskov/SmartTube",
     "doublecmd/doublecmd",
     "zen-browser/desktop",
-    "multiboxlabs/flow-browser"
+    "multiboxlabs/flow-browser",
+    "heyman/heynote"
   ]
 }
