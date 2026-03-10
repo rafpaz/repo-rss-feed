@@ -24,6 +24,7 @@
     "spotDL/spotify-downloader",
     "yuliskov/SmartTube",
     "doublecmd/doublecmd",
-    "zen-browser/desktop"
+    "zen-browser/desktop",
+    "multiboxlabs/flow-browser"
   ]
 }
