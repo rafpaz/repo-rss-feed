@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 13 Mar 2026 12:16:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 15:19:02 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>payloadcms/payload v3.79.0</title>
@@ -3705,25 +3705,6 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
 <li>Add Extensions Support by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/26">https://github.com/MultiboxLabs/flow-browser/pull/26</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.4.2...v0.5.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.4.2...v0.5.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.4.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.4.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.4.0</guid>
-      <pubDate>Thu, 17 Apr 2025 13:21:53 GMT</pubDate>
-      <description>Summary This release contains a massive rewrite of all the core features! What&amp;#39;s Changed Profiles Management by @iamEvanYT in https://github.com/MultiboxLabs/flow-browser/pull/18 Spaces Management by @iamEvanYT in https://github.com/MultiboxLabs/flow-browser/pull/19 Major Rewrite by @iamEvanY...</description>
-      <content:encoded><![CDATA[<h2>Summary</h2>
-<p>This release contains a <strong>massive</strong> rewrite of all the core features!</p>
-<p><img src="https://github.com/user-attachments/assets/d357ebd8-c86c-46e5-96e3-b73a7298f83c" alt="image"></p>
-<h2>What&#39;s Changed</h2>
-<ul>
-<li>Profiles Management by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/18">https://github.com/MultiboxLabs/flow-browser/pull/18</a></li>
-<li>Spaces Management by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/19">https://github.com/MultiboxLabs/flow-browser/pull/19</a></li>
-<li>Major Rewrite by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/20">https://github.com/MultiboxLabs/flow-browser/pull/20</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.3.2...v0.4.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.3.2...v0.4.0</a></p>]]></content:encoded>
       <category>multiboxlabs</category>
       <category>flow-browser</category>
       <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
