@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sun, 15 Mar 2026 21:09:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 00:38:28 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>payloadcms/payload v3.79.0</title>
