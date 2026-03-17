@@ -10,9 +10,319 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 17 Mar 2026 09:22:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 12:21:41 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.115.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.115.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.115.0</guid>
+      <pubDate>Mon, 16 Mar 2026 19:37:37 GMT</pubDate>
+      <description>New Features Supported models can now request full-resolution image inspection through both view_image and codex.emitImage(..., detail: &amp;quot;original&amp;quot;) , which helps with precision visual tasks. (#14175) js_repl now exposes codex.cwd and codex.homeDir , and saved codex.tool(...) / codex.emi...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Supported models can now request full-resolution image inspection through both <code>view_image</code> and <code>codex.emitImage(..., detail: &quot;original&quot;)</code>, which helps with precision visual tasks. (#14175)</li>
+<li><code>js_repl</code> now exposes <code>codex.cwd</code> and <code>codex.homeDir</code>, and saved <code>codex.tool(...)</code> / <code>codex.emitImage(...)</code> references keep working across cells. (#14385, #14503)</li>
+<li>Realtime websocket sessions gained a dedicated transcription mode, plus v2 handoff support through the <code>codex</code> tool, with a unified <code>[realtime]</code> session config. (#14554, #14556, #14606)</li>
+<li>The v2 app-server now exposes filesystem RPCs for file reads, writes, copies, directory operations, and path watching, and there is a new Python SDK for integrating with that API. (#14245, #14435)</li>
+<li>Smart Approvals can now route review requests through a guardian subagent in core, app-server, and TUI, reducing repeated setup work on follow-up approvals. (#13860, #14668)</li>
+<li>App integrations now use the Responses API tool-search flow, can suggest missing tools, and fall back cleanly when the active model does not support search-based lookup. (#14274, #14287, #14732)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Spawned subagents now inherit sandbox and network rules more reliably, including project-profile layering, persisted host approvals, and symlinked writable roots. (#14619, #14650, #14674, #14807)</li>
+<li><code>js_repl</code> no longer hangs when dynamic tool responses contain literal U+2028 or U+2029 characters. (#14421)</li>
+<li>The TUI no longer stalls on exit after creating subagents, and interrupting a turn no longer tears down background terminals by default. (#14816, #14602)</li>
+<li><code>codex exec --profile</code> once again preserves profile-scoped settings when starting or resuming a thread. (#14524)</li>
+<li>MCP and elicitation flows are more robust, with safer tool-name normalization and preserved <code>tool_params</code> in approval prompts. (#14491, #14605, #14769)</li>
+<li>The local network proxy now serves CONNECT traffic as explicit HTTP/1, improving compatibility with HTTP proxy clients. (#14395)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>The subagent wait tool is now consistently named <code>wait_agent</code>, aligning it with <code>spawn_agent</code> and <code>send_input</code>. (#14631)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.114.0...rust-v0.115.0">https://github.com/openai/codex/compare/rust-v0.114.0...rust-v0.115.0</a></p>
+<ul>
+<li>#14395 fix(network-proxy): serve HTTP proxy listener as HTTP/1 @viyatb-oai</li>
+<li>#14385 Add js_repl cwd and homeDir helpers @fjord-oai</li>
+<li>#14376 Keep agent-switch word-motion keys out of draft editing @joshka-oai</li>
+<li>#14175 Let models opt into original image detail @fjord-oai</li>
+<li>#14382 check for large binaries in CI @owenlin0</li>
+<li>#14392 chore(app-server): stop emitting codex/event/ notifications @owenlin0</li>
+<li>#14274 feat: search_tool migrate to bring you own tool of Responses API @apanasenko-oai</li>
+<li>#14174 refactor: centralize filesystem permissions precedence @viyatb-oai</li>
+<li>#14394 chore(app-server): delete unused rpc methods from v1.rs @owenlin0</li>
+<li>#14171 fix: align core approvals with split sandbox policies @viyatb-oai</li>
+<li>#14410 Make collab model metadata accurate on completion @aibrahim-oai</li>
+<li>#14387 feat(app-server): propagate traces across tasks and core ops @owenlin0</li>
+<li>#14407 chore: use AVAILABLE and ON_INSTALL as default plugin install and auth policies @sayan-oai</li>
+<li>#14287 [apps] Add tool_suggest tool. @mzeng-openai</li>
+<li>#14432 Clarify spawn agent authorization @aibrahim-oai</li>
+<li>#14295 Support waiting for code_mode sessions @pakrym-oai</li>
+<li>#14427 feat: refactor on openai-curated plugins. @xl-openai</li>
+<li>#13996 refactor: make bubblewrap the default Linux sandbox @viyatb-oai</li>
+<li>#14440 fix: follow up on linux sandbox review nits @viyatb-oai</li>
+<li>#14431 Handle pre-approved permissions in zsh fork @mousseau-oai</li>
+<li>#14403 [elicitation] User-friendly tool call messages. @mzeng-openai</li>
+<li>#14429 Use granted permissions when invoking apply_patch @mousseau-oai</li>
+<li>#14471 Updated out-of-date tip about availability on free and go plans @etraut-openai</li>
+<li>#14444 fix: move inline codex-rs/core unit tests into sibling files @bolinfest</li>
+<li>#14437 Dispatch tools when code mode is not awaited directly @pakrym-oai</li>
+<li>#14435 Add Python app-server SDK @shaqayeq-oai</li>
+<li>#14473 fix(cli): support legacy use_linux_sandbox_bwrap flag @viyatb-oai</li>
+<li>#13882 Fix stdio-to-uds peer-close flake @aibrahim-oai</li>
+<li>#14476 Move code mode tool files under tools/code_mode and split functionality @pakrym-oai</li>
+<li>#14475 rename spawn_csv feature flag to enable_fanout @daveaitel-openai</li>
+<li>#14173 fix: preserve split filesystem semantics in linux sandbox @viyatb-oai</li>
+<li>#14480 Cleanup code_mode tool descriptions @pakrym-oai</li>
+<li>#14488 Handle malformed agent role definitions nonfatally @gabec-openai</li>
+<li>#14398 Do not allow unified_exec for sandboxed scenarios on Windows @iceweasel-oai</li>
+<li>#14419 use scopes_supported for OAuth when present on MCP servers @jgershen-oai</li>
+<li>#14484 Add default code-mode yield timeout @pakrym-oai</li>
+<li>#14494 Add parallel tool call test @pakrym-oai</li>
+<li>#14478 chore(app-server): stop exporting EventMsg schemas @owenlin0</li>
+<li>#14490 fix turn_start_jsonrpc_span_parents_core_turn_spans flakiness @owenlin0</li>
+<li>#14496 Reuse tool runtime for code mode worker @pakrym-oai</li>
+<li>#14421 Fix js_repl hangs on U+2028/U+2029 dynamic tool responses @aaronl-openai</li>
+<li>#14505 Skip nested tool call parallel test on Windows @pakrym-oai</li>
+<li>#14491 Fix MCP tool calling @pakrym-oai</li>
+<li>#14493 memories: focus write prompts on user preferences @andi-oai</li>
+<li>#14510 Rename exec session IDs to cell IDs @pakrym-oai</li>
+<li>#14500 Update tool search prompts @mzeng-openai</li>
+<li>#14426 Decouple request permissions feature and tool @mousseau-oai</li>
+<li>#14503 Persist js_repl codex helpers across cells @fjord-oai</li>
+<li>#14517 Expose code-mode tools through globals @pakrym-oai</li>
+<li>#14502 feat(search_tool): gate search_tool on model supports_search_tool field @apanasenko-oai</li>
+<li>#14521 Reapply &quot;Pass more params to compaction&quot; (#14298) @rasmusrygaard</li>
+<li>#14524 Fix <code>codex exec --profile</code> handling @etraut-openai</li>
+<li>#14516 Rename reject approval policy to granular @mousseau-oai</li>
+<li>#14445 feat: add plugin/read. @xl-openai</li>
+<li>#14178 login: add custom CA support for login flows @joshka-oai</li>
+<li>#14535 Split multi-agent handlers per tool @pakrym-oai</li>
+<li>#13329 [js_repl] Hard-stop active js_repl execs on explicit user interrupts @aaronl-openai</li>
+<li>#14239 client: extend custom CA handling across HTTPS and websocket clients @joshka-oai</li>
+<li>#14536 Add typed multi-agent tool outputs @pakrym-oai</li>
+<li>#14514 fix: reopen writable linux carveouts under denied parents @viyatb-oai</li>
+<li>#14531 Add plugin usage telemetry @alexsong-oai</li>
+<li>#14511 code_mode: Move exec params from runtime declarations to @pragma @cconger</li>
+<li>#14504 Refactor cloud requirements error and surface in JSON-RPC error @alexsong-oai</li>
+<li>#14537 Add realtime v2 event parser behind feature flag @aibrahim-oai</li>
+<li>#14529 Simplify permissions available in request permissions tool @mousseau-oai</li>
+<li>#14522 feat: support skill-scoped managed network domain overrides in skill config @celia-oai</li>
+<li>#14554 Add codex tool support for realtime v2 handoff @aibrahim-oai</li>
+<li>#14556 Add realtime transcription mode for websocket sessions @aibrahim-oai</li>
+<li>#14518 Add diagnostics for read_only_unless_trusted timeout flake @aibrahim-oai</li>
+<li>#14603 Split multi-agent handler into dedicated files @pakrym-oai</li>
+<li>#14526 code mode: single line tool declarations @pakrym-oai</li>
+<li>#14400 Use a private desktop for Windows sandbox instead of Winsta0\Default @iceweasel-oai</li>
+<li>#14558 sending back imagaegencall response back to responseapi @won-openai</li>
+<li>#14553 Improve granular approval policy prompt @mousseau-oai</li>
+<li>#14541 chore: clarify plugin + app copy in model instructions @sayan-oai</li>
+<li>#14542 [bazel] Bump up cc and rust toolchains @zbarsky-openai</li>
+<li>#14512 Start TUI on embedded app server @etraut-openai</li>
+<li>#14606 Unify realtime v1/v2 session config @aibrahim-oai</li>
+<li>#14527 app-server: Add platform os and family to init response @euroelessar</li>
+<li>#14618 Use subagents naming in the TUI @aibrahim-oai</li>
+<li>#14304 Override local apps settings with requirements.toml settings @canvrno-oai</li>
+<li>#14479 feat(app-server, core): add more spans @owenlin0</li>
+<li>#13644 fix: preserve zsh-fork escalation fds across unified-exec spawn paths @bolinfest</li>
+<li>#14617 Add code_mode_only feature @pakrym-oai</li>
+<li>#13201 Slash copy osc52 wsl support @won-openai</li>
+<li>#14631 Rename multi-agent wait tool to wait_agent @aibrahim-oai</li>
+<li>#14622 Stabilize multi-agent feature flag @aibrahim-oai</li>
+<li>#14245 app-server: add v2 filesystem APIs @euroelessar</li>
+<li>#14605 Normalize MCP tool names to code-mode safe form @pakrym-oai</li>
+<li>#14637 Fix wait_agent expectations in core tests @charley-oai</li>
+<li>#13860 Add Smart Approvals guardian review across core, app-server, and TUI @charley-oai</li>
+<li>#14639 Fix stale create_wait_tool reference @charley-oai</li>
+<li>#14532 [hooks] stop continuation &amp; stop_hook_active mechanics @eternal-openai</li>
+<li>#14635 Fix realtime transcription session.update tools payload @aibrahim-oai</li>
+<li>#14636 Use parser-specific realtime voice enum @aibrahim-oai</li>
+<li>#14633 refactor: make unified-exec zsh-fork state explicit @bolinfest</li>
+<li>#12031 Add openai_base_url config override for built-in provider @etraut-openai</li>
+<li>#14645 Fix Windows CI assertions for guardian and Smart Approvals @aibrahim-oai</li>
+<li>#14616 Fix turn context reconstruction after backtracking @charley-oai</li>
+<li>#14619 fix: persist future network host approvals across sessions @viyatb-oai</li>
+<li>#14650 fix: sync split sandbox policies for spawned subagents @viyatb-oai</li>
+<li>#14609 move plugin/skill instructions into dev msg and reorder @sayan-oai</li>
+<li>#12024 Enforce errors on overriding built-in model providers @etraut-openai</li>
+<li>#14646 Refresh Python SDK generated types @sayan-oai</li>
+<li>#14649 make defaultPrompt an array, keep backcompat @sayan-oai</li>
+<li>#14501 dynamic tool calls: add param <code>exposeToContext</code> to optionally hide tool @cconger</li>
+<li>#14651 Add argument-comment Dylint runner @bolinfest</li>
+<li>#14674 fix: fix symlinked writable roots in sandbox policies @viyatb-oai</li>
+<li>#14611 Add auth 401 recovery observability to client bug reports @ccy-oai</li>
+<li>#14647 [apps] Add tool call meta. @mzeng-openai</li>
+<li>#14732 [apps] Improve search tool fallback. @mzeng-openai</li>
+<li>#14602 Preserve background terminals on interrupt and rename cleanup command to /stop @friel-openai</li>
+<li>#14668 Reuse guardian session across approvals @charley-oai</li>
+<li>#14769 fix(core): preserve tool_params for elicitations @mzeng-openai</li>
+<li>#14807 fix: sub-agent role when using profiles @jif-oai</li>
+<li>#14806 feat: improve skills cache key to take into account config layering @jif-oai</li>
+<li>#13850 feat: make interrupt state not final for multi-agents @jif-oai</li>
+<li>#14816 fix: tui freeze when sub-agents are present @jif-oai</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.19.3b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.3b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.3b</guid>
+      <pubDate>Mon, 16 Mar 2026 11:11:07 GMT</pubDate>
+      <description>Zen Stable Release New Features Holding ctrl/cmd while hovering &amp;#39;Reset pinned tab&amp;#39; will now duplicate that tab in the background Added &amp;#39;Unload all spaces except current&amp;#39; context menu item to the space switcher Fixes Split views will now hide when toggling fullscreen mode. Other mi...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>New Features</h2>
+<ul>
+<li>Holding ctrl/cmd while hovering &#39;Reset pinned tab&#39; will now duplicate that tab in the background</li>
+<li>Added &#39;Unload all spaces except current&#39; context menu item to the space switcher</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Split views will now hide when toggling fullscreen mode.</li>
+<li>Other minor bug fixes and improvements.</li>
+<li>Improved accessibility for split view controls.</li>
+<li>Fixed opening a new window making all tabs appear as &#39;New Tab&#39; until they are selected.</li>
+<li>Fixed chrome hide toolbar flag not being respected for new windows. (<a href="https://github.com/zen-browser/desktop/issues/12736">#12736</a>)</li>
+<li>Others fixes and quality of life improvements</li>
+</ul>
+<h2>Changes</h2>
+<ul>
+<li>Pressing CTRL+T again while the urlbar is open will now close it.</li>
+<li>Bookmarks bar will now stay visible on fullscreen mode.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>yuliskov/SmartTube 31.08s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.08s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.08s</guid>
+      <pubDate>Fri, 13 Mar 2026 03:06:24 GMT</pubDate>
+      <description>SponsorBlock: added the option to ignore short segments (default to 5 sec) Settings/SponsorBlock Unplayable videos fix, history syncing fix 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.08_arm64-v8a.apk View Report SmartTube_stable_31.08_armeabi-v7a.a...</description>
+      <content:encoded><![CDATA[<ul>
+<li>SponsorBlock: added the option to ignore short segments (default to 5 sec) Settings/SponsorBlock</li>
+<li>Unplayable videos fix, history syncing fix</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_arm64-v8a.apk">SmartTube_stable_31.08_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a/detection"><img src="https://badges.cssnr.com/vt/id/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_armeabi-v7a.apk">SmartTube_stable_31.08_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6/detection"><img src="https://badges.cssnr.com/vt/id/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_universal.apk">SmartTube_stable_31.08_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16/detection"><img src="https://badges.cssnr.com/vt/id/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_x86.apk">SmartTube_stable_31.08_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2/detection"><img src="https://badges.cssnr.com/vt/id/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2?start=green&end=red&n=8&v=1773371772" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
+      <title>yuliskov/SmartTube 31.08s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.08s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.08s</guid>
+      <pubDate>Fri, 13 Mar 2026 03:06:24 GMT</pubDate>
+      <description>SponsorBlock: added the option to ignore short segments (default to 5 sec) Settings/SponsorBlock Unplayable videos fix, history syncing fix 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.08_arm64-v8a.apk View Report SmartTube_stable_31.08_armeabi-v7a.a...</description>
+      <content:encoded><![CDATA[<ul>
+<li>SponsorBlock: added the option to ignore short segments (default to 5 sec) Settings/SponsorBlock</li>
+<li>Unplayable videos fix, history syncing fix</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_arm64-v8a.apk">SmartTube_stable_31.08_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a/detection"><img src="https://badges.cssnr.com/vt/id/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_armeabi-v7a.apk">SmartTube_stable_31.08_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6/detection"><img src="https://badges.cssnr.com/vt/id/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_universal.apk">SmartTube_stable_31.08_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16/detection"><img src="https://badges.cssnr.com/vt/id/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_x86.apk">SmartTube_stable_31.08_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2/detection"><img src="https://badges.cssnr.com/vt/id/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2?start=green&end=red&n=8&v=1773371772" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.19.2b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.2b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.2b</guid>
+      <pubDate>Wed, 11 Mar 2026 10:00:42 GMT</pubDate>
+      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 148.0.2 Fixes Fixed some RSS live folders not working with certain feeds. ( #12685 ) Improved performance for spaces, specially when switching between them. ( #11851 ) Other minor bug fixes and improvements.</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-19/">Various security fixes</a></p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 148.0.2</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed some RSS live folders not working with certain feeds. (<a href="https://github.com/zen-browser/desktop/issues/12685">#12685</a>)</li>
+<li>Improved performance for spaces, specially when switching between them. (<a href="https://github.com/zen-browser/desktop/issues/11851">#11851</a>)</li>
+<li>Other minor bug fixes and improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.4.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</guid>
+      <pubDate>Thu, 05 Mar 2026 01:22:14 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.4.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9673 chore: add more tests for allowed folder paths by @shelby-moore in https://github.com/Kong/insomnia/pull/9679 fix: folder collapse &amp;amp; shortcuts when focusing the tab by @ZxBing0066 in htt...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.4.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9673">https://github.com/Kong/insomnia/pull/9673</a></li>
+<li>chore: add more tests for allowed folder paths by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9679">https://github.com/Kong/insomnia/pull/9679</a></li>
+<li>fix: folder collapse &amp; shortcuts when focusing the tab by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9680">https://github.com/Kong/insomnia/pull/9680</a></li>
+<li>Fix the problem that staged/unstaged list in the git commit modal is unsynced with the diff view. by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9682">https://github.com/Kong/insomnia/pull/9682</a></li>
+<li>feat: open request/folder in tab with middle mouse btn by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9685">https://github.com/Kong/insomnia/pull/9685</a></li>
+<li>Change wording in the invite modal by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9687">https://github.com/Kong/insomnia/pull/9687</a></li>
+<li>fix: Bump the Docker image scan action version by @balugeorge in <a href="https://github.com/Kong/insomnia/pull/9690">https://github.com/Kong/insomnia/pull/9690</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.4.0-beta.0...core@12.4.0">https://github.com/Kong/insomnia/compare/core@12.4.0-beta.0...core@12.4.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>payloadcms/payload v3.79.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.79.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.79.0</guid>
@@ -101,6 +411,112 @@
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>zen-browser/desktop 1.19.1b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.1b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.1b</guid>
+      <pubDate>Wed, 04 Mar 2026 14:41:49 GMT</pubDate>
+      <description>Zen Stable Release Fixes Fixed certain popups on MacOS appearing with no background color, making them invisible. Fixed Github Pull Request live folders not fetching the pull request data correctly. Other minor bug fixes and improvements.</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed certain popups on MacOS appearing with no background color, making them invisible.</li>
+<li>Fixed Github Pull Request live folders not fetching the pull request data correctly.</li>
+<li>Other minor bug fixes and improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>yuliskov/SmartTube 30.98s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.98s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.98s</guid>
+      <pubDate>Wed, 04 Mar 2026 12:09:31 GMT</pubDate>
+      <description>Player: Added experimental touch feature: double-tap to seek (enabled by default) Added back gesture (slide from the side edge) for touch interfaces. Useful for a car&amp;#39;s ui where the back button is not present. Fixed subscriptions order Misc bugfixes 🛡️ VirusTotal Analysis Build Variant Virus...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Player: Added experimental touch feature: double-tap to seek (enabled by default)</li>
+<li>Added back gesture (slide from the side edge) for touch interfaces. Useful for a car&#39;s ui where the back button is not present.</li>
+<li>Fixed subscriptions order</li>
+<li>Misc bugfixes</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_arm64-v8a.apk">SmartTube_stable_30.98_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b/detection"><img src="https://badges.cssnr.com/vt/id/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_armeabi-v7a.apk">SmartTube_stable_30.98_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030/detection"><img src="https://badges.cssnr.com/vt/id/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_universal.apk">SmartTube_stable_30.98_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2/detection"><img src="https://badges.cssnr.com/vt/id/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_x86.apk">SmartTube_stable_30.98_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0/detection"><img src="https://badges.cssnr.com/vt/id/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
+      <title>yuliskov/SmartTube 30.98s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.98s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.98s</guid>
+      <pubDate>Wed, 04 Mar 2026 12:09:31 GMT</pubDate>
+      <description>Player: Added experimental touch feature: double-tap to seek (enabled by default) Added back gesture (slide from the side edge) for touch interfaces. Useful for a car&amp;#39;s ui where the back button is not present. Fixed subscriptions order Misc bugfixes 🛡️ VirusTotal Analysis Build Variant Virus...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Player: Added experimental touch feature: double-tap to seek (enabled by default)</li>
+<li>Added back gesture (slide from the side edge) for touch interfaces. Useful for a car&#39;s ui where the back button is not present.</li>
+<li>Fixed subscriptions order</li>
+<li>Misc bugfixes</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_arm64-v8a.apk">SmartTube_stable_30.98_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b/detection"><img src="https://badges.cssnr.com/vt/id/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_armeabi-v7a.apk">SmartTube_stable_30.98_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030/detection"><img src="https://badges.cssnr.com/vt/id/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_universal.apk">SmartTube_stable_30.98_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2/detection"><img src="https://badges.cssnr.com/vt/id/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_x86.apk">SmartTube_stable_30.98_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0/detection"><img src="https://badges.cssnr.com/vt/id/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>nodejs/node v25.8.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.8.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.8.0</guid>
@@ -170,6 +586,44 @@
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.19b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19b</guid>
+      <pubDate>Sat, 28 Feb 2026 21:30:35 GMT</pubDate>
+      <description>Zen Stable Release This update includes a new feature that allows you to automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &amp;#39;Live Folder&amp;#39;. Let us know what other live folder types you wo...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<p>This update includes a new feature that allows you to automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &#39;Live Folder&#39;.</p>
+<p>Let us know what other live folder types you would like to see in the future!</p>
+<h2>Security</h2>
+<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-13/">Various security fixes</a></p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 148.0</li>
+<li>Added live folders. Automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &#39;Live Folder&#39;.</li>
+<li>Dragging a tab on top of another tab for one second will now allow the option to split those tabs.</li>
+<li>MacOS users now get to use native popover UI, making the experience more consistent with the rest of the operating system.</li>
+<li>Improved the icon picker for folders, tabs, etc. It now let you select icons without closing the picker.</li>
+<li>Pressing the &quot;Un-split&quot; button while holding shift will not focus the un-split tab, allowing you to stay in the current split view.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed private mode windows having dark text on dark background in the sidebar.</li>
+<li>Fixed popup windows not showing at all on certain occasions.</li>
+<li>Other bug fixes and performance improvements.</li>
+</ul>
+<h2>Theme Changes</h2>
+<ul>
+<li>Removed the <code>-zen-window-transform-origin</code> CSS attribute as it is not needed anymore</li>
+</ul>
+<h2>Changes</h2>
+<ul>
+<li>Bluring the window will no longer close the urlbar if its open.</li>
+<li>Emojis at the space switcher will now be larger and more visible.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.78.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.78.0</link>
@@ -374,6 +828,60 @@ export default async function SalesSummaryWidgetComponent({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/react-native@v3.14.1</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.1</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.1</guid>
+      <pubDate>Fri, 27 Feb 2026 16:04:33 GMT</pubDate>
+      <description>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</description>
+      <content:encoded><![CDATA[<p>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</p>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/nextjs@v3.14.1</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.1</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.1</guid>
+      <pubDate>Fri, 27 Feb 2026 16:04:33 GMT</pubDate>
+      <description>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</description>
+      <content:encoded><![CDATA[<p>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</p>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/react@v3.14.1</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.1</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.1</guid>
+      <pubDate>Fri, 27 Feb 2026 16:04:32 GMT</pubDate>
+      <description>🚀 Features js, react: Socket type explicit option ( #10117 ) ❤️ Thank You Dima Grossman @scopsy</description>
+      <content:encoded><![CDATA[<h3>🚀 Features</h3>
+<ul>
+<li><strong>js, react:</strong> Socket type explicit option (<a href="https://github.com/novuhq/novu/pull/10117">#10117</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Dima Grossman @scopsy</li>
+</ul>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/js@v3.14.1</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.1</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.1</guid>
+      <pubDate>Fri, 27 Feb 2026 16:04:31 GMT</pubDate>
+      <description>🚀 Features js, react: Socket type explicit option ( #10117 ) ❤️ Thank You Dima Grossman @scopsy</description>
+      <content:encoded><![CDATA[<h3>🚀 Features</h3>
+<ul>
+<li><strong>js, react:</strong> Socket type explicit option (<a href="https://github.com/novuhq/novu/pull/10117">#10117</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Dima Grossman @scopsy</li>
+</ul>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
     </item>    <item>
       <title>multiboxlabs/flow-browser v0.9.0</title>
       <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.9.0</link>
@@ -750,6 +1258,140 @@ export default async function SalesSummaryWidgetComponent({
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>yuliskov/SmartTube 30.90s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.90s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.90s</guid>
+      <pubDate>Mon, 23 Feb 2026 13:17:04 GMT</pubDate>
+      <description>Subscriptions order fix New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123) Added new key remapping: fast forward -&amp;gt; toggle s...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Subscriptions order fix</li>
+<li>New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123)</li>
+<li>Added new key remapping: fast forward -&gt; toggle speed, S key -&gt; toggle speed</li>
+<li>Added the ability to decrease CPU load during &#39;Increased playback speed&#39;. To decrease cpu loading, uncheck this Settings/Player/Misc/Audio stretching. The downside is very ugly voices. (thanks ragavpr)</li>
+<li>Fixed search on a channel and fixed sorting channel videos by latest, popularity, etc</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_arm64-v8a.apk">SmartTube_stable_30.90_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection"><img src="https://badges.cssnr.com/vt/id/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_armeabi-v7a.apk">SmartTube_stable_30.90_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection"><img src="https://badges.cssnr.com/vt/id/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_universal.apk">SmartTube_stable_30.90_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection"><img src="https://badges.cssnr.com/vt/id/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_x86.apk">SmartTube_stable_30.90_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection"><img src="https://badges.cssnr.com/vt/id/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
+      <title>yuliskov/SmartTube 30.90s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.90s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.90s</guid>
+      <pubDate>Mon, 23 Feb 2026 13:17:04 GMT</pubDate>
+      <description>Subscriptions order fix New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123) Added new key remapping: fast forward -&amp;gt; toggle s...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Subscriptions order fix</li>
+<li>New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123)</li>
+<li>Added new key remapping: fast forward -&gt; toggle speed, S key -&gt; toggle speed</li>
+<li>Added the ability to decrease CPU load during &#39;Increased playback speed&#39;. To decrease cpu loading, uncheck this Settings/Player/Misc/Audio stretching. The downside is very ugly voices. (thanks ragavpr)</li>
+<li>Fixed search on a channel and fixed sorting channel videos by latest, popularity, etc</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_arm64-v8a.apk">SmartTube_stable_30.90_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection"><img src="https://badges.cssnr.com/vt/id/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_armeabi-v7a.apk">SmartTube_stable_30.90_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection"><img src="https://badges.cssnr.com/vt/id/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_universal.apk">SmartTube_stable_30.90_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection"><img src="https://badges.cssnr.com/vt/id/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_x86.apk">SmartTube_stable_30.90_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection"><img src="https://badges.cssnr.com/vt/id/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.18.10b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.10b</guid>
+      <pubDate>Sat, 21 Feb 2026 12:37:03 GMT</pubDate>
+      <description>Zen Stable Release New Features Improved greatly the performance for Linux users by removing bottom window rounded corners, which will be added once the core issue has been resolved upstream. To enable them back, turn &amp;#39;widget.gtk.rounded-bottom-corners.enabled&amp;#39; to true in about:config. Ad...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>New Features</h2>
+<ul>
+<li>Improved greatly the performance for Linux users by removing bottom window rounded corners, which will be added once the core issue has been resolved upstream. To enable them back, turn &#39;widget.gtk.rounded-bottom-corners.enabled&#39; to true in about:config.</li>
+<li>Added more automatic recovery options when updating or restarting zen, to prevent tab loss.</li>
+<li>Fixed some tabs becoming &#39;New Tabs&#39; after focusing them from different windows</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Stability and performance improvements related to window sync and session restore.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.18.9b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.9b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.9b</guid>
+      <pubDate>Thu, 19 Feb 2026 20:35:34 GMT</pubDate>
+      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 147.0.4 Appimage .desktop file now includes &amp;#39;X-AppImage-Version&amp;#39; metadata for better integration with application launchers and system tools. Linux desktop files will now include an option to open a new bla...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-10/">Various security fixes</a></p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 147.0.4</li>
+<li>Appimage .desktop file now includes &#39;X-AppImage-Version&#39; metadata for better integration with application launchers and system tools.</li>
+<li>Linux desktop files will now include an option to open a new blank window from the taskbar</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Stability and performance improvements related to window sync and session restore.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>payloadcms/payload v3.77.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.77.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.77.0</guid>
@@ -844,6 +1486,122 @@ export default buildConfig({
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>zen-browser/desktop 1.18.8b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.8b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.8b</guid>
+      <pubDate>Mon, 16 Feb 2026 12:52:55 GMT</pubDate>
+      <description>Zen Stable Release Fixes Fixed back / forward buttons changing the page&amp;#39;s history instead of switching spaces ( #9157 ) Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly Other minor bug fixes and improvements</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed back / forward buttons changing the page&#39;s history instead of switching spaces (<a href="https://github.com/zen-browser/desktop/issues/9157">#9157</a>)</li>
+<li>Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly</li>
+<li>Other minor bug fixes and improvements</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.18.7b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.7b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.7b</guid>
+      <pubDate>Sat, 14 Feb 2026 12:08:22 GMT</pubDate>
+      <description>Zen Stable Release Fixes Fixed accessibility issues with the workspace switcher and other buttons Other session restore fixes and improvements</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed accessibility issues with the workspace switcher and other buttons</li>
+<li>Other session restore fixes and improvements</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.18.6b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.6b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.6b</guid>
+      <pubDate>Fri, 13 Feb 2026 09:38:37 GMT</pubDate>
+      <description>Zen Stable Release New Features Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode. Zen will now follow the XDG Base Directory Specification for storing its configuration and data files. Thi...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>New Features</h2>
+<ul>
+<li>Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode.</li>
+<li>Zen will now follow the XDG Base Directory Specification for storing its configuration and data files. This means that on Linux, configuration files will be stored in <code>~/.config/zen</code>. Note that compatibility with the old configuration directory (<code>~/.zen</code>) will be enabled if the directory exists.</li>
+<li>Dragging a tab to the center of the window to create a split will now give the option to split on top or below.</li>
+<li>When typing directly an url or domain, a second search result will appear with the option to search for the url or domain on your selected search engine.</li>
+<li>Added a &#39;--blank-window&#39; command line argument to open a blank window without pinned tabs, spaces, etc.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Zen will now restore unpinned tabs after a crash, even if the &#39;Restore previous session&#39; setting is disabled.</li>
+<li>Fixed syncing bookmarks with your Mozilla account not working correctly.</li>
+<li>Other quality of life improvements and bug fixes.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/react-native@v3.14.0</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.0</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.0</guid>
+      <pubDate>Thu, 12 Feb 2026 15:39:19 GMT</pubDate>
+      <description>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</description>
+      <content:encoded><![CDATA[<p>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</p>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/nextjs@v3.14.0</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.0</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.0</guid>
+      <pubDate>Thu, 12 Feb 2026 15:39:18 GMT</pubDate>
+      <description>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</description>
+      <content:encoded><![CDATA[<p>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</p>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/react@v3.14.0</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.0</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.0</guid>
+      <pubDate>Thu, 12 Feb 2026 15:39:17 GMT</pubDate>
+      <description>🚀 Features js, react, api-service: In-app notifications timeframe filter fixes NV-7045 ( #9873 ) 🩹 Fixes api-service: add support of dot in workflow id fixes NV-7092 ( #9974 ) ❤️ Thank You Dima Grossman @scopsy Pawan Jain</description>
+      <content:encoded><![CDATA[<h3>🚀 Features</h3>
+<ul>
+<li><strong>js, react, api-service:</strong> In-app notifications timeframe filter fixes NV-7045 (<a href="https://github.com/novuhq/novu/pull/9873">#9873</a>)</li>
+</ul>
+<h3>🩹 Fixes</h3>
+<ul>
+<li><strong>api-service:</strong> add support of dot in workflow id fixes NV-7092 (<a href="https://github.com/novuhq/novu/pull/9974">#9974</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Dima Grossman @scopsy</li>
+<li>Pawan Jain</li>
+</ul>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>novuhq/novu @novu/js@v3.14.0</title>
+      <link>https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.0</link>
+      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.0</guid>
+      <pubDate>Thu, 12 Feb 2026 15:39:16 GMT</pubDate>
+      <description>🚀 Features js, react, api-service: In-app notifications timeframe filter fixes NV-7045 ( #9873 ) js: allow passing socket options to the novu js configuration ( #9896 ) ❤️ Thank You Dima Grossman @scopsy Gabriel Pan Gantes @Gabrielpanga</description>
+      <content:encoded><![CDATA[<h3>🚀 Features</h3>
+<ul>
+<li><strong>js, react, api-service:</strong> In-app notifications timeframe filter fixes NV-7045 (<a href="https://github.com/novuhq/novu/pull/9873">#9873</a>)</li>
+<li><strong>js:</strong> allow passing socket options to the novu js configuration (<a href="https://github.com/novuhq/novu/pull/9896">#9896</a>)</li>
+</ul>
+<h3>❤️ Thank You</h3>
+<ul>
+<li>Dima Grossman @scopsy</li>
+<li>Gabriel Pan Gantes @Gabrielpanga</li>
+</ul>]]></content:encoded>
+      <category>novuhq</category>
+      <category>novu</category>
+      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.20</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.20</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.20</guid>
@@ -914,6 +1672,27 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.18.5b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.5b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.5b</guid>
+      <pubDate>Fri, 06 Feb 2026 21:42:55 GMT</pubDate>
+      <description>Zen Stable Release This update includes a new setting to allow users who didn&amp;#39;t like the window sync feature but still want to sync their pinned tabs across windows in a workspace to do so. Make sure window sync is enabled in about:config for this feature to work. New Features Added &amp;#39;Sync...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<p>This update includes a new setting to allow users who didn&#39;t like the window sync feature but still want to sync their pinned tabs across windows in a workspace to do so. Make sure window sync is enabled in about:config for this feature to work.</p>
+<h2>New Features</h2>
+<ul>
+<li>Added <u>&#39;Sync only pinned tabs in workspaces&#39;</u> option to the &#39;Tab Management&#39; settings so that only pinned tabs will be synced across windows in a workspace. This is useful for users who want to keep their pinned tabs consistent across windows while allowing unpinned tabs to be different in each window.</li>
+<li>Updated to Firefox 147.0.3</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed an issue when drag and dropping tabs from normal windows to blank windows</li>
+<li>Fixed an issue on Windows systems with a large number of fonts installed where parts of the UI (tabs, menus, and Settings) could display garbled characters or symbols instead of readable text.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.75.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.75.0</link>
@@ -1127,6 +1906,20 @@ export default buildConfig({
       <category>novuhq</category>
       <category>novu</category>
       <source url="https://github.com/novuhq/novu">novuhq/novu</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.3.1</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.3.1</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.3.1</guid>
+      <pubDate>Thu, 05 Feb 2026 06:14:22 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.3.1-beta.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9637 Full Changelog : https://github.com/Kong/insomnia/compare/core@12.3.1-beta.1...core@12.3.1</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.3.1-beta.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9637">https://github.com/Kong/insomnia/pull/9637</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.3.1-beta.1...core@12.3.1">https://github.com/Kong/insomnia/compare/core@12.3.1-beta.1...core@12.3.1</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>heyman/heynote v2.8.0</title>
       <link>https://github.com/heyman/heynote/releases/tag/v2.8.0</link>
@@ -2213,6 +3006,31 @@ export const Posts: CollectionConfig = {
       <category>desktop</category>
       <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
+      <title>Kong/insomnia core@12.3.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.3.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.3.0</guid>
+      <pubDate>Thu, 15 Jan 2026 01:39:55 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.3.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9548 fix: git credential migration state storage path by @CurryYangxx in https://github.com/Kong/insomnia/pull/9549 feat: Make “Turn on AI” prompt clearer in Git Sync Smart Commits by @pavkout in...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.3.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9548">https://github.com/Kong/insomnia/pull/9548</a></li>
+<li>fix: git credential migration state storage path by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9549">https://github.com/Kong/insomnia/pull/9549</a></li>
+<li>feat: Make “Turn on AI” prompt clearer in Git Sync Smart Commits by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9544">https://github.com/Kong/insomnia/pull/9544</a></li>
+<li>fix: move deprecation warning above tests by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9554">https://github.com/Kong/insomnia/pull/9554</a></li>
+<li>fix: new git credential flow by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9553">https://github.com/Kong/insomnia/pull/9553</a></li>
+<li>Hide the git-repo form in the create project modal [INS-1900] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9558">https://github.com/Kong/insomnia/pull/9558</a></li>
+<li>Clarify macOS entitlements for local testing by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9559">https://github.com/Kong/insomnia/pull/9559</a></li>
+<li>feat(analytics): temporary org+project metrics by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9551">https://github.com/Kong/insomnia/pull/9551</a></li>
+<li>fix(mcp): minor ux improvements by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9555">https://github.com/Kong/insomnia/pull/9555</a></li>
+<li>fix: Improve CookieSchema expiration handling for Infinity values and invalid date inputs by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9543">https://github.com/Kong/insomnia/pull/9543</a></li>
+<li>fix: clarify git credential fields by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9566">https://github.com/Kong/insomnia/pull/9566</a></li>
+<li>refactor: Minor UX polish for AI Commits [INS-1644]  by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9561">https://github.com/Kong/insomnia/pull/9561</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.3.0-beta.0...core@12.3.0">https://github.com/Kong/insomnia/compare/core@12.3.0-beta.0...core@12.3.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.13</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.13</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.13</guid>
@@ -2769,181 +3587,6 @@ tls:</li>
       <category>desktop</category>
       <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
-      <title>novuhq/novu v3.12.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/v3.12.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.12.0</guid>
-      <pubDate>Thu, 08 Jan 2026 21:25:40 GMT</pubDate>
-      <description>API 🚀 Features api-service: Inbox subscriber field update for locale fixes NV-7021 ( #9791 ) api-service: Api cache tokens for strategy ( #9785 ) dashboard, api-service: Identifier character set extension for workflow ids ( #9780 ) api-service: Workflow id casing update ( #9751 ) api: add missin...</description>
-      <content:encoded><![CDATA[<h2>API</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service:</strong> Inbox subscriber field update for locale fixes NV-7021 (<a href="https://github.com/novuhq/novu/pull/9791">#9791</a>)</li>
-<li><strong>api-service:</strong> Api cache tokens for strategy (<a href="https://github.com/novuhq/novu/pull/9785">#9785</a>)</li>
-<li><strong>dashboard, api-service:</strong> Identifier character set extension for workflow ids (<a href="https://github.com/novuhq/novu/pull/9780">#9780</a>)</li>
-<li><strong>api-service:</strong> Workflow id casing update (<a href="https://github.com/novuhq/novu/pull/9751">#9751</a>)</li>
-<li><strong>api:</strong> add missing archived property in feed for SDK (<a href="https://github.com/novuhq/novu/pull/9714">#9714</a>)</li>
-<li><strong>api-service:</strong> enhance subscription preference updates to include channel-specific settings fixes NV-6998 (<a href="https://github.com/novuhq/novu/pull/9706">#9706</a>)</li>
-<li><strong>api, worker, root, application-generic:</strong> add new scheduling mechanism using cf worker fixes NV-6939 (<a href="https://github.com/novuhq/novu/pull/9578">#9578</a>)</li>
-<li><strong>api-service:</strong> ensure newly added preference workflows appear in subscription component fixes NV-6955 (<a href="https://github.com/novuhq/novu/pull/9669">#9669</a>)</li>
-<li><strong>dashboard:</strong> see subscription and details in activity feed fixes NV-6972 (<a href="https://github.com/novuhq/novu/pull/9686">#9686</a>)</li>
-<li><strong>dashboard,api-service:</strong> view subscription details on the subscriber drawer fixes NV-6971 (<a href="https://github.com/novuhq/novu/pull/9679">#9679</a>)</li>
-<li><strong>api:</strong> enable channel endpoints &amp; connections controllers + oauth (<a href="https://github.com/novuhq/novu/pull/9650">#9650</a>)</li>
-<li><strong>api-service:</strong> subscription polish (<a href="https://github.com/novuhq/novu/pull/9554">#9554</a>)</li>
-<li><strong>api:</strong> add permission requirements to workflow and notification group endpoints (<a href="https://github.com/novuhq/novu/pull/9607">#9607</a>)</li>
-<li><strong>api:</strong> autogen Postman collection fixes NV-6938 (<a href="https://github.com/novuhq/novu/pull/9595">#9595</a>)</li>
-<li><strong>api,framework:</strong> translations - support liquid filters &amp; nesting fixes NV-6870 (<a href="https://github.com/novuhq/novu/pull/9575">#9575</a>)</li>
-<li><strong>api,worker:</strong> enable default dev Novu Slack integration fixes NV-6575 (<a href="https://github.com/novuhq/novu/pull/9551">#9551</a>)</li>
-<li><strong>api-service:</strong> add multi subscription per topic and trigger condition parsing fixes NV-6810 (<a href="https://github.com/novuhq/novu/pull/9472">#9472</a>)</li>
-<li><strong>api,worker:</strong> MS Teams bot delivery flow fixes NV-6573 (<a href="https://github.com/novuhq/novu/pull/9540">#9540</a>)</li>
-<li><strong>api,dashboard:</strong> add MS Teams integration credentials config fixes NV-6910 (<a href="https://github.com/novuhq/novu/pull/9532">#9532</a>)</li>
-<li><strong>api:</strong> add context to bulk and broadcast trigger endpoints fixes NV-6902 (<a href="https://github.com/novuhq/novu/pull/9509">#9509</a>)</li>
-<li><strong>dashboard:</strong> analytics add workflow id filter (<a href="https://github.com/novuhq/novu/pull/9431">#9431</a>)</li>
-<li><strong>api:</strong> temp. disable Novu Slack dev test integration (<a href="https://github.com/novuhq/novu/pull/9499">#9499</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>api-service:</strong> Adjust include channels on legacy preferences api fixes NV-7006 (<a href="https://github.com/novuhq/novu/pull/9788">#9788</a>)</li>
-<li><strong>api-service:</strong> ff lru cache (<a href="https://github.com/novuhq/novu/pull/9783">#9783</a>)</li>
-<li><strong>api-service:</strong> Add LRU caching for workflow and organization fetch (<a href="https://github.com/novuhq/novu/pull/9778">#9778</a>)</li>
-<li><strong>api-service:</strong> preview email flow (<a href="https://github.com/novuhq/novu/pull/9769">#9769</a>)</li>
-<li><strong>worker:</strong> Ensure worker readiness after resume and improve logging (<a href="https://github.com/novuhq/novu/pull/9756">#9756</a>)</li>
-<li><strong>api-service, worker:</strong> Jsonwebtoken package update (<a href="https://github.com/novuhq/novu/pull/9744">#9744</a>)</li>
-<li><strong>worker:</strong> optimizations for bridge handler usecase (<a href="https://github.com/novuhq/novu/pull/9735">#9735</a>)</li>
-<li><strong>api-service:</strong> add skipOutputEscape option to createLiquidEngine (<a href="https://github.com/novuhq/novu/pull/9736">#9736</a>)</li>
-<li><strong>worker, api-service:</strong> locale pointer alignment (<a href="https://github.com/novuhq/novu/pull/9734">#9734</a>)</li>
-<li><strong>dashboard:</strong> re-rendering inbox session requests (<a href="https://github.com/novuhq/novu/pull/9728">#9728</a>)</li>
-<li><strong>framework:</strong> Liquid output escaping for special JSON characters including &quot; (<a href="https://github.com/novuhq/novu/pull/9730">#9730</a>)</li>
-<li><strong>api-service:</strong> update api description (<a href="https://github.com/novuhq/novu/pull/9634">#9634</a>)</li>
-<li><strong>api:</strong> fix &#39;subscriptionOrIdentifier&#39; in e2e tests (<a href="https://github.com/novuhq/novu/pull/9677">#9677</a>)</li>
-<li><strong>api:</strong> URL validation error handling for redirect fields fixes NV-6984 (<a href="https://github.com/novuhq/novu/pull/9674">#9674</a>)</li>
-<li><strong>api-service:</strong> preference workflow as a string api return 422 fixes NV-6963 (<a href="https://github.com/novuhq/novu/pull/9651">#9651</a>)</li>
-<li><strong>maily-core,maily-render:</strong> improve email editor defaults and drag and drop behaviour fixes NV-6925 (<a href="https://github.com/novuhq/novu/pull/9617">#9617</a>)</li>
-<li><strong>api-service:</strong> dashboard workflow status when disabled fixes NV-6947 (<a href="https://github.com/novuhq/novu/pull/9624">#9624</a>)</li>
-<li><strong>api-service:</strong> workflowId duplication bug fixes NV-6946 (<a href="https://github.com/novuhq/novu/pull/9622">#9622</a>)</li>
-<li><strong>api:</strong> remove unused debug operations in OpenAPI sorting (<a href="https://github.com/novuhq/novu/pull/9616">#9616</a>)</li>
-<li><strong>api-service:</strong> Add @ExternalApiAccessible to organization endpoints (<a href="https://github.com/novuhq/novu/pull/9605">#9605</a>)</li>
-<li><strong>api:</strong> remove duplicate widgets module entry (<a href="https://github.com/novuhq/novu/pull/9585">#9585</a>)</li>
-<li><strong>api-service:</strong> add e2e cases for triggered preferences (<a href="https://github.com/novuhq/novu/pull/9576">#9576</a>)</li>
-<li><strong>api:</strong> context DTO data attribute in SDK (<a href="https://github.com/novuhq/novu/pull/9563">#9563</a>)</li>
-<li><strong>worker:</strong> fallback all flag override for preferences (<a href="https://github.com/novuhq/novu/pull/9556">#9556</a>)</li>
-<li><strong>api-service:</strong> sync (<a href="https://github.com/novuhq/novu/pull/9546">#9546</a>)</li>
-<li><strong>worker:</strong> skip updated by fetch (<a href="https://github.com/novuhq/novu/pull/9536">#9536</a>)</li>
-<li><strong>api-service:</strong> bulk perf workflow return (<a href="https://github.com/novuhq/novu/pull/9523">#9523</a>)</li>
-<li><strong>api-service:</strong> Add bulk workflow queueing for event triggers fixes NV-6908 (<a href="https://github.com/novuhq/novu/pull/9520">#9520</a>)</li>
-<li><strong>api-service:</strong> Optimize subscriber search endpoint fixes NV-6899 (<a href="https://github.com/novuhq/novu/pull/9504">#9504</a>)</li>
-<li><strong>api:</strong> translation DTOs/OAS for SDK auto-gen; idempotency fixes NV-6903 (<a href="https://github.com/novuhq/novu/pull/9515">#9515</a>)</li>
-<li><strong>api-service:</strong> status and active mismatch (<a href="https://github.com/novuhq/novu/pull/9475">#9475</a>)</li>
-<li><strong>api:</strong> oauth url response DTO (<a href="https://github.com/novuhq/novu/pull/9503">#9503</a>)</li>
-</ul>
-<h3>🔥 Performance</h3>
-<ul>
-<li><strong>api-service:</strong> bridge skip updated by join (<a href="https://github.com/novuhq/novu/pull/9771">#9771</a>)</li>
-<li><strong>worker:</strong> improve fetching perf of handler (<a href="https://github.com/novuhq/novu/pull/9775">#9775</a>)</li>
-<li><strong>api-service:</strong> user fetch value selects (<a href="https://github.com/novuhq/novu/pull/9659">#9659</a>)</li>
-<li><strong>api-service:</strong> cache compile ajv schemas (<a href="https://github.com/novuhq/novu/pull/9656">#9656</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Adam Chmara @ChmaraX</li>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Himanshu Garg @merrcury</li>
-<li>Pawan Jain</li>
-<li>Paweł Tymczuk @LetItRock</li>
-<li>Rinak-dev</li>
-</ul>
-<h2>Worker</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api, worker, root, application-generic:</strong> add new scheduling mechanism using cf worker fixes NV-6939 (<a href="https://github.com/novuhq/novu/pull/9578">#9578</a>)</li>
-<li><strong>dashboard:</strong> see subscription and details in activity feed fixes NV-6972 (<a href="https://github.com/novuhq/novu/pull/9686">#9686</a>)</li>
-<li><strong>api,worker:</strong> enable default dev Novu Slack integration fixes NV-6575 (<a href="https://github.com/novuhq/novu/pull/9551">#9551</a>)</li>
-<li><strong>api-service:</strong> add multi subscription per topic and trigger condition parsing fixes NV-6810 (<a href="https://github.com/novuhq/novu/pull/9472">#9472</a>)</li>
-<li><strong>api,worker:</strong> MS Teams bot delivery flow fixes NV-6573 (<a href="https://github.com/novuhq/novu/pull/9540">#9540</a>)</li>
-<li><strong>dashboard:</strong> analytics add workflow id filter (<a href="https://github.com/novuhq/novu/pull/9431">#9431</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>worker:</strong> Ensure worker readiness after resume and improve logging (<a href="https://github.com/novuhq/novu/pull/9756">#9756</a>)</li>
-<li><strong>worker:</strong> refactor template fetch to reduce db calls (<a href="https://github.com/novuhq/novu/pull/9609">#9609</a>)</li>
-<li><strong>worker:</strong> unify api calls for integrations call (<a href="https://github.com/novuhq/novu/pull/9602">#9602</a>)</li>
-<li>add missing log for preferences (<a href="https://github.com/novuhq/novu/commit/c7be7dc86c">c7be7dc86c</a>)</li>
-</ul>
-<h3>🔥 Performance</h3>
-<ul>
-<li><strong>api-service:</strong> user fetch value selects (<a href="https://github.com/novuhq/novu/pull/9659">#9659</a>)</li>
-<li><strong>worker:</strong> remove redundant queries (<a href="https://github.com/novuhq/novu/pull/9531">#9531</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Adam Chmara @ChmaraX</li>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Himanshu Garg @merrcury</li>
-</ul>
-<h2>Dashboard</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>js,react:</strong> Italics formatting support in content fixes NV-7025 (<a href="https://github.com/novuhq/novu/pull/9789">#9789</a>)</li>
-<li><strong>dashboard, api-service:</strong> Identifier character set extension for workflow ids (<a href="https://github.com/novuhq/novu/pull/9780">#9780</a>)</li>
-<li><strong>api-service:</strong> Workflow id casing update (<a href="https://github.com/novuhq/novu/pull/9751">#9751</a>)</li>
-<li><strong>dashboard:</strong> see subscription and details in activity feed fixes NV-6972 (<a href="https://github.com/novuhq/novu/pull/9686">#9686</a>)</li>
-<li><strong>dashboard,api-service:</strong> view subscription details on the subscriber drawer fixes NV-6971 (<a href="https://github.com/novuhq/novu/pull/9679">#9679</a>)</li>
-<li><strong>dashboard:</strong> refactor environment forms (<a href="https://github.com/novuhq/novu/pull/9661">#9661</a>)</li>
-<li><strong>dashboard:</strong> contextual help drawer - docs, support, quick links fixes NV-6927 (<a href="https://github.com/novuhq/novu/pull/9604">#9604</a>)</li>
-<li><strong>dashboard:</strong> rename analytics to usage (<a href="https://github.com/novuhq/novu/pull/9587">#9587</a>)</li>
-<li><strong>dashboard:</strong> Add feature flag for legacy dashboard button visibility (<a href="https://github.com/novuhq/novu/pull/9579">#9579</a>)</li>
-<li><strong>dashboard:</strong> custom organization switcher (<a href="https://github.com/novuhq/novu/pull/9545">#9545</a>)</li>
-<li><strong>api,dashboard:</strong> add MS Teams integration credentials config fixes NV-6910 (<a href="https://github.com/novuhq/novu/pull/9532">#9532</a>)</li>
-<li><strong>dashboard:</strong> add cimode warning fixes NV-6914 (<a href="https://github.com/novuhq/novu/pull/9538">#9538</a>)</li>
-<li><strong>dashboard:</strong> analytics add workflow id filter (<a href="https://github.com/novuhq/novu/pull/9431">#9431</a>)</li>
-<li><strong>dashboard:</strong> enhance self-hosted support for region-context imports and add useClerk hook (<a href="https://github.com/novuhq/novu/pull/9502">#9502</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>js:</strong> inbox doubled notifications issue fixes NV-7014 (<a href="https://github.com/novuhq/novu/pull/9773">#9773</a>)</li>
-<li><strong>dashboard:</strong> Dashboard build failing for EE Images (<a href="https://github.com/novuhq/novu/pull/9763">#9763</a>)</li>
-<li><strong>dashboard:</strong> re-rendering inbox session requests (<a href="https://github.com/novuhq/novu/pull/9728">#9728</a>)</li>
-<li><strong>api-service:</strong> update api description (<a href="https://github.com/novuhq/novu/pull/9634">#9634</a>)</li>
-<li><strong>dashboard:</strong> Dashboard EU inbox URLs fixes NV-6985 (<a href="https://github.com/novuhq/novu/pull/9673">#9673</a>)</li>
-<li><strong>maily-core,maily-render:</strong> improve email editor defaults and drag and drop behaviour fixes NV-6925 (<a href="https://github.com/novuhq/novu/pull/9617">#9617</a>)</li>
-<li><strong>api-service:</strong> dashboard workflow status when disabled fixes NV-6947 (<a href="https://github.com/novuhq/novu/pull/9624">#9624</a>)</li>
-<li><strong>api-service:</strong> workflowId duplication bug fixes NV-6946 (<a href="https://github.com/novuhq/novu/pull/9622">#9622</a>)</li>
-<li><strong>dashboard:</strong> validate namespace-only variables &amp; centralize error msgs fixes NV-6932 (<a href="https://github.com/novuhq/novu/pull/9615">#9615</a>)</li>
-<li><strong>dashboard:</strong> cursor after variable on insert fixes NV-6724 (<a href="https://github.com/novuhq/novu/pull/9613">#9613</a>)</li>
-<li><strong>dashboard:</strong> add tooltip to truncated variable names in dropdown fixes NV-6728 (<a href="https://github.com/novuhq/novu/pull/9606">#9606</a>)</li>
-<li><strong>dashboard:</strong> UserButton re-rendering for legacy dashboard option (<a href="https://github.com/novuhq/novu/pull/9597">#9597</a>)</li>
-<li><strong>dashboard:</strong> Organisation Selector Pagination and name changes (<a href="https://github.com/novuhq/novu/pull/9565">#9565</a>)</li>
-<li><strong>dashboard:</strong> context dropdown page refresh (<a href="https://github.com/novuhq/novu/pull/9511">#9511</a>)</li>
-<li><strong>dashboard:</strong> Encode subscriberId in API and navigation routes fixes NV-6881 (<a href="https://github.com/novuhq/novu/pull/9488">#9488</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Adam Chmara @ChmaraX</li>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Himanshu Garg @merrcury</li>
-<li>Pawan Jain</li>
-<li>Paweł Tymczuk @LetItRock</li>
-</ul>
-<h2>WS</h2>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>api-service, worker:</strong> Jsonwebtoken package update (<a href="https://github.com/novuhq/novu/pull/9744">#9744</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-</ul>
-<h2>🐳 Community Docker Images</h2>
-<p>Community Docker images are available for v3.12.0, making it easy to run this release in containerized environments. These images are suitable for local development, testing, and self-hosting scenarios.</p>
-<h2>📦 SDKs</h2>
-<p>SDKs(Typescript, Golang, Python, PHP and C-Sharp) for v3.12.0 are available to help you integrate with the platform using your preferred programming language. These SDKs are maintained alongside the core release and community images to ensure compatibility and a smooth upgrade experience. </p>
-<p><strong>We’re excited to see what you build with this release.</strong></p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
       <title>payloadcms/payload v3.70.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.70.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.70.0</guid>
@@ -3074,6 +3717,24 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
     </item>    <item>
+      <title>Kong/insomnia core@12.2.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</guid>
+      <pubDate>Fri, 19 Dec 2025 01:12:49 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.2.0-beta.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9490 Force the dropdown to be positioned below the input, adjust styles [INS-1850] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9492 Fix style issue by @yaoweiprc in https://github.com/...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.2.0-beta.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9490">https://github.com/Kong/insomnia/pull/9490</a></li>
+<li>Force the dropdown to be positioned below the input, adjust styles [INS-1850] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9492">https://github.com/Kong/insomnia/pull/9492</a></li>
+<li>Fix style issue by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9493">https://github.com/Kong/insomnia/pull/9493</a></li>
+<li>Fix: revert structuredClone method used for clone in context menu by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9494">https://github.com/Kong/insomnia/pull/9494</a></li>
+<li>Add fuzzy match for searching repos and branches by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9497">https://github.com/Kong/insomnia/pull/9497</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.2.0-beta.1...core@12.2.0">https://github.com/Kong/insomnia/compare/core@12.2.0-beta.1...core@12.2.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.11</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.11</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.11</guid>
@@ -3099,6 +3760,112 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>atuinsh</category>
       <category>desktop</category>
       <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.1.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.1.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.1.0</guid>
+      <pubDate>Fri, 21 Nov 2025 17:29:45 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.1.0-beta.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9406 Fix issues in merge modal [INS-1742] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9404 Full Changelog : https://github.com/Kong/insomnia/compare/core@12.1.0-beta.1...core@12.1.0</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.1.0-beta.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9406">https://github.com/Kong/insomnia/pull/9406</a></li>
+<li>Fix issues in merge modal [INS-1742] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9404">https://github.com/Kong/insomnia/pull/9404</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.1.0-beta.1...core@12.1.0">https://github.com/Kong/insomnia/compare/core@12.1.0-beta.1...core@12.1.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.0.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.0.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.0.0</guid>
+      <pubDate>Mon, 03 Nov 2025 13:06:45 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.0.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9308 Use codemirror merge addon to replace mis-merge [INS-1425] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9268 fix: type imports for contributors by @ryan-willis in https://github.co...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.0.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9308">https://github.com/Kong/insomnia/pull/9308</a></li>
+<li>Use codemirror merge addon to replace mis-merge [INS-1425] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9268">https://github.com/Kong/insomnia/pull/9268</a></li>
+<li>fix: type imports for contributors by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9310">https://github.com/Kong/insomnia/pull/9310</a></li>
+<li>fix: hide create mock server when creation not allowed by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9301">https://github.com/Kong/insomnia/pull/9301</a></li>
+<li>feat: sparkles badge for AI features by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9306">https://github.com/Kong/insomnia/pull/9306</a></li>
+<li>feat: update commit generation area by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9319">https://github.com/Kong/insomnia/pull/9319</a></li>
+<li>fix: mcp issues by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9321">https://github.com/Kong/insomnia/pull/9321</a></li>
+<li>Fix: oauth redirection issue for MCP by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9316">https://github.com/Kong/insomnia/pull/9316</a></li>
+<li>fix: redundant update toast by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9322">https://github.com/Kong/insomnia/pull/9322</a></li>
+<li>fix: delete wrong tailwind class by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9266">https://github.com/Kong/insomnia/pull/9266</a></li>
+<li>[INS-1598] - fix &quot;see all features&quot; link visibility in onboarding by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9317">https://github.com/Kong/insomnia/pull/9317</a></li>
+<li>feat: new pricing features by @xiaodemen in <a href="https://github.com/Kong/insomnia/pull/9176">https://github.com/Kong/insomnia/pull/9176</a></li>
+<li>fix: autoupdate ux by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9295">https://github.com/Kong/insomnia/pull/9295</a></li>
+<li>fix: use string readyState to make mcp ux more accurate by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9323">https://github.com/Kong/insomnia/pull/9323</a></li>
+<li>Fix new pricing issues before v12 launch by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9330">https://github.com/Kong/insomnia/pull/9330</a></li>
+<li>fix: unify and add links for new insomnia docs by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9333">https://github.com/Kong/insomnia/pull/9333</a></li>
+<li>chore: add docs gen docs by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9312">https://github.com/Kong/insomnia/pull/9312</a></li>
+<li>Fix/git checkout offline error msg by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9335">https://github.com/Kong/insomnia/pull/9335</a></li>
+<li>feat: clear all credentials upon logout [INS-1630] by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9328">https://github.com/Kong/insomnia/pull/9328</a></li>
+<li>Change wording [INS-1547] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9340">https://github.com/Kong/insomnia/pull/9340</a></li>
+<li>fix ndjson parser by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9318">https://github.com/Kong/insomnia/pull/9318</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.0.0-beta.0...core@12.0.0">https://github.com/Kong/insomnia/compare/core@12.0.0-beta.0...core@12.0.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>Kong/insomnia core@11.6.2</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</guid>
+      <pubDate>Tue, 21 Oct 2025 21:08:20 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 11.6.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9154 Change the validation rule for branch name in cloud sync [INS-1041] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9126 fix: auth code redirect uri affects implicit by @ZxBing0066 in https:...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 11.6.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9154">https://github.com/Kong/insomnia/pull/9154</a></li>
+<li>Change the validation rule for branch name in cloud sync [INS-1041] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9126">https://github.com/Kong/insomnia/pull/9126</a></li>
+<li>fix: auth code redirect uri affects implicit by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9158">https://github.com/Kong/insomnia/pull/9158</a></li>
+<li>feat: Enhance the real time event polling mechanism for websocket and socket-io  by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9157">https://github.com/Kong/insomnia/pull/9157</a></li>
+<li>Remove dependency on @mismerge/react [INS-1418] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9145">https://github.com/Kong/insomnia/pull/9145</a></li>
+<li>use toast instead of show-notification by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9128">https://github.com/Kong/insomnia/pull/9128</a></li>
+<li>chore: explicit external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9124">https://github.com/Kong/insomnia/pull/9124</a></li>
+<li>add path check to read file by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9180">https://github.com/Kong/insomnia/pull/9180</a></li>
+<li>[INS-1309] - Improve init/complete sign in flows with GitHub/GitLab by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9181">https://github.com/Kong/insomnia/pull/9181</a></li>
+<li>fix: wrong expiry time of oauth token by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9182">https://github.com/Kong/insomnia/pull/9182</a></li>
+<li>fix: should show correct error boundary by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9184">https://github.com/Kong/insomnia/pull/9184</a></li>
+<li>Fix release recurring builds by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9191">https://github.com/Kong/insomnia/pull/9191</a></li>
+<li>Bump react-aria by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9188">https://github.com/Kong/insomnia/pull/9188</a></li>
+<li>feat: create collection from mock server routes by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9156">https://github.com/Kong/insomnia/pull/9156</a></li>
+<li>feat: Improve global modals by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9190">https://github.com/Kong/insomnia/pull/9190</a></li>
+<li>React-19-pre-upgrade by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9199">https://github.com/Kong/insomnia/pull/9199</a></li>
+<li>reduce esbuild external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9213">https://github.com/Kong/insomnia/pull/9213</a></li>
+<li>refactor: wrap sensitive readFile - INS-1442 by @jackkav in <a href="https://github.com/Kong/insomnia/pull/8992">https://github.com/Kong/insomnia/pull/8992</a></li>
+<li>refactor importers to run in node by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9217">https://github.com/Kong/insomnia/pull/9217</a></li>
+<li>fix link rendering by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9223">https://github.com/Kong/insomnia/pull/9223</a></li>
+<li>fix: help text that incorrectly refers to momentjs by @judss in <a href="https://github.com/Kong/insomnia/pull/9225">https://github.com/Kong/insomnia/pull/9225</a></li>
+<li>fix: support specific importer when import from curl by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9197">https://github.com/Kong/insomnia/pull/9197</a></li>
+<li>chore(docs): add note on macOS entitlements for local testing of packaged app by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9227">https://github.com/Kong/insomnia/pull/9227</a></li>
+<li>fix: curl import issue when parse the pair value by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9198">https://github.com/Kong/insomnia/pull/9198</a></li>
+<li>chore(pkg): exclude source map files from build output by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9228">https://github.com/Kong/insomnia/pull/9228</a></li>
+<li>fix(deps): Move @react-router/dev to dev dependencies by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9231">https://github.com/Kong/insomnia/pull/9231</a></li>
+<li>fix: request is sent before script has been persisted by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9237">https://github.com/Kong/insomnia/pull/9237</a></li>
+<li>chore: increase timeout to 45 minutes for building artifacts by @notjaywu in <a href="https://github.com/Kong/insomnia/pull/9238">https://github.com/Kong/insomnia/pull/9238</a></li>
+<li>fix: modal show in non-auth pane by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9246">https://github.com/Kong/insomnia/pull/9246</a></li>
+<li>Fix: real time response pane event issue by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9248">https://github.com/Kong/insomnia/pull/9248</a></li>
+<li>fix: file tag returns getPath error in the elevated mode by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9251">https://github.com/Kong/insomnia/pull/9251</a></li>
+<li>fix: check clientCerts and return correct error message when accessing denied for CLI by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9252">https://github.com/Kong/insomnia/pull/9252</a></li>
+<li>fix: missing body menu items after the key changes by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9253">https://github.com/Kong/insomnia/pull/9253</a></li>
+<li>fix: the danger color is same as background then icon seems invisible by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9254">https://github.com/Kong/insomnia/pull/9254</a></li>
+<li>Fix wrong user data dir [INS-1549] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9258">https://github.com/Kong/insomnia/pull/9258</a></li>
+<li>fix(Modals): Add ModalOverlay to global modals for proper stacking behavior by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9259">https://github.com/Kong/insomnia/pull/9259</a></li>
+<li>fix: add project to descendant map - [INS-1562] by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9264">https://github.com/Kong/insomnia/pull/9264</a></li>
+<li>chore: reduce vite external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9212">https://github.com/Kong/insomnia/pull/9212</a></li>
+<li>fix: sentry sourcemap - [INS-1255] by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9249">https://github.com/Kong/insomnia/pull/9249</a></li>
+<li>fix(Navigation): Store/recover navigation history in the app by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9284">https://github.com/Kong/insomnia/pull/9284</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@judss made their first contribution in <a href="https://github.com/Kong/insomnia/pull/9225">https://github.com/Kong/insomnia/pull/9225</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.1...core@11.6.2">https://github.com/Kong/insomnia/compare/core@11.6.1...core@11.6.2</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
@@ -3520,6 +4287,69 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>jellyfin</category>
       <category>jellyfin</category>
       <source url="https://github.com/jellyfin/jellyfin">jellyfin/jellyfin</source>
+    </item>    <item>
+      <title>Kong/insomnia core@11.6.1</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.1</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.1</guid>
+      <pubDate>Thu, 18 Sep 2025 07:30:33 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 11.6.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9132 Fix merge modal style issue [INS-908] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9133 fix: Get image name and provenance repository from environment variables by @balugeorge in https://...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 11.6.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9132">https://github.com/Kong/insomnia/pull/9132</a></li>
+<li>Fix merge modal style issue [INS-908] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9133">https://github.com/Kong/insomnia/pull/9133</a></li>
+<li>fix: Get image name and provenance repository from environment variables by @balugeorge in <a href="https://github.com/Kong/insomnia/pull/9134">https://github.com/Kong/insomnia/pull/9134</a></li>
+<li>dbl click unpin by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9127">https://github.com/Kong/insomnia/pull/9127</a></li>
+<li>feat: Support Vault Dedicated for Hashicorp by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9082">https://github.com/Kong/insomnia/pull/9082</a></li>
+<li>fix: eliminate extra border by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9091">https://github.com/Kong/insomnia/pull/9091</a></li>
+<li>Closes #8946. OAuth2 plugin refresh token issue using basic auth for client credentials. by @ulisesbocchio in <a href="https://github.com/Kong/insomnia/pull/8947">https://github.com/Kong/insomnia/pull/8947</a></li>
+<li>feat: polish scratch pad by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9123">https://github.com/Kong/insomnia/pull/9123</a></li>
+<li>[INS-1054] Remove .git suffix requirement for custom git repository URL by @godfrzero in <a href="https://github.com/Kong/insomnia/pull/9086">https://github.com/Kong/insomnia/pull/9086</a></li>
+<li>fix: Discard actions now respect staged vs unstaged changes and prevent silent data loss [INS-1099] by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9141">https://github.com/Kong/insomnia/pull/9141</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@ulisesbocchio made their first contribution in <a href="https://github.com/Kong/insomnia/pull/8947">https://github.com/Kong/insomnia/pull/8947</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.0...core@11.6.1">https://github.com/Kong/insomnia/compare/core@11.6.0...core@11.6.1</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>Kong/insomnia core@11.6.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.0</guid>
+      <pubDate>Thu, 11 Sep 2025 23:57:40 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 11.6.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9102 Chore: Avoid loading bundle plugin errors in development mode by @cwangsmv in https://github.com/Kong/insomnia/pull/9105 [INS-1350] Cloud sync issues by @gatzjames in https://github.com/Kong...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 11.6.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9102">https://github.com/Kong/insomnia/pull/9102</a></li>
+<li>Chore: Avoid loading bundle plugin errors in development mode by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9105">https://github.com/Kong/insomnia/pull/9105</a></li>
+<li>[INS-1350] Cloud sync issues by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9104">https://github.com/Kong/insomnia/pull/9104</a></li>
+<li>fix: workspace create fails on windows by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9101">https://github.com/Kong/insomnia/pull/9101</a></li>
+<li>fix: sendRequest doesnt return error in some cases - INS-1262 by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9059">https://github.com/Kong/insomnia/pull/9059</a></li>
+<li>fix: preference panel crash on the login page by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9113">https://github.com/Kong/insomnia/pull/9113</a></li>
+<li>fix: truncate cookie string by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9095">https://github.com/Kong/insomnia/pull/9095</a></li>
+<li>fix: improve env selection/messaging in CI mode and silence warnings [INS-1345] by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9108">https://github.com/Kong/insomnia/pull/9108</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.0-beta.0...core@11.6.0">https://github.com/Kong/insomnia/compare/core@11.6.0-beta.0...core@11.6.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>Kong/insomnia core@11.5.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.5.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.5.0</guid>
+      <pubDate>Tue, 26 Aug 2025 14:18:54 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 11.5.0-beta.4 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9054 Change wording by @yaoweiprc in https://github.com/Kong/insomnia/pull/9056 Full Changelog : https://github.com/Kong/insomnia/compare/core@11.5.0-beta.4...core@11.5.0</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 11.5.0-beta.4 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9054">https://github.com/Kong/insomnia/pull/9054</a></li>
+<li>Change wording by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9056">https://github.com/Kong/insomnia/pull/9056</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.5.0-beta.4...core@11.5.0">https://github.com/Kong/insomnia/compare/core@11.5.0-beta.4...core@11.5.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>spotDL/spotify-downloader v4.4.0</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.0</link>
