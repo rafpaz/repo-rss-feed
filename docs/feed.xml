@@ -10,9 +10,51 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 17 Mar 2026 18:24:11 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 21:15:34 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yuliskov/SmartTube 31.17s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.17s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.17s</guid>
+      <pubDate>Tue, 17 Mar 2026 20:20:58 GMT</pubDate>
+      <description>The previous release regression fix: active element not focused in the multichoice dialog 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.17_arm64-v8a.apk View Report SmartTube_stable_31.17_armeabi-v7a.apk View Report SmartTube_stable_31.17_universal.ap...</description>
+      <content:encoded><![CDATA[<ul>
+<li>The previous release regression fix: active element not focused in the multichoice dialog</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.17s/SmartTube_stable_31.17_arm64-v8a.apk">SmartTube_stable_31.17_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1c1e04dc293d7609785f4b5e85c5bd206d47597ae54bf54ba86c2f5461efc6f8/detection"><img src="https://badges.cssnr.com/vt/id/1c1e04dc293d7609785f4b5e85c5bd206d47597ae54bf54ba86c2f5461efc6f8?start=green&end=red&n=8&v=1773780590" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1c1e04dc293d7609785f4b5e85c5bd206d47597ae54bf54ba86c2f5461efc6f8/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.17s/SmartTube_stable_31.17_armeabi-v7a.apk">SmartTube_stable_31.17_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/e2db831f51e895ee00984a3cee12e589d2bcae983a195d414416813a535febb4/detection"><img src="https://badges.cssnr.com/vt/id/e2db831f51e895ee00984a3cee12e589d2bcae983a195d414416813a535febb4?start=green&end=red&n=8&v=1773780590" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/e2db831f51e895ee00984a3cee12e589d2bcae983a195d414416813a535febb4/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.17s/SmartTube_stable_31.17_universal.apk">SmartTube_stable_31.17_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/5a4a441ac78a77c876749c44bd135454bd925165d440da588b51f6d95625735f/detection"><img src="https://badges.cssnr.com/vt/id/5a4a441ac78a77c876749c44bd135454bd925165d440da588b51f6d95625735f?start=green&end=red&n=8&v=1773780591" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/5a4a441ac78a77c876749c44bd135454bd925165d440da588b51f6d95625735f/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.17s/SmartTube_stable_31.17_x86.apk">SmartTube_stable_31.17_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/890f239223119d294191e5de984474fd31ac1aadf7f7c5c758e2f283febf3955/detection"><img src="https://badges.cssnr.com/vt/id/890f239223119d294191e5de984474fd31ac1aadf7f7c5c758e2f283febf3955?start=green&end=red&n=8&v=1773780591" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/890f239223119d294191e5de984474fd31ac1aadf7f7c5c758e2f283febf3955/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.16s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.16s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.16s</guid>
