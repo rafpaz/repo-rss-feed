@@ -164,28 +164,21 @@ function shouldIncludeRelease(
     return false;
   }
 
+  if (includePatchReleases) {
+    return true;
+  }
+
   const semverRegex =
     /^v?(?<major>\d+)\.(?<minor>\d+)(?:\.(?<patch>\d+))?(?<suffix>[-+].*)?$/;
   const match = tag.match(semverRegex);
   if (!match || !match.groups) {
-    return false;
+    // Non-semver tag (e.g. date-based, prefixed) — include by default
+    return true;
   }
 
-  const { major, minor, patch } = match.groups as {
-    major: string;
-    minor: string;
-    patch?: string;
-  };
+  const patchNumber = match.groups.patch ? Number(match.groups.patch) : 0;
 
-  const majorNumber = Number(major);
-  const minorNumber = Number(minor);
-  const patchNumber = patch ? Number(patch) : 0;
-
-  if (![majorNumber, minorNumber, patchNumber].every(Number.isInteger)) {
-    return false;
-  }
-
-  if (!includePatchReleases && patchNumber !== 0) {
+  if (patchNumber !== 0) {
     return false;
   }
 
