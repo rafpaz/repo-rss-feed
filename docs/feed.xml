@@ -10,9 +10,53 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 17 Mar 2026 12:21:41 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 15:27:44 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yuliskov/SmartTube 31.16s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.16s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.16s</guid>
+      <pubDate>Tue, 17 Mar 2026 14:52:34 GMT</pubDate>
+      <description>Added configurable sleep timer (0...10 hours) Settings/Player/Sleep timer Fix search for playlists inside a channel Previous release fixes: buffering fix, afr fix, casting fixes, fix unable to add new channel group 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Added configurable sleep timer (0...10 hours) Settings/Player/Sleep timer</li>
+<li>Fix search for playlists inside a channel</li>
+<li>Previous release fixes: buffering fix, afr fix, casting fixes, fix unable to add new channel group</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_arm64-v8a.apk">SmartTube_stable_31.16_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a45f8586f1a77131cb55d168725601ed2a201f4690028b1f29813e5d5a80bb27/detection"><img src="https://badges.cssnr.com/vt/id/a45f8586f1a77131cb55d168725601ed2a201f4690028b1f29813e5d5a80bb27?start=green&end=red&n=8&v=1773759351" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a45f8586f1a77131cb55d168725601ed2a201f4690028b1f29813e5d5a80bb27/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_armeabi-v7a.apk">SmartTube_stable_31.16_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/225230877d6240a76c4f30314258c35965e716e5da796981ee6b0386be7c424c/detection"><img src="https://badges.cssnr.com/vt/id/225230877d6240a76c4f30314258c35965e716e5da796981ee6b0386be7c424c?start=green&end=red&n=8&v=1773759351" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/225230877d6240a76c4f30314258c35965e716e5da796981ee6b0386be7c424c/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_universal.apk">SmartTube_stable_31.16_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/5cc574bf49e0a88eace2d01e85c03fb0c5f5092220f5c5edb6b47c8bcbe4b09c/detection"><img src="https://badges.cssnr.com/vt/id/5cc574bf49e0a88eace2d01e85c03fb0c5f5092220f5c5edb6b47c8bcbe4b09c?start=green&end=red&n=8&v=1773759352" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/5cc574bf49e0a88eace2d01e85c03fb0c5f5092220f5c5edb6b47c8bcbe4b09c/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_x86.apk">SmartTube_stable_31.16_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/0d3802e24c57a6fb727142e6dc10a73b39f9a618c236043fbb118b95f3c8009f/detection"><img src="https://badges.cssnr.com/vt/id/0d3802e24c57a6fb727142e6dc10a73b39f9a618c236043fbb118b95f3c8009f?start=green&end=red&n=8&v=1773759352" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/0d3802e24c57a6fb727142e6dc10a73b39f9a618c236043fbb118b95f3c8009f/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>openai/codex rust-v0.115.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.115.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.115.0</guid>
@@ -238,49 +282,6 @@
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
     </item>    <item>
-      <title>yuliskov/SmartTube 31.08s</title>
-      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.08s</link>
-      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.08s</guid>
-      <pubDate>Fri, 13 Mar 2026 03:06:24 GMT</pubDate>
-      <description>SponsorBlock: added the option to ignore short segments (default to 5 sec) Settings/SponsorBlock Unplayable videos fix, history syncing fix 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.08_arm64-v8a.apk View Report SmartTube_stable_31.08_armeabi-v7a.a...</description>
-      <content:encoded><![CDATA[<ul>
-<li>SponsorBlock: added the option to ignore short segments (default to 5 sec) Settings/SponsorBlock</li>
-<li>Unplayable videos fix, history syncing fix</li>
-</ul>
-<h2>🛡️ VirusTotal Analysis</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Build Variant</th>
-<th align="left">VirusTotal Status</th>
-<th align="left">Detailed Report</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_arm64-v8a.apk">SmartTube_stable_31.08_arm64-v8a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a/detection"><img src="https://badges.cssnr.com/vt/id/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/d11290dcf5491d7790451ae89098ab4b0c3c60cb6cd315fd5632d26049052c0a/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_armeabi-v7a.apk">SmartTube_stable_31.08_armeabi-v7a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6/detection"><img src="https://badges.cssnr.com/vt/id/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/89b3330e69a5b176a491313d50ef82b1354adec216a08704713a533038d00df6/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_universal.apk">SmartTube_stable_31.08_universal.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16/detection"><img src="https://badges.cssnr.com/vt/id/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16?start=green&end=red&n=8&v=1773371771" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/6a3b7677f520f172f4b19bcf5596236430b33f9af7a62daf415026f095803e16/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.08s/SmartTube_stable_31.08_x86.apk">SmartTube_stable_31.08_x86.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2/detection"><img src="https://badges.cssnr.com/vt/id/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2?start=green&end=red&n=8&v=1773371772" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/19799acff8869f95fe7ded07dd8c3bee1802fdeac0b0491eed28a9b0a50906c2/detection">View Report</a></td>
-</tr>
-</tbody></table>]]></content:encoded>
-      <category>yuliskov</category>
-      <category>SmartTube</category>
-      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
       <title>zen-browser/desktop 1.19.2b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.2b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.2b</guid>
@@ -426,51 +427,6 @@
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>yuliskov/SmartTube 30.98s</title>
-      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.98s</link>
-      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.98s</guid>
-      <pubDate>Wed, 04 Mar 2026 12:09:31 GMT</pubDate>
-      <description>Player: Added experimental touch feature: double-tap to seek (enabled by default) Added back gesture (slide from the side edge) for touch interfaces. Useful for a car&amp;#39;s ui where the back button is not present. Fixed subscriptions order Misc bugfixes 🛡️ VirusTotal Analysis Build Variant Virus...</description>
-      <content:encoded><![CDATA[<ul>
-<li>Player: Added experimental touch feature: double-tap to seek (enabled by default)</li>
-<li>Added back gesture (slide from the side edge) for touch interfaces. Useful for a car&#39;s ui where the back button is not present.</li>
-<li>Fixed subscriptions order</li>
-<li>Misc bugfixes</li>
-</ul>
-<h2>🛡️ VirusTotal Analysis</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Build Variant</th>
-<th align="left">VirusTotal Status</th>
-<th align="left">Detailed Report</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_arm64-v8a.apk">SmartTube_stable_30.98_arm64-v8a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b/detection"><img src="https://badges.cssnr.com/vt/id/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/588c228a04f670eb31f07df0bb11ca4fe450ee21c28d643b6539d511a0bd3d8b/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_armeabi-v7a.apk">SmartTube_stable_30.98_armeabi-v7a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030/detection"><img src="https://badges.cssnr.com/vt/id/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/b9a32a46690271cb476dfc6f56647d591b39d6d67d2476be13e1acdd81d8e030/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_universal.apk">SmartTube_stable_30.98_universal.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2/detection"><img src="https://badges.cssnr.com/vt/id/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/e4861a5716fa789a0b2598cce9a413551f5aed6198f514bd8e4857da4f3609e2/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.98s/SmartTube_stable_30.98_x86.apk">SmartTube_stable_30.98_x86.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0/detection"><img src="https://badges.cssnr.com/vt/id/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0?start=green&end=red&n=8&v=1772626992" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/26e37abedec9a5524924c1ab11de3d1e8903ab8f4a48c17a06b50f280112e3b0/detection">View Report</a></td>
-</tr>
-</tbody></table>]]></content:encoded>
-      <category>yuliskov</category>
-      <category>SmartTube</category>
-      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
     </item>    <item>
       <title>yuliskov/SmartTube 30.98s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/30.98s</link>
@@ -829,60 +785,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
-      <title>novuhq/novu @novu/react-native@v3.14.1</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.1</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.1</guid>
-      <pubDate>Fri, 27 Feb 2026 16:04:33 GMT</pubDate>
-      <description>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</description>
-      <content:encoded><![CDATA[<p>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
-      <title>novuhq/novu @novu/nextjs@v3.14.1</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.1</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.1</guid>
-      <pubDate>Fri, 27 Feb 2026 16:04:33 GMT</pubDate>
-      <description>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</description>
-      <content:encoded><![CDATA[<p>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
-      <title>novuhq/novu @novu/react@v3.14.1</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.1</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.1</guid>
-      <pubDate>Fri, 27 Feb 2026 16:04:32 GMT</pubDate>
-      <description>🚀 Features js, react: Socket type explicit option ( #10117 ) ❤️ Thank You Dima Grossman @scopsy</description>
-      <content:encoded><![CDATA[<h3>🚀 Features</h3>
-<ul>
-<li><strong>js, react:</strong> Socket type explicit option (<a href="https://github.com/novuhq/novu/pull/10117">#10117</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-</ul>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
-      <title>novuhq/novu @novu/js@v3.14.1</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.1</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.1</guid>
-      <pubDate>Fri, 27 Feb 2026 16:04:31 GMT</pubDate>
-      <description>🚀 Features js, react: Socket type explicit option ( #10117 ) ❤️ Thank You Dima Grossman @scopsy</description>
-      <content:encoded><![CDATA[<h3>🚀 Features</h3>
-<ul>
-<li><strong>js, react:</strong> Socket type explicit option (<a href="https://github.com/novuhq/novu/pull/10117">#10117</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-</ul>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
       <title>multiboxlabs/flow-browser v0.9.0</title>
       <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.9.0</link>
       <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.9.0</guid>
@@ -914,89 +816,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>multiboxlabs</category>
       <category>flow-browser</category>
       <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>novuhq/novu v3.14.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/v3.14.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.14.0</guid>
-      <pubDate>Wed, 25 Feb 2026 06:01:44 GMT</pubDate>
-      <description>API 🚀 Features api-service: monthly usage digest email fixes NV-6933 ( #10042 ) api-service: Preference webhook subscriber ID fixes NV-7110 ( #10016 ) api-service: refactor clickHouse to use in-memory batches ( #9904 ) api-service: finalize table migration and implement workflow run count analyt...</description>
-      <content:encoded><![CDATA[<h2>API</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service:</strong> monthly usage digest email fixes NV-6933 (<a href="https://github.com/novuhq/novu/pull/10042">#10042</a>)</li>
-<li><strong>api-service:</strong> Preference webhook subscriber ID fixes NV-7110 (<a href="https://github.com/novuhq/novu/pull/10016">#10016</a>)</li>
-<li><strong>api-service:</strong> refactor clickHouse to use in-memory batches (<a href="https://github.com/novuhq/novu/pull/9904">#9904</a>)</li>
-<li><strong>api-service:</strong> finalize table migration and implement workflow run count analytics (<a href="https://github.com/novuhq/novu/pull/9967">#9967</a>)</li>
-<li><strong>api-service:</strong> Organization switch flag (<a href="https://github.com/novuhq/novu/pull/9981">#9981</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>api-service:</strong> Workflow sync environment check (<a href="https://github.com/novuhq/novu/pull/10064">#10064</a>)</li>
-<li><strong>api-service:</strong> Environment ID organization check (<a href="https://github.com/novuhq/novu/pull/10063">#10063</a>)</li>
-<li><strong>api-service:</strong> Mongo duplicate error handling (<a href="https://github.com/novuhq/novu/pull/10040">#10040</a>)</li>
-<li><strong>dashboard:</strong> enhance workflow step control management with override functionality (<a href="https://github.com/novuhq/novu/pull/10029">#10029</a>)</li>
-<li><strong>api-service:</strong> add support of dot in workflow id fixes NV-7092 (<a href="https://github.com/novuhq/novu/pull/9974">#9974</a>)</li>
-<li><strong>worker:</strong> deduplicate delivered dl status (<a href="https://github.com/novuhq/novu/pull/9966">#9966</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Pawan Jain</li>
-</ul>
-<h2>Worker</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service:</strong> refactor clickHouse to use in-memory batches (<a href="https://github.com/novuhq/novu/pull/9904">#9904</a>)</li>
-<li><strong>api-service:</strong> Organization switch flag (<a href="https://github.com/novuhq/novu/pull/9981">#9981</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>dashboard:</strong> Forward readonly and disabled to VariableInput (<a href="https://github.com/novuhq/novu/pull/10048">#10048</a>)</li>
-<li><strong>worker:</strong> deduplicate delivered dl status (<a href="https://github.com/novuhq/novu/pull/9966">#9966</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-</ul>
-<h2>Dashboard</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service:</strong> monthly usage digest email fixes NV-6933 (<a href="https://github.com/novuhq/novu/pull/10042">#10042</a>)</li>
-<li><strong>dashboard:</strong> Dashboard sender inputs autocomplete (<a href="https://github.com/novuhq/novu/pull/9993">#9993</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>dashboard:</strong> Integration store provider crash fixes NV-7120 (<a href="https://github.com/novuhq/novu/pull/10051">#10051</a>)</li>
-<li><strong>api-service:</strong> payload parsing (<a href="https://github.com/novuhq/novu/pull/10055">#10055</a>)</li>
-<li><strong>dashboard:</strong> Email layout name saving issue fixes NV-7084 (<a href="https://github.com/novuhq/novu/pull/10045">#10045</a>)</li>
-<li><strong>dashboard:</strong> Forward readonly and disabled to VariableInput (<a href="https://github.com/novuhq/novu/pull/10048">#10048</a>)</li>
-<li><strong>dashboard:</strong> Allow null controlValues and update restore behavior fixrs NV-7112 fixes NV-7112 (<a href="https://github.com/novuhq/novu/pull/10037">#10037</a>)</li>
-<li><strong>dashboard:</strong> enhance workflow step control management with override functionality (<a href="https://github.com/novuhq/novu/pull/10029">#10029</a>)</li>
-<li><strong>dashboard:</strong> Allow status toggle in channel preferences fixes NV-7113 (<a href="https://github.com/novuhq/novu/pull/10027">#10027</a>)</li>
-<li><strong>dashboard:</strong> Override defaults toggle save fixes NV-7112 (<a href="https://github.com/novuhq/novu/pull/10018">#10018</a>)</li>
-<li><strong>dashboard:</strong> email step block editor content not saved after refresh fixes NV-7106 (<a href="https://github.com/novuhq/novu/pull/10013">#10013</a>)</li>
-<li><strong>dashboard:</strong> Templates widget non-dev dashboard fixes NV-7107 (<a href="https://github.com/novuhq/novu/pull/10011">#10011</a>)</li>
-<li><strong>api-service:</strong> add support of dot in workflow id fixes NV-7092 (<a href="https://github.com/novuhq/novu/pull/9974">#9974</a>)</li>
-<li><strong>dashboard:</strong> streamline initial data setup in TestWorkflowDrawer component fixes NV-7096 (<a href="https://github.com/novuhq/novu/pull/9996">#9996</a>)</li>
-<li><strong>worker:</strong> deduplicate delivered dl status (<a href="https://github.com/novuhq/novu/pull/9966">#9966</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Pawan Jain</li>
-</ul>
-<h2>WS</h2>
-<p>This was a version bump only for @novu/ws to align it with other projects, there were no code changes.</p>
-<h2>🐳 Community Docker Images</h2>
-<p>Community Docker images are now available for v3.13.0, making it easy to deploy in containerized environments. </p>
-<h2>📦 SDKs</h2>
-<p>SDKs(Typescript, Golang, Python, PHP and C-Sharp) for v3.13.0 are available to help you integrate with the platform using your preferred programming language. These SDKs are maintained alongside the core release and community images to ensure compatibility and a smooth upgrade experience.</p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
     </item>    <item>
       <title>nodejs/node v25.7.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.7.0</link>
@@ -1304,52 +1123,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
     </item>    <item>
-      <title>yuliskov/SmartTube 30.90s</title>
-      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.90s</link>
-      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.90s</guid>
-      <pubDate>Mon, 23 Feb 2026 13:17:04 GMT</pubDate>
-      <description>Subscriptions order fix New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123) Added new key remapping: fast forward -&amp;gt; toggle s...</description>
-      <content:encoded><![CDATA[<ul>
-<li>Subscriptions order fix</li>
-<li>New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123)</li>
-<li>Added new key remapping: fast forward -&gt; toggle speed, S key -&gt; toggle speed</li>
-<li>Added the ability to decrease CPU load during &#39;Increased playback speed&#39;. To decrease cpu loading, uncheck this Settings/Player/Misc/Audio stretching. The downside is very ugly voices. (thanks ragavpr)</li>
-<li>Fixed search on a channel and fixed sorting channel videos by latest, popularity, etc</li>
-</ul>
-<h2>🛡️ VirusTotal Analysis</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Build Variant</th>
-<th align="left">VirusTotal Status</th>
-<th align="left">Detailed Report</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_arm64-v8a.apk">SmartTube_stable_30.90_arm64-v8a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection"><img src="https://badges.cssnr.com/vt/id/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_armeabi-v7a.apk">SmartTube_stable_30.90_armeabi-v7a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection"><img src="https://badges.cssnr.com/vt/id/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_universal.apk">SmartTube_stable_30.90_universal.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection"><img src="https://badges.cssnr.com/vt/id/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_x86.apk">SmartTube_stable_30.90_x86.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection"><img src="https://badges.cssnr.com/vt/id/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection">View Report</a></td>
-</tr>
-</tbody></table>]]></content:encoded>
-      <category>yuliskov</category>
-      <category>SmartTube</category>
-      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
       <title>zen-browser/desktop 1.18.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.10b</guid>
@@ -1541,67 +1314,6 @@ export default buildConfig({
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
-      <title>novuhq/novu @novu/react-native@v3.14.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react-native%40v3.14.0</guid>
-      <pubDate>Thu, 12 Feb 2026 15:39:19 GMT</pubDate>
-      <description>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</description>
-      <content:encoded><![CDATA[<p>This was a version bump only for @novu/react-native to align it with other projects, there were no code changes.</p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
-      <title>novuhq/novu @novu/nextjs@v3.14.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/nextjs%40v3.14.0</guid>
-      <pubDate>Thu, 12 Feb 2026 15:39:18 GMT</pubDate>
-      <description>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</description>
-      <content:encoded><![CDATA[<p>This was a version bump only for @novu/nextjs to align it with other projects, there were no code changes.</p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
-      <title>novuhq/novu @novu/react@v3.14.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/react%40v3.14.0</guid>
-      <pubDate>Thu, 12 Feb 2026 15:39:17 GMT</pubDate>
-      <description>🚀 Features js, react, api-service: In-app notifications timeframe filter fixes NV-7045 ( #9873 ) 🩹 Fixes api-service: add support of dot in workflow id fixes NV-7092 ( #9974 ) ❤️ Thank You Dima Grossman @scopsy Pawan Jain</description>
-      <content:encoded><![CDATA[<h3>🚀 Features</h3>
-<ul>
-<li><strong>js, react, api-service:</strong> In-app notifications timeframe filter fixes NV-7045 (<a href="https://github.com/novuhq/novu/pull/9873">#9873</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>api-service:</strong> add support of dot in workflow id fixes NV-7092 (<a href="https://github.com/novuhq/novu/pull/9974">#9974</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-<li>Pawan Jain</li>
-</ul>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
-      <title>novuhq/novu @novu/js@v3.14.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/%40novu/js%40v3.14.0</guid>
-      <pubDate>Thu, 12 Feb 2026 15:39:16 GMT</pubDate>
-      <description>🚀 Features js, react, api-service: In-app notifications timeframe filter fixes NV-7045 ( #9873 ) js: allow passing socket options to the novu js configuration ( #9896 ) ❤️ Thank You Dima Grossman @scopsy Gabriel Pan Gantes @Gabrielpanga</description>
-      <content:encoded><![CDATA[<h3>🚀 Features</h3>
-<ul>
-<li><strong>js, react, api-service:</strong> In-app notifications timeframe filter fixes NV-7045 (<a href="https://github.com/novuhq/novu/pull/9873">#9873</a>)</li>
-<li><strong>js:</strong> allow passing socket options to the novu js configuration (<a href="https://github.com/novuhq/novu/pull/9896">#9896</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-<li>Gabriel Pan Gantes @Gabrielpanga</li>
-</ul>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
-    </item>    <item>
       <title>atuinsh/desktop v0.2.20</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.20</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.20</guid>
@@ -1777,135 +1489,6 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>novuhq/novu v3.13.0</title>
-      <link>https://github.com/novuhq/novu/releases/tag/v3.13.0</link>
-      <guid isPermaLink="true">https://github.com/novuhq/novu/releases/tag/v3.13.0</guid>
-      <pubDate>Thu, 05 Feb 2026 10:20:44 GMT</pubDate>
-      <description>API 🚀 Features api-service, worker, dashboard: custom sender name in email step on new dashboard fixes NV-6950 ( #9962 ) js, react, api-service: In-app notifications timeframe filter fixes NV-7045 ( #9873 ) api-service, dashboard: Better auth integration DRAFT ( #9711 ) api-service,js: ensure ba...</description>
-      <content:encoded><![CDATA[<h2>API</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service, worker, dashboard:</strong> custom sender name in email step on new dashboard fixes NV-6950 (<a href="https://github.com/novuhq/novu/pull/9962">#9962</a>)</li>
-<li><strong>js, react, api-service:</strong> In-app notifications timeframe filter fixes NV-7045 (<a href="https://github.com/novuhq/novu/pull/9873">#9873</a>)</li>
-<li><strong>api-service, dashboard:</strong> Better auth integration DRAFT (<a href="https://github.com/novuhq/novu/pull/9711">#9711</a>)</li>
-<li><strong>api-service,js:</strong> ensure backwards compatibility for context prefs fixes NV-7072 (<a href="https://github.com/novuhq/novu/pull/9890">#9890</a>)</li>
-<li><strong>dashboard:</strong> add context filter to relevant screens fixes NV-7067 (<a href="https://github.com/novuhq/novu/pull/9886">#9886</a>)</li>
-<li><strong>api-service:</strong> enhance platform notification usage with caching and detailed diagnostics (<a href="https://github.com/novuhq/novu/pull/9859">#9859</a>)</li>
-<li><strong>api-service,worker:</strong> context aware schedule fixes NV-7064 (<a href="https://github.com/novuhq/novu/pull/9865">#9865</a>)</li>
-<li><strong>api-service:</strong> context bound global preferences fixes NV-6981 (<a href="https://github.com/novuhq/novu/pull/9856">#9856</a>)</li>
-<li><strong>api-service:</strong> context aware subscription preferences admin API fixes NV-7059 (<a href="https://github.com/novuhq/novu/pull/9855">#9855</a>)</li>
-<li><strong>api-service:</strong> enhance platform notification usage with clickhouse support (<a href="https://github.com/novuhq/novu/pull/9849">#9849</a>)</li>
-<li><strong>api-service,js:</strong> context bound topic subscriptions fixes NV-6980 (<a href="https://github.com/novuhq/novu/pull/9840">#9840</a>)</li>
-<li><strong>api-service:</strong> refactor usage queries to use materialized views (<a href="https://github.com/novuhq/novu/pull/9824">#9824</a>)</li>
-<li><strong>api-service:</strong> context bound preferences (admin facing API) fixes NV-6974 (<a href="https://github.com/novuhq/novu/pull/9821">#9821</a>)</li>
-<li><strong>api-service,worker:</strong> context bound preferences (inbox facing flow) fixes NV-6974 (<a href="https://github.com/novuhq/novu/pull/9816">#9816</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>api-service:</strong> update traces schema to adjust date filter for created at condition (<a href="https://github.com/novuhq/novu/pull/9952">#9952</a>)</li>
-<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
-<li><strong>api-service:</strong> add compatibility interceptor to inbox controller (<a href="https://github.com/novuhq/novu/pull/9922">#9922</a>)</li>
-<li><strong>api-service:</strong> Message response payload types (<a href="https://github.com/novuhq/novu/pull/9913">#9913</a>)</li>
-<li><strong>api-service:</strong> Update includeInactiveChannels defaults in subscribers v1 controllers (<a href="https://github.com/novuhq/novu/pull/9889">#9889</a>)</li>
-<li><strong>api-service:</strong> Make billing address required fixes NV-7065 (<a href="https://github.com/novuhq/novu/pull/9872">#9872</a>)</li>
-<li><strong>api-service:</strong> Subscriber inactive channels default (<a href="https://github.com/novuhq/novu/pull/9875">#9875</a>)</li>
-<li><strong>api-service:</strong> decode html entities in subject and maily html fixes NV-7039 (<a href="https://github.com/novuhq/novu/pull/9842">#9842</a>)</li>
-<li><strong>api-service:</strong> Intercom hash null data error fixes NV-7061 (<a href="https://github.com/novuhq/novu/pull/9847">#9847</a>)</li>
-<li><strong>api-service:</strong> Idempotency cache key user API fixes NV-7060 (<a href="https://github.com/novuhq/novu/pull/9845">#9845</a>)</li>
-<li><strong>test:</strong> ensure indexes created before e2e tests (<a href="https://github.com/novuhq/novu/pull/9839">#9839</a>)</li>
-<li><strong>api-service:</strong> Workflow schema duplication fixes NV-7040 (<a href="https://github.com/novuhq/novu/pull/9830">#9830</a>)</li>
-<li><strong>api-service, dashboard:</strong> show preference updatedAt instead of workflow updatedAt (<a href="https://github.com/novuhq/novu/pull/9798">#9798</a>)</li>
-<li><strong>api-service,dal:</strong> inbox mark as and actions return workflow, subscriber information fixes NV-7024 (<a href="https://github.com/novuhq/novu/pull/9799">#9799</a>)</li>
-</ul>
-<h3>🔥 Performance</h3>
-<ul>
-<li><strong>api:</strong> parallelize workflow step processing and optimize DB queries fixes NV-7016 (<a href="https://github.com/novuhq/novu/pull/9750">#9750</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Adam Chmara @ChmaraX</li>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Himanshu Garg @merrcury</li>
-<li>Paweł Tymczuk @LetItRock</li>
-</ul>
-<h2>Dashboard</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service, worker, dashboard:</strong> custom sender name in email step on new dashboard fixes NV-6950 (<a href="https://github.com/novuhq/novu/pull/9962">#9962</a>)</li>
-<li><strong>api-service, dashboard:</strong> Better auth integration DRAFT (<a href="https://github.com/novuhq/novu/pull/9711">#9711</a>)</li>
-<li><strong>dashboard:</strong> add context filter to relevant screens fixes NV-7067 (<a href="https://github.com/novuhq/novu/pull/9886">#9886</a>)</li>
-<li><strong>api-service:</strong> context aware subscription preferences admin API fixes NV-7059 (<a href="https://github.com/novuhq/novu/pull/9855">#9855</a>)</li>
-<li><strong>dashboard:</strong> Add lookback window option to digest delay tabs fixes NV-7002 (<a href="https://github.com/novuhq/novu/pull/9832">#9832</a>)</li>
-<li><strong>dashboard:</strong> Persist pagination in list pages fixes NV-6997 (<a href="https://github.com/novuhq/novu/pull/9702">#9702</a>)</li>
-<li><strong>dashboard:</strong> enhance organization dropdown and loading states for self-hosted users (<a href="https://github.com/novuhq/novu/pull/9808">#9808</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>dashboard:</strong> context binding when adding subscribers to topics (<a href="https://github.com/novuhq/novu/pull/9959">#9959</a>)</li>
-<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
-<li><strong>dashboard:</strong> Last subscriber removal issue fixes NV-7079 (<a href="https://github.com/novuhq/novu/pull/9909">#9909</a>)</li>
-<li><strong>dashboard:</strong> activity filters overflow (<a href="https://github.com/novuhq/novu/pull/9887">#9887</a>)</li>
-<li><strong>dashboard:</strong> Billing page view role for billing tab fixes NV-7046 (<a href="https://github.com/novuhq/novu/pull/9871">#9871</a>)</li>
-<li><strong>dashboard:</strong> Workflow runs loading state usage page (<a href="https://github.com/novuhq/novu/pull/9868">#9868</a>)</li>
-<li><strong>dashboard:</strong> DialogTitle requirement error dashboard fixes NV-7062 (<a href="https://github.com/novuhq/novu/pull/9846">#9846</a>)</li>
-<li><strong>dashboard:</strong> create workflow from the template (<a href="https://github.com/novuhq/novu/pull/9837">#9837</a>)</li>
-<li><strong>api-service, dashboard:</strong> show preference updatedAt instead of workflow updatedAt (<a href="https://github.com/novuhq/novu/pull/9798">#9798</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Adam Chmara @ChmaraX</li>
-<li>Dima Grossman @scopsy</li>
-<li>Himanshu Garg @merrcury</li>
-<li>Paweł Tymczuk @LetItRock</li>
-</ul>
-<h2>Worker</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li><strong>api-service, worker, dashboard:</strong> custom sender name in email step on new dashboard fixes NV-6950 (<a href="https://github.com/novuhq/novu/pull/9962">#9962</a>)</li>
-<li><strong>api-service,worker:</strong> context aware schedule fixes NV-7064 (<a href="https://github.com/novuhq/novu/pull/9865">#9865</a>)</li>
-<li><strong>api-service:</strong> refactor usage queries to use materialized views (<a href="https://github.com/novuhq/novu/pull/9824">#9824</a>)</li>
-<li><strong>api-service:</strong> Inbound webhook message fields add stepId fixes NV-6996 (<a href="https://github.com/novuhq/novu/pull/9827">#9827</a>)</li>
-<li><strong>worker:</strong> Job queue environment cache (<a href="https://github.com/novuhq/novu/pull/9817">#9817</a>)</li>
-<li><strong>api-service,worker:</strong> context bound preferences (inbox facing flow) fixes NV-6974 (<a href="https://github.com/novuhq/novu/pull/9816">#9816</a>)</li>
-<li><strong>worker:</strong> Subscriber job bound lru cache (<a href="https://github.com/novuhq/novu/pull/9814">#9814</a>)</li>
-<li><strong>worker:</strong> Add LRU cache for workflow template fetching (<a href="https://github.com/novuhq/novu/pull/9786">#9786</a>)</li>
-</ul>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>worker:</strong> error message formatting in standard worker (<a href="https://github.com/novuhq/novu/pull/9958">#9958</a>)</li>
-<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
-<li><strong>worker:</strong> remove subscriber-cache header (<a href="https://github.com/novuhq/novu/pull/9880">#9880</a>)</li>
-<li><strong>worker:</strong> disable resolving external css from the link tags (<a href="https://github.com/novuhq/novu/pull/9878">#9878</a>)</li>
-<li><strong>worker:</strong> fix worker build (<a href="https://github.com/novuhq/novu/commit/2286677047">2286677047</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Adam Chmara @ChmaraX</li>
-<li>Dima Grossman @scopsy</li>
-<li>George Djabarov @djabarovgeorge</li>
-<li>Himanshu Garg @merrcury</li>
-<li>Paweł Tymczuk @LetItRock</li>
-</ul>
-<h2>WS</h2>
-<h3>🩹 Fixes</h3>
-<ul>
-<li><strong>api,worker,ws,dashboard:</strong> python vulnerability fix and enterprise auth (<a href="https://github.com/novuhq/novu/pull/9920">#9920</a>)</li>
-<li><strong>ws:</strong> Sentry fetchsockets timeout filter (<a href="https://github.com/novuhq/novu/pull/9884">#9884</a>)</li>
-</ul>
-<h3>❤️ Thank You</h3>
-<ul>
-<li>Dima Grossman @scopsy</li>
-<li>Himanshu Garg @merrcury</li>
-</ul>
-<h2>🐳 Community Docker Images</h2>
-<p>Community Docker images are now available for v3.13.0, making it easy to deploy in containerized environments. This release features 25% smaller compressed image sizes, improving download times and storage efficiency.</p>
-<h2>📦 SDKs</h2>
-<p>SDKs(Typescript, Golang, Python, PHP and C-Sharp) for v3.13.0 are available to help you integrate with the platform using your preferred programming language. These SDKs are maintained alongside the core release and community images to ensure compatibility and a smooth upgrade experience.</p>]]></content:encoded>
-      <category>novuhq</category>
-      <category>novu</category>
-      <source url="https://github.com/novuhq/novu">novuhq/novu</source>
     </item>    <item>
       <title>Kong/insomnia core@12.3.1</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.3.1</link>
