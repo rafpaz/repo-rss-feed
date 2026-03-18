@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 18 Mar 2026 00:35:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 03:54:31 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>yuliskov/SmartTube 31.17s</title>
@@ -252,35 +252,6 @@
       <category>codex</category>
       <source url="https://github.com/openai/codex">openai/codex</source>
     </item>    <item>
-      <title>zen-browser/desktop 1.19.3b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.3b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.3b</guid>
-      <pubDate>Mon, 16 Mar 2026 11:11:07 GMT</pubDate>
-      <description>Zen Stable Release New Features Holding ctrl/cmd while hovering &amp;#39;Reset pinned tab&amp;#39; will now duplicate that tab in the background Added &amp;#39;Unload all spaces except current&amp;#39; context menu item to the space switcher Fixes Split views will now hide when toggling fullscreen mode. Other mi...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>New Features</h2>
-<ul>
-<li>Holding ctrl/cmd while hovering &#39;Reset pinned tab&#39; will now duplicate that tab in the background</li>
-<li>Added &#39;Unload all spaces except current&#39; context menu item to the space switcher</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Split views will now hide when toggling fullscreen mode.</li>
-<li>Other minor bug fixes and improvements.</li>
-<li>Improved accessibility for split view controls.</li>
-<li>Fixed opening a new window making all tabs appear as &#39;New Tab&#39; until they are selected.</li>
-<li>Fixed chrome hide toolbar flag not being respected for new windows. (<a href="https://github.com/zen-browser/desktop/issues/12736">#12736</a>)</li>
-<li>Others fixes and quality of life improvements</li>
-</ul>
-<h2>Changes</h2>
-<ul>
-<li>Pressing CTRL+T again while the urlbar is open will now close it.</li>
-<li>Bookmarks bar will now stay visible on fullscreen mode.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
       <title>yuliskov/SmartTube 31.08s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.08s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.08s</guid>
@@ -323,28 +294,6 @@
       <category>yuliskov</category>
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.2b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.2b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.2b</guid>
-      <pubDate>Wed, 11 Mar 2026 10:00:42 GMT</pubDate>
-      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 148.0.2 Fixes Fixed some RSS live folders not working with certain feeds. ( #12685 ) Improved performance for spaces, specially when switching between them. ( #11851 ) Other minor bug fixes and improvements.</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-19/">Various security fixes</a></p>
-<h2>New Features</h2>
-<ul>
-<li>Updated to Firefox 148.0.2</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed some RSS live folders not working with certain feeds. (<a href="https://github.com/zen-browser/desktop/issues/12685">#12685</a>)</li>
-<li>Improved performance for spaces, specially when switching between them. (<a href="https://github.com/zen-browser/desktop/issues/11851">#11851</a>)</li>
-<li>Other minor bug fixes and improvements.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>Kong/insomnia core@12.4.0</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</link>
@@ -453,22 +402,6 @@
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.1b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.1b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.1b</guid>
-      <pubDate>Wed, 04 Mar 2026 14:41:49 GMT</pubDate>
-      <description>Zen Stable Release Fixes Fixed certain popups on MacOS appearing with no background color, making them invisible. Fixed Github Pull Request live folders not fetching the pull request data correctly. Other minor bug fixes and improvements.</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed certain popups on MacOS appearing with no background color, making them invisible.</li>
-<li>Fixed Github Pull Request live folders not fetching the pull request data correctly.</li>
-<li>Other minor bug fixes and improvements.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>yuliskov/SmartTube 30.98s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/30.98s</link>
@@ -584,44 +517,6 @@
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19b</guid>
-      <pubDate>Sat, 28 Feb 2026 21:30:35 GMT</pubDate>
-      <description>Zen Stable Release This update includes a new feature that allows you to automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &amp;#39;Live Folder&amp;#39;. Let us know what other live folder types you wo...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<p>This update includes a new feature that allows you to automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &#39;Live Folder&#39;.</p>
-<p>Let us know what other live folder types you would like to see in the future!</p>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-13/">Various security fixes</a></p>
-<h2>New Features</h2>
-<ul>
-<li>Updated to Firefox 148.0</li>
-<li>Added live folders. Automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &#39;Live Folder&#39;.</li>
-<li>Dragging a tab on top of another tab for one second will now allow the option to split those tabs.</li>
-<li>MacOS users now get to use native popover UI, making the experience more consistent with the rest of the operating system.</li>
-<li>Improved the icon picker for folders, tabs, etc. It now let you select icons without closing the picker.</li>
-<li>Pressing the &quot;Un-split&quot; button while holding shift will not focus the un-split tab, allowing you to stay in the current split view.</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed private mode windows having dark text on dark background in the sidebar.</li>
-<li>Fixed popup windows not showing at all on certain occasions.</li>
-<li>Other bug fixes and performance improvements.</li>
-</ul>
-<h2>Theme Changes</h2>
-<ul>
-<li>Removed the <code>-zen-window-transform-origin</code> CSS attribute as it is not needed anymore</li>
-</ul>
-<h2>Changes</h2>
-<ul>
-<li>Bluring the window will no longer close the urlbar if its open.</li>
-<li>Emojis at the space switcher will now be larger and more visible.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.78.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.78.0</link>
@@ -826,38 +721,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.9.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.9.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.9.0</guid>
-      <pubDate>Wed, 25 Feb 2026 14:36:37 GMT</pubDate>
-      <description>What&amp;#39;s New New Tab Architecture is out! It will help us ship more stable features faster. Please help test it and report any bugs you find. Window Sizes &amp;amp; Positions are now saved, which means you won&amp;#39;t have to resize everything again on launch! Fixes Linux launch issue has been resolv...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s New</h2>
-<ul>
-<li>New Tab Architecture is out! It will help us ship more stable features faster. Please help test it and report any bugs you find.</li>
-<li>Window Sizes &amp; Positions are now saved, which means you won&#39;t have to resize everything again on launch!</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Linux launch issue has been resolved! There should not be any issues opening the app now.</li>
-<li>Fixed Google One Tap not appearing</li>
-</ul>
-<h2>Improvements</h2>
-<ul>
-<li>Bump Chromium Version (142 -&gt; 144)</li>
-<li>Improved Picture in Picture Window</li>
-</ul>
-<hr>
-<h2>What&#39;s Changed</h2>
-<ul>
-<li>fix: linux sharp issue by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/183">https://github.com/MultiboxLabs/flow-browser/pull/183</a></li>
-<li>feat: rewritten tab system by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/188">https://github.com/MultiboxLabs/flow-browser/pull/188</a></li>
-<li>Bump Electron to v40.1.0+wvcus [NEXT MAJOR] by @github-actions[bot] in <a href="https://github.com/MultiboxLabs/flow-browser/pull/174">https://github.com/MultiboxLabs/flow-browser/pull/174</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.8.6...v0.9.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.8.6...v0.9.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
     </item>    <item>
       <title>nodejs/node v25.7.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.7.0</link>
@@ -1165,48 +1028,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
     </item>    <item>
-      <title>zen-browser/desktop 1.18.10b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.10b</guid>
-      <pubDate>Sat, 21 Feb 2026 12:37:03 GMT</pubDate>
-      <description>Zen Stable Release New Features Improved greatly the performance for Linux users by removing bottom window rounded corners, which will be added once the core issue has been resolved upstream. To enable them back, turn &amp;#39;widget.gtk.rounded-bottom-corners.enabled&amp;#39; to true in about:config. Ad...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>New Features</h2>
-<ul>
-<li>Improved greatly the performance for Linux users by removing bottom window rounded corners, which will be added once the core issue has been resolved upstream. To enable them back, turn &#39;widget.gtk.rounded-bottom-corners.enabled&#39; to true in about:config.</li>
-<li>Added more automatic recovery options when updating or restarting zen, to prevent tab loss.</li>
-<li>Fixed some tabs becoming &#39;New Tabs&#39; after focusing them from different windows</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Stability and performance improvements related to window sync and session restore.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.9b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.9b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.9b</guid>
-      <pubDate>Thu, 19 Feb 2026 20:35:34 GMT</pubDate>
-      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 147.0.4 Appimage .desktop file now includes &amp;#39;X-AppImage-Version&amp;#39; metadata for better integration with application launchers and system tools. Linux desktop files will now include an option to open a new bla...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-10/">Various security fixes</a></p>
-<h2>New Features</h2>
-<ul>
-<li>Updated to Firefox 147.0.4</li>
-<li>Appimage .desktop file now includes &#39;X-AppImage-Version&#39; metadata for better integration with application launchers and system tools.</li>
-<li>Linux desktop files will now include an option to open a new blank window from the taskbar</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Stability and performance improvements related to window sync and session restore.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
       <title>payloadcms/payload v3.77.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.77.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.77.0</guid>
@@ -1301,61 +1122,6 @@ export default buildConfig({
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
-      <title>zen-browser/desktop 1.18.8b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.8b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.8b</guid>
-      <pubDate>Mon, 16 Feb 2026 12:52:55 GMT</pubDate>
-      <description>Zen Stable Release Fixes Fixed back / forward buttons changing the page&amp;#39;s history instead of switching spaces ( #9157 ) Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly Other minor bug fixes and improvements</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed back / forward buttons changing the page&#39;s history instead of switching spaces (<a href="https://github.com/zen-browser/desktop/issues/9157">#9157</a>)</li>
-<li>Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly</li>
-<li>Other minor bug fixes and improvements</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.7b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.7b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.7b</guid>
-      <pubDate>Sat, 14 Feb 2026 12:08:22 GMT</pubDate>
-      <description>Zen Stable Release Fixes Fixed accessibility issues with the workspace switcher and other buttons Other session restore fixes and improvements</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed accessibility issues with the workspace switcher and other buttons</li>
-<li>Other session restore fixes and improvements</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.6b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.6b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.6b</guid>
-      <pubDate>Fri, 13 Feb 2026 09:38:37 GMT</pubDate>
-      <description>Zen Stable Release New Features Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode. Zen will now follow the XDG Base Directory Specification for storing its configuration and data files. Thi...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>New Features</h2>
-<ul>
-<li>Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode.</li>
-<li>Zen will now follow the XDG Base Directory Specification for storing its configuration and data files. This means that on Linux, configuration files will be stored in <code>~/.config/zen</code>. Note that compatibility with the old configuration directory (<code>~/.zen</code>) will be enabled if the directory exists.</li>
-<li>Dragging a tab to the center of the window to create a split will now give the option to split on top or below.</li>
-<li>When typing directly an url or domain, a second search result will appear with the option to search for the url or domain on your selected search engine.</li>
-<li>Added a &#39;--blank-window&#39; command line argument to open a blank window without pinned tabs, spaces, etc.</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Zen will now restore unpinned tabs after a crash, even if the &#39;Restore previous session&#39; setting is disabled.</li>
-<li>Fixed syncing bookmarks with your Mozilla account not working correctly.</li>
-<li>Other quality of life improvements and bug fixes.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
       <title>atuinsh/desktop v0.2.20</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.20</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.20</guid>
@@ -1426,27 +1192,6 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.5b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.5b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.5b</guid>
-      <pubDate>Fri, 06 Feb 2026 21:42:55 GMT</pubDate>
-      <description>Zen Stable Release This update includes a new setting to allow users who didn&amp;#39;t like the window sync feature but still want to sync their pinned tabs across windows in a workspace to do so. Make sure window sync is enabled in about:config for this feature to work. New Features Added &amp;#39;Sync...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<p>This update includes a new setting to allow users who didn&#39;t like the window sync feature but still want to sync their pinned tabs across windows in a workspace to do so. Make sure window sync is enabled in about:config for this feature to work.</p>
-<h2>New Features</h2>
-<ul>
-<li>Added <u>&#39;Sync only pinned tabs in workspaces&#39;</u> option to the &#39;Tab Management&#39; settings so that only pinned tabs will be synced across windows in a workspace. This is useful for users who want to keep their pinned tabs consistent across windows while allowing unpinned tabs to be different in each window.</li>
-<li>Updated to Firefox 147.0.3</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed an issue when drag and dropping tabs from normal windows to blank windows</li>
-<li>Fixed an issue on Windows systems with a large number of fonts installed where parts of the UI (tabs, menus, and Settings) could display garbled characters or symbols instead of readable text.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.75.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.75.0</link>
@@ -1545,53 +1290,6 @@ export default buildConfig({
       <category>Kong</category>
       <category>insomnia</category>
       <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
-    </item>    <item>
-      <title>heyman/heynote v2.8.0</title>
-      <link>https://github.com/heyman/heynote/releases/tag/v2.8.0</link>
-      <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.8.0</guid>
-      <pubDate>Wed, 04 Feb 2026 14:16:53 GMT</pubDate>
-      <description>What&amp;#39;s Changed Images Heynote now supports inline images. You can paste images from the clipboard or drag and drop image files. Images can be selected and resized directly in the editor, and it&amp;#39;s quick and easy to put an image back on the system clipboard. Drawing on images Heynote now in...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<h3>Images</h3>
-<p>Heynote now supports inline images. You can paste images from the clipboard or drag and drop image files. 
-Images can be selected and resized directly in the editor, and it&#39;s quick and easy to put an image back 
-on the system clipboard.</p>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://heynote.com/img/dark/images.png">
-  <img src="https://heynote.com/img/light/images.png" width="400" alt="New image feature">
-</picture>
-
-<h3>Drawing on images</h3>
-<p>Heynote now includes a lightweight drawing tool for adding quick, freehand annotations on top of images.</p>
-<h3>Other changes</h3>
-<ul>
-<li>Add syntax highlighting for Math blocks</li>
-<li>New lines in a Plaintext, Math and SQL blocks now inherits the indentation from the previous line
-(other languages should already have this behaviour for new lines)</li>
-<li>Add support for <a href="https://mermaid.js.org/">Mermaid</a> blocks</li>
-<li>Fix issue not being able to record the Enter key when creating custom key bindings</li>
-</ul>
-<h2>Merged PRs</h2>
-<ul>
-<li>Make new lines in Plaintext and Math blocks and inherit the indentation from the previous line by @heyman in <a href="https://github.com/heyman/heynote/pull/426">https://github.com/heyman/heynote/pull/426</a></li>
-<li>Add Mermaid language support by @LSauce in <a href="https://github.com/heyman/heynote/pull/407">https://github.com/heyman/heynote/pull/407</a></li>
-<li>Add syntax highlighting for Math blocks by @heyman in <a href="https://github.com/heyman/heynote/pull/427">https://github.com/heyman/heynote/pull/427</a></li>
-<li>Use official version of @codemirror/search by @heyman in <a href="https://github.com/heyman/heynote/pull/428">https://github.com/heyman/heynote/pull/428</a></li>
-<li>Add support for images by @heyman in <a href="https://github.com/heyman/heynote/pull/429">https://github.com/heyman/heynote/pull/429</a></li>
-<li>Downgrade Electron to 39.3.0 by @heyman in <a href="https://github.com/heyman/heynote/pull/432">https://github.com/heyman/heynote/pull/432</a></li>
-<li>Sanitize system locale by @heyman in <a href="https://github.com/heyman/heynote/pull/435">https://github.com/heyman/heynote/pull/435</a></li>
-<li>Add feature for drawing on images by @heyman in <a href="https://github.com/heyman/heynote/pull/433">https://github.com/heyman/heynote/pull/433</a></li>
-<li>Use jetpack to serve heynote-file protocol responses by @heyman in <a href="https://github.com/heyman/heynote/pull/437">https://github.com/heyman/heynote/pull/437</a></li>
-<li>Fix so that Enter can be recorded for custom key bindings by @heyman in <a href="https://github.com/heyman/heynote/pull/441">https://github.com/heyman/heynote/pull/441</a></li>
-</ul>
-<h2>New Contributors</h2>
-<ul>
-<li>@LSauce made their first contribution in <a href="https://github.com/heyman/heynote/pull/407">https://github.com/heyman/heynote/pull/407</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/heyman/heynote/compare/v2.7.1...v2.8.0">https://github.com/heyman/heynote/compare/v2.7.1...v2.8.0</a></p>]]></content:encoded>
-      <category>heyman</category>
-      <category>heynote</category>
-      <source url="https://github.com/heyman/heynote">heyman/heynote</source>
     </item>    <item>
       <title>nodejs/node v25.6.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.6.0</link>
@@ -3285,63 +2983,6 @@ const posts = await payload.find({
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
-      <title>heyman/heynote v2.7.0</title>
-      <link>https://github.com/heyman/heynote/releases/tag/v2.7.0</link>
-      <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.7.0</guid>
-      <pubDate>Mon, 05 Jan 2026 11:58:05 GMT</pubDate>
-      <description>What&amp;#39;s Changed Non backwards-compatible change Buffers created/saved with this new version of Heynote is not compatible with older versions of Heynote, so if you&amp;#39;re using Heynote on multiple machines, make sure to update to &amp;gt;=2.7 on all machines. Creation time for blocks The time of cr...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<h3>Non backwards-compatible change</h3>
-<p>Buffers created/saved with this new version of Heynote is not compatible with older versions of Heynote, 
-so if you&#39;re using Heynote on multiple machines, make sure to update to &gt;=2.7 on all machines.</p>
-<h3>Creation time for blocks</h3>
-<p>The time of creation is now recorded for blocks, and it&#39;s displayed in the status bar. For folded blocks, 
-it&#39;s also displayed in the summary line.</p>
-<h3>Add new block and scroll down</h3>
-<p>A new command for adding a new block at the end of the buffer and then scrolling down so that only the new 
-block is visible has been added. This can be used to create a new block and avoid any distraction from seeing 
-the other blocks above while writing. </p>
-<p>The default key binding for <code>Cmd/Ctrl+Shift+Enter</code> has been changed to this new command, but anyone who would 
-prefer the old behaviour, can add a key binding for the  <code>Add new block after last block</code> command.</p>
-<img src="https://heynote.com/img/changelog/new-block-and-scroll-down.gif" style="width:100%;" alt="GIF showing the new feature">
-
-<h3>Other fixes and improvements</h3>
-<ul>
-<li>The default key binding for the <code>TAB</code> key is now a new <code>insertIndentation</code> command. This command will insert 
-indentation character(s) (spaces or tabs depending on the setting) so that the cursor aligns with the indentation
-columns. Unless there is an active selection, in which case the <code>indentMore</code> command will be executed instead.
-If you want the old behaviour, you can bind the <code>TAB</code> key to <code>indentMore</code>.</li>
-<li>Chinese characters in buffer file names are now converted to ascii using pinyin. This fixes an issue where it 
-wasn&#39;t possible to create a buffer with only chinese characters it the name.</li>
-<li>Fix issue where the wrong locale was used for formatting dates on MacOS on systems using a locale such as &quot;en-SE&quot;</li>
-<li>Fix issue with folded Math blocks where the results from the first and last line would still be visible</li>
-<li>Always use 2-digit notation for hours when displaying time</li>
-<li>Add setting for configuring the cursor blink rate (or turning off the blinking)</li>
-<li>Add support for Lua blocks</li>
-<li>Add <code>toggleCheckbox</code> command for Markdown todo items (default key binding: <code>Cmd/Ctrl+Shift+Space</code>)</li>
-<li>Fix issue when selecting all content of a math block and typing a character</li>
-<li>Fix so that checkboxes in todo lists takes up 4 spaces so that the margin align for multi line list items</li>
-</ul>
-<h2>Merged PRs</h2>
-<ul>
-<li>Convert chinese characters in buffer file names to ascii using pinyin-pro library by @heyman in <a href="https://github.com/heyman/heynote/pull/409">https://github.com/heyman/heynote/pull/409</a></li>
-<li>Add creation time metadata to blocks by @heyman in <a href="https://github.com/heyman/heynote/pull/410">https://github.com/heyman/heynote/pull/410</a></li>
-<li>Add new insertIndentation command used for the Tab key by default by @heyman in <a href="https://github.com/heyman/heynote/pull/411">https://github.com/heyman/heynote/pull/411</a></li>
-<li>Create new block at the end and scroll down to only show the new block by @heyman in <a href="https://github.com/heyman/heynote/pull/412">https://github.com/heyman/heynote/pull/412</a></li>
-<li>Make tests less flaky when run in Github actions by @heyman in <a href="https://github.com/heyman/heynote/pull/413">https://github.com/heyman/heynote/pull/413</a></li>
-<li>Don&#39;t display Math result widgets for blocks that are folded by @heyman in <a href="https://github.com/heyman/heynote/pull/414">https://github.com/heyman/heynote/pull/414</a></li>
-<li>Add cursor blink rate setting by @heyman in <a href="https://github.com/heyman/heynote/pull/415">https://github.com/heyman/heynote/pull/415</a></li>
-<li>Add support for Lua blocks by @heyman in <a href="https://github.com/heyman/heynote/pull/416">https://github.com/heyman/heynote/pull/416</a></li>
-<li>Add toggleCheckbox command for Markdown todo items by @heyman in <a href="https://github.com/heyman/heynote/pull/417">https://github.com/heyman/heynote/pull/417</a></li>
-<li>Upgrade to latest version of Electron (39.2.7) by @heyman in <a href="https://github.com/heyman/heynote/pull/418">https://github.com/heyman/heynote/pull/418</a></li>
-<li>Update block created time when adding content to blocks that are completely empty by @heyman in <a href="https://github.com/heyman/heynote/pull/419">https://github.com/heyman/heynote/pull/419</a></li>
-<li>Fix for selecting all text of a Math block and typing doesn&#39;t overwrite all text by @heyman in <a href="https://github.com/heyman/heynote/pull/420">https://github.com/heyman/heynote/pull/420</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/heyman/heynote/compare/v2.6.2...v2.7.0">https://github.com/heyman/heynote/compare/v2.6.2...v2.7.0</a></p>]]></content:encoded>
-      <category>heyman</category>
-      <category>heynote</category>
-      <source url="https://github.com/heyman/heynote">heyman/heynote</source>
-    </item>    <item>
       <title>Kong/insomnia core@12.2.0</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</link>
       <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</guid>
@@ -4034,135 +3675,6 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>spotDL</category>
       <category>spotify-downloader</category>
       <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.8.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.8.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.8.0</guid>
-      <pubDate>Sat, 24 May 2025 11:07:17 GMT</pubDate>
-      <description>What&amp;#39;s New Reorder &amp;amp; Move Tabs : Reorder &amp;amp; move tabs to different spaces! Tab Autosleep : New &amp;#39;Sleep Tab After&amp;#39; setting which put tabs to sleep after inactivity to save resources! Flow PDF Viewer : A new experimental PDF viewer which allows you to annotate PDFs! Enable in Sett...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s New</h2>
-<ul>
-<li><strong>Reorder &amp; Move Tabs</strong>: Reorder &amp; move tabs to different spaces!</li>
-<li><strong>Tab Autosleep</strong>: New &#39;Sleep Tab After&#39; setting which put tabs to sleep after inactivity to save resources!</li>
-<li><strong>Flow PDF Viewer</strong>: A new experimental PDF viewer which allows you to annotate PDFs! Enable in Settings.</li>
-<li><strong>Better Website Compatability</strong>: Websites such as ChatGPT, Spotify and Google should now work properly! :tada: </li>
-<li><strong>New Popup Window</strong>: Popup windows now has an address bar and behaves how a normal popup window should!</li>
-<li><strong>Tabs Muting</strong>: You can now mute tab by clicking on the volume button on the sidebar when playing media on a website!</li>
-</ul>
-<h2>Improvements</h2>
-<ul>
-<li>Bump Dependencies Versions</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Native Adblocker not working properly sometimes</li>
-<li>Some favicons (<code>data:</code>) not loading properly (e.g: ChatGPT)</li>
-<li>Browser flickering when opening new views sometimes</li>
-</ul>
-<hr>
-<h2>What&#39;s Changed</h2>
-<ul>
-<li>Bump Dependencies Versions by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/48">https://github.com/MultiboxLabs/flow-browser/pull/48</a></li>
-<li>Fix browser flick on extension view opening by @rootz491 in <a href="https://github.com/MultiboxLabs/flow-browser/pull/49">https://github.com/MultiboxLabs/flow-browser/pull/49</a></li>
-<li>Tab auto sleep feature by @rootz491 in <a href="https://github.com/MultiboxLabs/flow-browser/pull/50">https://github.com/MultiboxLabs/flow-browser/pull/50</a></li>
-<li>Create Unified Web Requests Module by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/51">https://github.com/MultiboxLabs/flow-browser/pull/51</a></li>
-<li>Fix Data Favicons by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/54">https://github.com/MultiboxLabs/flow-browser/pull/54</a></li>
-<li>Add Flow PDF Viewer by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/55">https://github.com/MultiboxLabs/flow-browser/pull/55</a></li>
-<li>Scrub User Agent by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/45">https://github.com/MultiboxLabs/flow-browser/pull/45</a></li>
-<li>Improve Popup Handling by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/56">https://github.com/MultiboxLabs/flow-browser/pull/56</a></li>
-<li>Optimize Dependencies by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/57">https://github.com/MultiboxLabs/flow-browser/pull/57</a></li>
-<li>Implement tab muting functionality by @devin-ai-integration in <a href="https://github.com/MultiboxLabs/flow-browser/pull/62">https://github.com/MultiboxLabs/flow-browser/pull/62</a></li>
-<li>Reorder &amp; Move Tabs by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/59">https://github.com/MultiboxLabs/flow-browser/pull/59</a></li>
-</ul>
-<h2>New Contributors</h2>
-<ul>
-<li>@rootz491 made their first contribution in <a href="https://github.com/MultiboxLabs/flow-browser/pull/49">https://github.com/MultiboxLabs/flow-browser/pull/49</a></li>
-<li>@devin-ai-integration made their first contribution in <a href="https://github.com/MultiboxLabs/flow-browser/pull/62">https://github.com/MultiboxLabs/flow-browser/pull/62</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.7.0...v0.8.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.7.0...v0.8.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.7.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.7.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.7.0</guid>
-      <pubDate>Tue, 13 May 2025 15:10:33 GMT</pubDate>
-      <description>What&amp;#39;s New Shortcuts Editor : Edit shortcuts and customize them to your liking! Widevine DRM Support : Watch Netflix, Disney+ and more on Flow! Sleep Tabs : You can now manually put tabs to sleep to save resources! Built-in Adblocker : You can now block ads easily without installing anything...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s New</h2>
-<ul>
-<li><strong>Shortcuts Editor</strong>: Edit shortcuts and customize them to your liking!</li>
-<li><strong>Widevine DRM Support</strong>: Watch Netflix, Disney+ and more on Flow!</li>
-<li><strong>Sleep Tabs</strong>: You can now manually put tabs to sleep to save resources!</li>
-<li><strong>Built-in Adblocker</strong>: You can now block ads easily without installing anything in Flow!</li>
-</ul>
-<h2>Improvements</h2>
-<ul>
-<li>Favicons are now fetched from the actual profile</li>
-<li>Change settings to sidebar-based ui &amp; update sections</li>
-<li>UI Changes</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Toasts animations sometimes not running when new message appears</li>
-<li>&#39;Open in New Tab&#39; from Chrome DevTools not working</li>
-<li>&#39;Back to tab&#39; in Picture in Picture not working</li>
-<li>Window controls not showing when in fullscreen (macOS)</li>
-</ul>
-<hr>
-<h2>What&#39;s Changed</h2>
-<ul>
-<li>Add Tab Popup Menu by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/41">https://github.com/MultiboxLabs/flow-browser/pull/41</a></li>
-<li>Add Built-in Adblocker by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/42">https://github.com/MultiboxLabs/flow-browser/pull/42</a></li>
-<li>Add Support for Widevine by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/43">https://github.com/MultiboxLabs/flow-browser/pull/43</a></li>
-<li>Add Shortcuts Editor by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/47">https://github.com/MultiboxLabs/flow-browser/pull/47</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.6.4...v0.7.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.6.4...v0.7.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.6.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.6.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.6.0</guid>
-      <pubDate>Sun, 04 May 2025 19:40:45 GMT</pubDate>
-      <description>Changes Electron Builder Migration : Build Pipeline migrated to Electron Builder &amp;amp; Electron Vite, which will simplify development &amp;amp; make experience more seamless. New App Update System : This is a better update system which can be found in Flow Settings! Set as Default Browser : You can n...</description>
-      <content:encoded><![CDATA[<h2>Changes</h2>
-<ul>
-<li><strong>Electron Builder Migration</strong>: Build Pipeline migrated to Electron Builder &amp; Electron Vite, which will simplify development &amp; make experience more seamless.</li>
-<li><strong>New App Update System</strong>: This is a better update system which can be found in Flow Settings!</li>
-<li><strong>Set as Default Browser</strong>: You can now set Flow as your default browser on Windows &amp; macOS!</li>
-</ul>
-<h2>Merged Pull Requests</h2>
-<ul>
-<li>Portal Components System by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/28">https://github.com/MultiboxLabs/flow-browser/pull/28</a></li>
-<li>Migrate to Electron Vite by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/29">https://github.com/MultiboxLabs/flow-browser/pull/29</a></li>
-<li>Improved App Update System by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/30">https://github.com/MultiboxLabs/flow-browser/pull/30</a></li>
-<li>Add Posthog Error Logging by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/32">https://github.com/MultiboxLabs/flow-browser/pull/32</a></li>
-<li>Set as Default Browser by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/31">https://github.com/MultiboxLabs/flow-browser/pull/31</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.5.0...v0.6.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.5.0...v0.6.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.5.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.5.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.5.0</guid>
-      <pubDate>Sat, 26 Apr 2025 00:00:18 GMT</pubDate>
-      <description>What&amp;#39;s Changed Add Sleep Tabs Functionality by @iamEvanYT in https://github.com/MultiboxLabs/flow-browser/pull/23 Basic Settings Framework by @iamEvanYT in https://github.com/MultiboxLabs/flow-browser/pull/24 Tab Persistance &amp;amp; Auto Archive by @iamEvanYT in https://github.com/MultiboxLabs/...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<ul>
-<li>Add Sleep Tabs Functionality by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/23">https://github.com/MultiboxLabs/flow-browser/pull/23</a></li>
-<li>Basic Settings Framework by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/24">https://github.com/MultiboxLabs/flow-browser/pull/24</a></li>
-<li>Tab Persistance &amp; Auto Archive by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/25">https://github.com/MultiboxLabs/flow-browser/pull/25</a></li>
-<li>Use Phosphor Icons for Space Icons by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/27">https://github.com/MultiboxLabs/flow-browser/pull/27</a></li>
-<li>Add Extensions Support by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/26">https://github.com/MultiboxLabs/flow-browser/pull/26</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.4.2...v0.5.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.4.2...v0.5.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
     </item>    <item>
       <title>spotDL/spotify-downloader v4.2.0</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.0</link>
