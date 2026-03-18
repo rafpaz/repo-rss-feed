@@ -10,9 +10,1108 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 18 Mar 2026 18:24:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 21:14:25 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>vercel/next.js v16.2.0</title>
+      <link>https://github.com/vercel/next.js/releases/tag/v16.2.0</link>
+      <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.2.0</guid>
+      <pubDate>Wed, 18 Mar 2026 19:27:56 GMT</pubDate>
+      <description>[!TIP] Check out our Next v16.2 Blog Post to learn more about this release. Core Changes Upgrade React from f93b9fd4-20251217 to 65eec428-20251218 : #87323 Turbopack: Create junction points instead of symlinks on Windows: #87606 Turbopack: Symlink handling follow-up: #87637 Add experimental routi...</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>[!TIP]<br><strong>Check out our Next v16.2 <a href="https://nextjs.org/blog/next-16-2">Blog Post</a> to learn more about this release.</strong></p>
+</blockquote>
+<h3>Core Changes</h3>
+<ul>
+<li>Upgrade React from <code>f93b9fd4-20251217</code> to <code>65eec428-20251218</code>: #87323</li>
+<li>Turbopack: Create junction points instead of symlinks on Windows: #87606</li>
+<li>Turbopack: Symlink handling follow-up: #87637</li>
+<li>Add experimental routing package for resolving adapter routes: #86404</li>
+<li>Ensure outputs are correct with cache components in deployment adapters: #87018</li>
+<li>Move off of deprecated url.parse: #87257</li>
+<li>[strict-route-types] Add <code>experimental.strictRouteTypes</code> config: #87378</li>
+<li>misc: fix type check log for CI envs: #87838</li>
+<li>fix: revalidateTag with profile should not trigger client cache invalidation: #88069</li>
+<li>chore: warn when running tests against stale build: #88001</li>
+<li>Redesign default error pages with cleaner, more user-friendly UI: #87988</li>
+<li>dx: avoid next-env.d.ts change in dev: #88103</li>
+<li>prevent browser cache from using stale RSC responses from previous builds: #86554</li>
+<li>[strict-route-types] Typecheck App Router page props: #87386</li>
+<li>[strict-route-types] Enforce common React Component return types in App Router: #87389</li>
+<li>[strict-route-types] Switch to <code>satisfies</code> when validating page and route modules: #87398</li>
+<li>[strict-route-types] Don&#39;t reject <code>number</code> in <code>config.api.bodyParser.sizeLimit</code> when validating route: #87633</li>
+<li>Revert &quot;dx: avoid next-env.d.ts change in dev&quot;: #88153</li>
+<li>[strict-route-types] Typecheck pages router routes in absence of App Router: #87628</li>
+<li>[strict-route-types] Ensure cache profiles and routes are type-checked even if .next is excluded: #87768</li>
+<li>add compilation error for taint when not enabled: #88173</li>
+<li>feat(next/image)!: add <code>images.maximumResponseBody</code> config: #88183</li>
+<li>Add maximum size limit for postponed body parsing: #88175</li>
+<li>metadata: use fixed segment in dynamic routes with static metadata files: #88113</li>
+<li>feat: add --experimental-cpu-prof flag for dev, build, and start: #87946</li>
+<li>Add experimental option to use no-cache instead of no-store in dev: #88182</li>
+<li>fix overlay frames cannot be opened sometimes: #88210</li>
+<li>Handle pnpm-workspace.yaml while searching for monorepo root: #74818</li>
+<li>Add more debug logs to <code>&#39;use cache&#39;</code> wrapper: #88219</li>
+<li>Omit unused arguments from <code>&#39;use cache&#39;</code> function calls: #86920</li>
+<li>Only log <code>pending revalidates...</code> debug log if applicable: #88221</li>
+<li>fix(next/image): bump <a href="mailto:sharp@0.34.5">sharp@0.34.5</a>: #88238</li>
+<li>Disallow javascript urls in router methods and redirects: #88185</li>
+<li>Fix relative same host redirects in node middleware: #88253</li>
+<li>Remove loadConfig from main development process, pass value from child process: #88230</li>
+<li>Update deploy adapters outputs and handler interfaces for node and edge: #88247</li>
+<li>Move Ready in time before handler initialization: #88235</li>
+<li>next/image: support custom cache handlers: #88248</li>
+<li>feat: add Claude Code plugin marketplace with Cache Components skill: #87993</li>
+<li>refactor: consolidate PPR into cacheComponents architecture: #88243</li>
+<li>Turbopack: include fewer traced files for standalone: #88322</li>
+<li>feat(turbopack): add resolve plugin condition variant of Always and Never: #88190</li>
+<li>perf: use length = 0 to clear the logging array: #88244</li>
+<li>Time logs: Show full millisecond instead of 1 decimal: #88313</li>
+<li>[turbopack] Enable inferring module side effects by default: #87216</li>
+<li>Track search string as part of &quot;refresh state&quot;: #87203</li>
+<li>Pass RouteTree into navigation function: #87256</li>
+<li>Read from segment cache unknown routes: #87293</li>
+<li>Pass loading boundary as part of RSC data: #87825</li>
+<li>Revert &quot;refactor: consolidate PPR into cacheComponents architecture (#88243)&quot;: #88421</li>
+<li>fix: support TypeScript <code>noUncheckedSideEffectImports</code> for CSS imports: #88199</li>
+<li>Don&#39;t import typescript at runtime: #88321</li>
+<li>fix: use RDC for server action requests: #88129</li>
+<li>Warn when overriding Cache-Control header on <code>/_next/</code> routes: #88353</li>
+<li>[prebuilt-skew-protection] feat: adding in automatic deploymentId: #88012</li>
+<li>Revert &quot;[prebuilt-skew-protection] feat: adding in automatic deploymentId&quot;: #88449</li>
+<li>Turbopack: Update reqwest, remove experimental system TLS feature: #88290</li>
+<li>Revert &quot;prevent browser cache from using stale RSC responses from pre…: #88457</li>
+<li>Turbopack: retain loader tree order for metadata: #88487</li>
+<li>Turbopack: more dead code: #88505</li>
+<li>fix(build): prevent route handler manifests from inheriting unrelated client components: #88419</li>
+<li>Upgrade React from <code>65eec428-20251218</code> to <code>3e1abcc8-20260113</code>: #88530</li>
+<li>Better typesafety for <code>interopDefault</code>: #88486</li>
+<li>keep next-env.d.s unchanged between dev and build: #88428</li>
+<li>Remove sibling caches from CacheNode tree: #87991</li>
+<li>Upgrade React from <code>3e1abcc8-20260113</code> to <code>4a3d993e-20260114</code>: #88547</li>
+<li>Finish deleting Mutable from router implementation: #88046</li>
+<li>fetch(next/image): reduce maximumResponseBody from 300MB to 50MB: #88588</li>
+<li>[CC] Fix dev validation error from server action bound args: #88600</li>
+<li>Fix incorrect &#39;Ready in&#39; time for next start: #88589</li>
+<li>feat: server action logging: #88277</li>
+<li>Log browser error and warnings in terminal: #88352</li>
+<li>Upgrade React from <code>4a3d993e-20260114</code> to <code>bef88f7c-20260116</code>: #88649</li>
+<li>fix: make RedirectType constant properties literal types: #88653</li>
+<li>Turbopack: add support for matching loaders on resource queries: #88644</li>
+<li>fix: capture promisified setImmediate separately: #88346</li>
+<li>fix: setImmediate[util.promisify.custom] access fails in edge runtime: #88685</li>
+<li>Fix <code>--debug-build-paths</code> bracket escaping for glob patterns: #88660</li>
+<li>Add negation pattern support to <code>--debug-build-paths</code>: #88654</li>
+<li>Only filter next config if experimental flag is enabled: #88733</li>
+<li>[Devtool Indicator] Fix cross alignment: #88664</li>
+<li>Turbopack: don&#39;t use build id for pages router client-side manifests: #88641</li>
+<li>Allow inspecting server with <code>next start --inspect</code>: #88744</li>
+<li>Turbopack: Add <code>--debug-build-paths</code> support to filter routes: #88655</li>
+<li>Upgrade React from <code>bef88f7c-20260116</code> to <code>41b3e9a6-20260119</code>: #88756</li>
+<li>Use rewritten pathname for implicit cache tags: #88732</li>
+<li>Upgrade React from <code>41b3e9a6-20260119</code> to <code>d2908752-20260119</code>: #88774</li>
+<li>Add experimental_gesturePush to App Router: #88776</li>
+<li>Rename <code>rewroteURL</code> to <code>rewrittenPathname</code> in request metadata: #88751</li>
+<li>Simplify <code>getImplicitTags</code> to accept pathname instead of url object: #88753</li>
+<li>Add <code>NEXT_DEPLOYMENT_ID</code> global: #86738</li>
+<li>Turbopack: remove deployment id suffix from client reference manifest chunks: #88741</li>
+<li>Inject <code>&lt;html data-dpl-id&gt;</code> and don&#39;t inline it into JS anymore: #88761</li>
+<li>[metadata] match the Metadata and ResolvedMetadata type: #88739</li>
+<li>Reuse bfcache data during Full prefetches: #88606</li>
+<li>Embed static sibling info in route tree: #88692</li>
+<li>Fix <code>revalidatePath</code> with params and trailing slash when deployed: #88623</li>
+<li>fix: preserve cache behavior for PPR fallback shells with root params: #88556</li>
+<li>Upgrade React from <code>d2908752-20260119</code> to <code>b546603b-20260121</code>: #88860</li>
+<li>stabilize browser log forward options: #88857</li>
+<li>[devtools] Wrap long file names of stack frames in the error overlay: #88886</li>
+<li>[devtools] Fix notch coloring of error overlay in forced colors mode: #88892</li>
+<li>Remove <code>deploymentId</code> from App Router <code>RenderOptsPartial</code>: #88866</li>
+<li>feat: implement LRU cache with invocation ID scoping for minimal mode response cache: #88509</li>
+<li>[prebuilt-skew-protection] feat: adding in automatic deploymentId: #88496</li>
+<li>[devtool] Add hydration diff indicator for diff lines: #88919</li>
+<li>Revert &quot;[prebuilt-skew-protection] feat: adding in automatic deploymentId&quot;: #88942</li>
+<li>[turbopack] add task type infromation to the print_cache_item_size feature: #88925</li>
+<li>Upgrade React from <code>b546603b-20260121</code> to <code>24d8716e-20260123</code>: #88963</li>
+<li>Turbopack: add <code>?dpl=</code> to all asset urls returned by Turbopack: #88828</li>
+<li>feat(next-codemod): add agents-md command for AI coding agents: #88961</li>
+<li>Update font data: #88975</li>
+<li>Improve agents-md prompt to force doc retrieval: #88997</li>
+<li>[Reapply] Add <code>useEffectEvent</code> to disallowed React APIs in Server Components: #88985</li>
+<li>Apply fixes for onBuildComplete and route module: #88831</li>
+<li>Rename <code>renderOpts.nextExport</code> to <code>isBuildTimePrerendering</code>: #88951</li>
+<li>docs: fix typos in <code>README.md</code>s: #89022</li>
+<li>refactor: consume global-error from loader tree: #88437</li>
+<li>Fix chunk loading when using <code>__turbopack_load_by_url__</code> with query: #88899</li>
+<li>[mcp] change the mcp endpoint response to JSON: #88911</li>
+<li>Reapply &quot;[turbopack] Add bundling support for worker_threads&quot; (#88725): #88967</li>
+<li>fix: ensure LRU cache items have minimum size of 1 to prevent unbounded growth: #89040</li>
+<li>Upgrade React from <code>24d8716e-20260123</code> to <code>8c34556c-20260126</code>: #89066</li>
+<li>Use null-prototype objects in server actions manifests: #89069</li>
+<li>Re-enable types-and-precompiled: #89070</li>
+<li>Apply segment changes to adapters outputs: #89072</li>
+<li>Improve no response route handler error: #89036</li>
+<li>Limit number of server action arguments to 1000: #89068</li>
+<li>[prebuilt-skew-protection] feat: adding in automatic deploymentId: #88958</li>
+<li>Decouple route stale time from segment-level data: #88834</li>
+<li>Decouple route and segment cache lifecycles: #88989</li>
+<li>[ci] Silence <code>baseline-browser-mapping</code> warnings: #89175</li>
+<li>[Cache Components] Prevent streaming fetch calls from hanging in dev: #89171</li>
+<li>React types update: #89110</li>
+<li>[nextjs] feat: removing length requirement: #89173</li>
+<li>add GPTBot to matcher for known bots: #89188</li>
+<li>Ensure <code>.md</code> licenses are included in vendored packages: #89201</li>
+<li>Switch development log item format as JSON: #89168</li>
+<li>IsolatedDevBuild flag removal: #89167</li>
+<li>fix: coerce HEAD to GET for internal images: #84180</li>
+<li>Upgrade React from <code>10680271-20260126</code> to <code>230772f9-20260128</code>: #89250</li>
+<li>Upgrade <code>tar</code> used to extract SWC binary : #89158</li>
+<li>Sort prerender manifest routes: #89246</li>
+<li>Track vary params for segments without server-side param access: #88998</li>
+<li>Optimistic routing: client-side route prediction: #88965</li>
+<li>Keep pages/404.js to be able to dynamically render it anyway: #89263</li>
+<li>fix: fully static pages should emit &amp; serve static rsc payloads: #89202</li>
+<li>fix: CSRF origin matching should be case-insensitive: #89127</li>
+<li>fix(build): format runAfterProductionCompile duration as human-readable time: #89232</li>
+<li>fix(router): support BigInt in query parameters: #89213</li>
+<li>Update font data: #89200</li>
+<li>Update font data: #89272</li>
+<li>Turbopack: add support for contentType condition for webpack loaders: #89156</li>
+<li>Revert &quot;fix(router): support BigInt in query parameters&quot;: #89283</li>
+<li>Track vary params during static prerendering: #89267</li>
+<li>Improve lock dir error message: #89119</li>
+<li>Ensures <code>browserslist</code> doesn&#39;t issue outdated warnings for <code>baseline-browser-mapping</code>: #89287</li>
+<li>Replace build id in Pages data routes with deployment id: #88959</li>
+<li>Upgrade React from <code>230772f9-20260128</code> to <code>da641178-20260129</code>: #89301</li>
+<li>Inline handler dependencies instead of tracing: #89269</li>
+<li>Turbopack: add <code>rules.*.type</code> config to allow changing the type of a module: #88788</li>
+<li>Add experimental.varyParams feature flag: #89307</li>
+<li>Fix/zlib mem node: #89099</li>
+<li>Revert &quot;Replace build id in Pages data routes with deployment id (#88959)&quot;: #89323</li>
+<li>Turbopack: Rename crates/napi to crates/next-napi-bindings and update crate name: #89314</li>
+<li>feat: detect @typescript/native-preview as alternative TypeScript compiler: #89149</li>
+<li>Revert &quot;Fix/zlib mem node&quot;: #89322</li>
+<li>Turbopack: FreeVarReference::ReportUsage: #89302</li>
+<li>Make Server Function logging opt-in via <code>logging.serverFunctions</code>: #89321</li>
+<li>Restore default-enabled Server Function logging: #89407</li>
+<li>Re-add build-complete traces for webpack: #89402</li>
+<li>Skip Server Function logging for <code>&#39;use cache&#39;</code> functions: #89408</li>
+<li>Replace flight navigation build id field with header: #88855</li>
+<li>Upgrade React from <code>da641178-20260129</code> to <code>ed4bd540-20260202</code>: #89401</li>
+<li>Upgrade React from <code>ed4bd540-20260202</code> to <code>b1533b03-20260203</code>: #89444</li>
+<li>Upgrade React from <code>b1533b03-20260203</code> to <code>3e00319b-20260203</code>: #89449</li>
+<li>Rename CACHE_ONE_YEAR for clarity and fix usage: #89450</li>
+<li>[Codemod] Fix agents-md on Windows: #89319</li>
+<li>Experimental deferred entries handling: #88347</li>
+<li>Add <code>experimental.reportSystemEnvInlining</code> for Turbopack: #89304</li>
+<li>fix: use signal-based exit codes to prevent inspector blocking exit: #89351</li>
+<li>Add Instant Navigation Testing API: #89465</li>
+<li>Support MPA navigations in <code>instant()</code>: #89469</li>
+<li>Handle Pages data route skew with deployment id header, take 2: #89325</li>
+<li>Include owner stack for forwarded errors if available: #89493</li>
+<li>[CC] Rename &quot;unstable_prefetch&quot; to &quot;unstable_instant&quot;: #89448</li>
+<li>Ensure module contexts are always included in adapter traces: #89508</li>
+<li>Don&#39;t insert build id comment in HTML: #89478</li>
+<li>Clarify type checking error message: #89525</li>
+<li>Require explicit <code>cacheLife</code> on outer <code>&quot;use cache&quot;</code> when nesting short-lived caches: #89481</li>
+<li>[Instant] Instant validation in Dev: #89077</li>
+<li>Upgrade React from <code>3e00319b-20260203</code> to <code>95ffd6cd-20260205</code>: #89550</li>
+<li>Turbpopack: fix is_persistent_caching_enabled: #89533</li>
+<li>Fix a small doc typo: #89553</li>
+<li>Ensure _middleware is consistent in adapter for name/id: #89559</li>
+<li>Ensure Errors with deep causal chains respect inspect depth: #89594</li>
+<li>refactor: extract route discovery into unified <code>discoverRoutes()</code> API: #88971</li>
+<li>Ensure static metadata are static outputs for adapters: #89574</li>
+<li>Resolve local variable references in error code SWC plugin: #89596</li>
+<li>Turbopack: Add --experimental-server-fast-refresh CLI flag: #89274</li>
+<li>Fix deployment id header when proxying: #89593</li>
+<li>fix: deprecated util._extend: #89614</li>
+<li>Fix missing non-deferred turbopack build items: #89616</li>
+<li>Revert &quot;Ensure _middleware is consistent in adapter for name/id&quot;: #89624</li>
+<li>Omit unused arguments for server actions: #89651</li>
+<li>Upgrade React from <code>95ffd6cd-20260205</code> to <code>2dd9b7cf-20260208</code>: #89681</li>
+<li>Include <code>AggregateError.errors</code> in terminal output: #88999</li>
+<li>fix(image): findClosestQuality returns 0 for low quality values: #89621</li>
+<li>Upgrade React from <code>2dd9b7cf-20260208</code> to <code>272441a9-20260209</code>: #89722</li>
+<li>Avoid using unclosing prefetch streams in the browser: #89610</li>
+<li>Pass shouldCache to all manifest loading calls: #89713</li>
+<li>Add 2nd cloned body to FinalizationRegistry. Only used RuntimeStyles component for webpack: #88577</li>
+<li>Tracing: trace render times as render-path: #89763</li>
+<li>Turbopack: Server HMR infrastructure: #88870</li>
+<li>Turbopack: Reorganize runtime files into shared/runtime directory: #89461</li>
+<li>[Instant] Validation on client navs: #89777</li>
+<li>Turbopack: extract core hmr client logic into shared runtime: #88912</li>
+<li>Turbopack: Fix slow filesystem benchmark warning for <code>next dev</code>: #89798</li>
+<li>Add turbopackIgnoreIssue config to suppress Turbopack warnings: #89682</li>
+<li>Add support for with <code>type: &quot;text&quot;</code> under a new experimental flag, following what webpack did: #89560</li>
+<li>Remove unused devtools code handling React without <code>use</code>: #89793</li>
+<li>[devtools] Wrap overlay in Activity: #89818</li>
+<li>Add CSS URL deployment ID suffix support: #89771</li>
+<li>Fix cascading LRU eviction during prefetch batches: #89766</li>
+<li>Refactor prerenderManifest passing: #89765</li>
+<li>[AI] Ship bundled docs in next and generate AGENTS.md in create-next-app: #89850</li>
+<li>Turbopack: Implement server hmr in nodejs dev runtime: #89130</li>
+<li>Allow sitemap.ts and sitemap/page.tsx to coexist in Turbopack: #89789</li>
+<li>[fragment-scroll] Cleanup scroll and focus restoration in layout router: #83110</li>
+<li>[fragment-scroll] Add <code>experimental.appNewScrollHandler</code>: #83107</li>
+<li>[Instant] Fix crash with search params: #89922</li>
+<li>Fix memory leak in dev mode caused by fast-set-immediate: #89779</li>
+<li>Trace upload: include experimental flag states: #89845</li>
+<li>Upgrade React from <code>272441a9-20260209</code> to <code>6066c782-20260212</code>: #89923</li>
+<li>Add a better error message for when turbopack cannot be loaded: #89633</li>
+<li>fix: support multiple icon formats with same base name (icon.png + icon.svg): #89504</li>
+<li>Turbopack: Move turbopackIgnoreIssue from experimental to turbopack.ignoreIssue: #89817</li>
+<li>Build with dev runtimes when <code>--debug-prerender</code> is set: #89834</li>
+<li>Append deployment id query string for next-font: #89960</li>
+<li>Fix parallel routes with deferred entries: #89967</li>
+<li>Rename node extension utils for clarity: #89970</li>
+<li>Model abandoning by signal: #89971</li>
+<li>Fix missing incremental cache in middleware unstable_cache: #89980</li>
+<li>Run fast immediates during prerender abort to fix flaky I/O stack traces: #89969</li>
+<li>[fragment-scroll] Ensure hoisted elements don&#39;t break scroll-to-top on page navigations: #83108</li>
+<li>dx: Include path count in export error message: #89333</li>
+<li>fix(agents-md): use <code>require.resolve()</code> to get the installed <code>next</code> version: #89166</li>
+<li>docs: agent skills, pr-status script, and AGENTS.md updates (1/8): #89857</li>
+<li>Ignore <code>prefetch={true}</code> on Links to routes with <code>instant</code>: #90061</li>
+<li>Expand deferred entries test suite and fix turbopack build: #90057</li>
+<li>Use StageController for runtime prerendering: #89972</li>
+<li>Improve task pipelining: #90065</li>
+<li>fix(next/legacy/image): add deployment id (dpl) query string support: #89956</li>
+<li>Cache expected missing manifest read: #89908</li>
+<li>Use for...in instead of Object.keys for parallelRouteKey traversal: #89905</li>
+<li>[Instant] allow non-blocking dynamic holes and errors in shared parents: #89875</li>
+<li>Move prefetch hints from CacheNodeSeedData to FlightRouterState: #90066</li>
+<li>[Instant] Don&#39;t block on client APIs that wouldn&#39;t block in the browser: #89924</li>
+<li>[devtools] Add support for error causes in the dev overlay: #90108</li>
+<li>Unify runInSequentialTasks across all sequential task work: #89978</li>
+<li>Cleanup all stage promises on abort: #89984</li>
+<li>segment cache: fix segment cache normalizer: #90111</li>
+<li>Handle null history.state in client-side router popstate handler: #90083</li>
+<li>Don&#39;t parse default postponedsizelimit: #89906</li>
+<li>Turbopack: handle invalid RSC imports via importmap: #88146</li>
+<li>[create-next-app] Improve AGENTS.md prompt wording: #90118</li>
+<li>ensure maxPostponedStateSize is always respected: #90060</li>
+<li>Upgrade React from <code>6066c782-20260212</code> to <code>4842fbea-20260217</code>: #90144</li>
+<li>[fragment-scroll] Stop focusing the first focusable host descendant: #89903</li>
+<li>fix: normalize loopback only in hostname: #90158</li>
+<li>Only error for sync IO after runtime in segments that would be runtime prefetched: #89979</li>
+<li>[refactor] Replace runtime prefetch sentinel transform stream: #90160</li>
+<li>fix: use Buffer.indexOf in uint8array helpers for faster byte scanning (3/8): #89864</li>
+<li>Automatically build and clear native build when running <code>pnpm build</code>: #89819</li>
+<li>fix(cache): DCE to avoid pulling server internals into browser bundles (4/8): #89865</li>
+<li>Attach active src route to next global: #90171</li>
+<li>Fix OTEL propagation and add direct entrypoint e2e coverage: #90181</li>
+<li>Use cookie as sole protocol for instant navigation testing: #89871</li>
+<li>Simplify metadata tag rendering to flat imperative style: #90209</li>
+<li>Prevent unhandled rejection filter from being bundled into the server runtime: #90205</li>
+<li>[Instant] speed up test instant-validation suite: #90214</li>
+<li>Turbopack: fix static asset skew protection for edge and prerenders: #90238</li>
+<li>Remove workStore from params/searchParams/pathname function signatures: #90215</li>
+<li>Remove workStore from metadata resolution chain: #90217</li>
+<li>[Instant] export &quot;Instant&quot; config type: #90257</li>
+<li>Replace getDynamicParamFromSegment closure with interpolatedParams in metadata: #90249</li>
+<li>[Instant] Dev Tools toggle for Instant Navigation Mode: #90222</li>
+<li>[instant] Include declaration location of instant config in validation errors: #90169</li>
+<li>Turbopack: rename ServerPaths to AssetPaths: #90234</li>
+<li>feat(next/image): add lru disk cache and <code>images.maximumDiskCacheSize</code>: #89963</li>
+<li>Revert &quot;Handle null history.state in client-side router popstate handler&quot;: #90268</li>
+<li>[devtools] Omit empty looking error messages: #90256</li>
+<li>Fix runtime prefetch <code>isPartial</code> byte stripping when deployed: #90272</li>
+<li>Upgrade React from <code>2ba30655-20260219</code> to <code>ab18f33d-20260220</code>: #90279</li>
+<li>validate sync IO in generateMetadata according to Page&#39;s prefetchable status: #90164</li>
+<li>Turbopack: support Subresource Integrity
+: #90152</li>
+<li>segment cache: add test for passing unawaited promise to context provider: #89339</li>
+<li>Fix route.replace crash with --debug-build-paths: #90312</li>
+<li>refactor(app-render): extract stream-ops and debug-channel modules (5/8): #89858</li>
+<li>[turbopack] Consider <code>ignoreList</code> of 3rd party sourcemaps in Redbox: #90317</li>
+<li>[turbopack] Remove obsolete is_internal field : #90329</li>
+<li>Fix: Image component ignores images.qualities in Jest environment: #89536</li>
+<li>Revert &quot;keep next-env.d.s unchanged between dev and build&quot;: #90384</li>
+<li>Fix route cache keying for unprefetched navigations: #90400</li>
+<li>Add support for Next.js error telemetry for <code>AggregateError</code>: #90391</li>
+<li>Fix <code>config.reactProductionProfiling</code> for Webpack: #90430</li>
+<li>next-image: fix deployment id handling for unoptimized: #90416</li>
+<li>[ci] Fix input cache keys for tasks referencing <code>rust-toolchain</code>: #90442</li>
+<li>next-image: fix dpl handling with unicode: #90420</li>
+<li>Upgrade React from <code>ab18f33d-20260220</code> to <code>c0060cf2-20260224</code>: #90452</li>
+<li>[ci] Stop using Turbopack tests in native binary build cache keys: #90449</li>
+<li>[Instant] Validate blocking head: #89539</li>
+<li>Turbopack: Fix experimental server hmr for pages router: #90398</li>
+<li>Fix params leaking into instant navigation shell in dev: #90455</li>
+<li>Limit build workers to pages+1: #90475</li>
+<li>fix: sanitize worker args for worker_threads compatibility: #90506</li>
+<li>Fix varyParams tracking for optional catch-all params with no value: #90496</li>
+<li>Don&#39;t start worker for Typescript when only doing config validation: #90504</li>
+<li>[Instant] Fix loading.js not being counted as a suspense boundary: #90292</li>
+<li>[ci] Crash if next-swc could not be loaded when <code>NEXT_TEST_NATIVE_DIR</code> is specified: #90387</li>
+<li>Fix: server-patch retry preserves push/replace intent of suspended transitions: #90533</li>
+<li>Cached Navigations: Serve cached segments instantly on repeat visits: #90223</li>
+<li>Throw when <code>unstable_instant</code> is used in Client Component: #90396</li>
+<li>[test] Fix jest-haste-map warnings: #82995</li>
+<li>Don&#39;t require collect-build-traces with Turbopack: #90586</li>
+<li>Enable <code>experimental.reactDebugChannel</code> by default: #90310</li>
+<li>Less dynamic pages manifest path: #90581</li>
+<li>Upgrade React from <code>c0060cf2-20260224</code> to <code>98ce535f-20260226</code>: #90605</li>
+<li>Turbopack: Add Next.js version to &quot;initialize project&quot; trace span: #90545</li>
+<li>[devtools] Stop sending codeframes for ignored frames: #90577</li>
+<li>Allow <code>reset()</code> from user&#39;s global-error: #89684</li>
+<li>Fix per-segment prefetching for initial loads with Cache Components: #90610</li>
+<li>Add <code>unstable_retry()</code> to error.js: #89685</li>
+<li>Fix edge index page _next/data route: #90611</li>
+<li>Turbopack server hmr: Implement <code>restart</code> event: #90550</li>
+<li>Turbopack: Panic if a top-level task attempts an eventually consistent read: #89735</li>
+<li>Fix middleware case with adapters: #90624</li>
+<li>refactor(turbopack-node): support execution by napi and worker_threads: #86266</li>
+<li>[instant] Allow providing user feedback for blocking route errors: #90498</li>
+<li>Allow Node.js&#39; experimental inspector flags in <code>next dev</code> and <code>next build</code>: #90603</li>
+<li>tests: Assert dpl query string in all tests for Turbopack: #90592</li>
+<li>[instant] Don&#39;t add debug stack to random <code>unstable_instant</code> exports: #90273</li>
+<li>Adapter: STATIC_FILE.immutableHash: #90045</li>
+<li>Turbopack: experimental.immutableAssetToken: #88607</li>
+<li>remove runInContext callbacks from stream-ops: #90609</li>
+<li>Turbopack: restrict server HMR to app pages: #90663</li>
+<li>Turbopack: Allow turbopack-node backend to be swapped at runtime using an experimental config option: #90671</li>
+<li>Turbopack: Revert default loader runtime backend to child processes: #90675</li>
+<li>[devtools] Stop blocking overlay on error details copy: #90698</li>
+<li>feat: provide nextVersion to modifyConfig adapter hook: #90735</li>
+<li>experimental.prefetchInlining: bundle segment prefetches into a single response: #90555</li>
+<li>instant(): fix cookie handling for fresh page loads: #90613</li>
+<li>fix(turbopack): use posix.join for client URL manifest paths on Windows: #90700</li>
+<li>Turbopack: improve cell order lint rule for ReadRef::cell: #88500</li>
+<li>Change names of logged times: #90688</li>
+<li>[devtools] Bump React Compiler version to latest experimental: #90763</li>
+<li>Skip writeToBfCache without window: #90771</li>
+<li>docs: error component <code>unstable_retry()</code>: #89732</li>
+<li>Stub adapterPath with experimental.runtimeServerDeploymentId: #90790</li>
+<li>Conditionally load uncommon paths: #90514</li>
+<li>Refactor extractExportedConstValue to return { value } | null instead of throwing: #90510</li>
+<li>Reimplement code frame rendering in native code: #85592</li>
+<li>[devtools] Bundle for same target as Next.js browser runtime: #90762</li>
+<li>Upgrade React from <code>98ce535f-20260226</code> to <code>4cc5b7a9-20260303</code>: #90827</li>
+<li>Add <code>transitionTypes</code> prop to <code>next/link</code>: #90701</li>
+<li>[otel] fix missing http.route attribute: #90832</li>
+<li>[otel] set parent span name: #90840</li>
+<li>Update default error pages: #90469</li>
+<li>Replace PPR config helpers with cacheComponents checks: #90704</li>
+<li>Cached Navigations: Cache visited fully static pages in the segment cache: #90306</li>
+<li>Remove <code>isRoutePPREnabled</code> from render options and delete dead PPR branch: #90713</li>
+<li>Use page extensions in next-swc transforms applying to pages: #90650</li>
+<li>Cached Navigations: Cache static stage of partially static initial HTML: #90539</li>
+<li>Remove <code>PrerenderStorePPR</code> type and all <code>prerender-ppr</code> switch cases: #90721</li>
+<li>Clean up legacy PPR references in test fixtures: #90725</li>
+<li>Cached Navigations: Cache runtime stage data from navigation requests: #90666</li>
+<li>Remove legacy PPR postpone cluster: #90726</li>
+<li>partial fallbacks: add adapter flag: #90395</li>
+<li>Address review feedback: extract modules, clean up imports: #90813</li>
+<li>Add trace spans for turbopack persistence in .next/trace: #90397</li>
+<li>Upgrade React from <code>4cc5b7a9-20260303</code> to <code>3bc2d414-20260304</code>: #90876</li>
+<li>Fix prefetch inlining build failure with dynamic routes: #90899</li>
+<li>Update <code>@vercel/og</code> and <code>satori</code> vendors: #90933</li>
+<li>Batch require cache deletion to avoid quadratic scanning: #90625</li>
+<li>Revert legacy PPR removal: #90948</li>
+<li>Rewrite instant validation to use depth-based URL boundary discovery: #90905</li>
+<li>Add <code>experimental.cachedNavigations</code> feature flag: #90928</li>
+<li>preserve allowQuery for partial fallback shells: #90887</li>
+<li>Cache runtime data for partially static pages on initial load (resume): #90888</li>
+<li>re-introduce partial fallback -&gt; route upgrading: #89063</li>
+<li>fix: Don&#39;t fall through to catch-all when static child subtree doesn&#39;t match: #90957</li>
+<li>Bump Node heap limit for lint-no-typescript to avoid OOM in CI: #90996</li>
+<li>Upgrade React from <code>3bc2d414-20260304</code> to <code>46103596-20260305</code>: #90989</li>
+<li>fix: trigger MPA navigation for server action redirects with build ID mismatch: #89946</li>
+<li>Improve webpack loader error messages and handling: #89698</li>
+<li>Turbopack: implement module.hot.accept(deps, cb) and module.hot.decline(deps): #90443</li>
+<li>partial fallbacks: gate behind experimental flag: #91123</li>
+<li>fix: app-page URL normalization: #91121</li>
+<li>Updates to Instant Navs devtools functionality: #91005</li>
+<li>Trace upload: add git and environment info: #91124</li>
+<li>fix(css): rewrite MiniCssExtractPlugin insert function to ES5 to support legacy browsers: #90556</li>
+<li>Revert &quot;Address review feedback: extract modules, clean up imports&quot;: #91159</li>
+<li>[turbopack] Render code frames on the turbopack side: #90534</li>
+<li>Add experimental.lightningCssFeatures config option: #90901</li>
+<li>fix: correct appPaths sort order for parallel routes with route groups: #91160</li>
+<li>Tracing: tag spans as failed if their runner fn fails: #91206</li>
+<li>Adds a Start button to the Instant Navs panel to initiate inspection …: #91216</li>
+<li>Preserve RSC metadata in Proxy request with skipProxyUrlNormalize: #91213</li>
+<li>[cna] Bump <code>picocolors</code> to 1.1.1: #91252</li>
+<li>[Instant] Build-time validation: #90964</li>
+<li>[Instant] fix instant config suggested by editor plugin: #91262</li>
+<li>chore(deps): Bump tar from 7.5.7 to 7.5.11 in /packages/next: #91233</li>
+<li>Upgrade React from <code>46103596-20260305</code> to <code>5e9eedb5-20260312</code>: #91272</li>
+<li>feat(server): expose requestMeta router helpers and merge fallback context: #91235</li>
+<li>[Instant] Show owner stack for validation-blocking errors: #91277</li>
+<li>Hydrate page loads during instant navigation testing: #91207</li>
+<li>perf: use Buffer.from for base64 encoding of binary Flight data: #91221</li>
+<li>Skip dimming when <code>--inspect</code> is used: #91271</li>
+<li>Respect <code>generateStaticParams</code> in instant navigation shell: #91316</li>
+<li>[Prefetch Inlining] Generate size-based hints on server: #90891</li>
+<li>Wire cache handlers in edge paths and add e2e regression coverage: #91236</li>
+<li>Expose edge runtime fields in build-complete: #91239</li>
+<li>[turbopack] Remove <code>turbo_tasks::function</code> from ModuleReference getters: #91229</li>
+<li>[Turbopack] write route bundle stats to .next/diagnostics/route-bundle-stats.json: #90949</li>
+<li>partial fallbacks: only upgrade shells with remaining prerenderable params: #91158</li>
+<li>partial fallbacks: complete generic shells into more specific shells: #91231</li>
+<li>Add eval and docs for unstable_instant: #91334</li>
+<li>Simplify scroll restoration with shared ScrollRef on CacheNode: #91348</li>
+<li>fix: test-cargo-unit CI job timing out since LTO was enabled: #91424</li>
+<li>fix(build): don&#39;t block SSG on telemetry flush, add persistence spans to trace-build: #91335</li>
+<li>Ready in X - prints wrong timing on dev server restart: #90874</li>
+<li>Show generated code from loaders in parse error messages: #89898</li>
+<li>Remove unused layer from server actions manifest: #91425</li>
+<li>Support accessing root params in <code>generateStaticParams</code>: #91189</li>
+<li>Avoid <code>undefined</code> outer work unit store in <code>&quot;use cache&quot;</code>: #91190</li>
+<li>Add <code>unstable_dynamicStaleTime</code> route segment config: #91437</li>
+<li>[next-playwright] Use unique cookie values for instant navigation testing lock: #91250</li>
+<li>Add <code>unstable_catchError()</code> API for component-level error recovery: #89688</li>
+<li>docs(turbopack): Fix all warnings in <code>cargo doc --no-deps --workspace</code>, and run rustdoc as part of our CI checks: #91339</li>
+<li>Patch improvements into <code>http-proxy</code> lib: #91480</li>
+<li>Disallow Server Action submissions from privacy-sensitive contexts: #91478</li>
+<li>Fix startup warmup for empty-shell app route cache: #91470</li>
+<li>Fix <code>unstable_catchError</code> type inference for fallback props: #91485</li>
+<li>Support accessing root params in <code>&quot;use cache&quot;</code> functions: #91191</li>
+<li>Fix inconsistent cache life/tags propagation for cache handler hits: #91454</li>
+<li>Upgrade React from <code>5e9eedb5-20260312</code> to <code>c80a0750-20260312</code>: #91324</li>
+<li>Error when accessing undefined root params in <code>generateStaticParams</code>: #91519</li>
+<li>Buffer prefetch response before passing to Flight client: #91487</li>
+<li>[Segment Cache] Always upsert on prefetch completion: #91488</li>
+<li>Track vary params during runtime prefetches: #89297</li>
+<li>[react-sync] Allow locking in manual sync: #91509</li>
+<li>Remove devCacheControlNoCache experimental option (hard-code no-cache): #91503</li>
+<li>fix allowedDevOrigins for no-cors requests: #91506</li>
+<li>Remove webpack stats generation from Turbopack: #91515</li>
+<li>Upgrade React from <code>c80a0750-20260312</code> to <code>3f0b9e61-20260317</code>: #91522</li>
+<li>Move adapterPath from experimental to stable top-level config: #91535</li>
+<li>block disallowed dev origins by default: #91507</li>
+<li>Turbopack: Merge release-with-assertions-no-lto profile into release-with-assertions: #91530</li>
+<li>improve allowedDevOrigins error: #91521</li>
+<li>Add group depth tracking to instant validation boundary discovery: #91208</li>
+</ul>
+<h3>Documentation Changes</h3>
+<ul>
+<li>docs: next experimental-analyze: #87272</li>
+<li>docs: use cache private redo: #87111</li>
+<li>docs: fix highlight in 05-server-and-client-components.mdx: #87347</li>
+<li>Guide: Update <code>Optimizing Package Bundling</code> to include new Bundle Analyzer: #87246</li>
+<li>docs: generateMetadata and generateViewport w/ CC: #87218</li>
+<li>docs: tweaks/fixes to papercuts: #87445</li>
+<li>docs: fix typos and clarify examples in Cache Components guide: #87530</li>
+<li>[docs] add get_routes in mcp available tools: #88181</li>
+<li>Update generateMetadata in client component error: #88172</li>
+<li>docs: fix CSP example to only include unsafe-eval in development: #88407</li>
+<li>docs: add useSearchParams and useParams documentation for Pages Router: #88429</li>
+<li>docs: fix Pages Router fonts documentation showing App Router examples: #88326</li>
+<li>doc: add details of mcp client integration: #88543</li>
+<li>Turbopack: query conditions in rules follow-ups: #88801</li>
+<li>Docs: Add Next.js Glossary: #88811</li>
+<li>docs: Server functions rename: #86827</li>
+<li>docs: Update Partytown URLs and package reference: #88928</li>
+<li>docs: improve clarity in cache components and server/client docs: #88946</li>
+<li>docs: revalidatePath w/ rewrites and trailing slash: #88956</li>
+<li>Cache Component Guide: Building public, <em>mostly</em> static pages: #87248</li>
+<li>Turbopack: Add postcss.config.ts support: #89049</li>
+<li>CC Guide: Fix filenames, reduce line breaks: #89065</li>
+<li>docs: fix code highlight in 07-fetching-data.mdx: #88727</li>
+<li>[docs] Always include <code>unsafe-eval</code> in dev <code>Content-Security-Policy</code>: #89163</li>
+<li>Turbopack: add support for turbopackOptional: true: #89227</li>
+<li>docs: Rename Error component to ErrorPage: #89284</li>
+<li>docs: replace &#39;can not&#39; with &#39;cannot&#39;: #89354</li>
+<li>docs: Fix custom server code snippets: #89400</li>
+<li>Snippet multi package syntax: #89381</li>
+<li>Fix indentation of types of tests in docs: #89409</li>
+<li>docs: Fix syntax in proxy example code: #89395</li>
+<li>docs: fix ISR guide link to res.revalidate: #89342</li>
+<li>Fix spelling in robots.mdx documentation: #89565</li>
+<li>Remove more examples: #89709</li>
+<li>clarify unstable_cache replacement with use cache: #89435</li>
+<li>docs: correct use term: #89438</li>
+<li>[docs] Add <code>RedirectType</code> usage example to <code>permanentRedirect</code>: #89833</li>
+<li>Next CLI flags documentation: #89750</li>
+<li>docs: adapt lead to source path patterns: #89392</li>
+<li>docs: Papercuts Feb26: #89484</li>
+<li>After() docs requests API: #89837</li>
+<li>docs: Move browserToTerminal into logging: #88901</li>
+<li>Update documentation to explain behavior in a Catch-all route: #89742</li>
+<li>docs: add deploymentId config and clarify encryption key for self-hosting: #89795</li>
+<li>docs: adapterPath amends: #89930</li>
+<li>docs: improve next/image localPatterns error page: #89914</li>
+<li>docs: inline-css dev-action oriented: #89064</li>
+<li>docs: document cacheLife expire omission behavior and fix default preset value: #89913</li>
+<li>docs: Activity boundary guide: #89126</li>
+<li>Turbopack: Add inline loader configuration via import attributes: #89644</li>
+<li>docs: fix broken blockquote formatting in API Routes page: #89966</li>
+<li>docs: clarify async instrumentation register request : #90039</li>
+<li>Add AGENTS.md and bundled docs guide: #89973</li>
+<li>In-Depth Explanation of React Version Handling Doc: #89426</li>
+<li>Next.js sticky scroll standards: #90197</li>
+<li>docs: fixes typo in manifest.mdx regarding Route Handler note: #90394</li>
+<li>docs: improve form guide consistency and validation examples: #90361</li>
+<li>docs: rework version staleness: #90192</li>
+<li>docs: clarify that next upgrade is for 16.1.x+: #90435</li>
+<li>Add not-found.js / notFound() links to Status Codes section: #88332</li>
+<li>docs: update with more patterns and decision based: #90203</li>
+<li>docs: add Docker Standalone and Docker Export examples to Deploying page: #90386</li>
+<li>feat: Join guides and frame around UI preservation: #90595</li>
+<li>docs(deploying): add Hostinger Web Apps Hosting to Node.js deployment options: #90246</li>
+<li>docs: fix navigationType value and variable name in useReportWebVitals: #90599</li>
+<li>Accept header content negotiation: #90607</li>
+<li>docs: clarify native <script> usage for JSON-LD in docs: #90380</li>
+<li>Create next app CLI docs: #90788</li>
+<li>Unify caching story across the docs: #90149</li>
+<li>update proxy docs to use NextProxy type: #90647</li>
+<li>Loading layout docs update: #90787</li>
+<li>Uncached data suspense issue: #90450</li>
+<li>docs: explain deploy test custom scripts: #90966</li>
+<li>Update adapters documentation: #90986</li>
+<li>docs: large page data error: #90920</li>
+<li>docs(localFont): enhance details about using the localFont function: #88189</li>
+<li>chore(docs): mention behavior of redirects and remotePatterns: #91151</li>
+<li>docs: More Server Actions security guidance across docs: #90878</li>
+<li>docs: Streaming guide: #90779</li>
+<li>Docs: Split route segment config options into their own files: #90991</li>
+<li>Expose resolved invocation targets in next-routing: #91242</li>
+<li>docs: remove incorrect _document.tsx font example: #91346</li>
+<li>docs: <code>unstable_catchError()</code>: #89847</li>
+<li>SRI turbopack documentation: #90477</li>
+<li>docs: Clarify ignoreBuildErrors behavior: #91367</li>
+</ul>
+<h3>Example Changes</h3>
+<ul>
+<li>fix: Change Dockerfile.bun to use group/useradd instead of addgroup/user: #87443</li>
+<li>fix(examples): resolve hydration mismatch in blog-starter: #87703</li>
+<li>Update with-mysql example to Next.js 15, Tailwind 4, Prisma 7: #88475</li>
+<li>chore(examples): remove <code>with-recoil</code> exmaple: #81836</li>
+<li>chore(examples): remove <code>with-tigris</code> example: #81843</li>
+<li>[feat] Added Docker examples for standalone output and export output  following best practices: #87069</li>
+<li>Migrate from react-markdown to Streamdown static in EdgeDB example: #86435</li>
+<li>example: restore .next handling for with-docker examples: #90651</li>
+<li>with-docker: add new config file formats: #90731</li>
+<li>example: remove duplicate items in .dockerignore: #91079</li>
+</ul>
+<h3>Misc Changes</h3>
+<ul>
+<li>Turbopack: refactor graph traveral and fix module graph determinism: #87312</li>
+<li>bundle analyzer: remove uncompressed toggle, stabilize top bar ui: #87325</li>
+<li>test: de-flake client-cache deployment tests: #87412</li>
+<li>Revert "Revert "[turbopack] Set <code>liveness</code> of exports based on assignment analysis (#82802)"": #87214</li>
+<li>ci: track runner name on datadog test reports: #87440</li>
+<li>Turbopack: In CI only persist at the end: #87316</li>
+<li>fix: correct quotes in dev script filter in package.json: #87638</li>
+<li>chore: add a missing period to rspack description: #86526</li>
+<li>[test] Move off of as much <code>url.parse</code> as possible: #87286</li>
+<li>Update Rspack production test manifest: #87889</li>
+<li>Update Rspack development test manifest: #87888</li>
+<li>chore(turbo-tasks-malloc): replace mimalloc-rspack to mimalloc: #87815</li>
+<li>fix: normalize CRLF line endings in jscodeshift tests on Windows: #88008</li>
+<li>chore: add Claude Code configuration: #87943</li>
+<li>test: reduce flakiness in opentelemetry test for prod mode: #88102</li>
+<li>Rename CLAUDE.md to AGENTS.md with symlink: #88105</li>
+<li>[turbopack] Populate the <code>names</code> field of sourcemaps: #87911</li>
+<li>Turbopack: fix order of breadth first edges: #88117</li>
+<li>Turbopack: transpile CHUNK_SUFFIX: #88128</li>
+<li>chore: add dev boot profiling and benchmark scripts: #87940</li>
+<li>perf: improve stats action reliability and reduce CI noise: #87945</li>
+<li>Update Rspack production test manifest: #88137</li>
+<li>Update Rspack development test manifest: #88138</li>
+<li>Fix compile error when running next-custom-transform tests: #83715</li>
+<li>chore: add Conductor configuration for parallel development: #88116</li>
+<li>fix: move conductor.json to repo root for proper detection: #88184</li>
+<li>Turbopack: Update to swc_core v50.2.3: #87841</li>
+<li>ci: run stats on canary pushes for historical trend tracking: #88157</li>
+<li>perf: improve stats thresholds to reduce CI noise: #88158</li>
+<li>Turbopack: Use batch get request to read more efficient from database: #87106</li>
+<li>Turbopack: improve aggregation update performance: #87317</li>
+<li>Add test creation instructions to agents.md: #88215</li>
+<li>Turbopack: report changed env vars in tracing: #88195</li>
+<li>Turbopack: get rid of some manual self.await-s: #88236</li>
+<li>Guard against Object/Array shadowing in 'use cache' transform: #88229</li>
+<li>feat(turbo-tasks-fs): support multi denied_paths: #88186</li>
+<li>Upgrade to swc 54: #88207</li>
+<li>ci: fix javascript-urls test to account for React 18: #88249</li>
+<li>Turbopack: Remove tokio and turbo-task handles from Invalidator: #88242</li>
+<li>Turbopack: remove Stateful flag: #88196</li>
+<li>Upgrade to rustc 2026-01-04: #88095</li>
+<li>Turbopack: include children count in "task execution completed" span: #87318</li>
+<li>Turbopack: avoid blocking tasks for I/O work: #87661</li>
+<li>Turbopack: flatten trace when it reaches cut off depth: #88118</li>
+<li>Turbopack: remove unused code: #88274</li>
+<li>Turbopack: escape colon in output names: #88273</li>
+<li>[test] Add a failing test for cycle serialization in segment prefetches: #88287</li>
+<li>Turbopack: scope hoisting bug with reexport-self-star: #86131</li>
+<li>Turbopack: Add #[automatically_derived] to proc macros: #88281</li>
+<li>Update Rspack development test manifest: #88260</li>
+<li>Turbopack: Use <code>format!</code> instead of <code>anyhow!</code> inside of <code>anyhow::Context::with_context</code> calls: #88293</li>
+<li>Turbopack: pull in updated vercel/nft tests: #88162</li>
+<li>Fix pack-next script for next-swc: #88126</li>
+<li>Turbopack: use correct flags in tests: #88307</li>
+<li>Turbopack: fix task category on reading cells: #88309</li>
+<li>agent.md: Explain where the Next.js core code lives: #88314</li>
+<li>Turbopack: improve next-server.nft.json tests: #88320</li>
+<li>Turbopack: add family to database read span: #88323</li>
+<li>Tests: Reduce loglines from apply patch delay: #88224</li>
+<li>Turbopack: prefetch children too: #88324</li>
+<li>Turbopack: more stale details for tracing: #88306</li>
+<li>Turbopack: make GraphTraversal deterministically calling all nodes before erroring: #88119</li>
+<li>Turbopack: improve error message for incompatible swc plugins: #86346</li>
+<li>Update Rspack development test manifest: #88301</li>
+<li>Update Rspack production test manifest: #88300</li>
+<li>Stats Action: Add ready in time: #88283</li>
+<li>fix: skip stats-aggregate job for docs-only changes: #88330</li>
+<li>docs: add PR description guidance to AGENTS.md: #88408</li>
+<li>ci: Fix retry comments in workflow files: #88412</li>
+<li>[test] Deflake <code>test/integration/invalid-custom-routes/test/index.test.ts</code>: #88416</li>
+<li>[test] Remove rogue debug log: #88423</li>
+<li>Update AGENTS.md with PR template and test generation requirements: #88417</li>
+<li>Add .cursor/worktrees.json configuration: #88415</li>
+<li>docs: add guidance for code block highlight line numbers to AGENTS.md: #88430</li>
+<li>[turbopack] Compute transitive side effects and use them to trim imports: #86675</li>
+<li>fix(turbo-tasks-backend): use correct TaskDataCategory for is_immutable check: #88331</li>
+<li>perf(turbo-tasks-backend): use DefaultStorage for AggregationNumber to save memory: #88336</li>
+<li>[Turbopack] Move DirList to its own module: #88256</li>
+<li>docs: add rebuild guidance and ICE troubleshooting to AGENTS.md: #88337</li>
+<li>Type-check <code>run-tests.js</code> and remove unused <code>related</code> flag: #88433</li>
+<li>[test] Remove obsolete reference to <code>NEXT_TEST_SKIP_RETRY_MANIFEST</code>: #88434</li>
+<li>Revert "[Turbopack] Move DirList to its own module": #88441</li>
+<li>[scripts] Avoid conflicting type for <code>pack-next --compress</code>: #88439</li>
+<li>Update Rspack production test manifest: #88403</li>
+<li>Update Rspack development test manifest: #88404</li>
+<li>[test] Always run all tests without aborting on failure: #88435</li>
+<li>Turbopack: remove sourcemapping comments: #88217</li>
+<li>Turbopack: use mimalloc on Linux musl: #88426</li>
+<li>Turbopack: add support for selective reads of keyed cell values: #88303</li>
+<li>Turbopack: Reduce usage of parse_quote in turbo-tasks-macros: #88454</li>
+<li>Turbopack: don't cell in async map: #88473</li>
+<li>Turbopack: replace is_reference_used with unused_references set: #88304</li>
+<li>Turbopack: add lint rule to not cell in async map: #88474</li>
+<li>Turbopack: Remove dead generic_type_macro code: #88455</li>
+<li>Turbopack: remove unused code: #88497</li>
+<li>Turbopack: improve cell order lint rule: #88498</li>
+<li>Turbopack: parallelize making dependent tasks dirty: #86755</li>
+<li>Turbopack: fix bad performance edge case in production chunking: #88508</li>
+<li>Remove <code>lerna bootstrap</code> from the <code>clean</code> script in package.json: #88527</li>
+<li>Turbopack: Clean up <code>VcRead::Repr</code> associated type: #88456</li>
+<li>[cna] Avoid error with out-of-box Netlify config: #88546</li>
+<li>[turbopack] Move some of the logic for issue filtering into the rust layer: #88511</li>
+<li>Update Rspack production test manifest: #88469</li>
+<li>Update Rspack development test manifest: #88470</li>
+<li>feat: add TaskStorage derive macro and schema infrastructure: #88338</li>
+<li>[ci] Don&#39;t retry/notify for failed deploy tests with custom tarball URLs: #88576</li>
+<li>fix(turbopack): Collect <code>declare global {}</code> in <code>VarDeclWithTsDeclareCollector</code>: #88568</li>
+<li>Update labeler.json: #88591</li>
+<li>Fix optional <code>parent_task_id</code> compile failure w/<code>tokio_tracing</code> enabled: #88598</li>
+<li>Turbopack: support disabling tsconfig lookup: #88529</li>
+<li>Turbopack: run tasks with priority based on distance to leaf: #87662</li>
+<li>Turbopack: avoid removing cells for erroring tasks: #88305</li>
+<li>[ci] Use native <code>concurrency</code> feature in build-and-test: #87287</li>
+<li>Turbopack: unflake unit test: #88620</li>
+<li>Turbopack: snapshot the ModuleGraph to avoid (eventual) inconsistent graphs: #88340</li>
+<li>Turbopack: Consistency for compute_async_module_info: #88409</li>
+<li>Turbopack: follow tracing spans through aggregation update queue: #88410</li>
+<li>Turbopack: avoid chunk_item_id task and use selective cell access instead: #88411</li>
+<li>Turbopack: MappedReadRef should be Send and Sync: #88558</li>
+<li>Turbopack: selective read for module_chunk_groups in ChunkGroupInfo: #88559</li>
+<li>Turbopack: use selective reads for merged modules: #88560</li>
+<li>Turbopack: add caching to chunking: #88561</li>
+<li>Turbopack: use bugs.nextjs.org for Turbopack panic error reports: #88356</li>
+<li>Turbopack: docs: condition.query will ship in 16.2.0, not 16.1.1: #88663</li>
+<li>[turbopack] Add bundling support for worker_threads: #87746</li>
+<li>[cna] Ensure created app is not considered the workspace root in pnpm: #88647</li>
+<li>Revert "[turbopack] Add bundling support for worker_threads": #88725</li>
+<li>[ci] Enable Turborepo remote caching in e2e release deploy tests: #88746</li>
+<li>[test] Deflake <code>test/development/app-dir/browser-log-forwarding/fixtures/verbose-level/verbose-level.test.ts</code>: #88754</li>
+<li>Fix <code>Build Commands</code> section in AGENTS.md: #88757</li>
+<li>[test] Deflake <code>test/development/app-dir/hydration-error-count/hydration-error-count.test.ts</code>: #88749</li>
+<li>[ci] Exclude <code>test/production</code> from deploy tests: #88763</li>
+<li>Apply <code>buildArgs</code> also for deploy tests (via <code>package.json</code>): #88731</li>
+<li>[ci] Ensure Turbo Remote Cache can be written to: #88794</li>
+<li>perf(turbopack): optimize resolve plugin handling: #88639</li>
+<li>Fix buildManifest.js deployment tests: #88806</li>
+<li>[ci] Merge Cache Components and deploy tests manifests when running CC deploy tests: #88824</li>
+<li>Turbopack: Extend filesystem watcher fuzzing to cover symlinks and junction points: #88192</li>
+<li>[test]: add ability to run test-deploy with pre-existing deployment: #88829</li>
+<li>Update deterministic-build assertion: #88820</li>
+<li>Turbopack: shrink amortized: #88619</li>
+<li>Fix deployment test due to data-dpl-id attribute: #88846</li>
+<li>[ci] Fix Rspack/Turbopack test manifest generation: #88845</li>
+<li>Turbopack: show compressed size for print_cache_item_size: #88850</li>
+<li>[test] Fix deploy test of <code>cache-components.server-action.test.ts</code>: #88854</li>
+<li>Turbopack: Use a real file entrypoint for Workers (and SharedWorkers): #88602</li>
+<li>Turbopack: Add file write invalidation tracking to filesystem watcher fuzzing: #88665</li>
+<li>Turbopack: Move fuzzer for fs watcher into a separate file/module: #88666</li>
+<li>Turbopack: Add a stress test / fuzzer that tries creating many symlinks in a tight loop: #88667</li>
+<li>Turbopack: Make the priority_runner testcase deterministic: #88651</li>
+<li>Turbopack: Various cleanup for turbo-tasks-fs, mostly retry logic and string formatting: #88668</li>
+<li>Turbopack: Tweak retry loop for link creation to try to fix os error 80 on Windows: #88669</li>
+<li>feat: Replace InnerStorage with the generated TaskStorage struct: #88355</li>
+<li>Turbopack: Use webpki-root-certs in addition to rustls-platform-verifier on Linux for bare-bones Linux images without root CA stores: #88869</li>
+<li>refactor: migrate to typed accessors and remove CachedDataItem adapter: #88397</li>
+<li>docs: add skill for updating Next.js documentation: #88656</li>
+<li>Turbopack: [chore] Fix Rust check warnings: #88871</li>
+<li>Create-next-app update message: #88706</li>
+<li>Turbopack: Fix next/font preloading for page.mdx: #88848</li>
+<li>Update Rspack production test manifest: #88882</li>
+<li>[test] Skip failing deploy test in <code>searchparams-reuse-loading.test.ts</code>: #88821</li>
+<li>[test] Skip flaky <code>prefetch-runtime</code> tests for deploy tests: #88826</li>
+<li>remove gt workflow from agents.md: #88918</li>
+<li>Turbopack: refactor data storage to avoid reverse task cache: #88492</li>
+<li>Turbopack: change invalidator and immutable to data category: #88889</li>
+<li>Turbopack: reduce cache size: #88929</li>
+<li>fix typo: #88934</li>
+<li>Turbopack: improve module type error message: #88815</li>
+<li>Turbopack: improve selective read support to allow <code>Equivalent</code> keys: #88760</li>
+<li>Turbopack: add indirection layer for better caching during resolving: #80062</li>
+<li>Add Graphite workflow Cursor command: #88939</li>
+<li>Update Rspack production test manifest: #88930</li>
+<li>Update Rspack development test manifest: #88931</li>
+<li>Improve performance and token usage of <code>/ci-failures</code> command: #88960</li>
+<li>[Turbopack] Use a presized scratch buffer for task encoding: #88924</li>
+<li>Update Rspack development test manifest: #89004</li>
+<li>Update Rspack production test manifest: #89003</li>
+<li>Turbopack: remove Asset supertrait from Module trait. Modules don't have content: #86416</li>
+<li>[test] Improve deployment skew test for Pages Router data routes: #89038</li>
+<li>Fix react-loadable-manifest chunk hash mismatch by preserving async loader mapping: #88775</li>
+<li>Fix reset deploy project script: #89001</li>
+<li>Revert "Fix react-loadable-manifest chunk hash mismatch by preserving async loader mapping": #89073</li>
+<li>/pr-status (former /ci-failures): fetch PR reviews too: #89082</li>
+<li>Improve /pr-status: comments, argument, avoid full log: #89092</li>
+<li>chore(ci): rename 'new tests' jobs to 'new and changed tests': #89054</li>
+<li>[ci] Exclude tests by filename when merging manifests: #89093</li>
+<li>Turbopack: import with type should be handled via condition: #89035</li>
+<li>Enable pnpm dependency caching in e2e deploy tests: #88953</li>
+<li>[ci] Make <code>gh auth status</code> optional when triggering a release: #89098</li>
+<li>Update Rspack development test manifest: #89084</li>
+<li>tweak LRU sentinel cache key: #89123</li>
+<li>Turbopack: allow key block without hash in SST files: #88938</li>
+<li>Turbopack: Remove unused argument: #80235</li>
+<li>Prettier-ignore changes in <code>next-env.d.ts</code> files in all top-level apps: #89176</li>
+<li>Turbopack: warn when tracing the whole project: #89157</li>
+<li>Add full adapters E2E tests to workflow: #89125</li>
+<li>Update Rspack production test manifest: #89147</li>
+<li>Fix @next/routing for i18n api and dynamic routes: #89197</li>
+<li>Remove Vercel specific assertions from E2E deploy: #89198</li>
+<li>Add custom deploy and logs env for next-deploy: #89206</li>
+<li>Turbopack: change AsyncModulesInfo to use keyed reads: #89216</li>
+<li>Turbopack: selective reads of defined env vars in module analysis: #88759</li>
+<li>Turbopack: fix tracking modifications for transient and data: #89228</li>
+<li>[ci] Clear Jest transform cache: #89247</li>
+<li>Turbopack: Make the globals we pass to workers configurable: #88773</li>
+<li>Accept deploy script and log script as inputs: #89253</li>
+<li>[turbopack] mark persistent_task_type as inline: #89185</li>
+<li>[test] Add test suite name for Tests failures table: #89258</li>
+<li>refactor: Improve templates layout flexibility: #89245</li>
+<li>test: add client-cache.defaults failing deploy test: #89242</li>
+<li>test: add resume-data-cache failing deploy test: #89243</li>
+<li>[turbopack] Make shrinking logic declarative and optimize for immutable tasks: #89222</li>
+<li>Turbopack: Trace task modifications: #89229</li>
+<li>Turbopack: refactor extend transforms: #89116</li>
+<li>Turbopack: improve print_cache_item_size: #89279</li>
+<li>Update Rspack development test manifest: #89278</li>
+<li>Update Rspack production test manifest: #89277</li>
+<li>Improve consistency of how Flag typed fields are handled in the macro to more structurally prevent bugs like what was fixed in #89228: #89255</li>
+<li>Add failing test to deploy-tests-manifest: #89318</li>
+<li>Apply server actions transform to <code>node_modules</code> in route handlers: #89316</li>
+<li>[test] Deflake <code>browser-log-forwarding verbose level</code> test suite: #89324</li>
+<li>Turbopack: Move PrettyPrintError to turbo_tasks and add tests: #89280</li>
+<li>Update Rspack production test manifest: #89372</li>
+<li>Update Rspack development test manifest: #89371</li>
+<li>TURBOPACK: support chunk_loading_global method: #88790</li>
+<li>Don't upload build cache for deployment tests: #89432</li>
+<li>Add separate E2E deploy env for turbopack tests: #89458</li>
+<li>Turbopack: Symbol.for and keyFor are sideeffect-free: #89454</li>
+<li>Update Rspack production test manifest: #89423</li>
+<li>Update Rspack development test manifest: #89424</li>
+<li>Turbopack: improve suggestions for experimental.reportSystemEnvInlining: #89486</li>
+<li>Add experimental flag to expose testing API in production builds: #89499</li>
+<li>Proper e2e test of function determinism: #88908</li>
+<li>Turbopack: add turbo-persistence benchmark: #89446</li>
+<li>Proper e2e test of function determinism - adapter: #89522</li>
+<li>[test] consolidate the browser log test: #89601</li>
+<li>Fix flaky turbo cache pull with retries and graceful fallback: #89575</li>
+<li>Turbopack: Pass globals to node.js workers as well: #89261</li>
+<li>Upgrade rustc to 2026-02-05: #89591</li>
+<li>Update metadata assertions: #89625</li>
+<li>Update vercel CLI version in flakey deployment-id test: #89652</li>
+<li>Turbopack: remove unneeded benchmarks: #89592</li>
+<li>Turbopack Persistence: Remove amqf cache, store all amqfs in memory: #89562</li>
+<li>Add inline value support for small values (≤8 bytes): #89271</li>
+<li>[turbopack] remove the <code>_backend</code> field from TaskGuardImpl: #89015</li>
+<li>[Turbopack] Include CSS URL attributes, including Layer, Media and Supports: #89300</li>
+<li>docs: add task decomposition and verification guidelines: #89640</li>
+<li>Turbopack: Remove old <code>Vc::try_resolve_*</code> methods in favor of the <code>ResolvedVc</code> alternatives: #89696</li>
+<li>Fix reset-project script for E2E deploy tests: #89693</li>
+<li>feat: move font variables to html in create-next-app: #89632</li>
+<li>reduce the number of shards on small systems: #89731</li>
+<li>Update Rspack production test manifest: #89701</li>
+<li>Update Rspack development test manifest: #89702</li>
+<li>[test] Add regression test for segment cache prefetch memory leak: #89756</li>
+<li>Improve not-found-with-pages test: #89538</li>
+<li>Update flakey E2E deploy tests: #89792</li>
+<li>Update flakey E2E deploy tests no-prefetch: #89799</li>
+<li>Update Rspack production test manifest: #89741</li>
+<li>Fix devlow job timeouts: #89804</li>
+<li>Update Rspack development test manifest: #89740</li>
+<li>Turbopack Persistence: Improve heuristic for compacted database access: #89497</li>
+<li>Turbopack: remove ChunkableModuleReference trait: #89745</li>
+<li>docs: improve Graphite workflow documentation: #89488</li>
+<li>Remove --turbopack and --webpack flags from create-next-app: #89706</li>
+<li>Turbopack: make routes hashes mainfest more incremental: #87107</li>
+<li>[test] Remove references to removed, internal PPR environment variable: #89832</li>
+<li>[test] Enable scroll related tests in Cache Component tests: #83245</li>
+<li>docs: update adapter docs for routing, handlers, and PPR: #89849</li>
+<li>[test] Ensure new deploy test builds have the necessary env variables: #89846</li>
+<li>test: allow dpl query suffix in scss url-global expectation: #89856</li>
+<li>test: stabilize app-dir hash navigation RSC assertion: #89867</li>
+<li>Turbopack: Clean up unused register!() macro argument in test: #89869</li>
+<li>test: allow query suffix in related media URL e2e assertions: #89872</li>
+<li>Update Rspack development test manifest: #89811</li>
+<li>Turbopack: Store task error as pointer to the source error: #89293</li>
+<li>Turbopack: Pass asset_suffix_path as Vc: #89899</li>
+<li>[turbopack] Simplify JS <code>ChunkItem</code> with a single impl in most cases: #89548</li>
+<li>Change UrlBehavior.static_suffix to ResolvedVc<Option<RcStr>>: #89921</li>
+<li>[turbopack] Add #[derive(ValueToString)] and convert ~45 manual impls: #89788</li>
+<li>Turbopack hmr: fix missing factories: #89934</li>
+<li>Next-api: Check <code>client_source_maps</code> before generate source map: #89915</li>
+<li>Upgrade to swc 56: #89111</li>
+<li>Turbopack: fix CSS dependency locations: #89761</li>
+<li>Enable backtraces in turbopack integration tests: #89935</li>
+<li>Turbopack: Use <code>std::any::type_name</code> for global naming of turbo-task items: #89874</li>
+<li>[turbopack] use type_ids to register turbo task traits on value types: #89964</li>
+<li>Turbopack: Fix flake in task_statistics unit test: #89981</li>
+<li>Turbopack hmr: preserve group factory consistency for compressed modules: #89976</li>
+<li>chore: Don't run build-and-deploy CI job on graphite-base branches: #89982</li>
+<li>Turbopack: Update trybuild test dependency from 1.0.104 to 1.0.116: #89986</li>
+<li>test: Isolate read-only-source-hmr test: #86721</li>
+<li>Upgrade Lightning CSS: #88789</li>
+<li>fix(turbopack): --debug-build-paths fails with route groups: #89336</li>
+<li>test: scope e2e timeouts to startup and per-it: #89929</li>
+<li>Always set adapter deploy env variable: #90064</li>
+<li>[turbopack] Fix some modification tracking bugs in TaskStorage: #89708</li>
+<li>bench: render-pipeline benchmarks and stress routes (2/8): #89863</li>
+<li>[turbopack] fix our verify features in turbo-tasks backend: #90013</li>
+<li>Refactor factory not available error message generation: #89897</li>
+<li>[turbopack] Followup for <code>#[derive(ValueToString)]</code>: #89936</li>
+<li>Revert "[turbopack] Fix some modification tracking bugs in TaskStorage": #90096</li>
+<li>Disable jest cache for CI instead of wiping: #90097</li>
+<li>next-stats-action: avoid pnpm EXDEV during stats installs: #90100</li>
+<li>[turbopack] Run the deployment tests for turbopack and webpack: #84360</li>
+<li>ci: only cancel pull_request_stats on PR updates: #90104</li>
+<li>[Instant] test: remove unnecessary reactDebugChannel permutation: #90103</li>
+<li>[test] Replace flaky webpack snapshots in <code>cache-components-errors</code>: #90105</li>
+<li>Upgrade to swc 57: #90084</li>
+<li>[turbopack] Fix concurrent task lock panic during error formatting: #90056</li>
+<li>Reland "[turbopack] Fix some modification tracking bugs in TaskStorage": #90098</li>
+<li>refactor: fix non-determinism in resolve package: #90058</li>
+<li>Update Rspack development test manifest: #90074</li>
+<li>Update Rspack production test manifest: #90073</li>
+<li>test: extend production-browser-sourcemaps test: #89945</li>
+<li>Turbopack: use file_content.hash() consistently: #90078</li>
+<li>[test] Current behavior of focus after <code>next/link</code> navigation: #89959</li>
+<li>Turbopack: Enable tree-shaking for dynamic imports with destructuring: #89683</li>
+<li>test: Don't run integration tests twice for Turbopack : #83335</li>
+<li>Simplify how <code>json</code> imports work by turning it into a source transform: #89631</li>
+<li>Update Rspack production test manifest: #90120</li>
+<li>Update Rspack development test manifest: #90121</li>
+<li>Turbopack: Update rust toolchain to nightly-2026-02-18: #89974</li>
+<li>Turbopack: Derive <code>Default</code> on <code>PartialProjectOptions</code>, remove silly <code>partial_project_options_with_debug_build_paths</code> helper: #90170</li>
+<li>Turbopack: document ModuleSideEffects better: #90132</li>
+<li>[ci]: pin styled-components version in tests: #90194</li>
+<li>[turbopack] Add a simple tool to inspect serialized SST files and report on their contents: #89310</li>
+<li>Upgrade React from <code>4842fbea-20260217</code> to <code>2ba30655-20260219</code>: #90211</li>
+<li>[test] Improve fetch timeout error stack for <code>act</code>: #90261</li>
+<li>Turbopack: add Rope.content_hash and SHA hashing: #90235</li>
+<li>[instant] Handle more instant declaration patterns: #90251</li>
+<li>[sync-react] Allow syncing React with local build: #90277</li>
+<li>Add PR tarball install note to stats comment: #90316</li>
+<li>Bump Turborepo to 2.8.9: #90079</li>
+<li>Update wasm and next-custom-transforms crates to Rust edition 2024: #90350</li>
+<li>Turbopack: refactoring to prepare for name mangling: #89406</li>
+<li>Turbopack: Aggregation update improvements: #90139</li>
+<li>[ci] Stop linting auto-generated next-swc typings: #90390</li>
+<li>Add more known folders to is-folder-empty check in create-next-app: #88218</li>
+<li>[ci] Always upload Turborepo summary artifact: #90441</li>
+<li>tests: reenable escheck-output: #90423</li>
+<li>[test] Deflake <code>typed-routes-validator</code> using <code>tsc</code>: #90451</li>
+<li>test: Cleanup and refactoring: #90454</li>
+<li>[turbopack] Make compression in SST files optional: #89309</li>
+<li>[test] Only auto-retry individual e2e tests in CI: #90464</li>
+<li>Update Rspack production test manifest: #90412</li>
+<li>Update Rspack development test manifest: #90413</li>
+<li>Add @next/playwright package with instant() testing helper: #90470</li>
+<li>[turbopack] Reduce memory usage during compaction: #90229</li>
+<li>[sync-react] Allow syncing from a React commit: #90283</li>
+<li>Turbopack: Add line numbers to debug info in release-with-assertions profile: #90474</li>
+<li>Turbopack: emit env_diff span attribute for update: #90466</li>
+<li>test: unflake lru-disk-eviction on Windows: #90465</li>
+<li>test: Improve test assertions to prepare for dpl query string: #90463</li>
+<li>[test] Fix flaky &quot;delay re-prefetch after revalidation&quot; test: #90503</li>
+<li>Revert "Turbopack: Add line numbers to debug info in release-with-assertions profile (#90474)": #90525</li>
+<li>Bump Turborepo to 2.8.11: #90530</li>
+<li>Turbopack: Move turbopack out of <code>pnpm build</code> and into a <code>pnpm build-all</code> command: #90543</li>
+<li>Remove revalidation settling period from router-act: #90531</li>
+<li>Turbopack: add webpack loader names to traces: #87230</li>
+<li>Replace mark_root() with #[turbo_tasks::function(root)] flag: #90512</li>
+<li>[test] Deflake <code>typed-routes-validator</code>: #90562</li>
+<li>[test] Remove <code>getStackFramesContent</code>: #90571</li>
+<li>Replace <code>testonly</code> to <code>testheadless</code> in AGENTS.md: #90578</li>
+<li>[test] Include error code in Redbox snapshot: #90497</li>
+<li>Turbopack: Add TransientEnvMap to avoid persisting env vars in cache: #90526</li>
+<li>Turbopack: add Xxh3Hash128Hasher: #90584</li>
+<li>[test] Fix error code snapshots when testing with React 18: #90593</li>
+<li>Turbopack: use xxhash3_128 for content hashes: #90583</li>
+<li>test: remove stray TURBOPACK_BUILD=1: #90602</li>
+<li>Update Rspack development test manifest: #90566</li>
+<li>Update Rspack production test manifest: #90565</li>
+<li>[ci] Use <code>NEXT_TEST_CI</code> instead of <code>CI</code> for e2e test retry guard: #90606</li>
+<li>[test] Skip failing segment-cache deploy test: #90601</li>
+<li>turbo-persistence: drop key compression dictionary from SST files: #90608</li>
+<li>Pre-warm a single NodeJS instance when the next devserver starts: #90174</li>
+<li>Turbopack server HMR: inline source maps for <code>eval</code>ed modules: #90561</li>
+<li>test: Run Adapter e2e tests with Turbopack instead: #90600</li>
+<li>Add MemorySample to Turbopack trace infrastructure: #90597</li>
+<li>Use <code>VisitMut</code> instead of <code>Fold</code> for debug_instant_stack transform: #90274</li>
+<li>Ensure we only run main test mode with custom deploy script: #90665</li>
+<li>Centralize test timings to fix shard divergence in CI: #90672</li>
+<li>tests: Fix immutableAssetToken extraction: #90668</li>
+<li>turbo-persistence: streaming SST writer for reduced memory usage: #90617</li>
+<li>Add custom cleanup script support for deploy tests: #90696</li>
+<li>Use commit-based tarball URL in PR stats comment: #90709</li>
+<li>[ci] Use commit instead of PR number for preview builds in deploy tests: #90722</li>
+<li>Fix ENOBUFS errors in pr-status.js when fetching large CI logs: #90654</li>
+<li>Publish @next/playwright to npm as part of canary releases: #90738</li>
+<li>Update Rspack development test manifest: #90751</li>
+<li>Update Rspack production test manifest: #90750</li>
+<li>Turbopack: improve cell order lint rule for TraitRef::cell: #90756</li>
+<li>Add determinism test for static shell with asset preload headers: #89826</li>
+<li>Add static error when <code>unstable_instant</code> is used without <code>cacheComponents</code>: #90793</li>
+<li>enable server action RDC deploy test: #90796</li>
+<li>turbo-persistence: StreamingSstWriter performance and readability improvements: #90692</li>
+<li>pr-status: add reply-thread and resolve-thread subcommands: #90773</li>
+<li>[turbopack] Don&#39;t schedule idle snapshots when we are in a short session: #90804</li>
+<li>Update Rust dependencies for turbo-persistence and turbo-tasks-backend: #90774</li>
+<li>Add support for multi-valued tables: #89728</li>
+<li>pr-status: add --wait flag and background execution for /pr-status command: #90687</li>
+<li>exempt data URL CSS from Pages Router global CSS restriction: #89901</li>
+<li>turbo-persistence: add CRC32 block checksums: #90754</li>
+<li>Remove unused turbo-tasks items and add lint check: #90801</li>
+<li>Fix missing const generic parameter in turbo-persistence lookup call: #90817</li>
+<li>Turbopack: add anyhow::Context to turbo-persistence mmap, file open, and decompress operations: #90769</li>
+<li>Update Rspack development test manifest: #90805</li>
+<li>Avoid using TaskTypes as keys in storage instead use hashes: #88904</li>
+<li>Remove leaf segment force-refetch check: #90836</li>
+<li>[turbopack] add a new hasher implementation to eliminate allocations: #89059</li>
+<li>Show labeled steps for <code>instant()</code> test helper in the Playwright UI: #90664</li>
+<li>[turbotask] Make turbotask function registration const: #90797</li>
+<li>Turbopack: turbofmt/turbobail macros: #90092</li>
+<li>Add Err(anyhow(... ast-grep rule: #90869</li>
+<li>Turbopack: allow resolving TS files in tailwind config: #90046</li>
+<li>Unify Node and Edge externals list: #90819</li>
+<li>chore: add aurorascharff to devex team labeler config: #90866</li>
+<li>Update Rspack production test manifest: #90857</li>
+<li>Update Rspack development test manifest: #90858</li>
+<li>[ci]: continue-on-error for more gh auth status checks: #90890</li>
+<li>Cleanup non-generic assertions in our deploy test suite: #90894</li>
+<li>Turbopack: Tree shaking fixes and code organization: #89295</li>
+<li>tests: Use pnpm dlx to install latest CLI version: #90923</li>
+<li>Turbopack: Fix some eventually consistent reads at the top level in dev-server and snapshot tests: #90792</li>
+<li>Turbopack: Annotate ReadVcFuture as must_use instead of annotating functions that return it: #90839</li>
+<li>Prefix pr-status replies with :robot: emoji: #90943</li>
+<li>Set DontFork and Unmergeable on all mmap sites in turbo-persistence: #90941</li>
+<li>Turbopack: CompileTimeDefineValue numbers and regex: #90934</li>
+<li>Turbopack: pass reference type to CustomModuleType: #90814</li>
+<li>Fix preview version in <code>window.next.version</code> for PR builds: #90937</li>
+<li>[Evals] Standardize Evals in Next.js: #90883</li>
+<li>TURBOPACK: alias resolve lost query param: #88891</li>
+<li>Update Rspack development test manifest: #90969</li>
+<li>Turbopack: Make <code>ReadVcFuture::strongly_consistent</code> private: #90843</li>
+<li>Fix next-routing header interpolation: #91010</li>
+<li>Turbopack: accept ChunkGroup in entry_chunk_group: #90821</li>
+<li>Turbopack: show specific SWC error messages as error titles: #91022</li>
+<li>Turbopack: correctly use ChunkGroup::Shared: #90978</li>
+<li>Add script to patch project with preview tarball URLs: #91057</li>
+<li>Fix pr-status script missing failed jobs on page 2+ of API results: #91087</li>
+<li>Turbopack: don't panic due to eventual consistency in module merging: #91088</li>
+<li>fix: run lerna on a branch: #91092</li>
+<li>Fix preview tarball script to include @next/swc-linux-x64-gnu: #91099</li>
+<li>Improve unsafe code safety documentation in turbo-tasks-backend: #90755</li>
+<li>docs(contributing): Update setup in contributing/core/developing.md: #91018</li>
+<li>Turbopack: Pass hmr_enabled to ImportMetaBinding: #91118</li>
+<li>docs(turbopack): Copy over turbopack-trace-server docs: #91111</li>
+<li>Turbopack: introduce <code>ReferenceTypeCondition</code>: #91101</li>
+<li>fix: Use a pnpm preinstall script to fix catch-22 in next binary creation: #91016</li>
+<li>Exclude partial fallback for deploy mode: #91163</li>
+<li>[turbopack] Add support for fixed key blocks: #90844</li>
+<li>[turbopack] Encode task storage directly during persistence (skip clone): #89412</li>
+<li>[turbopack] hashing improvements to turbo-persistence: #90936</li>
+<li>[turbopack] Move empty snapshot filtering into take_snapshot: #90166</li>
+<li>docs(turbopack): Merge old turbo-tasks concept mdbook page with crate's top-level rustdoc: #91120</li>
+<li>Add RDC action test to deploy manifest and update PR test trigger: #91173</li>
+<li>[Turbopack] Don&#39;t attempt to compress key blocks containing small keys: #90881</li>
+<li>Lint against <code>.context(format!(...))</code>: #91122</li>
+<li>fix(turbopack): unref ThreadsafeFunctions to allow Node.js exit after build: #91107</li>
+<li>remove worktrees accidentally committed in #90166: #91215</li>
+<li>Fix syntax contexts in server action transform: #91210</li>
+<li>docs(turbopack): Merge the contents of the "cells" page in the mdbook with our rustdocs: #91126</li>
+<li>TURBOPACK: typescript transform support verbatimModuleSyntax: #90907</li>
+<li>[ci] Disable test-level retries during flakiness detection: #91261</li>
+<li>[cna] Bump vendored <code>json-schema-types</code>: #91255</li>
+<li>Remove sequential madvise for compressed blocks in StaticSortedFile: #91263</li>
+<li>docs(turbopack): Move mdbook "tasks" docs over to <code>turbo_tasks::function</code> rustdoc: #91132</li>
+<li>test-new-tests: enable adapter in deploy flow: #91269</li>
+<li>Revert "Exclude partial fallback for deploy mode": #91172</li>
+<li>[test] Properly log <code>framereceived</code> payload: #91266</li>
+<li>docs(turbopack): Merge task input docs from mdbook into rustdocs: #91136</li>
+<li>bundle-analyzer: merge _app route modules into current route visualization: #90841</li>
+<li>docs(turbopack): Migrate docs about traits from mdbook to rustdocs: #91170</li>
+<li>Remove LMDB backend and ReadTransaction abstractions from turbo-tasks-backend: #91284</li>
+<li>docs(turbopack): Move singleton pattern documentation from mdbook to rustdoc: #91175</li>
+<li>Turbopack: rename CSS module structs for clarity: #91304</li>
+<li>[test] Deflake <code>instant-navs-devtools</code>: #91256</li>
+<li>Delete blob files during compaction when entries are superseded: #91314</li>
+<li>[test] Resolve stale merge issues: #91329</li>
+<li>Turbopack: Remove the IntoTraitRef trait, make it an inherent method on Vc: #91223</li>
+<li>re-enable RDC deployment tests: #91327</li>
+<li>Use keyed cells for used_exports and export_circuit_breakers in BindingUsageInfo: #91306</li>
+<li>[test] Show decoded binary WebSocket messages in traces: #91308</li>
+<li>Docs skills: guide and api-reference: #90992</li>
+<li>Turbopack: switch chunk/asset hashes from hex to base40 encoding: #91137</li>
+<li>Turbopack: don't emit polyfill chunk for API routes: #91331</li>
+<li>[test] Current behavior for request APIs in <code>generateStaticParams</code>: #91188</li>
+<li>Update Rspack production test manifest: #91301</li>
+<li>Update Rspack development test manifest: #91300</li>
+<li>Turbopack: Remove old macos-compress script: #90967</li>
+<li>disable sub shell generation test outside of adapter: #91353</li>
+<li>Turboopack: put import attributes behind a pointer, 23% faster analyze: #91347</li>
+<li>Turbopack: <code>require(/* turbopackChunkingType: parallel */</code>: #91278</li>
+<li>Turbopack: use keyed cell access for AsyncModulesInfo: #91305</li>
+<li>Enable thin LTO for release builds: #91343</li>
+<li>[turbopack] const-ify most of the registration code: #90868</li>
+<li>[test] Improve actions-tree-shaking tests: #91326</li>
+<li>Move database compaction from write batch commit to backend idle loop: #91258</li>
+<li>Turbopack: use ChunkGroupEntry::Shared, part 2: #91279</li>
+<li>[test] More <code>instant-navs-devtools</code> deflaking: #91345</li>
+<li>Turbopack: Enable server HMR by default for app pages: #91476</li>
+<li>Allow blocking cross-site dev-only websocket connections from privacy sensitive origins: #91479</li>
+<li>Fix DataUriSource description to include "data:" prefix: #91455</li>
+<li>Deflake per-page dynamic stale time test: #91492</li>
+<li>Improve RSC error messages: #90702</li>
+<li>Improve CSS parse error recovery and reporting: #90025</li>
+<li>perf(turbopack-node): zero-copy Buffer transfer from node to rust: #91376</li>
+<li>docs(turbopack-core): Copy "layers" documentation from mdbook to rustdoc: #91350</li>
+<li>Turbopack: correctly apply effects for issue snapshots: #91511</li>
+<li>Turbopack: treat unknown CSS selectors as warnings: #91513</li>
+<li>docs(turbopack): Migrate chunking docs from mdbook, with proof-reading and minor updates from claude: #91472</li>
+<li>Skip catch-error-react-compiler test to unblock CI: #91528</li>
+<li>[turbopack] update qfilter to 0.3.0-alpha: #91467</li>
+<li>Unflake two <code>&quot;use cache&quot;</code> tests: #91529</li>
+<li>docs(turbopack): Remove old <code>architecture.md</code> file from turbopack crate: #91473</li>
+<li>[turbopack] Share scratch buffer across shards using thread local: #90167</li>
+<li>Turbopack: Use <code>debug = &quot;line-tables-only&quot;</code> for dev builds: #91539</li>
+<li>Unflake router events deploy test: #91589</li>
+</ul>
+<h3>Credits</h3>
+<p>Huge thanks to @icyJoseph, @nextjs-bot, @sokra, @Juneezee, @delbaoliveira, @wbinnssmith, @ztanner, @lukesandberg, @bgw, @naveenkarmegam, @Marukome0743, @pji2918, @nathannewyen, @eps1lon, @ijjk, @feedthejim, @vercel-release-bot, @xusd320, @huozhi, @mischnic, @wyattjoh, @styfle, @timneutkens, @unstubbable, @lubieowoce, @gnoff, @acdlite, @Rani367, @andrewimm, @brookemosby, @karlhorky, @kdy1, @mmastrac, @naaa760, @jgeschwendt, @williambout, @SimeonGriggs, @gaojude, @hanzala-sohrab, @dango0812, @msmx-mnakagawa, @davidgolden, @LucianBuzzo, @devjiwonchoi, @alexcarpenter, @jaffarkeikei, @BradErz, @mintydev789, @Suhaib3100, @pavan-sh, @amannn, @fireairforce, @JamBalaya56562, @wheresrhys, @ericrav, @Thomas465xd, @bgub, @Netail, @robert-j-webb, @bencmbrook, @shadcn, @sigmachirality, @abhishekmardiya, @vvscode, @freek-boon-greenberry, @alubbe, @FurryR, @01-binary, @andrewdamelio, @swarnava, @kristiyan-velkov, @haydenbleasel, @rishishanbhag, @tdarthur, @lavanitha, @agneliutkiene, @Mimori256, @pieh, @sleitor, @jantimon, @clicktodev, @mitul-s, @aurorascharff, @shuding, @jonasherr, @thdxg, @kowyo, @samselikoff, @dependabot, @benfavre, @zamadye, @cursor, and @richardjzhang for helping!</p>]]></content:encoded>
+      <category>vercel</category>
+      <category>next.js</category>
+      <source url="https://github.com/vercel/next.js">vercel/next.js</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.17s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.17s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.17s</guid>
