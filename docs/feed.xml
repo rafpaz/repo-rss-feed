@@ -10,9 +10,111 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 19 Mar 2026 15:19:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 18:22:06 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.116.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.116.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.116.0</guid>
+      <pubDate>Thu, 19 Mar 2026 17:51:35 GMT</pubDate>
+      <description>New Features App-server TUI now supports device-code ChatGPT sign-in during onboarding and can refresh existing ChatGPT tokens. (#14952) Plugin setup is smoother: Codex can prompt to install missing plugins or connectors, honor a configured suggestion allowlist, and sync install/uninstall state r...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>App-server TUI now supports device-code ChatGPT sign-in during onboarding and can refresh existing ChatGPT tokens. (#14952)</li>
+<li>Plugin setup is smoother: Codex can prompt to install missing plugins or connectors, honor a configured suggestion allowlist, and sync install/uninstall state remotely. (#14896, #15022, #14878)</li>
+<li>Added a <code>userpromptsubmit</code> hook so prompts can be blocked or augmented before execution and before they enter history. (#14626)</li>
+<li>Realtime sessions now start with recent thread context and are less likely to self-interrupt during audio playback. (#14829, #14827)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Fixed a first-turn stall where websocket prewarm could delay <code>turn/start</code>; startup now times out and falls back cleanly. (#14838)</li>
+<li>Restored conversation history for remote resume/fork in the app-server TUI and stopped duplicate live transcript output from legacy stream events. (#14930, #14892)</li>
+<li>Improved Linux sandbox startup on symlinked checkouts, missing writable roots, and Ubuntu/AppArmor hosts by preferring system <code>bwrap</code> when available. (#14849, #14890, #14963)</li>
+<li>Fixed an agent job finalization race and reduced status polling churn for worker threads. (#14843)</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Refreshed the Python SDK public API docs, examples, and walkthrough around the generated app-server models. (#14446)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Pinned the <code>setup-zig</code> GitHub Action to an immutable SHA for more reproducible CI. (#14858)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.115.0...rust-v0.116.0">https://github.com/openai/codex/compare/rust-v0.115.0...rust-v0.116.0</a></p>
+<ul>
+<li>#14717 Move TUI on top of app server (parallel code) @etraut-openai</li>
+<li>#14665 Use request permission profile in app server @mousseau-oai</li>
+<li>#14826 Fixed build failures related to PR 14717 @etraut-openai</li>
+<li>#14833 fix(core): fix sanitize name to use &#39;_&#39; everywhere @apanasenko-oai</li>
+<li>#14268 memories: exclude AGENTS and skills from stage1 input @andi-oai</li>
+<li>#14139 windows-sandbox: add runner IPC foundation for future unified_exec @iceweasel-oai</li>
+<li>#14851 Add exit helper to code mode scripts @pakrym-oai</li>
+<li>#14828 [stack 1/4] Split realtime websocket methods by version @aibrahim-oai</li>
+<li>#14652 Apply argument comment lint across codex-rs @bolinfest</li>
+<li>#14837 skill-creator: default new skills to ~/.codex/skills @xl-openai</li>
+<li>#14861 Add marketplace display names to plugin/list @xl-openai</li>
+<li>#14878 feat: support remote_sync for plugin install/uninstall. @xl-openai</li>
+<li>#14830 [stack 2/4] Align main realtime v2 wire and runtime flow @aibrahim-oai</li>
+<li>#14886 fix: align marketplace display name with existing interface conventions @xl-openai</li>
+<li>#14881 [codex] add Jason as a predefined subagent name @tibo-openai</li>
+<li>#14864 fix: tighten up shell arg quoting in GitHub workflows @bolinfest</li>
+<li>#14829 [stack 3/4] Add current thread context to realtime startup @aibrahim-oai</li>
+<li>#14827 [stack 4/4] Reduce realtime self-interruptions during playback @aibrahim-oai</li>
+<li>#14849 fix: canonicalize symlinked Linux sandbox cwd @viyatb-oai</li>
+<li>#14892 Fix tui_app_server: ignore duplicate legacy stream events @etraut-openai</li>
+<li>#14899 Revert tui code so it does not rely on in-process app server @etraut-openai</li>
+<li>#14890 fix(linux-sandbox): ignore missing writable roots @viyatb-oai</li>
+<li>#14920 feat: centralize package manager version @jif-oai</li>
+<li>#14935 feat: rename to get more explicit close agent @jif-oai</li>
+<li>#14843 Fix agent jobs finalization race and reduce status polling churn @daveaitel-openai</li>
+<li>#14944 feat: show effective model in spawn agent event @jif-oai</li>
+<li>#14838 fix(core): prevent hanging turn/start due to websocket warming issues @owenlin0</li>
+<li>#14859 Feat: CXA-1831 Persist latest model and reasoning effort in sqlite @shijie-oai</li>
+<li>#14930 fix(tui): restore remote resume and fork history @fcoury</li>
+<li>#14955 Fix fuzzy search notification buffering in app-server tests @aibrahim-oai</li>
+<li>#14938 feat: add suffix to shell snapshot name @jif-oai</li>
+<li>#14959 Fix code mode yield startup race @aibrahim-oai</li>
+<li>#14434 generate an internal json schema for <code>RolloutLine</code> @keyz</li>
+<li>#14846 use framed IPC for elevated command runner @iceweasel-oai</li>
+<li>#14952 Add device-code onboarding and ChatGPT token refresh to app-server TUI @etraut-openai</li>
+<li>#14896 [plugins] Support plugin installation elicitation. @mzeng-openai</li>
+<li>#14958 Stabilize Windows cmd-based shell test harnesses @aibrahim-oai</li>
+<li>#14966 Stabilize permissions popup selection tests @aibrahim-oai</li>
+<li>#14968 Stabilize approval matrix write-file command @aibrahim-oai</li>
+<li>#14986 temporarily disable private desktop until it works with elevated IPC path @iceweasel-oai</li>
+<li>#14983 Rename exec_wait tool to wait @pakrym-oai</li>
+<li>#14905 Add auth env observability @ccy-oai</li>
+<li>#14931 fix(tui): implement /mcp inventory for tui_app_server @fcoury</li>
+<li>#14977 Cleanup skills/remote/xxx endpoints. @xl-openai</li>
+<li>#14984 Gate realtime audio interruption logic to v2 @aibrahim-oai</li>
+<li>#14902 Unify realtime shutdown in core @aibrahim-oai</li>
+<li>#14963 fix(linux-sandbox): prefer system /usr/bin/bwrap when available @viyatb-oai</li>
+<li>#14446 Add Python SDK public API and examples @shaqayeq-oai</li>
+<li>#14993 feat: Add product-aware plugin policies and clean up manifest naming @xl-openai</li>
+<li>#14995 app-server: reject websocket requests with Origin headers @maxj-oai</li>
+<li>#14960 Add FS abstraction and use in view_image @pakrym-oai</li>
+<li>#14293 fix: honor active permission profiles in sandbox debug @viyatb-oai</li>
+<li>#14610 feat: support restricted ReadOnlyAccess in elevated Windows sandbox @viyatb-oai</li>
+<li>#13592 Prefer websockets when providers support them @pakrym-oai</li>
+<li>#14903 Handle realtime conversation end in the TUI @aibrahim-oai</li>
+<li>#14727 Use workspace requirements for guardian prompt override @charley-oai</li>
+<li>#14626 [hooks] userpromptsubmit - hook before user&#39;s prompt is executed @eternal-openai</li>
+<li>#14858 Pin setup-zig GitHub Action to immutable SHA @viyatb-oai</li>
+<li>#13702 fix(subagents) share execpolicy by default @dylan-hurd-oai</li>
+<li>#15022 [plugins] Support configuration tool suggest allowlist. @mzeng-openai</li>
+<li>#14947 feat: adapt artifacts to new packaging and 2.5.6 @jif-oai</li>
+<li>#14821 feat: add memory citation to agent message @jif-oai</li>
+<li>#15058 nit: disable live memory edition @jif-oai</li>
+<li>#14942 Removed remaining core events from tui_app_server @etraut-openai</li>
+<li>#15059 chore: disable memory read path for morpheus @jif-oai</li>
+<li>#14842 Add notify to code-mode @pakrym-oai</li>
+<li>#15020 fix: harden plugin feature gating @xl-openai</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>vercel/next.js v16.2.0</title>
       <link>https://github.com/vercel/next.js/releases/tag/v16.2.0</link>
       <guid isPermaLink="true">https://github.com/vercel/next.js/releases/tag/v16.2.0</guid>
