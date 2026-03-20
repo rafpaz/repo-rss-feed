@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 20 Mar 2026 03:49:32 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 06:23:11 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>openai/codex rust-v0.116.0</title>
@@ -4543,6 +4543,58 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
     </item>    <item>
+      <title>marlboro-advance/mpvEx v1.2.0</title>
+      <link>https://github.com/marlboro-advance/mpvEx/releases/tag/v1.2.0</link>
+      <guid isPermaLink="true">https://github.com/marlboro-advance/mpvEx/releases/tag/v1.2.0</guid>
+      <pubDate>Fri, 26 Dec 2025 21:42:29 GMT</pubDate>
+      <description>Checksums Variant SHA-256 arm64-v8a 6cabda5ca74f79d7fde5a8194fa9723212d57753b4db97dde59c520a308365e2 armeabi-v7a 43f54fad946a7f4630f0a1fb1e6b5167c7844b741359352c48d1b56496c570fd Universal bf1c2e932e555e3739ccd0cc7bc7378b66eb3ebe329f8547294d36eaa110da4f x86 24c96921c07b1e3b7cea577732ff9c19cd166ccf...</description>
+      <content:encoded><![CDATA[<hr>
+<h3>Checksums</h3>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>arm64-v8a</td>
+<td>6cabda5ca74f79d7fde5a8194fa9723212d57753b4db97dde59c520a308365e2</td>
+</tr>
+<tr>
+<td>armeabi-v7a</td>
+<td>43f54fad946a7f4630f0a1fb1e6b5167c7844b741359352c48d1b56496c570fd</td>
+</tr>
+<tr>
+<td>Universal</td>
+<td>bf1c2e932e555e3739ccd0cc7bc7378b66eb3ebe329f8547294d36eaa110da4f</td>
+</tr>
+<tr>
+<td>x86</td>
+<td>24c96921c07b1e3b7cea577732ff9c19cd166ccfe7d49f89e11e5ed3baf8aa65</td>
+</tr>
+<tr>
+<td>x86_64</td>
+<td>8bb662a191abbd35624d5c757d3189f6ec027d0effab4d61d5b5871120f0d008</td>
+</tr>
+</tbody></table>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>merge dev into master by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/189">https://github.com/marlboro-advance/mpvEx/pull/189</a></li>
+<li>Fix playlist mode by @Arnab11 in <a href="https://github.com/marlboro-advance/mpvEx/pull/168">https://github.com/marlboro-advance/mpvEx/pull/168</a></li>
+<li>merge dev into master by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/193">https://github.com/marlboro-advance/mpvEx/pull/193</a></li>
+<li>prepare for v1.2.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/203">https://github.com/marlboro-advance/mpvEx/pull/203</a></li>
+<li>Feature: Custom Seekbar Styles by @Riteshp2001 in <a href="https://github.com/marlboro-advance/mpvEx/pull/201">https://github.com/marlboro-advance/mpvEx/pull/201</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@Riteshp2001 made their first contribution in <a href="https://github.com/marlboro-advance/mpvEx/pull/201">https://github.com/marlboro-advance/mpvEx/pull/201</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/marlboro-advance/mpvEx/compare/v1.1.0...v1.2.0">https://github.com/marlboro-advance/mpvEx/compare/v1.1.0...v1.2.0</a></p>]]></content:encoded>
+      <category>marlboro-advance</category>
+      <category>mpvEx</category>
+      <source url="https://github.com/marlboro-advance/mpvEx">marlboro-advance/mpvEx</source>
+    </item>    <item>
       <title>Kong/insomnia core@12.2.0</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</link>
       <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</guid>
@@ -4560,6 +4612,61 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>Kong</category>
       <category>insomnia</category>
       <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>marlboro-advance/mpvEx v1.1.0</title>
+      <link>https://github.com/marlboro-advance/mpvEx/releases/tag/v1.1.0</link>
+      <guid isPermaLink="true">https://github.com/marlboro-advance/mpvEx/releases/tag/v1.1.0</guid>
+      <pubDate>Sun, 14 Dec 2025 12:52:37 GMT</pubDate>
+      <description>Checksums Variant SHA-256 arm64-v8a c83f7b22569c6127e2ccc1f52fa0e1b6de2ff83d7cac5a583c0ffb647041ab0b armeabi-v7a f041ffe61ace69d1e6c7ed6886129891c2a06d86bc65fee9192b32e99fe4b32e Universal 1a3160f4ad065c0ed01d68ec0aa8404e77fd6d9a9d421783e96daae0b779fd90 x86 b3382bfbee558c0e1ff627f0e5bb9fe1158e92fa...</description>
+      <content:encoded><![CDATA[<hr>
+<h3>Checksums</h3>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>arm64-v8a</td>
+<td>c83f7b22569c6127e2ccc1f52fa0e1b6de2ff83d7cac5a583c0ffb647041ab0b</td>
+</tr>
+<tr>
+<td>armeabi-v7a</td>
+<td>f041ffe61ace69d1e6c7ed6886129891c2a06d86bc65fee9192b32e99fe4b32e</td>
+</tr>
+<tr>
+<td>Universal</td>
+<td>1a3160f4ad065c0ed01d68ec0aa8404e77fd6d9a9d421783e96daae0b779fd90</td>
+</tr>
+<tr>
+<td>x86</td>
+<td>b3382bfbee558c0e1ff627f0e5bb9fe1158e92fa15cf303241f87dcb84352e81</td>
+</tr>
+<tr>
+<td>x86_64</td>
+<td>8f990df245e51143bfb701cf8c700374f8d2b009d777168dd2e779de0717fed1</td>
+</tr>
+</tbody></table>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>prepare for v1.1.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/37">https://github.com/marlboro-advance/mpvEx/pull/37</a></li>
+<li>chore: remove unused control layout files to clean up UI component structure by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/39">https://github.com/marlboro-advance/mpvEx/pull/39</a></li>
+<li>add playlist mode for automatic video navigation by @Arnab11 in <a href="https://github.com/marlboro-advance/mpvEx/pull/43">https://github.com/marlboro-advance/mpvEx/pull/43</a></li>
+<li>feat: implement file manager mode with filesystem browsing, breadcrumb navigation, and folder/video listing to enhance navigation options and user control over media organization by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/47">https://github.com/marlboro-advance/mpvEx/pull/47</a></li>
+<li>feat: add network connection and file browsing support for SMB, FTP, WebDAV with proper URL handling, credentials, and proxy integration and various other minor ui improvements by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/65">https://github.com/marlboro-advance/mpvEx/pull/65</a></li>
+<li>chore: various bug fixes and ui improvements by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/76">https://github.com/marlboro-advance/mpvEx/pull/76</a></li>
+<li>prepare for v1.1.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/102">https://github.com/marlboro-advance/mpvEx/pull/102</a></li>
+<li>prepare for v1.1.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/145">https://github.com/marlboro-advance/mpvEx/pull/145</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@Arnab11 made their first contribution in <a href="https://github.com/marlboro-advance/mpvEx/pull/43">https://github.com/marlboro-advance/mpvEx/pull/43</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/marlboro-advance/mpvEx/compare/v1.0.0...v1.1.0">https://github.com/marlboro-advance/mpvEx/compare/v1.0.0...v1.1.0</a></p>]]></content:encoded>
+      <category>marlboro-advance</category>
+      <category>mpvEx</category>
+      <source url="https://github.com/marlboro-advance/mpvEx">marlboro-advance/mpvEx</source>
     </item>    <item>
       <title>atuinsh/desktop v0.2.11</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.11</link>
