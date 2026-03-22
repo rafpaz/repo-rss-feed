@@ -10,9 +10,59 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sun, 22 Mar 2026 15:09:05 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 18:11:22 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>multiboxlabs/flow-browser v0.11.0</title>
+      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.11.0</link>
+      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.11.0</guid>
+      <pubDate>Sun, 22 Mar 2026 16:29:58 GMT</pubDate>
+      <description>What&amp;#39;s New Pinned Tabs is here! Drag and pin tabs to the top of your screen for quick, easy access. You can now sync tabs across windows! Enable it in settings. You can now use Incognito mode to browse! Right click on the browser icon, and click &amp;#39;New Incognito Window&amp;#39; or use the hotke...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s New</h2>
+<ul>
+<li>Pinned Tabs is here! Drag and pin tabs to the top of your screen for quick, easy access.</li>
+<li>You can now sync tabs across windows! Enable it in settings.</li>
+<li>You can now use Incognito mode to browse! Right click on the browser icon, and click &#39;New Incognito Window&#39; or use the hotkey &#39;Ctrl/Cmd + Shift + N&#39;</li>
+<li>Custom icons has been re-enabled with a new set of Liquid Glass icons to choose from! Find them in settings.</li>
+<li>Browsing History is now recorded! Find it at <code>flow://history</code>.</li>
+<li>Flow is now published on Flathub for Linux!</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed Window Controls for Linux having the wrong color theme</li>
+<li>Fixed Flow quitting when onboarding completes instead of opening a Browser Window</li>
+<li>Fixed window controls not appearing on popup windows</li>
+<li>Fixed two tabs both in Picture-in-Picture mode would cause user to not be able to switch to any other tabs</li>
+<li>Fixed Ctrl+W on Linux closing the entire window</li>
+<li>Fixed Pinned Extensions not showing on Address Bar</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>Improved performance!</li>
+<li>The macOS installer background has been updated!</li>
+</ul>
+<hr>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>feat: tab syncing across windows by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/233">https://github.com/MultiboxLabs/flow-browser/pull/233</a></li>
+<li>fix: prevent app quit on Linux after completing onboarding by @pip-owl in <a href="https://github.com/MultiboxLabs/flow-browser/pull/236">https://github.com/MultiboxLabs/flow-browser/pull/236</a></li>
+<li>feat: macOS persistent icon customization with NSDockTilePlugIn by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/224">https://github.com/MultiboxLabs/flow-browser/pull/224</a></li>
+<li>feat: implement pinned tabs by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/200">https://github.com/MultiboxLabs/flow-browser/pull/200</a></li>
+<li>feat(CI): build Flatpak for Pull Requests by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/242">https://github.com/MultiboxLabs/flow-browser/pull/242</a></li>
+<li>fix: linux ctrl+w by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/241">https://github.com/MultiboxLabs/flow-browser/pull/241</a></li>
+<li>feat: add history feature by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/240">https://github.com/MultiboxLabs/flow-browser/pull/240</a></li>
+<li>fix: support manual build runs and mirror artifact summary by @pip-owl in <a href="https://github.com/MultiboxLabs/flow-browser/pull/243">https://github.com/MultiboxLabs/flow-browser/pull/243</a></li>
+<li>fix: address flathub validation checks by @Terence-1 in <a href="https://github.com/MultiboxLabs/flow-browser/pull/245">https://github.com/MultiboxLabs/flow-browser/pull/245</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@pip-owl made their first contribution in <a href="https://github.com/MultiboxLabs/flow-browser/pull/236">https://github.com/MultiboxLabs/flow-browser/pull/236</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.10.2...v0.11.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.10.2...v0.11.0</a></p>]]></content:encoded>
+      <category>multiboxlabs</category>
+      <category>flow-browser</category>
+      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
+    </item>    <item>
       <title>payloadcms/payload v3.80.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.80.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.80.0</guid>
@@ -180,6 +230,50 @@
       <category>openai</category>
       <category>codex</category>
       <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
+      <title>edde746/plezy 1.28.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.28.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.28.0</guid>
+      <pubDate>Thu, 19 Mar 2026 05:05:49 GMT</pubDate>
+      <description>Added Individual shared item support Live TV channel favorites Redesigned TV player controls behavior MKV seeking without Cues &amp;amp; zlib decompression support in ExoPlayer Cmd/Ctrl+F to open search Masked digits in TV PIN input Home hubs sorted by library order Fixed Reduce remote playback start...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Individual shared item support</li>
+<li>Live TV channel favorites</li>
+<li>Redesigned TV player controls behavior</li>
+<li>MKV seeking without Cues &amp; zlib decompression support in ExoPlayer</li>
+<li>Cmd/Ctrl+F to open search</li>
+<li>Masked digits in TV PIN input</li>
+<li>Home hubs sorted by library order</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Reduce remote playback startup latency</li>
+<li>Preserve chapters/markers in cache during watch state sync</li>
+<li>Tighten and align media detail screen spacing</li>
+<li>Prefer exact language code match in track selection</li>
+<li>Eliminate duplicate API requests on startup</li>
+<li>Focus search input on search tab</li>
+<li>Incorrect queue sheet item sizing</li>
+<li>Enable WAL mode for SQLite</li>
+<li>Reduce image cache budgets and add memory pressure handling</li>
+<li>SurfaceControl use-after-free</li>
+<li>Defer nativeSurfaceChanged out of layout pass</li>
+<li>Download deletion using DB file paths</li>
+<li>Set leafCount for offline season metadata</li>
+<li>Load downloaded subtitles for offline playback</li>
+<li>Use gpu-api=auto for mpv (Windows)</li>
+<li>Reduce bottom sheet spacing</li>
+<li>Delete propagation when episodes are displayed in flat list</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Switch from OkHttp to Cronet networking stack</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.2...1.28.0">https://github.com/edde746/plezy/compare/1.27.2...1.28.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>vercel/next.js v16.2.0</title>
       <link>https://github.com/vercel/next.js/releases/tag/v16.2.0</link>
@@ -1548,6 +1642,45 @@
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
+      <title>edde746/plezy 1.27.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.27.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.27.0</guid>
+      <pubDate>Sat, 14 Mar 2026 01:16:48 GMT</pubDate>
+      <description>Added Configurable intro/credits marker regex patterns Inline season tabs with d-pad focus improvements Fixed Always-on-top getting stuck on desktop Android high-bitrate stutter via OkHttp connection pooling Auto-reconnect stream after network loss during playback Bottom sheets autofocusing incor...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Configurable intro/credits marker regex patterns</li>
+<li>Inline season tabs with d-pad focus improvements</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Always-on-top getting stuck on desktop</li>
+<li>Android high-bitrate stutter via OkHttp connection pooling</li>
+<li>Auto-reconnect stream after network loss during playback</li>
+<li>Bottom sheets autofocusing incorrectly outside keyboard/dpad mode</li>
+<li>DBusServiceUnknownException on Linux without NetworkManager</li>
+<li>Duplicate episode fetching with flattened seasons</li>
+<li>EPG guide grid: boundary-spanning programs, bold titles, softer styling</li>
+<li>Idle CPU usage on macOS when video player is paused</li>
+<li>Layout shift for image placeholders</li>
+<li>macOS media key play/pause handling</li>
+<li>Null ratingKey in folder browsing</li>
+<li>Player stuck on skip credits with no next episode</li>
+<li>Tab revert and overflow bleed on mobile tab switch</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Admin actions hidden from non-admin users</li>
+<li>Browse grouping picker uses settings-style bottom sheet</li>
+<li>Health probe cooldown, connectivity debounce, and concurrent check coalescing</li>
+<li>Respect Plex server library season view mode</li>
+<li>Thread safety on Android</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.26.1...1.27.0">https://github.com/edde746/plezy/compare/1.26.1...1.27.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.08s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.08s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.08s</guid>
@@ -1612,6 +1745,101 @@
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>edde746/plezy 1.26.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.26.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.26.0</guid>
+      <pubDate>Wed, 11 Mar 2026 04:32:56 GMT</pubDate>
+      <description>Added Auto-reconnect playback after network loss Per-server connection status on splash screen Platform-adaptive settings menus Clickable text on media cards (mouse) Movie edition titles Fixed ExoPlayer issues Button focus nodes out of sync with action count Content strip text colors in light mod...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Auto-reconnect playback after network loss</li>
+<li>Per-server connection status on splash screen</li>
+<li>Platform-adaptive settings menus</li>
+<li>Clickable text on media cards (mouse)</li>
+<li>Movie edition titles</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>ExoPlayer issues</li>
+<li>Button focus nodes out of sync with action count</li>
+<li>Content strip text colors in light mode</li>
+<li>Default to Vulkan on Windows</li>
+<li>Docker bridge IP filter blocking connections</li>
+<li>DVR tune error handling and display</li>
+<li>EPG day name localization and channel column width</li>
+<li>macOS Sparkle startup hang</li>
+<li>Null field handling in PlexHome and folder metadata</li>
+<li>Remaining untranslated strings</li>
+<li>TMDB icon gradient</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.25.1...1.26.0">https://github.com/edde746/plezy/compare/1.25.1...1.26.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
+      <title>edde746/plezy 1.25.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.25.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.25.0</guid>
+      <pubDate>Sun, 08 Mar 2026 16:48:15 GMT</pubDate>
+      <description>Added Secondary subtitle tracks Custom GLSL shader import DV Profile 7→8.1 conversion via libdovi (ExoPlayer) Detail screen context menu button Option to hide bottom navigation bar labels Watch together playback rejoin flow Performance overlay decoder details Content strip for dpad navigation Sca...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Secondary subtitle tracks</li>
+<li>Custom GLSL shader import</li>
+<li>DV Profile 7→8.1 conversion via libdovi (ExoPlayer)</li>
+<li>Detail screen context menu button</li>
+<li>Option to hide bottom navigation bar labels</li>
+<li>Watch together playback rejoin flow</li>
+<li>Performance overlay decoder details</li>
+<li>Content strip for dpad navigation</li>
+<li>Scaled queue items for tablet screens</li>
+<li>Portuguese, Japanese, Russian, Polish, Danish, Norwegian translations</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>ExoPlayer audio/video sync with large audio frames</li>
+<li>iOS OOM during PiP playback cycles</li>
+<li>Player stuck after show ends with no next episode</li>
+<li>Gamepad ANR on Android</li>
+<li>ExoPlayer fallback for unsupported DV formats</li>
+<li>Restore iOS inline player after PiP closes</li>
+<li>PiP button now closes PiP when already active</li>
+<li>Subtitle defaults respect server stream selection and series-level subtitle mode</li>
+<li>Track selection persistence with stale cache</li>
+<li>Respect view mode in detail screens</li>
+<li>Library display settings scoped per user profile</li>
+<li>Preserve home screen scroll position on back navigation</li>
+<li>Browse tab scrolling after alpha jump libraries</li>
+<li>Desktop context menu position and bottom sheet sizing</li>
+<li>macOS Sparkle update detection and startup hang</li>
+<li>Windows single instance mutex</li>
+<li>ExoPlayer tunneling mode reopen and codec support check</li>
+<li>Non-1x playback speed in audio position bypass</li>
+<li>mpv config TextField dpad/back key navigation</li>
+<li>Unwatched on-deck sort fallback</li>
+<li>Filter hub detail view by library section</li>
+<li>Item stealing focus after sidenav return</li>
+<li>macOS metal layer hidden when window occluded</li>
+<li>Watch together sync and teardown stability</li>
+<li>Player disposed race condition</li>
+<li>Async codec queueing disabled</li>
+<li>Large UTF-8 decoding offloaded to background isolate</li>
+<li>Reduced currently-airing program contrast</li>
+<li>Reduced UI padding between media items</li>
+<li>Hero section bottom fade</li>
+<li>Hero auto-scroll pause on desktop background transition</li>
+<li>Queue sheet image loading priority</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Reduced watch together CPU overhead</li>
+<li>Moved mpv operations off UI thread</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.24.1...1.25.0">https://github.com/edde746/plezy/compare/1.24.1...1.25.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>Kong/insomnia core@12.4.0</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</link>
@@ -1852,6 +2080,75 @@
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>edde746/plezy 1.24.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.24.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.24.0</guid>
+      <pubDate>Tue, 03 Mar 2026 17:00:22 GMT</pubDate>
+      <description>Added Picture-in-picture (iOS &amp;amp; macOS) Spatial Audio support (iOS &amp;amp; macOS) Combined audio &amp;amp; subtitle track sheet Swipe-up content strip for mobile video controls Raw text editor for mpv config Respect system 24h time format setting Fixed Subtitle visibility toggle Specials included in...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Picture-in-picture (iOS &amp; macOS)</li>
+<li>Spatial Audio support (iOS &amp; macOS)</li>
+<li>Combined audio &amp; subtitle track sheet</li>
+<li>Swipe-up content strip for mobile video controls</li>
+<li>Raw text editor for mpv config</li>
+<li>Respect system 24h time format setting</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Subtitle visibility toggle</li>
+<li>Specials included in playback order</li>
+<li>Aspect ratio and shader settings not persisted</li>
+<li>Continue watching hidden in library</li>
+<li>Completed downloads restarting on app launch</li>
+<li>Large downloads not retrying after native retries exhausted</li>
+<li>Slow startup when a saved server is unreachable</li>
+<li>Audio focus not requested before player init</li>
+<li>Hero carousel indicators visible in dpad mode</li>
+<li>Redundant items in context menu</li>
+<li>Track sheet divider asymmetric in landscape</li>
+<li>Android audio fallback when default output unavailable</li>
+<li>Android playback stability improvements</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.23.0...1.24.0">https://github.com/edde746/plezy/compare/1.23.0...1.24.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
+      <title>edde746/plezy 1.23.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.23.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.23.0</guid>
+      <pubDate>Sun, 01 Mar 2026 16:11:09 GMT</pubDate>
+      <description>Added Auto picture-in-picture (Android) Audio normalization toggle Tunneled playback setting ExoPlayer logs bridged to Dart Server name shown in search results Expandable episode descriptions Respect server collection mode in library browse LiveTV guide visual contrast and polish Fixed D-pad even...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Auto picture-in-picture (Android)</li>
+<li>Audio normalization toggle</li>
+<li>Tunneled playback setting</li>
+<li>ExoPlayer logs bridged to Dart</li>
+<li>Server name shown in search results</li>
+<li>Expandable episode descriptions</li>
+<li>Respect server collection mode in library browse</li>
+<li>LiveTV guide visual contrast and polish</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>D-pad events bypassing IME stage</li>
+<li>Episode thumbnail blur applied too broadly</li>
+<li>Timeline thumbnail showing without direct interaction</li>
+<li>ExoPlayer libass font issue</li>
+<li>FLAC audio decoded by wrong codec</li>
+<li>Desktop context menu overflow</li>
+<li>MediaCodec hardware decoding on Android</li>
+<li>Playback pausing on duckable audio focus loss</li>
+<li>Hide spoilers setting not applied to hero section</li>
+<li>Video surface size not recalculated on orientation change</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.22.0...1.23.0">https://github.com/edde746/plezy/compare/1.22.0...1.23.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19b</guid>
@@ -1889,6 +2186,47 @@
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>edde746/plezy 1.22.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.22.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.22.0</guid>
+      <pubDate>Fri, 27 Feb 2026 23:13:09 GMT</pubDate>
+      <description>Added Auto-dismiss skip segment buttons BIF file caching for instant preview thumbnails Hide spoilers setting for unwatched episodes Themed splash screen with status messages Square artwork in hero sections AVFoundation as preferred audio output on macOS Fixed OOM crash from infinite focus reclai...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Auto-dismiss skip segment buttons</li>
+<li>BIF file caching for instant preview thumbnails</li>
+<li>Hide spoilers setting for unwatched episodes</li>
+<li>Themed splash screen with status messages</li>
+<li>Square artwork in hero sections</li>
+<li>AVFoundation as preferred audio output on macOS</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>OOM crash from infinite focus reclaim loop</li>
+<li>ASS subtitle stretching</li>
+<li>SSA subtitle codec mapped to wrong file extension</li>
+<li>Corrupted download paths missing leading slash</li>
+<li>Download playback issues (doubled path, audio language, spinner)</li>
+<li>Duplicate hero tag error in logs upload dialog</li>
+<li>Duplicate Plex notifications on login</li>
+<li>D-pad navigation on logs screen</li>
+<li>Low memory warnings during playback</li>
+<li>MPV destroy/create ANR</li>
+<li>Artwork changing not working</li>
+<li>Buffer state cleared on playback restart</li>
+<li>Alpha jump bar visible for small libraries</li>
+<li>Connection probe headers using wrong app name</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Delete-from-server button safety</li>
+<li>mpv updated to 0.41.0 on iOS/macOS</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.21.3...1.22.0">https://github.com/edde746/plezy/compare/1.21.3...1.22.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>payloadcms/payload v3.78.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.78.0</link>
@@ -2386,6 +2724,39 @@ export default async function SalesSummaryWidgetComponent({
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>edde746/plezy 1.21.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.21.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.21.0</guid>
+      <pubDate>Tue, 24 Feb 2026 13:30:29 GMT</pubDate>
+      <description>Added Auto-update Still watching prompt on sleep timer expiry Multi-IP QR code for companion remote Fixed Black screen when closing manage libraries sheet Overlay sheet theme and scope on mobile Overlay sheet missing on desktop/TV navigation path Profile switch triggered on every window focus (de...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Auto-update</li>
+<li>Still watching prompt on sleep timer expiry</li>
+<li>Multi-IP QR code for companion remote</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Black screen when closing manage libraries sheet</li>
+<li>Overlay sheet theme and scope on mobile</li>
+<li>Overlay sheet missing on desktop/TV navigation path</li>
+<li>Profile switch triggered on every window focus (desktop)</li>
+<li>Gamepad handles not released on window blur (Windows)</li>
+<li>Playback issues (Linux)</li>
+<li>Memory-aware buffer limits</li>
+<li>Widget tree depth reduced</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Fast offline startup</li>
+<li>Cache-first metadata fetching for playback</li>
+<li>Reduced redundant metadata API requests</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.20.0...1.21.0">https://github.com/edde746/plezy/compare/1.20.0...1.21.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 30.90s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/30.90s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.90s</guid>
@@ -2431,6 +2802,41 @@ export default async function SalesSummaryWidgetComponent({
       <category>yuliskov</category>
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
+      <title>edde746/plezy 1.20.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.20.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.20.0</guid>
+      <pubDate>Mon, 23 Feb 2026 08:08:37 GMT</pubDate>
+      <description>Added Metadata editing User ratings Folder browsing with play/shuffle Buffer ranges on timeline Fallback skip markers from chapter titles View All card on hub detail Persistent ambient lighting (mutually exclusive with shaders) Alpha-jump non-latin character support QR code reliability improvemen...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Metadata editing</li>
+<li>User ratings</li>
+<li>Folder browsing with play/shuffle</li>
+<li>Buffer ranges on timeline</li>
+<li>Fallback skip markers from chapter titles</li>
+<li>View All card on hub detail</li>
+<li>Persistent ambient lighting (mutually exclusive with shaders)</li>
+<li>Alpha-jump non-latin character support</li>
+<li>QR code reliability improvements</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Android OOM via auto buffer sizing</li>
+<li>Android SurfaceControl crash on player dispose</li>
+<li>macOS playback power management</li>
+<li>mpv dispose deadlock on Wayland (Linux)</li>
+<li>PIN prompt for current profile on app open</li>
+<li>Hub/onDeck API processing moved to isolates</li>
+<li>Cache JSON operations moved to isolates</li>
+<li>Gamepad input ignored when window is unfocused</li>
+<li>D-pad focus on pushed screens, dialogs, buttons, and settings</li>
+<li>D-pad controls for settings dialogs in keyboard nav mode</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.18.2...1.20.0">https://github.com/edde746/plezy/compare/1.18.2...1.20.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>zen-browser/desktop 1.18.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
@@ -2567,6 +2973,68 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
+      <title>edde746/plezy 1.17.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.17.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.17.0</guid>
+      <pubDate>Mon, 16 Feb 2026 16:20:12 GMT</pubDate>
+      <description>Added Live TV Trailers and extras on media detail screens Companion remote (mobile-to-desktop control via WebSocket) External player support Background download engine (background_downloader) Video thumbnail previews Chapter name tooltips Show ratings on media detail Connection recovery on mobile...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Live TV</li>
+<li>Trailers and extras on media detail screens</li>
+<li>Companion remote (mobile-to-desktop control via WebSocket)</li>
+<li>External player support</li>
+<li>Background download engine (background_downloader)</li>
+<li>Video thumbnail previews</li>
+<li>Chapter name tooltips</li>
+<li>Show ratings on media detail</li>
+<li>Connection recovery on mobile resume and endpoint exhaustion</li>
+<li>Download recovery after force-kill</li>
+<li>Adjustable subtitle position</li>
+<li>Skip intro/credits keyboard shortcut</li>
+<li>Mouse wheel volume control in player</li>
+<li>4-digit PIN input for profile switcher</li>
+<li>Require profile selection on app open setting</li>
+<li>Back button exit confirmation on Android TV</li>
+<li>Focus navigation for movie detail sections</li>
+<li>Library density applies to hub rows</li>
+<li>Log uploading</li>
+<li>Linux ARM support</li>
+<li>Windows on ARM support</li>
+<li>Lower minSdk to 25</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>SurfaceView ANR on Android</li>
+<li>Main-thread pressure during playback and downloads</li>
+<li>External player on Android 11+</li>
+<li>Playback speed having no effect on Android TV</li>
+<li>Sleep timer not exiting video player</li>
+<li>Fallback to external browser when Custom Tabs unavailable</li>
+<li>Persist library browse filters across library switches</li>
+<li>Refresh home page when libraries are hidden/unhidden</li>
+<li>Re-probe offline servers on connectivity recovery</li>
+<li>Watch Together guest losing sync on episode switch</li>
+<li>Watch Together same-episode replay blocked</li>
+<li>Download queue status and season screen notifications</li>
+<li>Downloaded media clear logo on detail screen</li>
+<li>Sidebar expand/collapse touch input</li>
+<li>Lower minimum subtitle font size to 10</li>
+<li>Entering fullscreen while maximized on Windows</li>
+<li>Auto-hide cursor in keyboard mode</li>
+<li>Hero auto-scroll timer leak</li>
+<li>Episode watched status</li>
+<li>Delete button colors</li>
+<li>Dialog autofocus and button sizing</li>
+<li>Various TV and D-pad focus issues</li>
+<li>Performance</li>
+</ul>
+<p>Full Changelog: <a href="https://github.com/edde746/plezy/compare/1.16.1...1.17.0">https://github.com/edde746/plezy/compare/1.16.1...1.17.0</a></p>
+<p>Thanks to @micahmo and @8bitgentleman!</p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>zen-browser/desktop 1.18.8b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.8b</link>
