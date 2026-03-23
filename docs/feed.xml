@@ -10,9 +10,47 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 23 Mar 2026 03:56:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 06:32:05 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 1.29.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.29.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.29.0</guid>
+      <pubDate>Mon, 23 Mar 2026 05:22:13 GMT</pubDate>
+      <description>Added Screen lock Rewind on resume setting Fixed Live TV channels for non-admin users External subtitles on Android mpv Disable impeller on Tensor/NVIDIA GPUs Disable PiP on Android TV Profile select back button bypass Match content frame rate Linux titlebar height on non-GNOME DEs Overlay sheet...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Screen lock</li>
+<li>Rewind on resume setting</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Live TV channels for non-admin users</li>
+<li>External subtitles on Android mpv</li>
+<li>Disable impeller on Tensor/NVIDIA GPUs</li>
+<li>Disable PiP on Android TV</li>
+<li>Profile select back button bypass</li>
+<li>Match content frame rate</li>
+<li>Linux titlebar height on non-GNOME DEs</li>
+<li>Overlay sheet position, scroll-to-selected in bottom sheets</li>
+<li>PiP aspect ratio after ExoPlayer→mpv fallback</li>
+<li>CPU usage when paused and backgrounded on macOS</li>
+<li>PiP background thread layout crash</li>
+<li>Background isolate shutdown on iOS</li>
+<li>Race conditions in mpv dispose and track manager</li>
+<li>Track selection and external subs after mpv fallback</li>
+<li>Subtitle track selection bugs</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Reduce hub section vertical spacing</li>
+<li>Switch to libmpv-android fork, fixing ANR</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.28.0...1.29.0">https://github.com/edde746/plezy/compare/1.28.0...1.29.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>multiboxlabs/flow-browser v0.11.0</title>
       <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.11.0</link>
       <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.11.0</guid>
@@ -2973,68 +3011,6 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>edde746/plezy 1.17.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.17.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.17.0</guid>
-      <pubDate>Mon, 16 Feb 2026 16:20:12 GMT</pubDate>
-      <description>Added Live TV Trailers and extras on media detail screens Companion remote (mobile-to-desktop control via WebSocket) External player support Background download engine (background_downloader) Video thumbnail previews Chapter name tooltips Show ratings on media detail Connection recovery on mobile...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Live TV</li>
-<li>Trailers and extras on media detail screens</li>
-<li>Companion remote (mobile-to-desktop control via WebSocket)</li>
-<li>External player support</li>
-<li>Background download engine (background_downloader)</li>
-<li>Video thumbnail previews</li>
-<li>Chapter name tooltips</li>
-<li>Show ratings on media detail</li>
-<li>Connection recovery on mobile resume and endpoint exhaustion</li>
-<li>Download recovery after force-kill</li>
-<li>Adjustable subtitle position</li>
-<li>Skip intro/credits keyboard shortcut</li>
-<li>Mouse wheel volume control in player</li>
-<li>4-digit PIN input for profile switcher</li>
-<li>Require profile selection on app open setting</li>
-<li>Back button exit confirmation on Android TV</li>
-<li>Focus navigation for movie detail sections</li>
-<li>Library density applies to hub rows</li>
-<li>Log uploading</li>
-<li>Linux ARM support</li>
-<li>Windows on ARM support</li>
-<li>Lower minSdk to 25</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>SurfaceView ANR on Android</li>
-<li>Main-thread pressure during playback and downloads</li>
-<li>External player on Android 11+</li>
-<li>Playback speed having no effect on Android TV</li>
-<li>Sleep timer not exiting video player</li>
-<li>Fallback to external browser when Custom Tabs unavailable</li>
-<li>Persist library browse filters across library switches</li>
-<li>Refresh home page when libraries are hidden/unhidden</li>
-<li>Re-probe offline servers on connectivity recovery</li>
-<li>Watch Together guest losing sync on episode switch</li>
-<li>Watch Together same-episode replay blocked</li>
-<li>Download queue status and season screen notifications</li>
-<li>Downloaded media clear logo on detail screen</li>
-<li>Sidebar expand/collapse touch input</li>
-<li>Lower minimum subtitle font size to 10</li>
-<li>Entering fullscreen while maximized on Windows</li>
-<li>Auto-hide cursor in keyboard mode</li>
-<li>Hero auto-scroll timer leak</li>
-<li>Episode watched status</li>
-<li>Delete button colors</li>
-<li>Dialog autofocus and button sizing</li>
-<li>Various TV and D-pad focus issues</li>
-<li>Performance</li>
-</ul>
-<p>Full Changelog: <a href="https://github.com/edde746/plezy/compare/1.16.1...1.17.0">https://github.com/edde746/plezy/compare/1.16.1...1.17.0</a></p>
-<p>Thanks to @micahmo and @8bitgentleman!</p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>zen-browser/desktop 1.18.8b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.8b</link>
