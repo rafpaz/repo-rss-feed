@@ -141,9 +141,28 @@ async function fetchReleasesForRepo({
     throw new Error(`Unexpected response format for ${slug}`);
   }
 
-  return releases
-    .filter((release) => !release.draft && !release.prerelease)
-    .filter((release) => shouldIncludeRelease(release.tag_name, includePatchReleases))
+  const nonDraftReleases = releases.filter(
+    (release) => !release.draft && !release.prerelease,
+  );
+
+  const skippedVersions = nonDraftReleases
+    .filter(
+      (release) =>
+        !shouldIncludeRelease(release.tag_name, includePatchReleases),
+    )
+    .map((release) => release.tag_name)
+    .filter(Boolean);
+
+  if (skippedVersions.length > 0) {
+    console.log(
+      `[${slug}] Skipped ${skippedVersions.length} version(s): ${skippedVersions.join(', ')}`,
+    );
+  }
+
+  return nonDraftReleases
+    .filter((release) =>
+      shouldIncludeRelease(release.tag_name, includePatchReleases),
+    )
     .slice(0, maxReleases)
     .map((release) => ({
       repoSlug: slug,
