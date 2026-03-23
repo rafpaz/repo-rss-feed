@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 23 Mar 2026 00:37:30 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 03:56:56 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>multiboxlabs/flow-browser v0.11.0</title>
