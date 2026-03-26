@@ -10,9 +10,40 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 26 Mar 2026 09:25:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 12:25:15 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 1.30.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.30.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.30.0</guid>
+      <pubDate>Thu, 26 Mar 2026 10:03:36 GMT</pubDate>
+      <description>Fixed Continuous play queue for aired date episode order Skip SAF picker on Android TV Live TV stream EOF and reconnect handling Live TV timeline heartbeat deduplication Library grid stuck skeletons on fast scroll Missing season tabs for single-season shows Detach mpv surface before view removal...</description>
+      <content:encoded><![CDATA[<h2>Fixed</h2>
+<ul>
+<li>Continuous play queue for aired date episode order</li>
+<li>Skip SAF picker on Android TV</li>
+<li>Live TV stream EOF and reconnect handling</li>
+<li>Live TV timeline heartbeat deduplication</li>
+<li>Library grid stuck skeletons on fast scroll</li>
+<li>Missing season tabs for single-season shows</li>
+<li>Detach mpv surface before view removal in dispose</li>
+<li>Tensor SoC detection for internal model IDs</li>
+<li>Keyboard shortcuts for unmapped keys</li>
+<li>Speed step 0.1 → 0.25 for keyboard shortcuts</li>
+<li>Non-primary CustomScrollViews in IndexedStack tabs</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Run SQLite on background isolate</li>
+<li>Library grid scroll and idle frame rendering</li>
+<li>Coalesce watch together rebuilds, static TV overlays</li>
+<li>Detail screen scroll and arrow rebuild performance</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.29.0...1.30.0">https://github.com/edde746/plezy/compare/1.29.0...1.30.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>edde746/plezy 1.29.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.29.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.29.0</guid>
@@ -1486,41 +1517,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>yuliskov</category>
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
-      <title>edde746/plezy 1.20.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.20.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.20.0</guid>
-      <pubDate>Mon, 23 Feb 2026 08:08:37 GMT</pubDate>
-      <description>Added Metadata editing User ratings Folder browsing with play/shuffle Buffer ranges on timeline Fallback skip markers from chapter titles View All card on hub detail Persistent ambient lighting (mutually exclusive with shaders) Alpha-jump non-latin character support QR code reliability improvemen...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Metadata editing</li>
-<li>User ratings</li>
-<li>Folder browsing with play/shuffle</li>
-<li>Buffer ranges on timeline</li>
-<li>Fallback skip markers from chapter titles</li>
-<li>View All card on hub detail</li>
-<li>Persistent ambient lighting (mutually exclusive with shaders)</li>
-<li>Alpha-jump non-latin character support</li>
-<li>QR code reliability improvements</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Android OOM via auto buffer sizing</li>
-<li>Android SurfaceControl crash on player dispose</li>
-<li>macOS playback power management</li>
-<li>mpv dispose deadlock on Wayland (Linux)</li>
-<li>PIN prompt for current profile on app open</li>
-<li>Hub/onDeck API processing moved to isolates</li>
-<li>Cache JSON operations moved to isolates</li>
-<li>Gamepad input ignored when window is unfocused</li>
-<li>D-pad focus on pushed screens, dialogs, buttons, and settings</li>
-<li>D-pad controls for settings dialogs in keyboard nav mode</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.18.2...1.20.0">https://github.com/edde746/plezy/compare/1.18.2...1.20.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>zen-browser/desktop 1.18.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
