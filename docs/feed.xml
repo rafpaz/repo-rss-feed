@@ -10,9 +10,44 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 27 Mar 2026 09:21:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 12:19:57 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.4b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.4b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.4b</guid>
+      <pubDate>Fri, 27 Mar 2026 09:34:04 GMT</pubDate>
+      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 149.0 Optimized the performance glance and its animations, making it more responsive and smoother than before. Added a &amp;#39;Un-split tabs&amp;#39; context menu item when right-clicking on a tab inside a split view to q...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-20/">Various security fixes</a></p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 149.0</li>
+<li>Optimized the performance glance and its animations, making it more responsive and smoother than before.</li>
+<li>Added a &#39;Un-split tabs&#39; context menu item when right-clicking on a tab inside a split view to quickly un-split it.</li>
+<li>Many PDF files will now load significantly faster thanks to hardware acceleration.</li>
+<li>Zen now automatically blocks notifications and permanently revokes permissions for any website flagged as malicious by SafeBrowsing. This prevents unsafe sites from sending background notifications to users, commonly used for ads, spam or phishing.</li>
+<li>The WebRender layer compositor is now enabled on Windows, reducing power usage during full-screen video playback and improving WebGL/WebGPU performance.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed background grain not showing properly (<a href="https://github.com/zen-browser/desktop/issues/12765">#12765</a>)</li>
+<li>Fixed not being able to switch spaces with scroll actions (<a href="https://github.com/zen-browser/desktop/issues/12816">#12816</a>)</li>
+<li>Fixed closing blank windows when asking for confirmation (<a href="https://github.com/zen-browser/desktop/issues/12922">#12922</a>)</li>
+<li>Increased robustness of HTTP/3 upload performance for unstable network conditions.</li>
+<li>Other minor bug fixes and improvements.</li>
+</ul>
+<h2>Changes</h2>
+<ul>
+<li>Live folders will now perform a refresh when waking up the computer to make sure the content is up to date.</li>
+<li>On Linux, Zen will now default to the XDG portal file picker if available, rather than the GTK3 one, which is usually better integrated with the user&#39;s desktop environment, and more powerful.</li>
+<li>On Windows, Zen will use the modern Windows.Devices.Geolocation API for geolocation instead of Windows 7 location API.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>openai/codex rust-v0.117.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.117.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.117.0</guid>
@@ -1743,52 +1778,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
-      <title>yuliskov/SmartTube 30.90s</title>
-      <link>https://github.com/yuliskov/SmartTube/releases/tag/30.90s</link>
-      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/30.90s</guid>
-      <pubDate>Mon, 23 Feb 2026 13:17:04 GMT</pubDate>
-      <description>Subscriptions order fix New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123) Added new key remapping: fast forward -&amp;gt; toggle s...</description>
-      <content:encoded><![CDATA[<ul>
-<li>Subscriptions order fix</li>
-<li>New feature: Block Channel. Works everywhere; the data is stored locally. Activate: Settings/General/Context menu/Block channel. Blocked channel stored here: Settings/General/Sections/Blocked channels (thanks asphalt123)</li>
-<li>Added new key remapping: fast forward -&gt; toggle speed, S key -&gt; toggle speed</li>
-<li>Added the ability to decrease CPU load during &#39;Increased playback speed&#39;. To decrease cpu loading, uncheck this Settings/Player/Misc/Audio stretching. The downside is very ugly voices. (thanks ragavpr)</li>
-<li>Fixed search on a channel and fixed sorting channel videos by latest, popularity, etc</li>
-</ul>
-<h2>🛡️ VirusTotal Analysis</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Build Variant</th>
-<th align="left">VirusTotal Status</th>
-<th align="left">Detailed Report</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_arm64-v8a.apk">SmartTube_stable_30.90_arm64-v8a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection"><img src="https://badges.cssnr.com/vt/id/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/1e4ef99ef64881942c3951a6af8525315d2471da81a6e540ab16c367e94dacb3/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_armeabi-v7a.apk">SmartTube_stable_30.90_armeabi-v7a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection"><img src="https://badges.cssnr.com/vt/id/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/a76c6499ca400940884aa9010d9c5d3b9194c96bb66e1ca442a5daa5cb057f08/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_universal.apk">SmartTube_stable_30.90_universal.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection"><img src="https://badges.cssnr.com/vt/id/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/0f0de30f20fc26bac73c7eee6671cb7a6aba0524c8d73257c962813ecedceb4e/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/30.90s/SmartTube_stable_30.90_x86.apk">SmartTube_stable_30.90_x86.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection"><img src="https://badges.cssnr.com/vt/id/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db?start=green&end=red&n=8&v=1771853054" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/c8955437848a3aa49f1a82717e2b24d003ea216e737314e19b1d90a70cc869db/detection">View Report</a></td>
-</tr>
-</tbody></table>]]></content:encoded>
-      <category>yuliskov</category>
-      <category>SmartTube</category>
-      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
       <title>zen-browser/desktop 1.18.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.10b</guid>
@@ -2050,27 +2039,6 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.5b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.5b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.5b</guid>
-      <pubDate>Fri, 06 Feb 2026 21:42:55 GMT</pubDate>
-      <description>Zen Stable Release This update includes a new setting to allow users who didn&amp;#39;t like the window sync feature but still want to sync their pinned tabs across windows in a workspace to do so. Make sure window sync is enabled in about:config for this feature to work. New Features Added &amp;#39;Sync...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<p>This update includes a new setting to allow users who didn&#39;t like the window sync feature but still want to sync their pinned tabs across windows in a workspace to do so. Make sure window sync is enabled in about:config for this feature to work.</p>
-<h2>New Features</h2>
-<ul>
-<li>Added <u>&#39;Sync only pinned tabs in workspaces&#39;</u> option to the &#39;Tab Management&#39; settings so that only pinned tabs will be synced across windows in a workspace. This is useful for users who want to keep their pinned tabs consistent across windows while allowing unpinned tabs to be different in each window.</li>
-<li>Updated to Firefox 147.0.3</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed an issue when drag and dropping tabs from normal windows to blank windows</li>
-<li>Fixed an issue on Windows systems with a large number of fonts installed where parts of the UI (tabs, menus, and Settings) could display garbled characters or symbols instead of readable text.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.75.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.75.0</link>
