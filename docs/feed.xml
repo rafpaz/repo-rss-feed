@@ -10,9 +10,25 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 27 Mar 2026 18:23:07 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 21:14:11 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yuliskov/SmartTube 31.30s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.30s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.30s</guid>
+      <pubDate>Fri, 27 Mar 2026 21:12:16 GMT</pubDate>
+      <description>UI: added rounded card corners (Settings/UI/Misc/Rounded card corners - enabled by default) Fixed bugs in Block channel feature (Settings/General/Context menu/Block channel) Scheduled backup: fixed random pop-up dialog on Android 10+ Previous release fixes</description>
+      <content:encoded><![CDATA[<ul>
+<li>UI: added rounded card corners (Settings/UI/Misc/Rounded card corners - enabled by default)</li>
+<li>Fixed bugs in Block channel feature (Settings/General/Context menu/Block channel)</li>
+<li>Scheduled backup: fixed random pop-up dialog on Android 10+</li>
+<li>Previous release fixes</li>
+</ul>
+<img width="617" height="768" alt="image" src="https://github.com/user-attachments/assets/74f96c9e-9833-45c7-9909-4a4fc3f086ca" />]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.4b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.4b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.4b</guid>
