@@ -10,9 +10,26 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sat, 28 Mar 2026 12:15:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 15:11:15 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.5b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.5b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.5b</guid>
+      <pubDate>Sat, 28 Mar 2026 14:32:31 GMT</pubDate>
+      <description>Zen Stable Release Quick fixes from the 1.19.4b release, please see their respective entries for more details. Fixes Fixed new profiles freezing on startup ( #12940 ) Fixed an issue with drag and dropping tabs, making folders have empty spaces Fixed Github Live Folders not fetching Pull Request d...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<p>Quick fixes from the 1.19.4b release, please see their respective entries for more details.</p>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed new profiles freezing on startup (<a href="https://github.com/zen-browser/desktop/issues/12940">#12940</a>)</li>
+<li>Fixed an issue with drag and dropping tabs, making folders have empty spaces</li>
+<li>Fixed Github Live Folders not fetching Pull Request data correctly (<a href="https://github.com/zen-browser/desktop/issues/12942">#12942</a>)</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.30s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.30s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.30s</guid>
@@ -1988,30 +2005,6 @@ export default buildConfig({
 <ul>
 <li>Fixed accessibility issues with the workspace switcher and other buttons</li>
 <li>Other session restore fixes and improvements</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.6b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.6b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.6b</guid>
-      <pubDate>Fri, 13 Feb 2026 09:38:37 GMT</pubDate>
-      <description>Zen Stable Release New Features Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode. Zen will now follow the XDG Base Directory Specification for storing its configuration and data files. Thi...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>New Features</h2>
-<ul>
-<li>Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode.</li>
-<li>Zen will now follow the XDG Base Directory Specification for storing its configuration and data files. This means that on Linux, configuration files will be stored in <code>~/.config/zen</code>. Note that compatibility with the old configuration directory (<code>~/.zen</code>) will be enabled if the directory exists.</li>
-<li>Dragging a tab to the center of the window to create a split will now give the option to split on top or below.</li>
-<li>When typing directly an url or domain, a second search result will appear with the option to search for the url or domain on your selected search engine.</li>
-<li>Added a &#39;--blank-window&#39; command line argument to open a blank window without pinned tabs, spaces, etc.</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Zen will now restore unpinned tabs after a crash, even if the &#39;Restore previous session&#39; setting is disabled.</li>
-<li>Fixed syncing bookmarks with your Mozilla account not working correctly.</li>
-<li>Other quality of life improvements and bug fixes.</li>
 </ul>]]></content:encoded>
       <category>zen-browser</category>
       <category>desktop</category>
