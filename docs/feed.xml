@@ -10,9 +10,133 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 31 Mar 2026 15:30:54 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 18:24:09 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.118.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.118.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.118.0</guid>
+      <pubDate>Tue, 31 Mar 2026 17:02:18 GMT</pubDate>
+      <description>New Features Windows sandbox runs can now enforce proxy-only networking with OS-level egress rules, instead of relying on environment variables alone. (#12220) App-server clients can now start ChatGPT sign-in with a device code flow, which helps when browser callback login is unreliable or unavai...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Windows sandbox runs can now enforce proxy-only networking with OS-level egress rules, instead of relying on environment variables alone. (#12220)</li>
+<li>App-server clients can now start ChatGPT sign-in with a device code flow, which helps when browser callback login is unreliable or unavailable. (#15525)</li>
+<li><code>codex exec</code> now supports the prompt-plus-stdin workflow, so you can pipe input and still pass a separate prompt on the command line. (#15917)</li>
+<li>Custom model providers can now fetch and refresh short-lived bearer tokens dynamically, instead of being limited to static credentials from config or environment variables. (#16286, #16287, #16288)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Project-local <code>.codex</code> files are now protected even on first creation, closing a gap where the initial write could bypass normal approval checks. (#15067)</li>
+<li>Linux sandbox launches are more reliable because Codex once again finds a trusted system <code>bwrap</code> on normal multi-entry <code>PATH</code>s. (#15791, #15973)</li>
+<li>The app-server-backed TUI regained several missing workflows: hook notifications replay correctly, <code>/copy</code> and <code>/resume &lt;name&gt;</code> work again, <code>/agent</code> no longer shows stale threads, and the skills picker scrolls past the first page. (#16013, #16021, #16050, #16014, #16109, #16110)</li>
+<li>MCP startup is more robust: local servers get a longer startup window, and failed handshakes surface warnings in the TUI again instead of looking like clean startups. (#16080, #16041)</li>
+<li>On Windows, <code>apply_patch</code> is less likely to fail because it no longer adds redundant writable roots that could trigger unnecessary ACL churn. (#16030)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.117.0...rust-v0.118.0">https://github.com/openai/codex/compare/rust-v0.117.0...rust-v0.118.0</a></p>
+<ul>
+<li>#15891 [plugins] Polish tool suggest prompts. @mzeng-openai</li>
+<li>#15791 fix: resolve bwrap from trusted PATH entry @viyatb-oai</li>
+<li>#15900 skills: remove unused skill permission metadata @bolinfest</li>
+<li>#15811 app-server: Split transport module @euroelessar</li>
+<li>#15067 Protect first-time project .codex creation across Linux and macOS sandboxes @rreichel3-oai</li>
+<li>#15903 [codex] import token_data from codex-login directly @bolinfest</li>
+<li>#15897 sandboxing: use OsString for SandboxCommand.program @bolinfest</li>
+<li>#15910 docs: update AGENTS.md to discourage adding code to codex-core @bolinfest</li>
+<li>#15898 chore: move bwrap config helpers into dedicated module @viyatb-oai</li>
+<li>#15906 chore: remove skill metadata from command approval payloads @bolinfest</li>
+<li>#15909 fix(network-proxy): fail closed on network-proxy DNS lookup errors @viyatb-oai</li>
+<li>#14495 Preserve bazel repository cache in github actions @siggisim</li>
+<li>#15522 bazel: re-organize bazelrc @sluongng</li>
+<li>#15923 codex-tools: extract shared tool schema parsing @bolinfest</li>
+<li>#15918 permissions: remove macOS seatbelt extension profiles @bolinfest</li>
+<li>#12220 feat(windows-sandbox): add network proxy support @viyatb-oai</li>
+<li>#15931 fix: make MACOS_DEFAULT_PREFERENCES_POLICY part of MACOS_SEATBELT_BASE_POLICY @bolinfest</li>
+<li>#15933 fix: use matrix.target instead of matrix.os for actions/cache build action @bolinfest</li>
+<li>#15928 codex-tools: extract MCP schema adapters @bolinfest</li>
+<li>#15948 fix: increase timeout for rust-ci to 45 minutes for now @bolinfest</li>
+<li>#15921 [app-server-protocol] introduce generic ClientResponse for app-server-protocol @rhan-oai</li>
+<li>#15120 chore: refactor network permissions to use explicit domain and unix socket rule maps @celia-oai</li>
+<li>#15525 Add ChatGPT device-code login to app server @daniel-oai</li>
+<li>#15876 chore: drop useless stuff @jif-oai</li>
+<li>#15954 chore: move pty and windows sandbox to Rust 2024 @bolinfest</li>
+<li>#15986 feat: spawn v2 make task name as mandatory @jif-oai</li>
+<li>#16000 Use codex-utils-template for login error page @jif-oai</li>
+<li>#16001 Use codex-utils-template for review prompts @jif-oai</li>
+<li>#15998 Use codex-utils-template for sandbox mode prompts @jif-oai</li>
+<li>#15995 Use codex-utils-template for collaboration mode presets @jif-oai</li>
+<li>#15996 Use codex-utils-template for search tool descriptions @jif-oai</li>
+<li>#15999 Use codex-utils-template for review exit XML @jif-oai</li>
+<li>#15985 feat: spawn v2 as inter agent communication @jif-oai</li>
+<li>#15973 fix(sandbox): fix bwrap lookup for multi-entry PATH @viyatb-oai</li>
+<li>#15944 codex-tools: extract dynamic tool adapters @bolinfest</li>
+<li>#15955 ci: add Bazel clippy workflow for codex-rs @bolinfest</li>
+<li>#15953 codex-tools: introduce named tool definitions @bolinfest</li>
+<li>#16027 fix: fix Windows CI regression introduced in #15999 @bolinfest</li>
+<li>#16036 fix: disable plugins in SDK integration tests @bolinfest</li>
+<li>#15946 Normalize /mcp tool grouping for hyphenated server names @pakrym-oai</li>
+<li>#16035 plugins: Clean up stale curated plugin sync temp dirs and add sync metrics @xl-openai</li>
+<li>#15934 Add usage-based business plan types @bwanner-oai</li>
+<li>#16031 codex-tools: extract responses API tool models @bolinfest</li>
+<li>#16013 Fix tui_app_server hook notification rendering and replay @etraut-openai</li>
+<li>#16021 Fix /copy regression in tui_app_server turn completion @etraut-openai</li>
+<li>#16044 [mcp] Bypass read-only tool checks. @mzeng-openai</li>
+<li>#16030 don&#39;t include redundant write roots in apply_patch @iceweasel-oai</li>
+<li>#15922 Remove the legacy TUI split @etraut-openai</li>
+<li>#15828 [codex] Pin GitHub Actions workflow references @hintz-openai</li>
+<li>#16046 ci: run SDK tests with a Bazel-built codex @bolinfest</li>
+<li>#16050 Fix tui_app_server resume-by-name lookup regression @etraut-openai</li>
+<li>#16014 Fix tui_app_server agent picker closed-state regression @etraut-openai</li>
+<li>#16054 chore: clean up argument-comment lint and roll out all-target CI on macOS @bolinfest</li>
+<li>#15917 Support Codex CLI stdin piping for <code>codex exec</code> @jliccini</li>
+<li>#16057 shell-command: reuse a PowerShell parser process on Windows @bolinfest</li>
+<li>#16063 refactor: rewrite argument-comment lint wrappers in Python @bolinfest</li>
+<li>#15952 bazel: enable the full Windows gnullvm CI path @bolinfest</li>
+<li>#16067 ci: run Bazel clippy on Windows gnullvm @bolinfest</li>
+<li>#16071 fix: clean up remaining Windows argument-comment-lint violations @bolinfest</li>
+<li>#16072 ci: split fast PR Rust CI from full post-merge Cargo CI @bolinfest</li>
+<li>#16074 bazel: add Windows gnullvm stack flags to unit test binaries @bolinfest</li>
+<li>#16026 fix(tui): refresh footer on collaboration mode changes @fcoury</li>
+<li>#16112 Update PR babysitter skill for review replies and resolution @etraut-openai</li>
+<li>#16104 Rename tui_app_server to tui @etraut-openai</li>
+<li>#16118 fix: fix comment linter lint violations in Linux-only code @bolinfest</li>
+<li>#16106 build: migrate argument-comment-lint to a native Bazel aspect @bolinfest</li>
+<li>#16115 Remove remaining custom prompt support @etraut-openai</li>
+<li>#16116 Remove the codex-tui app-server originator workaround @etraut-openai</li>
+<li>#16047 codex-tools: extract tool spec models @bolinfest</li>
+<li>#16128 bazel: refresh the expired macOS SDK pin @bolinfest</li>
+<li>#16129 codex-tools: extract configured tool specs @bolinfest</li>
+<li>#16130 ci: keep rust-ci-full Windows argument-comment-lint on packaged wrapper @bolinfest</li>
+<li>#16126 core: fix stale curated plugin cache refresh races @bolinfest</li>
+<li>#16132 codex-tools: extract code mode tool spec adapters @bolinfest</li>
+<li>#16136 ci: use BuildBuddy for rust-ci-full non-Windows argument-comment-lint @bolinfest</li>
+<li>#16137 exec: make review-policy tests hermetic @bolinfest</li>
+<li>#16109 Fix skills picker scrolling in tui app server @etraut-openai</li>
+<li>#16138 codex-tools: extract local host tool specs @bolinfest</li>
+<li>#16114 Remove TUI voice transcription feature @etraut-openai</li>
+<li>#16080 [mcp] Increase MCP startup timeout. @mzeng-openai</li>
+<li>#16141 codex-tools: extract collaboration tool specs @bolinfest</li>
+<li>#16041 Fix app-server TUI MCP startup warnings regression @etraut-openai</li>
+<li>#16110 Fix tui_app_server ghost subagent entries in /agent @etraut-openai</li>
+<li>#16154 codex-tools: extract utility tool specs @bolinfest</li>
+<li>#16204 [codex] Normalize Windows path in MCP startup snapshot test @etraut-openai</li>
+<li>#16010 feat: add mailbox concept for wait @jif-oai</li>
+<li>#16237 fix: ma1 @jif-oai</li>
+<li>#16193 codex-tools: extract discovery tool specs @bolinfest</li>
+<li>#16254 codex-tools: extract discoverable tool models @bolinfest</li>
+<li>#16253 fix: close Bazel argument-comment-lint CI gaps @bolinfest</li>
+<li>#16225 [codex-analytics] refactor analytics to use reducer architecture @rhan-oai</li>
+<li>#16279 Update code mode exec() instructions @andmis</li>
+<li>#16120 ci: run Windows argument-comment-lint via native Bazel @bolinfest</li>
+<li>#16286 auth: generalize external auth tokens for bearer-only sources @bolinfest</li>
+<li>#16287 auth: let AuthManager own external bearer auth @bolinfest</li>
+<li>#16288 core: support dynamic auth tokens for model providers @bolinfest</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.5b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.5b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.5b</guid>
