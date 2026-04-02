@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 02 Apr 2026 03:57:32 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 06:32:11 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>Kong/insomnia core@12.5.0</title>
