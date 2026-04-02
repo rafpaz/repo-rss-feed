@@ -10,9 +10,29 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 02 Apr 2026 00:35:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 03:57:32 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>Kong/insomnia core@12.5.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.5.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.5.0</guid>
+      <pubDate>Thu, 02 Apr 2026 00:50:58 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.5.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9749 feat: Add toast notifications for update/create credentials by @pavkout in https://github.com/Kong/insomnia/pull/9761 fix: delete cloud sync workspace issue by @cwangsmv in https://github.co...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.5.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9749">https://github.com/Kong/insomnia/pull/9749</a></li>
+<li>feat: Add toast notifications for update/create credentials by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9761">https://github.com/Kong/insomnia/pull/9761</a></li>
+<li>fix: delete cloud sync workspace issue by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9762">https://github.com/Kong/insomnia/pull/9762</a></li>
+<li>fix: add line clamp limit for delete workspace model  by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9764">https://github.com/Kong/insomnia/pull/9764</a></li>
+<li>fix: Git Hub credentials edit pop up should be close automatically after reauthorize succeed. by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9760">https://github.com/Kong/insomnia/pull/9760</a></li>
+<li>fix: import state and project scan by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9766">https://github.com/Kong/insomnia/pull/9766</a></li>
+<li>fix: prevent duplicate imports during auto-scan by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9770">https://github.com/Kong/insomnia/pull/9770</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.5.0-beta.0...core@12.5.0">https://github.com/Kong/insomnia/compare/core@12.5.0-beta.0...core@12.5.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>nodejs/node v25.9.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.9.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v25.9.0</guid>
