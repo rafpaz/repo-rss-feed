@@ -10,9 +10,34 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 03 Apr 2026 15:18:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 18:16:46 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.6b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.6b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.6b</guid>
+      <pubDate>Fri, 03 Apr 2026 17:26:51 GMT</pubDate>
+      <description>Zen Stable Release Fixes Fixed compact mode toggle being appear checked incorrectly ( #12973 ) Zen now respects more &amp;#39;reduce motion&amp;#39; system settings to disable or simplify non-essential animations Switching spaces will not be blocking anymore, meaning you can switch to another space while...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed compact mode toggle being appear checked incorrectly (<a href="https://github.com/zen-browser/desktop/issues/12973">#12973</a>)</li>
+<li>Zen now respects more &#39;reduce motion&#39; system settings to disable or simplify non-essential animations</li>
+<li>Switching spaces will not be blocking anymore, meaning you can switch to another space while the current one is still animating (<a href="https://github.com/zen-browser/desktop/issues/8206">#8206</a>)</li>
+<li>Fixed website notifications not being clickable when using the right sidebar (<a href="https://github.com/zen-browser/desktop/issues/12104">#12104</a>)</li>
+<li>Improved low-FPS performance on certain occasions, such as when playing videos or using glance on low-end devices (<a href="https://github.com/zen-browser/desktop/issues/12979">#12979</a>)</li>
+<li>Fixed restoring a pinned tab also scrolling the website to it&#39;s original position (<a href="https://github.com/zen-browser/desktop/issues/13024">#13024</a>)</li>
+<li>Fixed some toolbars having unreadable text colors when using certain themes (<a href="https://github.com/zen-browser/desktop/issues/13024">#13024</a>)</li>
+</ul>
+<h2>Changes</h2>
+<ul>
+<li>Reverted to Firefox&#39;s old search bar due to compatibility issues with the new one</li>
+<li>Context menu for split tabs has now been renamed to &#39;Join tabs&#39; to be more intuitive</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>Kong/insomnia core@12.5.0</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.5.0</link>
       <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.5.0</guid>
@@ -2355,21 +2380,6 @@ export default buildConfig({
 <li>Fixed back / forward buttons changing the page&#39;s history instead of switching spaces (<a href="https://github.com/zen-browser/desktop/issues/9157">#9157</a>)</li>
 <li>Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly</li>
 <li>Other minor bug fixes and improvements</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.7b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.7b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.7b</guid>
-      <pubDate>Sat, 14 Feb 2026 12:08:22 GMT</pubDate>
-      <description>Zen Stable Release Fixes Fixed accessibility issues with the workspace switcher and other buttons Other session restore fixes and improvements</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed accessibility issues with the workspace switcher and other buttons</li>
-<li>Other session restore fixes and improvements</li>
 </ul>]]></content:encoded>
       <category>zen-browser</category>
       <category>desktop</category>
