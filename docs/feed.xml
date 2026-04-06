@@ -10,9 +10,59 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 06 Apr 2026 18:23:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 21:15:30 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 1.31.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.31.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.31.0</guid>
+      <pubDate>Mon, 06 Apr 2026 20:51:03 GMT</pubDate>
+      <description>Added Live TV time-shift and PiP/crop support Live TV favorite channel ordering Subtitle search &amp;amp; download from OpenSubtitles Tag editing in metadata editor Download version picker with smart matching Play version and play from beginning context menu options Windows display mode matching (ref...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Live TV time-shift and PiP/crop support</li>
+<li>Live TV favorite channel ordering</li>
+<li>Subtitle search &amp; download from OpenSubtitles</li>
+<li>Tag editing in metadata editor</li>
+<li>Download version picker with smart matching</li>
+<li>Play version and play from beginning context menu options</li>
+<li>Windows display mode matching (refresh rate, HDR)</li>
+<li>Search filter in collection selection dialog</li>
+<li>Server tasks panel</li>
+<li>Configurable watch together relay server</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Subtitle track matching (forced flag parsing, title scoring)</li>
+<li>Live TV time-shift controls and timeline</li>
+<li>Companion remote acts as remote instead of host on Android TV</li>
+<li>Previous episodes missing from play queue</li>
+<li>Skip offline video when different version requested</li>
+<li>Database not closing on app shutdown</li>
+<li>Focus search input on tab selection</li>
+<li>Option picker dialog focus for TV/keyboard nav</li>
+<li>Disable Impeller on Huawei/HONOR devices</li>
+<li>Android video surface lifecycle management</li>
+<li>Dolby Vision buffer isolation from JVM heap</li>
+<li>Auto-focus skip intro button on TV</li>
+<li>Use hubs API for continue watching</li>
+<li>HID key labels for non-keyboard USB pages</li>
+<li>Library action confirmation and snackbar feedback</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>M3 2024 slider style for video player timelines</li>
+<li>M3 settings screen redesign</li>
+<li>Consistent poster sizing</li>
+<li>Tabular figures on timeline timestamps</li>
+<li>Type-aware image memory cache bounds</li>
+<li>Subtitle styling and external player settings screens</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.30.0...1.31.0">https://github.com/edde746/plezy/compare/1.30.0...1.31.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.45s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.45s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.45s</guid>
@@ -2248,39 +2298,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>edde746/plezy 1.21.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.21.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.21.0</guid>
-      <pubDate>Tue, 24 Feb 2026 13:30:29 GMT</pubDate>
-      <description>Added Auto-update Still watching prompt on sleep timer expiry Multi-IP QR code for companion remote Fixed Black screen when closing manage libraries sheet Overlay sheet theme and scope on mobile Overlay sheet missing on desktop/TV navigation path Profile switch triggered on every window focus (de...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Auto-update</li>
-<li>Still watching prompt on sleep timer expiry</li>
-<li>Multi-IP QR code for companion remote</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Black screen when closing manage libraries sheet</li>
-<li>Overlay sheet theme and scope on mobile</li>
-<li>Overlay sheet missing on desktop/TV navigation path</li>
-<li>Profile switch triggered on every window focus (desktop)</li>
-<li>Gamepad handles not released on window blur (Windows)</li>
-<li>Playback issues (Linux)</li>
-<li>Memory-aware buffer limits</li>
-<li>Widget tree depth reduced</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Fast offline startup</li>
-<li>Cache-first metadata fetching for playback</li>
-<li>Reduced redundant metadata API requests</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.20.0...1.21.0">https://github.com/edde746/plezy/compare/1.20.0...1.21.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>zen-browser/desktop 1.18.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
