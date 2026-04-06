@@ -10,9 +10,58 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 06 Apr 2026 09:33:38 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 12:22:58 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yuliskov/SmartTube 31.45s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.45s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.45s</guid>
+      <pubDate>Mon, 06 Apr 2026 11:54:41 GMT</pubDate>
+      <description>Significant memory optimization to reduce crashes Player: auto-generated subtitles fix Added Dark Blue (OLED) color scheme (Settings/UI/Color schemes) Previous release fixes 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.45_arm64-v8a.apk View Report Sm...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Significant memory optimization to reduce crashes</li>
+<li>Player: auto-generated subtitles fix</li>
+<li>Added Dark Blue (OLED) color scheme (Settings/UI/Color schemes)</li>
+<li>Previous release fixes</li>
+</ul>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd87afe1-3b1d-4968-91b5-deaad30547ae" />
+
+
+			
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.45s/SmartTube_stable_31.45_arm64-v8a.apk">SmartTube_stable_31.45_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/79bbf8fe1190c157548702e7bf1e49e315953327cb51baf5eaa766eb46d78b60/detection"><img src="https://badges.cssnr.com/vt/id/79bbf8fe1190c157548702e7bf1e49e315953327cb51baf5eaa766eb46d78b60?start=green&end=red&n=8&v=1775477162" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/79bbf8fe1190c157548702e7bf1e49e315953327cb51baf5eaa766eb46d78b60/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.45s/SmartTube_stable_31.45_armeabi-v7a.apk">SmartTube_stable_31.45_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/7854a44ac8093219c4aa31ea111624d9feefcdfa106a1eb8aeee375208fd37ce/detection"><img src="https://badges.cssnr.com/vt/id/7854a44ac8093219c4aa31ea111624d9feefcdfa106a1eb8aeee375208fd37ce?start=green&end=red&n=8&v=1775477162" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/7854a44ac8093219c4aa31ea111624d9feefcdfa106a1eb8aeee375208fd37ce/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.45s/SmartTube_stable_31.45_universal.apk">SmartTube_stable_31.45_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/41786aad718c965141e12d79b2ed9af8c68185b746db227cf1073150323b503a/detection"><img src="https://badges.cssnr.com/vt/id/41786aad718c965141e12d79b2ed9af8c68185b746db227cf1073150323b503a?start=green&end=red&n=8&v=1775477163" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/41786aad718c965141e12d79b2ed9af8c68185b746db227cf1073150323b503a/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.45s/SmartTube_stable_31.45_x86.apk">SmartTube_stable_31.45_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1e8edecdb8b634c0dc37f0ca5966d8c1ae0c6e945bee7ee5ffe130be9bd38d89/detection"><img src="https://badges.cssnr.com/vt/id/1e8edecdb8b634c0dc37f0ca5966d8c1ae0c6e945bee7ee5ffe130be9bd38d89?start=green&end=red&n=8&v=1775477163" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1e8edecdb8b634c0dc37f0ca5966d8c1ae0c6e945bee7ee5ffe130be9bd38d89/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.6b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.6b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.6b</guid>
