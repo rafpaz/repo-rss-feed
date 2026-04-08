@@ -10,9 +10,34 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 08 Apr 2026 09:29:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 12:25:21 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.7b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.7b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.7b</guid>
+      <pubDate>Wed, 08 Apr 2026 11:04:08 GMT</pubDate>
+      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 149.0.2 Added a new &amp;#39;Duplicate tab&amp;#39; keyboard shortcut available in settings Fixes Fixed MacOS setting &amp;#39;disable page swipe&amp;#39; making switching spaces not work at all ( #10687 ) Fixed double separator l...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-25/">Various security fixes</a></p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 149.0.2</li>
+<li>Added a new &#39;Duplicate tab&#39; keyboard shortcut available in settings</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed MacOS setting &#39;disable page swipe&#39; making switching spaces not work at all (<a href="https://github.com/zen-browser/desktop/issues/10687">#10687</a>)</li>
+<li>Fixed double separator lines in context menus in some places (<a href="https://github.com/zen-browser/desktop/issues/13093">#13093</a>)</li>
+<li>Fixed unable to install addons in compact mode (<a href="https://github.com/zen-browser/desktop/issues/11667">#11667</a>)</li>
+<li>Fixed an issue on Linux where the browser toolbar could become unresponsive to mouse clicks after dragging a tab when using Wayland</li>
+<li>Other stability fixes and improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>edde746/plezy 1.31.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.31.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.31.0</guid>
@@ -2843,22 +2868,6 @@ export default buildConfig({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.8b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.8b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.8b</guid>
-      <pubDate>Mon, 16 Feb 2026 12:52:55 GMT</pubDate>
-      <description>Zen Stable Release Fixes Fixed back / forward buttons changing the page&amp;#39;s history instead of switching spaces ( #9157 ) Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly Other minor bug fixes and improvements</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed back / forward buttons changing the page&#39;s history instead of switching spaces (<a href="https://github.com/zen-browser/desktop/issues/9157">#9157</a>)</li>
-<li>Fixed drag and dropping tabs from multiple windows with different spaces acting weirdly</li>
-<li>Other minor bug fixes and improvements</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>atuinsh/desktop v0.2.20</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.20</link>
