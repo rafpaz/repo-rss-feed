@@ -10,9 +10,81 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sat, 11 Apr 2026 00:36:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 03:52:37 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.120.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.120.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.120.0</guid>
+      <pubDate>Sat, 11 Apr 2026 02:53:49 GMT</pubDate>
+      <description>New Features Realtime V2 can now stream background agent progress while work is still running and queue follow-up responses until the active response completes (#17264, #17306) Hook activity in the TUI is easier to scan, with live running hooks shown separately and completed hook output kept only...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Realtime V2 can now stream background agent progress while work is still running and queue follow-up responses until the active response completes (#17264, #17306)</li>
+<li>Hook activity in the TUI is easier to scan, with live running hooks shown separately and completed hook output kept only when useful (#17266)</li>
+<li>Custom TUI status lines can include the renamed thread title (#17187)</li>
+<li>Code-mode tool declarations now include MCP <code>outputSchema</code> details so structured tool results are typed more precisely (#17210)</li>
+<li>SessionStart hooks can distinguish sessions created by <code>/clear</code> from fresh startup or resume sessions (#17073)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Fixed Windows elevated sandbox handling for split filesystem policies, including read-only carveouts under writable roots (#14568)</li>
+<li>Fixed sandbox permission handling for symlinked writable roots and carveouts, preventing failures in shell and <code>apply_patch</code> workflows (#15981)</li>
+<li>Fixed <code>codex --remote wss://...</code> panics by installing the Rustls crypto provider before TLS websocket connections (#17288)</li>
+<li>Preserved tool search result ordering instead of alphabetically reordering results (#17263)</li>
+<li>Fixed live Stop-hook prompts so they appear immediately instead of only after thread history reloads (#17189)</li>
+<li>Fixed app-server MCP cleanup on disconnect so unsubscribed threads and resources are torn down correctly (#17223)</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Documented the elevated vs restricted-token Windows sandbox support split in the core README (#14568)</li>
+<li>Updated app-server protocol documentation for the new <code>/clear</code> SessionStart source (#17073)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Made rollout recording more reliable by retrying failed flushes and surfacing durability failures instead of dropping buffered items (#17214)</li>
+<li>Added analytics schemas and metadata wiring for compaction and Guardian review events (#17155, #17055)</li>
+<li>Improved Guardian follow-up efficiency by sending transcript deltas instead of repeatedly resending full history (#17269)</li>
+<li>Added stable Guardian review IDs across app-server events and internal approval state (#17298)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.119.0...rust-v0.120.0">https://github.com/openai/codex/compare/rust-v0.119.0...rust-v0.120.0</a></p>
+<ul>
+<li>#17268 remove windows gate that disables hooks @iceweasel-oai</li>
+<li>#17267 Stop Realtime V2 response.done delegation @aibrahim-oai</li>
+<li>#14568 fix: support split carveouts in windows elevated sandbox @viyatb-oai</li>
+<li>#17263 preserve search results order in tool_search_output @sayan-oai</li>
+<li>#17189 Emit live hook prompts before raw-event filtering @abhinav-oai</li>
+<li>#17288 Install rustls provider for remote websocket client @etraut-openai</li>
+<li>#16969 Option to Notify Workspace Owner When Usage Limit is Reached @richardopenai</li>
+<li>#17278 Rename Realtime V2 tool to background_agent @aibrahim-oai</li>
+<li>#17280 Extract realtime input task handlers @aibrahim-oai</li>
+<li>#17249 adding parent_thread_id in guardian @won-openai</li>
+<li>#17264 Stream Realtime V2 background agent progress @aibrahim-oai</li>
+<li>#17210 Add output_schema to code mode render @vivi</li>
+<li>#16344 feat: move exec-server ownership @jif-oai</li>
+<li>#17214 feat: make rollout recorder reliable against errors @jif-oai</li>
+<li>#17223 fix: MCP leaks in app-server @jif-oai</li>
+<li>#17338 feat: description multi-agent v2 @jif-oai</li>
+<li>#17269 feat(guardian): send only transcript deltas on guardian followups @owenlin0</li>
+<li>#17306 Queue Realtime V2 response.create while active @aibrahim-oai</li>
+<li>#17352 fix: main @jif-oai</li>
+<li>#17363 Strengthen realtime backend delegation prompt @aibrahim-oai</li>
+<li>#17155 [codex-analytics] add compaction analytics event @rhan-oai</li>
+<li>#17187 Add thread title to configurable TUI status line @canvrno-oai</li>
+<li>#17194 add parent-id to guardian context @won-openai</li>
+<li>#17266 [codex] Improve hook status rendering @abhinav-oai</li>
+<li>#17073 Support clear SessionStart source @abhinav-oai</li>
+<li>#17298 fix(guardian, app-server): introduce guardian review ids @owenlin0</li>
+<li>#17391 Revert &quot;Option to Notify Workspace Owner When Usage Limit is Reached&quot; @shijie-oai</li>
+<li>#17371 app-server: add pipelined config rpc regression test @euroelessar</li>
+<li>#15981 fix(permissions): fix symlinked writable roots in sandbox permissions @viyatb-oai</li>
+<li>#17055 feat(analytics): add guardian review event schema @owenlin0</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>openai/codex rust-v0.119.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.119.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.119.0</guid>
@@ -5345,27 +5417,6 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
 <li>@ulisesbocchio made their first contribution in <a href="https://github.com/Kong/insomnia/pull/8947">https://github.com/Kong/insomnia/pull/8947</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.0...core@11.6.1">https://github.com/Kong/insomnia/compare/core@11.6.0...core@11.6.1</a></p>]]></content:encoded>
-      <category>Kong</category>
-      <category>insomnia</category>
-      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
-    </item>    <item>
-      <title>Kong/insomnia core@11.6.0</title>
-      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.0</link>
-      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.0</guid>
-      <pubDate>Thu, 11 Sep 2025 23:57:40 GMT</pubDate>
-      <description>What&amp;#39;s Changed :rocket: 11.6.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9102 Chore: Avoid loading bundle plugin errors in development mode by @cwangsmv in https://github.com/Kong/insomnia/pull/9105 [INS-1350] Cloud sync issues by @gatzjames in https://github.com/Kong...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<ul>
-<li>:rocket: 11.6.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9102">https://github.com/Kong/insomnia/pull/9102</a></li>
-<li>Chore: Avoid loading bundle plugin errors in development mode by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9105">https://github.com/Kong/insomnia/pull/9105</a></li>
-<li>[INS-1350] Cloud sync issues by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9104">https://github.com/Kong/insomnia/pull/9104</a></li>
-<li>fix: workspace create fails on windows by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9101">https://github.com/Kong/insomnia/pull/9101</a></li>
-<li>fix: sendRequest doesnt return error in some cases - INS-1262 by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9059">https://github.com/Kong/insomnia/pull/9059</a></li>
-<li>fix: preference panel crash on the login page by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9113">https://github.com/Kong/insomnia/pull/9113</a></li>
-<li>fix: truncate cookie string by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9095">https://github.com/Kong/insomnia/pull/9095</a></li>
-<li>fix: improve env selection/messaging in CI mode and silence warnings [INS-1345] by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9108">https://github.com/Kong/insomnia/pull/9108</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.0-beta.0...core@11.6.0">https://github.com/Kong/insomnia/compare/core@11.6.0-beta.0...core@11.6.0</a></p>]]></content:encoded>
       <category>Kong</category>
       <category>insomnia</category>
       <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
