@@ -10,9 +10,118 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 13 Apr 2026 04:09:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 06:51:22 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 1.32.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</guid>
+      <pubDate>Mon, 13 Apr 2026 06:46:42 GMT</pubDate>
+      <description>Plezy 1.32.0 — Standalone APKs APKs extracted from edde746/plezy 1.32.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.32.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.32.0">edde746/plezy 1.32.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Download all playlist items</li>
+<li>Download options picker for series/seasons</li>
+<li>Clickable cast members to browse actor filmography</li>
+<li>Square art and logo editing in metadata editor</li>
+<li>Sub-ass-override setting</li>
+<li>Snackbar on playback speed change</li>
+<li>Auto-hide performance overlay with controls</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Hide spoilers in watch next thumbnails</li>
+<li>Skip back navigation when overlay route is on top</li>
+<li>Detail screen section alignment</li>
+<li>File info bitrate units, multi-track display, TV scrolling</li>
+<li>Use configured skip setting for dpad/timeline seeking</li>
+<li>Noisy audio pause on Android TV</li>
+<li>Always show track selection button</li>
+<li>Android TV PiP lifecycle regressions</li>
+<li>Normalize EOF playback state</li>
+<li>Preserve download server affinity</li>
+<li>Reduce blank space in media card bottom</li>
+<li>Request UTF-8 encoding for external subtitles</li>
+<li>Chapter keyboard shortcuts navigate chapters not episodes</li>
+<li>PiP aspect ratio clamp values outside Android limits</li>
+<li>Connection selection failover and timeout budget</li>
+<li>Live TV join session edge case</li>
+<li>Live stream reconnect delay and fallback chain on TV</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.3...1.32.0">https://github.com/edde746/plezy/compare/1.31.3...1.32.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>edde746/plezy 1.32.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.32.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.32.0</guid>
+      <pubDate>Mon, 13 Apr 2026 06:34:57 GMT</pubDate>
+      <description>Added Download all playlist items Download options picker for series/seasons Clickable cast members to browse actor filmography Square art and logo editing in metadata editor Sub-ass-override setting Snackbar on playback speed change Auto-hide performance overlay with controls Fixed Hide spoilers...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Download all playlist items</li>
+<li>Download options picker for series/seasons</li>
+<li>Clickable cast members to browse actor filmography</li>
+<li>Square art and logo editing in metadata editor</li>
+<li>Sub-ass-override setting</li>
+<li>Snackbar on playback speed change</li>
+<li>Auto-hide performance overlay with controls</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Hide spoilers in watch next thumbnails</li>
+<li>Skip back navigation when overlay route is on top</li>
+<li>Detail screen section alignment</li>
+<li>File info bitrate units, multi-track display, TV scrolling</li>
+<li>Use configured skip setting for dpad/timeline seeking</li>
+<li>Noisy audio pause on Android TV</li>
+<li>Always show track selection button</li>
+<li>Android TV PiP lifecycle regressions</li>
+<li>Normalize EOF playback state</li>
+<li>Preserve download server affinity</li>
+<li>Reduce blank space in media card bottom</li>
+<li>Request UTF-8 encoding for external subtitles</li>
+<li>Chapter keyboard shortcuts navigate chapters not episodes</li>
+<li>PiP aspect ratio clamp values outside Android limits</li>
+<li>Connection selection failover and timeout budget</li>
+<li>Live TV join session edge case</li>
+<li>Live stream reconnect delay and fallback chain on TV</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.3...1.32.0">https://github.com/edde746/plezy/compare/1.31.3...1.32.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>openai/codex rust-v0.120.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.120.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.120.0</guid>
@@ -2493,47 +2602,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>plezy-apks</category>
       <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
-      <title>edde746/plezy 1.22.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.22.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.22.0</guid>
-      <pubDate>Fri, 27 Feb 2026 23:13:09 GMT</pubDate>
-      <description>Added Auto-dismiss skip segment buttons BIF file caching for instant preview thumbnails Hide spoilers setting for unwatched episodes Themed splash screen with status messages Square artwork in hero sections AVFoundation as preferred audio output on macOS Fixed OOM crash from infinite focus reclai...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Auto-dismiss skip segment buttons</li>
-<li>BIF file caching for instant preview thumbnails</li>
-<li>Hide spoilers setting for unwatched episodes</li>
-<li>Themed splash screen with status messages</li>
-<li>Square artwork in hero sections</li>
-<li>AVFoundation as preferred audio output on macOS</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>OOM crash from infinite focus reclaim loop</li>
-<li>ASS subtitle stretching</li>
-<li>SSA subtitle codec mapped to wrong file extension</li>
-<li>Corrupted download paths missing leading slash</li>
-<li>Download playback issues (doubled path, audio language, spinner)</li>
-<li>Duplicate hero tag error in logs upload dialog</li>
-<li>Duplicate Plex notifications on login</li>
-<li>D-pad navigation on logs screen</li>
-<li>Low memory warnings during playback</li>
-<li>MPV destroy/create ANR</li>
-<li>Artwork changing not working</li>
-<li>Buffer state cleared on playback restart</li>
-<li>Alpha jump bar visible for small libraries</li>
-<li>Connection probe headers using wrong app name</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Delete-from-server button safety</li>
-<li>mpv updated to 0.41.0 on iOS/macOS</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.21.3...1.22.0">https://github.com/edde746/plezy/compare/1.21.3...1.22.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
-    </item>    <item>
       <title>payloadcms/payload v3.78.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.78.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.78.0</guid>
@@ -3091,70 +3159,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.20.0</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.20.0</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.20.0</guid>
-      <pubDate>Tue, 24 Feb 2026 06:23:51 GMT</pubDate>
-      <description>Plezy 1.20.0 — Standalone APKs APKs extracted from edde746/plezy 1.20.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.20.0 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.20.0">edde746/plezy 1.20.0</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Added</h2>
-<ul>
-<li>Metadata editing</li>
-<li>User ratings</li>
-<li>Folder browsing with play/shuffle</li>
-<li>Buffer ranges on timeline</li>
-<li>Fallback skip markers from chapter titles</li>
-<li>View All card on hub detail</li>
-<li>Persistent ambient lighting (mutually exclusive with shaders)</li>
-<li>Alpha-jump non-latin character support</li>
-<li>QR code reliability improvements</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Android OOM via auto buffer sizing</li>
-<li>Android SurfaceControl crash on player dispose</li>
-<li>macOS playback power management</li>
-<li>mpv dispose deadlock on Wayland (Linux)</li>
-<li>PIN prompt for current profile on app open</li>
-<li>Hub/onDeck API processing moved to isolates</li>
-<li>Cache JSON operations moved to isolates</li>
-<li>Gamepad input ignored when window is unfocused</li>
-<li>D-pad focus on pushed screens, dialogs, buttons, and settings</li>
-<li>D-pad controls for settings dialogs in keyboard nav mode</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.18.2...1.20.0">https://github.com/edde746/plezy/compare/1.18.2...1.20.0</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>zen-browser/desktop 1.18.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
