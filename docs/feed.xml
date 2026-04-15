@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 15 Apr 2026 09:36:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 12:28:04 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>derFrisson/plezy-apks 1.32.0</title>
@@ -5591,24 +5591,6 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
 <li>Set as Default Browser by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/31">https://github.com/MultiboxLabs/flow-browser/pull/31</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.5.0...v0.6.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.5.0...v0.6.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.5.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.5.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.5.0</guid>
-      <pubDate>Sat, 26 Apr 2025 00:00:18 GMT</pubDate>
-      <description>What&amp;#39;s Changed Add Sleep Tabs Functionality by @iamEvanYT in https://github.com/MultiboxLabs/flow-browser/pull/23 Basic Settings Framework by @iamEvanYT in https://github.com/MultiboxLabs/flow-browser/pull/24 Tab Persistance &amp;amp; Auto Archive by @iamEvanYT in https://github.com/MultiboxLabs/...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<ul>
-<li>Add Sleep Tabs Functionality by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/23">https://github.com/MultiboxLabs/flow-browser/pull/23</a></li>
-<li>Basic Settings Framework by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/24">https://github.com/MultiboxLabs/flow-browser/pull/24</a></li>
-<li>Tab Persistance &amp; Auto Archive by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/25">https://github.com/MultiboxLabs/flow-browser/pull/25</a></li>
-<li>Use Phosphor Icons for Space Icons by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/27">https://github.com/MultiboxLabs/flow-browser/pull/27</a></li>
-<li>Add Extensions Support by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/26">https://github.com/MultiboxLabs/flow-browser/pull/26</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.4.2...v0.5.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.4.2...v0.5.0</a></p>]]></content:encoded>
       <category>multiboxlabs</category>
       <category>flow-browser</category>
       <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
