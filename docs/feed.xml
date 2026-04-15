@@ -10,9 +10,434 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 15 Apr 2026 18:29:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 21:21:35 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.121.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.121.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.121.0</guid>
+      <pubDate>Wed, 15 Apr 2026 20:45:18 GMT</pubDate>
+      <description>New Features Added codex marketplace add and app-server support for installing plugin marketplaces from GitHub, git URLs, local directories, and direct marketplace.json URLs (#17087, #17717, #17756). Added TUI prompt history improvements, including Ctrl+R reverse search and local recall for accep...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Added <code>codex marketplace add</code> and app-server support for installing plugin marketplaces from GitHub, git URLs, local directories, and direct <code>marketplace.json</code> URLs (#17087, #17717, #17756).</li>
+<li>Added TUI prompt history improvements, including <code>Ctrl+R</code> reverse search and local recall for accepted slash commands (#17550, #17336).</li>
+<li>Added TUI and app-server controls for memory mode, memory reset/deletion, and memory-extension cleanup (#17632, #17626, #17913, #17937, #17844).</li>
+<li>Expanded MCP/plugin support with MCP Apps tool calls, namespaced MCP registration, parallel-call opt-in, and sandbox-state metadata for MCP servers (#17364, #17404, #17667, #17763).</li>
+<li>Added realtime and app-server APIs for output modality, transcript completion events, raw turn item injection, and symlink-aware filesystem metadata (#17701, #17703, #17719).</li>
+<li>Added a secure devcontainer profile with bubblewrap support, plus macOS sandbox allowlists for Unix sockets (#10431, #17547, #17654).</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Fixed macOS sandbox/proxy handling for private DNS and removed the <code>danger-full-access</code> denylist-only network mode (#17370, #17732).</li>
+<li>Fixed Windows cwd/session matching so <code>resume --last</code> and <code>thread/list</code> work when paths use verbatim prefixes (#17414).</li>
+<li>Fixed rate-limit/account handling for <code>prolite</code> plans and made unknown WHAM plan values decodable (#17419).</li>
+<li>Made Guardian timeouts distinct from policy denials, with timeout-specific guidance and visible TUI history entries (#17381, #17486, #17521, #17557).</li>
+<li>Stabilized app-server behavior by avoiding premature thread unloads, tolerating failed trust persistence on startup, and skipping broken symlinks in <code>fs/readDirectory</code> (#17398, #17595, #17907).</li>
+<li>Fixed MCP/tool-call edge cases including flattened deferred tool names, elicitation timeout accounting, and empty namespace descriptions (#17556, #17566, #17946).</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Documented the secure devcontainer profile and its bubblewrap requirements (#10431, #17547).</li>
+<li>Added TUI composer documentation for history search behavior (#17550).</li>
+<li>Updated app-server docs for new MCP, marketplace, turn injection, memory reset, filesystem metadata, external-agent migration, and websocket token-hash APIs (#17364, #17717, #17703, #17913, #17719, #17855, #17871).</li>
+<li>Documented WSL1 bubblewrap limitations and WSL2 behavior (#17559).</li>
+<li>Added memory pipeline documentation for extension cleanup (#17844).</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Hardened supply-chain and CI inputs by pinning GitHub Actions, cargo installs, git dependencies, V8 checksums, and cargo-deny source allowlists (#17471).</li>
+<li>Added Bazel release-build verification so release-only Rust code is compiled in PR CI (#17704, #17705).</li>
+<li>Introduced the <code>codex-thread-store</code> crate/interface and moved local thread listing behind it (#17659, #17824).</li>
+<li>Required reviewed pnpm dependency build scripts for workspace installs (#17558).</li>
+<li>Reduced Rust maintenance surface with broader absolute-path types and removal of unused helper APIs (#17407, #17792, #17146).</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.120.0...rust-v0.121.0">https://github.com/openai/codex/compare/rust-v0.120.0...rust-v0.121.0</a></p>
+<ul>
+<li>#17087 Add marketplace command @xli-oai</li>
+<li>#17409 Fix Windows exec-server output test flake @etraut-openai</li>
+<li>#17381 representing guardian review timeouts in protocol types @won-openai</li>
+<li>#17399 TUI: enforce core boundary @etraut-openai</li>
+<li>#17370 fix: unblock private DNS in macOS sandbox @viyatb-oai</li>
+<li>#17396 update cloud requirements parse failure msg @alexsong-oai</li>
+<li>#17364 [mcp] Support MCP Apps part 3 - Add mcp tool call support. @mzeng-openai</li>
+<li>#17424 Stabilize marketplace add local source test @ningyi-oai</li>
+<li>#17414 Fix thread/list cwd filtering for Windows verbatim paths @etraut-openai</li>
+<li>#10431 feat(devcontainer): add separate secure customer profile @viyatb-oai</li>
+<li>#17314 Pass turn id with feedback uploads @ningyi-oai</li>
+<li>#17336 fix(tui): recall accepted slash commands locally @fcoury-oai</li>
+<li>#17430 Handle closed TUI input stream as shutdown @etraut-openai</li>
+<li>#17385 Add use_agent_identity feature flag @adrian-openai</li>
+<li>#17483 Update issue labeler agent labels @etraut-openai</li>
+<li>#17493 fix @aibrahim-oai</li>
+<li>#17419 Support prolite plan type @etraut-openai</li>
+<li>#17416 Clear /ps after /stop @etraut-openai</li>
+<li>#17415 Restore codex-tui resume hint on exit @etraut-openai</li>
+<li>#17402 chore: refactor name and namespace to single type @sayan-oai</li>
+<li>#17486 changing decision semantics after guardian timeout @won-openai</li>
+<li>#17521 Clarify guardian timeout guidance @won-openai</li>
+<li>#17547 [codex] Support bubblewrap in secure Docker devcontainer @viyatb-oai</li>
+<li>#17519 Budget realtime current thread context @aibrahim-oai</li>
+<li>#17556 [codex] Support flattened deferred MCP tool calls @fc-oai</li>
+<li>#17558 build(pnpm): require reviewed dependency build scripts @mcgrew-oai</li>
+<li>#17559 fix(sandboxing): reject WSL1 bubblewrap sandboxing @viyatb-oai</li>
+<li>#17520 Mirror user text into realtime @aibrahim-oai</li>
+<li>#17550 feat(tui): add reverse history search to composer @fcoury-oai</li>
+<li>#17420 Remove context status-line meter @etraut-openai</li>
+<li>#17506 Expose instruction sources (AGENTS.md) via app server @etraut-openai</li>
+<li>#17566 fix(mcp) pause timer for elicitations @dylan-hurd-oai</li>
+<li>#17406 Add MCP tool wall time to model output @pakrym-oai</li>
+<li>#17294 Run exec-server fs operations through sandbox helper @starr-openai</li>
+<li>#17605 Stabilize exec-server process tests @etraut-openai</li>
+<li>#17221 feat: ignore keyring on 0.0.0 @jif-oai</li>
+<li>#17216 Build remote exec env from exec-server policy @jif-oai</li>
+<li>#17633 nit: change consolidation model @jif-oai</li>
+<li>#17640 fix: stability exec server @jif-oai</li>
+<li>#17643 fix: dedup compact @jif-oai</li>
+<li>#17247 Make forked agent spawns keep parent model config @friel-openai</li>
+<li>#17470 Fix custom tool output cleanup on stream failure @etraut-openai</li>
+<li>#17417 Emit plan-mode prompt notifications for questionnaires @etraut-openai</li>
+<li>#17481 Wrap status reset timestamps in narrow layouts @etraut-openai</li>
+<li>#17601 Suppress duplicate compaction and terminal wait events @etraut-openai</li>
+<li>#17657 Fix TUI compaction item replay @etraut-openai</li>
+<li>#17595 Do not fail thread start when trust persistence fails @etraut-openai</li>
+<li>#17407 Use AbsolutePathBuf in skill loading and codex_home @pakrym-oai</li>
+<li>#17626 feat: disable memory endpoint @jif-oai</li>
+<li>#17365 Include legacy deny paths in elevated Windows sandbox setup @iceweasel-oai</li>
+<li>#17638 feat: Avoid reloading curated marketplaces for tool-suggest discovera… @jif-oai</li>
+<li>#17398 app-server: Only unload threads which were unused for some time @euroelessar</li>
+<li>#17669 only specify remote ports when the rule needs them @iceweasel-oai</li>
+<li>#17691 Fix tui compilation @davidhao3300</li>
+<li>#17384 Update phase 2 memory model to gpt-5.4 @kliu128</li>
+<li>#17395 Remove unnecessary tests @kliu128</li>
+<li>#17685 Cap realtime mirrored user turns @aibrahim-oai</li>
+<li>#17699 change realtime tool description @aibrahim-oai</li>
+<li>#17667 Add <code>supports_parallel_tool_calls</code> flag to included mcps @josiah-openai</li>
+<li>#17703 Add turn item injection API @pakrym-oai</li>
+<li>#17671 Stabilize exec-server filesystem tests in CI @starr-openai</li>
+<li>#17557 guardian timeout fix pr 3 - ux touch for timeouts @won-openai</li>
+<li>#17719 [codex] Add symlink flag to fs metadata @pakrym-oai</li>
+<li>#17146 [codex] Remove unused Rust helpers @pakrym-oai</li>
+<li>#17471 fix: pin inputs @viyatb-oai</li>
+<li>#17717 [codex] Refactor marketplace add into shared core flow @xli-oai</li>
+<li>#17747 Refactor plugin loading to async @pakrym-oai</li>
+<li>#17709 [codex] Initialize ICU data for code mode V8 @pakrym-oai</li>
+<li>#17749 [codex] drain mailbox only at request boundaries @tibo-openai</li>
+<li>#16640 [codex-analytics] feature plumbing and emittance @rhan-oai</li>
+<li>#17761 Tighten realtime handoff finalization @aibrahim-oai</li>
+<li>#17701 Add realtime output modality and transcript events @aibrahim-oai</li>
+<li>#17777 nit: feature flag @jif-oai</li>
+<li>#17637 feat: add context percent to status line @jif-oai</li>
+<li>#17665 Always enable original image detail on supported models @fjord-oai</li>
+<li>#17374 [codex-analytics] add session source to client metadata @marksteinbrick-oai</li>
+<li>#17489 Moving updated-at timestamps to unique millisecond times @ddr-oai</li>
+<li>#17784 feat: codex sampler @jif-oai</li>
+<li>#17732 fix: Revert danger-full-access denylist-only mode @viyatb-oai</li>
+<li>#17234 Redirect debug client output to a file @rasmusrygaard</li>
+<li>#17803 Keep image_detail_original as a removed feature flag @fjord-oai</li>
+<li>#17372 app-server: prepare to run initialized rpcs concurrently @euroelessar</li>
+<li>#17704 Refactor Bazel CI job setup @bolinfest</li>
+<li>#17674 Route apply_patch through the environment filesystem @starr-openai</li>
+<li>#17702 Fix remote skill popup loading @starr-openai</li>
+<li>#17830 [codex] Fix app-server initialized request analytics build @etraut-openai</li>
+<li>#17389 [codex-analytics] enable general analytics by default @rhan-oai</li>
+<li>#17659 thread store interface @wiltzius-openai</li>
+<li>#17792 Spread AbsolutePathBuf @pakrym-oai</li>
+<li>#17808 fix: apply patch bin refresh @jif-oai</li>
+<li>#17838 Add realtime wire trace logs @aibrahim-oai</li>
+<li>#17684 Adjust default tool search result caps @malone-oai</li>
+<li>#17705 Add Bazel verify-release-build job @bolinfest</li>
+<li>#17720 Make skill loading filesystem-aware @pakrym-oai</li>
+<li>#17756 [codex] Support local marketplace sources @xli-oai</li>
+<li>#17846 Fix for Guardian CI Tests stack overflow, applying Box to reduce stack pressure @won-openai</li>
+<li>#17855 support plugins in external agent config migration @alexsong-oai</li>
+<li>#17872 Disable hooks in guardian review sessions @abhinav-oai</li>
+<li>#17868 Wrap delegated input text @guinness-oai</li>
+<li>#17884 Fix clippy warnings in external agent config migration @canvrno-oai</li>
+<li>#17837 Reuse remote exec-server in core tests @starr-openai</li>
+<li>#17859 sandbox: remove dead seatbelt helper and update tests @bolinfest</li>
+<li>#17870 fix: cleanup the contract of the general-purpose exec() function @bolinfest</li>
+<li>#17871 fix: add websocket capability token hash support @viyatb-oai</li>
+<li>#17763 Send sandbox state through MCP tool metadata @aaronl-openai</li>
+<li>#17654 Support Unix socket allowlists in macOS sandbox @aaronl-openai</li>
+<li>#17915 fix: cargo deny @jif-oai</li>
+<li>#17913 feat: add endpoint to delete memories @jif-oai</li>
+<li>#17844 feat: cleaning of memories extension @jif-oai</li>
+<li>#17921 chore: exp flag @jif-oai</li>
+<li>#17917 [codex] Fix current main CI blockers @sayan-oai</li>
+<li>#17919 chore: do not disable memories for past rollouts on reset @jif-oai</li>
+<li>#17924 nit: stable test @jif-oai</li>
+<li>#17632 feat: memories menu @jif-oai</li>
+<li>#17404 register all mcp tools with namespace @sayan-oai</li>
+<li>#17941 nit: doc @jif-oai</li>
+<li>#17938 feat: sanitize rollouts before phase 1 @jif-oai</li>
+<li>#17937 feat: reset memories button @jif-oai</li>
+<li>#17883 Remove exec-server fs sandbox request preflight @pakrym-oai</li>
+<li>#17386 Register agent identities behind use_agent_identity @adrian-openai</li>
+<li>#17907 Fix fs/readDirectory to skip broken symlinks @willwang-openai</li>
+<li>#17960 chore(features) codex dependencies feat @dylan-hurd-oai</li>
+<li>#17965 fix: rename is_azure_responses_wire_base_url to is_azure_responses_provider @bolinfest</li>
+<li>#17946 Fix empty tool descriptions @shijie-oai</li>
+<li>#17824 [codex] Add local thread store listing @wiltzius-openai</li>
+<li>#17942 Add CLI update announcement @shijie-oai</li>
+<li>#17866 Refactor auth providers to mutate request headers @pakrym-oai</li>
+<li>#17902 app-server: track remote-control seq IDs per stream @euroelessar</li>
+<li>#17957 mcp: remove codex/sandbox-state custom request support @bolinfest</li>
+<li>#17953 fix: propagate log db @jif-oai</li>
+<li>#17920 chore(tui) cleanup @dylan-hurd-oai</li>
+<li>#17981 chore: tmp disable @jif-oai</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
+      <title>payloadcms/payload v3.83.0</title>
+      <link>https://github.com/payloadcms/payload/releases/tag/v3.83.0</link>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.83.0</guid>
+      <pubDate>Wed, 15 Apr 2026 18:58:24 GMT</pubDate>
+      <description>v3.83.0 (2026-04-15) 🚀 Features expand plugin API ( #16247 ) ( 54189e1 ) add profiling utilities for performance analysis ( #16198 ) ( 9391c20 ) add internal plugin priority and slug api for cross-plugin discovery ( #16244 ) ( 5f5694f ) hide slug field buttons when field is read-only ( #14824 )...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.82.1...v3.83.0">v3.83.0</a> (2026-04-15)</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li>expand plugin API (<a href="https://github.com/payloadcms/payload/issues/16247">#16247</a>) (<a href="https://github.com/payloadcms/payload/commit/54189e1">54189e1</a>)</li>
+<li>add profiling utilities for performance analysis (<a href="https://github.com/payloadcms/payload/issues/16198">#16198</a>) (<a href="https://github.com/payloadcms/payload/commit/9391c20">9391c20</a>)</li>
+<li>add internal plugin priority and slug api for cross-plugin discovery (<a href="https://github.com/payloadcms/payload/issues/16244">#16244</a>) (<a href="https://github.com/payloadcms/payload/commit/5f5694f">5f5694f</a>)</li>
+<li>hide slug field buttons when field is read-only (<a href="https://github.com/payloadcms/payload/issues/14824">#14824</a>) (<a href="https://github.com/payloadcms/payload/commit/67c2c47">67c2c47</a>)</li>
+<li><strong>cpa:</strong> add --agent flag for coding agent skill installation (<a href="https://github.com/payloadcms/payload/issues/16278">#16278</a>) (<a href="https://github.com/payloadcms/payload/commit/9f9f343">9f9f343</a>)</li>
+<li><strong>drizzle:</strong> add uuidv7 support (<a href="https://github.com/payloadcms/payload/issues/16113">#16113</a>) (<a href="https://github.com/payloadcms/payload/commit/ac01e82">ac01e82</a>)</li>
+<li><strong>email-resend:</strong> add Custom headers for the Resend adapter (<a href="https://github.com/payloadcms/payload/issues/15645">#15645</a>) (<a href="https://github.com/payloadcms/payload/commit/a7dd17c">a7dd17c</a>)</li>
+<li><strong>next:</strong> add support for custom collection views (<a href="https://github.com/payloadcms/payload/issues/16243">#16243</a>) (<a href="https://github.com/payloadcms/payload/commit/835a0ad">835a0ad</a>)</li>
+<li><strong>plugin-form-builder:</strong> change checkbox label from &#39;Default Value&#39; to &#39;Checked by default&#39; (<a href="https://github.com/payloadcms/payload/issues/15229">#15229</a>) (<a href="https://github.com/payloadcms/payload/commit/b3d2054">b3d2054</a>)</li>
+<li><strong>plugin-mcp:</strong> allow external plugins to extend mcp plugin (<a href="https://github.com/payloadcms/payload/issues/16245">#16245</a>) (<a href="https://github.com/payloadcms/payload/commit/ac4fc31">ac4fc31</a>)</li>
+<li><strong>richtext-lexical:</strong> add view override system for custom node rendering (<a href="https://github.com/payloadcms/payload/issues/14244">#14244</a>) (<a href="https://github.com/payloadcms/payload/commit/1ef43eb">1ef43eb</a>)</li>
+<li><strong>storage-*:</strong> add useCompositePrefixes option and fix client upload prefix handling (<a href="https://github.com/payloadcms/payload/issues/16230">#16230</a>) (<a href="https://github.com/payloadcms/payload/commit/74aa825">74aa825</a>)</li>
+</ul>
+<hr>
+<p><strong>Expanded Plugin API</strong> — New <code>definePlugin</code> helper introduces opt-in execution ordering, cross-plugin discovery via a slug-keyed <code>plugins</code> map, and module augmentation for type-safe plugin options. The existing <code>(config) =&gt; config</code> contract remains unchanged. <a href="https://github.com/payloadcms/payload/pull/16247">#16247</a></p>
+<pre><code class="language-ts">import { definePlugin } from &#39;payload&#39;
+
+export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
+  slug: &#39;plugin-seo&#39;,
+  order: 10,
+  plugin: ({ config, plugins, collections, generateTitle }) =&gt; ({
+    ...config,
+    // collections and generateTitle come from SEOPluginOptions
+  }),
+})
+</code></pre>
+<p><strong>Profiling Utilities</strong> — Lightweight <code>timeSync</code> and <code>timeAsync</code> wrappers for measuring function execution time during development. Wrap any function to capture its duration, then call <code>printProfileResults</code> for a formatted timing table. Not intended for production use. <a href="https://github.com/payloadcms/payload/pull/16198">#16198</a></p>
+<p><strong>Internal Plugin Priority &amp; Slug API</strong> — Plugins can now attach <code>priority</code>, <code>slug</code>, and <code>options</code> properties for execution ordering and cross-plugin discovery. Lower priority runs first; other plugins can find each other by slug via <code>config.plugins</code> without imports. Marked <code>@internal</code> for now. <a href="https://github.com/payloadcms/payload/pull/16244">#16244</a></p>
+<p><strong>Hidden Slug Field Buttons on Read-Only</strong> — The Generate and Lock/Unlock buttons on slug fields are now automatically hidden when the field is read-only, removing controls that serve no purpose in that state. <a href="https://github.com/payloadcms/payload/pull/14824">#14824</a></p>
+<p><strong>Agent Flag for CPA (cpa)</strong> — <code>create-payload-app</code> now supports a <code>--agent</code> / <code>-a</code> flag (<code>claude</code>, <code>codex</code>, <code>cursor</code>) that downloads the Payload coding skill from GitHub and installs it in the correct directory for your agent. A root-level <code>CLAUDE.md</code> or <code>AGENTS.md</code> is written for discoverability. Use <code>--no-agent</code> to skip. <a href="https://github.com/payloadcms/payload/pull/16278">#16278</a></p>
+<img width="514" height="386" alt="CPA agent selection prompt" src="https://github.com/user-attachments/assets/c5bc9e68-0c02-4881-ae6c-957e465e9f96" />
+
+<p><strong>UUIDv7 Support (drizzle)</strong> — New <code>idType: &#39;uuidv7&#39;</code> option for Postgres and SQLite adapters generates time-ordered UUIDs that are friendlier for B-tree indexes than random v4 UUIDs, while using the same storage column type. IDs are generated in application code so older Postgres versions are supported. <a href="https://github.com/payloadcms/payload/pull/16113">#16113</a></p>
+<p><strong>Custom Email Headers (email-resend)</strong> — The Resend adapter now passes custom headers from <code>sendEmail</code> options to the Resend API, enabling features like <code>List-Unsubscribe</code> headers that were previously silently dropped. <a href="https://github.com/payloadcms/payload/pull/15645">#15645</a></p>
+<pre><code class="language-ts">await payload.sendEmail({
+  from: &quot;Test &lt;test@domain.com&gt;&quot;,
+  to: &quot;jimmybillbob@example.com&quot;,
+  subject: &quot;Email with custom headers&quot;,
+  html: html,
+  headers: {
+    &quot;List-Unsubscribe&quot;: &quot;&lt;https://domain.com/unsubscribe&gt;&quot;,
+    &quot;List-Unsubscribe-Post&quot;: &quot;List-Unsubscribe=One-Click&quot;,
+  },
+});
+</code></pre>
+<p><strong>Custom Collection Views (next)</strong> — Register custom views at the collection level via <code>admin.components.views[key]</code> with a <code>Component</code> and <code>path</code>. Folders take routing precedence over custom views on upload collections. <a href="https://github.com/payloadcms/payload/pull/16243">#16243</a></p>
+<pre><code class="language-ts">{
+  slug: &#39;products&#39;,
+  admin: {
+    components: {
+      views: {
+        grid: {
+          Component: &#39;/components/GridView&#39;,
+          path: &#39;/grid&#39;,
+          exact: true,
+        },
+      },
+    },
+  },
+}
+</code></pre>
+<p><strong>Checkbox Label Clarity (plugin-form-builder)</strong> — The form builder checkbox field label was changed from &quot;Default Value&quot; to &quot;Checked by default&quot; to eliminate confusion about whether the checkbox toggles a default value or sets the initial checked state. <a href="https://github.com/payloadcms/payload/pull/15229">#15229</a></p>
+<p><strong>Extensible MCP Plugin (plugin-mcp)</strong> — External plugins can now extend plugin-mcp by finding it via slug in <code>config.plugins</code> and injecting custom MCP tools into its options. Also exports the <code>MCPPluginConfig</code> type for type-safe tool injection. <a href="https://github.com/payloadcms/payload/pull/16245">#16245</a></p>
+<p><strong>View Override System for Custom Node Rendering (richtext-lexical)</strong> — ⚠️ Experimental. Override how any Lexical node type is rendered in the editor via view maps. Supports custom DOM, React components, or HTML strings. Works in both the admin editor and frontend JSX serialization for WYSIWYG consistency. <a href="https://github.com/payloadcms/payload/pull/14244">#14244</a></p>
+<pre><code class="language-tsx">export const myViews: LexicalEditorViewMap = {
+  default: {
+    heading: {
+      createDOM() {
+        const h2 = document.createElement(&#39;h2&#39;)
+        h2.textContent = &#39;Custom Heading&#39;
+        return h2
+      },
+    },
+    horizontalRule: {
+      Component: () =&gt; &lt;div className=&quot;custom-hr&quot;&gt;---&lt;/div&gt;,
+    },
+    link: {
+      html: &#39;&lt;a href=&quot;#&quot;&gt;Custom Link&lt;/a&gt;&#39;,
+    },
+  },
+}
+</code></pre>
+<pre><code class="language-ts">{
+  fields: [
+    {
+      name: &#39;content&#39;,
+      type: &#39;richText&#39;,
+      editor: lexicalEditor({
+        views: &#39;/path/to/views.tsx#myViews&#39;,
+      }),
+    },
+  ]
+}
+</code></pre>
+<p><strong>Composite Prefixes for Storage Adapters (storage-*)</strong> — New <code>useCompositePrefixes</code> option combines collection and document prefixes instead of one overriding the other. Also fixes a bug where client uploads ignored document prefix entirely. Applies to S3, Azure, GCS, R2, and Vercel Blob. <a href="https://github.com/payloadcms/payload/pull/16230">#16230</a></p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Collection Prefix</th>
+<th>Doc Prefix</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>false</code> (default)</td>
+<td><code>media-folder</code></td>
+<td><code>user-123</code></td>
+<td><code>user-123/file.jpg</code></td>
+</tr>
+<tr>
+<td><code>true</code></td>
+<td><code>media-folder</code></td>
+<td><code>user-123</code></td>
+<td><code>media-folder/user-123/file.jpg</code></td>
+</tr>
+</tbody></table>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>restore falling back to current document values for <code>undefined</code> fields (<a href="https://github.com/payloadcms/payload/issues/16272">#16272</a>) (<a href="https://github.com/payloadcms/payload/commit/4b4d61c">4b4d61c</a>)</li>
+<li>enforce mimeTypes restriction when useTempFiles is enabled (<a href="https://github.com/payloadcms/payload/issues/16255">#16255</a>) (<a href="https://github.com/payloadcms/payload/commit/bb749a5">bb749a5</a>)</li>
+<li>prevent cron from permanently dying after handler errors (<a href="https://github.com/payloadcms/payload/issues/16219">#16219</a>) (<a href="https://github.com/payloadcms/payload/commit/c5e0e02">c5e0e02</a>)</li>
+<li>use safe property assignment in deepMergeSimple (<a href="https://github.com/payloadcms/payload/issues/16271">#16271</a>) (<a href="https://github.com/payloadcms/payload/commit/2b23010">2b23010</a>)</li>
+<li>handle concurrent autosave write conflicts gracefully (<a href="https://github.com/payloadcms/payload/issues/16216">#16216</a>) (<a href="https://github.com/payloadcms/payload/commit/e8502fa">e8502fa</a>)</li>
+<li>use instanceof instead of constructor name in formatErrors (<a href="https://github.com/payloadcms/payload/issues/16089">#16089</a>) (<a href="https://github.com/payloadcms/payload/commit/216d162">216d162</a>)</li>
+<li>parse JSON string where query param (<a href="https://github.com/payloadcms/payload/issues/15745">#15745</a>) (<a href="https://github.com/payloadcms/payload/commit/2a26b5a">2a26b5a</a>)</li>
+<li>expose type for field&#39;s <code>position</code> (<a href="https://github.com/payloadcms/payload/issues/14390">#14390</a>) (<a href="https://github.com/payloadcms/payload/commit/d9b3c07">d9b3c07</a>)</li>
+<li>default virtual fields to readOnly in admin UI (<a href="https://github.com/payloadcms/payload/issues/16016">#16016</a>) (<a href="https://github.com/payloadcms/payload/commit/72396f6">72396f6</a>)</li>
+<li>localized array,group,blocks fields duplicate with empty values (<a href="https://github.com/payloadcms/payload/issues/15849">#15849</a>) (<a href="https://github.com/payloadcms/payload/commit/067e14f">067e14f</a>)</li>
+<li>fixes importMap type in monorepo usage (<a href="https://github.com/payloadcms/payload/issues/15203">#15203</a>) (<a href="https://github.com/payloadcms/payload/commit/79f4cc7">79f4cc7</a>)</li>
+<li><strong>db-postgres:</strong> bump <code>drizzle-orm</code> to <code>0.45.2</code> to resolve an SQL injection vulnerability and <code>pg</code> to <code>8.20.0</code> (<a href="https://github.com/payloadcms/payload/issues/16168">#16168</a>) (<a href="https://github.com/payloadcms/payload/commit/af1a932">af1a932</a>)</li>
+<li><strong>drizzle:</strong> surface connection errors in beginTransaction instead of hanging forever (<a href="https://github.com/payloadcms/payload/issues/16220">#16220</a>) (<a href="https://github.com/payloadcms/payload/commit/1e1c591">1e1c591</a>)</li>
+<li><strong>drizzle:</strong> ensure <code>getPrimaryDb</code> is used for all write operations (<a href="https://github.com/payloadcms/payload/issues/16240">#16240</a>) (<a href="https://github.com/payloadcms/payload/commit/aa44649">aa44649</a>)</li>
+<li><strong>email-resend:</strong> support path and preserve base64 content in mapAttachments (<a href="https://github.com/payloadcms/payload/issues/16094">#16094</a>) (<a href="https://github.com/payloadcms/payload/commit/57e71f5">57e71f5</a>)</li>
+<li><strong>next:</strong> persist language cookie across browser sessions (<a href="https://github.com/payloadcms/payload/issues/15081">#15081</a>) (<a href="https://github.com/payloadcms/payload/commit/0acff80">0acff80</a>)</li>
+<li><strong>plugin-ecommerce:</strong> price not showing as 0 when explicitly set (<a href="https://github.com/payloadcms/payload/issues/16289">#16289</a>) (<a href="https://github.com/payloadcms/payload/commit/62aa42b">62aa42b</a>)</li>
+<li><strong>plugin-ecommerce:</strong> priceInput does not respect required field status (<a href="https://github.com/payloadcms/payload/issues/15783">#15783</a>) (<a href="https://github.com/payloadcms/payload/commit/ed1c874">ed1c874</a>)</li>
+<li><strong>plugin-import-export:</strong> hide invalid sortBy options (<a href="https://github.com/payloadcms/payload/issues/11676">#11676</a>) (<a href="https://github.com/payloadcms/payload/commit/9d6bf0b">9d6bf0b</a>)</li>
+<li><strong>plugin-search:</strong> serialize reindexing to prevent locale data race conditions (<a href="https://github.com/payloadcms/payload/issues/15917">#15917</a>) (<a href="https://github.com/payloadcms/payload/commit/79d1b6b">79d1b6b</a>)</li>
+<li><strong>plugin-seo,richtext-lexical:</strong> add missing translations (<a href="https://github.com/payloadcms/payload/issues/11859">#11859</a>) (<a href="https://github.com/payloadcms/payload/commit/da27afc">da27afc</a>)</li>
+<li><strong>plugin-stripe:</strong> supports webhooks within serverless environments (<a href="https://github.com/payloadcms/payload/issues/10890">#10890</a>) (<a href="https://github.com/payloadcms/payload/commit/4179bf3">4179bf3</a>)</li>
+<li><strong>translations:</strong> &#39;noResults&#39; translation expected a singular label, rewrite sentence sine a plural label is injected. (<a href="https://github.com/payloadcms/payload/issues/13360">#13360</a>) (<a href="https://github.com/payloadcms/payload/commit/cb0ce1c">cb0ce1c</a>)</li>
+<li><strong>translations:</strong> modified Spanish translations to be gender neutral (<a href="https://github.com/payloadcms/payload/issues/15796">#15796</a>) (<a href="https://github.com/payloadcms/payload/commit/a00267d">a00267d</a>)</li>
+<li><strong>translations:</strong> fall back to base language tag for Accept-Language matching (<a href="https://github.com/payloadcms/payload/issues/15076">#15076</a>) (<a href="https://github.com/payloadcms/payload/commit/cf95cad">cf95cad</a>)</li>
+<li><strong>ui:</strong> usePreventLeave default message (<a href="https://github.com/payloadcms/payload/issues/15042">#15042</a>) (<a href="https://github.com/payloadcms/payload/commit/8de32a2">8de32a2</a>)</li>
+<li><strong>ui:</strong> use i18n for live preview &quot;Open in new window&quot; tooltip (<a href="https://github.com/payloadcms/payload/issues/16038">#16038</a>) (<a href="https://github.com/payloadcms/payload/commit/173b453">173b453</a>)</li>
+<li><strong>ui:</strong> preselect folder when bulk uploading from inside a folder (<a href="https://github.com/payloadcms/payload/issues/16030">#16030</a>) (<a href="https://github.com/payloadcms/payload/commit/71a6c60">71a6c60</a>)</li>
+<li><strong>ui:</strong> prevent NaN aspect ratio in createThumbnail on svg files (<a href="https://github.com/payloadcms/payload/issues/10488">#10488</a>) (<a href="https://github.com/payloadcms/payload/commit/b332bff">b332bff</a>)</li>
+<li><strong>ui:</strong> thread cache tag to list view thumbnails (<a href="https://github.com/payloadcms/payload/issues/11741">#11741</a>) (<a href="https://github.com/payloadcms/payload/commit/5afcef5">5afcef5</a>)</li>
+</ul>
+<h3>⚡ Performance</h3>
+<ul>
+<li><strong>plugin-mcp:</strong> minify JSON in MCP tool responses (<a href="https://github.com/payloadcms/payload/issues/15598">#15598</a>) (<a href="https://github.com/payloadcms/payload/commit/976369d">976369d</a>)</li>
+</ul>
+<h3>🛠 Refactors</h3>
+<ul>
+<li>simplify storage adapter handler pattern (<a href="https://github.com/payloadcms/payload/issues/16231">#16231</a>) (<a href="https://github.com/payloadcms/payload/commit/6690769">6690769</a>)</li>
+<li>clean up dead code and minor bugs in job queue system (<a href="https://github.com/payloadcms/payload/issues/16234">#16234</a>) (<a href="https://github.com/payloadcms/payload/commit/e49c224">e49c224</a>)</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>documents upload node markdown placeholder (<a href="https://github.com/payloadcms/payload/issues/16135">#16135</a>) (<a href="https://github.com/payloadcms/payload/commit/a9b0ca7">a9b0ca7</a>)</li>
+<li>change import to use type import for GlobalConfig (<a href="https://github.com/payloadcms/payload/issues/11578">#11578</a>) (<a href="https://github.com/payloadcms/payload/commit/289e2b6">289e2b6</a>)</li>
+</ul>
+<h3>🧪 Tests</h3>
+<ul>
+<li>remove debug console.log left in SlugField overrides fields test suite (<a href="https://github.com/payloadcms/payload/issues/16279">#16279</a>) (<a href="https://github.com/payloadcms/payload/commit/22e2466">22e2466</a>)</li>
+<li><strong>plugin-multi-tenant:</strong> verify that tenant selector respects access control (<a href="https://github.com/payloadcms/payload/issues/14916">#14916</a>) (<a href="https://github.com/payloadcms/payload/commit/0516803">0516803</a>)</li>
+</ul>
+<h3>📝 Templates</h3>
+<ul>
+<li>bump payload and next.js versions (<a href="https://github.com/payloadcms/payload/issues/16229">#16229</a>) (<a href="https://github.com/payloadcms/payload/commit/2b10973">2b10973</a>)</li>
+</ul>
+<h3>📓 Examples</h3>
+<ul>
+<li>add Dockerfile to Remix (<a href="https://github.com/payloadcms/payload/issues/11429">#11429</a>) (<a href="https://github.com/payloadcms/payload/commit/e34cbc3">e34cbc3</a>)</li>
+</ul>
+<h3>⚙️ CI</h3>
+<ul>
+<li>consolidate docker service startup into start-services action (<a href="https://github.com/payloadcms/payload/issues/16277">#16277</a>) (<a href="https://github.com/payloadcms/payload/commit/4912005">4912005</a>)</li>
+<li>make build cache restore resilient to eviction (<a href="https://github.com/payloadcms/payload/issues/16275">#16275</a>) (<a href="https://github.com/payloadcms/payload/commit/d1837ad">d1837ad</a>)</li>
+<li>update actions to resolve Node.js 20 deprecation warnings (<a href="https://github.com/payloadcms/payload/issues/16267">#16267</a>) (<a href="https://github.com/payloadcms/payload/commit/04163ea">04163ea</a>)</li>
+<li>run e2e tests using turbopack (<a href="https://github.com/payloadcms/payload/issues/16237">#16237</a>) (<a href="https://github.com/payloadcms/payload/commit/3a7c9f3">3a7c9f3</a>)</li>
+</ul>
+<h3>🏡 Chores</h3>
+<ul>
+<li>allow e2e port to be defined by env vars (<a href="https://github.com/payloadcms/payload/issues/16285">#16285</a>) (<a href="https://github.com/payloadcms/payload/commit/cb97614">cb97614</a>)</li>
+<li>mark the plugin API as experimental (<a href="https://github.com/payloadcms/payload/issues/16276">#16276</a>) (<a href="https://github.com/payloadcms/payload/commit/56325ef">56325ef</a>)</li>
+<li>increase test summary script suite timeout to 120 seconds (<a href="https://github.com/payloadcms/payload/issues/16264">#16264</a>) (<a href="https://github.com/payloadcms/payload/commit/59f78f0">59f78f0</a>)</li>
+<li>update deprecated VS code rules (<a href="https://github.com/payloadcms/payload/issues/16185">#16185</a>) (<a href="https://github.com/payloadcms/payload/commit/359dc94">359dc94</a>)</li>
+<li><strong>templates:</strong> fix postgres volume (<a href="https://github.com/payloadcms/payload/issues/15157">#15157</a>) (<a href="https://github.com/payloadcms/payload/commit/b44135e">b44135e</a>)</li>
+<li><strong>templates:</strong> wrong links to Draft Preview Example (<a href="https://github.com/payloadcms/payload/issues/13053">#13053</a>) (<a href="https://github.com/payloadcms/payload/commit/a2dee84">a2dee84</a>)</li>
+</ul>
+<h3>🤝 Contributors</h3>
+<ul>
+<li>Elliot DeNolf (@denolfe)</li>
+<li>Paul (@paulpopus)</li>
+<li>Philipp Schneider (@philipp-tailor)</li>
+<li>Riley Langbein (@rilrom)</li>
+<li>Patrik (@PatrikKozak)</li>
+<li>Ran (@eddieran)</li>
+<li>Alessio Gravili (@AlessioGr)</li>
+<li>Jens Becker (@jhb-dev)</li>
+<li>Ruben Hutter (@ruben-hutter)</li>
+<li>German Jablonski (@GermanJablo)</li>
+<li>Sean Zubrickas (@zubricks)</li>
+<li>Muhammad Aqib (@aqib-io)</li>
+<li>Jarrod Flesch (@JarrodMFlesch)</li>
+<li>Bob Bass (@robertjbass)</li>
+<li>Said Akhrarov (@akhrarovsaid)</li>
+<li>Mahmoud Hamdy (@mahmoodhamdi)</li>
+<li>fdurackbrooks (@fdurackbrooks)</li>
+<li>Jake Fletcher (@jacobsfletch)</li>
+<li>David Murdoch (@dsm23)</li>
+<li>Ossaid (@ossaidqadri)</li>
+<li>Adrian Maj (@AdrianMaj)</li>
+<li>Thijs Marinussen (@ThijsAtFreave)</li>
+<li>roboin (@Robot-Inventor)</li>
+<li>Jeremías Benitez (@jerebenitez)</li>
+<li>Sebastian Blank (@blankse)</li>
+<li>Sasha (@r1tsuu)</li>
+<li>Yaniv (@y4aniv)</li>
+<li>Marwin Hormiz (@marwinhormiz)</li>
+<li>Jeffery To (@jefferyto)</li>
+<li>Roman Ryzhikov (@yagee)</li>
+<li>Hugo Duarte (@hugomeduarte)</li>
+<li>Boyan Bratvanov (@bratvanov)</li>
+<li>jakobpevec (@jakobpevec)</li>
+<li>Siim Sams (@siimsams)</li>
+<li>W1ckh3ad (@W1ckh3ad)</li>
+<li>Shane Friedman (@smoores-dev)</li>
+<li>Marius (@MariusMatu)</li>
+<li>guoyangzhen (@guoyangzhen)</li>
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
       <title>multiboxlabs/flow-browser v0.12.0</title>
       <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.12.0</link>
       <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.12.0</guid>
@@ -3966,89 +4391,6 @@ export default buildConfig({
       <category>atuinsh</category>
       <category>desktop</category>
       <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
-    </item>    <item>
-      <title>payloadcms/payload v3.73.0</title>
-      <link>https://github.com/payloadcms/payload/releases/tag/v3.73.0</link>
-      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.73.0</guid>
-      <pubDate>Fri, 23 Jan 2026 20:50:29 GMT</pubDate>
-      <description>v3.73.0 (2026-01-23) 🚀 Features next.js 16 support ( #14456 ) ( 18ca83b ) db-sqlite: add busyTimeout option ( #15317 ) ( 0c235c3 ) db-sqlite: add WAL mode support ( #15278 ) ( 3357aa6 ) drizzle: predefined migration for blocksAsJSON: true ( #15257 ) ( 1b7b13d ) live-preview: expose requestHandle...</description>
-      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.72.0...v3.73.0">v3.73.0</a> (2026-01-23)</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>next.js 16 support (<a href="https://github.com/payloadcms/payload/issues/14456">#14456</a>) (<a href="https://github.com/payloadcms/payload/commit/18ca83b">18ca83b</a>)</li>
-<li><strong>db-sqlite:</strong> add <code>busyTimeout</code> option (<a href="https://github.com/payloadcms/payload/issues/15317">#15317</a>) (<a href="https://github.com/payloadcms/payload/commit/0c235c3">0c235c3</a>)</li>
-<li><strong>db-sqlite:</strong> add WAL mode support (<a href="https://github.com/payloadcms/payload/issues/15278">#15278</a>) (<a href="https://github.com/payloadcms/payload/commit/3357aa6">3357aa6</a>)</li>
-<li><strong>drizzle:</strong> predefined migration for <code>blocksAsJSON: true</code> (<a href="https://github.com/payloadcms/payload/issues/15257">#15257</a>) (<a href="https://github.com/payloadcms/payload/commit/1b7b13d">1b7b13d</a>)</li>
-<li><strong>live-preview:</strong> expose requestHandler arg to hooks (<a href="https://github.com/payloadcms/payload/issues/15302">#15302</a>) (<a href="https://github.com/payloadcms/payload/commit/4f3c31f">4f3c31f</a>)</li>
-<li><strong>plugin-mcp:</strong> adds select API with CRUD tools (<a href="https://github.com/payloadcms/payload/issues/15301">#15301</a>) (<a href="https://github.com/payloadcms/payload/commit/268b33a">268b33a</a>)</li>
-<li><strong>ui:</strong> use native useEffectEvent if available (<a href="https://github.com/payloadcms/payload/issues/15304">#15304</a>) (<a href="https://github.com/payloadcms/payload/commit/f0458fb">f0458fb</a>)</li>
-</ul>
-<h4>Feature Details</h4>
-<p><strong>🔥 Next.js 16 Support</strong> - Full compatibility with Next.js 16, including Turbopack HMR and build support. Requires Next.js &gt;16.1.1-canary.35 or 16.2.0+. Templates will be updated after Next.js 16.2.0 is released. Stable Next.js 16.1.* is not supported, as we depend on fixes released in the Next.js canary. Support for cache components will follow in a future release <a href="https://github.com/payloadcms/payload/pull/14456">#14456</a></p>
-<p><strong>WAL Mode Support (db-sqlite)</strong> - Enable SQLite Write-Ahead Logging for improved concurrent read/write performance. Configurable synchronous mode and journal size limit. <a href="https://github.com/payloadcms/payload/pull/15278">#15278</a></p>
-<p><strong>Busy Timeout Option (db-sqlite)</strong> - Set maximum wait time in milliseconds when the database is locked, preventing <code>SQLITE_BUSY</code> errors in high-concurrency scenarios. <a href="https://github.com/payloadcms/payload/pull/15317">#15317</a></p>
-<p><strong>Predefined Migration for blocksAsJSON (drizzle)</strong> - Migrate existing projects to use <code>blocksAsJSON: true</code> with a single command. Automatically updates your Payload config and generates the required migration. <a href="https://github.com/payloadcms/payload/pull/15257">#15257</a></p>
-<pre><code class="language-bash">pnpm payload migrate:create --file @payloadcms/db-postgres/blocks-as-json
-</code></pre>
-<p><strong>Request Handler in Live Preview Hooks (live-preview)</strong> - The <code>useLivePreview</code> hook (React and Vue) now accepts a <code>requestHandler</code> argument, allowing customization of data fetching. Useful when your frontend proxies requests or uses external middleware. <a href="https://github.com/payloadcms/payload/pull/15302">#15302</a></p>
-<p><strong>Select API for MCP Tools (plugin-mcp)</strong> - Find, Create, and Update tools for Globals and Collections now support the <code>select</code> API, reducing token usage and aligning with Payload&#39;s existing query capabilities. <a href="https://github.com/payloadcms/payload/pull/15301">#15301</a></p>
-<p><strong>Native useEffectEvent (ui)</strong> - Uses React&#39;s native <code>useEffectEvent</code> when available (React 19.2.0+), falling back to the existing polyfill for older versions. <a href="https://github.com/payloadcms/payload/pull/15304">#15304</a></p>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>select hasMany prevent duplicate values (<a href="https://github.com/payloadcms/payload/issues/15218">#15218</a>) (<a href="https://github.com/payloadcms/payload/commit/f4e8990">f4e8990</a>)</li>
-<li>orderable fractional indexing case-sensitivity issue with PostgreSQL (<a href="https://github.com/payloadcms/payload/issues/14867">#14867</a>) (<a href="https://github.com/payloadcms/payload/commit/ef27ad9">ef27ad9</a>)</li>
-<li>find distinct sort on a different field (<a href="https://github.com/payloadcms/payload/issues/15233">#15233</a>) (<a href="https://github.com/payloadcms/payload/commit/e95f26d">e95f26d</a>)</li>
-<li>conditional tabs breaking in Next.js 16 due to unstable tab id (<a href="https://github.com/payloadcms/payload/issues/15270">#15270</a>) (<a href="https://github.com/payloadcms/payload/commit/f5a7a00">f5a7a00</a>)</li>
-<li>correct previousValue and value in afterChange when using seo-plugin (<a href="https://github.com/payloadcms/payload/issues/15253">#15253</a>) (<a href="https://github.com/payloadcms/payload/commit/b6b6bab">b6b6bab</a>)</li>
-<li><strong>db-mongodb:</strong> fix projection handling for relationship fields in GraphQL queries with select (<a href="https://github.com/payloadcms/payload/issues/14850">#14850</a>) (<a href="https://github.com/payloadcms/payload/commit/ace3447">ace3447</a>)</li>
-<li><strong>drizzle:</strong> d1 sqlite IN querying of <code>id</code> when any other join is present in the query (<a href="https://github.com/payloadcms/payload/issues/15290">#15290</a>) (<a href="https://github.com/payloadcms/payload/commit/4f5a9c2">4f5a9c2</a>)</li>
-<li><strong>next:</strong> relationship fields with maxDepth: 0 show &quot;Untitled - ID&quot; in diff view (<a href="https://github.com/payloadcms/payload/issues/15305">#15305</a>) (<a href="https://github.com/payloadcms/payload/commit/65238c5">65238c5</a>)</li>
-<li><strong>plugin-mcp:</strong> auto-detect basePath from Payload config routes (<a href="https://github.com/payloadcms/payload/issues/15189">#15189</a>) (<a href="https://github.com/payloadcms/payload/commit/dbc06f6">dbc06f6</a>)</li>
-<li><strong>richtext-lexical:</strong> internal links render as href=&quot;#&quot; in versions view (<a href="https://github.com/payloadcms/payload/issues/15308">#15308</a>) (<a href="https://github.com/payloadcms/payload/commit/ab4102c">ab4102c</a>)</li>
-<li><strong>sdk:</strong> correct return types with <code>select</code> (<a href="https://github.com/payloadcms/payload/issues/15289">#15289</a>) (<a href="https://github.com/payloadcms/payload/commit/db40d7b">db40d7b</a>)</li>
-<li><strong>ui:</strong> diff view columns have unequal widths for nested fields causing text misalignment (<a href="https://github.com/payloadcms/payload/issues/15330">#15330</a>) (<a href="https://github.com/payloadcms/payload/commit/db72a65">db72a65</a>)</li>
-<li><strong>ui:</strong> upsertPreferences did not return preferences when creating new preferences (<a href="https://github.com/payloadcms/payload/issues/15321">#15321</a>) (<a href="https://github.com/payloadcms/payload/commit/94d5728">94d5728</a>)</li>
-<li><strong>ui:</strong> pass the locale to reorder endpoint in orderable table (<a href="https://github.com/payloadcms/payload/issues/14839">#14839</a>) (<a href="https://github.com/payloadcms/payload/commit/d6bb3de">d6bb3de</a>)</li>
-</ul>
-<h3>📚 Documentation</h3>
-<ul>
-<li>add jsdocs to query presets api (<a href="https://github.com/payloadcms/payload/issues/15306">#15306</a>) (<a href="https://github.com/payloadcms/payload/commit/3dbaed8">3dbaed8</a>)</li>
-<li>small md fix (<a href="https://github.com/payloadcms/payload/issues/15299">#15299</a>) (<a href="https://github.com/payloadcms/payload/commit/9a1eb77">9a1eb77</a>)</li>
-<li>remove csv as a language for code blocks (<a href="https://github.com/payloadcms/payload/issues/15265">#15265</a>) (<a href="https://github.com/payloadcms/payload/commit/259eac4">259eac4</a>)</li>
-</ul>
-<h3>📝 Templates</h3>
-<ul>
-<li>upgrade website template and examples tailwind to v4 (<a href="https://github.com/payloadcms/payload/issues/11197">#11197</a>) (<a href="https://github.com/payloadcms/payload/commit/e77f9b6">e77f9b6</a>)</li>
-</ul>
-<h3>⚙️ CI</h3>
-<ul>
-<li>prevent rate limiting in release-commenter action (<a href="https://github.com/payloadcms/payload/issues/15298">#15298</a>) (<a href="https://github.com/payloadcms/payload/commit/71b35fa">71b35fa</a>)</li>
-</ul>
-<h3>🏡 Chores</h3>
-<ul>
-<li>removes never implemented readDrafts access arg on globals (<a href="https://github.com/payloadcms/payload/issues/15297">#15297</a>) (<a href="https://github.com/payloadcms/payload/commit/12b679f">12b679f</a>)</li>
-<li>export fractional indexing utilities (<a href="https://github.com/payloadcms/payload/issues/15286">#15286</a>) (<a href="https://github.com/payloadcms/payload/commit/02800b0">02800b0</a>)</li>
-</ul>
-<h3>🤝 Contributors</h3>
-<ul>
-<li>Sasha (@r1tsuu)</li>
-<li>Patrik (@PatrikKozak)</li>
-<li>Alessio Gravili (@AlessioGr)</li>
-<li>Kendell (@kendelljoseph)</li>
-<li>David Murdoch (@dsm23)</li>
-<li>Rafau (@RafalFilipek)</li>
-<li>Aaron Claes (@AaronClaes)</li>
-<li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>German Jablonski (@GermanJablo)</li>
-<li>Elliot DeNolf (@denolfe)</li>
-<li>Jens Becker (@jhb-dev)</li>
-<li>Paul (@paulpopus)</li>
-<li>Vladyslav Prosolupov (@vladyslavprosolupov)</li>
-<li>Jessica Rynkar (@jessrynkar)</li>
-</ul>]]></content:encoded>
-      <category>payloadcms</category>
-      <category>payload</category>
-      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
       <title>atuinsh/desktop v0.2.17</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.17</link>
