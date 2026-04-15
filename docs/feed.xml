@@ -10,9 +10,54 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 15 Apr 2026 12:28:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 15:31:47 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>multiboxlabs/flow-browser v0.12.0</title>
+      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.12.0</link>
+      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.12.0</guid>
+      <pubDate>Wed, 15 Apr 2026 12:31:18 GMT</pubDate>
+      <description>What&amp;#39;s New Command Palette has been completely redesigned and reimplemented! Bangs are now supported in the Command Palette! Restore recently closed tabs with Cmd/Ctrl + Shift + T. Navigate between tabs with Ctrl+Tab &amp;amp; Ctrl+Shift+Tab. Passkeys autofill is now supported on macOS! Added new...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s New</h2>
+<ul>
+<li>Command Palette has been completely redesigned and reimplemented!</li>
+<li><a href="https://duckduckgo.com/bangs">Bangs</a> are now supported in the Command Palette!</li>
+<li>Restore recently closed tabs with Cmd/Ctrl + Shift + T.</li>
+<li>Navigate between tabs with Ctrl+Tab &amp; Ctrl+Shift+Tab.</li>
+<li>Passkeys autofill is now supported on macOS!</li>
+<li>Added new items to context menu</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed tab order not being followed after closing a tab.</li>
+<li>Fixed extension favicons not showing.</li>
+<li>Fixed popup windows persisting when they shouldn&#39;t.</li>
+<li>Fixed popup windows not closing after having no tabs remaining.</li>
+<li>Fixed sidebar animations not showing in floating mode.</li>
+<li>Fixed right-clicking an extension button not showing the context menu.</li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>Improved support for extensions!</li>
+<li>It is now easier to activate the floating sidebar when using multiple monitors</li>
+<li>Bumped Electron version</li>
+</ul>
+<hr>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>feat: make recently closed ephemeral + add restore shortcut by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/248">https://github.com/MultiboxLabs/flow-browser/pull/248</a></li>
+<li>feat: redesigned omnibox interface &amp; implementation by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/247">https://github.com/MultiboxLabs/flow-browser/pull/247</a></li>
+<li>feat: improve popup windows by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/249">https://github.com/MultiboxLabs/flow-browser/pull/249</a></li>
+<li>feat: improve extensions support by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/250">https://github.com/MultiboxLabs/flow-browser/pull/250</a></li>
+<li>Bump Electron to v41.1.1+wvcus [NEXT MAJOR] by @github-actions[bot] in <a href="https://github.com/MultiboxLabs/flow-browser/pull/252">https://github.com/MultiboxLabs/flow-browser/pull/252</a></li>
+<li>feat: conditional passkey autofill on macOS by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/255">https://github.com/MultiboxLabs/flow-browser/pull/255</a></li>
+<li>feat: add native prompt support by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/258">https://github.com/MultiboxLabs/flow-browser/pull/258</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.11.0...v0.12.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.11.0...v0.12.0</a></p>]]></content:encoded>
+      <category>multiboxlabs</category>
+      <category>flow-browser</category>
+      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
+    </item>    <item>
       <title>derFrisson/plezy-apks 1.32.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</guid>
