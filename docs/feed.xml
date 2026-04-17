@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 16 Apr 2026 21:19:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 00:43:07 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>nodejs/node v24.15.0</title>
@@ -6170,30 +6170,6 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
 <li>Add Shortcuts Editor by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/47">https://github.com/MultiboxLabs/flow-browser/pull/47</a></li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.6.4...v0.7.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.6.4...v0.7.0</a></p>]]></content:encoded>
-      <category>multiboxlabs</category>
-      <category>flow-browser</category>
-      <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>multiboxlabs/flow-browser v0.6.0</title>
-      <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.6.0</link>
-      <guid isPermaLink="true">https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.6.0</guid>
-      <pubDate>Sun, 04 May 2025 19:40:45 GMT</pubDate>
-      <description>Changes Electron Builder Migration : Build Pipeline migrated to Electron Builder &amp;amp; Electron Vite, which will simplify development &amp;amp; make experience more seamless. New App Update System : This is a better update system which can be found in Flow Settings! Set as Default Browser : You can n...</description>
-      <content:encoded><![CDATA[<h2>Changes</h2>
-<ul>
-<li><strong>Electron Builder Migration</strong>: Build Pipeline migrated to Electron Builder &amp; Electron Vite, which will simplify development &amp; make experience more seamless.</li>
-<li><strong>New App Update System</strong>: This is a better update system which can be found in Flow Settings!</li>
-<li><strong>Set as Default Browser</strong>: You can now set Flow as your default browser on Windows &amp; macOS!</li>
-</ul>
-<h2>Merged Pull Requests</h2>
-<ul>
-<li>Portal Components System by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/28">https://github.com/MultiboxLabs/flow-browser/pull/28</a></li>
-<li>Migrate to Electron Vite by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/29">https://github.com/MultiboxLabs/flow-browser/pull/29</a></li>
-<li>Improved App Update System by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/30">https://github.com/MultiboxLabs/flow-browser/pull/30</a></li>
-<li>Add Posthog Error Logging by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/32">https://github.com/MultiboxLabs/flow-browser/pull/32</a></li>
-<li>Set as Default Browser by @iamEvanYT in <a href="https://github.com/MultiboxLabs/flow-browser/pull/31">https://github.com/MultiboxLabs/flow-browser/pull/31</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/MultiboxLabs/flow-browser/compare/v0.5.0...v0.6.0">https://github.com/MultiboxLabs/flow-browser/compare/v0.5.0...v0.6.0</a></p>]]></content:encoded>
       <category>multiboxlabs</category>
       <category>flow-browser</category>
       <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
