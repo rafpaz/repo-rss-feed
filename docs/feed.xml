@@ -10,9 +10,42 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 17 Apr 2026 18:22:15 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 21:18:41 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>facebook/react eslint-plugin-react-hooks@7.1.1</title>
+      <link>https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.1</link>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.1</guid>
+      <pubDate>Fri, 17 Apr 2026 20:51:48 GMT</pubDate>
+      <description>Note: 7.1.0 accidentally removed the component-hook-factories rule, causing errors for users who referenced it in their ESLint config. This is now fixed. Add deprecated no-op component-hook-factories rule for backwards compatibility. ( @mofeiZ in #36307 )</description>
+      <content:encoded><![CDATA[<p><strong>Note:</strong> 7.1.0 accidentally removed the <code>component-hook-factories</code> rule, causing errors for users who referenced it in their ESLint config. This is now fixed.</p>
+<ul>
+<li>Add deprecated no-op <code>component-hook-factories</code> rule for backwards compatibility. (<a href="https://github.com/mofeiZ">@mofeiZ</a> in <a href="https://github.com/facebook/react/pull/36307">#36307</a>)</li>
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
+      <title>facebook/react eslint-plugin-react-hooks@7.1.0</title>
+      <link>https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.0</link>
+      <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.0</guid>
+      <pubDate>Fri, 17 Apr 2026 19:41:40 GMT</pubDate>
+      <description>This release adds ESLint v10 support, improves performance by skipping compilation for non-React files, and includes compiler lint improvements including better set-state-in-effect detection, improved ref validation, and more helpful error reporting. Add ESLint v10 support. ( @nicolo-ribaudo in #...</description>
+      <content:encoded><![CDATA[<p>This release adds ESLint v10 support, improves performance by skipping compilation for non-React files, and includes compiler lint improvements including better <code>set-state-in-effect</code> detection, improved ref validation, and more helpful error reporting.</p>
+<ul>
+<li>Add ESLint v10 support. (<a href="https://github.com/nicolo-ribaudo">@nicolo-ribaudo</a> in <a href="https://github.com/facebook/react/pull/35720">#35720</a>)</li>
+<li>Skip compilation for non-React files to improve performance. (<a href="https://github.com/josephsavona">@josephsavona</a> in <a href="https://github.com/facebook/react/pull/35589">#35589</a>)</li>
+<li>Fix exhaustive deps bug with Flow type casting. (<a href="https://github.com/jorge-cab">@jorge-cab</a> in <a href="https://github.com/facebook/react/pull/35691">#35691</a>)</li>
+<li>Fix <code>useEffectEvent</code> checks in component syntax. (<a href="https://github.com/jbrown215">@jbrown215</a> in <a href="https://github.com/facebook/react/pull/35041">#35041</a>)</li>
+<li>Improved <code>set-state-in-effect</code> validation with fewer false negatives. (<a href="https://github.com/jorge-cab">@jorge-cab</a> in <a href="https://github.com/facebook/react/pull/35134">#35134</a>, <a href="https://github.com/josephsavona">@josephsavona</a> in <a href="https://github.com/facebook/react/pull/35147">#35147</a>, <a href="https://github.com/jackpope">@jackpope</a> in <a href="https://github.com/facebook/react/pull/35214">#35214</a>, <a href="https://github.com/chesnokov-tony">@chesnokov-tony</a> in <a href="https://github.com/facebook/react/pull/35419">#35419</a>, <a href="https://github.com/jsleitor">@jsleitor</a> in <a href="https://github.com/facebook/react/pull/36107">#36107</a>)</li>
+<li>Improved ref validation for non-mutating functions and event handler props. (<a href="https://github.com/josephsavona">@josephsavona</a> in <a href="https://github.com/facebook/react/pull/35893">#35893</a>, <a href="https://github.com/kolvian">@kolvian</a> in <a href="https://github.com/facebook/react/pull/35062">#35062</a>)</li>
+<li>Compiler now reports all errors instead of stopping at the first. (<a href="https://github.com/josephsavona">@josephsavona</a> in <a href="https://github.com/facebook/react/pull/35873">#35873</a>–<a href="https://github.com/facebook/react/pull/35884">#35884</a>)</li>
+<li>Improved source locations and error display in compiler diagnostics. (<a href="https://github.com/nathanmarks">@nathanmarks</a> in <a href="https://github.com/facebook/react/pull/35348">#35348</a>, <a href="https://github.com/josephsavona">@josephsavona</a> in <a href="https://github.com/facebook/react/pull/34963">#34963</a>)</li>
+</ul>]]></content:encoded>
+      <category>facebook</category>
+      <category>react</category>
+      <source url="https://github.com/facebook/react">facebook/react</source>
+    </item>    <item>
       <title>nodejs/node v24.15.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.15.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.15.0</guid>
@@ -955,323 +988,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
 <li>#17371 app-server: add pipelined config rpc regression test @euroelessar</li>
 <li>#15981 fix(permissions): fix symlinked writable roots in sandbox permissions @viyatb-oai</li>
 <li>#17055 feat(analytics): add guardian review event schema @owenlin0</li>
-</ul>]]></content:encoded>
-      <category>openai</category>
-      <category>codex</category>
-      <source url="https://github.com/openai/codex">openai/codex</source>
-    </item>    <item>
-      <title>openai/codex rust-v0.119.0</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.119.0</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.119.0</guid>
-      <pubDate>Fri, 10 Apr 2026 22:44:21 GMT</pubDate>
-      <description>New Features Realtime voice sessions now default to the v2 WebRTC path, with configurable transport, voice selection, native TUI media support, and app-server coverage for the new flow (#16960, #17057, #17058, #17093, #17097, #17145, #17165, #17176, #17183, #17188). MCP Apps and custom MCP server...</description>
-      <content:encoded><![CDATA[<h2>New Features</h2>
-<ul>
-<li>Realtime voice sessions now default to the v2 WebRTC path, with configurable transport, voice selection, native TUI media support, and app-server coverage for the new flow (#16960, #17057, #17058, #17093, #17097, #17145, #17165, #17176, #17183, #17188).</li>
-<li>MCP Apps and custom MCP servers gained richer support, including resource reads, tool-call metadata, custom-server tool search, server-driven elicitations, file-parameter uploads, and more reliable plugin cache refreshes (#16082, #16465, #16944, #17043, #15197, #16191, #16947).</li>
-<li>Remote/app-server workflows now support egress websocket transport, remote <code>--cd</code> forwarding, runtime remote-control enablement, sandbox-aware filesystem APIs, and an experimental <code>codex exec-server</code> subcommand (#15951, #16700, #16973, #16751, #17059, #17142, #17162).</li>
-<li>The TUI can copy the latest agent response with <code>Ctrl+O</code>, including better clipboard behavior over SSH and across platforms (#16966).</li>
-<li><code>/resume</code> can now jump directly to a session by ID or name from the TUI (#17222).</li>
-<li>TUI notifications are more configurable, including Warp OSC 9 support and an opt-in mode for notifications even while the terminal is focused (#17174, #17175).</li>
-</ul>
-<h2>Bug Fixes</h2>
-<ul>
-<li>The TUI starts faster by fetching rate limits asynchronously, and <code>/status</code> now refreshes stale limits instead of showing frozen or misleading quota information (#16201, #17039).</li>
-<li>Resume flows are more stable: the picker no longer flashes false empty states, uses fresher thread names, stabilizes timestamp labels, preserves resume hints on zero-token exits, and avoids crashing when resuming the current thread (#16591, #16601, #16822, #16987, #17086).</li>
-<li>Composer and chat behavior are smoother, including fixed paste teardown, CJK word navigation, stale <code>/copy</code> output, percent-decoded local file links, and clearer truncated exec-output hints (#16202, #16829, #16648, #16810, #17076).</li>
-<li>Fast Mode no longer stays stuck on after <code>/fast off</code> in app-server-backed TUI sessions (#16833).</li>
-<li>MCP status and startup are less noisy and faster: hyphenated server names list tools correctly, <code>/mcp</code> avoids slow full inventory probes, disabled servers skip auth probing, and residency headers are honored by <code>codex mcp-server</code> (#16674, #16831, #17098, #16952).</li>
-<li>Sandbox, network, and platform edge cases were tightened, including clearer read-only <code>apply_patch</code> errors, refreshed network proxy policy after sandbox changes, suppressed irrelevant bubblewrap warnings, a macOS HTTP-client sandbox panic fix, and Windows firewall address handling (#16885, #17040, #16667, #16670, #17053).</li>
-</ul>
-<h2>Documentation</h2>
-<ul>
-<li>The README now uses the current ChatGPT Business plan name (#16348).</li>
-<li>Developer guidance for <code>argument_comment_lint</code> was updated to favor getting CI started instead of blocking on slow local lint runs (#16375).</li>
-<li>Obsolete <code>codex-cli</code> README content was removed to avoid stale setup guidance (#17096).</li>
-<li><code>codex exec --help</code> now shows clearer usage and approval-mode wording (#16881, #16888).</li>
-</ul>
-<h2>Chores</h2>
-<ul>
-<li><code>codex-core</code> was slimmed down through major crate extractions for MCP, tools, config, model management, auth, feedback, protocol, and related ownership boundaries (#15919, #16379, #16508, #16523, #16962).</li>
-<li>Rust CI and workspace guardrails were simplified by blocking new crate features and dropping routine <code>--all-features</code> runs (#16455, #16473).</li>
-<li>Core compile times were reduced by removing expensive async-trait expansion from hot tool/task abstractions (#16630, #16631).</li>
-<li>Bazel diagnostics and dependency wiring improved with compact execution logs, repository-cache persistence, remote downloader support, and several platform-specific build fixes (#16577, #16926, #16928, #16634, #16744).</li>
-</ul>
-<h2>Changelog</h2>
-<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.118.0...rust-v0.119.0">https://github.com/openai/codex/compare/rust-v0.118.0...rust-v0.119.0</a></p>
-<ul>
-<li>#16308 fix: one shot end of turn @jif-oai</li>
-<li>#16238 fix: ma2 @jif-oai</li>
-<li>#16317 chore: clean wait v2 @jif-oai</li>
-<li>#16318 nit: update aborted line @jif-oai</li>
-<li>#15771 feat: fork pattern v2 @jif-oai</li>
-<li>#16322 fix: update fork boundaries computation @jif-oai</li>
-<li>#16325 feat: restrict spawn_agent v2 to messages @jif-oai</li>
-<li>#16324 chore: drop interrupt from send_message @jif-oai</li>
-<li>#16345 fix: fix clippy issue caught by cargo but not bazel @bolinfest</li>
-<li>#16184 Route TUI <code>/feedback</code> submission through the app server @etraut-openai</li>
-<li>#16330 feat: log db better maintenance @jif-oai</li>
-<li>#15690 [codex-analytics] thread events @rhan-oai</li>
-<li>#16363 Fix PR babysitter review comment monitoring @etraut-openai</li>
-<li>#16356 Refactor external auth to use a single trait @etraut-openai</li>
-<li>#16366 Fix Windows external bearer refresh test @bolinfest</li>
-<li>#16353 ci: verify codex-rs Cargo manifests inherit workspace settings @bolinfest</li>
-<li>#16361 Refactor chatwidget tests into topical modules @etraut-openai</li>
-<li>#16201 Fix stale /status rate limits in active TUI sessions @etraut-openai</li>
-<li>#16351 ci: sync Bazel clippy lints and fix uncovered violations @bolinfest</li>
-<li>#16378 fix: suppress status card expect_used warnings after #16351 @bolinfest</li>
-<li>#16406 Use message string in v2 spawn_agent @jif-oai</li>
-<li>#16409 Use message string in v2 send_message @jif-oai</li>
-<li>#16419 Use message string in v2 assign_task @jif-oai</li>
-<li>#16424 feat: tasks can&#39;t be assigned to root agent @jif-oai</li>
-<li>#16425 nit: update wait v2 desc @jif-oai</li>
-<li>#16426 chore: interrupted as state @jif-oai</li>
-<li>#16427 nit: deny field v2 @jif-oai</li>
-<li>#16433 chore: drop log DB @jif-oai</li>
-<li>#16434 feat: auto vaccum state DB @jif-oai</li>
-<li>#16422 fix(core) rm execute_exec_request sandbox_policy @dylan-hurd-oai</li>
-<li>#16375 docs: update argument_comment_lint instructions in AGENTS.md @bolinfest</li>
-<li>#16449 fix: remove unused import @bolinfest</li>
-<li>#15772 Make fuzzy file search case insensitive @meyers-oai</li>
-<li>#16455 ci: block new workspace crate features @bolinfest</li>
-<li>#16456 cloud-tasks: split the mock client out of cloud-tasks-client @bolinfest</li>
-<li>#16457 tui: remove debug/test-only crate features @bolinfest</li>
-<li>#16467 tui: remove the voice-input crate feature @bolinfest</li>
-<li>#16379 Extract tool config into codex-tools @bolinfest</li>
-<li>#16469 otel: remove the last workspace crate feature @bolinfest</li>
-<li>#16471 Extract tool spec helpers into codex-tools @bolinfest</li>
-<li>#16473 ci: stop running rust CI with --all-features @bolinfest</li>
-<li>#16477 Extract tool discovery helpers into codex-tools @bolinfest</li>
-<li>#16480 login: treat provider auth refresh_interval_ms=0 as no auto-refresh @bolinfest</li>
-<li>#16448 fix(guardian): make GuardianAssessmentEvent.action strongly typed @owenlin0</li>
-<li>#16481 Extract update_plan tool spec into codex-tools @bolinfest</li>
-<li>#15919 Extract MCP into codex-mcp crate @aibrahim-oai</li>
-<li>#16482 Remove client_common tool re-exports @bolinfest</li>
-<li>#16495 fix: remove unused import @bolinfest</li>
-<li>#16493 Extract built-in tool spec constructors into codex-tools @bolinfest</li>
-<li>#16273 Fix regression: &quot;not available in TUI&quot; error message @etraut-openai</li>
-<li>#16497 Extract tool-search output helpers into codex-tools @bolinfest</li>
-<li>#16498 fix: guard guardian_command_source_tool_name with cfg(unix) @bolinfest</li>
-<li>#16499 Extract tool-suggest wire helpers into codex-tools @bolinfest</li>
-<li>#16284 Fix TUI app-server permission profile conversions @etraut-openai</li>
-<li>#16202 Fix paste-driven bottom pane completion teardown @etraut-openai</li>
-<li>#16504 core: use codex-tools config types directly @bolinfest</li>
-<li>#16503 Extract request_user_input normalization into codex-tools @bolinfest</li>
-<li>#16510 core: use codex-mcp APIs directly @bolinfest</li>
-<li>#16509 Extract code-mode nested tool collection into codex-tools @bolinfest</li>
-<li>#16512 core: remove cross-crate re-exports from lib.rs @bolinfest</li>
-<li>#16516 fix: add update to Cargo.lock that was missed in #16512 @bolinfest</li>
-<li>#16513 Extract tool registry planning into codex-tools @bolinfest</li>
-<li>#16521 Move tool registry plan tests into codex-tools @bolinfest</li>
-<li>#16523 [codex] Move config types into codex-config @bolinfest</li>
-<li>#16524 fix: move some test utilities out of codex-rs/core/src/tools/spec.rs @bolinfest</li>
-<li>#16529 [codex] Remove codex-core config type shim @bolinfest</li>
-<li>#16559 chore: memories mini model @jif-oai</li>
-<li>#16561 fix: race pending @jif-oai</li>
-<li>#16564 nit: lint @jif-oai</li>
-<li>#16566 fix: races in end of turn @jif-oai</li>
-<li>#16567 chore: rework state machine further @jif-oai</li>
-<li>#16569 nit: state machine desc @jif-oai</li>
-<li>#16571 chore: rename assign_task for followup_task @jif-oai</li>
-<li>#16577 ci: upload compact Bazel execution logs for bazel.yml @bolinfest</li>
-<li>#16581 chore: move codex-exec unit tests into sibling files @bolinfest</li>
-<li>#16590 Fix non-determinism in rules_rs/crate_git_repository.bzl @tyler-french</li>
-<li>#16604 test: deflake external bearer auth token tests on Windows @bolinfest</li>
-<li>#16606 fix: add more detail to test assertion @bolinfest</li>
-<li>#16608 fix: increase timeout to account for slow PowerShell startup @bolinfest</li>
-<li>#16591 Fix resume picker initial loading state @etraut-openai</li>
-<li>#16613 fix: increase another startup timeout for PowerShell @bolinfest</li>
-<li>#16601 Fix resume picker stale thread names @etraut-openai</li>
-<li>#16616 Fixed some existing labels and added a few new ones @etraut-openai</li>
-<li>#16588 Fix stale turn steering during TUI review follow-ups @etraut-openai</li>
-<li>#16617 fix: add shell fallback paths for pwsh/powershell that work on GitHub Actions Windows runners @bolinfest</li>
-<li>#16596 Fix fork source display in /status (expose forked_from_id in app server) @etraut-openai</li>
-<li>#16578 fix(tui): handle zellij redraw and composer rendering @fcoury-oai</li>
-<li>#16630 core: cut codex-core compile time 63% with native async ToolHandler @bolinfest</li>
-<li>#16631 core: cut codex-core compile time 48% with native async SessionTask @bolinfest</li>
-<li>#16492 Auto-trust cwd on thread start @aibrahim-oai</li>
-<li>#16633 fix: address unused variable on windows @bolinfest</li>
-<li>#16635 app-server: make thread/shellCommand tests shell-aware @bolinfest</li>
-<li>#16629 test: use cmd.exe for ProviderAuthScript on Windows @bolinfest</li>
-<li>#16634 build: fix Bazel lzma-sys wiring @starr-openai</li>
-<li>#16658 Fix deprecated login --api-key parsing @etraut-openai</li>
-<li>#16508 extract models manager and related ownership from core @aibrahim-oai</li>
-<li>#16662 fix: changes to test that should help them pass on Windows under Bazel @bolinfest</li>
-<li>#16665 fix: use COMSPEC in Windows unicode shell test @bolinfest</li>
-<li>#16668 fix: use cmd.exe in Windows unicode shell test @bolinfest</li>
-<li>#16626 remove temporary ownership re-exports @aibrahim-oai</li>
-<li>#16648 Fix stale /copy output after commentary-only turns @etraut-openai</li>
-<li>#16674 Fix MCP tool listing for hyphenated server names @etraut-openai</li>
-<li>#16667 Suppress bwrap warning when sandboxing is bypassed @etraut-openai</li>
-<li>#16670 Fix macOS sandbox panic in Codex HTTP client @etraut-openai</li>
-<li>#16699 Fix macOS malloc diagnostics leaking into TUI composer @etraut-openai</li>
-<li>#16700 Add remote --cd forwarding for app-server sessions @etraut-openai</li>
-<li>#16707 fix: preserve platform-specific core shell env vars @bolinfest</li>
-<li>#16715 fix: address clippy violations that sneaked in @bolinfest</li>
-<li>#16722 fix windows-only clippy lint violation @bolinfest</li>
-<li>#16710 fix(tui): sort skill mentions by display name first @fcoury-oai</li>
-<li>#16709 Sanitize forked child history @aibrahim-oai</li>
-<li>#16711 Fix Windows Bazel app-server trust tests @bolinfest</li>
-<li>#16720 Remove OPENAI_BASE_URL config fallback @etraut-openai</li>
-<li>#16528 Codex/windows bazel rust test coverage no rs @bolinfest</li>
-<li>#16450 bazel: lint rust_test targets in clippy workflow @bolinfest</li>
-<li>#16735 [codex] allow disabling prompt instruction blocks @tibo-openai</li>
-<li>#16745 [codex] allow disabling environment context injection @tibo-openai</li>
-<li>#16725 Preempt mailbox mail after reasoning/commentary items @aibrahim-oai</li>
-<li>#16755 Use Node 24 for npm publish @aibrahim-oai</li>
-<li>#16753 [codex] add responses proxy JSON dumps @tibo-openai</li>
-<li>#16746 Add spawn context for MultiAgentV2 children @aibrahim-oai</li>
-<li>#16757 Back out &quot;bazel: lint rust_test targets in clippy workflow (#16450)&quot; @bolinfest</li>
-<li>#16737 test: avoid PowerShell startup in Windows auth fixture @bolinfest</li>
-<li>#16740 ci: align Bazel repo cache and Windows clippy target handling @bolinfest</li>
-<li>#16758 [codex] add context-window lineage headers @tibo-openai</li>
-<li>#16763 Add CODEX_SKIP_VENDORED_BWRAP @andmis</li>
-<li>#15915 [codex-analytics] subagent analytics @rhan-oai</li>
-<li>#16823 Fix flaky test relating to metadata remote URL @etraut-openai</li>
-<li>#16825 Fix flaky permissions escalation test on Windows @etraut-openai</li>
-<li>#16881 Fix misleading codex exec help usage @etraut-openai</li>
-<li>#16888 Clarify <code>codex exec</code> approval help @etraut-openai</li>
-<li>#16876 [codex] add response proxy subagent header test @tibo-openai</li>
-<li>#16829 Fix CJK word navigation in the TUI composer @etraut-openai</li>
-<li>#16833 Fix TUI fast mode toggle regression @etraut-openai</li>
-<li>#16795 [regression] Fix ephemeral turn backfill in exec @etraut-openai</li>
-<li>#16822 Fix resume picker timestamp labels and stability @etraut-openai</li>
-<li>#16813 Annotate skill doc reads with skill names @etraut-openai</li>
-<li>#16810 (tui): Decode percent-escaped bare local file links @etraut-openai</li>
-<li>#16877 [codex-backend] Make thread metadata updates tolerate pending backfill @joeytrasatti-openai</li>
-<li>#16701 feat(requirements): support allowed_approval_reviewers @owenlin0</li>
-<li>#16925 fix(bazel): fix simdutf @owenlin0</li>
-<li>#16926 bazel: Always save bazel repository cache @euroelessar</li>
-<li>#16928 bazel: Enable <code>--experimental_remote_downloader</code> @euroelessar</li>
-<li>#16462 fix(guardian): fix ordering of guardian events @owenlin0</li>
-<li>#16924 fix(sqlite): don&#39;t hard fail migrator if DB is newer @owenlin0</li>
-<li>#16744 build: restore lzma-sys Bazel wiring for devbox codex run @starr-openai</li>
-<li>#16764 app-server: centralize AuthManager initialization @euroelessar</li>
-<li>#16939 Fix clippy warning @mzeng-openai</li>
-<li>#16923 Revert &quot;[codex-backend] Make thread metadata updates tolerate pending backfill&quot; @joeytrasatti-openai</li>
-<li>#15951 app-server: Add egress websocket transport @euroelessar</li>
-<li>#16945 [codex] Allow PyTorch libomp shm in Seatbelt @viyatb-oai</li>
-<li>#16947 feat: fallback curated plugin download from backend endpint. @xl-openai</li>
-<li>#16191 feat: refresh non-curated cache from plugin list. @xl-openai</li>
-<li>#16952 Respect residency requirements in mcp-server @etraut-openai</li>
-<li>#16827 tui: route device-code auth through app server @etraut-openai</li>
-<li>#16638 [codex-analytics] add protocol-native turn timestamps @rhan-oai</li>
-<li>#16831 Speed up /mcp inventory listing @etraut-openai</li>
-<li>#16349 Disable env-bound tools when exec server is none @starr-openai</li>
-<li>#16957 Promote image_detail_original to experimental @fjord-oai</li>
-<li>#16962 Refactor config types into a separate crate @pakrym-oai</li>
-<li>#16153 Add setTimeout support to code mode @pakrym-oai</li>
-<li>#16961 app-server: Unify config changes handling a bit @euroelessar</li>
-<li>#16890 Validate exec input before starting app-server @etraut-openai</li>
-<li>#16082 [mcp] Support MCP Apps part 1. @mzeng-openai</li>
-<li>#15893 fix: warn when bwrap cannot create user namespaces @viyatb-oai</li>
-<li>#16946 [codex] Add danger-full-access denylist-only network mode @viyatb-oai</li>
-<li>#16972 app-server: Fix compilation of a test in mcp_resource @euroelessar</li>
-<li>#15826 Make AGENTS.md discovery FS-aware @pakrym-oai</li>
-<li>#16964 Honor null thread instructions @aibrahim-oai</li>
-<li>#16988 collapse dev message into one @won-openai</li>
-<li>#16724 [codex] ez - rename env=&gt;request in codex-rs/core/src/unified_exec/process_manager.rs @starr-openai</li>
-<li>#16999 feat: empty role ok @jif-oai</li>
-<li>#17002 chore: debug flag to hide some parameters @jif-oai</li>
-<li>#17005 feat: drop agent ID from v2 @jif-oai</li>
-<li>#17008 chore: send_message and followup_task do not return anything @jif-oai</li>
-<li>#17007 chore: hide nickname for debug flag @jif-oai</li>
-<li>#16442 feat: /feedback cascade @jif-oai</li>
-<li>#16978 [codex] reduce module visibility @pakrym-oai</li>
-<li>#17009 chore: keep request_user_input tool to persist cache on multi-agents @jif-oai</li>
-<li>#16739 Stabilize flaky multi-agent followup interrupt test @etraut-openai</li>
-<li>#16885 Fix read-only apply_patch rejection message @etraut-openai</li>
-<li>#16882 Fix nested exec thread ID restore @etraut-openai</li>
-<li>#16976 Preserve null developer instructions @aibrahim-oai</li>
-<li>#16987 Fix missing resume hint on zero-token exits @etraut-openai</li>
-<li>#16912 feat(analytics): generate an installation_id and pass it in responsesapi client_metadata @owenlin0</li>
-<li>#16956 fix(guardian): don&#39;t throw away transcript when over budget @owenlin0</li>
-<li>#16981 [codex] Make AbsolutePathBuf joins infallible @pakrym-oai</li>
-<li>#16348 Update README @romainhuet</li>
-<li>#16977 [codex] Make unified exec tests remote aware @pakrym-oai</li>
-<li>#16465 [mcp] Support MCP Apps part 2 - Add meta to mcp tool call result. @mzeng-openai</li>
-<li>#17026 app-server: Move watch_id to request of fs/watch @euroelessar</li>
-<li>#16980 Add full-ci branch trigger @pakrym-oai</li>
-<li>#16973 app-server: Allow enabling remote control in runtime @euroelessar</li>
-<li>#17032 [codex] Fix unified exec test build @pakrym-oai</li>
-<li>#17031 fix(core) revert Command line in unified exec output @dylan-hurd-oai</li>
-<li>#17027 [codex] Migrate apply_patch to executor filesystem @pakrym-oai</li>
-<li>#17044 [app-server-protocol] introduce generic ServerResponse for app-server-protocol @rhan-oai</li>
-<li>#17047 fix(app-server) revert null instructions changes @dylan-hurd-oai</li>
-<li>#16960 Add WebRTC transport to realtime start @aibrahim-oai</li>
-<li>#17053 Fix remote address format to work with Windows Firewall rules. @iceweasel-oai</li>
-<li>#17048 [codex] Apply patches through executor filesystem @pakrym-oai</li>
-<li>#16949 Use model metadata for Fast Mode status @pash-openai</li>
-<li>#17039 fix(tui): reduce startup and new-session latency @fcoury-oai</li>
-<li>#17052 Add regression tests for JsonSchema @vivi</li>
-<li>#17059 Add remote exec start script @pakrym-oai</li>
-<li>#17064 Add project-local codex bug triage skill @etraut-openai</li>
-<li>#17040 fix: refresh network proxy settings when sandbox mode changes @viyatb-oai</li>
-<li>#16698 Remove expired April 2nd tooltip copy @etraut-openai</li>
-<li>#17096 Remove obsolete codex-cli README @etraut-openai</li>
-<li>#16875 Support anyOf and enum in JsonSchema @vivi</li>
-<li>#16880 Render function attribute descriptions @vivi</li>
-<li>#16879 Render namespace description for tools @vivi</li>
-<li>#16582 feat: single app-server bootstrap in TUI @jif-oai</li>
-<li>#17117 codex debug 1 (guardian approved) @jif-oai</li>
-<li>#17119 codex debug 3 (guardian approved) @jif-oai</li>
-<li>#17121 codex debug 5 (guardian approved) @jif-oai</li>
-<li>#17123 codex debug 7 (guardian approved) @jif-oai</li>
-<li>#17125 codex debug 9 (guardian approved) @jif-oai</li>
-<li>#17127 codex debug 11 (guardian approved) @jif-oai</li>
-<li>#17129 codex debug 13 (guardian approved) @jif-oai</li>
-<li>#17131 codex debug 15 (guardian approved) @jif-oai</li>
-<li>#17118 codex debug 2 (guardian approved) @jif-oai</li>
-<li>#17120 codex debug 4 (guardian approved) @jif-oai</li>
-<li>#17122 codex debug 6 (guardian approved) @jif-oai</li>
-<li>#17124 codex debug 8 (guardian approved) @jif-oai</li>
-<li>#17126 codex debug 10 (guardian approved) @jif-oai</li>
-<li>#17128 codex debug 12 (guardian approved) @jif-oai</li>
-<li>#17130 codex debug 14 (guardian approved) @jif-oai</li>
-<li>#17071 Configure multi_agent_v2 spawn agent hints @pakrym-oai</li>
-<li>#17091 Show global AGENTS.md in /status @etraut-openai</li>
-<li>#17086 Fix TUI crash when resuming the current thread @etraut-openai</li>
-<li>#17098 Skip MCP auth probing for disabled servers @etraut-openai</li>
-<li>#17097 Add realtime transport config @aibrahim-oai</li>
-<li>#17043 [mcp] Support server-driven elicitations @mzeng-openai</li>
-<li>#17058 Add WebRTC media transport to realtime TUI @aibrahim-oai</li>
-<li>#17063 Use AbsolutePathBuf for exec cwd plumbing @pakrym-oai</li>
-<li>#17138 fix(debug-config, guardian): fix /debug-config rendering and guardian… @owenlin0</li>
-<li>#17046 release ready, enabling only for siwc users @won-openai</li>
-<li>#16751 Add sandbox support to filesystem APIs @starr-openai</li>
-<li>#17142 [codex] Support remote exec cwd in TUI startup @pakrym-oai</li>
-<li>#17149 Fix missing fields @canvrno-oai</li>
-<li>#17154 Fix ToolsConfigParams initializer in tool registry test @won-openai</li>
-<li>#17145 Wire realtime WebRTC native media into Bazel @aibrahim-oai</li>
-<li>#17057 Attach WebRTC realtime starts to sideband websocket @aibrahim-oai</li>
-<li>#17162 Add top-level exec-server subcommand @starr-openai</li>
-<li>#17061 Update guardian output schema @maja-openai</li>
-<li>#17164 Auto-approve MCP server elicitations in Full Access mode @leoshimo-oai</li>
-<li>#17093 Add WebRTC realtime app-server e2e tests @aibrahim-oai</li>
-<li>#17174 Support Warp for OSC 9 notifications @etraut-openai</li>
-<li>#16646 Fix stale thread-name resume lookups @etraut-openai</li>
-<li>#17165 Move default realtime prompt into core @aibrahim-oai</li>
-<li>#17176 Add realtime voice selection @aibrahim-oai</li>
-<li>#17175 Add TUI notification condition config @etraut-openai</li>
-<li>#17183 Default realtime startup to v2 model @aibrahim-oai</li>
-<li>#17186 Skip update prompts for source builds @etraut-openai</li>
-<li>#17188 make webrtc the default experience @aibrahim-oai</li>
-<li>#17163 [codex] Defer steering until after sampling the model post-compaction @jgershen-oai</li>
-<li>#17222 feat: /resume per ID/name @jif-oai</li>
-<li>#17226 feat: advanced announcements per OS and plans @jif-oai</li>
-<li>#17170 Render statusline context as a meter @etraut-openai</li>
-<li>#17217 Skip local shell snapshots for remote unified exec @jif-oai</li>
-<li>#17116 chore: merge name and title @jif-oai</li>
-<li>#16276 [codex] add memory extensions @kliu128</li>
-<li>#17168 refactor(proxy): clarify sandbox block messages @viyatb-oai</li>
-<li>#17076 [codex] Show ctrl + t hint on truncated exec output in TUI @mom-oai</li>
-<li>#15197 Add Codex Apps sediment file remapping @caseychow-oai</li>
-<li>#16009 Forward app-server turn clientMetadata to Responses @neil-oai</li>
-<li>#17256 app-server: Use shared receivers for app-server message processors @euroelessar</li>
-<li>#16944 [mcp] Expand tool search to custom MCPs. @mzeng-openai</li>
-<li>#16966 feat(tui): Ctrl+O copy hotkey and harden copy-as-markdown behavior @fcoury-oai</li>
-<li>#17262 app-server: Fix clippy by removing extra <code>mut</code> @euroelessar</li>
-<li>#17258 Omit empty app-server instruction overrides @aibrahim-oai</li>
 </ul>]]></content:encoded>
       <category>openai</category>
       <category>codex</category>
