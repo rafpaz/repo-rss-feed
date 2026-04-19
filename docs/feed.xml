@@ -10,9 +10,53 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sun, 19 Apr 2026 00:43:40 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 04:05:59 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yuliskov/SmartTube 31.57s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.57s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.57s</guid>
+      <pubDate>Sun, 19 Apr 2026 00:55:07 GMT</pubDate>
+      <description>Empty search results fix Ability to delete individual items from the search history Improved history synchronization 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.57_arm64-v8a.apk View Report SmartTube_stable_31.57_armeabi-v7a.apk View Report SmartTub...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Empty search results fix</li>
+<li>Ability to delete individual items from the search history</li>
+<li>Improved history synchronization</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.57s/SmartTube_stable_31.57_arm64-v8a.apk">SmartTube_stable_31.57_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a0def4a08e5f384a49ce92aea98f650bb303a03bc9db4705030373c0e1fd2a03/detection"><img src="https://badges.cssnr.com/vt/id/a0def4a08e5f384a49ce92aea98f650bb303a03bc9db4705030373c0e1fd2a03?start=green&end=red&n=8&v=1776560297" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a0def4a08e5f384a49ce92aea98f650bb303a03bc9db4705030373c0e1fd2a03/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.57s/SmartTube_stable_31.57_armeabi-v7a.apk">SmartTube_stable_31.57_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/da29da58f4d9b27b7fef2165ecd6ce8a1fcdc2e4218a67fba4860e7bb79d2308/detection"><img src="https://badges.cssnr.com/vt/id/da29da58f4d9b27b7fef2165ecd6ce8a1fcdc2e4218a67fba4860e7bb79d2308?start=green&end=red&n=8&v=1776560298" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/da29da58f4d9b27b7fef2165ecd6ce8a1fcdc2e4218a67fba4860e7bb79d2308/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.57s/SmartTube_stable_31.57_universal.apk">SmartTube_stable_31.57_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/07d5603525fbc89620baf741185af5662812d5e185ee30b5e28e5bf9e1ced571/detection"><img src="https://badges.cssnr.com/vt/id/07d5603525fbc89620baf741185af5662812d5e185ee30b5e28e5bf9e1ced571?start=green&end=red&n=8&v=1776560298" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/07d5603525fbc89620baf741185af5662812d5e185ee30b5e28e5bf9e1ced571/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.57s/SmartTube_stable_31.57_x86.apk">SmartTube_stable_31.57_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/c16bd8fd0aa0338c9581cfdd0bac9d953facda0226682e2475ad5edb2196aa9b/detection"><img src="https://badges.cssnr.com/vt/id/c16bd8fd0aa0338c9581cfdd0bac9d953facda0226682e2475ad5edb2196aa9b?start=green&end=red&n=8&v=1776560298" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/c16bd8fd0aa0338c9581cfdd0bac9d953facda0226682e2475ad5edb2196aa9b/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>facebook/react eslint-plugin-react-hooks@7.1.1</title>
       <link>https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.1</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.1</guid>
