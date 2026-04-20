@@ -10,9 +10,216 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 20 Apr 2026 18:25:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 21:20:23 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.122.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.122.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.122.0</guid>
+      <pubDate>Mon, 20 Apr 2026 18:38:40 GMT</pubDate>
+      <description>New Features Standalone installs are more self-contained, and codex app now opens or installs Desktop correctly on Windows and Intel Macs (#17022, #18500). The TUI can open /side conversations for quick side questions, and queued input now supports slash commands and ! shell prompts while work is...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Standalone installs are more self-contained, and <code>codex app</code> now opens or installs Desktop correctly on Windows and Intel Macs (#17022, #18500).</li>
+<li>The TUI can open <code>/side</code> conversations for quick side questions, and queued input now supports slash commands and <code>!</code> shell prompts while work is running (#18190, #18542).</li>
+<li>Plan Mode can start implementation in a fresh context, with context-usage shown before deciding whether to carry the planning thread forward (#17499, #18573).</li>
+<li>Plugin workflows now include tabbed browsing, inline enable/disable toggles, marketplace removal, and remote, cross-repo, or local marketplace sources (#18222, #18395, #17752, #17751, #17277, #18017, #18246).</li>
+<li>Filesystem permissions now support deny-read glob policies, managed deny-read requirements, platform sandbox enforcement, and isolated <code>codex exec</code> runs that ignore user config or rules (#15979, #17740, #18096, #18646).</li>
+<li>Tool discovery and image generation are now enabled by default, with higher-detail image handling and original-detail metadata support for MCP and <code>js_repl</code> image outputs (#17854, #17153, #17714, #18386).</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>App-server approvals, user-input prompts, and MCP elicitations now disappear from the TUI when another client resolves them, instead of leaving stale prompts behind (#15134).</li>
+<li>Remote-control startup now tolerates missing ChatGPT auth, and MCP startup cancellation works again through app-server sessions (#18117, #18078).</li>
+<li>Resumed and forked app-server threads now replay token usage immediately so context/status UI starts with the restored state (#18023).</li>
+<li>Security-sensitive flows were tightened: logout revokes managed ChatGPT tokens, project hooks and exec policies require trusted workspaces, and Windows sandbox setup avoids broad user-profile and SSH-root grants (#17825, #14718, #18443, #18493).</li>
+<li>Sandboxed <code>apply_patch</code> writes work correctly with split filesystem policies, and file watchers now notice files created after watching begins (#18296, #18492).</li>
+<li>Several TUI rough edges were fixed, including fatal skills-list failures, invalid resume hints, duplicate context statusline entries, <code>/model</code> menu loops, redundant memory notices, and terminal title quoting in iTerm2 (#18061, #18059, #18054, #18154, #18580, #18261).</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Added a security-boundaries reference to <code>SECURITY.md</code> for sandboxing, approvals, and network controls (#17848, #18004).</li>
+<li>Documented custom MCP server approval defaults and exec-server stdin behavior (#17843, #18086).</li>
+<li>Updated app-server docs for plugin API changes, marketplace removal, resume/fork token-usage replay, and warning notifications (#17277, #17751, #18023, #18298).</li>
+<li>Added a short guide for the responses API proxy (#18604).</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Split plugin and marketplace code into <code>codex-core-plugins</code>, moved more connector code into <code>connectors</code>, and continued breaking up the large core session/turn modules (#18070, #18158, #18200, #18206, #18244, #18249).</li>
+<li>Refactored config loading and <code>AGENTS.md</code> discovery behind narrower filesystem and manager abstractions (#18209, #18035).</li>
+<li>Stabilized Bazel and CI with flake fixes, native Rust test sharding, scoped repository caches, stronger Windows clippy coverage, and updated <code>rules_rs</code>/LLVM pins (#17791, #18082, #18366, #18350, #18397).</li>
+<li>Added core CODEOWNERS and a smaller development build profile (#18362, #18612).</li>
+<li>Removed the stale core <code>models.json</code> and updated release preparation to refresh the active model catalog (#18585).</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.121.0...rust-v0.122.0">https://github.com/openai/codex/compare/rust-v0.121.0...rust-v0.122.0</a></p>
+<ul>
+<li>#17958 Support remote compaction for Azure responses providers @ivanmurashko</li>
+<li>#17848 [docs] Add security boundaries reference in SECURITY.md @evawong-oai</li>
+<li>#17990 Auto install start-codex-exec.sh dependencies @pakrym-oai</li>
+<li>#17892 Migrate archive/unarchive to local ThreadStore @wiltzius-openai</li>
+<li>#17989 [codex] Restore remote exec-server filesystem tests @starr-openai</li>
+<li>#15134 Dismiss stale app-server requests after remote resolution @ebrevdo</li>
+<li>#18002 Re-enable it @jif-oai</li>
+<li>#17885 feat: Support alternate marketplace manifests and local string @xl-openai</li>
+<li>#18003 [docs] Revert extra changes from PR 17848 @evawong-oai</li>
+<li>#17714 Support original-detail metadata on MCP image outputs @fjord-oai</li>
+<li>#17022 Significantly improve standalone installer @efrazer-oai</li>
+<li>#17853 [mcp] Add dummy tools for previously called but currently missing tools. @mzeng-openai</li>
+<li>#18004 [docs] Restore SECURITY.md update from PR 17848 @evawong-oai</li>
+<li>#17896 Clarify realtime v2 context and handoff messages @bxie-openai</li>
+<li>#17742 removing network proxy for yolo @won-openai</li>
+<li>#17999 [codex] Make command exec delta tests chunk tolerant @euroelessar</li>
+<li>#18033 feat: introduce codex-pr-body skill @bolinfest</li>
+<li>#17877 Display YOLO mode permissions if set when launching TUI @canvrno-oai</li>
+<li>#18022 Async config loading @pakrym-oai</li>
+<li>#17854 Update ToolSearch to be enabled by default @mzeng-openai</li>
+<li>#17831 [codex][mcp] Add resource uri meta to tool call item. @mzeng-openai</li>
+<li>#18070 Extract plugin loading and marketplace logic into codex-core-plugins @xl-openai</li>
+<li>#18078 Fix MCP startup cancellation through app server @etraut-openai</li>
+<li>#17151 [codex] Route Fed ChatGPT auth through Fed edge @jackz-oai</li>
+<li>#18006 fix: more flake @jif-oai</li>
+<li>#18127 fix: windows flake @jif-oai</li>
+<li>#18137 nit: add min values for memories @jif-oai</li>
+<li>#18135 debug: windows flake @jif-oai</li>
+<li>#18138 chore: more pollution filtering @jif-oai</li>
+<li>#18134 chore: unify memory drop endpoints @jif-oai</li>
+<li>#18144 nit: get rid of an expect @jif-oai</li>
+<li>#17791 Stabilize Bazel tests (timeout tweaks and flake fixes) @ddr-oai</li>
+<li>#18117 fix: auth preflight @jif-oai</li>
+<li>#18146 chore: use <code>justfile_directory</code> in just file @jif-oai</li>
+<li>#18085 [1/8] Add MCP server environment config @aibrahim-oai</li>
+<li>#18054 fix(tui): remove duplicate context statusline item @etraut-openai</li>
+<li>#17287 [code mode] defer mcp tools from exec description @sayan-oai</li>
+<li>#18057 Prefill rename prompt with current thread name @etraut-openai</li>
+<li>#18059 Fix invalid TUI resume hints @etraut-openai</li>
+<li>#17153 Launch image generation by default @won-openai</li>
+<li>#18042 Make yolo skip managed-network tool enforcement @won-openai</li>
+<li>#18154 fix: model menu pop @jif-oai</li>
+<li>#17826 [codex] Add remote thread store implementation @wiltzius-openai</li>
+<li>#18086 [2/8] Support piped stdin in exec process API @aibrahim-oai</li>
+<li>#18061 Avoid fatal TUI errors on skills list failure @etraut-openai</li>
+<li>#15979 feat(permissions): add glob deny-read policy support @viyatb-oai</li>
+<li>#18055 Improve external agent plugin migration for configured marketplaces @alexsong-oai</li>
+<li>#17425 Auto-upgrade configured marketplaces @xli-oai</li>
+<li>#18035 Refactor AGENTS.md discovery into AgentsMdManager @pakrym-oai</li>
+<li>#18158 Move more connector logic into connectors crate @pakrym-oai</li>
+<li>#17843 Add server-level approval defaults for custom MCP servers @mzeng-openai</li>
+<li>#18178 fix: drop lock earlier; was held across send_event().await unnecessarily @bolinfest</li>
+<li>#18000 Make thread unsubscribe test deterministic @starr-openai</li>
+<li>#17996 Add codex_hook_run analytics event @abhinav-oai</li>
+<li>#18184 fix: fix clippy issue in examples/ folder @bolinfest</li>
+<li>#18023 fix(app-server): replay token usage after resume and fork @fcoury-oai</li>
+<li>#18172 [codex] Make realtime startup context truncation deterministic @bxie-openai</li>
+<li>#18192 Throttle Windows Bazel test concurrency @starr-openai</li>
+<li>#18200 [codex] Split codex op handlers @pakrym-oai</li>
+<li>#17387 Register agent tasks behind use_agent_identity @adrian-openai</li>
+<li>#18026 Add OTEL metrics for hook runs @abhinav-oai</li>
+<li>#18092 [codex] Update realtime V2 VAD silence delay and 1.5 prompt @bxie-openai</li>
+<li>#18188 Add tabbed lists, single line rendering, col width changes @canvrno-oai</li>
+<li>#18206 [codex] Split codex turn logic @pakrym-oai</li>
+<li>#18169 Use codex-auto-review for guardian reviews @jeffsharris</li>
+<li>#18196 Use in-process app-server for unknown-thread MCP read test @mzeng-openai</li>
+<li>#18116 Move marketplace add under plugin command @xli-oai</li>
+<li>#18096 feat(sandbox): add glob deny-read platform enforcement @viyatb-oai</li>
+<li>#17971 fix: deprecate use_legacy_landlock feature flag @viyatb-oai</li>
+<li>#18209 Refactor config loading to use filesystem abstraction @pakrym-oai</li>
+<li>#17862 Stream apply_patch changes @akshaynathan</li>
+<li>#18244 Split codex session modules @pakrym-oai</li>
+<li>#17713 feat: add opt-in provider runtime abstraction @celia-oai</li>
+<li>#18182 feat: Handle alternate plugin manifest paths @xl-openai</li>
+<li>#18219 Move Computer Use tool suggestion to core @leoshimo-oai</li>
+<li>#18231 codex: split thread/read view loading @wiltzius-openai</li>
+<li>#18126 fix(exec-policy) rules parsing @dylan-hurd-oai</li>
+<li>#17825 [codex] Revoke ChatGPT tokens on logout @sashank-oai</li>
+<li>#18304 Fix Windows exec policy test flake @etraut-openai</li>
+<li>#17947 fix: reduce writable root @jif-oai</li>
+<li>#18246 Sync local plugin imports, async remote imports, refresh caches after… @alexsong-oai</li>
+<li>#18097 defer all tools behind feature flag @sayan-oai</li>
+<li>#17563 Add PermissionRequest hooks support @abhinav-oai</li>
+<li>#18338 nit: phase 2 ephemeral @jif-oai</li>
+<li>#18267 Support Ctrl+P/Ctrl+N in resume picker @etraut-openai</li>
+<li>#18261 fix(tui): use BEL for terminal title updates @etraut-openai</li>
+<li>#17740 feat(config): support managed deny-read requirements @viyatb-oai</li>
+<li>#18249 Move codex module under session @pakrym-oai</li>
+<li>#18351 Fix config-loader tests after filesystem abstraction race @bolinfest</li>
+<li>#18021 Guardian -&gt; Auto-Review  @won-openai</li>
+<li>#18140 feat: config aliases @jif-oai</li>
+<li>#17232 Make app tool hint defaults pessimistic for app policies @colby-oai</li>
+<li>#17499 feat(tui): add clear-context plan implementation @fcoury-oai</li>
+<li>#18352 codex: route thread/read persistence through thread store @wiltzius-openai</li>
+<li>#18263 enable tool search over dynamic tools @sayan-oai</li>
+<li>#18350 ci: make Windows Bazel clippy catch core test imports @bolinfest</li>
+<li>#18362 Add core CODEOWNERS @aibrahim-oai</li>
+<li>#18366 ci: scope Bazel repository cache by job @bolinfest</li>
+<li>#17305 Add sorting/backwardsCursor to thread/list and new thread/turns/list api @ddr-oai</li>
+<li>#18020 [3/6] Add pushed exec process events @aibrahim-oai</li>
+<li>#12640 Update models.json @github-actions</li>
+<li>#18373 Show default reasoning in /status @aibrahim-oai</li>
+<li>#18379 Attribute automated PR Babysitter review replies @etraut-openai</li>
+<li>#18087 [4/6] Abstract MCP stdio server launching @aibrahim-oai</li>
+<li>#18370 perf(tui): defer startup skills refresh @fcoury-oai</li>
+<li>#18222  /plugins: Add v2 tabbed marketplace menu @canvrno-oai</li>
+<li>#18227 [codex] Propagate rate limit reached type @richardopenai</li>
+<li>#18380 exec-server: preserve fs helper runtime env @starr-openai</li>
+<li>#18381 Remove the tier constraint from connectors directory requests @xl-openai</li>
+<li>#18211 refactor: narrow async lock guard lifetimes @bolinfest</li>
+<li>#18017 [codex] Add cross-repo plugin sources to marketplace manifests @xli-oai</li>
+<li>#18398 refactor: use cloneable async channels for shared receivers @bolinfest</li>
+<li>#18296 fix: fix fs sandbox helper for apply_patch @viyatb-oai</li>
+<li>#18397 [codex] Upgrade rules_rs and llvm to latest BCR versions @zbarsky-openai</li>
+<li>#18082 bazel: use native rust test sharding @bolinfest</li>
+<li>#18384 Update image resizing to fit 2048 square bounds @pakrym-oai</li>
+<li>#17277 feat: Add remote plugin fields to plugin API @xl-openai</li>
+<li>#18395 /plugins: Add inline enablement toggles @canvrno-oai</li>
+<li>#14718 fix: trust-gate project hooks and exec policies @viyatb-oai</li>
+<li>#17891 [TUI] add external config migration prompt when start TUI @alexsong-oai</li>
+<li>#18369 Feat/auto review dev message marker @won-openai</li>
+<li>#18298 feat: Budget skill metadata and surface trimming as a warning @xl-openai</li>
+<li>#18449 [codex] Describe uninstalled cross-repo plugin reads @xli-oai</li>
+<li>#18220 [codex] Add owner nudge app-server API @richardopenai</li>
+<li>#17752 [codex] Add marketplace remove command and shared logic @xli-oai</li>
+<li>#18382 Add max context window model metadata @aibrahim-oai</li>
+<li>#18325 Revert &quot;[codex] drain mailbox only at request boundaries&quot; @jif-oai</li>
+<li>#18386 Update image outputs to default to high detail @pakrym-oai</li>
+<li>#18499 Fix plugin cache panic when cwd is unavailable @etraut-openai</li>
+<li>#18212 [5/6] Wire executor-backed MCP stdio @aibrahim-oai</li>
+<li>#18573 feat(tui): show context used in plan implementation prompt @fcoury-oai</li>
+<li>#18500 Support <code>codex app</code> on macOS (Intel) and Windows @etraut-openai</li>
+<li>#18542 Queue slash and shell prompts in the TUI @etraut-openai</li>
+<li>#18524 Add fallback source for external official marketplace @alexsong-oai</li>
+<li>#18571 Log realtime session id @aibrahim-oai</li>
+<li>#18585 Remove unused models.json @aibrahim-oai</li>
+<li>#18190 Add <code>/side</code> conversations @etraut-openai</li>
+<li>#18580 Avoid redundant memory enable notice @etraut-openai</li>
+<li>#18443 Do not grant Windows sandbox ACLs on USERPROFILE @efrazer-oai</li>
+<li>#18493 Filter Windows sandbox roots from SSH config dependencies @efrazer-oai</li>
+<li>#17978 Persist and prewarm agent tasks per thread @adrian-openai</li>
+<li>#18604 Add tldr docs for responses-api-proxy @andmis</li>
+<li>#18601 Soften Fast mode plan usage copy @pash-openai</li>
+<li>#18596 chore(multiagent) skills instructions toggle @dylan-hurd-oai</li>
+<li>#18599 fix(guardian) disable skills message in guardian thread @dylan-hurd-oai</li>
+<li>#18612 Create dev-small build profile @andmis</li>
+<li>#18440 Use thread IDs in TUI resume hints @etraut-openai</li>
+<li>#18605 TUI: remove simple legacy_core re-exports @etraut-openai</li>
+<li>#18625 Add <code>codex debug models</code> to show model catalog @andmis</li>
+<li>#18221 [codex] Add workspace owner usage nudge UI @richardopenai</li>
+<li>#17980 [codex] Use AgentAssertion downstream behind use_agent_identity @adrian-openai</li>
+<li>#17751 [codex] Add marketplace/remove app-server RPC @xli-oai</li>
+<li>#18644 feat: add mem 2 agent header @jif-oai</li>
+<li>#18353 chore: morpheus to path @jif-oai</li>
+<li>#18649 fix: main 2 @jif-oai</li>
+<li>#17721 Stabilize marketplace/remove installedRoot test @xli-oai</li>
+<li>#18492 fix: FS watcher when file does not exist yet @jif-oai</li>
+<li>#18646 feat: add <code>--ignore-user-config</code> and <code>--ignore-rules</code> @jif-oai</li>
+<li>#18652 nit: telepathy to chronicle in tests @jif-oai</li>
+<li>#18654 fix: exec policy loading for sub-agents @jif-oai</li>
+<li>#18651 feat: chronicle alias @jif-oai</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.57s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.57s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.57s</guid>
