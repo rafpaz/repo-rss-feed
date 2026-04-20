@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 20 Apr 2026 15:33:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 18:25:46 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>yuliskov/SmartTube 31.57s</title>
@@ -74,10 +74,10 @@
       <link>https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.0</link>
       <guid isPermaLink="true">https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%407.1.0</guid>
       <pubDate>Fri, 17 Apr 2026 19:41:40 GMT</pubDate>
-      <description>This release adds ESLint v10 support, improves performance by skipping compilation for non-React files, and includes compiler lint improvements including better set-state-in-effect detection, improved ref validation, and more helpful error reporting. Add ESLint v10 support. ( @nicolo-ribaudo in #...</description>
+      <description>This release adds ESLint v10 support, improves performance by skipping compilation for non-React files, and includes compiler lint improvements including better set-state-in-effect detection, improved ref validation, and more helpful error reporting. Add ESLint v10 support. ( @azat-io in #35720 )...</description>
       <content:encoded><![CDATA[<p>This release adds ESLint v10 support, improves performance by skipping compilation for non-React files, and includes compiler lint improvements including better <code>set-state-in-effect</code> detection, improved ref validation, and more helpful error reporting.</p>
 <ul>
-<li>Add ESLint v10 support. (<a href="https://github.com/nicolo-ribaudo">@nicolo-ribaudo</a> in <a href="https://github.com/facebook/react/pull/35720">#35720</a>)</li>
+<li>Add ESLint v10 support. (<a href="https://github.com/azat-io">@azat-io</a> in <a href="https://github.com/facebook/react/pull/35720">#35720</a>)</li>
 <li>Skip compilation for non-React files to improve performance. (<a href="https://github.com/josephsavona">@josephsavona</a> in <a href="https://github.com/facebook/react/pull/35589">#35589</a>)</li>
 <li>Fix exhaustive deps bug with Flow type casting. (<a href="https://github.com/jorge-cab">@jorge-cab</a> in <a href="https://github.com/facebook/react/pull/35691">#35691</a>)</li>
 <li>Fix <code>useEffectEvent</code> checks in component syntax. (<a href="https://github.com/jbrown215">@jbrown215</a> in <a href="https://github.com/facebook/react/pull/35041">#35041</a>)</li>
