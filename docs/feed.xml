@@ -10,9 +10,125 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 23 Apr 2026 15:39:06 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 18:29:58 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.124.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.124.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.124.0</guid>
+      <pubDate>Thu, 23 Apr 2026 18:29:40 GMT</pubDate>
+      <description>New Features The TUI now has quick reasoning controls: Alt+, lowers reasoning, Alt+. raises it, and accepted model upgrades now reset reasoning to the new model’s default instead of carrying over stale settings. (#18866, #19085) App-server sessions can now manage multiple environments and choose...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>The TUI now has quick reasoning controls: <code>Alt+,</code> lowers reasoning, <code>Alt+.</code> raises it, and accepted model upgrades now reset reasoning to the new model’s default instead of carrying over stale settings. (#18866, #19085)</li>
+<li>App-server sessions can now manage multiple environments and choose an environment and working directory per turn, which makes multi-workspace and remote setups easier to target precisely. (#18401, #18416)</li>
+<li>Added first-class Amazon Bedrock support for OpenAI-compatible providers, including AWS SigV4 signing and AWS credential-based auth. (#17820)</li>
+<li>Remote plugin marketplaces can now be listed and read directly, with more reliable detail lookups and larger result pages. (#18452, #19079)</li>
+<li>Hooks are now stable, can be configured inline in <code>config.toml</code> and managed <code>requirements.toml</code>, and can observe MCP tools as well as <code>apply_patch</code> and long-running Bash sessions. (#18893, #18385, #18391, #18888, #19012)</li>
+<li>Eligible ChatGPT plans now default to the Fast service tier unless you explicitly opt out. (#19053)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Preserved Cloudflare cookies across approved ChatGPT hosts, reducing auth breakage in HTTP-backed ChatGPT flows. (#17783)</li>
+<li>Fixed remote app-server reliability issues so websocket events keep draining under load and shutdown no longer fails when the remote worker exits during cleanup. (#18932, #18936)</li>
+<li>Fixed permission-mode drift so <code>/permissions</code> changes survive side conversations and updated Full Access state is correctly reflected in MCP approval handling. (#18924, #19033)</li>
+<li>Fixed <code>wait_agent</code> so it returns promptly when mailbox work is already queued instead of waiting for a fresh notification or timing out. (#18968)</li>
+<li>Fixed local stdio MCP launches for relative commands without an explicit <code>cwd</code>, bringing fallback path resolution in line with CLI behavior. (#19031)</li>
+<li>Startup now fails less often on managed config edge cases: unknown feature requirements warn instead of aborting, and cloud-requirements errors are clearer about what failed. (#19038, #19078)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.123.0...rust-v0.124.0">https://github.com/openai/codex/compare/rust-v0.123.0...rust-v0.124.0</a></p>
+<ul>
+<li>#18870 Load app-server config through ConfigManager @pakrym-oai</li>
+<li>#18866 feat(tui): shortcuts to change reasoning level temporarily @fcoury-oai</li>
+<li>#18430 app-server: implement device key v2 methods @euroelessar</li>
+<li>#18757 fix: fully revert agent identity runtime wiring @efrazer-oai</li>
+<li>#17783 Preserve Cloudfare HTTP cookies in codex @shijie-oai</li>
+<li>#18876 [rollout_trace] Add rollout trace crate @cassirer-openai</li>
+<li>#18401 Support multiple managed environments @starr-openai</li>
+<li>#18797 Allow guardian bare allow output @maja-openai</li>
+<li>#18886 Normalize /statusline &amp; /title items @canvrno-oai</li>
+<li>#18768 [codex] Tighten external migration prompt tests @alexsong-oai</li>
+<li>#18909 Update /statusline and /title snapshots @canvrno-oai</li>
+<li>#18867 sandboxing: materialize cwd-relative permission globs @bolinfest</li>
+<li>#18915 fix: windows snapshot for external_agent_config_migration::tests::prompt_snapshot did not match windows output @bolinfest</li>
+<li>#18416 Add turn-scoped environment selections @starr-openai</li>
+<li>#18391 fix(core): emit hooks for apply_patch edits @fcoury-oai</li>
+<li>#18916 test(core): move prompt debug coverage to integration suite @bolinfest</li>
+<li>#17820 feat: add AWS SigV4 auth for OpenAI-compatible model providers @celia-oai</li>
+<li>#18913 bazel: run wrapped Rust unit test shards @bolinfest</li>
+<li>#18452 feat: Support remote plugin list/read. @xl-openai</li>
+<li>#18936 Fix remote app-server shutdown race @bolinfest</li>
+<li>#18871 refactor: add agent identity crate @efrazer-oai</li>
+<li>#18276 exec-server: carry filesystem sandbox profiles @bolinfest</li>
+<li>#18926 ci: keep argument comment lint checks materialized @bolinfest</li>
+<li>#18935 Keep TUI status surfaces in sync @etraut-openai</li>
+<li>#18923 chore(tui) debug-config guardian_policy_config @dylan-hurd-oai</li>
+<li>#18943 tests: serialize process-heavy Windows CI suites @bolinfest</li>
+<li>#18934 [codex] Clean guardian instructions @dylan-hurd-oai</li>
+<li>#18948 chore: remove unused Bedrock auth lazy loading @celia-oai</li>
+<li>#18277 core: derive active permission profiles @bolinfest</li>
+<li>#18785 feat: add explicit AgentIdentity auth mode @efrazer-oai</li>
+<li>#18953 use long-lived sessions for codex sandbox windows @iceweasel-oai</li>
+<li>#18278 app-server: expose thread permission profiles @bolinfest</li>
+<li>#17693 [codex-analytics] guardian review analytics events emission @rhan-oai</li>
+<li>#17695 [codex-analytics] guardian review truncation @rhan-oai</li>
+<li>#17696 [codex-analytics] guardian review TTFT plumbing and emission @rhan-oai</li>
+<li>#18962 nit: expose lib @jif-oai</li>
+<li>#18502 Support multiple cwd filters for thread list @acrognale-oai</li>
+<li>#18968 fix: wait_agent timeout for queued mailbox mail @jif-oai</li>
+<li>#18971 fix: cargo deny @jif-oai</li>
+<li>#18973 chore: prep memories for AB @jif-oai</li>
+<li>#18852 [codex] Update imagegen system skill @vb-openai</li>
+<li>#18865 Stage publishable Python runtime wheels @sdcoffey</li>
+<li>#18932 TUI: Keep remote app-server events draining @etraut-openai</li>
+<li>#18877 [rollout_trace] Record core session rollout traces @cassirer-openai</li>
+<li>#18959 feat(auto-review) policy config @dylan-hurd-oai</li>
+<li>#18955 Add plumbing to approve stored Auto-Review denials @won-openai</li>
+<li>#18999 arg0: keep dispatch aliases alive during async main @bolinfest</li>
+<li>#18925 feat: Fairly trim skill descriptions within context budget @xl-openai</li>
+<li>#18890 feat(auto-review) short-circuit @dylan-hurd-oai</li>
+<li>#18279 app-server: accept permission profile overrides @bolinfest</li>
+<li>#18582 [2/4] Implement executor HTTP request runner @aibrahim-oai</li>
+<li>#18197 feat: add guardian network approval trigger context @viyatb-oai</li>
+<li>#19033 Fix MCP permission policy sync @leoshimo-oai</li>
+<li>#19016 exec-server: expose arg0 alias root to fs sandbox @bolinfest</li>
+<li>#19036 Overlay state DB git metadata for filtered thread lists @joeytrasatti-openai</li>
+<li>#18956 [Codex] Register browser requirements feature keys @khoi-oai</li>
+<li>#19043 Update bundled OpenAI Docs skill freshness check @kkahadze-oai</li>
+<li>#18504 Rebrand approvals reviewer config to auto-review @won-openai</li>
+<li>#19046 exec-server: require explicit filesystem sandbox cwd @bolinfest</li>
+<li>#18280 clients: send permission profiles to app-server @bolinfest</li>
+<li>#18281 rollout: persist turn permission profiles @bolinfest</li>
+<li>#18888 hooks: emit Bash PostToolUse when exec_command completes via write_stdin @eternal-openai</li>
+<li>#19056 Rename approvals reviewer variant to auto-review @won-openai</li>
+<li>#18583 [3/4] Add executor-backed RMCP HTTP client @aibrahim-oai</li>
+<li>#19059 core: box multi-agent wrapper futures @bolinfest</li>
+<li>#19031 Fix relative stdio MCP cwd fallback @mzeng-openai</li>
+<li>#19063 chore(auto-review) feature =&gt; stable @dylan-hurd-oai</li>
+<li>#19050 feat(request-permissions) approve with strict review @dylan-hurd-oai</li>
+<li>#19067 test: set Rust test thread stack size @bolinfest</li>
+<li>#19072 tui: fix approvals popup disabled shortcut test @bolinfest</li>
+<li>#18893 codex: support hooks in config.toml and requirements.toml @eternal-openai</li>
+<li>#18282 protocol: report session permission profiles @bolinfest</li>
+<li>#19053 Default Fast service tier for eligible ChatGPT plans @shijie-oai</li>
+<li>#19055 Add safety check notification and error handling @etraut-openai</li>
+<li>#18283 app-server: accept command permission profiles @bolinfest</li>
+<li>#19012 Mark codex_hooks stable @abhinav-oai</li>
+<li>#18924 TUI: preserve permission state after side conversations @etraut-openai</li>
+<li>#19071 Add computer_use feature requirement key @leoshimo-oai</li>
+<li>#19079 Use remote plugin IDs for detail reads and enlarge list pages @xl-openai</li>
+<li>#19038 feat: Warn and continue on unknown feature requirements @xl-openai</li>
+<li>#19078 Clarify cloud requirements error messages @gverma-openai</li>
+<li>#19085 Persist target default reasoning on model upgrade @shijie-oai</li>
+<li>#19086 app-server: include filesystem entries in permission requests @bolinfest</li>
+<li>#18385 Support MCP tools in hooks @abhinav-oai</li>
+<li>#19113 Fix auto-review config compatibility across protocol and SDK @won-openai</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>openai/codex rust-v0.123.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.123.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.123.0</guid>
