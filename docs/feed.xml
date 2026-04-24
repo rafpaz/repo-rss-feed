@@ -10,9 +10,45 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 24 Apr 2026 18:19:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 21:20:14 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.9b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.9b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.9b</guid>
+      <pubDate>Fri, 24 Apr 2026 19:16:54 GMT</pubDate>
+      <description>Zen Stable Release Security [Various security fixes]([ &amp;quot; https://www.mozilla.org/en-US/security/advisories/mfsa2026-30/ &amp;quot;, &amp;quot; https://github.com/zen-browser/desktop/security/advisories &amp;quot; ]) New Features Updated to Firefox 150.0 (alt or opt)+clicking a tab will now split it with...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p>[Various security fixes]([
+  &quot;<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-30/">https://www.mozilla.org/en-US/security/advisories/mfsa2026-30/</a>&quot;,
+  &quot;<a href="https://github.com/zen-browser/desktop/security/advisories">https://github.com/zen-browser/desktop/security/advisories</a>&quot;
+])</p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 150.0</li>
+<li>(alt or opt)+clicking a tab will now split it with the selected tab</li>
+<li>Added a &#39;Move to folder...&#39; context menu item for tabs to quickly move them to a different folder</li>
+<li>Added a new loading progress animation when a page is loading</li>
+<li>Safebrowsing and geo-location APIs should work more reliably now</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed halts / unresponsiveness happening every certain amount of time (<a href="https://github.com/zen-browser/desktop/issues/10649">#10649</a>)</li>
+<li>Fixed duplicate bookmarks appearing on startup (<a href="https://github.com/zen-browser/desktop/issues/9540">#9540</a>)</li>
+<li>Fixed an issue on macOS where, when macOS Lockdown mode is enabled, emoji characters are not displayed in web content.</li>
+<li>Fixed live folders not working with GitHub&#39;s new Pull Request UI</li>
+<li>Windows users can now install updates without having to accept the User Account Control (UAC) prompt. It might need a re-install to work for existing users.</li>
+<li>Other minor bug fixes and performance improvements.</li>
+</ul>
+<h2>Changes</h2>
+<ul>
+<li>There&#39;s a new modal UI, thanks to @12th-devs on GitHub!</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>openai/codex rust-v0.125.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.125.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.125.0</guid>
@@ -4000,26 +4036,6 @@ export default async function SalesSummaryWidgetComponent({
       <category>yt-dlp</category>
       <category>yt-dlp</category>
       <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.18.10b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.18.10b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.18.10b</guid>
-      <pubDate>Sat, 21 Feb 2026 12:37:03 GMT</pubDate>
-      <description>Zen Stable Release New Features Improved greatly the performance for Linux users by removing bottom window rounded corners, which will be added once the core issue has been resolved upstream. To enable them back, turn &amp;#39;widget.gtk.rounded-bottom-corners.enabled&amp;#39; to true in about:config. Ad...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>New Features</h2>
-<ul>
-<li>Improved greatly the performance for Linux users by removing bottom window rounded corners, which will be added once the core issue has been resolved upstream. To enable them back, turn &#39;widget.gtk.rounded-bottom-corners.enabled&#39; to true in about:config.</li>
-<li>Added more automatic recovery options when updating or restarting zen, to prevent tab loss.</li>
-<li>Fixed some tabs becoming &#39;New Tabs&#39; after focusing them from different windows</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Stability and performance improvements related to window sync and session restore.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>payloadcms/payload v3.77.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.77.0</link>
