@@ -19,14 +19,35 @@
     "payloadcms/payload",
     "Kong/insomnia",
     "openai/codex",
-    "yt-dlp/yt-dlp",
-    "spotDL/spotify-downloader",
-    "doublecmd/doublecmd",
-    "zen-browser/desktop",
+    {
+      "slug": "yt-dlp/yt-dlp",
+      "includePatchReleases": true
+    },
+    {
+      "slug": "spotDL/spotify-downloader",
+      "includePatchReleases": true
+    },
+    {
+      "slug": "doublecmd/doublecmd",
+      "includePatchReleases": true
+    },
+    {
+      "slug": "zen-browser/desktop",
+      "includePatchReleases": true
+    },
     "multiboxlabs/flow-browser",
-    "heyman/heynote",
+    {
+      "slug": "heyman/heynote",
+      "includePatchReleases": true
+    },
     "marlboro-advance/mpvEx",
-    "edde746/plezy",
-    "derFrisson/plezy-apks"
+    {
+      "slug": "edde746/plezy",
+      "includePatchReleases": true
+    },
+    {
+      "slug": "derFrisson/plezy-apks",
+      "includePatchReleases": true
+    }
   ]
 }
