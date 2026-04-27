@@ -10,9 +10,30 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 27 Apr 2026 18:33:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 21:26:28 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.10b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.10b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.10b</guid>
+      <pubDate>Mon, 27 Apr 2026 19:40:17 GMT</pubDate>
+      <description>Zen Stable Release New Features (alt or opt)+clicking again on a merged tab will now split it from the selected tab Fixes Fixed video controls being off screen in compact mode ( #10594 ) Fixed startup crashes and not letting any tab to be selected ( #13414 ) Fixed dragging tabs between windows no...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>New Features</h2>
+<ul>
+<li>(alt or opt)+clicking again on a merged tab will now split it from the selected tab</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed video controls being off screen in compact mode (<a href="https://github.com/zen-browser/desktop/issues/10594">#10594</a>)</li>
+<li>Fixed startup crashes and not letting any tab to be selected (<a href="https://github.com/zen-browser/desktop/issues/13414">#13414</a>)</li>
+<li>Fixed dragging tabs between windows not hiding sidebar (<a href="https://github.com/zen-browser/desktop/issues/8643">#8643</a>)</li>
+<li>Other minor bug fixes and performance improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>edde746/plezy 1.35.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.35.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.35.0</guid>
@@ -545,6 +566,50 @@
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.34.2</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.34.2</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.34.2</guid>
+      <pubDate>Tue, 21 Apr 2026 06:40:45 GMT</pubDate>
+      <description>Plezy 1.34.2 — Standalone APKs APKs extracted from edde746/plezy 1.34.2 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.34.2 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.34.2">edde746/plezy 1.34.2</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>ExoPlayer external subtitle attach</li>
+<li>ExoPlayer libass crash</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.34.1...1.34.2">https://github.com/edde746/plezy/compare/1.34.1...1.34.2</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 1.34.2</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.34.2</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.34.2</guid>
@@ -986,6 +1051,66 @@
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.33.1</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.33.1</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.33.1</guid>
+      <pubDate>Thu, 16 Apr 2026 06:40:49 GMT</pubDate>
+      <description>Plezy 1.33.1 — Standalone APKs APKs extracted from edde746/plezy 1.33.1 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.33.1 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.33.1">edde746/plezy 1.33.1</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Watch together buffering indicators, recent rooms, plex usernames, action toasts, shorter codes</li>
+<li>Encrypted LAN discovery for remote pairing (replaces QR)</li>
+<li>Circular dpad on remote screen</li>
+<li>Mouse back button navigation</li>
+<li>Subtitle sync slider range extended to ±60s</li>
+<li>Auto-remove watched downloads with server watched threshold</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Subtitle background not rendering</li>
+<li>Artwork directory crash on orientation change</li>
+<li>Back navigation on screens with no app bar actions</li>
+<li>Alpha jump bar and download tree empty list access</li>
+<li>Action bar focus node bounds safety</li>
+<li>Auto-start remote server after home data loads</li>
+<li>Min 2x DPR for TV image transcoding</li>
+<li>Download cleanup, retry circuit breaker, SAF resume</li>
+<li>Server errors (500) treated as permanent failure with error in UI</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.32.0...1.33.0">https://github.com/edde746/plezy/compare/1.32.0...1.33.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>payloadcms/payload v3.83.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.83.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.83.0</guid>
@@ -1308,6 +1433,75 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.32.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</guid>
+      <pubDate>Mon, 13 Apr 2026 06:46:42 GMT</pubDate>
+      <description>Plezy 1.32.0 — Standalone APKs APKs extracted from edde746/plezy 1.32.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.32.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.32.0">edde746/plezy 1.32.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Download all playlist items</li>
+<li>Download options picker for series/seasons</li>
+<li>Clickable cast members to browse actor filmography</li>
+<li>Square art and logo editing in metadata editor</li>
+<li>Sub-ass-override setting</li>
+<li>Snackbar on playback speed change</li>
+<li>Auto-hide performance overlay with controls</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Hide spoilers in watch next thumbnails</li>
+<li>Skip back navigation when overlay route is on top</li>
+<li>Detail screen section alignment</li>
+<li>File info bitrate units, multi-track display, TV scrolling</li>
+<li>Use configured skip setting for dpad/timeline seeking</li>
+<li>Noisy audio pause on Android TV</li>
+<li>Always show track selection button</li>
+<li>Android TV PiP lifecycle regressions</li>
+<li>Normalize EOF playback state</li>
+<li>Preserve download server affinity</li>
+<li>Reduce blank space in media card bottom</li>
+<li>Request UTF-8 encoding for external subtitles</li>
+<li>Chapter keyboard shortcuts navigate chapters not episodes</li>
+<li>PiP aspect ratio clamp values outside Android limits</li>
+<li>Connection selection failover and timeout budget</li>
+<li>Live TV join session edge case</li>
+<li>Live stream reconnect delay and fallback chain on TV</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.3...1.32.0">https://github.com/edde746/plezy/compare/1.31.3...1.32.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 1.32.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.32.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.32.0</guid>
@@ -1531,6 +1725,49 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.31.3</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.31.3</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.31.3</guid>
+      <pubDate>Tue, 07 Apr 2026 06:33:39 GMT</pubDate>
+      <description>Plezy 1.31.3 — Standalone APKs APKs extracted from edde746/plezy 1.31.3 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.31.3 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.31.3">edde746/plezy 1.31.3</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>Connection issues</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.2...1.31.3">https://github.com/edde746/plezy/compare/1.31.2...1.31.3</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 1.31.3</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.31.3</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.31.3</guid>
@@ -1682,6 +1919,26 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.5.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.5.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.5.0</guid>
+      <pubDate>Thu, 02 Apr 2026 00:50:58 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.5.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9749 feat: Add toast notifications for update/create credentials by @pavkout in https://github.com/Kong/insomnia/pull/9761 fix: delete cloud sync workspace issue by @cwangsmv in https://github.co...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.5.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9749">https://github.com/Kong/insomnia/pull/9749</a></li>
+<li>feat: Add toast notifications for update/create credentials by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9761">https://github.com/Kong/insomnia/pull/9761</a></li>
+<li>fix: delete cloud sync workspace issue by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9762">https://github.com/Kong/insomnia/pull/9762</a></li>
+<li>fix: add line clamp limit for delete workspace model  by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9764">https://github.com/Kong/insomnia/pull/9764</a></li>
+<li>fix: Git Hub credentials edit pop up should be close automatically after reauthorize succeed. by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9760">https://github.com/Kong/insomnia/pull/9760</a></li>
+<li>fix: import state and project scan by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9766">https://github.com/Kong/insomnia/pull/9766</a></li>
+<li>fix: prevent duplicate imports during auto-scan by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9770">https://github.com/Kong/insomnia/pull/9770</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.5.0-beta.0...core@12.5.0">https://github.com/Kong/insomnia/compare/core@12.5.0-beta.0...core@12.5.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>nodejs/node v25.9.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.9.0</link>
@@ -2004,6 +2261,66 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.30.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.30.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.30.0</guid>
+      <pubDate>Fri, 27 Mar 2026 06:28:55 GMT</pubDate>
+      <description>Plezy 1.30.0 — Standalone APKs APKs extracted from edde746/plezy 1.30.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.30.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.30.0">edde746/plezy 1.30.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>Continuous play queue for aired date episode order</li>
+<li>Skip SAF picker on Android TV</li>
+<li>Live TV stream EOF and reconnect handling</li>
+<li>Live TV timeline heartbeat deduplication</li>
+<li>Library grid stuck skeletons on fast scroll</li>
+<li>Missing season tabs for single-season shows</li>
+<li>Detach mpv surface before view removal in dispose</li>
+<li>Tensor SoC detection for internal model IDs</li>
+<li>Keyboard shortcuts for unmapped keys</li>
+<li>Speed step 0.1 → 0.25 for keyboard shortcuts</li>
+<li>Non-primary CustomScrollViews in IndexedStack tabs</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Run SQLite on background isolate</li>
+<li>Library grid scroll and idle frame rendering</li>
+<li>Coalesce watch together rebuilds, static TV overlays</li>
+<li>Detail screen scroll and arrow rebuild performance</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.29.0...1.30.0">https://github.com/edde746/plezy/compare/1.29.0...1.30.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 1.30.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.30.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.30.0</guid>
@@ -2034,6 +2351,73 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>edde746</category>
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
+      <title>derFrisson/plezy-apks 1.29.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.29.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.29.0</guid>
+      <pubDate>Mon, 23 Mar 2026 06:28:47 GMT</pubDate>
+      <description>Plezy 1.29.0 — Standalone APKs APKs extracted from edde746/plezy 1.29.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.29.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.29.0">edde746/plezy 1.29.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Screen lock</li>
+<li>Rewind on resume setting</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Live TV channels for non-admin users</li>
+<li>External subtitles on Android mpv</li>
+<li>Disable impeller on Tensor/NVIDIA GPUs</li>
+<li>Disable PiP on Android TV</li>
+<li>Profile select back button bypass</li>
+<li>Match content frame rate</li>
+<li>Linux titlebar height on non-GNOME DEs</li>
+<li>Overlay sheet position, scroll-to-selected in bottom sheets</li>
+<li>PiP aspect ratio after ExoPlayer→mpv fallback</li>
+<li>CPU usage when paused and backgrounded on macOS</li>
+<li>PiP background thread layout crash</li>
+<li>Background isolate shutdown on iOS</li>
+<li>Race conditions in mpv dispose and track manager</li>
+<li>Track selection and external subs after mpv fallback</li>
+<li>Subtitle track selection bugs</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Reduce hub section vertical spacing</li>
+<li>Switch to libmpv-android fork, fixing ANR</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.28.0...1.29.0">https://github.com/edde746/plezy/compare/1.28.0...1.29.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>edde746/plezy 1.29.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/1.29.0</link>
@@ -2189,6 +2573,112 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.28.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.28.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.28.0</guid>
+      <pubDate>Thu, 19 Mar 2026 06:23:31 GMT</pubDate>
+      <description>Plezy 1.28.0 — Standalone APKs APKs extracted from edde746/plezy 1.28.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.28.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.28.0">edde746/plezy 1.28.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Individual shared item support</li>
+<li>Live TV channel favorites</li>
+<li>Redesigned TV player controls behavior</li>
+<li>MKV seeking without Cues &amp; zlib decompression support in ExoPlayer</li>
+<li>Cmd/Ctrl+F to open search</li>
+<li>Masked digits in TV PIN input</li>
+<li>Home hubs sorted by library order</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Reduce remote playback startup latency</li>
+<li>Preserve chapters/markers in cache during watch state sync</li>
+<li>Tighten and align media detail screen spacing</li>
+<li>Prefer exact language code match in track selection</li>
+<li>Eliminate duplicate API requests on startup</li>
+<li>Focus search input on search tab</li>
+<li>Incorrect queue sheet item sizing</li>
+<li>Enable WAL mode for SQLite</li>
+<li>Reduce image cache budgets and add memory pressure handling</li>
+<li>SurfaceControl use-after-free</li>
+<li>Defer nativeSurfaceChanged out of layout pass</li>
+<li>Download deletion using DB file paths</li>
+<li>Set leafCount for offline season metadata</li>
+<li>Load downloaded subtitles for offline playback</li>
+<li>Use gpu-api=auto for mpv (Windows)</li>
+<li>Reduce bottom sheet spacing</li>
+<li>Delete propagation when episodes are displayed in flat list</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Switch from OkHttp to Cronet networking stack</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.2...1.28.0">https://github.com/edde746/plezy/compare/1.27.2...1.28.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2026.03.17</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.17</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.17</guid>
+      <pubDate>Tue, 17 Mar 2026 23:42:33 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Extractor changes youtube Always...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.03.17#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/7fd74d10097833ebce0cb162e0ccf7825de9b768/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/66c4947e9cb70c9de96f7da75f9acbe4192d6c9d">Always respect <code>webpage_client</code> extractor-arg</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16250">#16250</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1b6ec8fc2589a1733a0937270faa4230ce6b1ca5">Fix <code>--live-from-start</code> support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16254">#16254</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/04d6974f502bbdfaed72c624344f262e30ad9708">Update ejs to 0.8.0</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16269">#16269</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>build</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/7fab4c2b23e16c4a4f94020a37a6bdf8d502be37">Use PyInstaller v6.19.0 for Windows</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16265">#16265</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>ci</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/4fc768b7f7194a05b13ad3e7bc5bfde84ed9ede7">Bump actions pins</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16252">#16252</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>docs</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/e68afb28277b4bee39726dbcbb06801edde9f659">Fix <code>player_client</code> extractor-arg documentation</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16235">#16235</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>test</strong>: networking: <a href="https://github.com/yt-dlp/yt-dlp/commit/18656b2f2af41a138793c7012a88f467c0d90274">Mark all CurlCFFIRH tests as flaky for any OS</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16266">#16266</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.17s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.17s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.17s</guid>
@@ -2304,6 +2794,203 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
+      <title>derFrisson/plezy-apks 1.27.2</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.27.2</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.27.2</guid>
+      <pubDate>Sun, 15 Mar 2026 06:22:49 GMT</pubDate>
+      <description>Plezy 1.27.2 — Standalone APKs APKs extracted from edde746/plezy 1.27.2 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.27.2 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.27.2">edde746/plezy 1.27.2</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>D-pad navigation skipping episodes on single-season shows</li>
+<li>List tiles not scrolling into view on d-pad focus</li>
+<li>mpv boolean NPE on dispose (Android)</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.0...1.27.2">https://github.com/edde746/plezy/compare/1.27.0...1.27.2</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>derFrisson/plezy-apks 1.27.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.27.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.27.0</guid>
+      <pubDate>Sat, 14 Mar 2026 06:17:40 GMT</pubDate>
+      <description>Plezy 1.27.0 — Standalone APKs APKs extracted from edde746/plezy 1.27.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.27.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.27.0">edde746/plezy 1.27.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Configurable intro/credits marker regex patterns</li>
+<li>Inline season tabs with d-pad focus improvements</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Always-on-top getting stuck on desktop</li>
+<li>Android high-bitrate stutter via OkHttp connection pooling</li>
+<li>Auto-reconnect stream after network loss during playback</li>
+<li>Bottom sheets autofocusing incorrectly outside keyboard/dpad mode</li>
+<li>DBusServiceUnknownException on Linux without NetworkManager</li>
+<li>Duplicate episode fetching with flattened seasons</li>
+<li>EPG guide grid: boundary-spanning programs, bold titles, softer styling</li>
+<li>Idle CPU usage on macOS when video player is paused</li>
+<li>Layout shift for image placeholders</li>
+<li>macOS media key play/pause handling</li>
+<li>Null ratingKey in folder browsing</li>
+<li>Player stuck on skip credits with no next episode</li>
+<li>Tab revert and overflow bleed on mobile tab switch</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Admin actions hidden from non-admin users</li>
+<li>Browse grouping picker uses settings-style bottom sheet</li>
+<li>Health probe cooldown, connectivity debounce, and concurrent check coalescing</li>
+<li>Respect Plex server library season view mode</li>
+<li>Thread safety on Android</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.26.1...1.27.0">https://github.com/edde746/plezy/compare/1.26.1...1.27.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2026.03.13</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.13</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.13</guid>
+      <pubDate>Fri, 13 Mar 2026 09:02:00 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Extractor changes tiktok : Fix c...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.03.13#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/990fdf36dd985403cb171e4b92d1d7f01a4e273d/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>tiktok</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/db62e438a15743b156ca5ebfc6dbe160e9bc1662">Fix challenge solving</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16223">#16223</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ff459e5fc04b1a061212672626b7bfa23ff3cdcd">Fix <code>android_vr</code> player client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16168">#16168</a>) by <a href="https://github.com/gamer191">gamer191</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/7e145ac1cae8f891e18c9375fa23097f1dfa0b19">Fix <code>use_ad_playback_context</code> extractor-arg</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16196">#16196</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f2bd3202c0ffa3f0c0069c44ca53b625dca568bc">Fix <code>web_embedded</code> player client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16177">#16177</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/SparseOrnament15">SparseOrnament15</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/48a61d0f38b156785d24df628d42892441e008c4">Request <code>web_safari</code> &amp; <code>web_creator</code> client configs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16198">#16198</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/92f1d99dbe1e10d942ef0963f625dbc5bc0768aa">Update ejs to 0.7.0</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16231">#16231</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li>tab<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ae025da02364f4d085953f41fd0d32ade3c4afb9">Fix album extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16041">#16041</a>) by <a href="https://github.com/FriederHannenheim">FriederHannenheim</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/3e36cf9cdb12ef566416c5620a1a95b5a0221017">Improve description extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16057">#16057</a>) by <a href="https://github.com/Peter-Devine">Peter-Devine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
+      <title>derFrisson/plezy-apks 1.26.1</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.26.1</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.26.1</guid>
+      <pubDate>Thu, 12 Mar 2026 06:20:03 GMT</pubDate>
+      <description>Plezy 1.26.1 — Standalone APKs APKs extracted from edde746/plezy 1.26.1 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.26.1 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.26.1">edde746/plezy 1.26.1</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>ASS subtitles broken when Dolby Vision mode enabled</li>
+<li>D3D11 fallback for gpu-api on Windows</li>
+<li>Overlay sheets not dismissible when no descendant is focused</li>
+<li>mpv reconnect using wrong stream option</li>
+<li>mpv end-file errors not surfaced to user</li>
+<li>Stuck network check on Linux without NetworkManager</li>
+<li>Tunneling reopen replaced with simple parameter toggle</li>
+<li>String childCount handling in collections</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.26.0...1.26.1">https://github.com/edde746/plezy/compare/1.26.0...1.26.1</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.2b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.2b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.2b</guid>
@@ -2325,6 +3012,26 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.4.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</guid>
+      <pubDate>Thu, 05 Mar 2026 01:22:14 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.4.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9673 chore: add more tests for allowed folder paths by @shelby-moore in https://github.com/Kong/insomnia/pull/9679 fix: folder collapse &amp;amp; shortcuts when focusing the tab by @ZxBing0066 in htt...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.4.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9673">https://github.com/Kong/insomnia/pull/9673</a></li>
+<li>chore: add more tests for allowed folder paths by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9679">https://github.com/Kong/insomnia/pull/9679</a></li>
+<li>fix: folder collapse &amp; shortcuts when focusing the tab by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9680">https://github.com/Kong/insomnia/pull/9680</a></li>
+<li>Fix the problem that staged/unstaged list in the git commit modal is unsynced with the diff view. by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9682">https://github.com/Kong/insomnia/pull/9682</a></li>
+<li>feat: open request/folder in tab with middle mouse btn by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9685">https://github.com/Kong/insomnia/pull/9685</a></li>
+<li>Change wording in the invite modal by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9687">https://github.com/Kong/insomnia/pull/9687</a></li>
+<li>fix: Bump the Docker image scan action version by @balugeorge in <a href="https://github.com/Kong/insomnia/pull/9690">https://github.com/Kong/insomnia/pull/9690</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.4.0-beta.0...core@12.4.0">https://github.com/Kong/insomnia/compare/core@12.4.0-beta.0...core@12.4.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>payloadcms/payload v3.79.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.79.0</link>
@@ -2500,43 +3207,34 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
-      <title>zen-browser/desktop 1.19b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19b</guid>
-      <pubDate>Sat, 28 Feb 2026 21:30:35 GMT</pubDate>
-      <description>Zen Stable Release This update includes a new feature that allows you to automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &amp;#39;Live Folder&amp;#39;. Let us know what other live folder types you wo...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<p>This update includes a new feature that allows you to automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &#39;Live Folder&#39;.</p>
-<p>Let us know what other live folder types you would like to see in the future!</p>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-13/">Various security fixes</a></p>
-<h2>New Features</h2>
+      <title>yt-dlp/yt-dlp 2026.03.03</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.03</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.03</guid>
+      <pubDate>Tue, 03 Mar 2026 16:54:38 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Extractor changes aenetworks : F...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.03.03#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/b8058cdf378cbbf60669b665dea146fb7dc90117/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Extractor changes</h4>
 <ul>
-<li>Updated to Firefox 148.0</li>
-<li>Added live folders. Automatically fill your folders with opened GitHub issues, pull requests or RSS feeds. To add a live folder, click the + button in the sidebar and select &#39;Live Folder&#39;.</li>
-<li>Dragging a tab on top of another tab for one second will now allow the option to split those tabs.</li>
-<li>MacOS users now get to use native popover UI, making the experience more consistent with the rest of the operating system.</li>
-<li>Improved the icon picker for folders, tabs, etc. It now let you select icons without closing the picker.</li>
-<li>Pressing the &quot;Un-split&quot; button while holding shift will not focus the un-split tab, allowing you to stay in the current split view.</li>
+<li><strong>aenetworks</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/338dbebdb8627a95bd8f72ed86fdc2d50c8e2d14">Fix extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16036">#16036</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>patreon</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/bf4dfffe0164385c29a2dcb0367110babe4d4f27">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16112">#16112</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>thechosen</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/e3118604aa99a5514342d6a002c9b4a3fe1235b4">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16021">#16021</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/d3165e83ffc0088eef5e594927ea9ac99a6e2ce6">Force player <code>9f4cc5e4</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16123">#16123</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/2ecc4c3bc300701d85e2cbaeb2b28a921a68f0f0">Skip webpage player response by default</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16126">#16126</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
 </ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed private mode windows having dark text on dark background in the sidebar.</li>
-<li>Fixed popup windows not showing at all on certain occasions.</li>
-<li>Other bug fixes and performance improvements.</li>
+</li>
+<li><strong>zapiks</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6f796a2bff332f72c3f250207cdf10db852f6016">Improve extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16030">#16030</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
 </ul>
-<h2>Theme Changes</h2>
-<ul>
-<li>Removed the <code>-zen-window-transform-origin</code> CSS attribute as it is not needed anymore</li>
-</ul>
-<h2>Changes</h2>
-<ul>
-<li>Bluring the window will no longer close the urlbar if its open.</li>
-<li>Emojis at the space switcher will now be larger and more visible.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
     </item>    <item>
       <title>payloadcms/payload v3.78.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.78.0</link>
@@ -3034,6 +3732,95 @@ export default async function SalesSummaryWidgetComponent({
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
+      <title>yt-dlp/yt-dlp 2026.02.21</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.02.21</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.02.21</guid>
+      <pubDate>Sat, 21 Feb 2026 20:40:28 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Important changes Security: [ CVE-2026-263...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.02.21#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/e2a9cc7d137c88843e064bc9ea11cdca5cd4c82a/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<h4>Important changes</h4>
+<ul>
+<li>Security: [<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-26331">CVE-2026-26331</a>] <a href="https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-g3gw-q23r-pgqm">Arbitrary command injection with the <code>--netrc-cmd</code> option</a><ul>
+<li>The argument passed to the command in <code>--netrc-cmd</code> is now limited to a safe subset of characters</li>
+</ul>
+</li>
+</ul>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Core changes</h4>
+<ul>
+<li><strong>cookies</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/43229d1d5f47b313e1958d719faff6321d853ed3">Ignore cookies with control characters</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15862">#15862</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/syphyr">syphyr</a></li>
+<li><strong>jsinterp</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/62574f5763755a8637880044630b12582e4a55a5">Fix bitwise operations</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15985">#15985</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c9c86519753d6cdafa052945d2de0d3fcd448927">Stringify bracket notation keys in object access</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15989">#15989</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/d108ca10b926410ed99031fec86894bfdea8f8eb">Support string concatenation with <code>+</code> and <code>+=</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15990">#15990</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+<h4>Extractor changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1d1358d09fedcdc6b3e83538a29b0b539cb9be3f">Add browser impersonation support to more extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16029">#16029</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1fbbe29b99dc61375bf6d786f824d9fcf6ea9c1a">Limit <code>netrc_machine</code> parameter to shell-safe characters</a> by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><strong>1tv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/23c059a455acbb317b2bbe657efd59113bf4d5ac">Extract chapters</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15848">#15848</a>) by <a href="https://github.com/hunter-gatherer8">hunter-gatherer8</a></li>
+<li><strong>aenetworks</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/24856538595a3b25c75e1199146fcc82ea812d97">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14959">#14959</a>) by <a href="https://github.com/Sipherdrakon">Sipherdrakon</a></li>
+<li><strong>applepodcasts</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1ea7329cc91da38a790174e831fffafcb3ea3c3d">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15901">#15901</a>) by <a href="https://github.com/coreywright">coreywright</a></li>
+<li><strong>dailymotion</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/224fe478b0ef83d13b36924befa53686290cb000">Fix extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15995">#15995</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>facebook</strong>: ads: <a href="https://github.com/yt-dlp/yt-dlp/commit/e2444584a3e590077b81828ad8a12fc4c3b1aa6d">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16002">#16002</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>gem.cbc.ca</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/637ae202aca7a990b3b61bc33d692870dc16c3ad">Support standalone, series &amp; Olympics URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15878">#15878</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/makew0rld">makew0rld</a></li>
+<li><strong>learningonscreen</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/46d5b6f2b7989d8991a59215d434fb8b5a8ec7bb">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16028">#16028</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>locipo</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/442c90da3ec680037b7d94abf91ec63b2e5a9ade">Add extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15486">#15486</a>) by <a href="https://github.com/doe1080">doe1080</a>, <a href="https://github.com/gravesducking">gravesducking</a></li>
+<li><strong>matchitv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/8d6e0b29bf15365638e0ceeb803a274e4db6157d">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15204">#15204</a>) by <a href="https://github.com/gseddon">gseddon</a></li>
+<li><strong>odnoklassniki</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/071ad7dfa012f5b71572d29ef96fc154cb2dc9cc">Fix inefficient regular expression</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15974">#15974</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>opencast</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/166356d1a1cac19cac14298e735eeae44b52c70e">Support <code>oc-p.uni-jena.de</code> URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16026">#16026</a>) by <a href="https://github.com/LordMZTE">LordMZTE</a></li>
+<li><strong>pornhub</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6f38df31b477cf5ea3c8f91207452e3a4e8d5aa6">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15858">#15858</a>) by <a href="https://github.com/beacdeac">beacdeac</a></li>
+<li><strong>saucepluschannel</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/97f03660f55696dc9fce56e7ee43fbe3324a9867">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15830">#15830</a>) by <a href="https://github.com/regulad">regulad</a></li>
+<li><strong>soundcloud</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/81bdea03f3414dd4d086610c970ec14e15bd3d36">Fix client ID extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16019">#16019</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f532a91cef11075eb5a7809255259b32d2bca8ca">Support browser impersonation</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16020">#16020</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+<li><strong>spankbang</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1fe0bf23aa2249858c08408b7cc6287aaf528690">Fix playlist title extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14132">#14132</a>) by <a href="https://github.com/blauerdorf">blauerdorf</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f05e1cd1f1052cb40fc966d2fc175571986da863">Support browser impersonation</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14130">#14130</a>) by <a href="https://github.com/blauerdorf">blauerdorf</a></li>
+</ul>
+</li>
+<li><strong>steam</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1a9c4b8238434c760b3e27d0c9df6a4a2482d918">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15028">#15028</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>tele5</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/772559e3db2eb82e5d862d6d779588ca4b0b048d">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16005">#16005</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>tver</strong>: olympic: <a href="https://github.com/yt-dlp/yt-dlp/commit/02ce3efbfe51d54cb0866953af423fc6d1f38933">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15885">#15885</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>tvo</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a13f281012a21c85f76cf3e320fc3b00d480d6c6">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15903">#15903</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>twitter</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0d8898c3f4e76742afb2b877f817fdee89fa1258">Fix error handling</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15993">#15993</a>) by <a href="https://github.com/bashonly">bashonly</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/77221098fc5016f12118421982f02b662021972c">7722109</a>)</li>
+<li><strong>visir</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c7c45f52890eee40565188aee874ff4e58e95c4f">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15811">#15811</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>vk</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/acfc00a955208ee780b4cb18ae26de7b62444153">Solve JS challenges using native JS interpreter</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15992">#15992</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>xhamster</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/133cb959be4d268e2cd6b3f1d9bf87fba4c3743e">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15831">#15831</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/2204cee6d8301e491d8455a2c54fd0e1b23468f5">Add more known player JS variants</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15975">#15975</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/319a2bda83f5e54054661c56c1391533f82473c2">Extract live adaptive <code>incomplete</code> formats</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15937">#15937</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/CanOfSocks">CanOfSocks</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c105461647315f7f479091194944713b392ca729">Update ejs to 0.5.0</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16031">#16031</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li>date, search: <a href="https://github.com/yt-dlp/yt-dlp/commit/c7945800e4ccd8cad2d5ee7806a872963c0c6d44">Remove broken <code>ytsearchdate</code> support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15959">#15959</a>) by <a href="https://github.com/stastix">stastix</a></li>
+</ul>
+</li>
+</ul>
+<h4>Networking changes</h4>
+<ul>
+<li><strong>Request Handler</strong>: curl_cffi: <a href="https://github.com/yt-dlp/yt-dlp/commit/e74076141dc86d5603680ea641d7cec86a821ac8">Deprioritize unreliable impersonate targets</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16018">#16018</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>cleanup</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/abade83f8ddb63a11746b69038ebcd9c1405a00a">Bump ruff to 0.15.x</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15951">#15951</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li>Miscellaneous: <a href="https://github.com/yt-dlp/yt-dlp/commit/646bb31f39614e6c2f7ba687c53e7496394cbadb">646bb31</a> by <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
       <title>payloadcms/payload v3.77.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.77.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.77.0</guid>
@@ -3311,6 +4098,20 @@ export default buildConfig({
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
+      <title>Kong/insomnia core@12.3.1</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.3.1</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.3.1</guid>
+      <pubDate>Thu, 05 Feb 2026 06:14:22 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.3.1-beta.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9637 Full Changelog : https://github.com/Kong/insomnia/compare/core@12.3.1-beta.1...core@12.3.1</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.3.1-beta.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9637">https://github.com/Kong/insomnia/pull/9637</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.3.1-beta.1...core@12.3.1">https://github.com/Kong/insomnia/compare/core@12.3.1-beta.1...core@12.3.1</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>heyman/heynote v2.8.0</title>
       <link>https://github.com/heyman/heynote/releases/tag/v2.8.0</link>
       <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.8.0</guid>
@@ -3357,6 +4158,28 @@ on the system clipboard.</p>
       <category>heyman</category>
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2026.02.04</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.02.04</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.02.04</guid>
+      <pubDate>Wed, 04 Feb 2026 00:49:03 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Extractor changes unsupported :...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.02.04#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/bb3af7e6d5373c1a9c11bd5db9a6ebbbdfe55a98/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>unsupported</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c677d866d41eb4075b0a5e0c944a6543fc13f15d">Update unsupported URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15812">#15812</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>youtube</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1a895c18aaaf00f557aa8cbacb21faa638842431">Default to <code>tv</code> player JS variant</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15818">#15818</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
     </item>    <item>
       <title>nodejs/node v25.6.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.6.0</link>
@@ -3434,6 +4257,184 @@ on the system clipboard.</p>
       <category>nodejs</category>
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2026.01.31</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.01.31</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.01.31</guid>
+      <pubDate>Sun, 01 Feb 2026 00:12:02 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Extractor changes soop : Support...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.01.31#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/891613b098b2b315d983c2ae16901f5de344ca56/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>soop</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/d0bf3d0fc3455d411ae44c0a5dc974dd1481e3aa">Support subscription-only VODs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15523">#15523</a>) by <a href="https://github.com/thematuu">thematuu</a></li>
+<li><strong>unsupported</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/bf5d8c2a663ac690711262aebc733c1b06a54b26">Update unsupported URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15410">#15410</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>whyp</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0d8ee637e83d62edaf22aa85833a51c70d560389">Extract more metadata</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15757">#15757</a>) by <a href="https://github.com/azdlonky">azdlonky</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/bb1c05752c288a81e0e281f1caf5395411936376">Add <code>web_embedded</code> fallback for <code>android_vr</code> client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15785">#15785</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c3674575faa23b20e97be8b73f68b9f7b4cea9ab">Remove broken <code>ios_downgraded</code> player client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15786">#15786</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/8eb794366eb69e7377ff88eed7929c00195c8d74">Remove broken <code>tv_embedded</code> player client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15787">#15787</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>cleanup</strong>: Miscellaneous: <a href="https://github.com/yt-dlp/yt-dlp/commit/9a9a6b6fe44a30458c1754ef064f354f04a84004">9a9a6b6</a> by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2026.01.29</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.01.29</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.01.29</guid>
+      <pubDate>Thu, 29 Jan 2026 17:17:40 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Core changes Accept float values...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.01.29#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/e4c120f315b42a3956c3d85f2bc9245c4f0e8350/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Core changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f6dc7d5279bcb7f29839c700d54ac148b332d208">Accept float values for <code>--sleep-subtitles</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15282">#15282</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/5382c6c81bb22a382e46adb646e1379ccfc462b6">Add <code>--compat-options 2025</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15499">#15499</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/b16b06378a0805430699131ca6b786f971ae05b5">Add <code>--format-sort-reset</code> option</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13809">#13809</a>) by <a href="https://github.com/nihil-admirari">nihil-admirari</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e0bb4777328a7d1eb96f2d0256fa33ae06b5930d">Bypass interactive format selection if no formats are found</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15278">#15278</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/cec1f1df792fe521fff2d5ca54b5c70094b3d96a">Fix <code>--parse-metadata</code> when <code>TO</code> is a single field name</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14577">#14577</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/clayote">clayote</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/5bf91072bcfbb26e6618d668a0b3379a3a862f8c">Fix concurrent formats downloading to stdout</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15617">#15617</a>) by <a href="https://github.com/grqz">grqz</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1829a53a543e63bf0391da572cefcd2526c0a806">Fix interactive format/video selection when downloading to stdout</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15626">#15626</a>) by <a href="https://github.com/grqz">grqz</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/dde5eab3b3a356449b5c8c09506553b1c2842953">Support Deno installed via Python package</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15614">#15614</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/zahlman">zahlman</a></li>
+<li><strong>utils</strong><ul>
+<li><code>decode_packed_codes</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f24b9ac0c94aff3311ab0b935ce8103b5a3faeb1">Fix missing key handling</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15440">#15440</a>) by <a href="https://github.com/cesbar">cesbar</a></li>
+<li><code>devalue</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/ede54330fb38866936c63ebb96c490a2d4b1b58c">Fix calling reviver on cached value</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15568">#15568</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><code>js_to_json</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/4d4c7e1c6930861f8388ce3cdd7a5335bf860e7d">Prevent false positives for octals</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15474">#15474</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><code>mimetype2ext</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c0a7c594a9e67ac2ee4cde38fa4842a0b2d675e8">Recognize more srt types</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15411">#15411</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><code>random_user_agent</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/9bf040dc6f348bf22abc71233446a0a5017e613c">Bump versions</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15396">#15396</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><code>unified_timestamp</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/15263d049cb3f47e921b414782490052feca3def">Add <code>tz_offset</code> parameter</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15357">#15357</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+</ul>
+</li>
+</ul>
+<h4>Extractor changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e2ea6bd6ab639f910b99e55add18856974ff4c3a">Fix prioritization of Youtube URL matching</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15596">#15596</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><strong>archive.org</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/5f37f67d37b54bf9bd6fe7fa3083492d42f7a20a">Fix metadata extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15286">#15286</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>bandcamp</strong>: weekly: <a href="https://github.com/yt-dlp/yt-dlp/commit/e9d4b22b9b09a30f31b557df740b01b09a8aefe8">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15208">#15208</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>bigo</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/5026548d65276732ec290751d97994e23bdecc20">Support <code>--wait-for-video</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15463">#15463</a>) by <a href="https://github.com/olipfei">olipfei</a></li>
+<li><strong>boosty</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f9a06197f563a2ccadce2603e91ceec523e88d91">Improve metadata extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15543">#15543</a>) by <a href="https://github.com/Sytm">Sytm</a></li>
+<li><strong>cbc</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/457dd036af907aa8b1b544b95311847abe470bf1">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15631">#15631</a>) by <a href="https://github.com/subrat-lima">subrat-lima</a></li>
+<li><strong>cda</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6d92f87ddc40a31959097622ff01d4a7ca833a13">Support mobile URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15398">#15398</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>croatian.film</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/ba499ab0dcf2486d97f739e155264b305e0abd26">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15468">#15468</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>dailymotion</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/2b61a2a4b20b499d6497c9212207f72a52b922a6">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15682">#15682</a>) by <a href="https://github.com/bashonly">bashonly</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/a8937740969b60df1c2a634e58ab959352c9504c">a893774</a>)</li>
+<li><strong>dropbox</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/8a4b626daf59d0ecb6117ed275cb43dd68768b85">Support videos in folders</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15313">#15313</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>errarhiiv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1c739bf53e673e06d2a43feddb5a31ee8496fa6e">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15667">#15667</a>) by <a href="https://github.com/rdamas">rdamas</a></li>
+<li><strong>facebook</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/2a7e048a60b76a245deeea734885bdce5e6571ae">Remove broken login support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15434">#15434</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li>ads: <a href="https://github.com/yt-dlp/yt-dlp/commit/f8b3fe33f68495ade453602a201b33e3aa69ed1f">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15582">#15582</a>) by <a href="https://github.com/legraphista">legraphista</a></li>
+</ul>
+</li>
+<li><strong>filmarchiv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c0c9cac55446f7bf48370ba60c06f9cf5bc48d15">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13490">#13490</a>) by <a href="https://github.com/4elta">4elta</a></li>
+<li><strong>franceinfo</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e08fdaaec2b253abb1e08899d1d13ec5072d76f2">Fix extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15704">#15704</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ac3a566434c68cbf960dfb357c6c8a275e8bf8eb">Support new domain URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15669">#15669</a>) by <a href="https://github.com/romainreignier">romainreignier</a></li>
+</ul>
+</li>
+<li><strong>generic</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/cea825e7e0a1a93a1a355a86bbb2b9e77594f569">Improve detection of blockage due to TLS fingerprint</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15426">#15426</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>gofile</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c5e55e04795636a2855a1be80cea0f6b2d0f0cc6">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15296">#15296</a>) by <a href="https://github.com/quietvoid">quietvoid</a></li>
+<li><strong>hotstar</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/5a481d65fa99862110bb84d10a2f15f0cb47cab3">Extract from new API</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15480">#15480</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>iqiyi</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/09078190b0f33d14ae2b402913c64b724acf4bcb">Remove broken login support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15441">#15441</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>lbry</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0e4d1e9de6250a80453d46f94b9fade5f10197a0">Support filtering of flat playlist results</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15695">#15695</a>) by <a href="https://github.com/christoph-heinrich">christoph-heinrich</a>, <a href="https://github.com/dirkf">dirkf</a></li>
+<li><strong>manoto</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6b23305822d406eff8e813244d95f328c22e821e">Remove extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15414">#15414</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>media.ccc.de</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c8680b65f79cfeb23b342b70ffe1e233902f7933">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15608">#15608</a>) by <a href="https://github.com/rdamas">rdamas</a></li>
+<li><strong>nebula</strong><ul>
+<li>season<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f5270705e816a24caef7357a7ce8e17471899d73">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15347">#15347</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/6c918c5071dec8290686a4d030a1f74da3d9debf">Support more URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15436">#15436</a>) by <a href="https://github.com/prettysunflower">prettysunflower</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>netease</strong>: program: <a href="https://github.com/yt-dlp/yt-dlp/commit/0ea6cc6d82318e554ffa0b5eaf9da4f4379ccbe9">Support DJ URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15365">#15365</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>neteasemusic</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a421eb06d111cfa75e42569dc42331e9f3d8f27b">Fix merged lyrics extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15052">#15052</a>) by <a href="https://github.com/Mivik">Mivik</a></li>
+<li><strong>netzkino</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a27ec9efc63da1cfb2a390eb028549585dbb2f41">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15351">#15351</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>nextmedia</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6d4984e64e893dd954e781046a3532eb7abbfa16">Remove extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15354">#15354</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>pandatv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/878a41e283878ee34b052a395b1f9499f2b9ef81">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13210">#13210</a>) by <a href="https://github.com/ptlydpr">ptlydpr</a></li>
+<li><strong>parti</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/04f2ec4b976271e1e7ad3e650a0be2c4fd796ee0">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15319">#15319</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>patreon</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/14998eef63a1462961a666d71318f804aca12220">Extract inlined media</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15498">#15498</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>pbs</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a81087160812ec7a2059e1641a9785bfa4629023">Fix extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15083">#15083</a>) by <a href="https://github.com/nlurker">nlurker</a></li>
+<li><strong>picarto</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/fcd47d2db3f871c7b7d638773c36cc503119742d">Fix extraction when stream has no title</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15407">#15407</a>) by <a href="https://github.com/mikf">mikf</a></li>
+<li><strong>pornhub</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f2ee2a46fc2a4efb6ed58ee9e67c506c6b72b843">Optimize metadata extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15231">#15231</a>) by <a href="https://github.com/norepro">norepro</a></li>
+<li><strong>rumblechannel</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0dec80c02a0c9edcc52d33d3ac83435dd8bcaa08">Support filtering of flat playlist results</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15694">#15694</a>) by <a href="https://github.com/christoph-heinrich">christoph-heinrich</a></li>
+<li><strong>scte</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/4a772e5289b939013202ad7707d5b989794ed287">Remove extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15442">#15442</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>tarangplus</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/260ba3abba2849aa175dd0bcfec308fc6ba6a678">Add extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13060">#13060</a>) by <a href="https://github.com/subrat-lima">subrat-lima</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/27afb31edc492cb079f9bce9773498d08e568ff3">27afb31</a> by <a href="https://github.com/bashonly">bashonly</a>)</li>
+<li><strong>telecinco</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/b6f24745bfb89ec0eaaa181a68203c2e81e58802">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15311">#15311</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>thechosen</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1f4b26c39fb09782cf03615d089e712975395d6d">Support new URL format</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15687">#15687</a>) by <a href="https://github.com/AlexBocken">AlexBocken</a></li>
+<li><strong>tiktok</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/9c393e3f6220d34d534bef7d9d345782003b58ad">Extract <code>save_count</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15054">#15054</a>) by <a href="https://github.com/pomtnp">pomtnp</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e3f0d8b731b40176bcc632bf92cfe5149402b202">Solve JS challenges with native Python implementation</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15672">#15672</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/DTrombett">DTrombett</a></li>
+</ul>
+</li>
+<li><strong>tubitv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f0bc71abf68480b3b65b27c2a60319bc88e5eea2">Support URLs with locales</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15205">#15205</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>tumblr</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/87a265d820fbf9e3ce47c149609100fc8e9e13c5">Extract timestamp</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15462">#15462</a>) by <a href="https://github.com/alch-emi">alch-emi</a></li>
+<li><strong>tv5unis</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6ae9e9568701b9c960e817c6dc35bcd824719a80">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15477">#15477</a>) by <a href="https://github.com/0xced">0xced</a></li>
+<li><strong>twitch</strong>: videos: <a href="https://github.com/yt-dlp/yt-dlp/commit/e15ca65874b2a8bcd7435696b8f01252c39512ba">Raise error when channel is not found</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15458">#15458</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>twitter</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ce9a3591f8292aeb93ffdad10028bfcddda3976b">Do not extract non-video posts from <code>unified_card</code>s</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15431">#15431</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/a6ba7140051dbe1d63a1da4de263bb9c886c0a32">Remove broken login support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15432">#15432</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+<li><strong>vimeo</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/ba5e2227c8c49fa76d9d30332aad2416774ddb31">Add <code>macos</code> client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15746">#15746</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/gamer191">gamer191</a></li>
+<li><strong>volejtv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1effa06dbf4dfd2e307b445a55a465d897205213">Fix and add extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13226">#13226</a>) by <a href="https://github.com/subrat-lima">subrat-lima</a></li>
+<li><strong>wat.tv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/bc6ff877dd371d405b11f0ab16634c4d4b5d645e">Improve DRM detection</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15659">#15659</a>) by <a href="https://github.com/wesson09">wesson09</a></li>
+<li><strong>whyp</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f70ebf97ea7ef3b00c3e9213acf40d1b004c31d9">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15721">#15721</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>yahoo</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/97fb78a5b95a98a698f77281ea0c101bf090ed4c">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15314">#15314</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/23b846506378a6a9c9a0958382d37f943f7cfa51">Adjust default clients</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15601">#15601</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/abf29e3e72e8a4dcae61e2ceaf37ce8405af61ab">Fix <code>player_skip=js</code> extractor-arg</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15428">#15428</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/309b03f2ad09fcfcf4ce81e757f8d3796bb56add">Fix default player clients</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15726">#15726</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/d20f58d721fe45fe873e3389a0d17a72352aecec">Solve n challenges for manifest formats</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15602">#15602</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/d22436e5dc7c6808d931e27cbb967b1b2a33c17c">Support comment subthreads</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15419">#15419</a>) by <a href="https://github.com/bashonly">bashonly</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/76c31a7a216a3894884381c7775f838b811fde06">76c31a7</a>, <a href="https://github.com/yt-dlp/yt-dlp/commit/468aa6a9b431194949ede9eaad8f33e314a288d6">468aa6a</a>)</li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/88b35ff911a999e0b479417237010c305114ba08">Update ejs to 0.4.0</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15747">#15747</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li>tab: <a href="https://github.com/yt-dlp/yt-dlp/commit/ff61bef041d1f69fec1044f783fb938c005128af">Fix flat thumbnails extraction for shorts</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15331">#15331</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+<li><strong>zdf</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/48b845a29623cbc814ad6c6b2ef285e3f3c0fe91">Support sister sites URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15370">#15370</a>) by <a href="https://github.com/InvalidUsernameException">InvalidUsernameException</a></li>
+<li><strong>zoom</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0066de5b7e146a96e4cb4352f65dc3f1e283af4a">Extract recordings with start times</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15475">#15475</a>) by <a href="https://github.com/JV-Fernandes">JV-Fernandes</a></li>
+</ul>
+<h4>Networking changes</h4>
+<ul>
+<li><strong>Request Handler</strong>: curl_cffi: <a href="https://github.com/yt-dlp/yt-dlp/commit/9ab4777b97b5280ae1f53d1fe1b8ac542727238b">Support <code>curl_cffi</code> 0.14.x</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15613">#15613</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>build</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/825648a740867cbecd2e593963d7aaf3d568db84">Bump official actions to latest versions</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15305">#15305</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ab3ff2d5dd220aa35805dadb6fae66ae9a0e2553">Harden CI/CD pipeline</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15387">#15387</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/3763d0d4ab8bdbe433ce08e45e21f36ebdeb5db3">Improve nightly release check</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15455">#15455</a>) by <a href="https://github.com/bashonly">bashonly</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/0b08b833bfca6a0882f4741bb8fa46c1698c77e5">0b08b83</a>)</li>
+</ul>
+</li>
+<li><strong>ci</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a6a8f6b6d6775caa031e5016b79db28c6aaadfcb">Explicitly declare permissions and limit credentials</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15324">#15324</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>cleanup</strong><ul>
+<li>Miscellaneous<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/a65349443b959b8ab6bdec8e573777006d29b827">a653494</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/8b275536d945c4b3d07b6c520677922c67a7c10f">8b27553</a> by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
     </item>    <item>
       <title>atuinsh/desktop v0.2.19</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.19</link>
@@ -4081,6 +5082,31 @@ on the system clipboard.</p>
       <category>desktop</category>
       <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
     </item>    <item>
+      <title>Kong/insomnia core@12.3.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.3.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.3.0</guid>
+      <pubDate>Thu, 15 Jan 2026 01:39:55 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.3.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9548 fix: git credential migration state storage path by @CurryYangxx in https://github.com/Kong/insomnia/pull/9549 feat: Make “Turn on AI” prompt clearer in Git Sync Smart Commits by @pavkout in...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.3.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9548">https://github.com/Kong/insomnia/pull/9548</a></li>
+<li>fix: git credential migration state storage path by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9549">https://github.com/Kong/insomnia/pull/9549</a></li>
+<li>feat: Make “Turn on AI” prompt clearer in Git Sync Smart Commits by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9544">https://github.com/Kong/insomnia/pull/9544</a></li>
+<li>fix: move deprecation warning above tests by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9554">https://github.com/Kong/insomnia/pull/9554</a></li>
+<li>fix: new git credential flow by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9553">https://github.com/Kong/insomnia/pull/9553</a></li>
+<li>Hide the git-repo form in the create project modal [INS-1900] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9558">https://github.com/Kong/insomnia/pull/9558</a></li>
+<li>Clarify macOS entitlements for local testing by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9559">https://github.com/Kong/insomnia/pull/9559</a></li>
+<li>feat(analytics): temporary org+project metrics by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9551">https://github.com/Kong/insomnia/pull/9551</a></li>
+<li>fix(mcp): minor ux improvements by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9555">https://github.com/Kong/insomnia/pull/9555</a></li>
+<li>fix: Improve CookieSchema expiration handling for Infinity values and invalid date inputs by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9543">https://github.com/Kong/insomnia/pull/9543</a></li>
+<li>fix: clarify git credential fields by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9566">https://github.com/Kong/insomnia/pull/9566</a></li>
+<li>refactor: Minor UX polish for AI Commits [INS-1644]  by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9561">https://github.com/Kong/insomnia/pull/9561</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.3.0-beta.0...core@12.3.0">https://github.com/Kong/insomnia/compare/core@12.3.0-beta.0...core@12.3.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.13</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.13</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.13</guid>
@@ -4510,6 +5536,58 @@ wasn&#39;t possible to create a buffer with only chinese characters it the name.
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
     </item>    <item>
+      <title>marlboro-advance/mpvEx v1.2.0</title>
+      <link>https://github.com/marlboro-advance/mpvEx/releases/tag/v1.2.0</link>
+      <guid isPermaLink="true">https://github.com/marlboro-advance/mpvEx/releases/tag/v1.2.0</guid>
+      <pubDate>Fri, 26 Dec 2025 21:42:29 GMT</pubDate>
+      <description>Checksums Variant SHA-256 arm64-v8a 6cabda5ca74f79d7fde5a8194fa9723212d57753b4db97dde59c520a308365e2 armeabi-v7a 43f54fad946a7f4630f0a1fb1e6b5167c7844b741359352c48d1b56496c570fd Universal bf1c2e932e555e3739ccd0cc7bc7378b66eb3ebe329f8547294d36eaa110da4f x86 24c96921c07b1e3b7cea577732ff9c19cd166ccf...</description>
+      <content:encoded><![CDATA[<hr>
+<h3>Checksums</h3>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>arm64-v8a</td>
+<td>6cabda5ca74f79d7fde5a8194fa9723212d57753b4db97dde59c520a308365e2</td>
+</tr>
+<tr>
+<td>armeabi-v7a</td>
+<td>43f54fad946a7f4630f0a1fb1e6b5167c7844b741359352c48d1b56496c570fd</td>
+</tr>
+<tr>
+<td>Universal</td>
+<td>bf1c2e932e555e3739ccd0cc7bc7378b66eb3ebe329f8547294d36eaa110da4f</td>
+</tr>
+<tr>
+<td>x86</td>
+<td>24c96921c07b1e3b7cea577732ff9c19cd166ccfe7d49f89e11e5ed3baf8aa65</td>
+</tr>
+<tr>
+<td>x86_64</td>
+<td>8bb662a191abbd35624d5c757d3189f6ec027d0effab4d61d5b5871120f0d008</td>
+</tr>
+</tbody></table>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>merge dev into master by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/189">https://github.com/marlboro-advance/mpvEx/pull/189</a></li>
+<li>Fix playlist mode by @Arnab11 in <a href="https://github.com/marlboro-advance/mpvEx/pull/168">https://github.com/marlboro-advance/mpvEx/pull/168</a></li>
+<li>merge dev into master by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/193">https://github.com/marlboro-advance/mpvEx/pull/193</a></li>
+<li>prepare for v1.2.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/203">https://github.com/marlboro-advance/mpvEx/pull/203</a></li>
+<li>Feature: Custom Seekbar Styles by @Riteshp2001 in <a href="https://github.com/marlboro-advance/mpvEx/pull/201">https://github.com/marlboro-advance/mpvEx/pull/201</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@Riteshp2001 made their first contribution in <a href="https://github.com/marlboro-advance/mpvEx/pull/201">https://github.com/marlboro-advance/mpvEx/pull/201</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/marlboro-advance/mpvEx/compare/v1.1.0...v1.2.0">https://github.com/marlboro-advance/mpvEx/compare/v1.1.0...v1.2.0</a></p>]]></content:encoded>
+      <category>marlboro-advance</category>
+      <category>mpvEx</category>
+      <source url="https://github.com/marlboro-advance/mpvEx">marlboro-advance/mpvEx</source>
+    </item>    <item>
       <title>doublecmd/doublecmd v1.1.31</title>
       <link>https://github.com/doublecmd/doublecmd/releases/tag/v1.1.31</link>
       <guid isPermaLink="true">https://github.com/doublecmd/doublecmd/releases/tag/v1.1.31</guid>
@@ -4698,6 +5776,79 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
       <category>doublecmd</category>
       <source url="https://github.com/doublecmd/doublecmd">doublecmd/doublecmd</source>
     </item>    <item>
+      <title>Kong/insomnia core@12.2.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.2.0</guid>
+      <pubDate>Fri, 19 Dec 2025 01:12:49 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.2.0-beta.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9490 Force the dropdown to be positioned below the input, adjust styles [INS-1850] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9492 Fix style issue by @yaoweiprc in https://github.com/...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.2.0-beta.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9490">https://github.com/Kong/insomnia/pull/9490</a></li>
+<li>Force the dropdown to be positioned below the input, adjust styles [INS-1850] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9492">https://github.com/Kong/insomnia/pull/9492</a></li>
+<li>Fix style issue by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9493">https://github.com/Kong/insomnia/pull/9493</a></li>
+<li>Fix: revert structuredClone method used for clone in context menu by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9494">https://github.com/Kong/insomnia/pull/9494</a></li>
+<li>Add fuzzy match for searching repos and branches by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9497">https://github.com/Kong/insomnia/pull/9497</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.2.0-beta.1...core@12.2.0">https://github.com/Kong/insomnia/compare/core@12.2.0-beta.1...core@12.2.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>marlboro-advance/mpvEx v1.1.0</title>
+      <link>https://github.com/marlboro-advance/mpvEx/releases/tag/v1.1.0</link>
+      <guid isPermaLink="true">https://github.com/marlboro-advance/mpvEx/releases/tag/v1.1.0</guid>
+      <pubDate>Sun, 14 Dec 2025 12:52:37 GMT</pubDate>
+      <description>Checksums Variant SHA-256 arm64-v8a c83f7b22569c6127e2ccc1f52fa0e1b6de2ff83d7cac5a583c0ffb647041ab0b armeabi-v7a f041ffe61ace69d1e6c7ed6886129891c2a06d86bc65fee9192b32e99fe4b32e Universal 1a3160f4ad065c0ed01d68ec0aa8404e77fd6d9a9d421783e96daae0b779fd90 x86 b3382bfbee558c0e1ff627f0e5bb9fe1158e92fa...</description>
+      <content:encoded><![CDATA[<hr>
+<h3>Checksums</h3>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>arm64-v8a</td>
+<td>c83f7b22569c6127e2ccc1f52fa0e1b6de2ff83d7cac5a583c0ffb647041ab0b</td>
+</tr>
+<tr>
+<td>armeabi-v7a</td>
+<td>f041ffe61ace69d1e6c7ed6886129891c2a06d86bc65fee9192b32e99fe4b32e</td>
+</tr>
+<tr>
+<td>Universal</td>
+<td>1a3160f4ad065c0ed01d68ec0aa8404e77fd6d9a9d421783e96daae0b779fd90</td>
+</tr>
+<tr>
+<td>x86</td>
+<td>b3382bfbee558c0e1ff627f0e5bb9fe1158e92fa15cf303241f87dcb84352e81</td>
+</tr>
+<tr>
+<td>x86_64</td>
+<td>8f990df245e51143bfb701cf8c700374f8d2b009d777168dd2e779de0717fed1</td>
+</tr>
+</tbody></table>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>prepare for v1.1.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/37">https://github.com/marlboro-advance/mpvEx/pull/37</a></li>
+<li>chore: remove unused control layout files to clean up UI component structure by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/39">https://github.com/marlboro-advance/mpvEx/pull/39</a></li>
+<li>add playlist mode for automatic video navigation by @Arnab11 in <a href="https://github.com/marlboro-advance/mpvEx/pull/43">https://github.com/marlboro-advance/mpvEx/pull/43</a></li>
+<li>feat: implement file manager mode with filesystem browsing, breadcrumb navigation, and folder/video listing to enhance navigation options and user control over media organization by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/47">https://github.com/marlboro-advance/mpvEx/pull/47</a></li>
+<li>feat: add network connection and file browsing support for SMB, FTP, WebDAV with proper URL handling, credentials, and proxy integration and various other minor ui improvements by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/65">https://github.com/marlboro-advance/mpvEx/pull/65</a></li>
+<li>chore: various bug fixes and ui improvements by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/76">https://github.com/marlboro-advance/mpvEx/pull/76</a></li>
+<li>prepare for v1.1.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/102">https://github.com/marlboro-advance/mpvEx/pull/102</a></li>
+<li>prepare for v1.1.0 release by @marlboro-advance in <a href="https://github.com/marlboro-advance/mpvEx/pull/145">https://github.com/marlboro-advance/mpvEx/pull/145</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@Arnab11 made their first contribution in <a href="https://github.com/marlboro-advance/mpvEx/pull/43">https://github.com/marlboro-advance/mpvEx/pull/43</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/marlboro-advance/mpvEx/compare/v1.0.0...v1.1.0">https://github.com/marlboro-advance/mpvEx/compare/v1.0.0...v1.1.0</a></p>]]></content:encoded>
+      <category>marlboro-advance</category>
+      <category>mpvEx</category>
+      <source url="https://github.com/marlboro-advance/mpvEx">marlboro-advance/mpvEx</source>
+    </item>    <item>
       <title>atuinsh/desktop v0.2.11</title>
       <link>https://github.com/atuinsh/desktop/releases/tag/v0.2.11</link>
       <guid isPermaLink="true">https://github.com/atuinsh/desktop/releases/tag/v0.2.11</guid>
@@ -4723,6 +5874,204 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
       <category>atuinsh</category>
       <category>desktop</category>
       <source url="https://github.com/atuinsh/desktop">atuinsh/desktop</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2025.12.08</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2025.12.08</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2025.12.08</guid>
+      <pubDate>Mon, 08 Dec 2025 00:15:34 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Changelog Core changes Respect PATHEXT whe...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2025.12.08#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/aa220d0aaac0f1562af658e34a28de72ec0ecb9f/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Core changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e564b4a8080cff48fa0c28f20272c05085ee6130">Respect <code>PATHEXT</code> when locating JS runtime on Windows</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15117">#15117</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><strong>cookies</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/fa16dc5241ac1552074feee48e1c2605dc36d352">Fix <code>--cookies-from-browser</code> for new installs of Firefox 147+</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15215">#15215</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/mbway">mbway</a></li>
+</ul>
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>agalega</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/3cb5e4db54d44fe82d4eee94ae2f37cbce2e7dfc">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15105">#15105</a>) by <a href="https://github.com/putridambassador121">putridambassador121</a></li>
+<li><strong>alibaba</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c70b57c03e0c25767a5166620798297a2a4878fb">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15253">#15253</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>bitmovin</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/45a3b42bb917e99b0b5c155c272ebf4a82a5bf66">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15064">#15064</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>digiteka</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/6842620d56e4c4e6affb90c2f8dff8a36dee852c">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14903">#14903</a>) by <a href="https://github.com/beliote">beliote</a></li>
+<li><strong>fc2</strong>: live: <a href="https://github.com/yt-dlp/yt-dlp/commit/4433b3a217c9f430dc057643bfd7b6769eff4a45">Raise appropriate error when stream is offline</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15180">#15180</a>) by <a href="https://github.com/Zer0spectrum">Zer0spectrum</a></li>
+<li><strong>floatplane</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/b333ef1b3f961e292a8bf7052c54b54c81587a17">Add subtitle support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15069">#15069</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>jtbc</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/947e7883406e5ea43687d6e4ff721cc0162c9664">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15047">#15047</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>loom</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/36b29bb3532e008a2aaf3d36d1c6fc3944137930">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15236">#15236</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>mave</strong>: channel: <a href="https://github.com/yt-dlp/yt-dlp/commit/5f66ac71f6637f768cd251509b0a932d0ce56427">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14915">#14915</a>) by <a href="https://github.com/anlar">anlar</a></li>
+<li><strong>medaltv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a4c72acc462668a938827370bd77084a1cd4733b">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15103">#15103</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>netapp</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/20f83f208eae863250b35e2761adad88e91d85a1">Add extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15122">#15122</a>) by <a href="https://github.com/darkstar">darkstar</a></li>
+<li><strong>nhk</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/12d411722a3d7a0382d1d230a904ecd4e20298b6">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14528">#14528</a>) by <a href="https://github.com/garret1317">garret1317</a></li>
+<li><strong>nowcanal</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/4e680db1505dafb93313b1d42ffcd3f230fcc92a">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14584">#14584</a>) by <a href="https://github.com/pferreir">pferreir</a></li>
+<li><strong>patreon</strong>: campaign: <a href="https://github.com/yt-dlp/yt-dlp/commit/023e4db9afe0630c608621846856a1ca876d8bab">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15108">#15108</a>) by <a href="https://github.com/thomasmllt">thomasmllt</a></li>
+<li><strong>rinsefm</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/d6aa8c235d2e7d9374f79ec73af23a3859c76bea">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15020">#15020</a>) by <a href="https://github.com/1bnBattuta">1bnBattuta</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>s4c</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/26c2545b87e2b22f134d1f567ed4d4b0b91c3253">Fix geo-restricted content</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15196">#15196</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>soundcloudplaylist</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1dd84b9d1c33e50de49866b0d93c2596897ce506">Support new API URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15071">#15071</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>sporteurope</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/025191fea655ac879ca6dc68df358c26456a6e46">Support new domain</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15251">#15251</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>sproutvideo</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/2c9f0c3456057aff0631d9ea6d3eda70ffd8aabe">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15113">#15113</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>thechosen</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/854fded114f3b7b33693c2d3418575d04014aa4b">Add extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14183">#14183</a>) by <a href="https://github.com/mrFlamel">mrFlamel</a></li>
+<li><strong>thisoldhouse</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/9daba4f442139ee2537746398afc5ac30b51c28c">Fix login support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15097">#15097</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>tubitv</strong>: series: <a href="https://github.com/yt-dlp/yt-dlp/commit/2a777ecbd598de19a4c691ba1f790ccbec9cdbc4">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15018">#15018</a>) by <a href="https://github.com/Zer0spectrum">Zer0spectrum</a></li>
+<li><strong>urplay</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c2e7e9cdb2261adde01048d161914b156a3bad51">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15120">#15120</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>web.archive</strong>: youtube: <a href="https://github.com/yt-dlp/yt-dlp/commit/7ec6b9bc40ee8a21b11cce83a09a07a37014062e">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15234">#15234</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>wistiachannel</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0c696239ef418776ac6ba20284bd2f3976a011b4">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14218">#14218</a>) by <a href="https://github.com/Sojiroh">Sojiroh</a></li>
+<li><strong>xhamster</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/29e257037862f3b2ad65e6e8d2972f9ed89389e3">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15252">#15252</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>yfanefa</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/af285016d2b14c4445109283e7c590b31542de88">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15032">#15032</a>) by <a href="https://github.com/Haytam001">Haytam001</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f7acf3c1f42cc474927ecc452205d7877af36731">Add <code>use_ad_playback_context</code> extractor-arg</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15220">#15220</a>) by <a href="https://github.com/WhatAmISupposedToPutHere">WhatAmISupposedToPutHere</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/7bd79d92965fe9f84d7e1720eb6bb10fa9a10c77">Allow <code>ejs</code> patch version to differ</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15263">#15263</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/4cb5e191efeebc3679f89c3c8ac819bcd511bb1f">Detect &quot;super resolution&quot; AI-upscaled formats</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15050">#15050</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/715af0c636b2b33fb3df1eb2ee37eac8262d43ac">Determine wait time from player response</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14646">#14646</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/WhatAmISupposedToPutHere">WhatAmISupposedToPutHere</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/419776ecf57269efb13095386a19ddc75c1f11b2">Extract all automatic caption languages</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15156">#15156</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1d43fa5af883f96af902a29544fc766f5e97fce6">Improve message when no JS runtime is found</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15266">#15266</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/0c7e4cfcaed95909d7c1c0a11b5a12881bcfdfd6">Update ejs to 0.3.2</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15267">#15267</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+<h4>Downloader changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/23f1ab346927ab73ad510fd7ba105a69e5291c66">Fix playback wait time for ffmpeg downloads</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15066">#15066</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Postprocessor changes</h4>
+<ul>
+<li><strong>ffmpeg</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0eed3fe530d6ff4b668494c5b1d4d6fc1ade96f7">Fix uncaught error if bad --ffmpeg-location is given</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15104">#15104</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>ffmpegmetadata</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/04050be583aae21f99932a674d1d2992ff016d5c">Add more tag mappings</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14654">#14654</a>) by <a href="https://github.com/garret1317">garret1317</a></li>
+</ul>
+<h4>Networking changes</h4>
+<ul>
+<li><strong>Request Handler</strong>: urllib: <a href="https://github.com/yt-dlp/yt-dlp/commit/6ee6a6fc58d6254ef944bd311e6890e208a75e98">Do not read after close</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15049">#15049</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>build</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/280165026886a1f1614ab527c34c66d71faa5d69">Bump PyInstaller minimum version requirement to 6.17.0</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15199">#15199</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>cleanup</strong>: Miscellaneous: <a href="https://github.com/yt-dlp/yt-dlp/commit/7a52ff29d86efc8f3adeba977b2009ce40b8e52e">7a52ff2</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/oxyzenQ">oxyzenQ</a>, <a href="https://github.com/RezSat">RezSat</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>devscripts</strong>: <code>install_deps</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/29fe515d8d3386b3406ff02bdabb967d6821bc02">Align options/terms with PEP 735</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15200">#15200</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
+      <title>Kong/insomnia core@12.1.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.1.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.1.0</guid>
+      <pubDate>Fri, 21 Nov 2025 17:29:45 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.1.0-beta.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9406 Fix issues in merge modal [INS-1742] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9404 Full Changelog : https://github.com/Kong/insomnia/compare/core@12.1.0-beta.1...core@12.1.0</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.1.0-beta.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9406">https://github.com/Kong/insomnia/pull/9406</a></li>
+<li>Fix issues in merge modal [INS-1742] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9404">https://github.com/Kong/insomnia/pull/9404</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.1.0-beta.1...core@12.1.0">https://github.com/Kong/insomnia/compare/core@12.1.0-beta.1...core@12.1.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2025.11.12</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2025.11.12</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2025.11.12</guid>
+      <pubDate>Wed, 12 Nov 2025 01:00:04 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Important changes An external JavaScript r...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2025.11.12#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/5977782142ca7e41240f07202cc9b8dcc087b401/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<h4>Important changes</h4>
+<ul>
+<li><strong>An external JavaScript runtime is now required for full YouTube support</strong>
+yt-dlp now requires users to have an external JavaScript runtime (e.g. Deno) installed in order to solve the JavaScript challenges presented by YouTube. <a href="https://github.com/yt-dlp/yt-dlp/issues/15012">Read more</a></li>
+</ul>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Core changes</h4>
+<ul>
+<li><strong>cookies</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e6414d64e73d86d65bb357e5ad59d0ca080d5812">Allow <code>--cookies-from-browser</code> for Safari on iOS</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14950">#14950</a>) by <a href="https://github.com/pha1n0q">pha1n0q</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/bf7e04e9d8bd3c4a4614b67ce617b7ae5d17d62a">Support Firefox cookies database v17</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15010">#15010</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</li>
+<li><strong>sponsorblock</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/52f3c56e83bbb25eec2496b0499768753732a093">Add <code>hook</code> category</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14845">#14845</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>update</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1c2ad94353d1c9e03615d20b6bbfc293286c7a32">Fix PyInstaller onedir variant detection</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14800">#14800</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>1tv</strong>: live: <a href="https://github.com/yt-dlp/yt-dlp/commit/19c5d7c53013440ec4f3f56ebbb067531b272f3f">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14299">#14299</a>) by <a href="https://github.com/swayll">swayll</a></li>
+<li><strong>ardaudiothek</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/0046fbcbfceee32fa2f68a8ea00cca02765470b6">Add extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14309">#14309</a>) by <a href="https://github.com/evilpie">evilpie</a>, <a href="https://github.com/marieell">marieell</a></li>
+<li><strong>bunnycdn</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/228ae9f0f2b441fa1296db2ed2b7afbd4a9a62a1">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14954">#14954</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/3ef867451cd9604b4195dfee00db768619629b2d">Support player subdomain URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14979">#14979</a>) by <a href="https://github.com/einstein95">einstein95</a></li>
+</ul>
+</li>
+<li><strong>discoverynetworksde</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/10dea209d2460daf924c93835ddc2f0301cf2cd4">Fix extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14818">#14818</a>) by <a href="https://github.com/dirkf">dirkf</a>, <a href="https://github.com/w4grfw">w4grfw</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/f3c255b63bd26069151fc3d3ba6dc626bb62ad6e">f3c255b</a> by <a href="https://github.com/bashonly">bashonly</a>)</li>
+<li><strong>floatplane</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1ac7e6005cd3be9fff0b28be189c3a68ecd4c593">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14984">#14984</a>) by <a href="https://github.com/i3p9">i3p9</a></li>
+<li><strong>googledrive</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/6d05cee4df30774ddce5c5c751fd2118f40c24fe">Fix subtitles extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14809">#14809</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/70f1098312fe53bc85358f7bd624370878b2fa28">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14746">#14746</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+</ul>
+</li>
+<li><strong>kika</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/79f9232ffbd57dde91c372b673b42801edaa9e53">Do not extract non-existent subtitles</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14813">#14813</a>) by <a href="https://github.com/InvalidUsernameException">InvalidUsernameException</a></li>
+<li><strong>mux</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a0bda3b78609593ce1127215fc035c1a308a89b6">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14914">#14914</a>) by <a href="https://github.com/PierceLBrooks">PierceLBrooks</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>nascarclassics</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/e8a6b1ca92f2a0ce2c187668165be23dc5506aab">Add extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14866">#14866</a>) by <a href="https://github.com/JrM2628">JrM2628</a></li>
+<li><strong>nbc</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/ee3a106f34124f0e2d28f062f5302863fd7639be">Detect and discard DRM formats</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14844">#14844</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>ntv.ru</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/5dde0d0c9fcef2ce57e486b2e563e0dff9b2845a">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14934">#14934</a>) by <a href="https://github.com/anlar">anlar</a>, <a href="https://github.com/seproDev">seproDev</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/a86eeaadf236ceaf6bb232eb410cf21572538aa6">a86eeaa</a> by <a href="https://github.com/seproDev">seproDev</a>)</li>
+<li><strong>play.tv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/73fd850d170e01c47c31aaa6aa8fe90856d9ad18">Update extractor for new domain</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14905">#14905</a>) by <a href="https://github.com/thomasmllt">thomasmllt</a></li>
+<li><strong>tubetugraz</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f3597cfafcab4d7d4c6d41bff3647681301f1e6b">Support alternate URL format</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14718">#14718</a>) by <a href="https://github.com/krystophny">krystophny</a></li>
+<li><strong>twitch</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/cb78440e468608fd55546280b537387d375335f2">Fix playlist extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15008">#15008</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/ctengel">ctengel</a></li>
+<li>stream: <a href="https://github.com/yt-dlp/yt-dlp/commit/7eff676183518175ce495ae63291c89f9b39f02a">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14988">#14988</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li>vod: <a href="https://github.com/yt-dlp/yt-dlp/commit/b46c572b26be15683584102c5fb7e7bfde0c9821">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14999">#14999</a>) by <a href="https://github.com/Zer0spectrum">Zer0spectrum</a></li>
+</ul>
+</li>
+<li><strong>urplay</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/808b1fed76fbd07840cc23a346c11334e3d34f43">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14785">#14785</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>web.archive</strong>: youtube: <a href="https://github.com/yt-dlp/yt-dlp/commit/d9e3011fd1c3a75871a50e78533afe78ad427ce3">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14753">#14753</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>xhamster</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a1d6351c3fc82c07fa0ee70811ed84807f6bbb58">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14948">#14948</a>) by <a href="https://github.com/CaramelConnoisseur">CaramelConnoisseur</a>, <a href="https://github.com/dhwz">dhwz</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/61cf34f5447177a73ba25ea9a47d7df516ca3b3b">Add <code>tv_downgraded</code> client</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14887">#14887</a>) by <a href="https://github.com/seproDev">seproDev</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/fa35eb27eaf27df7b5854f527a89fc828c9e0ec0">fa35eb2</a>)</li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/d6ee67725397807bbb5edcd0b2c94f5bca62d3f4">Fix <code>web_embedded</code> client extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14843">#14843</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/a56217f9f6c594f6c419ce8dce9134198a9d90d0">Fix auto-generated metadata extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13896">#13896</a>) by <a href="https://github.com/TheQWERTYCodr">TheQWERTYCodr</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/afc44022d0b736b2b3e87b52490bd35c53c53632">Fix original language detection</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14919">#14919</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/6224a3898821965a7d6a2cb9cc2de40a0fd6e6bc">Implement external n/sig solver</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14157">#14157</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/coletdjnz">coletdjnz</a>, <a href="https://github.com/Grub4K">Grub4K</a>, <a href="https://github.com/seproDev">seproDev</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/4b4223b436fb03a12628679daed32ae4fc15ae4b">4b4223b</a>, <a href="https://github.com/yt-dlp/yt-dlp/commit/ee98be4ad767b77e4d8dd9bfd3c7d10f2e8397ff">ee98be4</a>, <a href="https://github.com/yt-dlp/yt-dlp/commit/c0c9f30695db314df084e8701a7c376eb54f283c">c0c9f30</a>, <a href="https://github.com/yt-dlp/yt-dlp/commit/cacd1630a1a59e92f857d0d175c8730cffbf9801">cacd163</a>, <a href="https://github.com/yt-dlp/yt-dlp/commit/8636a9bac3bed99984c1e297453660468ecf504b">8636a9b</a>)</li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/f87cfadb5c3cba8e9dc4231c9554548e9edb3882">Support collaborators</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14677">#14677</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li>tab: <a href="https://github.com/yt-dlp/yt-dlp/commit/1d2f0edaf978a5541cfb8f7e83fec433c65c1011">Fix duration extraction for feeds</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14668">#14668</a>) by <a href="https://github.com/WeidiDeng">WeidiDeng</a></li>
+</ul>
+</li>
+</ul>
+<h4>Downloader changes</h4>
+<ul>
+<li><strong>ffmpeg</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ffb7b7f446b6c67a28c66598ae91f4f2263e0d75">Apply <code>ffmpeg_args</code> for each format</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14886">#14886</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/7af6d81f35aea8832023daa30ada10e6673a0529">Limit read rate for DASH livestreams</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14918">#14918</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+<h4>Networking changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/5767fb4ab108dddb07fc839a3b0f4d323a7c4bea">Ensure underlying file object is closed when fully read</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14935">#14935</a>) by <a href="https://github.com/coletdjnz">coletdjnz</a></li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c96e9291ab7bd6e7da66d33424982c8b0b4431c7">Fix zsh path argument completion</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14953">#14953</a>) by <a href="https://github.com/matyb08">matyb08</a></li>
+<li><strong>build</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/646904cd3a79429ec5fdc43f904b3f57ae213f34">Bump musllinux Python version to 3.14</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14623">#14623</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>cleanup</strong><ul>
+<li>Miscellaneous<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c63b4e2a2b81cc78397c8709ef53ffd29bada213">c63b4e2</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/matyb08">matyb08</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/335653be82d5ef999cfc2879d005397402eebec1">335653b</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>devscripts</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/73922e66e437fb4bb618bdc119a96375081bf508">Improve <code>install_deps</code> script</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14766">#14766</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>test</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/ade8c2b36ff300edef87d48fd1ba835ac35c5b63">Skip flaky tests if source unchanged</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14970">#14970</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
     </item>    <item>
       <title>doublecmd/doublecmd v1.1.30</title>
       <link>https://github.com/doublecmd/doublecmd/releases/tag/v1.1.30</link>
@@ -4912,6 +6261,87 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
       <category>doublecmd</category>
       <source url="https://github.com/doublecmd/doublecmd">doublecmd/doublecmd</source>
     </item>    <item>
+      <title>Kong/insomnia core@12.0.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.0.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.0.0</guid>
+      <pubDate>Mon, 03 Nov 2025 13:06:45 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 12.0.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9308 Use codemirror merge addon to replace mis-merge [INS-1425] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9268 fix: type imports for contributors by @ryan-willis in https://github.co...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 12.0.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9308">https://github.com/Kong/insomnia/pull/9308</a></li>
+<li>Use codemirror merge addon to replace mis-merge [INS-1425] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9268">https://github.com/Kong/insomnia/pull/9268</a></li>
+<li>fix: type imports for contributors by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9310">https://github.com/Kong/insomnia/pull/9310</a></li>
+<li>fix: hide create mock server when creation not allowed by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9301">https://github.com/Kong/insomnia/pull/9301</a></li>
+<li>feat: sparkles badge for AI features by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9306">https://github.com/Kong/insomnia/pull/9306</a></li>
+<li>feat: update commit generation area by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9319">https://github.com/Kong/insomnia/pull/9319</a></li>
+<li>fix: mcp issues by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9321">https://github.com/Kong/insomnia/pull/9321</a></li>
+<li>Fix: oauth redirection issue for MCP by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9316">https://github.com/Kong/insomnia/pull/9316</a></li>
+<li>fix: redundant update toast by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9322">https://github.com/Kong/insomnia/pull/9322</a></li>
+<li>fix: delete wrong tailwind class by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9266">https://github.com/Kong/insomnia/pull/9266</a></li>
+<li>[INS-1598] - fix &quot;see all features&quot; link visibility in onboarding by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9317">https://github.com/Kong/insomnia/pull/9317</a></li>
+<li>feat: new pricing features by @xiaodemen in <a href="https://github.com/Kong/insomnia/pull/9176">https://github.com/Kong/insomnia/pull/9176</a></li>
+<li>fix: autoupdate ux by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9295">https://github.com/Kong/insomnia/pull/9295</a></li>
+<li>fix: use string readyState to make mcp ux more accurate by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9323">https://github.com/Kong/insomnia/pull/9323</a></li>
+<li>Fix new pricing issues before v12 launch by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9330">https://github.com/Kong/insomnia/pull/9330</a></li>
+<li>fix: unify and add links for new insomnia docs by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9333">https://github.com/Kong/insomnia/pull/9333</a></li>
+<li>chore: add docs gen docs by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9312">https://github.com/Kong/insomnia/pull/9312</a></li>
+<li>Fix/git checkout offline error msg by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9335">https://github.com/Kong/insomnia/pull/9335</a></li>
+<li>feat: clear all credentials upon logout [INS-1630] by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9328">https://github.com/Kong/insomnia/pull/9328</a></li>
+<li>Change wording [INS-1547] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9340">https://github.com/Kong/insomnia/pull/9340</a></li>
+<li>fix ndjson parser by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9318">https://github.com/Kong/insomnia/pull/9318</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.0.0-beta.0...core@12.0.0">https://github.com/Kong/insomnia/compare/core@12.0.0-beta.0...core@12.0.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
+      <title>yt-dlp/yt-dlp 2025.10.22</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2025.10.22</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2025.10.22</guid>
+      <pubDate>Wed, 22 Oct 2025 19:51:38 GMT</pubDate>
+      <description>A description of the various files is in the README The PyInstaller-bundled executables are subject to the licenses described in THIRD_PARTY_LICENSES.txt Important changes A stopgap release with a TEMPORARY partial fix for YouTube support Some formats may still be unavailable, especially if cooki...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2025.10.22#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The PyInstaller-bundled executables are subject to the licenses described in <a href="https://github.com/yt-dlp/yt-dlp/blob/a75399d89f90b249ccfda148987e10bc688e2f84/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<h4>Important changes</h4>
+<ul>
+<li><strong>A stopgap release with a <em>TEMPORARY partial</em> fix for YouTube support</strong>
+Some formats may still be unavailable, especially if cookies are passed to yt-dlp. The <em><strong>NEXT</strong></em> release, expected very soon, <strong>will require an external JS runtime (e.g. Deno)</strong> in order for YouTube downloads to work properly. <a href="https://github.com/yt-dlp/yt-dlp/issues/14404">Read more</a></li>
+<li><strong>The minimum <em>required</em> Python version has been raised to 3.10</strong>
+Python 3.9 has reached its end-of-life as of October 2025, and yt-dlp has now removed support for it. <a href="https://github.com/yt-dlp/yt-dlp/issues/13858">Read more</a></li>
+</ul>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Core changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/4e6a693057cfaf1ce1f07b019ed3bfce2bf936f6">Remove Python 3.9 support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13861">#13861</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Extractor changes</h4>
+<ul>
+<li><strong>appleconnect</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/78748b506f0dca8236ac0045ed7f72f7cf334b62">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13229">#13229</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>idagio</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c9356f308dd3c5f9f494cb40ed14c5df017b4fe0">Support URLs with country codes</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14655">#14655</a>) by <a href="https://github.com/robin-mu">robin-mu</a></li>
+<li><strong>tvnoe</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/fe5ae54a7b08ebe679f03afdeafbe1cee5784d5b">Rework Extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13369">#13369</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>youtube</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/2c9091e355a7ba5d1edb69796ecdca48199b77fb">Use temporary player client workaround</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14693">#14693</a>) by <a href="https://github.com/gamer191">gamer191</a></li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>cleanup</strong><ul>
+<li>Miscellaneous<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c7bda2192aa24afce40fdbbbe056d269aa3b2872">c7bda21</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/de7b3c0705022cb777c5b4b7f0c69c59ad6ff538">de7b3c0</a> by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>docs</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/dfc0a84c192a7357dd1768cc345d590253a14fe5">Update list of maintainers</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14148">#14148</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/coletdjnz">coletdjnz</a>, <a href="https://github.com/seproDev">seproDev</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
       <title>heyman/heynote v2.6.2</title>
       <link>https://github.com/heyman/heynote/releases/tag/v2.6.2</link>
       <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.6.2</guid>
@@ -4933,6 +6363,63 @@ rows from the beginning of the block)</li>
       <category>heyman</category>
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
+    </item>    <item>
+      <title>Kong/insomnia core@11.6.2</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</guid>
+      <pubDate>Tue, 21 Oct 2025 21:08:20 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 11.6.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9154 Change the validation rule for branch name in cloud sync [INS-1041] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9126 fix: auth code redirect uri affects implicit by @ZxBing0066 in https:...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 11.6.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9154">https://github.com/Kong/insomnia/pull/9154</a></li>
+<li>Change the validation rule for branch name in cloud sync [INS-1041] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9126">https://github.com/Kong/insomnia/pull/9126</a></li>
+<li>fix: auth code redirect uri affects implicit by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9158">https://github.com/Kong/insomnia/pull/9158</a></li>
+<li>feat: Enhance the real time event polling mechanism for websocket and socket-io  by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9157">https://github.com/Kong/insomnia/pull/9157</a></li>
+<li>Remove dependency on @mismerge/react [INS-1418] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9145">https://github.com/Kong/insomnia/pull/9145</a></li>
+<li>use toast instead of show-notification by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9128">https://github.com/Kong/insomnia/pull/9128</a></li>
+<li>chore: explicit external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9124">https://github.com/Kong/insomnia/pull/9124</a></li>
+<li>add path check to read file by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9180">https://github.com/Kong/insomnia/pull/9180</a></li>
+<li>[INS-1309] - Improve init/complete sign in flows with GitHub/GitLab by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9181">https://github.com/Kong/insomnia/pull/9181</a></li>
+<li>fix: wrong expiry time of oauth token by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9182">https://github.com/Kong/insomnia/pull/9182</a></li>
+<li>fix: should show correct error boundary by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9184">https://github.com/Kong/insomnia/pull/9184</a></li>
+<li>Fix release recurring builds by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9191">https://github.com/Kong/insomnia/pull/9191</a></li>
+<li>Bump react-aria by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9188">https://github.com/Kong/insomnia/pull/9188</a></li>
+<li>feat: create collection from mock server routes by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9156">https://github.com/Kong/insomnia/pull/9156</a></li>
+<li>feat: Improve global modals by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9190">https://github.com/Kong/insomnia/pull/9190</a></li>
+<li>React-19-pre-upgrade by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9199">https://github.com/Kong/insomnia/pull/9199</a></li>
+<li>reduce esbuild external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9213">https://github.com/Kong/insomnia/pull/9213</a></li>
+<li>refactor: wrap sensitive readFile - INS-1442 by @jackkav in <a href="https://github.com/Kong/insomnia/pull/8992">https://github.com/Kong/insomnia/pull/8992</a></li>
+<li>refactor importers to run in node by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9217">https://github.com/Kong/insomnia/pull/9217</a></li>
+<li>fix link rendering by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9223">https://github.com/Kong/insomnia/pull/9223</a></li>
+<li>fix: help text that incorrectly refers to momentjs by @judss in <a href="https://github.com/Kong/insomnia/pull/9225">https://github.com/Kong/insomnia/pull/9225</a></li>
+<li>fix: support specific importer when import from curl by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9197">https://github.com/Kong/insomnia/pull/9197</a></li>
+<li>chore(docs): add note on macOS entitlements for local testing of packaged app by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9227">https://github.com/Kong/insomnia/pull/9227</a></li>
+<li>fix: curl import issue when parse the pair value by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9198">https://github.com/Kong/insomnia/pull/9198</a></li>
+<li>chore(pkg): exclude source map files from build output by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9228">https://github.com/Kong/insomnia/pull/9228</a></li>
+<li>fix(deps): Move @react-router/dev to dev dependencies by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9231">https://github.com/Kong/insomnia/pull/9231</a></li>
+<li>fix: request is sent before script has been persisted by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9237">https://github.com/Kong/insomnia/pull/9237</a></li>
+<li>chore: increase timeout to 45 minutes for building artifacts by @notjaywu in <a href="https://github.com/Kong/insomnia/pull/9238">https://github.com/Kong/insomnia/pull/9238</a></li>
+<li>fix: modal show in non-auth pane by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9246">https://github.com/Kong/insomnia/pull/9246</a></li>
+<li>Fix: real time response pane event issue by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9248">https://github.com/Kong/insomnia/pull/9248</a></li>
+<li>fix: file tag returns getPath error in the elevated mode by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9251">https://github.com/Kong/insomnia/pull/9251</a></li>
+<li>fix: check clientCerts and return correct error message when accessing denied for CLI by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9252">https://github.com/Kong/insomnia/pull/9252</a></li>
+<li>fix: missing body menu items after the key changes by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9253">https://github.com/Kong/insomnia/pull/9253</a></li>
+<li>fix: the danger color is same as background then icon seems invisible by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9254">https://github.com/Kong/insomnia/pull/9254</a></li>
+<li>Fix wrong user data dir [INS-1549] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9258">https://github.com/Kong/insomnia/pull/9258</a></li>
+<li>fix(Modals): Add ModalOverlay to global modals for proper stacking behavior by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9259">https://github.com/Kong/insomnia/pull/9259</a></li>
+<li>fix: add project to descendant map - [INS-1562] by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9264">https://github.com/Kong/insomnia/pull/9264</a></li>
+<li>chore: reduce vite external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9212">https://github.com/Kong/insomnia/pull/9212</a></li>
+<li>fix: sentry sourcemap - [INS-1255] by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9249">https://github.com/Kong/insomnia/pull/9249</a></li>
+<li>fix(Navigation): Store/recover navigation history in the app by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9284">https://github.com/Kong/insomnia/pull/9284</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@judss made their first contribution in <a href="https://github.com/Kong/insomnia/pull/9225">https://github.com/Kong/insomnia/pull/9225</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.1...core@11.6.2">https://github.com/Kong/insomnia/compare/core@11.6.1...core@11.6.2</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
@@ -5592,6 +7079,33 @@ The 2.6.0 version was yanked due to a bug.</p>
       <category>heyman</category>
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
+    </item>    <item>
+      <title>Kong/insomnia core@11.6.1</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.1</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.1</guid>
+      <pubDate>Thu, 18 Sep 2025 07:30:33 GMT</pubDate>
+      <description>What&amp;#39;s Changed :rocket: 11.6.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9132 Fix merge modal style issue [INS-908] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9133 fix: Get image name and provenance repository from environment variables by @balugeorge in https://...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>:rocket: 11.6.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9132">https://github.com/Kong/insomnia/pull/9132</a></li>
+<li>Fix merge modal style issue [INS-908] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9133">https://github.com/Kong/insomnia/pull/9133</a></li>
+<li>fix: Get image name and provenance repository from environment variables by @balugeorge in <a href="https://github.com/Kong/insomnia/pull/9134">https://github.com/Kong/insomnia/pull/9134</a></li>
+<li>dbl click unpin by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9127">https://github.com/Kong/insomnia/pull/9127</a></li>
+<li>feat: Support Vault Dedicated for Hashicorp by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9082">https://github.com/Kong/insomnia/pull/9082</a></li>
+<li>fix: eliminate extra border by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9091">https://github.com/Kong/insomnia/pull/9091</a></li>
+<li>Closes #8946. OAuth2 plugin refresh token issue using basic auth for client credentials. by @ulisesbocchio in <a href="https://github.com/Kong/insomnia/pull/8947">https://github.com/Kong/insomnia/pull/8947</a></li>
+<li>feat: polish scratch pad by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9123">https://github.com/Kong/insomnia/pull/9123</a></li>
+<li>[INS-1054] Remove .git suffix requirement for custom git repository URL by @godfrzero in <a href="https://github.com/Kong/insomnia/pull/9086">https://github.com/Kong/insomnia/pull/9086</a></li>
+<li>fix: Discard actions now respect staged vs unstaged changes and prevent silent data loss [INS-1099] by @pavkout in <a href="https://github.com/Kong/insomnia/pull/9141">https://github.com/Kong/insomnia/pull/9141</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@ulisesbocchio made their first contribution in <a href="https://github.com/Kong/insomnia/pull/8947">https://github.com/Kong/insomnia/pull/8947</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.0...core@11.6.1">https://github.com/Kong/insomnia/compare/core@11.6.0...core@11.6.1</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>spotDL/spotify-downloader v4.4.2</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.2</link>
