@@ -10,9 +10,62 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 27 Apr 2026 09:50:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 12:39:18 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 1.35.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.35.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.35.0</guid>
+      <pubDate>Mon, 27 Apr 2026 12:08:32 GMT</pubDate>
+      <description>Added Transcoding Server grouping and hidden-library browsing MAL/AniList/Simkl progress sync Per-tracker library whitelist/blacklist Match/unmatch metadata Settings export/import Global fullscreen toggle (F11 + sidebar) &amp;quot;Start in fullscreen&amp;quot; option on Windows/Linux Episode next/prev ho...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Transcoding</li>
+<li>Server grouping and hidden-library browsing</li>
+<li>MAL/AniList/Simkl progress sync</li>
+<li>Per-tracker library whitelist/blacklist</li>
+<li>Match/unmatch metadata</li>
+<li>Settings export/import</li>
+<li>Global fullscreen toggle (F11 + sidebar)</li>
+<li>&quot;Start in fullscreen&quot; option on Windows/Linux</li>
+<li>Episode next/prev hotkeys</li>
+<li>Toggle episode number on cards</li>
+<li>Toggle auto update check on startup</li>
+<li>ExoPlayer box-fit modes (letterbox/cover/stretch)</li>
+<li>ArtCNN shader presets</li>
+<li>Display switch delay on Android</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Suppress Steam Input duplicate actions on Windows</li>
+<li>Black screen navigating between videos in fullscreen on Windows</li>
+<li>Desktop double-click fullscreen full window area</li>
+<li>SAF download deletion on Android</li>
+<li>Skip deleted/inaccessible Plex media versions before play</li>
+<li>Chain adjacent-episode load behind play queue</li>
+<li>Auto-skip credits honors auto-play-next</li>
+<li>Stabilize grid column count when alpha bar shows</li>
+<li>Stable image cache key across window resize</li>
+<li>Retry Live TV tune, clamp timeline duration</li>
+<li>Paginate collection, playlist, and person endpoints</li>
+<li>Restrict failover to working endpoint network class</li>
+<li>Gate HTTP fallback for HTTPS hostnames; throw on non-2xx in failover</li>
+<li>Clamp playlist focus index on remove</li>
+<li>RangeError on short download paths</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Parallelize playback startup</li>
+<li>Image cache, decode, and eviction tuning on hot screens</li>
+<li>Lazy folder-tree row build</li>
+<li>Scoped MediaQuery accessors</li>
+<li>Indexed DownloadedMedia hot columns</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.34.2...1.35.0">https://github.com/edde746/plezy/compare/1.34.2...1.35.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.63s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.63s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.63s</guid>
@@ -2571,50 +2624,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>derFrisson</category>
       <category>plezy-apks</category>
       <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
-    </item>    <item>
-      <title>edde746/plezy 1.28.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.28.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.28.0</guid>
-      <pubDate>Thu, 19 Mar 2026 05:05:49 GMT</pubDate>
-      <description>Added Individual shared item support Live TV channel favorites Redesigned TV player controls behavior MKV seeking without Cues &amp;amp; zlib decompression support in ExoPlayer Cmd/Ctrl+F to open search Masked digits in TV PIN input Home hubs sorted by library order Fixed Reduce remote playback start...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Individual shared item support</li>
-<li>Live TV channel favorites</li>
-<li>Redesigned TV player controls behavior</li>
-<li>MKV seeking without Cues &amp; zlib decompression support in ExoPlayer</li>
-<li>Cmd/Ctrl+F to open search</li>
-<li>Masked digits in TV PIN input</li>
-<li>Home hubs sorted by library order</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Reduce remote playback startup latency</li>
-<li>Preserve chapters/markers in cache during watch state sync</li>
-<li>Tighten and align media detail screen spacing</li>
-<li>Prefer exact language code match in track selection</li>
-<li>Eliminate duplicate API requests on startup</li>
-<li>Focus search input on search tab</li>
-<li>Incorrect queue sheet item sizing</li>
-<li>Enable WAL mode for SQLite</li>
-<li>Reduce image cache budgets and add memory pressure handling</li>
-<li>SurfaceControl use-after-free</li>
-<li>Defer nativeSurfaceChanged out of layout pass</li>
-<li>Download deletion using DB file paths</li>
-<li>Set leafCount for offline season metadata</li>
-<li>Load downloaded subtitles for offline playback</li>
-<li>Use gpu-api=auto for mpv (Windows)</li>
-<li>Reduce bottom sheet spacing</li>
-<li>Delete propagation when episodes are displayed in flat list</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Switch from OkHttp to Cronet networking stack</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.2...1.28.0">https://github.com/edde746/plezy/compare/1.27.2...1.28.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>yt-dlp/yt-dlp 2026.03.17</title>
       <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.17</link>
