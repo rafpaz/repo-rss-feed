@@ -10,9 +10,24 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 28 Apr 2026 00:48:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 04:18:57 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 1.35.1</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.35.1</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.35.1</guid>
+      <pubDate>Tue, 28 Apr 2026 03:41:10 GMT</pubDate>
+      <description>Fixed Live TV non-cloud EPG Android: mpv crash Full Changelog : https://github.com/edde746/plezy/compare/1.35.0..1.35.1</description>
+      <content:encoded><![CDATA[<h2>Fixed</h2>
+<ul>
+<li>Live TV non-cloud EPG</li>
+<li>Android: mpv crash</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.35.0..1.35.1">https://github.com/edde746/plezy/compare/1.35.0..1.35.1</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.10b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.10b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.10b</guid>
@@ -2418,44 +2433,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>derFrisson</category>
       <category>plezy-apks</category>
       <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
-    </item>    <item>
-      <title>edde746/plezy 1.29.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.29.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.29.0</guid>
-      <pubDate>Mon, 23 Mar 2026 05:22:13 GMT</pubDate>
-      <description>Added Screen lock Rewind on resume setting Fixed Live TV channels for non-admin users External subtitles on Android mpv Disable impeller on Tensor/NVIDIA GPUs Disable PiP on Android TV Profile select back button bypass Match content frame rate Linux titlebar height on non-GNOME DEs Overlay sheet...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Screen lock</li>
-<li>Rewind on resume setting</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Live TV channels for non-admin users</li>
-<li>External subtitles on Android mpv</li>
-<li>Disable impeller on Tensor/NVIDIA GPUs</li>
-<li>Disable PiP on Android TV</li>
-<li>Profile select back button bypass</li>
-<li>Match content frame rate</li>
-<li>Linux titlebar height on non-GNOME DEs</li>
-<li>Overlay sheet position, scroll-to-selected in bottom sheets</li>
-<li>PiP aspect ratio after ExoPlayer→mpv fallback</li>
-<li>CPU usage when paused and backgrounded on macOS</li>
-<li>PiP background thread layout crash</li>
-<li>Background isolate shutdown on iOS</li>
-<li>Race conditions in mpv dispose and track manager</li>
-<li>Track selection and external subs after mpv fallback</li>
-<li>Subtitle track selection bugs</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Reduce hub section vertical spacing</li>
-<li>Switch to libmpv-android fork, fixing ANR</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.28.0...1.29.0">https://github.com/edde746/plezy/compare/1.28.0...1.29.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>multiboxlabs/flow-browser v0.11.0</title>
       <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.11.0</link>
