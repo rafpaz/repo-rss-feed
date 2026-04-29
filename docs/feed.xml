@@ -10,9 +10,40 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 29 Apr 2026 06:56:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 09:46:04 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>spotDL/spotify-downloader v4.4.4</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.4</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.4</guid>
+      <pubDate>Wed, 29 Apr 2026 07:29:18 GMT</pubDate>
+      <description>What&amp;#39;s Changed META:Add AI use policy. #2531 by @HridayKoppikar in https://github.com/spotDL/spotify-downloader/pull/2538 fix: handle playlists with slashes in their names by @w3Abhishek in https://github.com/spotDL/spotify-downloader/pull/2534 docs: Add troubleshooting entry for ytmusicapi K...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<ul>
+<li>META:Add AI use policy. #2531 by @HridayKoppikar in <a href="https://github.com/spotDL/spotify-downloader/pull/2538">https://github.com/spotDL/spotify-downloader/pull/2538</a></li>
+<li>fix: handle playlists with slashes in their names by @w3Abhishek in <a href="https://github.com/spotDL/spotify-downloader/pull/2534">https://github.com/spotDL/spotify-downloader/pull/2534</a></li>
+<li>docs: Add troubleshooting entry for ytmusicapi KeyError by @hydromel-project in <a href="https://github.com/spotDL/spotify-downloader/pull/2563">https://github.com/spotDL/spotify-downloader/pull/2563</a></li>
+<li>Fix web UI session files not being deleted on shutdown by @HarshitR2004 in <a href="https://github.com/spotDL/spotify-downloader/pull/2542">https://github.com/spotDL/spotify-downloader/pull/2542</a></li>
+<li>update yt-dlp to &gt;=2026.01.29,&lt;2027 by @phcreery in <a href="https://github.com/spotDL/spotify-downloader/pull/2616">https://github.com/spotDL/spotify-downloader/pull/2616</a></li>
+<li>Deprecate web-ui repo by @phcreery in <a href="https://github.com/spotDL/spotify-downloader/pull/2463">https://github.com/spotDL/spotify-downloader/pull/2463</a></li>
+<li>refactor: improve code quality (typo fix, dedup logic, remove duplica… by @oericdacosta in <a href="https://github.com/spotDL/spotify-downloader/pull/2600">https://github.com/spotDL/spotify-downloader/pull/2600</a></li>
+<li>Update Python version requirement in installation guide by @josh1244 in <a href="https://github.com/spotDL/spotify-downloader/pull/2580">https://github.com/spotDL/spotify-downloader/pull/2580</a></li>
+<li>v4.4.4 by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2642">https://github.com/spotDL/spotify-downloader/pull/2642</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@HridayKoppikar made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2538">https://github.com/spotDL/spotify-downloader/pull/2538</a></li>
+<li>@w3Abhishek made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2534">https://github.com/spotDL/spotify-downloader/pull/2534</a></li>
+<li>@hydromel-project made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2563">https://github.com/spotDL/spotify-downloader/pull/2563</a></li>
+<li>@HarshitR2004 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2542">https://github.com/spotDL/spotify-downloader/pull/2542</a></li>
+<li>@oericdacosta made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2600">https://github.com/spotDL/spotify-downloader/pull/2600</a></li>
+<li>@josh1244 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2580">https://github.com/spotDL/spotify-downloader/pull/2580</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.4.3...v4.4.4">https://github.com/spotDL/spotify-downloader/compare/v4.4.3...v4.4.4</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
+    </item>    <item>
       <title>derFrisson/plezy-apks 1.35.1</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.35.1</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.35.1</guid>
@@ -8502,38 +8533,6 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
 <p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.2.8...v4.2.9">https://github.com/spotDL/spotify-downloader/compare/v4.2.8...v4.2.9</a></p>
 <h2>Donate</h2>
 <p>Help support the development and maintenance of the software ❤️ </p>
-<p><a href="https://paypal.me/kko7"><img src="https://img.shields.io/badge/paypal-%2300457C.svg?&style=for-the-badge&logo=paypal&logoColor=white" alt="paypal"></a>
-<a href="https://ko-fi.com/xnetcat"><img src="https://img.shields.io/badge/kofi-%23F16061.svg?&style=for-the-badge&logo=ko-fi&logoColor=white" alt="kofi"></a></p>]]></content:encoded>
-      <category>spotDL</category>
-      <category>spotify-downloader</category>
-      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
-    </item>    <item>
-      <title>spotDL/spotify-downloader v4.2.8</title>
-      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.8</link>
-      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.8</guid>
-      <pubDate>Fri, 06 Sep 2024 10:22:52 GMT</pubDate>
-      <description>What&amp;#39;s Changed Bug fixes: Always include filter when sending requests to piped by @xnetcat Check status code when getting response from piped by @xnetcat Use piped.video instead of main piped instance by @j3bx in #2172 Fixed RuntimeError: Directory &amp;#39;C:\Users\myuser\.spotdl\web-ui\dist&amp;#39...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<p>Bug fixes:</p>
-<ul>
-<li>Always include filter when sending requests to piped by @xnetcat </li>
-<li>Check status code when getting response from piped by @xnetcat </li>
-<li>Use piped.video instead of main piped instance by @j3bx in #2172</li>
-<li>Fixed <code>RuntimeError: Directory &#39;C:\Users\myuser\.spotdl\web-ui\dist&#39; does not exist</code> by @R0GUE-A5H in #2173</li>
-<li>Make sync command aware of file name changes by @xnetcat</li>
-</ul>
-<p>Documentation:</p>
-<ul>
-<li>Chore: update downloader.py by @eltociear</li>
-</ul>
-<h2>New Contributors</h2>
-<ul>
-<li>@eltociear made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2169">https://github.com/spotDL/spotify-downloader/pull/2169</a></li>
-<li>@R0GUE-A5H made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2175">https://github.com/spotDL/spotify-downloader/pull/2175</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.2.7...v4.2.8">https://github.com/spotDL/spotify-downloader/compare/v4.2.7...v4.2.8</a></p>
-<h2>Donate</h2>
-<p>help support the development and maintenance of the software ❤️ </p>
 <p><a href="https://paypal.me/kko7"><img src="https://img.shields.io/badge/paypal-%2300457C.svg?&style=for-the-badge&logo=paypal&logoColor=white" alt="paypal"></a>
 <a href="https://ko-fi.com/xnetcat"><img src="https://img.shields.io/badge/kofi-%23F16061.svg?&style=for-the-badge&logo=ko-fi&logoColor=white" alt="kofi"></a></p>]]></content:encoded>
       <category>spotDL</category>
