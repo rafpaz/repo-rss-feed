@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 28 Apr 2026 21:27:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 00:49:35 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>derFrisson/plezy-apks 1.35.1</title>
@@ -7024,32 +7024,6 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
       <category>spotDL</category>
       <category>spotify-downloader</category>
       <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
-    </item>    <item>
-      <title>heyman/heynote v2.6.1</title>
-      <link>https://github.com/heyman/heynote/releases/tag/v2.6.1</link>
-      <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.6.1</guid>
-      <pubDate>Fri, 03 Oct 2025 10:25:49 GMT</pubDate>
-      <description>[!NOTE] The 2.6.0 version was yanked due to a bug. What&amp;#39;s Changed Add setting for rendering white-space characters (spaces as dots and tabs as arrows) Show key bindings in Command Palette When displaying key bindings show shorter version with ⇧, ⌘, ⌥, etc instead of Shift, Cmd, Alt, etc Toolt...</description>
-      <content:encoded><![CDATA[<blockquote>
-<p>[!NOTE]
-The 2.6.0 version was yanked due to a bug.</p>
-</blockquote>
-<h2>What&#39;s Changed</h2>
-<ul>
-<li>Add setting for rendering white-space characters (spaces as dots and tabs as arrows)</li>
-<li>Show key bindings in Command Palette</li>
-<li>When displaying key bindings show shorter version with ⇧, ⌘, ⌥, etc instead of Shift, Cmd, Alt, etc</li>
-<li>Tooltips now display the new key binding if the default have been overridden</li>
-</ul>
-<h2>Merged PRs</h2>
-<ul>
-<li>Improve how we display keybindings by @heyman in <a href="https://github.com/heyman/heynote/pull/384">https://github.com/heyman/heynote/pull/384</a></li>
-<li>Add functionality and setting for showing white-space by @heyman in <a href="https://github.com/heyman/heynote/pull/394">https://github.com/heyman/heynote/pull/394</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/heyman/heynote/compare/v2.5.0...v2.6.1">https://github.com/heyman/heynote/compare/v2.5.0...v2.6.1</a></p>]]></content:encoded>
-      <category>heyman</category>
-      <category>heynote</category>
-      <source url="https://github.com/heyman/heynote">heyman/heynote</source>
     </item>    <item>
       <title>Kong/insomnia core@11.6.1</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.1</link>
