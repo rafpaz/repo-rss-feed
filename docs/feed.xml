@@ -10,9 +10,47 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 30 Apr 2026 12:39:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 15:38:31 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 1.35.2</title>
+      <link>https://github.com/edde746/plezy/releases/tag/1.35.2</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.35.2</guid>
+      <pubDate>Thu, 30 Apr 2026 14:50:02 GMT</pubDate>
+      <description>Fixed Non-ASS subtitles on Android 36+ not rendering Full Changelog : https://github.com/edde746/plezy/compare/1.35.1...1.35.2</description>
+      <content:encoded><![CDATA[<h2>Fixed</h2>
+<ul>
+<li>Non-ASS subtitles on Android 36+ not rendering</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.35.1...1.35.2">https://github.com/edde746/plezy/compare/1.35.1...1.35.2</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.19.11b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.11b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.11b</guid>
+      <pubDate>Thu, 30 Apr 2026 14:01:41 GMT</pubDate>
+      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 150.0.1 Added a space-only search mode for the urlbar, which can be enabled by typing ` + space in the urlbar. Fixes Fixed topbar dropping down when titlebar is enabled ( #7094 ) Fixed auto hide not working after i...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-35/">Various security fixes</a></p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 150.0.1</li>
+<li>Added a space-only search mode for the urlbar, which can be enabled by typing ` + space in the urlbar.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed topbar dropping down when titlebar is enabled (<a href="https://github.com/zen-browser/desktop/issues/7094">#7094</a>)</li>
+<li>Fixed auto hide not working after installing an extension (<a href="https://github.com/zen-browser/desktop/issues/13488">#13488</a>)</li>
+<li>Fixed dragging folders around not working properly (<a href="https://github.com/zen-browser/desktop/issues/13492">#13492</a>)</li>
+<li>Other minor bug fixes and performance improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>spotDL/spotify-downloader v4.4.4</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.4</link>
       <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.4.4</guid>
@@ -2174,37 +2212,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>plezy-apks</category>
       <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
-      <title>edde746/plezy 1.30.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.30.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.30.0</guid>
-      <pubDate>Thu, 26 Mar 2026 10:03:36 GMT</pubDate>
-      <description>Fixed Continuous play queue for aired date episode order Skip SAF picker on Android TV Live TV stream EOF and reconnect handling Live TV timeline heartbeat deduplication Library grid stuck skeletons on fast scroll Missing season tabs for single-season shows Detach mpv surface before view removal...</description>
-      <content:encoded><![CDATA[<h2>Fixed</h2>
-<ul>
-<li>Continuous play queue for aired date episode order</li>
-<li>Skip SAF picker on Android TV</li>
-<li>Live TV stream EOF and reconnect handling</li>
-<li>Live TV timeline heartbeat deduplication</li>
-<li>Library grid stuck skeletons on fast scroll</li>
-<li>Missing season tabs for single-season shows</li>
-<li>Detach mpv surface before view removal in dispose</li>
-<li>Tensor SoC detection for internal model IDs</li>
-<li>Keyboard shortcuts for unmapped keys</li>
-<li>Speed step 0.1 → 0.25 for keyboard shortcuts</li>
-<li>Non-primary CustomScrollViews in IndexedStack tabs</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Run SQLite on background isolate</li>
-<li>Library grid scroll and idle frame rendering</li>
-<li>Coalesce watch together rebuilds, static TV overlays</li>
-<li>Detail screen scroll and arrow rebuild performance</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.29.0...1.30.0">https://github.com/edde746/plezy/compare/1.29.0...1.30.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
-    </item>    <item>
       <title>derFrisson/plezy-apks 1.29.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.29.0</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.29.0</guid>
@@ -2885,22 +2892,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.1b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.1b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.1b</guid>
-      <pubDate>Wed, 04 Mar 2026 14:41:49 GMT</pubDate>
-      <description>Zen Stable Release Fixes Fixed certain popups on MacOS appearing with no background color, making them invisible. Fixed Github Pull Request live folders not fetching the pull request data correctly. Other minor bug fixes and improvements.</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed certain popups on MacOS appearing with no background color, making them invisible.</li>
-<li>Fixed Github Pull Request live folders not fetching the pull request data correctly.</li>
-<li>Other minor bug fixes and improvements.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>nodejs/node v25.8.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v25.8.0</link>
