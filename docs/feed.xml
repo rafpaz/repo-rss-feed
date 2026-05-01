@@ -10,9 +10,52 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 01 May 2026 04:26:43 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 07:00:50 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 1.35.2</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.35.2</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.35.2</guid>
+      <pubDate>Fri, 01 May 2026 06:57:23 GMT</pubDate>
+      <description>Plezy 1.35.2 — Standalone APKs APKs extracted from edde746/plezy 1.35.2 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
+      <content:encoded><![CDATA[<h2>Plezy 1.35.2 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.35.2">edde746/plezy 1.35.2</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>Non-ASS subtitles on Android 36+ not rendering</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.35.1...1.35.2">https://github.com/edde746/plezy/compare/1.35.1...1.35.2</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>openai/codex rust-v0.128.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.128.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.128.0</guid>
@@ -2956,74 +2999,6 @@ export, and own enumerable properties are treated as named exports.</p>
 <li>mpv boolean NPE on dispose (Android)</li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.0...1.27.2">https://github.com/edde746/plezy/compare/1.27.0...1.27.2</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.27.0</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.27.0</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.27.0</guid>
-      <pubDate>Sat, 14 Mar 2026 06:17:40 GMT</pubDate>
-      <description>Plezy 1.27.0 — Standalone APKs APKs extracted from edde746/plezy 1.27.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.27.0 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.27.0">edde746/plezy 1.27.0</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Added</h2>
-<ul>
-<li>Configurable intro/credits marker regex patterns</li>
-<li>Inline season tabs with d-pad focus improvements</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Always-on-top getting stuck on desktop</li>
-<li>Android high-bitrate stutter via OkHttp connection pooling</li>
-<li>Auto-reconnect stream after network loss during playback</li>
-<li>Bottom sheets autofocusing incorrectly outside keyboard/dpad mode</li>
-<li>DBusServiceUnknownException on Linux without NetworkManager</li>
-<li>Duplicate episode fetching with flattened seasons</li>
-<li>EPG guide grid: boundary-spanning programs, bold titles, softer styling</li>
-<li>Idle CPU usage on macOS when video player is paused</li>
-<li>Layout shift for image placeholders</li>
-<li>macOS media key play/pause handling</li>
-<li>Null ratingKey in folder browsing</li>
-<li>Player stuck on skip credits with no next episode</li>
-<li>Tab revert and overflow bleed on mobile tab switch</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Admin actions hidden from non-admin users</li>
-<li>Browse grouping picker uses settings-style bottom sheet</li>
-<li>Health probe cooldown, connectivity debounce, and concurrent check coalescing</li>
-<li>Respect Plex server library season view mode</li>
-<li>Thread safety on Android</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.26.1...1.27.0">https://github.com/edde746/plezy/compare/1.26.1...1.27.0</a></p>]]></content:encoded>
       <category>derFrisson</category>
       <category>plezy-apks</category>
       <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
