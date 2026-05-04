@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 04 May 2026 09:51:29 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 12:41:10 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>derFrisson/plezy-apks 1.35.2</title>
@@ -634,100 +634,6 @@
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>openai/codex rust-v0.125.0</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.125.0</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.125.0</guid>
-      <pubDate>Fri, 24 Apr 2026 18:00:38 GMT</pubDate>
-      <description>New Features App-server integrations now support Unix socket transport, pagination-friendly resume/fork, sticky environments, and remote thread config/store plumbing. (#18255, #18892, #18897, #18908, #19008, #19014) App-server plugin management can install remote plugins and upgrade configured ma...</description>
-      <content:encoded><![CDATA[<h2>New Features</h2>
-<ul>
-<li>App-server integrations now support Unix socket transport, pagination-friendly resume/fork, sticky environments, and remote thread config/store plumbing. (#18255, #18892, #18897, #18908, #19008, #19014)</li>
-<li>App-server plugin management can install remote plugins and upgrade configured marketplaces. (#18917, #19074)</li>
-<li>Permission profiles now round-trip across TUI sessions, user turns, MCP sandbox state, shell escalation, and app-server APIs. (#18284, #18285, #18286, #18287, #19231)</li>
-<li>Model providers now own model discovery, with AWS/Bedrock account state exposed to app clients. (#18950, #19048)</li>
-<li><code>codex exec --json</code> now reports reasoning-token usage for programmatic consumers. (#19308)</li>
-<li>Rollout tracing now records tool, code-mode, session, and multi-agent relationships, with a debug reducer command for inspection. (#18878, #18879, #18880)</li>
-</ul>
-<h2>Bug Fixes</h2>
-<ul>
-<li>Interrupting <code>/review</code> and exiting the TUI no longer leaves the interface wedged on delegate startup or unsubscribe. (#18921)</li>
-<li>Exec-server no longer drops buffered output after process exit and now waits correctly for stream closure. (#18946, #19130)</li>
-<li>App-server now respects explicitly untrusted project config instead of auto-persisting trust. (#18626)</li>
-<li>WebSocket app-server clients are less likely to disconnect during bursts of turn and tool-output notifications. (#19246)</li>
-<li>Windows sandbox startup handles multiple CLI versions and installed app directories better, and background <code>Start-Process</code> calls avoid visible PowerShell windows. (#19044, #19180, #19214)</li>
-<li>Config/schema handling now rejects conflicting MultiAgentV2 thread limits, resolves relative agent-role config paths, hides unsupported MCP bearer-token fields, and rejects invalid <code>js_repl</code> image MIME types. (#19129, #19261, #19294, #19292)</li>
-</ul>
-<h2>Documentation</h2>
-<ul>
-<li>App-server docs and generated schemas were refreshed for the new transport, thread, marketplace, sticky environment, and permission-profile APIs. (#18255, #18897, #19014, #19074, #19231)</li>
-<li>Rollout-trace documentation now covers the debug trace reduction workflow. (#18880)</li>
-</ul>
-<h2>Chores</h2>
-<ul>
-<li>Refreshed <code>models.json</code> and related core, app-server, SDK, and TUI fixtures for the latest model catalog and reasoning defaults. (#19323)</li>
-<li>Windows Bazel CI now uses a stable PATH and shared query startup path for better cache reuse. (#19161, #19232)</li>
-<li>Plugin marketplace add/remove/startup-sync internals moved out of <code>codex-core</code>, and curated plugin cache versions now use short SHAs. (#19099, #19095)</li>
-<li>Reverted a macOS signing entitlement change after it caused alpha startup failures. (#19167, #19350)</li>
-<li>Stabilized flaky approval-popup and plugin MCP tool-discovery tests. (#19178, #19191)</li>
-</ul>
-<h2>Changelog</h2>
-<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.124.0...rust-v0.125.0">https://github.com/openai/codex/compare/rust-v0.124.0...rust-v0.125.0</a></p>
-<ul>
-<li>#19129 Reject agents.max_threads with multi_agent_v2 @jif-oai</li>
-<li>#19130 exec-server: wait for close after observed exit @jif-oai</li>
-<li>#19149 Update safety check wording @etraut-openai</li>
-<li>#18284 tui: sync session permission profiles @bolinfest</li>
-<li>#18710 [codex] Fix plugin marketplace help usage @xli-oai</li>
-<li>#19127 feat: drop spawned-agent context instructions @jif-oai</li>
-<li>#18892 Add remote thread config loader protos @rasmusrygaard</li>
-<li>#19014 Add excludeTurns parameter to thread/resume and thread/fork @ddr-oai</li>
-<li>#18882 [codex] Route live thread writes through ThreadStore @wiltzius-openai</li>
-<li>#19008 [codex] Implement remote thread store methods @wiltzius-openai</li>
-<li>#18626 Respect explicit untrusted project config @etraut-openai</li>
-<li>#18255 app-server: add Unix socket transport @euroelessar</li>
-<li>#19167 ci: add macOS keychain entitlements @euroelessar</li>
-<li>#19099 Move marketplace add/remove and startup sync out of core. @xl-openai</li>
-<li>#19168 Use Auto-review wording for fallback rationale @maja-openai</li>
-<li>#18908 Add remote thread config endpoint @rasmusrygaard</li>
-<li>#18285 tui: carry permission profiles on user turns @bolinfest</li>
-<li>#18286 mcp: include permission profiles in sandbox state @bolinfest</li>
-<li>#18878 [rollout_trace] Trace tool and code-mode boundaries @cassirer-openai</li>
-<li>#18287 shell-escalation: carry resolved permission profiles @bolinfest</li>
-<li>#18946 fix(exec-server): retain output until streams close @bolinfest</li>
-<li>#19074 Add app-server marketplace upgrade RPC @xli-oai</li>
-<li>#19180 use a version-specific suffix for command runner binary in .sandbox-bin @iceweasel-oai</li>
-<li>#19178 Stabilize approvals popup disabled-row test @etraut-openai</li>
-<li>#18921 Fix /review interrupt and TUI exit wedges @etraut-openai</li>
-<li>#19191 Stabilize plugin MCP tools test @etraut-openai</li>
-<li>#19194 Mark hooks schema fixtures as generated @abhinav-oai</li>
-<li>#18288 tests: isolate approval fixtures from host rules @bolinfest</li>
-<li>#19044 guide Windows to use -WindowStyle Hidden for Start-Process calls @iceweasel-oai</li>
-<li>#19214 do not attempt ACLs on installed codex dir @iceweasel-oai</li>
-<li>#19161 ci: derive cache-stable Windows Bazel PATH @bolinfest</li>
-<li>#18811 refactor: route Codex auth through AuthProvider @efrazer-oai</li>
-<li>#19246 Increase app-server WebSocket outbound buffer @etraut-openai</li>
-<li>#19048 feat: expose AWS account state from account/read @celia-oai</li>
-<li>#18880 [rollout_trace] Add debug trace reduction command @cassirer-openai</li>
-<li>#18897 Add sticky environment API and thread state @starr-openai</li>
-<li>#18879 [rollout_trace] Trace sessions and multi-agent edges @cassirer-openai</li>
-<li>#19095 feat: Use short SHA versions for curated plugin cache entries @xl-openai</li>
-<li>#18950 feat: let model providers own model discovery @celia-oai</li>
-<li>#19206 app-server: persist device key bindings in sqlite @euroelessar</li>
-<li>#18917 [codex] Support remote plugin install writes @xli-oai</li>
-<li>#19231 permissions: make profiles represent enforcement @bolinfest</li>
-<li>#19261 Resolve relative agent role config paths from layers @etraut-openai</li>
-<li>#19232 ci: reuse Bazel CI startup for target-discovery queries @bolinfest</li>
-<li>#19292 Reject unsupported js_repl image MIME types @etraut-openai</li>
-<li>#19247 chore: apply truncation policy to unified_exec @sayan-oai</li>
-<li>#19294 Hide unsupported MCP bearer_token from config schema @etraut-openai</li>
-<li>#19308 Surface reasoning tokens in exec JSON usage @etraut-openai</li>
-<li>#19323 Update models.json and related fixtures @sayan-oai</li>
-<li>#19350 fix alpha build @jif-oai</li>
-</ul>]]></content:encoded>
-      <category>openai</category>
-      <category>codex</category>
-      <source url="https://github.com/openai/codex">openai/codex</source>
     </item>    <item>
       <title>payloadcms/payload v3.84.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.84.0</link>
