@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 04 May 2026 07:09:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 09:51:29 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>derFrisson/plezy-apks 1.35.2</title>
@@ -6371,28 +6371,6 @@ Python 3.9 has reached its end-of-life as of October 2025, and yt-dlp has now re
       <category>yt-dlp</category>
       <category>yt-dlp</category>
       <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
-    </item>    <item>
-      <title>heyman/heynote v2.6.2</title>
-      <link>https://github.com/heyman/heynote/releases/tag/v2.6.2</link>
-      <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.6.2</guid>
-      <pubDate>Wed, 22 Oct 2025 10:08:21 GMT</pubDate>
-      <description>What&amp;#39;s Changed Update to latest version of Electron to fix issue making Heynote unusable on latest version of Mac OS (Tahoe) Fix issue that would break Math blocks with a large number of lines (the parser would not start processing rows from the beginning of the block) Fix issue with not bein...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<ul>
-<li>Update to latest version of Electron to fix issue making Heynote unusable on latest version of Mac OS (Tahoe)</li>
-<li>Fix issue that would break Math blocks with a large number of lines (the parser would not start processing 
-rows from the beginning of the block)</li>
-<li>Fix issue with not being able to hide window after toggling alwaysOnTop (on Mac)</li>
-</ul>
-<h2>Merged PRs</h2>
-<ul>
-<li>Fix issue with large Math blocks by @heyman in <a href="https://github.com/heyman/heynote/pull/400">https://github.com/heyman/heynote/pull/400</a></li>
-<li>Fix issue with not being able to hide window after toggling alwaysOnTop (on Mac) by @heyman in <a href="https://github.com/heyman/heynote/pull/401">https://github.com/heyman/heynote/pull/401</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/heyman/heynote/compare/v2.6.1...v2.6.2">https://github.com/heyman/heynote/compare/v2.6.1...v2.6.2</a></p>]]></content:encoded>
-      <category>heyman</category>
-      <category>heynote</category>
-      <source url="https://github.com/heyman/heynote">heyman/heynote</source>
     </item>    <item>
       <title>Kong/insomnia core@11.6.2</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</link>
