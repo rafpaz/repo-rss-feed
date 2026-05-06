@@ -10,9 +10,66 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 06 May 2026 12:44:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 15:48:18 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>heyman/heynote v2.9.0</title>
+      <link>https://github.com/heyman/heynote/releases/tag/v2.9.0</link>
+      <guid isPermaLink="true">https://github.com/heyman/heynote/releases/tag/v2.9.0</guid>
+      <pubDate>Wed, 06 May 2026 13:07:03 GMT</pubDate>
+      <description>What&amp;#39;s Changed Sidebar with tree view of the note buffers You can now turn on a sidebar with a tree view of all your buffers and directories. Search across all buffers A new global search function has been added. Use it to find text across all buffers in the library. The default key binding t...</description>
+      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
+<h3>Sidebar with tree view of the note buffers</h3>
+<p>You can now turn on a sidebar with a tree view of all your buffers and directories.</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://heynote.com/img/dark/buffer-tree.png">
+  <img src="https://heynote.com/img/light/buffer-tree.png" width="400" alt="New sidebar buffer tree feature">
+</picture>
+
+
+<h3>Search across all buffers</h3>
+<p>A new global search function has been added. Use it to find text across all buffers in the library. The default 
+key binding to open up the global search is <code>Ctrl/Cmd + Shift + F</code>.</p>
+<h3>Archive Scratch functionality</h3>
+<p>A new archive action has been added for the default Scratch buffer. It can be accessed from the Scratch buffer&#39;s 
+context (right click) menu. It moves the content of Scratch into a new buffer buffer and starts a fresh Scratch buffer.</p>
+<p>For performance reasons it&#39;s recommended to use this feature when the Scratch buffer grows really large (e.g. MBs).</p>
+<h3>Other changes</h3>
+<ul>
+<li>Persist the search query between different buffers, and between restarts</li>
+<li>Add a setting for automatically installing new updates (on by default)</li>
+<li>Add version and client id headers when fetching currency exchange rates</li>
+<li>Add inline color preview for hex / hsl / rgb values for supported languages (CSS, HTML, JS/TS, Vue, TSX)</li>
+<li>Improve window show/focus behavior when restoring from tray</li>
+<li>Add setting for automatically starting Heynote on login</li>
+<li>Add setting for starting Heynote hidden</li>
+<li>Add copyLineDown and copyLineUp commands by default bound to <code>Alt + Shift + ArrowDown/Up</code></li>
+</ul>
+<h2>Merged PRs</h2>
+<ul>
+<li>Persist the search query between different buffers, and between restarts by @heyman in <a href="https://github.com/heyman/heynote/pull/469">https://github.com/heyman/heynote/pull/469</a></li>
+<li>Side panel with tree view of all buffers and directories in the heynote library by @heyman in <a href="https://github.com/heyman/heynote/pull/457">https://github.com/heyman/heynote/pull/457</a></li>
+<li>Add Archive functionality for the default Scratch buffer by @heyman in <a href="https://github.com/heyman/heynote/pull/474">https://github.com/heyman/heynote/pull/474</a></li>
+<li>Add global search across all buffers by @heyman in <a href="https://github.com/heyman/heynote/pull/475">https://github.com/heyman/heynote/pull/475</a></li>
+<li>Fix issue with the editor loosing focus  by @heyman in <a href="https://github.com/heyman/heynote/pull/476">https://github.com/heyman/heynote/pull/476</a></li>
+<li>Auto-install updates setting by @heyman in <a href="https://github.com/heyman/heynote/pull/477">https://github.com/heyman/heynote/pull/477</a></li>
+<li>Add color preview by @jongwoo328 in <a href="https://github.com/heyman/heynote/pull/479">https://github.com/heyman/heynote/pull/479</a></li>
+<li>fix: improve window show/focus behavior when restoring from tray by @VictorVow in <a href="https://github.com/heyman/heynote/pull/464">https://github.com/heyman/heynote/pull/464</a></li>
+<li>feat: add launch at login setting by @hyejungg in <a href="https://github.com/heyman/heynote/pull/463">https://github.com/heyman/heynote/pull/463</a></li>
+<li>Add setting for starting heynote hidden by @heyman in <a href="https://github.com/heyman/heynote/pull/481">https://github.com/heyman/heynote/pull/481</a></li>
+<li>Add copyLineDown and copyLineUp commands by @heyman in <a href="https://github.com/heyman/heynote/pull/482">https://github.com/heyman/heynote/pull/482</a></li>
+<li>Update github actions to latest versions by @heyman in <a href="https://github.com/heyman/heynote/pull/483">https://github.com/heyman/heynote/pull/483</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@VictorVow made their first contribution in <a href="https://github.com/heyman/heynote/pull/464">https://github.com/heyman/heynote/pull/464</a></li>
+<li>@hyejungg made their first contribution in <a href="https://github.com/heyman/heynote/pull/463">https://github.com/heyman/heynote/pull/463</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/heyman/heynote/compare/v2.8.2...v2.9.0">https://github.com/heyman/heynote/compare/v2.8.2...v2.9.0</a></p>]]></content:encoded>
+      <category>heyman</category>
+      <category>heynote</category>
+      <source url="https://github.com/heyman/heynote">heyman/heynote</source>
+    </item>    <item>
       <title>nodejs/node v26.0.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v26.0.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v26.0.0</guid>
