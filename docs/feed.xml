@@ -10,9 +10,132 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 08 May 2026 21:25:43 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 00:49:24 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.12b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.12b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.12b</guid>
+      <pubDate>Sat, 09 May 2026 00:01:11 GMT</pubDate>
+      <description>Zen Stable Release Security [Various security fixes]([ &amp;quot; https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/ &amp;quot;, [ &amp;quot;CVE-2026-44658&amp;quot;, &amp;quot; https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6 &amp;quot; ], [ &amp;quot;CVE-2026-44659&amp;quot;, &amp;quot; h...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<p>[Various security fixes]([
+  &quot;<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/">https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/</a>&quot;,
+  [
+    &quot;CVE-2026-44658&quot;,
+    &quot;<a href="https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6">https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6</a>&quot;
+  ],
+  [
+    &quot;CVE-2026-44659&quot;,
+    &quot;<a href="https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69">https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69</a>&quot;
+  ]
+])</p>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 150.0.2</li>
+<li>Improved space swiping feel and performance</li>
+<li>The option for &#39;Create new space&#39; keyboard shortcut has been added to the keyboard shortcuts settings.</li>
+<li>Desktop files on linux should now ship with translations for desktop entries.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed search engines not being visible in settings (<a href="https://github.com/zen-browser/desktop/issues/13522">#13522</a>)</li>
+<li>Fixed Previous Space in MacOS menu bar not working (<a href="https://github.com/zen-browser/desktop/issues/13583">#13583</a>)</li>
+<li>The loading indicator should now show on-top of the webview for double toolbar mode (<a href="https://github.com/zen-browser/desktop/issues/13516">#13516</a>)</li>
+<li>Fix macos crash when native popovers are closed on some occasions (<a href="https://github.com/zen-browser/desktop/issues/13294">#13294</a>)</li>
+<li>Fixed glance having wrong image preview when zoomed in</li>
+<li>Other minor bug fixes and performance improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
+      <title>openai/codex rust-v0.130.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.130.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.130.0</guid>
+      <pubDate>Fri, 08 May 2026 23:09:55 GMT</pubDate>
+      <description>New Features Plugin details now show bundled hooks, and plugin sharing exposes link metadata plus discoverability controls. (#21447, #21495, #21637) Added codex remote-control as a simpler entrypoint for starting a headless, remotely controllable app-server. (#21424) App-server clients can page l...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Plugin details now show bundled hooks, and plugin sharing exposes link metadata plus discoverability controls. (#21447, #21495, #21637)</li>
+<li>Added <code>codex remote-control</code> as a simpler entrypoint for starting a headless, remotely controllable app-server. (#21424)</li>
+<li>App-server clients can page large threads with unloaded, summary, or full turn item views. (#21566)</li>
+<li>Bedrock auth can now use AWS console-login credentials from <code>aws login</code> profiles. (#21623)</li>
+<li><code>view_image</code> can resolve files through the selected environment for multi-environment sessions. (#21143)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Live app-server threads now pick up config changes without requiring a restart. (#21187)</li>
+<li>Turn diffs stay accurate across apply-patch operations, including partial failures that still mutated files. (#21180, #21518)</li>
+<li>Thread summaries, renames, resume, and fork paths work better through <code>ThreadStore</code>, including threads without local rollout paths. (#21264, #21265, #21266)</li>
+<li>Remote compaction now emits <code>response.processed</code> for v2 streams and avoids sending <code>service_tier</code> on API-key compact requests. (#21642, #21676)</li>
+<li>Windows sandbox setup now grants sandbox users access to the desktop runtime binary cache. (#21564)</li>
+<li>Removed stale “research preview” wording from the <code>codex exec</code> startup banner. (#21683)</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Fixed issue templates so CLI reports keep the intended guidance, labels apply correctly, and feature requests link to the right contributing docs. (#21685, #21686, #21688)</li>
+<li>Updated install and tooling docs to consistently use <code>cargo install --locked</code>. (#21592)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Added a faster Cargo profiling build profile and disabled empty doctest targets to speed up Rust development loops. (#21574, #21584)</li>
+<li>Hardened dependency and CI hygiene with fully qualified GitHub Action pins, a Dependabot cooldown, and a <code>cargo-shear</code> upgrade. (#21436, #21547, #21599)</li>
+<li>Simplified internal surfaces by removing unused device-key APIs, extra skills roots, the remote thread-store implementation, and string-keyed MCP tool maps. (#21487, #21485, #21596, #21454)</li>
+<li>Added configurable OpenTelemetry trace metadata and richer review/feedback analytics for better debugging and triage. (#21556, #18747, #21434, #21498)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.129.0...rust-v0.130.0">https://github.com/openai/codex/compare/rust-v0.129.0...rust-v0.130.0</a></p>
+<ul>
+<li>#21494 [codex] fix PluginListParams test initializer @xli-oai</li>
+<li>#21447 Show plugin hooks in plugin details @abhinav-oai</li>
+<li>#21356 feat: make built-in MCPs first-class runtime servers @jif-oai</li>
+<li>#21180 Make turn diff tracking operation backed @jif-oai</li>
+<li>#21498 [codex] add account id to feedback uploads @pakrym-oai</li>
+<li>#21487 device-key: clean up unused crate @euroelessar</li>
+<li>#21518 fix: preserve exact turn diffs after partial apply_patch failures @jif-oai</li>
+<li>#18747 [codex-analytics] add tool review event schema @rhan-oai</li>
+<li>#21495 feat: Expose plugin share metadata in shareContext @xl-openai</li>
+<li>#21454 [codex] Remove string-keyed MCP tool maps @pakrym-oai</li>
+<li>#21424 add top-level remote-control command @owenlin0</li>
+<li>#21187 app-server: refresh live threads from latest config snapshot @jif-oai</li>
+<li>#21461 [codex] Move tool specs onto handlers @pakrym-oai</li>
+<li>#21547 Upgrade <code>cargo-shear</code> to 1.11.2 @charliemarsh-oai</li>
+<li>#21264 Move thread name edits to ThreadStore @wiltzius-openai</li>
+<li>#21266 [codex] Fix pathless thread summaries @wiltzius-openai</li>
+<li>#21265 Route ThreadManager rollout path reads through thread store @wiltzius-openai</li>
+<li>#21564 Grant sandbox users access to desktop runtime bin @iceweasel-oai</li>
+<li>#21582 Use descriptive names for Cargo profile options @zanie-oai</li>
+<li>#21574 Add a Cargo build profile for benchmarking @zanie-oai</li>
+<li>#21436 [codex] Fully qualify hash-pins in GitHub Actions @ww-oai</li>
+<li>#21592 Ensure all mentions of cargo-install are --locked @gankra-oai</li>
+<li>#21584 Disable empty Cargo test targets @charliemarsh-oai</li>
+<li>#21566 feat(app-server, threadstore): Thread pagination APIs and ThreadStore contract @owenlin0</li>
+<li>#21556 codex-otel: add configurable trace metadata @bbrown-oai</li>
+<li>#21599 [codex] Apply a Dependabot cooldown of 7 days @ww-oai</li>
+<li>#21602 Use <code>--locked</code> in cargo build and lint invocations @zanie-oai</li>
+<li>#20664 Add stdio exec-server client transport @starr-openai</li>
+<li>#21596 [codex] Remove remote thread store implementation @wiltzius-openai</li>
+<li>#20665 Make environment providers own default selection @starr-openai</li>
+<li>#21143 Route view_image through selected environments @starr-openai</li>
+<li>#20666 Add CODEX_HOME environments TOML provider @starr-openai</li>
+<li>#21642 Send response.processed after remote compaction v2 @pakrym-oai</li>
+<li>#21646 Revert &quot;Use <code>--locked</code> in cargo build and lint invocations&quot; @pakrym-oai</li>
+<li>#21434 [codex-analytics] plumb protocol-native review timing @rhan-oai</li>
+<li>#21485 Remove skills list extra roots @xli-oai</li>
+<li>#21623 feat: enable AWS login credentials for Bedrock auth @celia-oai</li>
+<li>#21637 feat: Update plugin share settings with discoverability @xl-openai</li>
+<li>#21685 Fix duplicate CLI issue template description @etraut-openai</li>
+<li>#21686 Fix issue template labels @etraut-openai</li>
+<li>#21688 Fix feature request Contributing link @etraut-openai</li>
+<li>#21683 Remove exec research preview banner wording @etraut-openai</li>
+<li>#21676 Omit service_tier from remote /responses/compact requests under API auth @aibrahim-oai</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>openai/codex rust-v0.129.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.129.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.129.0</guid>
@@ -3511,28 +3634,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>yt-dlp</category>
       <category>yt-dlp</category>
       <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.2b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.2b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.2b</guid>
-      <pubDate>Wed, 11 Mar 2026 10:00:42 GMT</pubDate>
-      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 148.0.2 Fixes Fixed some RSS live folders not working with certain feeds. ( #12685 ) Improved performance for spaces, specially when switching between them. ( #11851 ) Other minor bug fixes and improvements.</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-19/">Various security fixes</a></p>
-<h2>New Features</h2>
-<ul>
-<li>Updated to Firefox 148.0.2</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed some RSS live folders not working with certain feeds. (<a href="https://github.com/zen-browser/desktop/issues/12685">#12685</a>)</li>
-<li>Improved performance for spaces, specially when switching between them. (<a href="https://github.com/zen-browser/desktop/issues/11851">#11851</a>)</li>
-<li>Other minor bug fixes and improvements.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>Kong/insomnia core@12.4.0</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.4.0</link>
