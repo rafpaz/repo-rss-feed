@@ -10,27 +10,21 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sat, 09 May 2026 15:23:07 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 18:24:19 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>zen-browser/desktop 1.19.12b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.12b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.12b</guid>
       <pubDate>Sat, 09 May 2026 00:01:11 GMT</pubDate>
-      <description>Zen Stable Release Security [Various security fixes]([ &amp;quot; https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/ &amp;quot;, [ &amp;quot;CVE-2026-44658&amp;quot;, &amp;quot; https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6 &amp;quot; ], [ &amp;quot;CVE-2026-44659&amp;quot;, &amp;quot; h...</description>
+      <description>Zen Stable Release Security https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/ https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6 https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69 New Features Updated to Firefox 150.0.2 Improved...</description>
       <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
 <h2>Security</h2>
-<p>[Various security fixes]([
-  &quot;<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/">https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/</a>&quot;,
-  [
-    &quot;CVE-2026-44658&quot;,
-    &quot;<a href="https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6">https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6</a>&quot;
-  ],
-  [
-    &quot;CVE-2026-44659&quot;,
-    &quot;<a href="https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69">https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69</a>&quot;
-  ]
-])</p>
+<ul>
+<li><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/">https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/</a></li>
+<li><a href="https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6">https://github.com/zen-browser/desktop/security/advisories/GHSA-cc9c-mmmf-c5j6</a></li>
+<li><a href="https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69">https://github.com/zen-browser/desktop/security/advisories/GHSA-7p2r-fp29-9w69</a></li>
+</ul>
 <h2>New Features</h2>
 <ul>
 <li>Updated to Firefox 150.0.2</li>
