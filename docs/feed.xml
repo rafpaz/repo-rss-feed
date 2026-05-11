@@ -10,9 +10,102 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 11 May 2026 04:29:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 07:21:25 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 2.0.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.0.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.0.0</guid>
+      <pubDate>Mon, 11 May 2026 07:15:44 GMT</pubDate>
+      <description>Plezy 2.0.0 — Standalone APKs APKs extracted from edde746/plezy 2.0.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators, Ch...</description>
+      <content:encoded><![CDATA[<h2>Plezy 2.0.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/2.0.0">edde746/plezy 2.0.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Jellyfin support</li>
+<li>Live TV DVR and recordings</li>
+<li>iOS external display playback</li>
+<li>tvOS support</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>ExoPlayer ASS subtitle delay</li>
+<li>iOS PiP subtitle issues</li>
+<li>Plex startup, home hub retries, and endpoint failover</li>
+<li>Sync rule removal/navigation</li>
+<li>UHD/4K media labels</li>
+<li>Various focus issues</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Playback and player UI performance</li>
+<li>Discord Rich Presence posters</li>
+<li>iOS energy usage</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.35.2...2.0.0">https://github.com/edde746/plezy/compare/1.35.2...2.0.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>edde746/plezy 2.0.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/2.0.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.0.0</guid>
+      <pubDate>Mon, 11 May 2026 05:30:13 GMT</pubDate>
+      <description>Added Jellyfin support Live TV DVR and recordings iOS external display playback tvOS support Fixed ExoPlayer ASS subtitle delay iOS PiP subtitle issues Plex startup, home hub retries, and endpoint failover Sync rule removal/navigation UHD/4K media labels Various focus issues Improved Playback and...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Jellyfin support</li>
+<li>Live TV DVR and recordings</li>
+<li>iOS external display playback</li>
+<li>tvOS support</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>ExoPlayer ASS subtitle delay</li>
+<li>iOS PiP subtitle issues</li>
+<li>Plex startup, home hub retries, and endpoint failover</li>
+<li>Sync rule removal/navigation</li>
+<li>UHD/4K media labels</li>
+<li>Various focus issues</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Playback and player UI performance</li>
+<li>Discord Rich Presence posters</li>
+<li>iOS energy usage</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.35.2...2.0.0">https://github.com/edde746/plezy/compare/1.35.2...2.0.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.12b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.12b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.12b</guid>
@@ -2621,56 +2714,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
-      <title>edde746/plezy 1.31.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.31.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.31.0</guid>
-      <pubDate>Mon, 06 Apr 2026 20:51:03 GMT</pubDate>
-      <description>Added Live TV time-shift and PiP/crop support Live TV favorite channel ordering Subtitle search &amp;amp; download from OpenSubtitles Tag editing in metadata editor Download version picker with smart matching Play version and play from beginning context menu options Windows display mode matching (ref...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Live TV time-shift and PiP/crop support</li>
-<li>Live TV favorite channel ordering</li>
-<li>Subtitle search &amp; download from OpenSubtitles</li>
-<li>Tag editing in metadata editor</li>
-<li>Download version picker with smart matching</li>
-<li>Play version and play from beginning context menu options</li>
-<li>Windows display mode matching (refresh rate, HDR)</li>
-<li>Search filter in collection selection dialog</li>
-<li>Server tasks panel</li>
-<li>Configurable watch together relay server</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Subtitle track matching (forced flag parsing, title scoring)</li>
-<li>Live TV time-shift controls and timeline</li>
-<li>Companion remote acts as remote instead of host on Android TV</li>
-<li>Previous episodes missing from play queue</li>
-<li>Skip offline video when different version requested</li>
-<li>Database not closing on app shutdown</li>
-<li>Focus search input on tab selection</li>
-<li>Option picker dialog focus for TV/keyboard nav</li>
-<li>Disable Impeller on Huawei/HONOR devices</li>
-<li>Android video surface lifecycle management</li>
-<li>Dolby Vision buffer isolation from JVM heap</li>
-<li>Auto-focus skip intro button on TV</li>
-<li>Use hubs API for continue watching</li>
-<li>HID key labels for non-keyboard USB pages</li>
-<li>Library action confirmation and snackbar feedback</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>M3 2024 slider style for video player timelines</li>
-<li>M3 settings screen redesign</li>
-<li>Consistent poster sizing</li>
-<li>Tabular figures on timeline timestamps</li>
-<li>Type-aware image memory cache bounds</li>
-<li>Subtitle styling and external player settings screens</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.30.0...1.31.0">https://github.com/edde746/plezy/compare/1.30.0...1.31.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
-    </item>    <item>
       <title>yuliskov/SmartTube 31.45s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.45s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.45s</guid>
@@ -3549,51 +3592,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.27.2</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.27.2</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.27.2</guid>
-      <pubDate>Sun, 15 Mar 2026 06:22:49 GMT</pubDate>
-      <description>Plezy 1.27.2 — Standalone APKs APKs extracted from edde746/plezy 1.27.2 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.27.2 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.27.2">edde746/plezy 1.27.2</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Fixed</h2>
-<ul>
-<li>D-pad navigation skipping episodes on single-season shows</li>
-<li>List tiles not scrolling into view on d-pad focus</li>
-<li>mpv boolean NPE on dispose (Android)</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.0...1.27.2">https://github.com/edde746/plezy/compare/1.27.0...1.27.2</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>yt-dlp/yt-dlp 2026.03.13</title>
       <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.13</link>
