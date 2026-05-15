@@ -10,9 +10,34 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 14 May 2026 21:29:40 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 00:51:14 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.19.13b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.13b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.13b</guid>
+      <pubDate>Thu, 14 May 2026 21:56:48 GMT</pubDate>
+      <description>Zen Stable Release Security https://www.mozilla.org/en-US/security/advisories/mfsa2026-45/ New Features Updated to Firefox 150.0.3 Fixes Fixed native popovers not working after using dropdowns ( #13623 ) Fixed unresponsive tabs when opening external links ( #13620 ) Fixed tab renaming input field...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>Security</h2>
+<ul>
+<li><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-45/">https://www.mozilla.org/en-US/security/advisories/mfsa2026-45/</a></li>
+</ul>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 150.0.3</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed native popovers not working after using dropdowns (<a href="https://github.com/zen-browser/desktop/issues/13623">#13623</a>)</li>
+<li>Fixed unresponsive tabs when opening external links (<a href="https://github.com/zen-browser/desktop/issues/13620">#13620</a>)</li>
+<li>Fixed tab renaming input fields being too narrow (<a href="https://github.com/zen-browser/desktop/issues/13629">#13629</a>)</li>
+<li>Other minor bug fixes and performance improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>derFrisson/plezy-apks 2.0.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.0.0</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.0.0</guid>
@@ -3563,35 +3588,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>yuliskov</category>
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.3b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.3b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.3b</guid>
-      <pubDate>Mon, 16 Mar 2026 11:11:07 GMT</pubDate>
-      <description>Zen Stable Release New Features Holding ctrl/cmd while hovering &amp;#39;Reset pinned tab&amp;#39; will now duplicate that tab in the background Added &amp;#39;Unload all spaces except current&amp;#39; context menu item to the space switcher Fixes Split views will now hide when toggling fullscreen mode. Other mi...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>New Features</h2>
-<ul>
-<li>Holding ctrl/cmd while hovering &#39;Reset pinned tab&#39; will now duplicate that tab in the background</li>
-<li>Added &#39;Unload all spaces except current&#39; context menu item to the space switcher</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Split views will now hide when toggling fullscreen mode.</li>
-<li>Other minor bug fixes and improvements.</li>
-<li>Improved accessibility for split view controls.</li>
-<li>Fixed opening a new window making all tabs appear as &#39;New Tab&#39; until they are selected.</li>
-<li>Fixed chrome hide toolbar flag not being respected for new windows. (<a href="https://github.com/zen-browser/desktop/issues/12736">#12736</a>)</li>
-<li>Others fixes and quality of life improvements</li>
-</ul>
-<h2>Changes</h2>
-<ul>
-<li>Pressing CTRL+T again while the urlbar is open will now close it.</li>
-<li>Bookmarks bar will now stay visible on fullscreen mode.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>yt-dlp/yt-dlp 2026.03.13</title>
       <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.13</link>
