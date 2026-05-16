@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sat, 16 May 2026 04:16:11 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 06:52:27 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>spotDL/spotify-downloader v4.5.0</title>
