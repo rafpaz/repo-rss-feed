@@ -10,9 +10,71 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 15 May 2026 21:26:14 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 00:48:35 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>spotDL/spotify-downloader v4.5.0</title>
+      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.5.0</link>
+      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.5.0</guid>
+      <pubDate>Sat, 16 May 2026 00:18:13 GMT</pubDate>
+      <description>Required Action &amp;amp; Breaking Changes We strongly recommend installing Deno. Some yt-dlp downloads may fail without a JavaScript runtime. Run spotdl --download-deno , or install Deno system-wide using the official Deno installation guide . Due to Spotify API changes, spotDL now defaults to the l...</description>
+      <content:encoded><![CDATA[<h2>Required Action &amp; Breaking Changes</h2>
+<ul>
+<li><p><strong>We <em>strongly</em> recommend installing Deno.</strong> Some <code>yt-dlp</code> downloads may fail without a JavaScript runtime.</p>
+<ul>
+<li>Run <code>spotdl --download-deno</code>, or install Deno system-wide using the <a href="https://docs.deno.com/runtime/getting_started/installation/">official Deno installation guide</a>.</li>
+</ul>
+</li>
+<li><p>Due to Spotify API changes, spotDL now defaults to the lighter <code>SpotipyFree</code> library, which has reduced functionality compared with the official Spotify API.</p>
+<ul>
+<li>If you have Spotify Premium and provide a client ID and client secret, pass <code>--use-official-api</code> to use the official API.</li>
+<li>The default <code>SpotipyFree</code> client does not support authenticated library shortcuts/functions such as <code>saved</code>, <code>all-user-playlists</code>, <code>all-saved-playlists</code>, <code>all-user-followed-artists</code>, and <code>all-user-saved-albums</code>. Use <code>--user-auth</code> with the official API for these. We plan to restore support for these shortcuts soon.</li>
+</ul>
+</li>
+<li><p>The <code>youtube</code> audio provider has been migrated from <code>pytube</code> to <code>yt-dlp</code>.</p>
+<ul>
+<li>This does not change the default <code>youtube-music</code> provider.</li>
+</ul>
+</li>
+<li><p>Docker images now run as a non-root user and Docker Compose now uses a named <code>spotdl_music</code> volume by default.</p>
+<ul>
+<li>If you bind-mount a host directory to <code>/music</code>, make sure it is writable by the container UID/GID.</li>
+</ul>
+</li>
+</ul>
+<h2>What&#39;s Changed</h2>
+<ul>
+<li>Replaced Spotipy with a non-API library by @TzurSoffer in <a href="https://github.com/spotDL/spotify-downloader/pull/2626">https://github.com/spotDL/spotify-downloader/pull/2626</a></li>
+<li>Update <code>search_all</code> to include verified results and fix SpotipyFree initialization by @TzurSoffer in <a href="https://github.com/spotDL/spotify-downloader/pull/2665">https://github.com/spotDL/spotify-downloader/pull/2665</a></li>
+<li>Fix/revert search fallback, recommending Deno instead by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2672">https://github.com/spotDL/spotify-downloader/pull/2672</a></li>
+<li>Add optional Deno downloader for yt-dlp-ejs support by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2650">https://github.com/spotDL/spotify-downloader/pull/2650</a></li>
+<li>Migrate YouTube audio provider from pytube to yt-dlp by @Pobitro-B in <a href="https://github.com/spotDL/spotify-downloader/pull/2524">https://github.com/spotDL/spotify-downloader/pull/2524</a></li>
+<li>Retry YouTube Music searches with a fresh client by @Silverarmor in <a href="https://github.com/spotDL/spotify-downloader/pull/2671">https://github.com/spotDL/spotify-downloader/pull/2671</a></li>
+<li>Fix YouTube not downloading by @antonpup in <a href="https://github.com/spotDL/spotify-downloader/pull/2564">https://github.com/spotDL/spotify-downloader/pull/2564</a></li>
+<li>Support new Spotify API response format (<code>track</code> -&gt; <code>item</code>) by @BillionClaw in <a href="https://github.com/spotDL/spotify-downloader/pull/2628">https://github.com/spotDL/spotify-downloader/pull/2628</a></li>
+<li>Get items from Spotify response JSON with <code>.get</code> to avoid KeyError by @igoiglesias in <a href="https://github.com/spotDL/spotify-downloader/pull/2656">https://github.com/spotDL/spotify-downloader/pull/2656</a></li>
+<li>Fix songs with missing genres in Spotify API responses by @BillionClaw in <a href="https://github.com/spotDL/spotify-downloader/pull/2629">https://github.com/spotDL/spotify-downloader/pull/2629</a></li>
+<li>Add Docker support for running as a non-root user by @aycsi in <a href="https://github.com/spotDL/spotify-downloader/pull/2489">https://github.com/spotDL/spotify-downloader/pull/2489</a></li>
+<li>Pin Docker base image to <code>python:3.13-alpine</code> and skip dev dependencies by @CatTail in <a href="https://github.com/spotDL/spotify-downloader/pull/2658">https://github.com/spotDL/spotify-downloader/pull/2658</a></li>
+<li>Sanitize list names before formatting M3U filenames by @tomdec in <a href="https://github.com/spotDL/spotify-downloader/pull/2560">https://github.com/spotDL/spotify-downloader/pull/2560</a></li>
+<li>Replace <code>tmpdir</code> with <code>tmp_path</code> in tests by @dotlambda in <a href="https://github.com/spotDL/spotify-downloader/pull/2550">https://github.com/spotDL/spotify-downloader/pull/2550</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li>@BillionClaw made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2629">https://github.com/spotDL/spotify-downloader/pull/2629</a></li>
+<li>@CatTail made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2658">https://github.com/spotDL/spotify-downloader/pull/2658</a></li>
+<li>@TzurSoffer made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2626">https://github.com/spotDL/spotify-downloader/pull/2626</a></li>
+<li>@igoiglesias made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2656">https://github.com/spotDL/spotify-downloader/pull/2656</a></li>
+<li>@antonpup made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2564">https://github.com/spotDL/spotify-downloader/pull/2564</a></li>
+<li>@tomdec made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2560">https://github.com/spotDL/spotify-downloader/pull/2560</a></li>
+<li>@Pobitro-B made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2524">https://github.com/spotDL/spotify-downloader/pull/2524</a></li>
+<li>@aycsi made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2489">https://github.com/spotDL/spotify-downloader/pull/2489</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.4.4...v4.5.0">https://github.com/spotDL/spotify-downloader/compare/v4.4.4...v4.5.0</a></p>]]></content:encoded>
+      <category>spotDL</category>
+      <category>spotify-downloader</category>
+      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.19.13b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.13b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.13b</guid>
@@ -8955,53 +9017,6 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
 <li>@xnetcat made several infrastructure and dependency updates</li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.2.9...v4.2.10">https://github.com/spotDL/spotify-downloader/compare/v4.2.9...v4.2.10</a></p>
-<h2>Donate</h2>
-<p>Help support the development and maintenance of the software ❤️ </p>
-<p><a href="https://paypal.me/kko7"><img src="https://img.shields.io/badge/paypal-%2300457C.svg?&style=for-the-badge&logo=paypal&logoColor=white" alt="paypal"></a>
-<a href="https://ko-fi.com/xnetcat"><img src="https://img.shields.io/badge/kofi-%23F16061.svg?&style=for-the-badge&logo=ko-fi&logoColor=white" alt="kofi"></a></p>]]></content:encoded>
-      <category>spotDL</category>
-      <category>spotify-downloader</category>
-      <source url="https://github.com/spotDL/spotify-downloader">spotDL/spotify-downloader</source>
-    </item>    <item>
-      <title>spotDL/spotify-downloader v4.2.9</title>
-      <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.9</link>
-      <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.2.9</guid>
-      <pubDate>Fri, 15 Nov 2024 18:43:21 GMT</pubDate>
-      <description>What&amp;#39;s Changed Bug fixes: Make --save-errors append to file instead of overwriting (#2198) by @truppelito Fixed path sanitization when creating m3u file by @xnetcat Disabled SliderKZ by @xnetcat Fixed linter errors by @xnetcat Features: Download lyrics with save operation (#2206) by @SilentDu...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<p>Bug fixes:</p>
-<ul>
-<li>Make --save-errors append to file instead of overwriting (#2198) by @truppelito</li>
-<li>Fixed path sanitization when creating m3u file by @xnetcat</li>
-<li>Disabled SliderKZ by @xnetcat</li>
-<li>Fixed linter errors by @xnetcat</li>
-</ul>
-<p>Features:</p>
-<ul>
-<li>Download lyrics with save operation (#2206) by @SilentDude</li>
-<li>Download individual album art for each track when using --playlist-numbering (#2208) by @PranjalSurana</li>
-<li>Skip duplicate songs from sub-folders (#2212) by @himanshumahajan138</li>
-<li>Add metadata to playlist files (#2215) by @PranjalSurana</li>
-</ul>
-<p>Documentation:</p>
-<ul>
-<li>Update README.md by @inform880</li>
-<li>Fix link in README by @Silverarmor</li>
-</ul>
-<p>Other changes:</p>
-<ul>
-<li>Updated dependencies by @xnetcat</li>
-<li>Made album type optional by @xnetcat</li>
-<li>Reverted #2214 by @xnetcat</li>
-</ul>
-<h2>New Contributors</h2>
-<ul>
-<li>@truppelito made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2198">https://github.com/spotDL/spotify-downloader/pull/2198</a></li>
-<li>@SilentDude made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2206">https://github.com/spotDL/spotify-downloader/pull/2206</a></li>
-<li>@PranjalSurana made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2204">https://github.com/spotDL/spotify-downloader/pull/2204</a></li>
-<li>@inform880 made their first contribution in <a href="https://github.com/spotDL/spotify-downloader/pull/2227">https://github.com/spotDL/spotify-downloader/pull/2227</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/spotDL/spotify-downloader/compare/v4.2.8...v4.2.9">https://github.com/spotDL/spotify-downloader/compare/v4.2.8...v4.2.9</a></p>
 <h2>Donate</h2>
 <p>Help support the development and maintenance of the software ❤️ </p>
 <p><a href="https://paypal.me/kko7"><img src="https://img.shields.io/badge/paypal-%2300457C.svg?&style=for-the-badge&logo=paypal&logoColor=white" alt="paypal"></a>
