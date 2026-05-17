@@ -10,9 +10,45 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sun, 17 May 2026 09:37:49 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 12:26:07 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 2.1.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/2.1.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.1.0</guid>
+      <pubDate>Sun, 17 May 2026 12:15:11 GMT</pubDate>
+      <description>Added Tracker rating sheet Episode-level anime watch state sync Live TV guide grouping by source Player screenshot shortcut Jellyfin actor media browsing Additional Jellyfin library sort options Fixed Apple playback issues with Dolby Vision, HDR subtitles, MPVKit teardown, subtitle cropping, and...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Tracker rating sheet</li>
+<li>Episode-level anime watch state sync</li>
+<li>Live TV guide grouping by source</li>
+<li>Player screenshot shortcut</li>
+<li>Jellyfin actor media browsing</li>
+<li>Additional Jellyfin library sort options</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Apple playback issues with Dolby Vision, HDR subtitles, MPVKit teardown, subtitle cropping, and video presentation</li>
+<li>Player startup, frame-rate/display matching, PiP, and lifecycle cleanup</li>
+<li>Plex and Jellyfin library filters, sorts, grouping, collections, home hubs, and large library loading</li>
+<li>Live TV guide loading, recording indicators, and Jellyfin Live TV direct streaming</li>
+<li>Tracker anime completion totals, scoped progress sync, Plex library context, and Trakt sync behavior</li>
+<li>Search ranking and server indicators</li>
+<li>Watch Together host resume, companion remote server selection, duplicate PIN dialogs, downloads cleanup, and desktop database migration</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Search relevance and home/discover ordering</li>
+<li>Media detail action layout, poster loading states, browse chip spacing, and TV browse presentation</li>
+<li>HTTP shutdown and transient Plex resource failure handling</li>
+<li>Startup cleanup for orphaned Plex image cache files</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.0.0...2.1.0">https://github.com/edde746/plezy/compare/2.0.0...2.1.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>spotDL/spotify-downloader v4.5.0</title>
       <link>https://github.com/spotDL/spotify-downloader/releases/tag/v4.5.0</link>
       <guid isPermaLink="true">https://github.com/spotDL/spotify-downloader/releases/tag/v4.5.0</guid>
@@ -2783,20 +2819,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
 <li>Connection issues</li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.2...1.31.3">https://github.com/edde746/plezy/compare/1.31.2...1.31.3</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
-    </item>    <item>
-      <title>edde746/plezy 1.31.2</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.31.2</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.31.2</guid>
-      <pubDate>Tue, 07 Apr 2026 02:40:03 GMT</pubDate>
-      <description>Fixed HTTP 1.1 fallback Full Changelog : https://github.com/edde746/plezy/compare/1.31.1...1.31.2</description>
-      <content:encoded><![CDATA[<h2>Fixed</h2>
-<ul>
-<li>HTTP 1.1 fallback</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.1...1.31.2">https://github.com/edde746/plezy/compare/1.31.1...1.31.2</a></p>]]></content:encoded>
       <category>edde746</category>
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
