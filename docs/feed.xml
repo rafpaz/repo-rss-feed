@@ -10,9 +10,74 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 18 May 2026 04:32:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 07:32:08 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 2.1.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.1.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.1.0</guid>
+      <pubDate>Mon, 18 May 2026 07:26:40 GMT</pubDate>
+      <description>Plezy 2.1.0 — Standalone APKs APKs extracted from edde746/plezy 2.1.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators, Ch...</description>
+      <content:encoded><![CDATA[<h2>Plezy 2.1.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/2.1.0">edde746/plezy 2.1.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Tracker rating sheet</li>
+<li>Episode-level anime watch state sync</li>
+<li>Live TV guide grouping by source</li>
+<li>Player screenshot shortcut</li>
+<li>Jellyfin actor media browsing</li>
+<li>Additional Jellyfin library sort options</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Apple playback issues with Dolby Vision, HDR subtitles, MPVKit teardown, subtitle cropping, and video presentation</li>
+<li>Player startup, frame-rate/display matching, PiP, and lifecycle cleanup</li>
+<li>Plex and Jellyfin library filters, sorts, grouping, collections, home hubs, and large library loading</li>
+<li>Live TV guide loading, recording indicators, and Jellyfin Live TV direct streaming</li>
+<li>Tracker anime completion totals, scoped progress sync, Plex library context, and Trakt sync behavior</li>
+<li>Search ranking and server indicators</li>
+<li>Watch Together host resume, companion remote server selection, duplicate PIN dialogs, downloads cleanup, and desktop database migration</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Search relevance and home/discover ordering</li>
+<li>Media detail action layout, poster loading states, browse chip spacing, and TV browse presentation</li>
+<li>HTTP shutdown and transient Plex resource failure handling</li>
+<li>Startup cleanup for orphaned Plex image cache files</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.0.0...2.1.0">https://github.com/edde746/plezy/compare/2.0.0...2.1.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 2.1.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/2.1.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.1.0</guid>
@@ -3480,79 +3545,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.28.0</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.28.0</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.28.0</guid>
-      <pubDate>Thu, 19 Mar 2026 06:23:31 GMT</pubDate>
-      <description>Plezy 1.28.0 — Standalone APKs APKs extracted from edde746/plezy 1.28.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.28.0 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.28.0">edde746/plezy 1.28.0</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Added</h2>
-<ul>
-<li>Individual shared item support</li>
-<li>Live TV channel favorites</li>
-<li>Redesigned TV player controls behavior</li>
-<li>MKV seeking without Cues &amp; zlib decompression support in ExoPlayer</li>
-<li>Cmd/Ctrl+F to open search</li>
-<li>Masked digits in TV PIN input</li>
-<li>Home hubs sorted by library order</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Reduce remote playback startup latency</li>
-<li>Preserve chapters/markers in cache during watch state sync</li>
-<li>Tighten and align media detail screen spacing</li>
-<li>Prefer exact language code match in track selection</li>
-<li>Eliminate duplicate API requests on startup</li>
-<li>Focus search input on search tab</li>
-<li>Incorrect queue sheet item sizing</li>
-<li>Enable WAL mode for SQLite</li>
-<li>Reduce image cache budgets and add memory pressure handling</li>
-<li>SurfaceControl use-after-free</li>
-<li>Defer nativeSurfaceChanged out of layout pass</li>
-<li>Download deletion using DB file paths</li>
-<li>Set leafCount for offline season metadata</li>
-<li>Load downloaded subtitles for offline playback</li>
-<li>Use gpu-api=auto for mpv (Windows)</li>
-<li>Reduce bottom sheet spacing</li>
-<li>Delete propagation when episodes are displayed in flat list</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Switch from OkHttp to Cronet networking stack</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.27.2...1.28.0">https://github.com/edde746/plezy/compare/1.27.2...1.28.0</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>yt-dlp/yt-dlp 2026.03.17</title>
       <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.17</link>
