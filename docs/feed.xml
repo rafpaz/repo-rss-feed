@@ -10,9 +10,96 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 20 May 2026 00:57:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 04:29:44 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.132.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.132.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.132.0</guid>
+      <pubDate>Wed, 20 May 2026 01:52:52 GMT</pubDate>
+      <description>New Features The Python SDK now supports first-class authentication, including API key login, ChatGPT browser and device-code flows, account inspection, and logout APIs. (#23093) Python turn APIs are easier to use for text-only workflows: you can pass a plain string as input, and handle-based run...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>The Python SDK now supports first-class authentication, including API key login, ChatGPT browser and device-code flows, account inspection, and logout APIs. (#23093)</li>
+<li>Python turn APIs are easier to use for text-only workflows: you can pass a plain string as input, and handle-based runs now return a richer <code>TurnResult</code> with collected items, timing, and usage data. (#23151, #23162)</li>
+<li><code>codex exec resume</code> now accepts <code>--output-schema</code>, so resumed automations can keep session context while still enforcing structured JSON output. (#23123)</li>
+<li>TUI startup is faster because terminal capability probes are now batched instead of waiting on several serial checks before the first interactive frame. (#23175)</li>
+<li>Remote executor registration can now use standard Codex auth instead of a separate registry credential flow. (#22769)</li>
+<li>App-server turns can preserve requested image fidelity, including original-resolution local images, across user inputs and image-producing tools. (#20693)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Goal continuations now stop when they hit usage limits or a repeated blocker instead of looping and burning more tokens, and completion responses phrase usage more naturally. (#23094, #22907)</li>
+<li>The session picker is easier to trust: renamed threads now show <code>name (thread-id)</code> in resume hints, and pasted text works in the picker search box. (#23234, #23338)</li>
+<li>Multi-session TUI flows are more reliable: in-progress MCP calls stay marked as active during replay, and elicitation replies are sent back to the thread that requested them. (#23236, #23241)</li>
+<li>Remote sessions now keep websocket connections alive and show repo-relative diff paths again instead of <code>/tmp/...</code>-prefixed paths. (#23226, #23261)</li>
+<li>Windows installs are more robust: <code>codex doctor</code> now detects npm-managed installs correctly, and MSVC release binaries no longer depend on separately installed VC++ runtime DLLs. (#22967, #22905)</li>
+<li>TUI polish fixes include immediate shutdown feedback on exit, hiding the ChatGPT usage link for non-OpenAI providers, and keeping a cleared Fast tier from reappearing after side-thread resume. (#23323, #23127, #23121)</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>The Python SDK docs, FAQ, and examples were refreshed around the new auth flow and turn APIs, with clearer setup guidance and simpler text-only examples. (#22941, #23093, #23151, #23162)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Memory summaries are now versioned and rebuilt when the stored format is stale, which should keep long-lived memory context leaner and more predictable. (#23148)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.131.0...rust-v0.132.0">https://github.com/openai/codex/compare/rust-v0.131.0...rust-v0.132.0</a></p>
+<ul>
+<li>#20693 Preserve image detail in app-server inputs @fjord-oai</li>
+<li>#22891 tui: pass active permission profiles through app commands @bolinfest</li>
+<li>#22924 app-server-protocol: remove PermissionProfile from API @bolinfest</li>
+<li>#22941 [codex] Refine Python SDK user-facing docs @aibrahim-oai</li>
+<li>#22967 Fix Windows doctor npm root probe @etraut-openai</li>
+<li>#22920 core: set permission profiles from snapshots @bolinfest</li>
+<li>#22939 [codex] Split Python SDK helper logic @aibrahim-oai</li>
+<li>#22907 Improve goal completion usage reporting @etraut-openai</li>
+<li>#23030 test: construct permission profiles directly @bolinfest</li>
+<li>#22769 exec-server: support auth-backed remote executor registration @miz-openai</li>
+<li>#22946 [codex] preserve MCP result meta in McpToolCallItemResult @miaolin-oai</li>
+<li>#23069 multiagent: trim model-visible description, cap to 5 models @sayan-oai</li>
+<li>#22913 [1 of 4] tui: route primary settings writes through app server @etraut-openai</li>
+<li>#23093 sdk/python: add first-class login support @aibrahim-oai</li>
+<li>#23151 [codex] Return TurnResult from Python turn handles @aibrahim-oai</li>
+<li>#23147 Make multi-agent v2 tool namespace configurable @jif-oai</li>
+<li>#23036 test: reduce core sandbox policy test setup @bolinfest</li>
+<li>#23162 [codex] Accept string input for Python turns @aibrahim-oai</li>
+<li>#23226 Add exec-server websocket keepalive @starr-openai</li>
+<li>#23148 Densify and version memory summaries @jif-oai</li>
+<li>#22448 [codex] Add installed-plugin mention API @xli-oai</li>
+<li>#23288 chore: goal ext skeleton @jif-oai</li>
+<li>#23291 Make extension lifecycle hooks async @jif-oai</li>
+<li>#23293 feat: add extension event sink capability @jif-oai</li>
+<li>#23295 chore: isolate thread goal storage behind GoalStore @jif-oai</li>
+<li>#23301 chore: goal resumed metrics @jif-oai</li>
+<li>#23305 chore: make token usage async @jif-oai</li>
+<li>#23306 Emit goal update events from goal extension tools @jif-oai</li>
+<li>#23121 tui: keep cleared Fast tier from reappearing after side-thread resume @etraut-openai</li>
+<li>#23123 Support --output-schema for exec resume @etraut-openai</li>
+<li>#23128 Fix TUI stream cleanup after turn errors @etraut-openai</li>
+<li>#23127 Hide ChatGPT usage link for non-OpenAI status @etraut-openai</li>
+<li>#23175 [1 of 2] Optimize TUI startup terminal probes @etraut-openai</li>
+<li>#22706 [codex] Remove legacy shell output formatting paths @pakrym-oai</li>
+<li>#23332 nit: read prompt @jif-oai</li>
+<li>#22905 windows: link MSVC release binaries with static CRT @iceweasel-oai</li>
+<li>#23323 fix(tui): show shutdown feedback on exit @fcoury-oai</li>
+<li>#23261 Fix remote turn diff display roots @starr-openai</li>
+<li>#22569 Simplify legacy Windows sandbox ACL persistence @iceweasel-oai</li>
+<li>#23273 Upload rust full CI JUnit reports @starr-openai</li>
+<li>#22893 fix: harden plugin creator sharing validation @efrazer-oai</li>
+<li>#23094 goal: pause continuation loops on usage limits and blockers @etraut-openai</li>
+<li>#23234 Clarify resume hints for renamed threads @etraut-openai</li>
+<li>#23241 TUI: route elicitation responses to request thread @etraut-openai</li>
+<li>#23236 TUI: replay in-progress MCP calls as started @etraut-openai</li>
+<li>#23088 goals: keep pause transitions explicit @etraut-openai</li>
+<li>#23338 feat(tui): handle paste in session picker @fcoury-oai</li>
+<li>#23335 feat(app-server): add optional thread_id to experimentalFeature/list @owenlin0</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>openai/codex rust-v0.131.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.131.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.131.0</guid>
