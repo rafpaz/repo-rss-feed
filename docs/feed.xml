@@ -10,9 +10,172 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 21 May 2026 16:07:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 18:43:33 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>openai/codex rust-v0.133.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.133.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.133.0</guid>
+      <pubDate>Thu, 21 May 2026 16:48:03 GMT</pubDate>
+      <description>New Features Goals are now enabled by default, backed by dedicated storage, and track progress across active turns. (#23300, #23685, #23696, #23732) codex remote-control now runs like a foreground command, waits for readiness, reports machine status, and keeps explicit daemon-style start / stop c...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Goals are now enabled by default, backed by dedicated storage, and track progress across active turns. (#23300, #23685, #23696, #23732)</li>
+<li><code>codex remote-control</code> now runs like a foreground command, waits for readiness, reports machine status, and keeps explicit daemon-style <code>start</code>/<code>stop</code> commands. (#22878)</li>
+<li>Permission profiles gained list APIs, inheritance, managed <code>requirements.toml</code> support, runtime refresh behavior, and stronger Windows sandbox integration. (#22928, #23412, #22270, #23433, #22931, #23715)</li>
+<li>Plugin discovery is easier to inspect, with marketplace-aware list output, installed versions, visible marketplace roots, and remote collection support. (#23372, #23584, #23727, #23730)</li>
+<li>Extensions can observe more lifecycle events, including subagent start/stop, tool execution, turn metadata, and async approval/turn processing. (#22782, #22873, #23309, #23688, #23690, #23692)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Fixed TUI startup choosing the wrong working directory when reusing a local app-server socket. (#23538)</li>
+<li>Fixed plan-mode free-form answers so modified Enter keys, like Shift+Enter, no longer submit unexpectedly. (#23536)</li>
+<li>Removed stale background terminal poll events after a process exits. (#23231)</li>
+<li>Preserved raw code-mode exec output unless an explicit output token limit is requested. (#23564)</li>
+<li>Made AGENTS instruction loading more reliable, including local global reads and warnings for invalid UTF-8 instead of silent drops. (#23343, #23232)</li>
+<li>Fixed app-server startup/shutdown races, empty resume/fork paths, plugin upgrade failures, and realtime v1 websocket compatibility. (#23516, #23578, #23400, #23356, #23771)</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Added clearer plugin-creator guidance for updating and reinstalling local personal plugins. (#23542)</li>
+<li>Expanded app-server/API docs and schema coverage around managed permission profile requirements. (#23433, #23555)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Added a canonical Codex package archive pipeline and moved installers, npm packages, DotSlash, and SDK runtimes toward that shared layout. (#23513, #23582, #23586, #23596, #23635, #23636, #23637, #23638, #23786)</li>
+<li>Fixed Linux Python runtime wheel tags so glibc-based systems can install the runtime artifacts. (#21812)</li>
+<li>Improved release and CI reliability with package-builder tests, prebuilt resource packaging, DotSlash zstd handling, platform-sharded Rust tests, and Codex Linux release runners. (#23760, #23759, #23752, #23358, #23761)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.132.0...rust-v0.133.0">https://github.com/openai/codex/compare/rust-v0.132.0...rust-v0.133.0</a></p>
+<ul>
+<li>#23343 codex: route global AGENTS reads through LOCAL_FS @starr-openai</li>
+<li>#22380 fix: default unknown tool schemas to empty schemas @celia-oai</li>
+<li>#23309 Add tool lifecycle extension contributor @jif-oai</li>
+<li>#23253 Reduce rust-ci-full Windows nextest timeout flakes @starr-openai</li>
+<li>#22878 Improve <code>codex remote-control</code> CLI UX @owenlin0</li>
+<li>#21812 Publish Linux runtime wheels with glibc-compatible tags @aibrahim-oai</li>
+<li>#22709 [codex] Trim unused TurnContextItem fields @pakrym-oai</li>
+<li>#23353 Include plugin id in plugin MCP tool metadata @mzeng-openai</li>
+<li>#22728 [codex] Move pending input into input queue @pakrym-oai</li>
+<li>#23371 fix(tui): warn on unsupported iTerm2 pet versions @fcoury-oai</li>
+<li>#23376 [codex-analytics] preserve user thread source for exec threads @marksteinbrick-oai</li>
+<li>#23360 app-server: use profile ids in v2 permission params @bolinfest</li>
+<li>#23384 [codex] Remove external websocket session resets @pakrym-oai</li>
+<li>#22721 cleanup: Remove skill env var dependency prompting @xl-openai</li>
+<li>#23389 Remove ToolSearch feature toggle @sayan-oai</li>
+<li>#23080 [1 of 7] Add thread settings to UserInput @etraut-openai</li>
+<li>#23081 [2 of 7] Remove UserInputWithTurnContext @etraut-openai</li>
+<li>#23075 [3 of 7] Remove UserTurn @etraut-openai</li>
+<li>#23396 [codex] Extract turn skill and plugin injections @pakrym-oai</li>
+<li>#23356 fix(plugins): keep version upgrades additive @iceweasel-oai</li>
+<li>#22508 [5 of 7] Replace OverrideTurnContext with ThreadSettings @etraut-openai</li>
+<li>#22086 CI: Customize v8 building @cconger</li>
+<li>#23390 Remove explicit connector tool undeferral @sayan-oai</li>
+<li>#22928 core: expose permission profile picker metadata @viyatb-oai</li>
+<li>#23352 Preserve context baselines for full-history agent forks @jif-oai</li>
+<li>#23300 feat: dedicated goal DB @jif-oai</li>
+<li>#22835 Remove ToolsConfig from tool planning @jif-oai</li>
+<li>#22870 Add <code>body_after_prefix</code> auto-compact token limit scope @jif-oai</li>
+<li>#23144 Defer v1 multi-agent tools behind tool search @jif-oai</li>
+<li>#23409 [codex] Allow empty turn/start requests @pakrym-oai</li>
+<li>#23388 [codex] Move hook request plumbing into hook runtime @pakrym-oai</li>
+<li>#23405 [codex] Preserve steer input as user input @pakrym-oai</li>
+<li>#22914 [2 of 4] tui: route app and skill enablement through app server @etraut-openai</li>
+<li>#23397 [codex] Make contextual user fragments dyn-renderable @pakrym-oai</li>
+<li>#23475 chore: namespace v1 sub-agent tools @jif-oai</li>
+<li>#23493 Make <code>deny</code> canonical for filesystem permission entries @viyatb-oai</li>
+<li>#22929 Harden CLI rate limit window labels @ase-openai</li>
+<li>#22782 Add SubagentStart hook @abhinav-oai</li>
+<li>#23513 build: add Codex package builder @bolinfest</li>
+<li>#23369 Make local environment optional in EnvironmentManager @starr-openai</li>
+<li>#23327 Refactor exec-server websocket pump @starr-openai</li>
+<li>#23536 fix(tui): preserve modified enter in plan questions @fcoury-oai</li>
+<li>#23400 Fix empty rollout path app-server handling @wiltzius-openai</li>
+<li>#23551 Route local-only app-server gating through processors @starr-openai</li>
+<li>#23372 Split plugin install discovery into list and request tools @mzeng-openai</li>
+<li>#23516 fix: serialize unix app-server startup @efrazer-oai</li>
+<li>#22169 [codex] Honor role-defined spawn service tiers @aibrahim-oai</li>
+<li>#23555 Add CUA requirements subsection for locked computer use @adams-oai</li>
+<li>#23538 Fix: TUI starting in wrong CWD @canvrno-oai</li>
+<li>#23526 build: fetch rg for Codex packages @bolinfest</li>
+<li>#23573 Remove unused ARC monitor path @mzeng-openai</li>
+<li>#23576 test: fix multi-agent service tier assertion @bolinfest</li>
+<li>#23541 build: default Codex package target and output @bolinfest</li>
+<li>#23358 Fan out rust-ci-full nextest by platform @starr-openai</li>
+<li>#23593 feat: expose codex-app-server version flag @bolinfest</li>
+<li>#23412 feat: add permission profile list api @viyatb-oai</li>
+<li>#23535 Move plugin and skill warmup into session startup @aibrahim-oai</li>
+<li>#23231 Fix stale background terminal poll events @etraut-openai</li>
+<li>#23564 [codex] Preserve raw code-mode exec output by default @aibrahim-oai</li>
+<li>#23232 Warn on invalid UTF-8 in AGENTS.md files @etraut-openai</li>
+<li>#23584 feat: Add vertical remote plugin collection support @xl-openai</li>
+<li>#23586 build: package prebuilt Codex entrypoints @bolinfest</li>
+<li>#23582 ci: build Codex package archives in release workflow @bolinfest</li>
+<li>#23596 runtime: detect Codex package layout @bolinfest</li>
+<li>#23500 add encryptedcontent to functioncalloutput @sayan-oai</li>
+<li>#23633 Migrate exec-server remote registration to environments @richardopenai</li>
+<li>#23451 Add timeout for remote compaction requests @jif-oai</li>
+<li>#23667 feat: rename 1 @jif-oai</li>
+<li>#23669 feat: rename 3 @jif-oai</li>
+<li>#23668 feat: rename 2 @jif-oai</li>
+<li>#23675 fix: main @jif-oai</li>
+<li>#23685 feat: wire goal extension tools to the dedicated goal store @jif-oai</li>
+<li>#23690 feat: async approval contrib @jif-oai</li>
+<li>#23692 feat: async turn item process @jif-oai</li>
+<li>#23688 feat: expose turn-start metadata to extensions @jif-oai</li>
+<li>#23605 [codex] Hide deferred tools from code mode prompt @pakrym-oai</li>
+<li>#23634 runtime: use install context for bundled bwrap @bolinfest</li>
+<li>#23635 release: publish Codex package archive checksums @bolinfest</li>
+<li>#23592 feat: Add btw alias for side slash command @anp-oai</li>
+<li>#23696 feat: account active goal progress in the goal extension @jif-oai</li>
+<li>#23176 [2 of 2] Start fresh TUI thread in background @etraut-openai</li>
+<li>#23578 fix(app-server): speed up shutdown @fcoury-oai</li>
+<li>#22896 windows-sandbox: add resolved permissions helper @bolinfest</li>
+<li>#23502 Add thread/settings/update app-server API @etraut-openai</li>
+<li>#23507 Sync TUI thread settings through app server @etraut-openai</li>
+<li>#23666 feat: add turn_id and truncation_policy to extension tool calls @jif-oai</li>
+<li>#23636 install: consume Codex package archives @bolinfest</li>
+<li>#23717 [codex] Preserve failed goal accounting flushes @jif-oai</li>
+<li>#23655 add standalone websearch api client @sayan-oai</li>
+<li>#23724 Fix thread settings clippy failure @etraut-openai</li>
+<li>#23637 npm: ship platform packages in Codex package layout @bolinfest</li>
+<li>#23729 fix(config): resolve cloud requirements deny-read globs @viyatb-oai</li>
+<li>#23638 dotslash: publish Codex entrypoints from package archives @bolinfest</li>
+<li>#22918 windows-sandbox: send permission profiles to elevated runner @bolinfest</li>
+<li>#23735 windows-sandbox: share bundled helper lookup @bolinfest</li>
+<li>#18868 Add MITM hook config model @evawong-oai</li>
+<li>#22270 feat(permissions): resolve permission profile inheritance @viyatb-oai</li>
+<li>#23719 cli: add strict config to exec-server @bolinfest</li>
+<li>#23542 [skills] Create a personal update flow for plugin creator @caseychow-oai</li>
+<li>#21272 Support compact SessionStart hooks @abhinav-oai</li>
+<li>#20659 Wire MITM hooks into runtime enforcement @evawong-oai</li>
+<li>#23752 release: use DotSlash zstd for package archives @bolinfest</li>
+<li>#22923 windows-sandbox: drive write roots from resolved permissions @bolinfest</li>
+<li>#23761 chore: use Codex Linux runners for Rust releases @bolinfest</li>
+<li>#23759 release: package prebuilt resource binaries @bolinfest</li>
+<li>#23167 windows-sandbox: feed setup from resolved permissions @bolinfest</li>
+<li>#22931 core: refresh active permission profiles at runtime @viyatb-oai</li>
+<li>#22873 Add SubagentStop hook @abhinav-oai</li>
+<li>#23727 feat(plugins): tabulate plugin list output @caseychow-oai</li>
+<li>#23732 Make goals feature on by default and no longer experimental @etraut-openai</li>
+<li>#23537 Honor client-resolved service tier defaults @shijie-oai</li>
+<li>#23771 [codex] Fix realtime v1 websocket compatibility @guinness-oai</li>
+<li>#23764 Remove Windows sandbox resource stamping @iceweasel-oai</li>
+<li>#23730 [codex] List marketplaces considered by plugin discovery @caseychow-oai</li>
+<li>#23760 ci: run Codex package builder tests @bolinfest</li>
+<li>#23737 [codex] Add plugin id to MCP tool call items @mzeng-openai</li>
+<li>#18240 Use named MITM permissions config @evawong-oai</li>
+<li>#23774 [codex] Reject read-only fallback with approvals disabled @viyatb-oai</li>
+<li>#23714 windows-sandbox: add profile-native elevated APIs @bolinfest</li>
+<li>#23433 feat: support managed permission profiles in requirements.toml @viyatb-oai</li>
+<li>#23715 core: pass permission profiles to Windows runner @bolinfest</li>
+<li>#23786 sdk: launch packaged Codex runtimes @bolinfest</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>nodejs/node v24.16.0</title>
       <link>https://github.com/nodejs/node/releases/tag/v24.16.0</link>
       <guid isPermaLink="true">https://github.com/nodejs/node/releases/tag/v24.16.0</guid>
