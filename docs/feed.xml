@@ -10,9 +10,19 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 21 May 2026 21:34:47 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 00:55:08 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>Kong/insomnia core@12.6.0</title>
+      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.6.0</link>
+      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.6.0</guid>
+      <pubDate>Fri, 22 May 2026 00:40:00 GMT</pubDate>
+      <description>Full Changelog : https://github.com/Kong/insomnia/compare/core@12.6.0-beta.0...core@12.6.0</description>
+      <content:encoded><![CDATA[<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.6.0-beta.0...core@12.6.0">https://github.com/Kong/insomnia/compare/core@12.6.0-beta.0...core@12.6.0</a></p>]]></content:encoded>
+      <category>Kong</category>
+      <category>insomnia</category>
+      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
+    </item>    <item>
       <title>openai/codex rust-v0.133.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.133.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.133.0</guid>
@@ -7163,63 +7173,6 @@ Python 3.9 has reached its end-of-life as of October 2025, and yt-dlp has now re
       <category>yt-dlp</category>
       <category>yt-dlp</category>
       <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
-    </item>    <item>
-      <title>Kong/insomnia core@11.6.2</title>
-      <link>https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</link>
-      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4011.6.2</guid>
-      <pubDate>Tue, 21 Oct 2025 21:08:20 GMT</pubDate>
-      <description>What&amp;#39;s Changed :rocket: 11.6.1 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9154 Change the validation rule for branch name in cloud sync [INS-1041] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9126 fix: auth code redirect uri affects implicit by @ZxBing0066 in https:...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<ul>
-<li>:rocket: 11.6.1 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9154">https://github.com/Kong/insomnia/pull/9154</a></li>
-<li>Change the validation rule for branch name in cloud sync [INS-1041] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9126">https://github.com/Kong/insomnia/pull/9126</a></li>
-<li>fix: auth code redirect uri affects implicit by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9158">https://github.com/Kong/insomnia/pull/9158</a></li>
-<li>feat: Enhance the real time event polling mechanism for websocket and socket-io  by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9157">https://github.com/Kong/insomnia/pull/9157</a></li>
-<li>Remove dependency on @mismerge/react [INS-1418] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9145">https://github.com/Kong/insomnia/pull/9145</a></li>
-<li>use toast instead of show-notification by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9128">https://github.com/Kong/insomnia/pull/9128</a></li>
-<li>chore: explicit external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9124">https://github.com/Kong/insomnia/pull/9124</a></li>
-<li>add path check to read file by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9180">https://github.com/Kong/insomnia/pull/9180</a></li>
-<li>[INS-1309] - Improve init/complete sign in flows with GitHub/GitLab by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9181">https://github.com/Kong/insomnia/pull/9181</a></li>
-<li>fix: wrong expiry time of oauth token by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9182">https://github.com/Kong/insomnia/pull/9182</a></li>
-<li>fix: should show correct error boundary by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9184">https://github.com/Kong/insomnia/pull/9184</a></li>
-<li>Fix release recurring builds by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9191">https://github.com/Kong/insomnia/pull/9191</a></li>
-<li>Bump react-aria by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9188">https://github.com/Kong/insomnia/pull/9188</a></li>
-<li>feat: create collection from mock server routes by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9156">https://github.com/Kong/insomnia/pull/9156</a></li>
-<li>feat: Improve global modals by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9190">https://github.com/Kong/insomnia/pull/9190</a></li>
-<li>React-19-pre-upgrade by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9199">https://github.com/Kong/insomnia/pull/9199</a></li>
-<li>reduce esbuild external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9213">https://github.com/Kong/insomnia/pull/9213</a></li>
-<li>refactor: wrap sensitive readFile - INS-1442 by @jackkav in <a href="https://github.com/Kong/insomnia/pull/8992">https://github.com/Kong/insomnia/pull/8992</a></li>
-<li>refactor importers to run in node by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9217">https://github.com/Kong/insomnia/pull/9217</a></li>
-<li>fix link rendering by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9223">https://github.com/Kong/insomnia/pull/9223</a></li>
-<li>fix: help text that incorrectly refers to momentjs by @judss in <a href="https://github.com/Kong/insomnia/pull/9225">https://github.com/Kong/insomnia/pull/9225</a></li>
-<li>fix: support specific importer when import from curl by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9197">https://github.com/Kong/insomnia/pull/9197</a></li>
-<li>chore(docs): add note on macOS entitlements for local testing of packaged app by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9227">https://github.com/Kong/insomnia/pull/9227</a></li>
-<li>fix: curl import issue when parse the pair value by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9198">https://github.com/Kong/insomnia/pull/9198</a></li>
-<li>chore(pkg): exclude source map files from build output by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9228">https://github.com/Kong/insomnia/pull/9228</a></li>
-<li>fix(deps): Move @react-router/dev to dev dependencies by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9231">https://github.com/Kong/insomnia/pull/9231</a></li>
-<li>fix: request is sent before script has been persisted by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9237">https://github.com/Kong/insomnia/pull/9237</a></li>
-<li>chore: increase timeout to 45 minutes for building artifacts by @notjaywu in <a href="https://github.com/Kong/insomnia/pull/9238">https://github.com/Kong/insomnia/pull/9238</a></li>
-<li>fix: modal show in non-auth pane by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9246">https://github.com/Kong/insomnia/pull/9246</a></li>
-<li>Fix: real time response pane event issue by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9248">https://github.com/Kong/insomnia/pull/9248</a></li>
-<li>fix: file tag returns getPath error in the elevated mode by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9251">https://github.com/Kong/insomnia/pull/9251</a></li>
-<li>fix: check clientCerts and return correct error message when accessing denied for CLI by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9252">https://github.com/Kong/insomnia/pull/9252</a></li>
-<li>fix: missing body menu items after the key changes by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9253">https://github.com/Kong/insomnia/pull/9253</a></li>
-<li>fix: the danger color is same as background then icon seems invisible by @ihexxa in <a href="https://github.com/Kong/insomnia/pull/9254">https://github.com/Kong/insomnia/pull/9254</a></li>
-<li>Fix wrong user data dir [INS-1549] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9258">https://github.com/Kong/insomnia/pull/9258</a></li>
-<li>fix(Modals): Add ModalOverlay to global modals for proper stacking behavior by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9259">https://github.com/Kong/insomnia/pull/9259</a></li>
-<li>fix: add project to descendant map - [INS-1562] by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9264">https://github.com/Kong/insomnia/pull/9264</a></li>
-<li>chore: reduce vite external deps by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9212">https://github.com/Kong/insomnia/pull/9212</a></li>
-<li>fix: sentry sourcemap - [INS-1255] by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9249">https://github.com/Kong/insomnia/pull/9249</a></li>
-<li>fix(Navigation): Store/recover navigation history in the app by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9284">https://github.com/Kong/insomnia/pull/9284</a></li>
-</ul>
-<h2>New Contributors</h2>
-<ul>
-<li>@judss made their first contribution in <a href="https://github.com/Kong/insomnia/pull/9225">https://github.com/Kong/insomnia/pull/9225</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@11.6.1...core@11.6.2">https://github.com/Kong/insomnia/compare/core@11.6.1...core@11.6.2</a></p>]]></content:encoded>
-      <category>Kong</category>
-      <category>insomnia</category>
-      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
