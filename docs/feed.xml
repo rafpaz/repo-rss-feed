@@ -10,9 +10,44 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Sun, 24 May 2026 18:27:02 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 21:21:59 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.20b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.20b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.20b</guid>
+      <pubDate>Sun, 24 May 2026 18:46:35 GMT</pubDate>
+      <description>Zen Stable Release This release includes a major new feature called Boosts! Boosts allow you to customize the look and feel of any website to your liking. To start boosting, click the site&amp;#39;s control icon in the urlbar and click the new &amp;#39;Boost&amp;#39; button. Security https://www.mozilla.org/...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<p>This release includes a major new feature called Boosts! Boosts allow you to customize the look and feel of any website to your liking. To start boosting, click the site&#39;s control icon in the urlbar and click the new &#39;Boost&#39; button.</p>
+<h2>Security</h2>
+<ul>
+<li><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-46/">https://www.mozilla.org/en-US/security/advisories/mfsa2026-46/</a></li>
+</ul>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 151.0 and 151.0.1</li>
+<li>Boosts are now in Zen! This allows you to tint colors, customize fonts and styles, zap elements and enable automatic dark mode on any website!</li>
+<li>Overflowing web extensions will now appear below the urlbar instead of being added back into the site control panel. This only happens in single-sidebar mode.</li>
+<li>Zen now strengthens protection against fingerprinting in Standard Enhanced Tracking Protection, making it harder for websites to track you across sites by limiting the amount of information revealed about your device and browser. This reduces the number of users uniquely identifiable by common fingerprinting techniques by an average of ~14%, and by ~49% on macOS.</li>
+<li>You can now merge multiple PDFs directly in Zen PDF. Combine separate PDF files into a single document without ever leaving Zen or relying on third-party tools.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed a bug where the url would be cut off when the urlbar was too small. (<a href="https://github.com/zen-browser/desktop/issues/13719">#13719</a>)</li>
+<li>Fixed &#39;go back to original url&#39; button on pinned tabs showing up even when the url was not modified. (<a href="https://github.com/zen-browser/desktop/issues/12949">#12949</a>)</li>
+<li>Added better support for cyclic workspace switching</li>
+<li>Fixed video controls going under the screen when in fullscreen mode. (<a href="https://github.com/zen-browser/desktop/issues/10594">#10594</a>)</li>
+<li>Fixed closing a split view in one window selecting it on other windows. (<a href="https://github.com/zen-browser/desktop/issues/13761">#13761</a>)</li>
+</ul>
+<h2>Changes</h2>
+<ul>
+<li>Geolocation on Windows now respects the user&#39;s Windows location permission setting, instead of overriding it, when the user grants location permission to a page. Firefox will ask users to enable the Windows permission if it is needed.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>derFrisson/plezy-apks 2.2.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.2.0</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.2.0</guid>
@@ -4004,41 +4039,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>yuliskov</category>
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.4b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.4b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.4b</guid>
-      <pubDate>Fri, 27 Mar 2026 09:34:04 GMT</pubDate>
-      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 149.0 Optimized the performance glance and its animations, making it more responsive and smoother than before. Added a &amp;#39;Un-split tabs&amp;#39; context menu item when right-clicking on a tab inside a split view to q...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-20/">Various security fixes</a></p>
-<h2>New Features</h2>
-<ul>
-<li>Updated to Firefox 149.0</li>
-<li>Optimized the performance glance and its animations, making it more responsive and smoother than before.</li>
-<li>Added a &#39;Un-split tabs&#39; context menu item when right-clicking on a tab inside a split view to quickly un-split it.</li>
-<li>Many PDF files will now load significantly faster thanks to hardware acceleration.</li>
-<li>Zen now automatically blocks notifications and permanently revokes permissions for any website flagged as malicious by SafeBrowsing. This prevents unsafe sites from sending background notifications to users, commonly used for ads, spam or phishing.</li>
-<li>The WebRender layer compositor is now enabled on Windows, reducing power usage during full-screen video playback and improving WebGL/WebGPU performance.</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed background grain not showing properly (<a href="https://github.com/zen-browser/desktop/issues/12765">#12765</a>)</li>
-<li>Fixed not being able to switch spaces with scroll actions (<a href="https://github.com/zen-browser/desktop/issues/12816">#12816</a>)</li>
-<li>Fixed closing blank windows when asking for confirmation (<a href="https://github.com/zen-browser/desktop/issues/12922">#12922</a>)</li>
-<li>Increased robustness of HTTP/3 upload performance for unstable network conditions.</li>
-<li>Other minor bug fixes and improvements.</li>
-</ul>
-<h2>Changes</h2>
-<ul>
-<li>Live folders will now perform a refresh when waking up the computer to make sure the content is up to date.</li>
-<li>On Linux, Zen will now default to the XDG portal file picker if available, rather than the GTK3 one, which is usually better integrated with the user&#39;s desktop environment, and more powerful.</li>
-<li>On Windows, Zen will use the modern Windows.Devices.Geolocation API for geolocation instead of Windows 7 location API.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>derFrisson/plezy-apks 1.30.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.30.0</link>
