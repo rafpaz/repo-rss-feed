@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 25 May 2026 18:38:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 21:29:06 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>zen-browser/desktop 1.20b</title>
@@ -4285,50 +4285,6 @@ export, and own enumerable properties are treated as named exports.</p>
 <td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.17s/SmartTube_stable_31.17_x86.apk">SmartTube_stable_31.17_x86.apk</a></td>
 <td align="left"><a href="https://www.virustotal.com/gui/file/890f239223119d294191e5de984474fd31ac1aadf7f7c5c758e2f283febf3955/detection"><img src="https://badges.cssnr.com/vt/id/890f239223119d294191e5de984474fd31ac1aadf7f7c5c758e2f283febf3955?start=green&end=red&n=8&v=1773780591" alt=""></a></td>
 <td align="left"><a href="https://www.virustotal.com/gui/file/890f239223119d294191e5de984474fd31ac1aadf7f7c5c758e2f283febf3955/detection">View Report</a></td>
-</tr>
-</tbody></table>]]></content:encoded>
-      <category>yuliskov</category>
-      <category>SmartTube</category>
-      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
-      <title>yuliskov/SmartTube 31.16s</title>
-      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.16s</link>
-      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.16s</guid>
-      <pubDate>Tue, 17 Mar 2026 14:52:34 GMT</pubDate>
-      <description>Added configurable sleep timer (0...10 hours) Settings/Player/Sleep timer Fix search for playlists inside a channel Previous release fixes: buffering fix, afr fix, casting fixes, fix unable to add new channel group 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_...</description>
-      <content:encoded><![CDATA[<ul>
-<li>Added configurable sleep timer (0...10 hours) Settings/Player/Sleep timer</li>
-<li>Fix search for playlists inside a channel</li>
-<li>Previous release fixes: buffering fix, afr fix, casting fixes, fix unable to add new channel group</li>
-</ul>
-<h2>🛡️ VirusTotal Analysis</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Build Variant</th>
-<th align="left">VirusTotal Status</th>
-<th align="left">Detailed Report</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_arm64-v8a.apk">SmartTube_stable_31.16_arm64-v8a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/a45f8586f1a77131cb55d168725601ed2a201f4690028b1f29813e5d5a80bb27/detection"><img src="https://badges.cssnr.com/vt/id/a45f8586f1a77131cb55d168725601ed2a201f4690028b1f29813e5d5a80bb27?start=green&end=red&n=8&v=1773759351" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/a45f8586f1a77131cb55d168725601ed2a201f4690028b1f29813e5d5a80bb27/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_armeabi-v7a.apk">SmartTube_stable_31.16_armeabi-v7a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/225230877d6240a76c4f30314258c35965e716e5da796981ee6b0386be7c424c/detection"><img src="https://badges.cssnr.com/vt/id/225230877d6240a76c4f30314258c35965e716e5da796981ee6b0386be7c424c?start=green&end=red&n=8&v=1773759351" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/225230877d6240a76c4f30314258c35965e716e5da796981ee6b0386be7c424c/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_universal.apk">SmartTube_stable_31.16_universal.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/5cc574bf49e0a88eace2d01e85c03fb0c5f5092220f5c5edb6b47c8bcbe4b09c/detection"><img src="https://badges.cssnr.com/vt/id/5cc574bf49e0a88eace2d01e85c03fb0c5f5092220f5c5edb6b47c8bcbe4b09c?start=green&end=red&n=8&v=1773759352" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/5cc574bf49e0a88eace2d01e85c03fb0c5f5092220f5c5edb6b47c8bcbe4b09c/detection">View Report</a></td>
-</tr>
-<tr>
-<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.16s/SmartTube_stable_31.16_x86.apk">SmartTube_stable_31.16_x86.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/0d3802e24c57a6fb727142e6dc10a73b39f9a618c236043fbb118b95f3c8009f/detection"><img src="https://badges.cssnr.com/vt/id/0d3802e24c57a6fb727142e6dc10a73b39f9a618c236043fbb118b95f3c8009f?start=green&end=red&n=8&v=1773759352" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/0d3802e24c57a6fb727142e6dc10a73b39f9a618c236043fbb118b95f3c8009f/detection">View Report</a></td>
 </tr>
 </tbody></table>]]></content:encoded>
       <category>yuliskov</category>
