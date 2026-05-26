@@ -10,9 +10,151 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 26 May 2026 18:53:14 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 21:35:10 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 2.3.0</title>
+      <link>https://github.com/edde746/plezy/releases/tag/2.3.0</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.3.0</guid>
+      <pubDate>Tue, 26 May 2026 21:34:13 GMT</pubDate>
+      <description>Added Jellyfin unwatched library filter Jellyfin folder browsing and playback Fixed Android TrueHD passthrough detection Android display mode matching Android MPEG-TS seeking Android WebVTT subtitle positioning iOS PiP subtitles TV media detail rail focus, sizing, and light-theme text colors TV a...</description>
+      <content:encoded><![CDATA[<h2>Added</h2>
+<ul>
+<li>Jellyfin unwatched library filter</li>
+<li>Jellyfin folder browsing and playback</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Android TrueHD passthrough detection</li>
+<li>Android display mode matching</li>
+<li>Android MPEG-TS seeking</li>
+<li>Android WebVTT subtitle positioning</li>
+<li>iOS PiP subtitles</li>
+<li>TV media detail rail focus, sizing, and light-theme text colors</li>
+<li>TV alpha jump bar visibility</li>
+<li>TV episode backdrop selection</li>
+<li>TV detail reveal behavior without input</li>
+<li>TV virtual keyboard focus and text entry</li>
+<li>TV root menu navigation handling</li>
+<li>Duplicate Continue Watching entries</li>
+<li>Duplicate native download tasks</li>
+<li>Jellyfin negotiated subtitle playback</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>TV media detail presentation</li>
+<li>Download manager task tracking</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.2.0...2.3.0">https://github.com/edde746/plezy/compare/2.2.0...2.3.0</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
+      <title>openai/codex rust-v0.134.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.134.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.134.0</guid>
+      <pubDate>Tue, 26 May 2026 19:13:26 GMT</pubDate>
+      <description>New Features Added search across local conversation history, including case-insensitive content matches with result previews. (#23519, #23921) Made --profile the primary profile selector across CLI, TUI permissions, and sandbox flows, with legacy profile configs rejected through migration guidanc...</description>
+      <content:encoded><![CDATA[<h2>New Features</h2>
+<ul>
+<li>Added search across local conversation history, including case-insensitive content matches with result previews. (#23519, #23921)</li>
+<li>Made <code>--profile</code> the primary profile selector across CLI, TUI permissions, and sandbox flows, with legacy profile configs rejected through migration guidance. (#23708, #23883, #23890, #24051, #24055, #24059, #24067, #24110)</li>
+<li>Improved MCP setup with per-server environment targeting and OAuth options for streamable HTTP servers. (#23583, #24120)</li>
+<li>Made connector tool schemas more reliable by preserving local <code>$ref</code>/<code>$defs</code> structures and compacting oversized schemas before exposure. (#23357, #23904)</li>
+<li>Let read-only MCP tools run concurrently when they advertise <code>readOnlyHint</code>. (#23750)</li>
+<li>Added richer extension and hook context, including conversation history for extension tools and subagent identity in hook inputs. (#22882, #23963)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Improved remote reliability by reconnecting stale exec-server websocket clients, retrying remote control immediately after auth recovery, and retrying remote compaction v2 streams. (#23867, #23775, #23951)</li>
+<li>Fixed Windows TUI rendering corruption by restoring virtual terminal mode before drawing. (#24082)</li>
+<li>Displayed workspace-specific usage-limit messages for credit and spend-cap failures. (#24114)</li>
+<li>Allowed plugin skills to reuse shared plugin-level icon assets. (#23776)</li>
+<li>Preserved active permission profile metadata when syncing auto-review runtime settings. (#23956)</li>
+<li>Ensured Node-based tools honor Codex’s managed network proxy environment. (#23905)</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>Documented the curl and PowerShell installer paths in the README. (#24106)</li>
+<li>Updated developer docs to prefer <code>just test</code> over direct <code>cargo test</code> for repo-local test runs. (#23910)</li>
+<li>Added profile migration documentation links to relevant config errors. (#23879)</li>
+</ul>
+<h2>Chores</h2>
+<ul>
+<li>Simplified release packaging around canonical native artifacts, reusable DotSlash fetching, and a new macOS x64 zsh artifact. (#23833, #23836, #24129, #24165)</li>
+<li>Added release-build support for Codex-produced V8 artifacts. (#23934)</li>
+<li>Added image re-encoding benchmarks and connector-style JSON schema policy fixtures. (#23935, #24152)</li>
+<li>Improved tracing and analytics for websocket requests, turn starts, and remote compaction v2. (#23581, #23980, #24146)</li>
+</ul>
+<h2>Changelog</h2>
+<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.133.0...rust-v0.134.0">https://github.com/openai/codex/compare/rust-v0.133.0...rust-v0.134.0</a></p>
+<ul>
+<li>#23581 Trace logical websocket request after untraced warmup @jif-oai</li>
+<li>#23718 [codex] Steer budget-limited goal extension turns @jif-oai</li>
+<li>#23861 fix: cargo lock @jif-oai</li>
+<li>#23728 feat: retain remote compaction truncation parity in v2 @jif-oai</li>
+<li>#23870 Make tool executor specs mandatory @jif-oai</li>
+<li>#23882 [codex] Stabilize subagent start hook test @jif-oai</li>
+<li>#23876 refactor: centralize tool exposure planning @jif-oai</li>
+<li>#23879 chore: link doc in profile error messages @jif-oai</li>
+<li>#23883 cli: rename profile v2 flag to --profile @jif-oai</li>
+<li>#23835 docs: add description to codex-cli/package.json @bolinfest</li>
+<li>#23583 Route MCP servers through explicit environments @starr-openai</li>
+<li>#23886 cli: remove legacy profile v1 plumbing @jif-oai</li>
+<li>#23708 tui: plumb permission profile selection @viyatb-oai</li>
+<li>#23833 packaging: move rg manifest out of npm bin @bolinfest</li>
+<li>#23796 Improve <code>/goal</code> error messages for ephemeral sessions @etraut-openai</li>
+<li>#23867 Reconnect disconnected exec-server websocket clients with fresh sessions @starr-openai</li>
+<li>#23792 TUI: skip goal replace prompt for completed goals @etraut-openai</li>
+<li>#23519 [codex] Add rollout-backed thread content search @fc-oai</li>
+<li>#22552 Remove plugin hooks feature flag @abhinav-oai</li>
+<li>#23836 npm: remove legacy package artifact synthesis @bolinfest</li>
+<li>#23921 [codex] Make thread search case-insensitive @fc-oai</li>
+<li>#23775 fix(remote-control): retry after auth recovery @apanasenko-oai</li>
+<li>#22882 Add subagent identity to hook inputs @abhinav-oai</li>
+<li>#22915 [3 of 4] tui: route feature and memory toggles through app server @etraut-openai</li>
+<li>#23776 fix: Allow plugin skills to share plugin-level icon assets @xl-openai</li>
+<li>#23860 Add Bedrock Mantle GovCloud region @CHARLESPALEN-OAI</li>
+<li>#23956 Fix auto-review permission profile override @etraut-openai</li>
+<li>#23357 feat: support local refs and defs in tool input schemas @celia-oai</li>
+<li>#23963 Expose conversation history to extension tools @sayan-oai</li>
+<li>#23904 feat: best-effort compact large tool schemas @celia-oai</li>
+<li>#23750 Allow parallel MCP tool calls when annotated readOnly @anp-oai</li>
+<li>#23905 [codex] Enable Node env proxy for managed network proxy @rreichel3-oai</li>
+<li>#23890 mcp: surface profile migration guidance under --profile @jif-oai</li>
+<li>#24051 config: remove legacy profile v1 resolution @jif-oai</li>
+<li>#24055 config: remove legacy profile write paths @jif-oai</li>
+<li>#24057 Avoid config snapshots in live agent subtree traversal @jif-oai</li>
+<li>#24061 otel: drop legacy profile usage telemetry @jif-oai</li>
+<li>#24059 fix: reject legacy profile selectors @jif-oai</li>
+<li>#23934 ci: Use codex produced v8 artifacts for release builds @cconger</li>
+<li>#24099 fix(app-server): fix optional bool annotations @owenlin0</li>
+<li>#23910 Prefer <code>just test</code> over <code>cargo test</code> in docs @anp-oai</li>
+<li>#23951 retry remote compaction v2 requests @rhan-oai</li>
+<li>#24081 tui: make <code>codex-tui.log</code> opt-in @jif-oai</li>
+<li>#24102 cli: infer host sandbox backend @bolinfest</li>
+<li>#24067 app-server: drop legacy profile config surface @jif-oai</li>
+<li>#23736 Add new enterprise requirement gate @adams-oai</li>
+<li>#24117 [codex] Use rolling files for Windows sandbox logs @iceweasel-oai</li>
+<li>#24106 docs: update README.md to mention curl-based installer @bolinfest</li>
+<li>#24082 fix(tui): restore Windows VT before TUI renders @fcoury-oai</li>
+<li>#24110 cli: support --profile for codex sandbox @bolinfest</li>
+<li>#23980 Add trace_id to TurnStartedEvent @mchen-oai</li>
+<li>#24120 Support OAuth options in codex mcp add @mzeng-openai</li>
+<li>#23989 Add typed Images client to codex-api @won-openai</li>
+<li>#24146 [codex-analytics] split compaction v2 analytics implementation @rhan-oai</li>
+<li>#24129 package: factor DotSlash executable fetching @bolinfest</li>
+<li>#24151 [codex] Use TurnInput for session task input @pakrym-oai</li>
+<li>#23935 [codex] Add image re-encoding benchmarks @anp-oai</li>
+<li>#24152 chore: add JSON schema policy fixture coverage @celia-oai</li>
+<li>#24157 [codex] Remove external client session reset plumbing @pakrym-oai</li>
+<li>#24114 Display workspace usage limit error copy from response header @dhruvgupta-oai</li>
+<li>#24165 release: build macOS x64 zsh artifact @bolinfest</li>
+</ul>]]></content:encoded>
+      <category>openai</category>
+      <category>codex</category>
+      <source url="https://github.com/openai/codex">openai/codex</source>
+    </item>    <item>
       <title>payloadcms/payload v3.85.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.85.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.85.0</guid>
@@ -3447,46 +3589,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>derFrisson</category>
       <category>plezy-apks</category>
       <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
-    </item>    <item>
-      <title>edde746/plezy 1.32.0</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.32.0</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.32.0</guid>
-      <pubDate>Mon, 13 Apr 2026 06:34:57 GMT</pubDate>
-      <description>Added Download all playlist items Download options picker for series/seasons Clickable cast members to browse actor filmography Square art and logo editing in metadata editor Sub-ass-override setting Snackbar on playback speed change Auto-hide performance overlay with controls Fixed Hide spoilers...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Download all playlist items</li>
-<li>Download options picker for series/seasons</li>
-<li>Clickable cast members to browse actor filmography</li>
-<li>Square art and logo editing in metadata editor</li>
-<li>Sub-ass-override setting</li>
-<li>Snackbar on playback speed change</li>
-<li>Auto-hide performance overlay with controls</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Hide spoilers in watch next thumbnails</li>
-<li>Skip back navigation when overlay route is on top</li>
-<li>Detail screen section alignment</li>
-<li>File info bitrate units, multi-track display, TV scrolling</li>
-<li>Use configured skip setting for dpad/timeline seeking</li>
-<li>Noisy audio pause on Android TV</li>
-<li>Always show track selection button</li>
-<li>Android TV PiP lifecycle regressions</li>
-<li>Normalize EOF playback state</li>
-<li>Preserve download server affinity</li>
-<li>Reduce blank space in media card bottom</li>
-<li>Request UTF-8 encoding for external subtitles</li>
-<li>Chapter keyboard shortcuts navigate chapters not episodes</li>
-<li>PiP aspect ratio clamp values outside Android limits</li>
-<li>Connection selection failover and timeout budget</li>
-<li>Live TV join session edge case</li>
-<li>Live stream reconnect delay and fallback chain on TV</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.3...1.32.0">https://github.com/edde746/plezy/compare/1.31.3...1.32.0</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
     </item>    <item>
       <title>zen-browser/desktop 1.19.8b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.8b</link>
