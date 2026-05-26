@@ -10,9 +10,63 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 26 May 2026 13:07:27 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 16:20:23 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>payloadcms/payload v3.85.0</title>
+      <link>https://github.com/payloadcms/payload/releases/tag/v3.85.0</link>
+      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.85.0</guid>
+      <pubDate>Tue, 26 May 2026 14:23:50 GMT</pubDate>
+      <description>v3.85.0 (2026-05-26) 🚀 Features plugin-import-export: out of beta and added support for collection-level and field-level hooks ( #16556 ) ( cf9252d ) 🐛 Bug Fixes bump uuid package to 13.0.2 ( #16545 ) ( 274af06 ) stop workflows retrying forever when no retries are configured ( #16465 ) ( caf915...</description>
+      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.84.1...v3.85.0">v3.85.0</a> (2026-05-26)</h2>
+<h3>🚀 Features</h3>
+<ul>
+<li><strong>plugin-import-export:</strong> out of beta and added support for collection-level and field-level hooks (<a href="https://github.com/payloadcms/payload/issues/16556">#16556</a>) (<a href="https://github.com/payloadcms/payload/commit/cf9252d">cf9252d</a>)</li>
+</ul>
+<h3>🐛 Bug Fixes</h3>
+<ul>
+<li>bump uuid package to 13.0.2 (<a href="https://github.com/payloadcms/payload/issues/16545">#16545</a>) (<a href="https://github.com/payloadcms/payload/commit/274af06">274af06</a>)</li>
+<li>stop workflows retrying forever when no retries are configured (<a href="https://github.com/payloadcms/payload/issues/16465">#16465</a>) (<a href="https://github.com/payloadcms/payload/commit/caf9150">caf9150</a>)</li>
+<li><strong>db-mongodb:</strong> bump mongoose to 8.22.1 for GHSA-wpg9-53fq-2r8h (<a href="https://github.com/payloadcms/payload/issues/16688">#16688</a>) (<a href="https://github.com/payloadcms/payload/commit/4baba91">4baba91</a>)</li>
+<li><strong>plugin-cloud-storage:</strong> propagate custom hook errors during upload (<a href="https://github.com/payloadcms/payload/issues/16632">#16632</a>) (<a href="https://github.com/payloadcms/payload/commit/055c508">055c508</a>)</li>
+<li><strong>plugin-cloud-storage:</strong> preserve user-defined prefix.defaultValue (<a href="https://github.com/payloadcms/payload/issues/16529">#16529</a>) (<a href="https://github.com/payloadcms/payload/commit/8d14915">8d14915</a>)</li>
+<li><strong>plugin-cloud-storage:</strong> dedupe filename in clientUploads signed URL (<a href="https://github.com/payloadcms/payload/issues/16510">#16510</a>) (<a href="https://github.com/payloadcms/payload/commit/64b2860">64b2860</a>)</li>
+<li><strong>plugin-multi-tenant:</strong> tenant field unselectable in bulk upload &quot;Edit all&quot; (<a href="https://github.com/payloadcms/payload/issues/16466">#16466</a>) (<a href="https://github.com/payloadcms/payload/commit/695df3c">695df3c</a>)</li>
+<li><strong>richtext-lexical:</strong> cursor kicked out of nested richtext while typing in a block (<a href="https://github.com/payloadcms/payload/issues/16490">#16490</a>) (<a href="https://github.com/payloadcms/payload/commit/931a349">931a349</a>)</li>
+<li><strong>richtext-lexical:</strong> drag/drop image into rich text fails when a field name matches the collection slug (<a href="https://github.com/payloadcms/payload/issues/16409">#16409</a>) (<a href="https://github.com/payloadcms/payload/commit/d6f7b47">d6f7b47</a>)</li>
+<li><strong>ui:</strong> bulk upload silently counts failed files as saved (<a href="https://github.com/payloadcms/payload/issues/16532">#16532</a>) (<a href="https://github.com/payloadcms/payload/commit/c31f4ef">c31f4ef</a>)</li>
+<li><strong>ui:</strong> respect formatDocURL returning null in ListDrawer (<a href="https://github.com/payloadcms/payload/issues/16464">#16464</a>) (<a href="https://github.com/payloadcms/payload/commit/0facc44">0facc44</a>)</li>
+<li><strong>ui:</strong> show all listSearchableFields in ListDrawer search placeholder (<a href="https://github.com/payloadcms/payload/issues/16467">#16467</a>) (<a href="https://github.com/payloadcms/payload/commit/3cd4a64">3cd4a64</a>)</li>
+</ul>
+<h3>📚 Documentation</h3>
+<ul>
+<li>fix links in admin faq (<a href="https://github.com/payloadcms/payload/issues/16711">#16711</a>) (<a href="https://github.com/payloadcms/payload/commit/7e4f7af">7e4f7af</a>)</li>
+<li>adds relevant videos to docs sections (<a href="https://github.com/payloadcms/payload/issues/16516">#16516</a>) (<a href="https://github.com/payloadcms/payload/commit/d17298f">d17298f</a>)</li>
+</ul>
+<h3>📝 Templates</h3>
+<ul>
+<li>bumps next.js to 16.2.6 (<a href="https://github.com/payloadcms/payload/issues/16538">#16538</a>) (<a href="https://github.com/payloadcms/payload/commit/9b36063">9b36063</a>)</li>
+</ul>
+<h3>⚙️ CI</h3>
+<ul>
+<li>use postgres 15 for content api tests (<a href="https://github.com/payloadcms/payload/issues/16706">#16706</a>) (<a href="https://github.com/payloadcms/payload/commit/99d4930">99d4930</a>)</li>
+</ul>
+<h3>🏡 Chores</h3>
+<ul>
+<li><strong>deps:</strong> bump nodemailer minimum version to 8.0.5 (<a href="https://github.com/payloadcms/payload/issues/16664">#16664</a>) (<a href="https://github.com/payloadcms/payload/commit/efa4afe">efa4afe</a>)</li>
+</ul>
+<h3>🤝 Contributors</h3>
+<ul>
+<li>Sean Zubrickas (@zubricks)</li>
+<li>German Jablonski (@GermanJablo)</li>
+<li>Jake Fletcher (@jacobsfletch)</li>
+<li>Paul (@paulpopus)</li>
+<li>Alessio Gravili (@AlessioGr)</li>
+</ul>]]></content:encoded>
+      <category>payloadcms</category>
+      <category>payload</category>
+      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
+    </item>    <item>
       <title>zen-browser/desktop 1.20b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.20b</link>
       <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.20b</guid>
@@ -5309,90 +5363,6 @@ export default buildConfig({
       <category>heyman</category>
       <category>heynote</category>
       <source url="https://github.com/heyman/heynote">heyman/heynote</source>
-    </item>    <item>
-      <title>payloadcms/payload v3.75.0</title>
-      <link>https://github.com/payloadcms/payload/releases/tag/v3.75.0</link>
-      <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.75.0</guid>
-      <pubDate>Thu, 05 Feb 2026 17:44:19 GMT</pubDate>
-      <description>v3.75.0 (2026-02-05) 🚀 Features adds beforeNav and afterNav component slots ( #15493 ) ( f23a1df ) next: pass full initReq context to server functions and dashboard widgets ( #15427 ) ( ce13e97 ) 🐛 Bug Fixes handle absolute paths correctly with tempFileDir upload option ( #14436 ) ( 5ca9bd4 ) u...</description>
-      <content:encoded><![CDATA[<h2><a href="https://github.com/payloadcms/payload/compare/v3.74.0...v3.75.0">v3.75.0</a> (2026-02-05)</h2>
-<h3>🚀 Features</h3>
-<ul>
-<li>adds beforeNav and afterNav component slots (<a href="https://github.com/payloadcms/payload/issues/15493">#15493</a>) (<a href="https://github.com/payloadcms/payload/commit/f23a1df">f23a1df</a>)</li>
-<li><strong>next:</strong> pass full initReq context to server functions and dashboard widgets (<a href="https://github.com/payloadcms/payload/issues/15427">#15427</a>) (<a href="https://github.com/payloadcms/payload/commit/ce13e97">ce13e97</a>)</li>
-</ul>
-<h3>🐛 Bug Fixes</h3>
-<ul>
-<li>handle absolute paths correctly with tempFileDir upload option (<a href="https://github.com/payloadcms/payload/issues/14436">#14436</a>) (<a href="https://github.com/payloadcms/payload/commit/5ca9bd4">5ca9bd4</a>)</li>
-<li>ungenerated image sizes should not store original URL (<a href="https://github.com/payloadcms/payload/issues/15454">#15454</a>) (<a href="https://github.com/payloadcms/payload/commit/fa1cd62">fa1cd62</a>)</li>
-<li>add safety check to redirects from external file URL uploads (<a href="https://github.com/payloadcms/payload/issues/15458">#15458</a>) (<a href="https://github.com/payloadcms/payload/commit/1041bb6">1041bb6</a>)</li>
-<li>sass warning not hidden during webpack build (<a href="https://github.com/payloadcms/payload/issues/15442">#15442</a>) (<a href="https://github.com/payloadcms/payload/commit/dec0ea7">dec0ea7</a>)</li>
-<li>add collection property to auth documents, fixing multi tenancy access control issue (<a href="https://github.com/payloadcms/payload/issues/15404">#15404</a>) (<a href="https://github.com/payloadcms/payload/commit/d6aa6cc">d6aa6cc</a>)</li>
-<li><strong>graphql:</strong> blocks return null with select: true (<a href="https://github.com/payloadcms/payload/issues/15464">#15464</a>) (<a href="https://github.com/payloadcms/payload/commit/c2baef4">c2baef4</a>)</li>
-<li><strong>next:</strong> versions diff error when swapping blocks with relationship fields (<a href="https://github.com/payloadcms/payload/issues/15478">#15478</a>) (<a href="https://github.com/payloadcms/payload/commit/5ba0055">5ba0055</a>)</li>
-<li><strong>next:</strong> export SlugField from the client dir not rsc (<a href="https://github.com/payloadcms/payload/issues/15461">#15461</a>) (<a href="https://github.com/payloadcms/payload/commit/6c07f3b">6c07f3b</a>)</li>
-<li><strong>next:</strong> sync modular dashboard widgets when server component re-renders (<a href="https://github.com/payloadcms/payload/issues/15439">#15439</a>) (<a href="https://github.com/payloadcms/payload/commit/5495b47">5495b47</a>)</li>
-<li><strong>plugin-ecommerce:</strong> variant creation blocked by variants in trash (<a href="https://github.com/payloadcms/payload/issues/15449">#15449</a>) (<a href="https://github.com/payloadcms/payload/commit/3f01682">3f01682</a>)</li>
-<li><strong>plugin-mcp:</strong> create and update resource tools now support point fields (<a href="https://github.com/payloadcms/payload/issues/15381">#15381</a>) (<a href="https://github.com/payloadcms/payload/commit/a28261d">a28261d</a>)</li>
-<li><strong>ui:</strong> extra padding rendering in list view when no description exists (<a href="https://github.com/payloadcms/payload/issues/15507">#15507</a>) (<a href="https://github.com/payloadcms/payload/commit/3ff6be4">3ff6be4</a>)</li>
-<li><strong>ui:</strong> remove slug field from rsc exports (<a href="https://github.com/payloadcms/payload/issues/15480">#15480</a>) (<a href="https://github.com/payloadcms/payload/commit/8f66035">8f66035</a>)</li>
-</ul>
-<h3>⚡ Performance</h3>
-<ul>
-<li><strong>next:</strong> avoid re-calculating permissions in some server functions, pass missing args (<a href="https://github.com/payloadcms/payload/issues/15428">#15428</a>) (<a href="https://github.com/payloadcms/payload/commit/9c8be5c">9c8be5c</a>)</li>
-</ul>
-<h3>📚 Documentation</h3>
-<ul>
-<li>jobs queue improvements (<a href="https://github.com/payloadcms/payload/issues/15318">#15318</a>) (<a href="https://github.com/payloadcms/payload/commit/3d357b3">3d357b3</a>)</li>
-</ul>
-<h3>🎨 Styles</h3>
-<ul>
-<li>run lint-staged commands in correct order (<a href="https://github.com/payloadcms/payload/issues/15446">#15446</a>) (<a href="https://github.com/payloadcms/payload/commit/731037e">731037e</a>)</li>
-</ul>
-<h3>🧪 Tests</h3>
-<ul>
-<li>trash e2e URL regex too strict and blocks query parameters (<a href="https://github.com/payloadcms/payload/issues/15498">#15498</a>) (<a href="https://github.com/payloadcms/payload/commit/57e759c">57e759c</a>)</li>
-<li>additional admin e2e coverage for templates (<a href="https://github.com/payloadcms/payload/issues/15477">#15477</a>) (<a href="https://github.com/payloadcms/payload/commit/63d63be">63d63be</a>)</li>
-<li>reorganize helpers into shared/e2e/int subdirectories (<a href="https://github.com/payloadcms/payload/issues/15479">#15479</a>) (<a href="https://github.com/payloadcms/payload/commit/b901231">b901231</a>)</li>
-<li>enable figma adapter testing (<a href="https://github.com/payloadcms/payload/issues/15467">#15467</a>) (<a href="https://github.com/payloadcms/payload/commit/f4920d8">f4920d8</a>)</li>
-<li>improve script to reset tests (<a href="https://github.com/payloadcms/payload/issues/15328">#15328</a>) (<a href="https://github.com/payloadcms/payload/commit/399b579">399b579</a>)</li>
-<li>richText fields serialization (<a href="https://github.com/payloadcms/payload/issues/15465">#15465</a>) (<a href="https://github.com/payloadcms/payload/commit/fc99048">fc99048</a>)</li>
-<li>update suites selected by default in runTestsWithSummary (<a href="https://github.com/payloadcms/payload/issues/15463">#15463</a>) (<a href="https://github.com/payloadcms/payload/commit/603897d">603897d</a>)</li>
-<li>trash auth e2e tests have race condition on navigation (<a href="https://github.com/payloadcms/payload/issues/15468">#15468</a>) (<a href="https://github.com/payloadcms/payload/commit/9bd5123">9bd5123</a>)</li>
-</ul>
-<h3>⚙️ CI</h3>
-<ul>
-<li>cache propagation workaround (<a href="https://github.com/payloadcms/payload/issues/15469">#15469</a>) (<a href="https://github.com/payloadcms/payload/commit/df0a75d">df0a75d</a>)</li>
-</ul>
-<h3>🏡 Chores</h3>
-<ul>
-<li>fix eslint config lookup in formatting hooks (<a href="https://github.com/payloadcms/payload/issues/15516">#15516</a>) (<a href="https://github.com/payloadcms/payload/commit/38a88b3">38a88b3</a>)</li>
-<li>remove duplicative agents.md, document ai tool compatibility (<a href="https://github.com/payloadcms/payload/issues/15472">#15472</a>) (<a href="https://github.com/payloadcms/payload/commit/6216f56">6216f56</a>)</li>
-<li>remove template lockfiles (<a href="https://github.com/payloadcms/payload/issues/15494">#15494</a>) (<a href="https://github.com/payloadcms/payload/commit/362bf2f">362bf2f</a>)</li>
-<li>replace magic strings with centralized constants (<a href="https://github.com/payloadcms/payload/issues/15475">#15475</a>) (<a href="https://github.com/payloadcms/payload/commit/8422668">8422668</a>)</li>
-<li>claude post-write hook causes error when IDE checks output and doesn&#39;t apply formatting correctly (<a href="https://github.com/payloadcms/payload/issues/15445">#15445</a>) (<a href="https://github.com/payloadcms/payload/commit/033b943">033b943</a>)</li>
-<li><strong>claude:</strong> add playwright mcp (<a href="https://github.com/payloadcms/payload/issues/15447">#15447</a>) (<a href="https://github.com/payloadcms/payload/commit/f15b9a3">f15b9a3</a>)</li>
-<li><strong>plugin-multi-tenant:</strong> use beforeNav instead of beforeNavLinks for tenant selector (<a href="https://github.com/payloadcms/payload/issues/15499">#15499</a>) (<a href="https://github.com/payloadcms/payload/commit/5d7d544">5d7d544</a>)</li>
-</ul>
-<h3>🤝 Contributors</h3>
-<ul>
-<li>sanbrien (@sanbrien)</li>
-<li>Neha Prasad (@naaa760)</li>
-<li>Kendell (@kendelljoseph)</li>
-<li>Sean Zubrickas (@zubricks)</li>
-<li>Alessio Gravili (@AlessioGr)</li>
-<li>Patrik (@PatrikKozak)</li>
-<li>Jarrod Flesch (@JarrodMFlesch)</li>
-<li>Jake (@jacobsfletch)</li>
-<li>Kurt Tomlinson (@kurttomlinson)</li>
-<li>Colum Kelly (@columk1)</li>
-<li>German Jablonski (@GermanJablo)</li>
-<li>Jessica Rynkar (@JessRynkar)</li>
-<li>Elliot DeNolf (@denolfe)</li>
-</ul>]]></content:encoded>
-      <category>payloadcms</category>
-      <category>payload</category>
-      <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
     </item>    <item>
       <title>Kong/insomnia core@12.3.1</title>
       <link>https://github.com/Kong/insomnia/releases/tag/core%4012.3.1</link>
