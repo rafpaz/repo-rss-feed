@@ -10,9 +10,32 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 27 May 2026 18:52:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 21:37:22 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>zen-browser/desktop 1.20.1b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.20.1b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.20.1b</guid>
+      <pubDate>Wed, 27 May 2026 21:12:27 GMT</pubDate>
+      <description>Zen Stable Release New Features Updated to Firefox 151.0.2 You can now type New Boost in the urlbar to quickly create a new boost for the current site! Fixes Fixed pressing u duplicating tabs. ( #13851 ) Fixed video controls going under the screen when in fullscreen mode. ( #10594 ) Fixed boosts...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 151.0.2</li>
+<li>You can now type <code>New Boost</code> in the urlbar to quickly create a new boost for the current site!</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed pressing <code>u</code> duplicating tabs. (<a href="https://github.com/zen-browser/desktop/issues/13851">#13851</a>)</li>
+<li>Fixed video controls going under the screen when in fullscreen mode. (<a href="https://github.com/zen-browser/desktop/issues/10594">#10594</a>)</li>
+<li>Fixed boosts not working for certain websites. (<a href="https://github.com/zen-browser/desktop/issues/13844">#13844</a>)</li>
+<li>Fixed an issue on macOS where smart cards and security keys could fail to load certificates automatically</li>
+<li>Other minor bug fixes and performance improvements.</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>derFrisson/plezy-apks 2.3.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.3.0</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.3.0</guid>
@@ -4285,23 +4308,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.5b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.5b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.5b</guid>
-      <pubDate>Sat, 28 Mar 2026 14:32:31 GMT</pubDate>
-      <description>Zen Stable Release Quick fixes from the 1.19.4b release, please see their respective entries for more details. Fixes Fixed new profiles freezing on startup ( #12940 ) Fixed an issue with drag and dropping tabs, making folders have empty spaces Fixed Github Live Folders not fetching Pull Request d...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<p>Quick fixes from the 1.19.4b release, please see their respective entries for more details.</p>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed new profiles freezing on startup (<a href="https://github.com/zen-browser/desktop/issues/12940">#12940</a>)</li>
-<li>Fixed an issue with drag and dropping tabs, making folders have empty spaces</li>
-<li>Fixed Github Live Folders not fetching Pull Request data correctly (<a href="https://github.com/zen-browser/desktop/issues/12942">#12942</a>)</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>yuliskov/SmartTube 31.30s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.30s</link>
