@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 27 May 2026 13:18:29 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 16:20:19 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>derFrisson/plezy-apks 2.3.0</title>
@@ -101,23 +101,23 @@
 </thead>
 <tbody><tr>
 <td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_arm64-v8a.apk">SmartTube_stable_31.73_arm64-v8a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/6919ec6fff429e56a306cf103651497071d8f2c7ca36f61f2316dba1b6e0dbe3/detection"><img src="https://badges.cssnr.com/vt/id/6919ec6fff429e56a306cf103651497071d8f2c7ca36f61f2316dba1b6e0dbe3?start=green&end=red&n=8&v=1779860702" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/6919ec6fff429e56a306cf103651497071d8f2c7ca36f61f2316dba1b6e0dbe3/detection">View Report</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/bb7746d0ac2267cb9f4e650f0bef0da9e4d54103611ffed2fa949e5468fe70aa/detection"><img src="https://badges.cssnr.com/vt/id/bb7746d0ac2267cb9f4e650f0bef0da9e4d54103611ffed2fa949e5468fe70aa?start=green&end=red&n=8&v=1779889804" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/bb7746d0ac2267cb9f4e650f0bef0da9e4d54103611ffed2fa949e5468fe70aa/detection">View Report</a></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_armeabi-v7a.apk">SmartTube_stable_31.73_armeabi-v7a.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/3c416d7048f4148cab58776664f2203bc8041beb27af5bfa7bb3bc161bb049be/detection"><img src="https://badges.cssnr.com/vt/id/3c416d7048f4148cab58776664f2203bc8041beb27af5bfa7bb3bc161bb049be?start=green&end=red&n=8&v=1779860702" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/3c416d7048f4148cab58776664f2203bc8041beb27af5bfa7bb3bc161bb049be/detection">View Report</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/054e18cbff13eb16f19c009baddf36f91431c38602d6fe042ffece9648bda27e/detection"><img src="https://badges.cssnr.com/vt/id/054e18cbff13eb16f19c009baddf36f91431c38602d6fe042ffece9648bda27e?start=green&end=red&n=8&v=1779889805" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/054e18cbff13eb16f19c009baddf36f91431c38602d6fe042ffece9648bda27e/detection">View Report</a></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_universal.apk">SmartTube_stable_31.73_universal.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/3f0dcdbaf60bb5aa30621512ea2034315cabadaf6345b996005dbed73c4b8520/detection"><img src="https://badges.cssnr.com/vt/id/3f0dcdbaf60bb5aa30621512ea2034315cabadaf6345b996005dbed73c4b8520?start=green&end=red&n=8&v=1779860703" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/3f0dcdbaf60bb5aa30621512ea2034315cabadaf6345b996005dbed73c4b8520/detection">View Report</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/26245b6d78918394f77f9d8ca03d282d987d8e11730c6bc80224565072bd3388/detection"><img src="https://badges.cssnr.com/vt/id/26245b6d78918394f77f9d8ca03d282d987d8e11730c6bc80224565072bd3388?start=green&end=red&n=8&v=1779889805" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/26245b6d78918394f77f9d8ca03d282d987d8e11730c6bc80224565072bd3388/detection">View Report</a></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_x86.apk">SmartTube_stable_31.73_x86.apk</a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/14b22bf3ee1f506c947cbc5320254ec7bfe74f2161257c1c99182d05cd9d14d3/detection"><img src="https://badges.cssnr.com/vt/id/14b22bf3ee1f506c947cbc5320254ec7bfe74f2161257c1c99182d05cd9d14d3?start=green&end=red&n=8&v=1779860703" alt=""></a></td>
-<td align="left"><a href="https://www.virustotal.com/gui/file/14b22bf3ee1f506c947cbc5320254ec7bfe74f2161257c1c99182d05cd9d14d3/detection">View Report</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/496d78db123e22f978ebfce57d1338e8c87e75d6538ccbd461fcc61e5cf36ac3/detection"><img src="https://badges.cssnr.com/vt/id/496d78db123e22f978ebfce57d1338e8c87e75d6538ccbd461fcc61e5cf36ac3?start=green&end=red&n=8&v=1779889805" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/496d78db123e22f978ebfce57d1338e8c87e75d6538ccbd461fcc61e5cf36ac3/detection">View Report</a></td>
 </tr>
 </tbody></table>]]></content:encoded>
       <category>yuliskov</category>
