@@ -10,9 +10,120 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 27 May 2026 04:33:41 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 07:33:49 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 2.3.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.3.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.3.0</guid>
+      <pubDate>Wed, 27 May 2026 07:29:40 GMT</pubDate>
+      <description>Plezy 2.3.0 — Standalone APKs APKs extracted from edde746/plezy 2.3.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators, Ch...</description>
+      <content:encoded><![CDATA[<h2>Plezy 2.3.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/2.3.0">edde746/plezy 2.3.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Jellyfin unwatched library filter</li>
+<li>Jellyfin folder browsing and playback</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Android TrueHD passthrough detection</li>
+<li>Android display mode matching</li>
+<li>Android MPEG-TS seeking</li>
+<li>Android WebVTT subtitle positioning</li>
+<li>iOS PiP subtitles</li>
+<li>TV media detail rail focus, sizing, and light-theme text colors</li>
+<li>TV alpha jump bar visibility</li>
+<li>TV episode backdrop selection</li>
+<li>TV detail reveal behavior without input</li>
+<li>TV virtual keyboard focus and text entry</li>
+<li>TV root menu navigation handling</li>
+<li>Duplicate Continue Watching entries</li>
+<li>Duplicate native download tasks</li>
+<li>Jellyfin negotiated subtitle playback</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>TV media detail presentation</li>
+<li>Download manager task tracking</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.2.0...2.3.0">https://github.com/edde746/plezy/compare/2.2.0...2.3.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>yuliskov/SmartTube 31.73s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.73s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.73s</guid>
+      <pubDate>Wed, 27 May 2026 05:41:24 GMT</pubDate>
+      <description>31.72 release hotfix Added &amp;#39;Add to Watch later&amp;#39; context menu (Settings/General/Context menu) Improved HDR10+ compatibility on some devices Previous release fixes 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.73_arm64-v8a.apk View Report SmartT...</description>
+      <content:encoded><![CDATA[<ul>
+<li>31.72 release hotfix</li>
+<li>Added &#39;Add to Watch later&#39; context menu (Settings/General/Context menu)</li>
+<li>Improved HDR10+ compatibility on some devices</li>
+<li>Previous release fixes</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_arm64-v8a.apk">SmartTube_stable_31.73_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/6919ec6fff429e56a306cf103651497071d8f2c7ca36f61f2316dba1b6e0dbe3/detection"><img src="https://badges.cssnr.com/vt/id/6919ec6fff429e56a306cf103651497071d8f2c7ca36f61f2316dba1b6e0dbe3?start=green&end=red&n=8&v=1779860702" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/6919ec6fff429e56a306cf103651497071d8f2c7ca36f61f2316dba1b6e0dbe3/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_armeabi-v7a.apk">SmartTube_stable_31.73_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/3c416d7048f4148cab58776664f2203bc8041beb27af5bfa7bb3bc161bb049be/detection"><img src="https://badges.cssnr.com/vt/id/3c416d7048f4148cab58776664f2203bc8041beb27af5bfa7bb3bc161bb049be?start=green&end=red&n=8&v=1779860702" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/3c416d7048f4148cab58776664f2203bc8041beb27af5bfa7bb3bc161bb049be/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_universal.apk">SmartTube_stable_31.73_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/3f0dcdbaf60bb5aa30621512ea2034315cabadaf6345b996005dbed73c4b8520/detection"><img src="https://badges.cssnr.com/vt/id/3f0dcdbaf60bb5aa30621512ea2034315cabadaf6345b996005dbed73c4b8520?start=green&end=red&n=8&v=1779860703" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/3f0dcdbaf60bb5aa30621512ea2034315cabadaf6345b996005dbed73c4b8520/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.73s/SmartTube_stable_31.73_x86.apk">SmartTube_stable_31.73_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/14b22bf3ee1f506c947cbc5320254ec7bfe74f2161257c1c99182d05cd9d14d3/detection"><img src="https://badges.cssnr.com/vt/id/14b22bf3ee1f506c947cbc5320254ec7bfe74f2161257c1c99182d05cd9d14d3?start=green&end=red&n=8&v=1779860703" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/14b22bf3ee1f506c947cbc5320254ec7bfe74f2161257c1c99182d05cd9d14d3/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>yuliskov/SmartTube 31.72s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.72s</link>
       <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.72s</guid>
@@ -4239,66 +4350,6 @@ export, and own enumerable properties are treated as named exports.</p>
       <category>yuliskov</category>
       <category>SmartTube</category>
       <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.30.0</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.30.0</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.30.0</guid>
-      <pubDate>Fri, 27 Mar 2026 06:28:55 GMT</pubDate>
-      <description>Plezy 1.30.0 — Standalone APKs APKs extracted from edde746/plezy 1.30.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.30.0 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.30.0">edde746/plezy 1.30.0</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Fixed</h2>
-<ul>
-<li>Continuous play queue for aired date episode order</li>
-<li>Skip SAF picker on Android TV</li>
-<li>Live TV stream EOF and reconnect handling</li>
-<li>Live TV timeline heartbeat deduplication</li>
-<li>Library grid stuck skeletons on fast scroll</li>
-<li>Missing season tabs for single-season shows</li>
-<li>Detach mpv surface before view removal in dispose</li>
-<li>Tensor SoC detection for internal model IDs</li>
-<li>Keyboard shortcuts for unmapped keys</li>
-<li>Speed step 0.1 → 0.25 for keyboard shortcuts</li>
-<li>Non-primary CustomScrollViews in IndexedStack tabs</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>Run SQLite on background isolate</li>
-<li>Library grid scroll and idle frame rendering</li>
-<li>Coalesce watch together rebuilds, static TV overlays</li>
-<li>Detail screen scroll and arrow rebuild performance</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.29.0...1.30.0">https://github.com/edde746/plezy/compare/1.29.0...1.30.0</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>multiboxlabs/flow-browser v0.11.0</title>
       <link>https://github.com/MultiboxLabs/flow-browser/releases/tag/v0.11.0</link>
