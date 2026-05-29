@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 29 May 2026 00:59:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 04:32:42 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>openai/codex rust-v0.135.0</title>
