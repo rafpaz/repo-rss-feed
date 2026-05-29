@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 29 May 2026 13:14:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 16:20:16 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>openai/codex rust-v0.135.0</title>
@@ -26,6 +26,7 @@
 <li><code>/permissions</code> now understands named permission profiles and displays configured custom profiles. (#21559)</li>
 <li>Packaged Codex builds can discover and use the bundled patched zsh helper across supported macOS and Linux targets. (#23756, #24171)</li>
 <li>The Python SDK now exposes friendly <code>Sandbox</code> presets for thread and turn APIs. (#24772)</li>
+<li><code>install.sh</code>/<code>install.ps1</code> supports a non-interactive installation mode when <code>CODEX_NON_INTERACTIVE=1</code> is set. (#21567)</li>
 </ul>
 <h2>Bug Fixes</h2>
 <ul>
