@@ -10,9 +10,53 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 01 Jun 2026 04:36:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 07:55:15 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 2.4.1</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.4.1</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.4.1</guid>
+      <pubDate>Mon, 01 Jun 2026 07:49:38 GMT</pubDate>
+      <description>Plezy 2.4.1 — Standalone APKs APKs extracted from edde746/plezy 2.4.1 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators, Ch...</description>
+      <content:encoded><![CDATA[<h2>Plezy 2.4.1 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/2.4.1">edde746/plezy 2.4.1</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Fixed</h2>
+<ul>
+<li>macOS playback crashes caused by LuaJIT under hardened runtime</li>
+<li>Android playback crashes on devices without HDR display mode API support</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.4.0...2.4.1">https://github.com/edde746/plezy/compare/2.4.0...2.4.1</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 2.4.1</title>
       <link>https://github.com/edde746/plezy/releases/tag/2.4.1</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.4.1</guid>
@@ -4059,49 +4103,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>zen-browser</category>
       <category>desktop</category>
       <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.31.3</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.31.3</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.31.3</guid>
-      <pubDate>Tue, 07 Apr 2026 06:33:39 GMT</pubDate>
-      <description>Plezy 1.31.3 — Standalone APKs APKs extracted from edde746/plezy 1.31.3 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.31.3 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.31.3">edde746/plezy 1.31.3</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Fixed</h2>
-<ul>
-<li>Connection issues</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.2...1.31.3">https://github.com/edde746/plezy/compare/1.31.2...1.31.3</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>yuliskov/SmartTube 31.45s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.45s</link>
