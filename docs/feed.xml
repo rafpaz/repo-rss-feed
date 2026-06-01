@@ -10,9 +10,24 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 01 Jun 2026 01:02:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 04:36:36 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>edde746/plezy 2.4.1</title>
+      <link>https://github.com/edde746/plezy/releases/tag/2.4.1</link>
+      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.4.1</guid>
+      <pubDate>Mon, 01 Jun 2026 01:12:45 GMT</pubDate>
+      <description>Fixed macOS playback crashes caused by LuaJIT under hardened runtime Android playback crashes on devices without HDR display mode API support Full Changelog : https://github.com/edde746/plezy/compare/2.4.0...2.4.1</description>
+      <content:encoded><![CDATA[<h2>Fixed</h2>
+<ul>
+<li>macOS playback crashes caused by LuaJIT under hardened runtime</li>
+<li>Android playback crashes on devices without HDR display mode API support</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.4.0...2.4.1">https://github.com/edde746/plezy/compare/2.4.0...2.4.1</a></p>]]></content:encoded>
+      <category>edde746</category>
+      <category>plezy</category>
+      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
+    </item>    <item>
       <title>edde746/plezy 2.4.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/2.4.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.4.0</guid>
@@ -3065,59 +3080,6 @@ that provides a more robust and feature-rich alternative to the legacy <code>Dat
 <li>ExoPlayer libass crash</li>
 </ul>
 <p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.34.1...1.34.2">https://github.com/edde746/plezy/compare/1.34.1...1.34.2</a></p>]]></content:encoded>
-      <category>edde746</category>
-      <category>plezy</category>
-      <source url="https://github.com/edde746/plezy">edde746/plezy</source>
-    </item>    <item>
-      <title>edde746/plezy 1.34.1</title>
-      <link>https://github.com/edde746/plezy/releases/tag/1.34.1</link>
-      <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/1.34.1</guid>
-      <pubDate>Mon, 20 Apr 2026 06:57:12 GMT</pubDate>
-      <description>Added Trakt integration Sync rules for collections, playlists, and downloads Folder view thumbnails and rich metadata Force TV mode setting Bold/italic subtitle toggles ExoPlayer audio and subtitle delay support Bandwidth limit modal when stream returns 500 Timeline thumbnail preview on dpad key-...</description>
-      <content:encoded><![CDATA[<h2>Added</h2>
-<ul>
-<li>Trakt integration</li>
-<li>Sync rules for collections, playlists, and downloads</li>
-<li>Folder view thumbnails and rich metadata</li>
-<li>Force TV mode setting</li>
-<li>Bold/italic subtitle toggles</li>
-<li>ExoPlayer audio and subtitle delay support</li>
-<li>Bandwidth limit modal when stream returns 500</li>
-<li>Timeline thumbnail preview on dpad key-repeat</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Force rediscover on manual reconnect</li>
-<li>Reset completion latch on stream recovery</li>
-<li>Video playback tile description</li>
-<li>Live TV DVR seek via keyboard/remote</li>
-<li>Re-select audio on renderer capabilities change</li>
-<li>Guard player back pop with canPop</li>
-<li>Snackbar placement</li>
-<li>Display matching on fullscreen enter</li>
-<li>Serialize file picker calls</li>
-<li>Focus media detail info rows</li>
-<li>Missing media3 HLS dependency</li>
-<li>Pin EPG titles, filter cloud channel list</li>
-<li>Fan out multi-airing EPG metadata</li>
-<li>Native monitor-aware fullscreen on Windows</li>
-<li>Suppress position sync when app backgrounded</li>
-<li>Watch together races, reconnect readiness, session end, room re-join, and participant discovery</li>
-<li>Clamp tooltip upper bound to prevent ArgumentError</li>
-<li>Fallback to IOClient on WinHttp init failure</li>
-<li>White screen when no servers available</li>
-<li>Baseline x86_64 mpv build for older CPU compat</li>
-<li>Suppress spurious media pause during frame rate switch</li>
-<li>Restore playWhenReady after renderer recreation</li>
-<li>crashpad_handler executable permissions in .deb</li>
-<li>Preserve PiP during episode auto-play</li>
-</ul>
-<h2>Improved</h2>
-<ul>
-<li>ExoPlayer libass performance</li>
-<li>Downsample offline hero art, logo, and local artwork in offline grids</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.33.1...1.34.1">https://github.com/edde746/plezy/compare/1.33.1...1.34.1</a></p>]]></content:encoded>
       <category>edde746</category>
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
