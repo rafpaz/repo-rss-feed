@@ -10,9 +10,83 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Mon, 08 Jun 2026 04:35:19 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 07:51:42 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 2.5.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.5.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.5.0</guid>
+      <pubDate>Mon, 08 Jun 2026 07:48:00 GMT</pubDate>
+      <description>Plezy 2.5.0 — Standalone APKs APKs extracted from edde746/plezy 2.5.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators, Ch...</description>
+      <content:encoded><![CDATA[<h2>Plezy 2.5.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/2.5.0">edde746/plezy 2.5.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Jellyfin extras support</li>
+<li>Jellyfin metadata editing</li>
+<li>Video and audio quality labels</li>
+<li>tvOS Top Shelf support</li>
+<li>New app menus</li>
+<li>Mobile settings shortcut in the home menu</li>
+<li>Mobile library browse options sheet</li>
+<li>A startup section setting</li>
+<li>Faster loading for large show detail pages</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>More consistent back navigation</li>
+<li>Better TV and dpad focus behavior</li>
+<li>Better access to app bar actions on TV</li>
+<li>More UI text is localized</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Jellyfin artwork uploads</li>
+<li>Jellyfin default track selection</li>
+<li>Subtitle search when no subtitle tracks exist (#1219)</li>
+<li>ExoPlayer transcode seek positions</li>
+<li>Player chrome overlay stability</li>
+<li>Play-next looping at end of file</li>
+<li>iOS video zoom and stretch fit</li>
+<li>iOS anamorphic video aspect ratio</li>
+<li>iOS frozen video after Control Center</li>
+<li>Profile 8 Dolby Vision decoding</li>
+<li>tvOS remote playback controls</li>
+<li>tvOS HDR toggle behavior</li>
+<li>Live TV time-shift skip overshoot</li>
+<li>Watch Together recent room actions on dpad</li>
+</ul>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
       <title>edde746/plezy 2.5.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/2.5.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.5.0</guid>
@@ -3828,75 +3902,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>multiboxlabs</category>
       <category>flow-browser</category>
       <source url="https://github.com/multiboxlabs/flow-browser">multiboxlabs/flow-browser</source>
-    </item>    <item>
-      <title>derFrisson/plezy-apks 1.32.0</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.32.0</guid>
-      <pubDate>Mon, 13 Apr 2026 06:46:42 GMT</pubDate>
-      <description>Plezy 1.32.0 — Standalone APKs APKs extracted from edde746/plezy 1.32.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.32.0 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.32.0">edde746/plezy 1.32.0</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Added</h2>
-<ul>
-<li>Download all playlist items</li>
-<li>Download options picker for series/seasons</li>
-<li>Clickable cast members to browse actor filmography</li>
-<li>Square art and logo editing in metadata editor</li>
-<li>Sub-ass-override setting</li>
-<li>Snackbar on playback speed change</li>
-<li>Auto-hide performance overlay with controls</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Hide spoilers in watch next thumbnails</li>
-<li>Skip back navigation when overlay route is on top</li>
-<li>Detail screen section alignment</li>
-<li>File info bitrate units, multi-track display, TV scrolling</li>
-<li>Use configured skip setting for dpad/timeline seeking</li>
-<li>Noisy audio pause on Android TV</li>
-<li>Always show track selection button</li>
-<li>Android TV PiP lifecycle regressions</li>
-<li>Normalize EOF playback state</li>
-<li>Preserve download server affinity</li>
-<li>Reduce blank space in media card bottom</li>
-<li>Request UTF-8 encoding for external subtitles</li>
-<li>Chapter keyboard shortcuts navigate chapters not episodes</li>
-<li>PiP aspect ratio clamp values outside Android limits</li>
-<li>Connection selection failover and timeout budget</li>
-<li>Live TV join session edge case</li>
-<li>Live stream reconnect delay and fallback chain on TV</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.31.3...1.32.0">https://github.com/edde746/plezy/compare/1.31.3...1.32.0</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
     </item>    <item>
       <title>zen-browser/desktop 1.19.8b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.19.8b</link>
