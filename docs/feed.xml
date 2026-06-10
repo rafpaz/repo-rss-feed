@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Wed, 10 Jun 2026 07:36:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 10:28:26 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>yt-dlp/yt-dlp 2026.06.09</title>
