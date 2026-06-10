@@ -10,9 +10,168 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Tue, 09 Jun 2026 21:37:13 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 01:01:50 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yt-dlp/yt-dlp 2026.06.09</title>
+      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2026.06.09</link>
+      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2026.06.09</guid>
+      <pubDate>Tue, 09 Jun 2026 23:26:57 GMT</pubDate>
+      <description>A description of the various files is in the README The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in THIRD_PARTY_LICENSES.txt Important changes The minimum supported ve...</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2026.06.09#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
+<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
+<p>The zipimport Unix executable contains code licensed under ISC and MIT. The PyInstaller-bundled executables are subject to these and other licenses, all of which are compiled in <a href="https://github.com/yt-dlp/yt-dlp/blob/7f7bdc974dc61d941d1a0d51c4e21a0fdb7b2d06/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
+<hr>
+<h4>Important changes</h4>
+<ul>
+<li><strong>The minimum supported versions of Deno, Node, and Bun have been raised.</strong>
+ The minimum required version of <a href="https://github.com/yt-dlp/yt-dlp/issues/16767">Deno</a> is now <code>v2.3.0</code>; supported <a href="https://github.com/yt-dlp/yt-dlp/issues/16765">Node</a> versions are <code>v22</code> and up; <a href="https://github.com/yt-dlp/yt-dlp/issues/16766">Bun support has been deprecated</a> and limited to versions <code>1.2.11</code> through <code>1.3.14</code>.</li>
+<li>Security<ul>
+<li>Usage of vulnerable conversions (e.g. <code>%()s</code>) with the <code>--exec</code> option is an all-too-common pitfall. To remedy this, <code>--exec</code> now only allows safe conversions in its command templates.<ul>
+<li>Most users can simply replace <code>%(...)s</code> with <code>%(...)q</code> in their <code>--exec</code> argument(s). Numeric conversions are unaffected by this change. Using unsafe conversions with <code>--exec</code> poses a significant security risk. <a href="https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-69qj-pvh9-c5wg">Read more</a></li>
+</ul>
+</li>
+<li>[<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50019">CVE-2026-50019</a>] <a href="https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-f7j3-774f-rfhj">File Downloader cookie leak with curl</a><ul>
+<li>Impact is limited to users of <code>--downloader curl</code>; cookies are now properly passed to curl so that it respects their scope</li>
+</ul>
+</li>
+<li>[<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50023">CVE-2026-50023</a>] <a href="https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-c6mh-fpjc-4pr3">Dangerous file type creation via insufficient filename sanitization</a><ul>
+<li>Writing files with the extensions <code>.desktop</code>, <code>.url</code>, or <code>.webloc</code> is now only allowed in the context of <code>--write-link</code> functionality</li>
+</ul>
+</li>
+<li>[<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50574">CVE-2026-50574</a>] <a href="https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-vx4q-3cr2-7cg2">Arbitrary code execution via manifest downloads with aria2c</a><ul>
+<li>Impact is limited to users of <code>--downloader aria2c</code></li>
+<li>Support for downloading HLS and DASH formats with aria2c has been removed. Users affected by this change should migrate to use <code>-N</code> for concurrent fragment downloads via the native downloader</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<details><summary><h3>Changelog</h3></summary>
+
+
+<h4>Core changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/5f6a214616f6fc3831a2535bcd1f837e90549d10">Add lockfile and pinned extras</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16421">#16421</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/88c8a68eb52268111e224293e9a6519944971096">88c8a68</a> by <a href="https://github.com/bashonly">bashonly</a>)</li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/a5aae189452d11ca731a4fb409d0136c668bd7c6">Fix <code>default</code> extra for <code>ios</code> platforms</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16376">#16376</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e578e265f7c6ca94a74b30e0d8d6196a4d19fb6a">Remove <code>url</code>, <code>desktop</code> and <code>webloc</code> from safe extensions</a> by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><strong>update</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/fe5e67c0545a4aac9d404b220c21ba53d1048353">Bump GitHub REST API version to <code>2026-03-10</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16435">#16435</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>utils</strong><ul>
+<li><code>random_user_agent</code><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/acf8ab7a6e3024325f62426e35a17f365c4d5d54">Bump version range 137-143 =&gt; 142-148</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16588">#16588</a>) by <a href="https://github.com/dlp-bot">dlp-bot</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/1e4668e9df78ff2409e139b51610442cbefe762e">Bump version range 142-148 =&gt; 143-149</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16906">#16906</a>) by <a href="https://github.com/dlp-bot">dlp-bot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>Extractor changes</h4>
+<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/618b5e446c4379c9d95fe7b30fd6a0fc6af19a70">Extract supplemental codecs from DASH manifests</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16827">#16827</a>) by <a href="https://github.com/chrisellsworth">chrisellsworth</a></li>
+<li><code>_resolve_nuxt_array</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/8001ff4349fa4eaafd0f88fd8abdf8756090596d">Handle Pinia <code>skipHydrate</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16447">#16447</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>abematv</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/519a662aa267ddcd48ea859729ba330361cff157">Extract subtitles</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16502">#16502</a>) by <a href="https://github.com/garret1317">garret1317</a></li>
+<li><strong>ard</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/165ee77a2be1b3360f1b82e03a933348ecd13e41">Support new <code>ardsounds</code> domain</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16381">#16381</a>) by <a href="https://github.com/evilpie">evilpie</a></li>
+<li><strong>bandcamp</strong>: weekly: <a href="https://github.com/yt-dlp/yt-dlp/commit/2d7b278666bfbf12cf287072498dd275c946b968">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16373">#16373</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>iwara</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/1a1481e89b28ff1bf3f00eda00a66071f8caba9f">Fix extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16014">#16014</a>) by <a href="https://github.com/vpertys">vpertys</a></li>
+<li><strong>monstercat</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a75d66ae2c3e86e38eb05ae06e4a416077df001b">Support older URLs</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16780">#16780</a>) by <a href="https://github.com/AnAwesomGuy">AnAwesomGuy</a></li>
+<li><strong>onsen</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/bc90c36b139c87cdc59399561dc1650198047a72">Fix extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16830">#16830</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
+<li><strong>pornhub</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/83564f85db7507486fbe3b0d0e72498f31ab0600">Support browser impersonation</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16794">#16794</a>) by <a href="https://github.com/0xvd">0xvd</a></li>
+<li><strong>reddit</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/72ac62051593184552733e353da4a8cb8ec214ed">Fix unauthenticated extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16839">#16839</a>) by <a href="https://github.com/0xvd">0xvd</a>, <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/jdesgats">jdesgats</a></li>
+<li><strong>rtp</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f01e1a1ced581c13f28c7da45eb6396cb9fff6e4">Support multi-part episodes and <code>--no-playlist</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16299">#16299</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>s4c</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/174afac7e304fd1c055d33d52a1fccdb3dca3b37">Extract more metadata</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16813">#16813</a>) by <a href="https://github.com/Suntooth">Suntooth</a></li>
+<li><strong>soop</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/068d5efd3047a39a7d869d49067aa1594e359276">Adapt extractors to new domain</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16436">#16436</a>) by <a href="https://github.com/thematuu">thematuu</a></li>
+<li><strong>soundcloud</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/ebf0c0f61e3e578db26b45eb24d643f1a64bf17f">Improve error handling</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16602">#16602</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/0d8460b407fe8a9ac7ded8cbf21813554f9d2442">Support <code>--extractor-retries</code> for original formats</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16690">#16690</a>) by <a href="https://github.com/HarmfulBreeze">HarmfulBreeze</a></li>
+</ul>
+</li>
+<li><strong>thisoldhouse</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/70050a626265922072cc56f69519214c47dbcad6">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16909">#16909</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/dirkf">dirkf</a></li>
+<li><strong>twitch</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/aaa1c78956ed4ff63df067671396de864afdc43e">Remove dead <code>rechat</code> subtitles</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16660">#16660</a>) by <a href="https://github.com/kasper93">kasper93</a></li>
+<li>clips: <a href="https://github.com/yt-dlp/yt-dlp/commit/c229d4b62053dc287337f300df13bd433d4084da">Fix extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16466">#16466</a>) by <a href="https://github.com/Ventriduct">Ventriduct</a></li>
+</ul>
+</li>
+<li><strong>twitter</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/7edb5ee8705cecc20537d519e1992ac202a30699">Fix <code>view_count</code> extraction</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16814">#16814</a>) by <a href="https://github.com/MemoKing34">MemoKing34</a></li>
+<li><strong>wikimedia</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/3d1f8a4a0d4da01fac484bd1593056a1dc9f30a9">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15413">#15413</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>youtube</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/98e42eb04486e00bf86479b24dbfe19321f652ee">Drop support for <code>bun&lt;1.2.11</code> and <code>bun&gt;1.3.14</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16786">#16786</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/e534a32619d1d944631a0483f28522bdd11f0745">Drop support for <code>deno&lt;2.3.0</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16788">#16788</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/b536d72c869e47eb048fc54746e4d2f384706d2f">Drop support for <code>node&lt;22</code></a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16787">#16787</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/7fdc46d01619afbb2371b0465d6830602013148f">Fix PO token sanitization for Python 3.15</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16884">#16884</a>) by <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/9c1f3cf3373620c593c4e315f276ac134f6beb20">Fix PO token sanitization for Python&gt;=3.14.4</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16453">#16453</a>) by <a href="https://github.com/syphyr">syphyr</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/04b2261cbf1aafb964320062dbb33e74ec613291">Fix outdated quickjs-ng warning</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16437">#16437</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+<h4>Downloader changes</h4>
+<ul>
+<li><strong>external</strong><ul>
+<li><code>aria2c</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/25056f0d2d47adbd235a8d422fa62d68d0be2bc2">Remove support for m3u8/dash protocols</a> by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><code>curl</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/2726572520238356bcf64aba2040228648b44c82">Fix cookie leak on redirect</a> by <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</li>
+<li><strong>ffmpeg</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/a6791415e04aaf4bb4c105991ceb3ca6b24afc18">Use info dict <code>http_headers</code> for direct merge downloads</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/15456">#15456</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Postprocessor changes</h4>
+<ul>
+<li><strong>exec</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/5faffa999fd33b373d47773e8ee639d072accec2">Restrict <code>--exec</code> template usage to safe conversions</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16883">#16883</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><strong>ffmpegmetadata</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/e85da3b98532761573d8b48ccd4d8d28dee94b15">Avoid erroneous ISO 639 conversions</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16046">#16046</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+<h4>Networking changes</h4>
+<ul>
+<li><strong>Request Handler</strong><ul>
+<li>curl_cffi<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/37a8c6f42b1e0866bbeec47ca57a68a6ae63784e">Add actual <code>reason</code> to response</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16818">#16818</a>) by <a href="https://github.com/antorlovsky">antorlovsky</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/565dcfec4e5c035b5544de4a369f654b8a60e9e6">Fix supported impersonate targets</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16440">#16440</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/0f45ecc920f31c3c5704c62bad8da2e2844ff9bc">Support <code>curl_cffi</code> 0.15.x</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16429">#16429</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>Misc. changes</h4>
+<ul>
+<li><strong>build</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/87eaf886f5a1fed00639baf3677ac76281cd98f9">Harden build/release workflows</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16358">#16358</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/cdc465a34674d15edf52b656457f6006b9e03edf">cdc465a</a> by <a href="https://github.com/bashonly">bashonly</a>)</li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/a4acc4223289eeb4d32af7b798bfe6e9c38f4b8d">Harden release workflow</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16444">#16444</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/32f1671a906bf375e5b5d39433dd13f917a8dfa7">Rename requirements files to clean up dependency graph</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16740">#16740</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/10b54835cf3f0d63cdd964a2f411db8f7cac3ff1">Update 12 dependencies</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16903">#16903</a>) by <a href="https://github.com/dlp-bot">dlp-bot</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/dd17897eaeb0de7da31690d6d1807a1e9a041384">Update 14 dependencies</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16589">#16589</a>) by <a href="https://github.com/dlp-bot">dlp-bot</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c8695f52a91f0d2aabbba7b7200c1099bfa9a3e5">Update 28 dependencies</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16467">#16467</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/410e0af5379c5fc5f2acb6abaa8965637f80ad76">Upgrade all Linux binaries to Python 3.14</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16738">#16738</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+</ul>
+</li>
+<li><strong>ci</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/27973bae5ea3467ac412bea3b79cbeeb7de71e81">Bump pytest to 9.x</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16470">#16470</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/7aac95eae663be82cffeaf2a8c1193a5e349e401">Test with Python 3.15</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16896">#16896</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/125bb40468a8618e592d607c1c496095fda764f0">Update 2 actions in 2 workflows</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16743">#16743</a>) by <a href="https://github.com/dlp-bot">dlp-bot</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/59bba1be7bb476d4445dc4eae94f602300cb865a">Update 3 actions in 9 workflows</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16782">#16782</a>) by <a href="https://github.com/dlp-bot">dlp-bot</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/a85b38621286903b9124fdb05d177983d8273ec7">Update 8 actions in 7 workflows</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16384">#16384</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/40ffb79d499e6b37682fddbe6affec20186a3d86">Update wiki via this repository</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16446">#16446</a>) by <a href="https://github.com/bashonly">bashonly</a> (With fixes in <a href="https://github.com/yt-dlp/yt-dlp/commit/9f0fc9a6333b912c83b177542cd3a3cc1c6ff326">9f0fc9a</a>)</li>
+</ul>
+</li>
+<li><strong>cleanup</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/3ba1534fa3f55ddb599a891b544ec96e5a15f3cc">Remove dead extractors</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16137">#16137</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/doe1080">doe1080</a></li>
+<li>Miscellaneous<ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/35684c1171dd8b99da825cf43a0b2c06b43824b7">35684c1</a>, <a href="https://github.com/yt-dlp/yt-dlp/commit/3a12be701c28aff4dd4824adb911cc7987dd86ba">3a12be7</a> by <a href="https://github.com/bashonly">bashonly</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/821bef0f00178916d60dbc86bc0bcb8cc3bae8d5">821bef0</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>devscripts</strong><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/commit/fcccbc68496d8af1b7c24cd5e45e83af4ca76f18">Handle <code>ejs</code> updates for requirements files</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16374">#16374</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+<li><code>update_requirements</code>: <a href="https://github.com/yt-dlp/yt-dlp/commit/2c28ee5d76d2c0d350407fd81dbdd71394b67993">Add reporting functionality</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16454">#16454</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/Grub4K">Grub4K</a></li>
+</ul>
+</li>
+<li><strong>docs</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/98c0beab97933e4115ed034f06a8b626eb282d3f">Update badges</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14893">#14893</a>) by <a href="https://github.com/seproDev">seproDev</a></li>
+<li><strong>test</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/f14d2f2d548a45fef221aa3821e5a1bf450d5c0b">Add default and curl-cffi extras to hatch-test env</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/16397">#16397</a>) by <a href="https://github.com/JSubelj">JSubelj</a></li>
+</ul>
+</details>]]></content:encoded>
+      <category>yt-dlp</category>
+      <category>yt-dlp</category>
+      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
+    </item>    <item>
       <title>openai/codex rust-v0.139.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.139.0</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.139.0</guid>
@@ -968,135 +1127,6 @@ Silicon and Intel-based Macs for as long as practical.</p>
       <category>edde746</category>
       <category>plezy</category>
       <source url="https://github.com/edde746/plezy">edde746/plezy</source>
-    </item>    <item>
-      <title>openai/codex rust-v0.135.0</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.135.0</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.135.0</guid>
-      <pubDate>Thu, 28 May 2026 17:31:35 GMT</pubDate>
-      <description>New Features codex doctor now reports richer environment, Git, terminal, app-server, and thread inventory diagnostics for support cases. (#24261, #24311, #24305) /status shows remote connection details and server version when the TUI is connected over a remote transport. (#24420) Vim mode gained...</description>
-      <content:encoded><![CDATA[<h2>New Features</h2>
-<ul>
-<li><code>codex doctor</code> now reports richer environment, Git, terminal, app-server, and thread inventory diagnostics for support cases. (#24261, #24311, #24305)</li>
-<li><code>/status</code> shows remote connection details and server version when the TUI is connected over a remote transport. (#24420)</li>
-<li>Vim mode gained text-object editing, improved word/line-end behavior, and a configurable interrupt-turn binding. (#24382, #24380, #24766)</li>
-<li><code>/permissions</code> now understands named permission profiles and displays configured custom profiles. (#21559)</li>
-<li>Packaged Codex builds can discover and use the bundled patched zsh helper across supported macOS and Linux targets. (#23756, #24171)</li>
-<li>The Python SDK now exposes friendly <code>Sandbox</code> presets for thread and turn APIs. (#24772)</li>
-<li><code>install.sh</code>/<code>install.ps1</code> supports a non-interactive installation mode when <code>CODEX_NON_INTERACTIVE=1</code> is set. (#21567)</li>
-</ul>
-<h2>Bug Fixes</h2>
-<ul>
-<li>Markdown tables and multiline lists render more readably in the TUI, with better column sizing and app-style table formatting. (#24489, #24346, #24351)</li>
-<li>TUI output is more stable on macOS and Zellij, avoiding stderr/composer corruption and raw-output overlap. (#24459, #24479, #24593)</li>
-<li>Slash-command completion now preserves existing draft text for commands that accept inline arguments. (#23950)</li>
-<li>Older tmux/iTerm control-mode sessions no longer lose normal <code>Ctrl-C</code> handling from unsupported keyboard enhancement setup. (#24371)</li>
-<li>App mentions now exclude inaccessible or disabled apps instead of offering unusable <code>$</code> suggestions. (#24625)</li>
-<li>Resume flows now include non-interactive exec sessions when requested and honor cwd overrides for idle cached threads. (#24503, #24528)</li>
-</ul>
-<h2>Documentation</h2>
-<ul>
-<li>Clarified image-viewing tool detail behavior and removed stale TUI composer documentation references. (#23949, #24641)</li>
-<li>Updated Python SDK docs, examples, and notebook content to use the new sandbox preset API. (#24772)</li>
-</ul>
-<h2>Chores</h2>
-<ul>
-<li>Updated Rust toolchain pins and SQLx/SQLite dependencies. (#24684, #24728)</li>
-<li>Moved memory runtime state into a dedicated SQLite database. (#24591)</li>
-<li>Removed remaining legacy config-profile consumers and routed more TUI config/plugin state through app-server-owned APIs. (#24076, #24254, #24255, #24265, #24266, #24257)</li>
-<li>Centralized Responses retry handling and MCP tool naming logic to reduce duplicated internal plumbing. (#24131, #21576)</li>
-</ul>
-<h2>Changelog</h2>
-<p>Full Changelog: <a href="https://github.com/openai/codex/compare/rust-v0.134.0...rust-v0.135.0">https://github.com/openai/codex/compare/rust-v0.134.0...rust-v0.135.0</a></p>
-<ul>
-<li>#24164 fix(remote-control): cap reconnect backoff @apanasenko-oai</li>
-<li>#23756 package: include zsh fork in Codex package @bolinfest</li>
-<li>#23757 Default function tools into tool hooks @abhinav-oai</li>
-<li>#24171 package: add x64 macOS codex-zsh artifact @bolinfest</li>
-<li>#24159 code-mode: merge stored values by key @cconger</li>
-<li>#23983 fix: plugin bundle archive handling for upload and install @xl-openai</li>
-<li>#24261 feat(doctor): add environment diagnostics @fcoury-oai</li>
-<li>#24311 Report app-server version in codex doctor @etraut-openai</li>
-<li>#24314 tui: label compact rate-limit percentages @etraut-openai</li>
-<li>#24420 Show remote connection details in /status @etraut-openai</li>
-<li>#24317 Respect hook trust bypass during TUI startup @etraut-openai</li>
-<li>#24254 TUI config cleanup: oss_provider @etraut-openai</li>
-<li>#24255 TUI config cleanup: trusted projects @etraut-openai</li>
-<li>#24265 TUI config cleanup: MCP inventory @etraut-openai</li>
-<li>#24305 Add doctor thread inventory audit @etraut-openai</li>
-<li>#24346 fix(tui): improve markdown table column allocation @fcoury-oai</li>
-<li>#24351 fix(tui): improve multiline markdown list readability @fcoury-oai</li>
-<li>#24459 fix(tui): prevent macos stderr from corrupting composer @fcoury-oai</li>
-<li>#24479 fix(process-hardening): preserve macos malloc diagnostics @fcoury-oai</li>
-<li>#24474 Log rollout writer OS errors @etraut-openai</li>
-<li>#24076 chore: stop consuming legacy config profiles @jif-oai</li>
-<li>#24131 centralize Responses retry policy @rhan-oai</li>
-<li>#23858 [wip] goal shift @jif-oai</li>
-<li>#24555 chore: drop orphaned codex memories MCP crate @jif-oai</li>
-<li>#24558 chore: move memory prompt builder into extension @jif-oai</li>
-<li>#24562 Add ad-hoc memory note tool @jif-oai</li>
-<li>#24567 Wire metrics client into memories extension @jif-oai</li>
-<li>#24588 fix: drop flake @jif-oai</li>
-<li>#24583 Add memory tool call metrics to memories extension @jif-oai</li>
-<li>#24586 Wire app-server extension event sink @jif-oai</li>
-<li>#24532 Use thread config for TUI MCP inventory @etraut-openai</li>
-<li>#24105 [codex] Make active turn task singular @pakrym-oai</li>
-<li>#21576 Move MCP tool naming mode into manager @pakrym-oai</li>
-<li>#24503 tui: include exec sessions in resume list @etraut-openai</li>
-<li>#24600 feat: gate dedicated memories tools in config @jif-oai</li>
-<li>#21559 tui: add named permission profile picker @viyatb-oai</li>
-<li>#24608 feat: add manual and remote_v2 tags to compaction metric @jif-oai</li>
-<li>#24611 test: clean up apply_patch allow-session artifact @jif-oai</li>
-<li>#24609 Remove reserved namespaces dedup @pakrym-oai</li>
-<li>#23964 Move slash input logic out of chat composer @canvrno-oai</li>
-<li>#24615 Add goal extension telemetry parity @jif-oai</li>
-<li>#24371 fix(tui): avoid modifyOtherKeys for unknown tmux formats @fcoury-oai</li>
-<li>#24626 fix: restore goal accounting after thread resume @jif-oai</li>
-<li>#24591 Move memory state to a dedicated SQLite DB @jif-oai</li>
-<li>#23823 standalone websearch extension @sayan-oai</li>
-<li>#24593 fix(tui): keep raw output above composer in zellij @fcoury-oai</li>
-<li>#24625 tui: keep inaccessible apps out of mentions @canvrno-oai</li>
-<li>#24154 Add experimental turn additional context @pakrym-oai</li>
-<li>#24473 fix(remote-control): surface websocket task stalls @apanasenko-oai</li>
-<li>#24528 Respect resume cwd overrides for idle cached threads @etraut-openai</li>
-<li>#24160 Add forked_from_thread_id turn metadata @owenlin0</li>
-<li>#24646 make direct only allowed caller for standalone websearch @sayan-oai</li>
-<li>#23949 Clarify view_image tool description @fjord-oai</li>
-<li>#24266 TUI config cleanup: plugin mentions @etraut-openai</li>
-<li>#24320 Avoid repeated marketplace upgrades for alternate layouts @etraut-openai</li>
-<li>#23813 windows-sandbox: remove SandboxPolicy runner plumbing @bolinfest</li>
-<li>#24652 [codex] remove plain image wrapper spans @pakrym-oai</li>
-<li>#24623 Attach Windows sandbox log to feedback reports @iceweasel-oai</li>
-<li>#24644 Restore legacy image detail values @rhan-oai</li>
-<li>#24655 [codex-analytics] add grouped session id to runtime events @marksteinbrick-oai</li>
-<li>#24658 [codex] Remove obsolete goal continuation turn marker @pakrym-oai</li>
-<li>#24660 fix: dont compact standalone websearch schema @sayan-oai</li>
-<li>#24667 fix(core): instrument stalled tool-listing handoff @apanasenko-oai</li>
-<li>#24684 Uprev Rust toolchain pins to 1.95.0 @anp-oai</li>
-<li>#21567 fix: add noninteractive install script mode @efrazer-oai</li>
-<li>#24707 Allow runtime enablement for remote plugins @xl-openai</li>
-<li>#24714 fix(auto-review) skip legacy notify for auto review threads @dylan-hurd-oai</li>
-<li>#24690 Revert &quot;Add Bedrock Mantle GovCloud region (#23860)&quot; @celia-oai</li>
-<li>#24628 feat: handle goal usage limits in goal extension @jif-oai</li>
-<li>#24746 Fix guardian review test user input @jif-oai</li>
-<li>#24744 feat: add thread idle lifecycle hook @jif-oai</li>
-<li>#24751 Drop startup context when truncating forked rollouts @jif-oai</li>
-<li>#24257 TUI config cleanup: plugin marketplace @etraut-openai</li>
-<li>#24380 fix(tui): complete vim word-end and line-end behavior @fcoury-oai</li>
-<li>#24728 Bump SQLx to pick up newer bundled SQLite @jif-oai</li>
-<li>#24637 fix: run standalone updates noninteractively @efrazer-oai</li>
-<li>#24778 make vercel webhook url an env secret @sayan-oai</li>
-<li>#23950 fix: Preserve draft text when completing argument-taking slash commands @canvrno-oai</li>
-<li>#24641 [codex] Remove stale composer narrative doc references @canvrno-oai</li>
-<li>#24368 [codex] add compaction metadata to turn headers @ningyi-oai</li>
-<li>#24772 [codex] Add friendly Python SDK sandbox presets @aibrahim-oai</li>
-<li>#24382 feat(tui): add vim text object bindings @fcoury-oai</li>
-<li>#24766 feat(tui): make turn interruption keybind configurable @fcoury-oai</li>
-<li>#24489 feat(tui): render markdown tables in app style [1 of 2] @fcoury-oai</li>
-<li>#24713 chore: enable namespace tools for Bedrock @celia-oai</li>
-</ul>]]></content:encoded>
-      <category>openai</category>
-      <category>codex</category>
-      <source url="https://github.com/openai/codex">openai/codex</source>
     </item>    <item>
       <title>zen-browser/desktop 1.20.1b</title>
       <link>https://github.com/zen-browser/desktop/releases/tag/1.20.1b</link>
@@ -7245,53 +7275,6 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
       <category>Kong</category>
       <category>insomnia</category>
       <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
-    </item>    <item>
-      <title>yt-dlp/yt-dlp 2025.10.22</title>
-      <link>https://github.com/yt-dlp/yt-dlp/releases/tag/2025.10.22</link>
-      <guid isPermaLink="true">https://github.com/yt-dlp/yt-dlp/releases/tag/2025.10.22</guid>
-      <pubDate>Wed, 22 Oct 2025 19:51:38 GMT</pubDate>
-      <description>A description of the various files is in the README The PyInstaller-bundled executables are subject to the licenses described in THIRD_PARTY_LICENSES.txt Important changes A stopgap release with a TEMPORARY partial fix for YouTube support Some formats may still be unavailable, especially if cooki...</description>
-      <content:encoded><![CDATA[<p><a href="https://github.com/yt-dlp/yt-dlp#installation" title="Installation instructions"><img src="https://img.shields.io/badge/-Which%20file%20to%20download%3F-white.svg?style=for-the-badge" alt="Installation"></a> <a href="https://discord.gg/H5MNcFW63r" title="Discord"><img src="https://img.shields.io/discord/807245652072857610?color=blue&labelColor=555555&label=&logo=discord&style=for-the-badge" alt="Discord"></a> <a href="https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers" title="Donate"><img src="https://img.shields.io/badge/_-Donate-red.svg?logo=githubsponsors&labelColor=555555&style=for-the-badge" alt="Donate"></a> <a href="https://github.com/yt-dlp/yt-dlp/tree/2025.10.22#readme" title="Documentation"><img src="https://img.shields.io/badge/-Docs-brightgreen.svg?style=for-the-badge&logo=GitBook&labelColor=555555" alt="Documentation"></a> <a href="https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/latest" title="Nightly builds"><img src="https://img.shields.io/badge/Nightly%20builds-purple.svg?style=for-the-badge" alt="Nightly"></a> <a href="https://github.com/yt-dlp/yt-dlp-master-builds/releases/latest" title="Master builds"><img src="https://img.shields.io/badge/Master%20builds-lightblue.svg?style=for-the-badge" alt="Master"></a></p>
-<h4>A description of the various files is in the <a href="https://github.com/yt-dlp/yt-dlp#release-files">README</a></h4>
-<p>The PyInstaller-bundled executables are subject to the licenses described in <a href="https://github.com/yt-dlp/yt-dlp/blob/a75399d89f90b249ccfda148987e10bc688e2f84/THIRD_PARTY_LICENSES.txt">THIRD_PARTY_LICENSES.txt</a></p>
-<hr>
-<h4>Important changes</h4>
-<ul>
-<li><strong>A stopgap release with a <em>TEMPORARY partial</em> fix for YouTube support</strong>
-Some formats may still be unavailable, especially if cookies are passed to yt-dlp. The <em><strong>NEXT</strong></em> release, expected very soon, <strong>will require an external JS runtime (e.g. Deno)</strong> in order for YouTube downloads to work properly. <a href="https://github.com/yt-dlp/yt-dlp/issues/14404">Read more</a></li>
-<li><strong>The minimum <em>required</em> Python version has been raised to 3.10</strong>
-Python 3.9 has reached its end-of-life as of October 2025, and yt-dlp has now removed support for it. <a href="https://github.com/yt-dlp/yt-dlp/issues/13858">Read more</a></li>
-</ul>
-<details><summary><h3>Changelog</h3></summary>
-
-
-<h4>Core changes</h4>
-<ul>
-<li><a href="https://github.com/yt-dlp/yt-dlp/commit/4e6a693057cfaf1ce1f07b019ed3bfce2bf936f6">Remove Python 3.9 support</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13861">#13861</a>) by <a href="https://github.com/bashonly">bashonly</a></li>
-</ul>
-<h4>Extractor changes</h4>
-<ul>
-<li><strong>appleconnect</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/78748b506f0dca8236ac0045ed7f72f7cf334b62">Rework extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13229">#13229</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
-<li><strong>idagio</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/c9356f308dd3c5f9f494cb40ed14c5df017b4fe0">Support URLs with country codes</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14655">#14655</a>) by <a href="https://github.com/robin-mu">robin-mu</a></li>
-<li><strong>tvnoe</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/fe5ae54a7b08ebe679f03afdeafbe1cee5784d5b">Rework Extractor</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/13369">#13369</a>) by <a href="https://github.com/doe1080">doe1080</a></li>
-<li><strong>youtube</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/2c9091e355a7ba5d1edb69796ecdca48199b77fb">Use temporary player client workaround</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14693">#14693</a>) by <a href="https://github.com/gamer191">gamer191</a></li>
-</ul>
-<h4>Misc. changes</h4>
-<ul>
-<li><strong>cleanup</strong><ul>
-<li>Miscellaneous<ul>
-<li><a href="https://github.com/yt-dlp/yt-dlp/commit/c7bda2192aa24afce40fdbbbe056d269aa3b2872">c7bda21</a> by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/seproDev">seproDev</a></li>
-<li><a href="https://github.com/yt-dlp/yt-dlp/commit/de7b3c0705022cb777c5b4b7f0c69c59ad6ff538">de7b3c0</a> by <a href="https://github.com/bashonly">bashonly</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>docs</strong>: <a href="https://github.com/yt-dlp/yt-dlp/commit/dfc0a84c192a7357dd1768cc345d590253a14fe5">Update list of maintainers</a> (<a href="https://github.com/yt-dlp/yt-dlp/issues/14148">#14148</a>) by <a href="https://github.com/bashonly">bashonly</a>, <a href="https://github.com/coletdjnz">coletdjnz</a>, <a href="https://github.com/seproDev">seproDev</a></li>
-</ul>
-</details>]]></content:encoded>
-      <category>yt-dlp</category>
-      <category>yt-dlp</category>
-      <source url="https://github.com/yt-dlp/yt-dlp">yt-dlp/yt-dlp</source>
     </item>    <item>
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
