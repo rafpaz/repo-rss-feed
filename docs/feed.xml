@@ -10,9 +10,97 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 11 Jun 2026 04:34:42 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 07:49:14 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>derFrisson/plezy-apks 2.6.0</title>
+      <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.6.0</link>
+      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.6.0</guid>
+      <pubDate>Thu, 11 Jun 2026 07:43:56 GMT</pubDate>
+      <description>Plezy 2.6.0 — Standalone APKs APKs extracted from edde746/plezy 2.6.0 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators, Ch...</description>
+      <content:encoded><![CDATA[<h2>Plezy 2.6.0 — Standalone APKs</h2>
+<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/2.6.0">edde746/plezy 2.6.0</a> for Obtainium compatibility.</p>
+<h3>Available APKs</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Architecture</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>plezy-android-arm64-v8a.apk</code></td>
+<td>ARM 64-bit</td>
+<td>Most modern phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-armeabi-v7a.apk</code></td>
+<td>ARM 32-bit</td>
+<td>Older phones</td>
+</tr>
+<tr>
+<td><code>plezy-android-x86_64.apk</code></td>
+<td>x86_64</td>
+<td>Emulators, ChromeOS</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Upstream Release Notes</h3>
+<h2>Added</h2>
+<ul>
+<li>Continue Watching behavior setting</li>
+<li>Plex Plays/User Rating sorts</li>
+</ul>
+<h2>Improved</h2>
+<ul>
+<li>Watch state consistency</li>
+<li>Home hub previews</li>
+<li>Jellyfin recency ordering</li>
+<li>TV keyboard search focus</li>
+<li>Episode switching performance</li>
+</ul>
+<h2>Fixed</h2>
+<ul>
+<li>Mobile chapters &amp; queue</li>
+<li>Rare Apple Dolby Vision decoding issue</li>
+<li>Recently Added scoping</li>
+<li>Server tasks via remote</li>
+<li>Next unwatched selection</li>
+<li>Redundant mark-watched updates</li>
+<li>Image placeholder sizing</li>
+<li>TV grid sizing</li>
+<li>tvOS Continue Watching autoplay missing start</li>
+<li>tvOS Top Shelf sync</li>
+<li>More untranslated strings</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/2.5.0...2.6.0">https://github.com/edde746/plezy/compare/2.5.0...2.6.0</a></p>]]></content:encoded>
+      <category>derFrisson</category>
+      <category>plezy-apks</category>
+      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
+    </item>    <item>
+      <title>zen-browser/desktop 1.21b</title>
+      <link>https://github.com/zen-browser/desktop/releases/tag/1.21b</link>
+      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.21b</guid>
+      <pubDate>Thu, 11 Jun 2026 05:58:04 GMT</pubDate>
+      <description>Zen Stable Release New Features Updated to Firefox 151.0.4 Added &amp;#39;Space Routing&amp;#39;, a new feature that allows you to route links to a specific Space. To get started, click on the three dots in your Space name and click on &amp;#39;Space Routing Settings&amp;#39;. Fixes Fixed extension-opened tabs n...</description>
+      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
+<h2>New Features</h2>
+<ul>
+<li>Updated to Firefox 151.0.4</li>
+<li>Added &#39;Space Routing&#39;, a new feature that allows you to route links to a specific Space. To get started, click on the three dots in your Space name and click on &#39;Space Routing Settings&#39;.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed extension-opened tabs not being created with the correct container (<a href="https://github.com/zen-browser/desktop/issues/14100">#14100</a>)</li>
+<li>Fixed a bug with the Boosts editor having the wrong theme colors (<a href="https://github.com/zen-browser/desktop/issues/14099">#14099</a>)</li>
+<li>Improved overflowing space icons being inaccessible and improved the feeling when hovering over them (<a href="https://github.com/zen-browser/desktop/issues/13747">#13747</a>)</li>
+<li>Other minor bug fixes and improvements</li>
+</ul>]]></content:encoded>
+      <category>zen-browser</category>
+      <category>desktop</category>
+      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
+    </item>    <item>
       <title>edde746/plezy 2.6.0</title>
       <link>https://github.com/edde746/plezy/releases/tag/2.6.0</link>
       <guid isPermaLink="true">https://github.com/edde746/plezy/releases/tag/2.6.0</guid>
@@ -3525,66 +3613,6 @@ that provides a more robust and feature-rich alternative to the legacy <code>Dat
       <category>node</category>
       <source url="https://github.com/nodejs/node">nodejs/node</source>
     </item>    <item>
-      <title>derFrisson/plezy-apks 1.33.1</title>
-      <link>https://github.com/derFrisson/plezy-apks/releases/tag/1.33.1</link>
-      <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/1.33.1</guid>
-      <pubDate>Thu, 16 Apr 2026 06:40:49 GMT</pubDate>
-      <description>Plezy 1.33.1 — Standalone APKs APKs extracted from edde746/plezy 1.33.1 for Obtainium compatibility. Available APKs File Architecture Use for plezy-android-arm64-v8a.apk ARM 64-bit Most modern phones plezy-android-armeabi-v7a.apk ARM 32-bit Older phones plezy-android-x86_64.apk x86_64 Emulators,...</description>
-      <content:encoded><![CDATA[<h2>Plezy 1.33.1 — Standalone APKs</h2>
-<p>APKs extracted from <a href="https://github.com/edde746/plezy/releases/tag/1.33.1">edde746/plezy 1.33.1</a> for Obtainium compatibility.</p>
-<h3>Available APKs</h3>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Architecture</th>
-<th>Use for</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>plezy-android-arm64-v8a.apk</code></td>
-<td>ARM 64-bit</td>
-<td>Most modern phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-armeabi-v7a.apk</code></td>
-<td>ARM 32-bit</td>
-<td>Older phones</td>
-</tr>
-<tr>
-<td><code>plezy-android-x86_64.apk</code></td>
-<td>x86_64</td>
-<td>Emulators, ChromeOS</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>Upstream Release Notes</h3>
-<h2>Added</h2>
-<ul>
-<li>Watch together buffering indicators, recent rooms, plex usernames, action toasts, shorter codes</li>
-<li>Encrypted LAN discovery for remote pairing (replaces QR)</li>
-<li>Circular dpad on remote screen</li>
-<li>Mouse back button navigation</li>
-<li>Subtitle sync slider range extended to ±60s</li>
-<li>Auto-remove watched downloads with server watched threshold</li>
-</ul>
-<h2>Fixed</h2>
-<ul>
-<li>Subtitle background not rendering</li>
-<li>Artwork directory crash on orientation change</li>
-<li>Back navigation on screens with no app bar actions</li>
-<li>Alpha jump bar and download tree empty list access</li>
-<li>Action bar focus node bounds safety</li>
-<li>Auto-start remote server after home data loads</li>
-<li>Min 2x DPR for TV image transcoding</li>
-<li>Download cleanup, retry circuit breaker, SAF resume</li>
-<li>Server errors (500) treated as permanent failure with error in UI</li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/edde746/plezy/compare/1.32.0...1.33.0">https://github.com/edde746/plezy/compare/1.32.0...1.33.0</a></p>]]></content:encoded>
-      <category>derFrisson</category>
-      <category>plezy-apks</category>
-      <source url="https://github.com/derFrisson/plezy-apks">derFrisson/plezy-apks</source>
-    </item>    <item>
       <title>payloadcms/payload v3.83.0</title>
       <link>https://github.com/payloadcms/payload/releases/tag/v3.83.0</link>
       <guid isPermaLink="true">https://github.com/payloadcms/payload/releases/tag/v3.83.0</guid>
@@ -4033,31 +4061,6 @@ export const seoPlugin = definePlugin&lt;SEOPluginOptions&gt;({
       <category>payloadcms</category>
       <category>payload</category>
       <source url="https://github.com/payloadcms/payload">payloadcms/payload</source>
-    </item>    <item>
-      <title>zen-browser/desktop 1.19.7b</title>
-      <link>https://github.com/zen-browser/desktop/releases/tag/1.19.7b</link>
-      <guid isPermaLink="true">https://github.com/zen-browser/desktop/releases/tag/1.19.7b</guid>
-      <pubDate>Wed, 08 Apr 2026 11:04:08 GMT</pubDate>
-      <description>Zen Stable Release Security Various security fixes New Features Updated to Firefox 149.0.2 Added a new &amp;#39;Duplicate tab&amp;#39; keyboard shortcut available in settings Fixes Fixed MacOS setting &amp;#39;disable page swipe&amp;#39; making switching spaces not work at all ( #10687 ) Fixed double separator l...</description>
-      <content:encoded><![CDATA[<h1>Zen Stable Release</h1>
-<h2>Security</h2>
-<p><a href="https://www.mozilla.org/en-US/security/advisories/mfsa2026-25/">Various security fixes</a></p>
-<h2>New Features</h2>
-<ul>
-<li>Updated to Firefox 149.0.2</li>
-<li>Added a new &#39;Duplicate tab&#39; keyboard shortcut available in settings</li>
-</ul>
-<h2>Fixes</h2>
-<ul>
-<li>Fixed MacOS setting &#39;disable page swipe&#39; making switching spaces not work at all (<a href="https://github.com/zen-browser/desktop/issues/10687">#10687</a>)</li>
-<li>Fixed double separator lines in context menus in some places (<a href="https://github.com/zen-browser/desktop/issues/13093">#13093</a>)</li>
-<li>Fixed unable to install addons in compact mode (<a href="https://github.com/zen-browser/desktop/issues/11667">#11667</a>)</li>
-<li>Fixed an issue on Linux where the browser toolbar could become unresponsive to mouse clicks after dragging a tab when using Wayland</li>
-<li>Other stability fixes and improvements.</li>
-</ul>]]></content:encoded>
-      <category>zen-browser</category>
-      <category>desktop</category>
-      <source url="https://github.com/zen-browser/desktop">zen-browser/desktop</source>
     </item>    <item>
       <title>yuliskov/SmartTube 31.45s</title>
       <link>https://github.com/yuliskov/SmartTube/releases/tag/31.45s</link>
