@@ -10,9 +10,53 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Fri, 12 Jun 2026 16:05:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 18:45:45 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
+      <title>yuliskov/SmartTube 31.94s</title>
+      <link>https://github.com/yuliskov/SmartTube/releases/tag/31.94s</link>
+      <guid isPermaLink="true">https://github.com/yuliskov/SmartTube/releases/tag/31.94s</guid>
+      <pubDate>Fri, 12 Jun 2026 17:43:23 GMT</pubDate>
+      <description>Playback error fixes Fire TV Cube crash fixes Added a new option to improve VPN compatibility: Settings/General/Network settings/Enable Conscrypt 🛡️ VirusTotal Analysis Build Variant VirusTotal Status Detailed Report SmartTube_stable_31.94_arm64-v8a.apk View Report SmartTube_stable_31.94_armeabi...</description>
+      <content:encoded><![CDATA[<ul>
+<li>Playback error fixes</li>
+<li>Fire TV Cube crash fixes</li>
+<li>Added a new option to improve VPN compatibility: Settings/General/Network settings/Enable Conscrypt</li>
+</ul>
+<h2>🛡️ VirusTotal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Build Variant</th>
+<th align="left">VirusTotal Status</th>
+<th align="left">Detailed Report</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.94s/SmartTube_stable_31.94_arm64-v8a.apk">SmartTube_stable_31.94_arm64-v8a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/b19b1cef82886bbd57a763ff476e2cbd40723b3f927f1fb9bb4fb86e09771a0d/detection"><img src="https://badges.cssnr.com/vt/id/b19b1cef82886bbd57a763ff476e2cbd40723b3f927f1fb9bb4fb86e09771a0d?start=green&end=red&n=8&v=1781286407" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/b19b1cef82886bbd57a763ff476e2cbd40723b3f927f1fb9bb4fb86e09771a0d/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.94s/SmartTube_stable_31.94_armeabi-v7a.apk">SmartTube_stable_31.94_armeabi-v7a.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/9705f4452c52fc563b6f31f6164eb4d2007f0f611f46de28184a83e412fd908c/detection"><img src="https://badges.cssnr.com/vt/id/9705f4452c52fc563b6f31f6164eb4d2007f0f611f46de28184a83e412fd908c?start=green&end=red&n=8&v=1781286407" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/9705f4452c52fc563b6f31f6164eb4d2007f0f611f46de28184a83e412fd908c/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.94s/SmartTube_stable_31.94_universal.apk">SmartTube_stable_31.94_universal.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a56d1685b4fce55b47a58ecc8dae485cd1c183e60ff47cdab398ce4a0ae86f18/detection"><img src="https://badges.cssnr.com/vt/id/a56d1685b4fce55b47a58ecc8dae485cd1c183e60ff47cdab398ce4a0ae86f18?start=green&end=red&n=8&v=1781286407" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/a56d1685b4fce55b47a58ecc8dae485cd1c183e60ff47cdab398ce4a0ae86f18/detection">View Report</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/yuliskov/SmartTube/releases/download/31.94s/SmartTube_stable_31.94_x86.apk">SmartTube_stable_31.94_x86.apk</a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1d916f91bb403fd53eee15d177a4b2709fa52856c93c73f71c82f9f8d18e32b5/detection"><img src="https://badges.cssnr.com/vt/id/1d916f91bb403fd53eee15d177a4b2709fa52856c93c73f71c82f9f8d18e32b5?start=green&end=red&n=8&v=1781286407" alt=""></a></td>
+<td align="left"><a href="https://www.virustotal.com/gui/file/1d916f91bb403fd53eee15d177a4b2709fa52856c93c73f71c82f9f8d18e32b5/detection">View Report</a></td>
+</tr>
+</tbody></table>]]></content:encoded>
+      <category>yuliskov</category>
+      <category>SmartTube</category>
+      <source url="https://github.com/yuliskov/SmartTube">yuliskov/SmartTube</source>
+    </item>    <item>
       <title>derFrisson/plezy-apks 2.6.0</title>
       <link>https://github.com/derFrisson/plezy-apks/releases/tag/2.6.0</link>
       <guid isPermaLink="true">https://github.com/derFrisson/plezy-apks/releases/tag/2.6.0</guid>
