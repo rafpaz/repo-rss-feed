@@ -10,7 +10,7 @@
     <language>en</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>repo-rss generator</generator>
-    <lastBuildDate>Thu, 11 Jun 2026 21:43:50 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 01:04:39 GMT</lastBuildDate>
     <ttl>180</ttl>
     <item>
       <title>derFrisson/plezy-apks 2.6.0</title>
@@ -6913,40 +6913,6 @@ See the <a href="https://github.com/doublecmd/doublecmd/wiki/Changes-in-version-
       <category>doublecmd</category>
       <category>doublecmd</category>
       <source url="https://github.com/doublecmd/doublecmd">doublecmd/doublecmd</source>
-    </item>    <item>
-      <title>Kong/insomnia core@12.0.0</title>
-      <link>https://github.com/Kong/insomnia/releases/tag/core%4012.0.0</link>
-      <guid isPermaLink="true">https://github.com/Kong/insomnia/releases/tag/core%4012.0.0</guid>
-      <pubDate>Mon, 03 Nov 2025 13:06:45 GMT</pubDate>
-      <description>What&amp;#39;s Changed :rocket: 12.0.0-beta.0 by @insomnia-infra in https://github.com/Kong/insomnia/pull/9308 Use codemirror merge addon to replace mis-merge [INS-1425] by @yaoweiprc in https://github.com/Kong/insomnia/pull/9268 fix: type imports for contributors by @ryan-willis in https://github.co...</description>
-      <content:encoded><![CDATA[<h2>What&#39;s Changed</h2>
-<ul>
-<li>:rocket: 12.0.0-beta.0 by @insomnia-infra in <a href="https://github.com/Kong/insomnia/pull/9308">https://github.com/Kong/insomnia/pull/9308</a></li>
-<li>Use codemirror merge addon to replace mis-merge [INS-1425] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9268">https://github.com/Kong/insomnia/pull/9268</a></li>
-<li>fix: type imports for contributors by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9310">https://github.com/Kong/insomnia/pull/9310</a></li>
-<li>fix: hide create mock server when creation not allowed by @shelby-moore in <a href="https://github.com/Kong/insomnia/pull/9301">https://github.com/Kong/insomnia/pull/9301</a></li>
-<li>feat: sparkles badge for AI features by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9306">https://github.com/Kong/insomnia/pull/9306</a></li>
-<li>feat: update commit generation area by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9319">https://github.com/Kong/insomnia/pull/9319</a></li>
-<li>fix: mcp issues by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9321">https://github.com/Kong/insomnia/pull/9321</a></li>
-<li>Fix: oauth redirection issue for MCP by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9316">https://github.com/Kong/insomnia/pull/9316</a></li>
-<li>fix: redundant update toast by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9322">https://github.com/Kong/insomnia/pull/9322</a></li>
-<li>fix: delete wrong tailwind class by @CurryYangxx in <a href="https://github.com/Kong/insomnia/pull/9266">https://github.com/Kong/insomnia/pull/9266</a></li>
-<li>[INS-1598] - fix &quot;see all features&quot; link visibility in onboarding by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9317">https://github.com/Kong/insomnia/pull/9317</a></li>
-<li>feat: new pricing features by @xiaodemen in <a href="https://github.com/Kong/insomnia/pull/9176">https://github.com/Kong/insomnia/pull/9176</a></li>
-<li>fix: autoupdate ux by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9295">https://github.com/Kong/insomnia/pull/9295</a></li>
-<li>fix: use string readyState to make mcp ux more accurate by @ZxBing0066 in <a href="https://github.com/Kong/insomnia/pull/9323">https://github.com/Kong/insomnia/pull/9323</a></li>
-<li>Fix new pricing issues before v12 launch by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9330">https://github.com/Kong/insomnia/pull/9330</a></li>
-<li>fix: unify and add links for new insomnia docs by @cwangsmv in <a href="https://github.com/Kong/insomnia/pull/9333">https://github.com/Kong/insomnia/pull/9333</a></li>
-<li>chore: add docs gen docs by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9312">https://github.com/Kong/insomnia/pull/9312</a></li>
-<li>Fix/git checkout offline error msg by @gatzjames in <a href="https://github.com/Kong/insomnia/pull/9335">https://github.com/Kong/insomnia/pull/9335</a></li>
-<li>feat: clear all credentials upon logout [INS-1630] by @ryan-willis in <a href="https://github.com/Kong/insomnia/pull/9328">https://github.com/Kong/insomnia/pull/9328</a></li>
-<li>Change wording [INS-1547] by @yaoweiprc in <a href="https://github.com/Kong/insomnia/pull/9340">https://github.com/Kong/insomnia/pull/9340</a></li>
-<li>fix ndjson parser by @jackkav in <a href="https://github.com/Kong/insomnia/pull/9318">https://github.com/Kong/insomnia/pull/9318</a></li>
-</ul>
-<p><strong>Full Changelog</strong>: <a href="https://github.com/Kong/insomnia/compare/core@12.0.0-beta.0...core@12.0.0">https://github.com/Kong/insomnia/compare/core@12.0.0-beta.0...core@12.0.0</a></p>]]></content:encoded>
-      <category>Kong</category>
-      <category>insomnia</category>
-      <source url="https://github.com/Kong/insomnia">Kong/insomnia</source>
     </item>    <item>
       <title>jellyfin/jellyfin v10.11.0</title>
       <link>https://github.com/jellyfin/jellyfin/releases/tag/v10.11.0</link>
